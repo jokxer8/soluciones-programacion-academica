@@ -1,0 +1,74 @@
+Suma de todos los números desde 0 hasta n
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Suma0aN_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Ingresa n (>=0): ");
+        var memo = new Dictionary<int, long>();
+        long suma = SumaRecDP(n, memo);
+        Console.WriteLine($"Suma(0..{n}) = {suma}");
+    }
+
+    static long SumaRecDP(int n, Dictionary<int, long> memo)
+    {
+        if (n <= 0) return 0;
+
+        if (memo.TryGetValue(n, out long ya))
+            return ya;
+
+        long res = n + SumaRecDP(n - 1, memo);
+        memo[n] = res;
+        return res;
+    }
+
+    // -------- Entrada recursiva (sin ciclos) --------
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+
+        if (TryParseIntRec(texto, 0, false, 0, out int valor) && valor >= 0)
+            return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Suma0aN_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa n (>=0): ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        long[] dp = new long[Math.Max(1, n + 1)];
+        dp[0] = 0;
+
+        for (int i = 1; i <= n; i++)
+            dp[i] = dp[i - 1] + i;
+
+        Console.WriteLine($"Suma(0..{n}) = {dp[n]}");
+    }
+}

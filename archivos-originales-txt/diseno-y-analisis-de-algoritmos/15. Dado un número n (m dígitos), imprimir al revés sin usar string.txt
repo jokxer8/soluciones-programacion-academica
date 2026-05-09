@@ -1,0 +1,124 @@
+Dado un número n (m dígitos), imprimir al revés sin usar string
+
+A) Recursivo con DP + entrada recursiva (sin ciclos) — sin string
+
+using System;
+using System.Collections.Generic;
+
+class InvertirNumeroSinString_RecursivoDP
+{
+    static void Main()
+    {
+        long n = LeerLongRec("Ingresa n (>=0): ");
+        int m = ContarDigitosRec(n);
+
+        var memo = new Dictionary<int, long>();
+        long invertido = InvertirRecDP(n, m, memo);
+
+        Console.WriteLine("Invertido: " + invertido);
+    }
+
+    // DP por cantidad de dígitos restantes
+    static long InvertirRecDP(long n, int digitosRestantes, Dictionary<int, long> memo)
+    {
+        if (digitosRestantes == 0) return 0;
+
+        if (memo.TryGetValue(digitosRestantes, out long ya))
+            return ya;
+
+        long ultimo = n % 10;
+        long potencia = Potencia10Rec(digitosRestantes - 1);
+
+        long res = ultimo * potencia + InvertirRecDP(n / 10, digitosRestantes - 1, memo);
+        memo[digitosRestantes] = res;
+        return res;
+    }
+
+    static int ContarDigitosRec(long n)
+    {
+        if (n == 0) return 1;
+        return ContarDigitosAux(n);
+    }
+
+    static int ContarDigitosAux(long n)
+    {
+        if (n == 0) return 0;
+        return 1 + ContarDigitosAux(n / 10);
+    }
+
+    static long Potencia10Rec(int e)
+    {
+        if (e == 0) return 1;
+        return 10 * Potencia10Rec(e - 1);
+    }
+
+    // Entrada recursiva
+    static long LeerLongRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+
+        if (TryParseLongRec(t, 0, 0, out long v) && v >= 0)
+            return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerLongRec(mensaje);
+    }
+
+    static bool TryParseLongRec(string t, int i, long acc, out long v)
+    {
+        if (i >= t.Length) { v = acc; return t.Length > 0; }
+        char c = t[i];
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseLongRec(t, i + 1, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación) — sin string
+
+using System;
+
+class InvertirNumeroSinString_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa n (>=0): ");
+        long n = long.Parse(Console.ReadLine() ?? "0");
+
+        if (n == 0)
+        {
+            Console.WriteLine("Invertido: 0");
+            return;
+        }
+
+        int m = ContarDigitos(n);
+
+        long[] potencia10 = new long[m];
+        potencia10[0] = 1;
+        for (int i = 1; i < m; i++)
+            potencia10[i] = potencia10[i - 1] * 10;
+
+        long invertido = 0;
+        long aux = n;
+        int pos = 0;
+
+        while (aux > 0)
+        {
+            long d = aux % 10;
+            invertido += d * potencia10[m - 1 - pos];
+            pos++;
+            aux /= 10;
+        }
+
+        Console.WriteLine("Invertido: " + invertido);
+    }
+
+    static int ContarDigitos(long n)
+    {
+        int c = 0;
+        while (n > 0) { c++; n /= 10; }
+        return c;
+    }
+}

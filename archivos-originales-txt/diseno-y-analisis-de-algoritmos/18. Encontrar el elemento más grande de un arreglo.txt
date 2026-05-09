@@ -1,0 +1,100 @@
+Encontrar el elemento más grande de un arreglo
+
+A) Recursivo con DP + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class MaximoArreglo_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] arreglo = new int[n];
+        LeerArregloRec(arreglo, 0);
+
+        var memo = new Dictionary<int, int>();
+        int maximo = MaximoRecDP(arreglo, 0, memo);
+
+        Console.WriteLine("Máximo: " + maximo);
+    }
+
+    // Devuelve el máximo en arreglo[i..fin]
+    static int MaximoRecDP(int[] arreglo, int i, Dictionary<int, int> memo)
+    {
+        if (i == arreglo.Length - 1) return arreglo[i];
+
+        if (memo.TryGetValue(i, out int ya))
+            return ya;
+
+        int maxResto = MaximoRecDP(arreglo, i + 1, memo);
+        int res = (arreglo[i] > maxResto) ? arreglo[i] : maxResto;
+
+        memo[i] = res;
+        return res;
+    }
+
+    // -------- Entrada recursiva --------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class MaximoArreglo_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        int[] arreglo = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            arreglo[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        if (n == 0)
+        {
+            Console.WriteLine("Arreglo vacío.");
+            return;
+        }
+
+        // dp[i] = máximo en arreglo[0..i]
+        int[] dp = new int[n];
+        dp[0] = arreglo[0];
+
+        for (int i = 1; i < n; i++)
+            dp[i] = (dp[i - 1] > arreglo[i]) ? dp[i - 1] : arreglo[i];
+
+        Console.WriteLine("Máximo: " + dp[n - 1]);
+    }
+}

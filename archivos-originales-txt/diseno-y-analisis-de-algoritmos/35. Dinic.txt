@@ -1,0 +1,132 @@
+using System;
+using System.Collections.Generic;
+
+class Arista
+{
+    public int To;
+    public int Rev;
+    public int Cap;
+
+    public Arista(int to, int rev, int cap)
+    {
+        To = to;
+        Rev = rev;
+        Cap = cap;
+    }
+}
+
+class Program
+{
+    static List<Arista>[] grafo;
+    static int[] nivel;
+    static int[] ptr;
+
+    static void Main()
+    {
+        int n = LeerEntero("Ingrese la cantidad de nodos: ");
+        grafo = new List<Arista>[n];
+        for (int i = 0; i < n; i++)
+            grafo[i] = new List<Arista>();
+        nivel = new int[n];
+        ptr = new int[n];
+        int m = LeerEntero("Ingrese la cantidad de aristas: ");
+        Console.WriteLine("Ingrese cada arista en formato: origen destino capacidad");
+        for (int i = 0; i < m; i++)
+        {
+            int[] datos = LeerTresEnteros($"Arista {i + 1}: ");
+            int u = datos[0];
+            int v = datos[1];
+            int cap = datos[2];
+            AgregarArista(u, v, cap);
+        }
+        int fuente = LeerEntero("Ingrese el nodo fuente: ");
+        int sumidero = LeerEntero("Ingrese el nodo sumidero: ");
+        int flujoMaximo = Dinic(fuente, sumidero);
+        Console.WriteLine("\nFlujo máximo: " + flujoMaximo);
+    }
+
+    static void AgregarArista(int u, int v, int capacidad)
+    {
+        Arista ida = new Arista(v, grafo[v].Count, capacidad);
+        Arista vuelta = new Arista(u, grafo[u].Count, 0);
+        grafo[u].Add(ida);
+        grafo[v].Add(vuelta);
+    }
+
+    static int Dinic(int s, int t)
+    {
+        int flujo = 0;
+        while (BFS(s, t))
+        {
+            for (int i = 0; i < ptr.Length; i++)
+                ptr[i] = 0;
+            int enviado;
+            while ((enviado = DFS(s, t, int.MaxValue)) > 0)
+            {
+                flujo += enviado;
+            }
+        }
+        return flujo;
+    }
+
+    static bool BFS(int s, int t)
+    {
+        for (int i = 0; i < nivel.Length; i++)
+            nivel[i] = -1;
+        Queue<int> cola = new Queue<int>();
+        cola.Enqueue(s);
+        nivel[s] = 0;
+        while (cola.Count > 0)
+        {
+            int u = cola.Dequeue();
+            foreach (Arista e in grafo[u])
+            {
+                if (e.Cap > 0 && nivel[e.To] == -1)
+                {
+                    nivel[e.To] = nivel[u] + 1;
+                    cola.Enqueue(e.To);
+                }
+            }
+        }
+        return nivel[t] != -1;
+    }
+
+    static int DFS(int u, int t, int flujo)
+    {
+        if (u == t)
+            return flujo;
+        for (; ptr[u] < grafo[u].Count; ptr[u]++)
+        {
+            Arista e = grafo[u][ptr[u]];
+            if (e.Cap > 0 && nivel[e.To] == nivel[u] + 1)
+            {
+                int enviado = DFS(e.To, t, Math.Min(flujo, e.Cap));
+                if (enviado > 0)
+                {
+                    e.Cap -= enviado;
+                    grafo[e.To][e.Rev].Cap += enviado;
+                    return enviado;
+                }
+            }
+        }
+        return 0;
+    }
+
+    static int LeerEntero(string mensaje)
+    {
+        Console.Write(mensaje);
+        return int.Parse(Console.ReadLine());
+    }
+
+    static int[] LeerTresEnteros(string mensaje)
+    {
+        Console.Write(mensaje);
+        string[] partes = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        return new int[]
+        {
+            int.Parse(partes[0]),
+            int.Parse(partes[1]),
+            int.Parse(partes[2])
+        };
+    }
+}

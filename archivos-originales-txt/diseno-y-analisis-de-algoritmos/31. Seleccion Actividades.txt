@@ -1,0 +1,85 @@
+Sea L una lista de actividades que tienen tiempos de inicio y fin. Seleccionar la máxima cantidad de ellas de forma tal que no hayan dos pares que solapen.
+
+
+using System;
+using System.Collections.Generic;
+
+class Actividad
+{
+    public int Inicio;
+    public int Fin;
+
+    public Actividad(int inicio, int fin)
+    {
+        Inicio = inicio;
+        Fin = fin;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Actividad> actividades = new List<Actividad>();
+
+        Console.Write("Ingrese la cantidad de actividades: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidad; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Actividad " + (i + 1));
+
+            Console.Write("Inicio: ");
+            int inicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Fin: ");
+            int fin = int.Parse(Console.ReadLine());
+
+            actividades.Add(new Actividad(inicio, fin));
+        }
+
+        OrdenarPorFin(actividades);
+
+        int cantidadMaxima = ContarActividades(actividades);
+
+        Console.WriteLine();
+        Console.WriteLine("Cantidad maxima de actividades que se pueden elegir: " + cantidadMaxima);
+    }
+
+    static void OrdenarPorFin(List<Actividad> actividades)
+    {
+        for (int i = 0; i < actividades.Count - 1; i++)
+        {
+            for (int j = i + 1; j < actividades.Count; j++)
+            {
+                if (actividades[i].Fin > actividades[j].Fin)
+                {
+                    Actividad auxiliar = actividades[i];
+                    actividades[i] = actividades[j];
+                    actividades[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    static int ContarActividades(List<Actividad> actividades)
+    {
+        if (actividades.Count == 0)
+            return 0;
+
+        int cantidad = 1;
+        int finUltimaActividad = actividades[0].Fin;
+
+        for (int i = 1; i < actividades.Count; i++)
+        {
+            if (actividades[i].Inicio >= finUltimaActividad)
+            {
+                cantidad++;
+                finUltimaActividad = actividades[i].Fin;
+            }
+        }
+
+        return cantidad;
+    }
+}

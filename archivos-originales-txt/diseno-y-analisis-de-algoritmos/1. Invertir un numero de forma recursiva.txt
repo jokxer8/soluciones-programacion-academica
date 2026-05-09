@@ -1,0 +1,133 @@
+Invertir un numero de forma recursiva (no usar String)
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej3_RecursivoDP
+{
+    static void Main()
+    {
+        long numero = LeerLongRec("Ingresa un número entero (>=0): ");
+        int cantidad = ContarDigitosRec(numero);
+
+        // memo[pos] = número invertido de "los últimos pos dígitos" del número original
+        var memo = new Dictionary<int, long>();
+        long invertido = InvertirDPRec(numero, cantidad, memo);
+
+        Console.WriteLine("Invertido: " + invertido);
+    }
+
+    static long InvertirDPRec(long numero, int digitosRestantes, Dictionary<int, long> memo)
+    {
+        if (digitosRestantes == 0) return 0;
+
+        if (memo.TryGetValue(digitosRestantes, out long ya))
+            return ya;
+
+        long ultimo = numero % 10;
+        long potencia = Potencia10Rec(digitosRestantes - 1);
+        long resultado = ultimo * potencia + InvertirDPRec(numero / 10, digitosRestantes - 1, memo);
+
+        memo[digitosRestantes] = resultado;
+        return resultado;
+    }
+
+    static int ContarDigitosRec(long numero)
+    {
+        if (numero == 0) return 1;
+        return ContarDigitosRecAux(numero);
+    }
+
+    static int ContarDigitosRecAux(long numero)
+    {
+        if (numero == 0) return 0;
+        return 1 + ContarDigitosRecAux(numero / 10);
+    }
+
+    static long Potencia10Rec(int exponente)
+    {
+        if (exponente == 0) return 1;
+        return 10 * Potencia10Rec(exponente - 1);
+    }
+
+    // -------- Entrada recursiva (sin ciclos) --------
+    static long LeerLongRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+        if (TryParseLongRec(texto, 0, 0, out long valor) && valor >= 0) return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerLongRec(mensaje);
+    }
+
+    static bool TryParseLongRec(string texto, int i, long acumulado, out long valor)
+    {
+        if (i >= texto.Length)
+        {
+            valor = acumulado;
+            return texto.Length > 0;
+        }
+
+        char c = texto[i];
+        if (c < '0' || c > '9')
+        {
+            valor = 0;
+            return false;
+        }
+
+        long dig = c - '0';
+        return TryParseLongRec(texto, i + 1, acumulado * 10 + dig, out valor);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Ej3_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa un número entero (>=0): ");
+        long numero = long.Parse(Console.ReadLine() ?? "0");
+
+        if (numero == 0)
+        {
+            Console.WriteLine("Invertido: 0");
+            return;
+        }
+
+        int digitos = ContarDigitos(numero);
+
+        long[] potencia10 = new long[digitos];
+        potencia10[0] = 1;
+        for (int i = 1; i < digitos; i++)
+            potencia10[i] = potencia10[i - 1] * 10;
+
+        long invertido = 0;
+        long aux = numero;
+        int pos = 0;
+
+        while (aux > 0)
+        {
+            long d = aux % 10;
+            invertido += d * potencia10[digitos - 1 - pos];
+            pos++;
+            aux /= 10;
+        }
+
+        Console.WriteLine("Invertido: " + invertido);
+    }
+
+    static int ContarDigitos(long numero)
+    {
+        int c = 0;
+        while (numero > 0) { c++; numero /= 10; }
+        return c;
+    }
+}
+

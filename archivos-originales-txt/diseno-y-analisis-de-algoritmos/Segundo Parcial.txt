@@ -1,0 +1,265 @@
+1) Encontrar una subsecuencia creciente cuya suma sea máxima.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Cantidad de elementos: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ingrese los elementos separados por espacio:");
+        string[] partes = Console.ReadLine().Split(' ');
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            a[i] = int.Parse(partes[i]);
+        }
+        int[] mejorsuma = new int[n];
+        int[] anterior = new int[n];
+        for (int i = 0; i < n; i++) 
+        {
+            mejorsuma[i] = a[i];
+            anterior[i] = -1;
+        }
+        int mejorIndice = 0;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < i; j++)
+            {
+                if (a[j] < a[i] && mejorsuma[j] + a[i] > mejorsuma[i])
+                {
+                    mejorsuma[i] = mejorsuma[j] + a[i];
+                    anterior[i] = j;
+                }
+            }
+            if (mejorsuma[i] > mejorsuma[mejorIndice])
+            {
+                mejorIndice = i;
+            }
+        }
+        int[] respuesta = new int[n];
+        int cantidad = 0;
+        int actual = mejorIndice;
+
+        while (actual != -1)
+        {
+            respuesta[cantidad] = a[actual];
+            cantidad++;
+            actual = anterior[actual];
+        }
+        Console.WriteLine("Suma maxima: " + mejorsuma[mejorIndice]);
+        Console.Write("Subsecuencia: ");
+        for (int i = cantidad - 1; i >= 0; i--)
+        {
+            Console.Write(respuesta[i]);
+            if (i > 0)
+            {
+                Console.Write(" ");
+            }
+        }
+        Console.WriteLine();
+    }
+}
+
+
+
+2) Dado un conjunto de monedas con valor v[i], cantidad limitada c[i] y un objetivo X, encontrar el mínimo número de monedas para formar exactamente X, o -1 si no se puede.
+
+using System;
+using System.Collections.Generic;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Cantidad de tipos de monedas: ");
+        int n = int.Parse(Console.ReadLine());
+        Console.WriteLine("Ingrese los valores de las monedas separados por espacio:");
+        string[] textoValores = Console.ReadLine().Split(' ');
+        Console.WriteLine("Ingrese las cantidades disponibles separadas por espacio:");
+        string[] textoCantidades = Console.ReadLine().Split(' ');
+        Console.Write("Ingrese el valor objetivo X: ");
+        int X = int.Parse(Console.ReadLine());
+        int[] valores = new int[n];
+        int[] cantidades = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            valores[i] = int.Parse(textoValores[i]);
+            cantidades[i] = int.Parse(textoCantidades[i]);
+        }
+        List<int> monedas = new List<int>();
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < cantidades[i]; j++)
+            {
+                monedas.Add(valores[i]);
+            }
+        }
+        int Imposible = 1000000;
+        int[] mnmf = new int[X + 1];
+        for (int i = 0; i <= X; i++)
+        {
+            mnmf[i] = Imposible;
+        }
+        mnmf[0] = 0;
+        for (int i = 0; i < monedas.Count; i++)
+        {
+            int moneda = monedas[i];
+            for (int s = X; s >= moneda; s--)
+            {
+                if (mnmf[s - moneda] + 1 < mnmf[s])
+                {
+                    mnmf[s] = mnmf[s - moneda] + 1;
+                }
+            }
+        }
+        if (mnmf[X] == Imposible)
+        {
+            Console.WriteLine(-1);
+        }
+        else 
+        {
+            Console.WriteLine("Minimo numero de monedas: " + mnmf[X]);
+        }
+    }
+}
+
+
+3)Dada una matriz de agua y tierra:
+
+a) contar cuántas islas hay
+b) encontrar el mínimo número de celdas de agua a convertir para conectar todas las islas en una sola
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static int n;
+    static int m;
+    static int[,] mapa;
+    static bool[,] visitado;
+    static int[] cambioFila = { -1, 1, 0, 0 };
+    static int[] cambioColumna = { 0, 0, -1, 1 };
+
+    static void Main()
+    {
+        string[] tam = Console.ReadLine().Split(' ');
+        n = int.Parse(tam[0]);
+        m = int.Parse(tam[1]);
+        mapa = new int[n, m];
+        visitado = new bool[n, m];
+        for (int i = 0; i < n; i++)
+        {
+            string[] partes = Console.ReadLine().Split(' ');
+            for (int j = 0; j < m; j++)
+            {
+                mapa[i, j] = int.Parse(partes[j]);
+            }
+        }
+        int cantidadIslas = 0;
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                if (mapa[i, j] == 1 && visitado[i, j] == false)
+                {
+                    cantidadIslas++;
+                    MarcarIsla(i, j);
+                }
+            }
+        }
+        Console.WriteLine(cantidadIslas);
+        if (cantidadIslas <= 1)
+        {
+            Console.WriteLine(0);
+            return;
+        }
+        Queue<int[]> cola = new Queue<int[]>();
+        bool encontrada = false;
+        for (int i = 0; i < n; i++)
+        {
+            if (encontrada) break;
+            for (int j = 0; j < m; j++)
+            {
+                if (mapa[i, j] == 1)
+                {
+                    MarcarPrimeraIsla(i, j, cola);
+                    encontrada = true;
+                    break;
+                }
+            }
+        }
+        int respuesta = CalcularMinimosCambiosParaUnirIslas(cola);
+        Console.WriteLine(respuesta);
+    }
+    static void MarcarIsla(int f, int c)
+    {
+        if (f < 0 || f >= n || c < 0 || c >= m)
+            return;
+        if (mapa[f, c] == 0)
+            return;
+        if (visitado[f, c] == true)
+            return;
+        visitado[f, c] = true;
+        MarcarIsla(f - 1, c);
+        MarcarIsla(f + 1, c);
+        MarcarIsla(f, c - 1); 
+        MarcarIsla(f, c + 1);
+    }
+    static void MarcarPrimeraIsla(int f, int c, Queue<int[]> cola)
+    {
+        if (f < 0 || f >= n || c < 0 || c >= m)
+            return;
+        if (mapa[f, c] != 1)
+            return;
+        mapa[f, c] = 2;
+        cola.Enqueue(new int[] { f, c });
+        MarcarPrimeraIsla(f - 1, c, cola);
+        MarcarPrimeraIsla(f + 1, c, cola);
+        MarcarPrimeraIsla(f, c - 1, cola);
+        MarcarPrimeraIsla(f, c + 1, cola);
+    }
+    static int CalcularMinimosCambiosParaUnirIslas(Queue<int[]> cola)
+    {
+        int[,] distancia = new int[n, m];
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < m; j++)
+            {
+                distancia[i, j] = -1;
+            }
+        }
+        foreach (int[] celda in cola)
+        {
+            int f = celda[0];
+            int c = celda[1];
+            distancia[f, c] = 0;
+        }
+        while (cola.Count > 0)
+        {
+            int[] actual = cola.Dequeue();
+            int f = actual[0];
+            int c = actual[1];
+            for (int k = 0; k < 4; k++)
+            {
+                int nf = f + cambioFila[k];
+                int nc = c + cambioColumna[k];
+                if (nf < 0 || nf >= n || nc < 0 || nc >= m)
+                    continue;
+                if (distancia[nf, nc] != -1)
+                    continue;
+                if (mapa[nf, nc] == 1)
+                {
+                    return distancia[f, c];
+                }
+                if (mapa[nf, nc] == 0)
+                {
+                    distancia[nf, nc] = distancia[f, c] + 1;
+                    cola.Enqueue(new int[] { nf, nc });
+                }
+            }
+        }
+        return -1;
+    }
+}

@@ -1,0 +1,343 @@
+1) Dado un secuencia de números, encontrar la subsecuencia creciente más larga. Esta subsecuencia no necesariamente tiene que ser de valores continuos.
+
+
+using System;
+using System.Collections.Generic;
+
+class SubsecuenciaMasLarga
+{
+    static void Main()
+    {
+        int n = LeerEntero("Cantidad N: ");
+        int[] arreglo = new int[n];
+        LeerArreglo(arreglo, 0);
+
+        var memoLongitud = new Dictionary<int, int>();
+        var memoPredecesor = new Dictionary<int, int>();
+
+        int MejorIndice = MejorIndiceGlobal(arreglo, n - 1, memoLongitud, memoPredecesor);
+        int MejorLongitud = SubarregloFinal(arreglo, MejorIndice, memoLongitud, memoPredecesor);
+
+        Console.WriteLine("Longitud del Subarreglo: " + MejorLongitud);
+        Console.Write("Subarreglo: [ ");
+        ImprimirSubarreglo(arreglo, MejorIndice, memoPredecesor);
+        Console.WriteLine("]");
+    }
+
+    static int MejorIndiceGlobal
+        (
+        int[] arreglo,
+        int i,
+        Dictionary<int, int> memoLongitud,
+        Dictionary<int, int> memoPredecesor
+        )
+    {
+        if (i == 0) return 0;
+
+        int MejorIndicePrevio = MejorIndiceGlobal(arreglo, i - 1, memoLongitud, memoPredecesor);
+        int SubarregloPrevio = SubarregloFinal(arreglo, MejorIndicePrevio, memoLongitud, memoPredecesor);
+        int SubarregloActual = SubarregloFinal(arreglo, i, memoLongitud, memoPredecesor);
+
+        return (SubarregloActual > SubarregloPrevio) ? i : MejorIndicePrevio;
+    }
+
+    static int SubarregloFinal
+        (
+        int[] arreglo,
+        int i,
+        Dictionary<int, int> memoLongitud,
+        Dictionary<int, int> memoPredecesor
+        )
+    {
+        if (memoLongitud.TryGetValue(i, out int ya))
+            return ya;
+
+        (int MejorLongitudPrevia, int MejorJ) = MejorPrevio(arreglo, i, i - 1, memoLongitud, memoPredecesor);
+
+        int longitud = 1 + MejorLongitudPrevia;
+        memoLongitud[i] = longitud;
+        memoPredecesor[i] = MejorJ;
+        return longitud;
+    }
+
+    static (int MejorLongitud, int MejorIndice) MejorPrevio
+        (
+        int[] arreglo,
+        int i,
+        int j,
+        Dictionary<int, int> memoLongitud,
+        Dictionary<int, int> memoPredecesor
+        )
+    {
+        if (j < 0) return (0, -1);
+
+        var sinJ = MejorPrevio(arreglo, i, j - 1, memoLongitud, memoPredecesor);
+
+        if (arreglo[j] < arreglo[i])
+        {
+            int SubarregloEnJ = SubarregloFinal(arreglo, j, memoLongitud, memoPredecesor);
+            if (SubarregloEnJ > sinJ.MejorLongitud) return (SubarregloEnJ, j);
+        }
+        return sinJ;
+    }
+
+    static void ImprimirSubarreglo(int[] arreglo, int IndiceFinal, Dictionary<int, int> memoPredecesor)
+    {
+        if (IndiceFinal == -1) return;
+        int prev = memoPredecesor[IndiceFinal];
+        ImprimirSubarreglo(arreglo, prev, memoPredecesor);
+        Console.Write(arreglo[IndiceFinal] + " ");
+    }
+
+    static void LeerArreglo(int[] arreglo, int i)
+    {
+        if (i >= arreglo.Length) return;
+        arreglo[i] = LeerEntero($"Elemento {i + 1}: ");
+        LeerArreglo(arreglo, i + 1);
+    }
+
+    static int LeerEntero(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+        if (TryParseIntRec(texto, 0, false, 0, out int valor)) return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEntero(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool NumeroNegativo, int Acumulador, out int ResultadoFinal)
+    {
+        if (i >= t.Length) { ResultadoFinal = NumeroNegativo ? -Acumulador : Acumulador; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out ResultadoFinal);
+        if (c < '0' || c > '9') { ResultadoFinal = 0; return false; }
+        return TryParseIntRec(t, i + 1, NumeroNegativo, Acumulador * 10 + (c - '0'), out ResultadoFinal);
+    }
+}
+
+
+
+2) Dada una matriz arr[] donde cada elemento representa el número máximo de pasos que se pueden realizar desde ese índice. La tarea es encontrar el número mínimo de saltos para llegar al final de la matriz a partir del índice 0.
+Si no se puede alcanzar el final, devuelva -10.
+
+
+using System;
+using System.Collections.Generic;
+
+class SaltosMinimos
+{
+    static void Main()
+    {
+        int CantidadElementos = LeerEntero("Cantidad de elementos N: ");
+        if (CantidadElementos <= 0)
+        {
+            Console.WriteLine(-10);
+            return;
+        }
+        int[] arreglo = new int[CantidadElementos];
+        LeerArreglo(arreglo, 0);
+        var Memoria = new Dictionary<int, int>();
+        int SaltosMinimos = CalcularSaltosMinimos(0, arreglo, Memoria);
+        if (SaltosMinimos >= Infinito)
+            Console.WriteLine(-10);
+        else
+            Console.WriteLine(SaltosMinimos);
+    }
+    static readonly int Infinito = 1000000000;
+    static int CalcularSaltosMinimos(int IndiceActual, int[] arreglo, Dictionary<int, int> Memoria)
+    {
+        int ultimoIndice = arreglo.Length - 1;
+        if (IndiceActual >= ultimoIndice) return 0;
+        if (arreglo[IndiceActual] == 0) return Infinito;
+        if (Memoria.TryGetValue(IndiceActual, out int yaCalculado))
+            return yaCalculado;
+        int MaximoSalto = arreglo[IndiceActual];
+        int Mejor = ProbarSaltos(IndiceActual, 1, MaximoSalto, arreglo, Memoria, Infinito);
+        Memoria[IndiceActual] = Mejor;
+        return Mejor;
+    }
+    static int ProbarSaltos
+        (
+        int IndiceActual,
+        int SaltoActual,
+        int MaximoSalto,
+        int[] arreglo,
+        Dictionary<int, int> Memoria,
+        int MejorHastaAhora
+        )
+    {
+        if (SaltoActual > MaximoSalto) return MejorHastaAhora;
+        int SiguienteIndice = IndiceActual + SaltoActual;
+        if (SiguienteIndice < arreglo.Length)
+        {
+            int resultadoDesdeSiguiente = CalcularSaltosMinimos(SiguienteIndice, arreglo, Memoria);
+            if (resultadoDesdeSiguiente < Infinito)
+            {
+                int candidato = 1 + resultadoDesdeSiguiente;
+                if (candidato < MejorHastaAhora)
+                    MejorHastaAhora = candidato;
+            }
+        }
+        return ProbarSaltos(IndiceActual, SaltoActual + 1, MaximoSalto, arreglo, Memoria, MejorHastaAhora);
+    }
+    static void LeerArreglo(int[] arreglo, int Indice)
+    {
+        if (Indice >= arreglo.Length) return;
+        arreglo[Indice] = LeerEntero($"Elemento {Indice + 1}: ");
+        LeerArreglo(arreglo, Indice + 1);
+    }
+    static int LeerEntero(string Mensaje)
+    {
+        Console.Write(Mensaje);
+        string Texto = Console.ReadLine();
+
+        if (int.TryParse(Texto, out int Valor))
+            return Valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEntero(Mensaje);
+    }
+}
+
+
+
+3)Los números catalanes se definen como una secuencia matemática que consta de números enteros positivos, que se pueden utilizar para encontrar el número de posibilidades de varias combinaciones.
+
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+class NumerosCatalan
+{
+    static void Main()
+    {
+        int numero = LeerEntero("Ingresa n (>=0): ");
+        if (numero < 0)
+        {
+            Console.WriteLine("n debe ser >= 0.");
+            return;
+        }
+        var memoria = new Dictionary<int, EnteroGrande>();
+        EnteroGrande catalan = CalcularCatalan(numero, memoria);
+        Console.WriteLine($"El Cataln de {numero} = {catalan}");
+    }
+    static EnteroGrande CalcularCatalan(int numero, Dictionary<int, EnteroGrande> memoria)
+    {
+        if (numero == 0) return EnteroGrande.Uno();
+        if (memoria.TryGetValue(numero, out EnteroGrande yaCalculado))
+            return yaCalculado;
+        EnteroGrande suma = SumarProductos(numero, 0, memoria, EnteroGrande.Cero());
+        memoria[numero] = suma;
+        return suma;
+    }
+    static EnteroGrande SumarProductos(int numero, int indice, Dictionary<int, EnteroGrande> memoria, EnteroGrande acumulado)
+    {
+        if (indice == numero) return acumulado;
+        EnteroGrande catalanIzquierdo = CalcularCatalan(indice, memoria);
+        EnteroGrande catalanDerecho = CalcularCatalan(numero - 1 - indice, memoria);
+        EnteroGrande producto = EnteroGrande.Multiplicar(catalanIzquierdo, catalanDerecho);
+        EnteroGrande nuevoAcumulado = EnteroGrande.Sumar(acumulado, producto);
+        return SumarProductos(numero, indice + 1, memoria, nuevoAcumulado);
+    }
+    static int LeerEntero(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine();
+        if (int.TryParse(texto, out int valor))
+            return valor;
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEntero(mensaje);
+    }
+}
+class EnteroGrande
+{
+    private readonly List<int> digitos;
+    private EnteroGrande(List<int> digitos)
+    {
+        this.digitos = digitos;
+        QuitarCerosFinales(digitos.Count - 1);
+    }
+    public static EnteroGrande Cero() => new EnteroGrande(new List<int> { 0 });
+    public static EnteroGrande Uno() => new EnteroGrande(new List<int> { 1 });
+    private void QuitarCerosFinales(int indice)
+    {
+        if (indice <= 0) return;
+        if (digitos[indice] != 0) return;
+        digitos.RemoveAt(indice);
+        QuitarCerosFinales(indice - 1);
+    }
+    public static EnteroGrande Sumar(EnteroGrande a, EnteroGrande b)
+    {
+        int maximo = Math.Max(a.digitos.Count, b.digitos.Count);
+        var resultado = new List<int>(maximo + 1);
+        SumarRec(a, b, 0, maximo, 0, resultado);
+        return new EnteroGrande(resultado);
+    }
+
+    private static void SumarRec(EnteroGrande a, EnteroGrande b, int indice, int maximo, int acarreo, List<int> resultado)
+    {
+        if (indice == maximo)
+        {
+            if (acarreo > 0) resultado.Add(acarreo);
+            return;
+        }
+        int x = (indice < a.digitos.Count) ? a.digitos[indice] : 0;
+        int y = (indice < b.digitos.Count) ? b.digitos[indice] : 0;
+        int suma = x + y + acarreo;
+        resultado.Add(suma % 10);
+        SumarRec(a, b, indice + 1, maximo, suma / 10, resultado);
+    }
+    public static EnteroGrande Multiplicar(EnteroGrande a, EnteroGrande b)
+    {
+        var resultado = CrearListaCeros(a.digitos.Count + b.digitos.Count, new List<int>());
+        MultiplicarExterno(a, b, 0, resultado);
+        return new EnteroGrande(resultado);
+    }
+    private static void MultiplicarExterno(EnteroGrande a, EnteroGrande b, int i, List<int> resultado)
+    {
+        if (i >= a.digitos.Count) return;
+        MultiplicarInterno(a, b, i, 0, 0, resultado);
+        MultiplicarExterno(a, b, i + 1, resultado);
+    }
+    private static void MultiplicarInterno(EnteroGrande a, EnteroGrande b, int i, int j, int acarreo, List<int> resultado)
+    {
+        if (j >= b.digitos.Count)
+        {
+            SumarAcarreoEnPosicion(resultado, i + j, acarreo);
+            return;
+        }
+        int posicion = i + j;
+        int producto = a.digitos[i] * b.digitos[j] + resultado[posicion] + acarreo;
+        resultado[posicion] = producto % 10;
+        MultiplicarInterno(a, b, i, j + 1, producto / 10, resultado);
+    }
+
+    private static void SumarAcarreoEnPosicion(List<int> resultado, int posicion, int acarreo)
+    {
+        if (acarreo == 0) return;
+        int suma = resultado[posicion] + acarreo;
+        resultado[posicion] = suma % 10;
+        SumarAcarreoEnPosicion(resultado, posicion + 1, suma / 10);
+    }
+
+    private static List<int> CrearListaCeros(int cantidad, List<int> lista)
+    {
+        if (cantidad == 0) return lista;
+        lista.Add(0);
+        return CrearListaCeros(cantidad - 1, lista);
+    }
+    public override string ToString()
+    {
+        var constructor = new StringBuilder();
+        ConstruirTexto(digitos.Count - 1, constructor);
+        return constructor.ToString();
+    }
+    private void ConstruirTexto(int indice, StringBuilder constructor)
+    {
+        if (indice < 0) return;
+        constructor.Append(digitos[indice]);
+        ConstruirTexto(indice - 1, constructor);
+    }
+}

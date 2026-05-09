@@ -1,0 +1,150 @@
+Dada una lista de N numeros, en la que uno o mas pueden estar repetidos, encontrar las posiciones mas alejadas entre si que contienen un mismo numero.
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej9_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] lista = new int[n];
+        LeerArregloRec(lista, 0);
+
+        var primera = new Dictionary<int, int>();
+        var memoMejor = new Dictionary<int, (int valor, int i, int j, int dist)>();
+
+        var mejor = BuscarRecDP(lista, 0, primera, memoMejor);
+
+        if (mejor.dist < 0)
+        {
+            Console.WriteLine("No hay números repetidos.");
+            return;
+        }
+
+        Console.WriteLine($"Valor: {mejor.valor}");
+        Console.WriteLine($"Posición i (1-based): {mejor.i + 1}");
+        Console.WriteLine($"Posición j (1-based): {mejor.j + 1}");
+        Console.WriteLine($"Distancia: {mejor.dist}");
+    }
+
+    // DP: memo por índice, devuelve mejor desde indice hasta final
+    static (int valor, int i, int j, int dist) BuscarRecDP(
+        int[] lista,
+        int indice,
+        Dictionary<int, int> primera,
+        Dictionary<int, (int valor, int i, int j, int dist)> memo)
+    {
+        if (indice >= lista.Length) return (0, -1, -1, -1);
+        if (memo.TryGetValue(indice, out var ya)) return ya;
+
+        int val = lista[indice];
+        (int valor, int i, int j, int dist) mejorLocal = (0, -1, -1, -1);
+
+        if (!primera.ContainsKey(val))
+            primera[val] = indice;
+        else
+        {
+            int i = primera[val];
+            int dist = indice - i;
+            mejorLocal = (val, i, indice, dist);
+        }
+
+        var mejorResto = BuscarRecDP(lista, indice + 1, primera, memo);
+
+        var mejor = (mejorLocal.dist > mejorResto.dist) ? mejorLocal : mejorResto;
+        memo[indice] = mejor;
+        return mejor;
+    }
+
+    // ------- Entrada recursiva -------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+using System.Collections.Generic;
+
+class Ej9_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+        int[] lista = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            lista[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        // DP: primera y última ocurrencia
+        var primera = new Dictionary<int, int>();
+        var ultima = new Dictionary<int, int>();
+
+        for (int i = 0; i < n; i++)
+        {
+            int v = lista[i];
+            if (!primera.ContainsKey(v)) primera[v] = i;
+            ultima[v] = i;
+        }
+
+        int mejorDist = -1, mejorI = -1, mejorJ = -1, mejorValor = 0;
+
+        foreach (var par in primera)
+        {
+            int v = par.Key;
+            int i = primera[v];
+            int j = ultima[v];
+            int dist = j - i;
+            if (dist > mejorDist)
+            {
+                mejorDist = dist;
+                mejorI = i;
+                mejorJ = j;
+                mejorValor = v;
+            }
+        }
+
+        if (mejorDist < 0)
+        {
+            Console.WriteLine("No hay números repetidos.");
+            return;
+        }
+
+        Console.WriteLine($"Valor: {mejorValor}");
+        Console.WriteLine($"Posición i (1-based): {mejorI + 1}");
+        Console.WriteLine($"Posición j (1-based): {mejorJ + 1}");
+        Console.WriteLine($"Distancia: {mejorDist}");
+    }
+}

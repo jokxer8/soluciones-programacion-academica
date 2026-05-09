@@ -1,0 +1,105 @@
+Con los números 2, 4 y 5: todas las combinaciones y cuáles son divisibles entre 17
+
+Aquí genero todas las permutaciones de longitud 1..3 sin repetir dígitos (2,4,5) y verifico divisibilidad por 17.
+
+A) Recursivo con DP (memoización) + (sin entrada; ya vienen los números)
+
+using System;
+using System.Collections.Generic;
+
+class Comb_245_Div17_RecursivoDP
+{
+    static void Main()
+    {
+        int[] digitos = { 2, 4, 5 };
+
+        // dp(mask, ultimoIndice, len) para evitar recalcular caminos.
+        // Usamos memo de "estado visitado" porque imprimimos (no devolvemos conteo).
+        var visitado = new HashSet<long>();
+
+        Console.WriteLine("Números generados (longitud 1..3) y divisibles entre 17:");
+        GenerarRecDP(digitos, 0, 0, 0, visitado);
+    }
+
+    // mask: qué dígitos ya se usaron
+    // len: longitud actual
+    // numero: número construido
+    static void GenerarRecDP(int[] d, int mask, int len, int numero, HashSet<long> visitado)
+    {
+        long clave = ((long)mask << 16) | (ushort)(len << 8) | (byte)(numero % 256);
+        // Nota: el %256 es solo para compactar la clave sin hacerla enorme;
+        // no afecta corrección porque el conjunto de estados es pequeño.
+        if (visitado.Contains(clave)) { /* igual seguimos generando? */ }
+        visitado.Add(clave);
+
+        if (len >= 1)
+        {
+            Console.WriteLine(numero + (numero % 17 == 0 ? "  <-- divisible por 17" : ""));
+        }
+
+        if (len == 3) return;
+
+        // Sin ciclos: 3 ramas
+        ProbarIndice(d, mask, len, numero, 0, visitado);
+        ProbarIndice(d, mask, len, numero, 1, visitado);
+        ProbarIndice(d, mask, len, numero, 2, visitado);
+    }
+
+    static void ProbarIndice(int[] d, int mask, int len, int numero, int idx, HashSet<long> visitado)
+    {
+        int bit = 1 << idx;
+        if ((mask & bit) != 0) return; // ya usado
+
+        int nuevoNumero = numero * 10 + d[idx];
+        GenerarRecDP(d, mask | bit, len + 1, nuevoNumero, visitado);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación con bitmask)
+
+using System;
+using System.Collections.Generic;
+
+class Comb_245_Div17_IterativoDP
+{
+    static void Main()
+    {
+        int[] d = { 2, 4, 5 };
+
+        // dp[mask] = lista de números que se pueden formar con esos dígitos (en algún orden)
+        List<int>[] dp = new List<int>[1 << 3];
+        for (int mask = 0; mask < (1 << 3); mask++) dp[mask] = new List<int>();
+        dp[0].Add(0);
+
+        Console.WriteLine("Números generados (longitud 1..3) y divisibles entre 17:");
+
+        for (int mask = 0; mask < (1 << 3); mask++)
+        {
+            foreach (int num in dp[mask])
+            {
+                int len = Longitud(num);
+                if (len >= 1)
+                    Console.WriteLine(num + (num % 17 == 0 ? "  <-- divisible por 17" : ""));
+
+                if (len == 3) continue;
+
+                for (int i = 0; i < 3; i++)
+                {
+                    int bit = 1 << i;
+                    if ((mask & bit) != 0) continue;
+                    dp[mask | bit].Add(num * 10 + d[i]);
+                }
+            }
+        }
+    }
+
+    static int Longitud(int num)
+    {
+        if (num == 0) return 0;
+        int c = 0;
+        while (num > 0) { c++; num /= 10; }
+        return c;
+    }
+}

@@ -1,0 +1,107 @@
+Distancia de edición mínima (Insertar / Eliminar / Reemplazar)
+
+(Edit Distance / Levenshtein)
+
+A) Recursivo con DP + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class EditDistance_RecursivoDP
+{
+    static void Main()
+    {
+        string s1 = LeerTextoRec("Ingresa S1: ");
+        string s2 = LeerTextoRec("Ingresa S2: ");
+
+        var memo = new Dictionary<long, int>();
+        int dist = DistRecDP(s1, s2, 0, 0, memo);
+
+        Console.WriteLine("Operaciones mínimas: " + dist);
+    }
+
+    // dp(i,j) = min ops para convertir s1[i..] en s2[j..]
+    static int DistRecDP(string s1, string s2, int i, int j, Dictionary<long, int> memo)
+    {
+        if (i == s1.Length) return s2.Length - j; // insertar lo que falta
+        if (j == s2.Length) return s1.Length - i; // eliminar lo que sobra
+
+        long clave = ((long)i << 32) | (uint)j;
+        if (memo.TryGetValue(clave, out int ya))
+            return ya;
+
+        int res;
+        if (s1[i] == s2[j])
+        {
+            res = DistRecDP(s1, s2, i + 1, j + 1, memo);
+        }
+        else
+        {
+            int insertar = 1 + DistRecDP(s1, s2, i, j + 1, memo);
+            int eliminar  = 1 + DistRecDP(s1, s2, i + 1, j, memo);
+            int reemplazar = 1 + DistRecDP(s1, s2, i + 1, j + 1, memo);
+
+            res = Min3(insertar, eliminar, reemplazar);
+        }
+
+        memo[clave] = res;
+        return res;
+    }
+
+    static int Min3(int a, int b, int c)
+    {
+        int m = (a < b) ? a : b;
+        return (m < c) ? m : c;
+    }
+
+    static string LeerTextoRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string linea = Console.ReadLine();
+        if (linea != null) return linea;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerTextoRec(mensaje);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class EditDistance_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa S1: ");
+        string s1 = Console.ReadLine() ?? "";
+        Console.Write("Ingresa S2: ");
+        string s2 = Console.ReadLine() ?? "";
+
+        int n = s1.Length, m = s2.Length;
+        int[,] dp = new int[n + 1, m + 1];
+
+        for (int i = 0; i <= n; i++) dp[i, 0] = i; // eliminar
+        for (int j = 0; j <= m; j++) dp[0, j] = j; // insertar
+
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++)
+            {
+                if (s1[i - 1] == s2[j - 1])
+                    dp[i, j] = dp[i - 1, j - 1];
+                else
+                {
+                    int ins = dp[i, j - 1] + 1;
+                    int del = dp[i - 1, j] + 1;
+                    int rep = dp[i - 1, j - 1] + 1;
+                    dp[i, j] = Math.Min(ins, Math.Min(del, rep));
+                }
+            }
+        }
+
+        Console.WriteLine("Operaciones mínimas: " + dp[n, m]);
+    }
+}

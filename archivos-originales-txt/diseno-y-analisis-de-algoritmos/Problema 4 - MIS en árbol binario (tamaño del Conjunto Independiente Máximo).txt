@@ -1,0 +1,293 @@
+Problema 4 — MIS en árbol binario (tamaño del Conjunto Independiente Máximo)
+
+Enunciado 
+
+Mandato: no exige Top-Down/Bottom-Up, pero igual te lo doy en ambas.
+
+Idea DP
+Para cada nodo:
+
+incluir = 1 + excluir(izq) + excluir(der)
+
+excluir = max(incluir(izq), excluir(izq)) + max(incluir(der), excluir(der))
+Respuesta: max(incluir(raiz), excluir(raiz))
+
+Entrada propuesta (simple y estándar):
+
+t (0 Top-Down, 1 Bottom-Up)
+
+Luego el árbol en nivel-orden con -1 como nulo
+Ej: 1 2 3 -1 -1 4 5 etc.
+
+C# (Top-Down con memo por nodo y Bottom-Up postorden)
+
+using System;
+using System.Collections.Generic;
+
+class Problema4_MIS_Arbol
+{
+    class Nodo
+    {
+        public int valor;
+        public Nodo izq;
+        public Nodo der;
+        public Nodo(int v) { valor = v; }
+    }
+
+    static void Main()
+    {
+        var lector = new LectorRapido();
+        int t = lector.LeerEntero(); // 0 Top-Down, 1 Bottom-Up
+        int n = lector.LeerEntero(); // cantidad de valores en el recorrido nivel-orden
+
+        int[] datos = new int[n];
+        for (int i = 0; i < n; i++) datos[i] = lector.LeerEntero();
+
+        Nodo raiz = ConstruirArbolNivelOrden(datos);
+
+        int res = (t == 0) ? MIS_TopDown(raiz) : MIS_BottomUp(raiz);
+        Console.WriteLine(res);
+    }
+
+    // -------- Construcción nivel-orden con -1 nulo --------
+    static Nodo ConstruirArbolNivelOrden(int[] datos)
+    {
+        if (datos.Length == 0 || datos[0] == -1) return null;
+
+        Nodo raiz = new Nodo(datos[0]);
+        var cola = new Queue<Nodo>();
+        cola.Enqueue(raiz);
+
+        int i = 1;
+        while (i < datos.Length && cola.Count > 0)
+        {
+            Nodo actual = cola.Dequeue();
+
+            if (i < datos.Length && datos[i] != -1)
+            {
+                actual.izq = new Nodo(datos[i]);
+                cola.Enqueue(actual.izq);
+            }
+            i++;
+
+            if (i < datos.Length && datos[i] != -1)
+            {
+                actual.der = new Nodo(datos[i]);
+                cola.Enqueue(actual.der);
+            }
+            i++;
+        }
+
+        return raiz;
+    }
+
+    // -------- TOP-DOWN (memo por nodo) --------
+    static int MIS_TopDown(Nodo raiz)
+    {
+        var memo = new Dictionary<Nodo, int>();
+        return MISRec(raiz, memo);
+    }
+
+    static int MISRec(Nodo nodo, Dictionary<Nodo, int> memo)
+    {
+        if (nodo == null) return 0;
+        if (memo.TryGetValue(nodo, out int ya)) return ya;
+
+        // incluir nodo: no podemos incluir hijos, sí nietos
+        int incluir = 1
+            + MISRec(nodo.izq?.izq, memo) + MISRec(nodo.izq?.der, memo)
+            + MISRec(nodo.der?.izq, memo) + MISRec(nodo.der?.der, memo);
+
+        // excluir nodo: podemos incluir/excluir hijos
+        int excluir = MISRec(nodo.izq, memo) + MISRec(nodo.der, memo);
+
+        // OJO: esta forma (excluir = MIS(hijo)) funciona porque MIS(hijo) ya toma max(incluir/excluir)
+        int res = Math.Max(incluir, excluir);
+
+        memo[nodo] = res;
+        return res;
+    }
+
+    // -------- BOTTOM-UP (retorna par incluir/excluir) --------
+    static int MIS_BottomUp(Nodo raiz)
+    {
+        var par = PostOrden(raiz);
+        return Math.Max(par.incluir, par.excluir);
+    }
+
+    static (int incluir, int excluir) PostOrden(Nodo nodo)
+    {
+        if (nodo == null) return (0, 0);
+
+        var izq = PostOrden(nodo.izq);
+        var der = PostOrden(nodo.der);
+
+        int incluir = 1 + izq.excluir + der.excluir;
+        int excluir = Math.Max(izq.incluir, izq.excluir) + Math.Max(der.incluir, der.excluir);
+
+        return (incluir, excluir);
+    }
+
+    class LectorRapido
+    {
+        private readonly System.IO.Stream _entrada = Console.OpenStandardInput();
+        private readonly byte[] _buffer = new byte[1 << 16];
+        private int _len = 0, _ptr = 0;
+
+        private int LeerByte()
+        {
+            if (_ptr >= _len)
+            {
+                _len = _entrada.Read(_buffer, 0, _buffer.Length);
+                _ptr = 0;
+                if (_len <= 0) return -1;
+            }
+            return _buffer[_ptr++];
+        }
+
+        public int LeerEntero()
+        {
+            int c;
+            do c = LeerByte(); while (c <= 32 && c != -1);
+
+            int signo = 1;
+            if (c == '-')
+            {
+                signo = -1;
+                c = LeerByte();
+            }
+
+            int valor = 0;
+            while (c > 32 && c != -1)
+            {
+                valor = valor * 10 + (c - '0');
+                c = LeerByte();
+            }
+            return valor * signo;
+        }
+    }
+}
+
+
+
+
+A) Recursivo + memo + entrada recursiva (sin ciclos)
+
+Para poder construir el árbol 100% recursivo, aquí uso entrada en preorden con -1 nulo.
+
+Entrada ejemplo (preorden): 1 1 -1 -1 1 -1 -1 (solo estructura; los valores no importan para MIS sin pesos)
+
+
+using System;
+using System.Collections.Generic;
+
+class P4_RecursivoMemo_EntradaRec
+{
+    class Nodo { public Nodo izq, der; }
+
+    static void Main()
+    {
+        Console.WriteLine("Árbol en PREORDEN con -1 como nulo (ej: 1 1 -1 -1 1 -1 -1):");
+        var tokens = (Console.ReadLine() ?? "").Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        int idx = 0;
+
+        Nodo raiz = LeerArbolPreordenRec(tokens, ref idx);
+
+        var memo = new Dictionary<Nodo, int>();
+        Console.WriteLine(MisRec(raiz, memo));
+    }
+
+    static Nodo LeerArbolPreordenRec(string[] t, ref int i)
+    {
+        if (i >= t.Length) return null;
+        int val = int.Parse(t[i++]);
+        if (val == -1) return null;
+
+        Nodo n = new Nodo();
+        n.izq = LeerArbolPreordenRec(t, ref i);
+        n.der = LeerArbolPreordenRec(t, ref i);
+        return n;
+    }
+
+    static int MisRec(Nodo n, Dictionary<Nodo, int> memo)
+    {
+        if (n == null) return 0;
+        if (memo.TryGetValue(n, out int ya)) return ya;
+
+        int incluir = 1
+            + MisRec(n.izq?.izq, memo) + MisRec(n.izq?.der, memo)
+            + MisRec(n.der?.izq, memo) + MisRec(n.der?.der, memo);
+
+        int excluir = MisRec(n.izq, memo) + MisRec(n.der, memo);
+
+        int res = Math.Max(incluir, excluir);
+        memo[n] = res;
+        return res;
+    }
+}
+
+
+
+B) Iterativo + DP (tabulación)
+
+Aquí también uso entrada preorden con -1, pero calculo MIS con postorden iterativo (stack) guardando DP (incluir, excluir) por nodo.
+
+using System;
+using System.Collections.Generic;
+
+class P4_IterativoTab
+{
+    class Nodo { public Nodo izq, der; }
+
+    static void Main()
+    {
+        Console.WriteLine("Árbol en PREORDEN con -1 como nulo (ej: 1 1 -1 -1 1 -1 -1):");
+        var tokens = (Console.ReadLine() ?? "").Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        int idx = 0;
+        Nodo raiz = LeerArbolPreorden(tokens, ref idx);
+
+        // DP tabulación: postorden iterativo
+        var dp = new Dictionary<Nodo, (int incluir, int excluir)>();
+        var pila = new Stack<(Nodo nodo, bool visitado)>();
+        pila.Push((raiz, false));
+
+        while (pila.Count > 0)
+        {
+            var (n, vis) = pila.Pop();
+            if (n == null) continue;
+
+            if (!vis)
+            {
+                pila.Push((n, true));
+                pila.Push((n.der, false));
+                pila.Push((n.izq, false));
+            }
+            else
+            {
+                var izq = n.izq != null ? dp[n.izq] : (0, 0);
+                var der = n.der != null ? dp[n.der] : (0, 0);
+
+                int incluir = 1 + izq.excluir + der.excluir;
+                int excluir = Math.Max(izq.incluir, izq.excluir) + Math.Max(der.incluir, der.excluir);
+
+                dp[n] = (incluir, excluir);
+            }
+        }
+
+        var res = raiz != null ? dp[raiz] : (0, 0);
+        Console.WriteLine(Math.Max(res.incluir, res.excluir));
+    }
+
+    static Nodo LeerArbolPreorden(string[] t, ref int i)
+    {
+        if (i >= t.Length) return null;
+        int val = int.Parse(t[i++]);
+        if (val == -1) return null;
+
+        Nodo n = new Nodo();
+        n.izq = LeerArbolPreorden(t, ref i);
+        n.der = LeerArbolPreorden(t, ref i);
+        return n;
+    }
+}
+

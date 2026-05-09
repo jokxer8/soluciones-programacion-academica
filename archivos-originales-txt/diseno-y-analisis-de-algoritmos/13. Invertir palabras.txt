@@ -1,0 +1,113 @@
+Invertir palabras (una frase: invierte cada palabra, no el orden de palabras)
+
+Ejemplo: "hola mundo" → "aloh odnum"
+
+A) Recursivo con DP + entrada recursiva (sin ciclos)
+
+
+using System;
+using System.Collections.Generic;
+
+class InvertirPalabras_RecursivoDP
+{
+    static void Main()
+    {
+        string frase = LeerTextoRec("Ingresa una frase: ");
+        var memo = new Dictionary<int, string>();
+        string resultado = InvertirCadaPalabraRecDP(frase, 0, memo);
+        Console.WriteLine("Resultado: " + resultado);
+    }
+
+    // DP por índice: resuelve desde i hasta el final
+    static string InvertirCadaPalabraRecDP(string s, int i, Dictionary<int, string> memo)
+    {
+        if (i >= s.Length) return "";
+
+        if (memo.TryGetValue(i, out string ya))
+            return ya;
+
+        // Si hay espacio, lo copiamos y avanzamos
+        if (s[i] == ' ')
+        {
+            string resEspacio = " " + InvertirCadaPalabraRecDP(s, i + 1, memo);
+            memo[i] = resEspacio;
+            return resEspacio;
+        }
+
+        // Tomar la palabra desde i hasta antes del próximo espacio
+        int fin = BuscarFinPalabraRec(s, i);
+        string palabraInvertida = InvertirSubstringRec(s, i, fin - 1);
+
+        // Continuar desde fin (donde hay espacio o fin de cadena)
+        string resto = InvertirCadaPalabraRecDP(s, fin, memo);
+
+        string res = palabraInvertida + resto;
+        memo[i] = res;
+        return res;
+    }
+
+    static int BuscarFinPalabraRec(string s, int i)
+    {
+        if (i >= s.Length) return i;
+        if (s[i] == ' ') return i;
+        return BuscarFinPalabraRec(s, i + 1);
+    }
+
+    // Invierte s[inicio..fin] recursivamente
+    static string InvertirSubstringRec(string s, int inicio, int fin)
+    {
+        if (fin < inicio) return "";
+        return s[fin] + InvertirSubstringRec(s, inicio, fin - 1);
+    }
+
+    // Entrada recursiva
+    static string LeerTextoRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string linea = Console.ReadLine();
+        if (linea != null) return linea;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerTextoRec(mensaje);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class InvertirPalabras_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa una frase: ");
+        string s = Console.ReadLine() ?? "";
+
+        // DP: construir el resultado en un arreglo char (misma longitud)
+        char[] dp = new char[s.Length];
+
+        int i = 0;
+        while (i < s.Length)
+        {
+            if (s[i] == ' ')
+            {
+                dp[i] = ' ';
+                i++;
+                continue;
+            }
+
+            int inicio = i;
+            while (i < s.Length && s[i] != ' ') i++;
+            int fin = i - 1;
+
+            // invertir esa palabra en dp
+            int k = inicio;
+            for (int j = fin; j >= inicio; j--)
+                dp[k++] = s[j];
+        }
+
+        Console.WriteLine("Resultado: " + new string(dp));
+    }
+}

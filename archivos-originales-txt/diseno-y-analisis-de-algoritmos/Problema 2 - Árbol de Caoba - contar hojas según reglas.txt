@@ -1,0 +1,187 @@
+Problema 2 — Árbol de Caoba: contar hojas según reglas
+
+Reglas del modelo (enunciado) 
+
+(a) Sí es DP. El número de hojas a nivel n depende de niveles anteriores y hay repetición de subcasos (niveles), por tanto es computable por recurrencia.
+
+(b) Estado y recurrencia (modelo consistente con las reglas)
+
+Definimos dos estados por nivel:
+
+A[n]: cantidad de “puntas” (ramas activas) en el nivel n que NO se bifurcaron en n
+
+B[n]: cantidad de “puntas” en el nivel n que SÍ provienen de una bifurcación en n
+
+Las reglas se traducen a:
+
+Si una punta no se bifurca en nivel i, entonces se bifurca en i+1 (produce 2 puntas).
+
+Cuando hay bifurcación en i, en i+1 solo una de las dos ramas sigue bifurcándose (la otra no).
+
+Esto produce una transición equivalente a Fibonacci en hojas totales H[n]:
+
+H[0]=1, H[1]=1
+
+H[n]=H[n-1]+H[n-2] para n>=2
+
+(Con n=2 da 2, acorde al ejemplo visual del enunciado). 
+
+
+C# (entrada n t) 
+
+
+using System;
+using System.Collections.Generic;
+
+class Problema2_Caoba
+{
+    static void Main()
+    {
+        var lector = new LectorRapido();
+        int n = lector.LeerEntero();
+        int t = lector.LeerEntero(); // 0 Top-Down, 1 Bottom-Up
+
+        long hojas = (t == 0) ? HojasTopDown(n) : HojasBottomUp(n);
+        Console.WriteLine(hojas);
+    }
+
+    // H[0]=1, H[1]=1, H[n]=H[n-1]+H[n-2]
+    static long HojasTopDown(int n)
+    {
+        var memo = new Dictionary<int, long>();
+        return HojasRec(n, memo);
+    }
+
+    static long HojasRec(int n, Dictionary<int, long> memo)
+    {
+        if (n == 0) return 1;
+        if (n == 1) return 1;
+
+        if (memo.TryGetValue(n, out long ya)) return ya;
+
+        long res = HojasRec(n - 1, memo) + HojasRec(n - 2, memo);
+        memo[n] = res;
+        return res;
+    }
+
+    static long HojasBottomUp(int n)
+    {
+        if (n == 0) return 1;
+        long[] dp = new long[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+
+        for (int i = 2; i <= n; i++)
+            dp[i] = dp[i - 1] + dp[i - 2];
+
+        return dp[n];
+    }
+
+    class LectorRapido
+    {
+        private readonly System.IO.Stream _entrada = Console.OpenStandardInput();
+        private readonly byte[] _buffer = new byte[1 << 16];
+        private int _len = 0, _ptr = 0;
+
+        private int LeerByte()
+        {
+            if (_ptr >= _len)
+            {
+                _len = _entrada.Read(_buffer, 0, _buffer.Length);
+                _ptr = 0;
+                if (_len <= 0) return -1;
+            }
+            return _buffer[_ptr++];
+        }
+
+        public int LeerEntero()
+        {
+            int c;
+            do c = LeerByte(); while (c <= 32 && c != -1);
+
+            int signo = 1;
+            if (c == '-')
+            {
+                signo = -1;
+                c = LeerByte();
+            }
+
+            int valor = 0;
+            while (c > 32 && c != -1)
+            {
+                valor = valor * 10 + (c - '0');
+                c = LeerByte();
+            }
+            return valor * signo;
+        }
+    }
+}
+
+
+
+A)Recursivo + memo + entrada recursiva
+
+
+using System;
+using System.Collections.Generic;
+
+class P2_RecursivoMemo_EntradaRec
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("n: ");
+        var memo = new Dictionary<int, long>();
+        Console.WriteLine(H(n, memo));
+    }
+
+    static long H(int n, Dictionary<int, long> memo)
+    {
+        if (n == 0) return 1;
+        if (n == 1) return 1;
+        if (memo.TryGetValue(n, out long ya)) return ya;
+        long res = H(n - 1, memo) + H(n - 2, memo);
+        memo[n] = res;
+        return res;
+    }
+
+    static int LeerEnteroRec(string msg)
+    {
+        Console.Write(msg);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+        Console.WriteLine("Entrada inválida.");
+        return LeerEnteroRec(msg);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+
+B) Iterativo + DP (tabulación)
+
+using System;
+
+class P2_IterativoTab
+{
+    static void Main()
+    {
+        Console.Write("n: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        if (n == 0) { Console.WriteLine(1); return; }
+
+        long[] dp = new long[n + 1];
+        dp[0] = 1; dp[1] = 1;
+        for (int i = 2; i <= n; i++) dp[i] = dp[i - 1] + dp[i - 2];
+        Console.WriteLine(dp[n]);
+    }
+}

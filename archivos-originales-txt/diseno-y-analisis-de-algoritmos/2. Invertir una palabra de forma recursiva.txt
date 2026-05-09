@@ -1,0 +1,62 @@
+Invertir una palabra de forma recursiva
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej4_RecursivoDP
+{
+    static void Main()
+    {
+        string palabra = LeerTextoRec("Ingresa una palabra: ");
+        var memo = new Dictionary<int, string>();
+        string invertida = InvertirRecDP(palabra, palabra.Length - 1, memo);
+        Console.WriteLine("Invertida: " + invertida);
+    }
+
+    static string InvertirRecDP(string palabra, int i, Dictionary<int, string> memo)
+    {
+        if (i < 0) return "";
+
+        if (memo.TryGetValue(i, out string ya))
+            return ya;
+
+        string res = palabra[i] + InvertirRecDP(palabra, i - 1, memo);
+        memo[i] = res;
+        return res;
+    }
+
+    // Entrada recursiva (sin ciclos)
+    static string LeerTextoRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string linea = Console.ReadLine();
+        if (linea != null) return linea;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerTextoRec(mensaje);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Ej4_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa una palabra: ");
+        string palabra = Console.ReadLine() ?? "";
+
+        int n = palabra.Length;
+        char[] dp = new char[n];
+
+        for (int i = 0; i < n; i++)
+            dp[i] = palabra[n - 1 - i];
+
+        Console.WriteLine("Invertida: " + new string(dp));
+    }
+}

@@ -1,0 +1,244 @@
+Problema 1 — Escalera: subir (1 o 2) y bajar (1..4). Contar formas
+
+(a) Sí es DP. Porque el conteo de formas para llegar a un escalón depende solo de subproblemas más pequeños (escalones previos), hay subestructura óptima y subproblemas repetidos. 
+
+(b) Estado y recurrencia
+
+Se puede separar en dos conteos independientes:
+
+Subir de 0 a n con saltos {1,2}:
+
+U[0]=1, U[1]=1
+
+U[i]=U[i-1]+U[i-2] para i>=2
+
+Bajar de n a 0 con saltos {1,2,3,4}: es equivalente a contar formas de llegar a i desde 0 con {1,2,3,4}:
+
+D[0]=1
+
+D[i]=D[i-1]+D[i-2]+D[i-3]+D[i-4] (cuando índices < 0 se toman como 0)
+
+Respuesta final: Total(n) = U[n] * D[n].
+
+
+C# (entrada: n t)
+
+using System;
+using System.Collections.Generic;
+
+class Problema1_Escalera
+{
+    static void Main()
+    {
+        var lector = new LectorRapido();
+        int n = lector.LeerEntero();
+        int t = lector.LeerEntero(); // 0 Top-Down, 1 Bottom-Up
+
+        long respuesta = (t == 0) ? ResolverTopDown(n) : ResolverBottomUp(n);
+        Console.WriteLine(respuesta);
+    }
+
+    // ---------- TOP-DOWN ----------
+    static long ResolverTopDown(int n)
+    {
+        var memoSubir = new Dictionary<int, long>();
+        var memoBajar = new Dictionary<int, long>();
+
+        long subir = FormasSubir(n, memoSubir);
+        long bajar = FormasBajar(n, memoBajar);
+
+        return subir * bajar;
+    }
+
+    static long FormasSubir(int i, Dictionary<int, long> memo)
+    {
+        if (i == 0) return 1;
+        if (i == 1) return 1;
+        if (i < 0) return 0;
+
+        if (memo.TryGetValue(i, out long ya)) return ya;
+
+        long res = FormasSubir(i - 1, memo) + FormasSubir(i - 2, memo);
+        memo[i] = res;
+        return res;
+    }
+
+    static long FormasBajar(int i, Dictionary<int, long> memo)
+    {
+        if (i == 0) return 1;
+        if (i < 0) return 0;
+
+        if (memo.TryGetValue(i, out long ya)) return ya;
+
+        long res =
+            FormasBajar(i - 1, memo) +
+            FormasBajar(i - 2, memo) +
+            FormasBajar(i - 3, memo) +
+            FormasBajar(i - 4, memo);
+
+        memo[i] = res;
+        return res;
+    }
+
+    // ---------- BOTTOM-UP ----------
+    static long ResolverBottomUp(int n)
+    {
+        long[] subir = new long[Math.Max(2, n + 1)];
+        long[] bajar = new long[n + 1];
+
+        // U
+        subir[0] = 1;
+        subir[1] = 1;
+        for (int i = 2; i <= n; i++)
+            subir[i] = subir[i - 1] + subir[i - 2];
+
+        // D
+        bajar[0] = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            long total = 0;
+            if (i - 1 >= 0) total += bajar[i - 1];
+            if (i - 2 >= 0) total += bajar[i - 2];
+            if (i - 3 >= 0) total += bajar[i - 3];
+            if (i - 4 >= 0) total += bajar[i - 4];
+            bajar[i] = total;
+        }
+
+        return subir[n] * bajar[n];
+    }
+
+    // ---------- LECTOR ----------
+    class LectorRapido
+    {
+        private readonly System.IO.Stream _entrada = Console.OpenStandardInput();
+        private readonly byte[] _buffer = new byte[1 << 16];
+        private int _len = 0, _ptr = 0;
+
+        private int LeerByte()
+        {
+            if (_ptr >= _len)
+            {
+                _len = _entrada.Read(_buffer, 0, _buffer.Length);
+                _ptr = 0;
+                if (_len <= 0) return -1;
+            }
+            return _buffer[_ptr++];
+        }
+
+        public int LeerEntero()
+        {
+            int c;
+            do c = LeerByte(); while (c <= 32 && c != -1);
+
+            int signo = 1;
+            if (c == '-')
+            {
+                signo = -1;
+                c = LeerByte();
+            }
+
+            int valor = 0;
+            while (c > 32 && c != -1)
+            {
+                valor = valor * 10 + (c - '0');
+                c = LeerByte();
+            }
+            return valor * signo;
+        }
+    }
+}
+
+
+
+A) Iterativo con DP (tabulación)
+
+using System;
+using System.Collections.Generic;
+
+class P1_RecursivoMemo_EntradaRec
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("n: ");
+        var memoSubir = new Dictionary<int, long>();
+        var memoBajar = new Dictionary<int, long>();
+
+        long ans = Subir(n, memoSubir) * Bajar(n, memoBajar);
+        Console.WriteLine(ans);
+    }
+
+    static long Subir(int i, Dictionary<int, long> memo)
+    {
+        if (i == 0) return 1;
+        if (i == 1) return 1;
+        if (i < 0) return 0;
+        if (memo.TryGetValue(i, out long ya)) return ya;
+        long res = Subir(i - 1, memo) + Subir(i - 2, memo);
+        memo[i] = res;
+        return res;
+    }
+
+    static long Bajar(int i, Dictionary<int, long> memo)
+    {
+        if (i == 0) return 1;
+        if (i < 0) return 0;
+        if (memo.TryGetValue(i, out long ya)) return ya;
+        long res = Bajar(i - 1, memo) + Bajar(i - 2, memo) + Bajar(i - 3, memo) + Bajar(i - 4, memo);
+        memo[i] = res;
+        return res;
+    }
+
+    // ---- entrada recursiva (sin ciclos) ----
+    static int LeerEnteroRec(string msg)
+    {
+        Console.Write(msg);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+        Console.WriteLine("Entrada inválida.");
+        return LeerEnteroRec(msg);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo + DP (tabulación)
+
+
+using System;
+
+class P1_IterativoTab
+{
+    static void Main()
+    {
+        Console.Write("n: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        long[] u = new long[Math.Max(2, n + 1)];
+        long[] d = new long[n + 1];
+
+        u[0] = 1; u[1] = 1;
+        for (int i = 2; i <= n; i++) u[i] = u[i - 1] + u[i - 2];
+
+        d[0] = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            long total = 0;
+            if (i - 1 >= 0) total += d[i - 1];
+            if (i - 2 >= 0) total += d[i - 2];
+            if (i - 3 >= 0) total += d[i - 3];
+            if (i - 4 >= 0) total += d[i - 4];
+            d[i] = total;
+        }
+
+        Console.WriteLine(u[n] * d[n]);
+    }
+}

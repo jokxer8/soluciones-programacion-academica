@@ -1,0 +1,154 @@
+Se tiene una lista de N numeros naturales, positivos y no repetidos.Imprimir la fraccion mas proxima a 1, pero diferente de 1, que se pueda construir con elementos de la lista
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej8_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] lista = new int[n];
+        LeerArregloRec(lista, 0);
+
+        int[] ordenado = MergeSortRec(lista);
+
+        // DP (memo por índice): mejor fracción considerando hasta i
+        var memo = new Dictionary<int, (int num, int den)>();
+        var mejor = MejorRecDP(ordenado, ordenado.Length - 1, memo);
+
+        Console.WriteLine($"Fracción más cercana a 1 (≠1): {mejor.num}/{mejor.den} = {(double)mejor.num / mejor.den}");
+    }
+
+    // dp[i] = mejor fracción usando pares adyacentes hasta i
+    static (int num, int den) MejorRecDP(int[] a, int i, Dictionary<int, (int num, int den)> memo)
+    {
+        if (i == 1) return (a[0], a[1]);
+        if (memo.TryGetValue(i, out var ya)) return ya;
+
+        var mejorPrevio = MejorRecDP(a, i - 1, memo);
+        int num = a[i - 1];
+        int den = a[i];
+
+        var mejor = EsMejor(num, den, mejorPrevio.num, mejorPrevio.den) ? (num, den) : mejorPrevio;
+        memo[i] = mejor;
+        return mejor;
+    }
+
+    // Compara cercanía a 1 por debajo: minimizar (den-num)/den
+    static bool EsMejor(int a, int b, int c, int d)
+    {
+        long izq = (long)(b - a) * d;
+        long der = (long)(d - c) * b;
+        return izq < der;
+    }
+
+    // ---------- Lectura recursiva ----------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+
+    // ---------- MergeSort recursivo ----------
+    static int[] MergeSortRec(int[] a)
+    {
+        if (a.Length <= 1) return a;
+        int m = a.Length / 2;
+        int[] izq = SubRec(a, 0, m);
+        int[] der = SubRec(a, m, a.Length - m);
+        return MezclarRec(MergeSortRec(izq), MergeSortRec(der), 0, 0, new int[a.Length], 0);
+    }
+
+    static int[] SubRec(int[] a, int ini, int cant)
+    {
+        int[] r = new int[cant];
+        CopiarRec(a, ini, r, 0, cant);
+        return r;
+    }
+
+    static void CopiarRec(int[] o, int io, int[] d, int id, int rem)
+    {
+        if (rem == 0) return;
+        d[id] = o[io];
+        CopiarRec(o, io + 1, d, id + 1, rem - 1);
+    }
+
+    static int[] MezclarRec(int[] izq, int[] der, int i, int j, int[] s, int k)
+    {
+        if (i >= izq.Length && j >= der.Length) return s;
+        if (i >= izq.Length) { s[k] = der[j]; return MezclarRec(izq, der, i, j + 1, s, k + 1); }
+        if (j >= der.Length) { s[k] = izq[i]; return MezclarRec(izq, der, i + 1, j, s, k + 1); }
+        if (izq[i] <= der[j]) { s[k] = izq[i]; return MezclarRec(izq, der, i + 1, j, s, k + 1); }
+        s[k] = der[j];
+        return MezclarRec(izq, der, i, j + 1, s, k + 1);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Ej8_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+        int[] lista = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            lista[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        Array.Sort(lista);
+
+        (int num, int den)[] dp = new (int, int)[n];
+        dp[1] = (lista[0], lista[1]);
+
+        for (int i = 2; i < n; i++)
+        {
+            dp[i] = dp[i - 1];
+            int num = lista[i - 1];
+            int den = lista[i];
+
+            if (EsMejor(num, den, dp[i].num, dp[i].den))
+                dp[i] = (num, den);
+        }
+
+        var mejor = dp[n - 1];
+        Console.WriteLine($"Fracción más cercana a 1 (≠1): {mejor.num}/{mejor.den} = {(double)mejor.num / mejor.den}");
+    }
+
+    static bool EsMejor(int a, int b, int c, int d)
+    {
+        long izq = (long)(b - a) * d;
+        long der = (long)(d - c) * b;
+        return izq < der;
+    }
+}

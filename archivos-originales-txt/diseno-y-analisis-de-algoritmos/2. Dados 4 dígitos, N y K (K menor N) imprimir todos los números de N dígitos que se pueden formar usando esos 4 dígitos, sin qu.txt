@@ -1,0 +1,223 @@
+Dados 4 dígitos, N y K (K < N): imprimir todos los números de N dígitos que se pueden formar usando esos 4 dígitos, sin que ninguno se repita más de K veces.
+
+2A) Recursivo + DP (memo) + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class Ej2_RecursivoDP
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese 4 dígitos (uno por línea):");
+        int d1 = LeerEnteroRec("D1: ");
+        int d2 = LeerEnteroRec("D2: ");
+        int d3 = LeerEnteroRec("D3: ");
+        int d4 = LeerEnteroRec("D4: ");
+
+        int n = LeerEnteroRec("N (cantidad de dígitos): ");
+        int k = LeerEnteroRec("K (máx repeticiones por dígito, K<N): ");
+
+        int[] digitos = new int[] { d1, d2, d3, d4 };
+
+        // memo de estados "sin soluciones": si un estado no produce nada, lo marcamos
+        var memoSinSalida = new Dictionary<Estado, bool>();
+
+        int[] conteos = new int[4];
+        Console.WriteLine("\nNúmeros válidos:");
+        GenerarRecDP(digitos, n, k, 0, conteos, "", memoSinSalida);
+    }
+
+    static void GenerarRecDP(int[] digitos, int n, int k, int pos, int[] conteos, string prefijo,
+        Dictionary<Estado, bool> memoSinSalida)
+    {
+        if (pos == n)
+        {
+            Console.WriteLine(prefijo);
+            return;
+        }
+
+        Estado estado = new Estado(pos, conteos[0], conteos[1], conteos[2], conteos[3]);
+        if (memoSinSalida.TryGetValue(estado, out bool sinSalida) && sinSalida) return;
+
+        int antes = ConteoImpresiones; // para detectar si imprimimos algo desde este estado
+
+        ProbarIndice(digitos, n, k, pos, conteos, prefijo, memoSinSalida, 0);
+        ProbarIndice(digitos, n, k, pos, conteos, prefijo, memoSinSalida, 1);
+        ProbarIndice(digitos, n, k, pos, conteos, prefijo, memoSinSalida, 2);
+        ProbarIndice(digitos, n, k, pos, conteos, prefijo, memoSinSalida, 3);
+
+        // Si no imprimió nada desde aquí, memoizamos “sin salida”
+        if (ConteoImpresiones == antes)
+            memoSinSalida[estado] = true;
+    }
+
+    static int ConteoImpresiones = 0; // contador global (solo para memoizar estados muertos)
+
+    static void ProbarIndice(int[] digitos, int n, int k, int pos, int[] conteos, string prefijo,
+        Dictionary<Estado, bool> memoSinSalida, int idx)
+    {
+        if (conteos[idx] >= k) return;
+
+        conteos[idx]++;
+        string nuevo = prefijo + digitos[idx];
+
+        if (pos + 1 == n) ConteoImpresiones++; // se imprimirá en el caso base
+        GenerarRecDP(digitos, n, k, pos + 1, conteos, nuevo, memoSinSalida);
+
+        conteos[idx]--;
+    }
+
+    readonly struct Estado
+    {
+        public readonly int Pos, C0, C1, C2, C3;
+        public Estado(int pos, int c0, int c1, int c2, int c3)
+        {
+            Pos = pos; C0 = c0; C1 = c1; C2 = c2; C3 = c3;
+        }
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int h = 17;
+                h = h * 31 + Pos;
+                h = h * 31 + C0;
+                h = h * 31 + C1;
+                h = h * 31 + C2;
+                h = h * 31 + C3;
+                return h;
+            }
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj is Estado e)
+                return Pos == e.Pos && C0 == e.C0 && C1 == e.C1 && C2 == e.C2 && C3 == e.C3;
+            return false;
+        }
+    }
+
+    // ---- Entrada recursiva ----
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+
+B) Iterativo + DP (tabulación)
+
+using System;
+using System.Collections.Generic;
+
+class Ej2_IterativoDP
+{
+    static void Main()
+    {
+        Console.WriteLine("Ingrese 4 dígitos (uno por línea):");
+        int[] digitos = new int[4];
+        for (int i = 0; i < 4; i++)
+        {
+            Console.Write($"D{i + 1}: ");
+            digitos[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        Console.Write("N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+        Console.Write("K: ");
+        int k = int.Parse(Console.ReadLine() ?? "0");
+
+        // DP por niveles: estados -> lista de prefijos
+        // Estado: (c0,c1,c2,c3) y además nivel (longitud)
+        var dp = new Dictionary<Estado, List<string>>();
+        dp[new Estado(0, 0, 0, 0, 0)] = new List<string> { "" };
+
+        for (int nivel = 0; nivel < n; nivel++)
+        {
+            var siguiente = new Dictionary<Estado, List<string>>();
+
+            foreach (var par in dp)
+            {
+                Estado estado = par.Key;
+                List<string> prefijos = par.Value;
+
+                for (int idx = 0; idx < 4; idx++)
+                {
+                    int c0 = estado.C0, c1 = estado.C1, c2 = estado.C2, c3 = estado.C3;
+                    if (idx == 0 && c0 >= k) continue;
+                    if (idx == 1 && c1 >= k) continue;
+                    if (idx == 2 && c2 >= k) continue;
+                    if (idx == 3 && c3 >= k) continue;
+
+                    if (idx == 0) c0++;
+                    else if (idx == 1) c1++;
+                    else if (idx == 2) c2++;
+                    else c3++;
+
+                    Estado nuevoEstado = new Estado(nivel + 1, c0, c1, c2, c3);
+
+                    if (!siguiente.TryGetValue(nuevoEstado, out var lista))
+                    {
+                        lista = new List<string>();
+                        siguiente[nuevoEstado] = lista;
+                    }
+
+                    for (int p = 0; p < prefijos.Count; p++)
+                        lista.Add(prefijos[p] + digitos[idx]);
+                }
+            }
+
+            dp = siguiente;
+        }
+
+        Console.WriteLine("\nNúmeros válidos:");
+        foreach (var par in dp)
+        {
+            List<string> lista = par.Value;
+            for (int i = 0; i < lista.Count; i++)
+                Console.WriteLine(lista[i]);
+        }
+    }
+
+    readonly struct Estado
+    {
+        public readonly int Nivel, C0, C1, C2, C3;
+        public Estado(int nivel, int c0, int c1, int c2, int c3)
+        {
+            Nivel = nivel; C0 = c0; C1 = c1; C2 = c2; C3 = c3;
+        }
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int h = 17;
+                h = h * 31 + Nivel;
+                h = h * 31 + C0;
+                h = h * 31 + C1;
+                h = h * 31 + C2;
+                h = h * 31 + C3;
+                return h;
+            }
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj is Estado e)
+                return Nivel == e.Nivel && C0 == e.C0 && C1 == e.C1 && C2 == e.C2 && C3 == e.C3;
+            return false;
+        }
+    }
+}

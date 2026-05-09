@@ -1,0 +1,68 @@
+1- Encuentra una subsecuencia de una secuencia dada tal que la suma de sus elementos sea lo más alta posible y que los elementos de la subsecuencia estén ordenados en forma ascendente. Esta subsecuencia no necesariamente es contigua ni única.
+
+Ten en cuenta que el problema se enfoca en subsecuencias que no tienen que ser contiguas, es decir, no es necesario que ocupen posiciones consecutivas dentro de la secuencia original.
+
+Por ejemplo, considera la secuencia:
+
+{0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11}
+
+La subsecuencia creciente con suma máxima es:
+{8, 12, 14}
+
+
+2- Dado un conjunto de monedas, donde cada tipo de moneda tiene:
+
+-Un valor v[i]
+-Una cantidad disponible c[i] (limitada)
+
+Y un valor objetivo X, determina:
+
+El mínimo número de monedas necesarias para formar exactamente X
+
+Si no es posible, devuelve -1.
+
+3- Se te da una matriz de tamaño n x m que representa un mapa:
+
+1 → tierra
+0 → agua
+
+Una isla es un conjunto de celdas 1 conectadas en las 4 direcciones (arriba, abajo, izquierda, derecha).
+Debes:
+
+a) Encontrar cuántas islas hay
+b)  determinar el mínimo número de celdas de agua que debes convertir en tierra (0 → 1) para conectar TODAS las islas en una sola
+
+
+entrada
+n m
+grid (n líneas con m valores 0 o 1)
+
+salida
+Cantidad de islas
+Mínimo número de cambios para conectar todo.
+
+ejemplo
+Input:
+3 4
+1 1 0 0
+1 0 0 1
+0 0 1 1
+
+
+Salida:
+2
+2
+
+Explicación de este ejemplo 
+Islas:
+
+Isla 1: arriba izquierda
+Isla 2: abajo derecha
+
+-Total: 2 islas
+
+Para conectarlas:
+
+necesitas convertir algunas celdas de agua en tierra
+
+- Resultado posible: 2

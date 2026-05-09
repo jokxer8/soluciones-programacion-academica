@@ -1,0 +1,809 @@
+Metodo por Arista 
+
+using System;
+using System.Collections.Generic;
+
+class Arista
+{
+    public int Origen;
+    public int Destino;
+    public int Peso;
+
+    public Arista(int origen, int destino, int peso)
+    {
+        Origen = origen;
+        Destino = destino;
+        Peso = peso;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Arista> aristas = new List<Arista>();
+
+        aristas.Add(new Arista(0, 1, 1));
+        aristas.Add(new Arista(0, 2, 4));
+        aristas.Add(new Arista(1, 2, 2));
+        aristas.Add(new Arista(1, 3, 5));
+        aristas.Add(new Arista(2, 3, 3));
+
+        int cantidadVertices = 4;
+        int menorPeso = int.MaxValue;
+        List<Arista> mejorArbol = null;
+        int numeroArbol = 1;
+
+        for (int i = 0; i < aristas.Count - 2; i++)
+        {
+            for (int j = i + 1; j < aristas.Count - 1; j++)
+            {
+                for (int k = j + 1; k < aristas.Count; k++)
+                {
+                    List<Arista> posibleArbol = new List<Arista>();
+                    posibleArbol.Add(aristas[i]);
+                    posibleArbol.Add(aristas[j]);
+                    posibleArbol.Add(aristas[k]);
+
+                    if (EsArbolExpansion(posibleArbol, cantidadVertices))
+                    {
+                        int pesoTotal = CalcularPeso(posibleArbol);
+
+                        Console.WriteLine("Arbol de expansion " + numeroArbol + ":");
+                        MostrarArbol(posibleArbol, pesoTotal);
+
+                        if (pesoTotal < menorPeso)
+                        {
+                            menorPeso = pesoTotal;
+                            mejorArbol = new List<Arista>(posibleArbol);
+                        }
+
+                        numeroArbol++;
+                    }
+                }
+            }
+        }
+
+        Console.WriteLine("MST (Arbol de Expansion Minima):");
+        MostrarArbol(mejorArbol, menorPeso);
+    }
+
+    static bool EsArbolExpansion(List<Arista> arbol, int cantidadVertices)
+    {
+        if (arbol.Count != cantidadVertices - 1)
+            return false;
+
+        int[] componentes = new int[cantidadVertices];
+
+        for (int i = 0; i < cantidadVertices; i++)
+            componentes[i] = i;
+
+        for (int i = 0; i < arbol.Count; i++)
+            UnirComponentes(componentes, arbol[i].Origen, arbol[i].Destino);
+
+        for (int i = 1; i < cantidadVertices; i++)
+        {
+            if (componentes[i] != componentes[0])
+                return false;
+        }
+
+        return true;
+    }
+
+    static void UnirComponentes(int[] componentes, int origen, int destino)
+    {
+        int valorOrigen = componentes[origen];
+        int valorDestino = componentes[destino];
+
+        if (valorOrigen == valorDestino)
+            return;
+
+        for (int i = 0; i < componentes.Length; i++)
+        {
+            if (componentes[i] == valorDestino)
+                componentes[i] = valorOrigen;
+        }
+    }
+
+    static int CalcularPeso(List<Arista> arbol)
+    {
+        int suma = 0;
+
+        for (int i = 0; i < arbol.Count; i++)
+            suma += arbol[i].Peso;
+
+        return suma;
+    }
+
+    static void MostrarArbol(List<Arista> arbol, int pesoTotal)
+    {
+        for (int i = 0; i < arbol.Count; i++)
+        {
+            Console.WriteLine("(" + arbol[i].Origen + ", " + arbol[i].Destino + ") = " + arbol[i].Peso);
+        }
+
+        Console.WriteLine("Peso total = " + pesoTotal);
+        Console.WriteLine();
+    }
+}
+
+
+
+
+
+
+Metodo por NODO 
+
+using System;
+using System.Collections.Generic;
+
+class Nodo
+{
+    public int Valor;
+    public int Clase;
+
+    public Nodo(int valor)
+    {
+        Valor = valor;
+        Clase = valor; // al inicio cada nodo pertenece a su propia clase
+    }
+}
+
+class Arista
+{
+    public Nodo Origen;
+    public Nodo Destino;
+    public int Peso;
+
+    public Arista(Nodo origen, Nodo destino, int peso)
+    {
+        Origen = origen;
+        Destino = destino;
+        Peso = peso;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // Crear nodos
+        Nodo nodo0 = new Nodo(0);
+        Nodo nodo1 = new Nodo(1);
+        Nodo nodo2 = new Nodo(2);
+        Nodo nodo3 = new Nodo(3);
+
+        List<Nodo> nodos = new List<Nodo>();
+        nodos.Add(nodo0);
+        nodos.Add(nodo1);
+        nodos.Add(nodo2);
+        nodos.Add(nodo3);
+
+        // Crear aristas ya ordenadas de menor a mayor
+        List<Arista> aristas = new List<Arista>();
+        aristas.Add(new Arista(nodo0, nodo1, 1));
+        aristas.Add(new Arista(nodo1, nodo2, 2));
+        aristas.Add(new Arista(nodo2, nodo3, 3));
+        aristas.Add(new Arista(nodo0, nodo2, 4));
+        aristas.Add(new Arista(nodo1, nodo3, 5));
+
+        List<Arista> arbolExpansionMinima = new List<Arista>();
+        int pesoTotal = 0;
+
+        for (int i = 0; i < aristas.Count; i++)
+        {
+            Nodo origen = aristas[i].Origen;
+            Nodo destino = aristas[i].Destino;
+
+            if (origen.Clase != destino.Clase)
+            {
+                arbolExpansionMinima.Add(aristas[i]);
+                pesoTotal += aristas[i].Peso;
+
+                UnirClases(nodos, origen.Clase, destino.Clase);
+            }
+        }
+
+        Console.WriteLine("Arbol de Expansion Minima:");
+        for (int i = 0; i < arbolExpansionMinima.Count; i++)
+        {
+            Console.WriteLine(
+                "(" + arbolExpansionMinima[i].Origen.Valor + ", " +
+                arbolExpansionMinima[i].Destino.Valor + ") -> " +
+                arbolExpansionMinima[i].Peso
+            );
+        }
+
+        Console.WriteLine("Peso total: " + pesoTotal);
+    }
+
+    static void UnirClases(List<Nodo> nodos, int clase1, int clase2)
+    {
+        for (int i = 0; i < nodos.Count; i++)
+        {
+            if (nodos[i].Clase == clase2)
+            {
+                nodos[i].Clase = clase1;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Actividad
+{
+    public int Inicio;
+    public int Fin;
+
+    public Actividad(int inicio, int fin)
+    {
+        Inicio = inicio;
+        Fin = fin;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Actividad> actividades = new List<Actividad>();
+
+        Console.Write("Ingrese la cantidad de actividades: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidad; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Actividad " + (i + 1));
+
+            Console.Write("Inicio: ");
+            int inicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Fin: ");
+            int fin = int.Parse(Console.ReadLine());
+
+            actividades.Add(new Actividad(inicio, fin));
+        }
+
+        OrdenarPorFin(actividades);
+
+        int cantidadMaxima = ContarActividades(actividades);
+
+        Console.WriteLine();
+        Console.WriteLine("Cantidad maxima de actividades que se pueden elegir: " + cantidadMaxima);
+    }
+
+    static void OrdenarPorFin(List<Actividad> actividades)
+    {
+        for (int i = 0; i < actividades.Count - 1; i++)
+        {
+            for (int j = i + 1; j < actividades.Count; j++)
+            {
+                if (actividades[i].Fin > actividades[j].Fin)
+                {
+                    Actividad auxiliar = actividades[i];
+                    actividades[i] = actividades[j];
+                    actividades[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    static int ContarActividades(List<Actividad> actividades)
+    {
+        if (actividades.Count == 0)
+            return 0;
+
+        int cantidad = 1;
+        int finUltimaActividad = actividades[0].Fin;
+
+        for (int i = 1; i < actividades.Count; i++)
+        {
+            if (actividades[i].Inicio >= finUltimaActividad)
+            {
+                cantidad++;
+                finUltimaActividad = actividades[i].Fin;
+            }
+        }
+
+        return cantidad;
+    }
+}
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Actividad
+{
+    public int Inicio;
+    public int Fin;
+    public int Valor;
+
+    public Actividad(int inicio, int fin, int valor)
+    {
+        Inicio = inicio;
+        Fin = fin;
+        Valor = valor;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Actividad> actividades = new List<Actividad>();
+
+        Console.Write("Ingrese la cantidad de actividades: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidad; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Actividad " + (i + 1));
+
+            Console.Write("Inicio: ");
+            int inicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Fin: ");
+            int fin = int.Parse(Console.ReadLine());
+
+            Console.Write("Valor: ");
+            int valor = int.Parse(Console.ReadLine());
+
+            actividades.Add(new Actividad(inicio, fin, valor));
+        }
+
+        OrdenarPorFin(actividades);
+
+        int valorMaximo = CalcularValorMaximo(actividades);
+
+        Console.WriteLine();
+        Console.WriteLine("Valor total maximo: " + valorMaximo);
+    }
+
+    static void OrdenarPorFin(List<Actividad> actividades)
+    {
+        for (int i = 0; i < actividades.Count - 1; i++)
+        {
+            for (int j = i + 1; j < actividades.Count; j++)
+            {
+                if (actividades[i].Fin > actividades[j].Fin)
+                {
+                    Actividad auxiliar = actividades[i];
+                    actividades[i] = actividades[j];
+                    actividades[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    static int BuscarActividadCompatible(List<Actividad> actividades, int posicionActual)
+    {
+        for (int i = posicionActual - 1; i >= 0; i--)
+        {
+            if (actividades[i].Fin <= actividades[posicionActual].Inicio)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    static int CalcularValorMaximo(List<Actividad> actividades)
+    {
+        if (actividades.Count == 0)
+            return 0;
+
+        int[] mejorValorHastaAqui = new int[actividades.Count];
+
+        mejorValorHastaAqui[0] = actividades[0].Valor;
+
+        for (int i = 1; i < actividades.Count; i++)
+        {
+            int valorTomandoActividadActual = actividades[i].Valor;
+
+            int posicionCompatible = BuscarActividadCompatible(actividades, i);
+
+            if (posicionCompatible != -1)
+            {
+                valorTomandoActividadActual += mejorValorHastaAqui[posicionCompatible];
+            }
+
+            int valorSinTomarActividadActual = mejorValorHastaAqui[i - 1];
+
+            if (valorTomandoActividadActual > valorSinTomarActividadActual)
+            {
+                mejorValorHastaAqui[i] = valorTomandoActividadActual;
+            }
+            else
+            {
+                mejorValorHastaAqui[i] = valorSinTomarActividadActual;
+            }
+        }
+
+        return mejorValorHastaAqui[actividades.Count - 1];
+    }
+}
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Tarea
+{
+    public int Duracion;
+    public int Deadline;
+    public int Penalidad;
+
+    public Tarea(int duracion, int deadline, int penalidad)
+    {
+        Duracion = duracion;
+        Deadline = deadline;
+        Penalidad = penalidad;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Tarea> tareas = new List<Tarea>();
+
+        Console.Write("Cantidad de tareas: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidad; i++)
+        {
+            Console.WriteLine("Tarea " + (i + 1));
+
+            Console.Write("Duracion: ");
+            int duracion = int.Parse(Console.ReadLine());
+
+            Console.Write("Deadline: ");
+            int deadline = int.Parse(Console.ReadLine());
+
+            Console.Write("Penalidad: ");
+            int penalidad = int.Parse(Console.ReadLine());
+
+            tareas.Add(new Tarea(duracion, deadline, penalidad));
+        }
+
+        OrdenarPorDeadline(tareas);
+
+        int penalidadTotal = CalcularPenalidad(tareas);
+
+        Console.WriteLine();
+        Console.WriteLine("Penalidad total: " + penalidadTotal);
+    }
+
+    static void OrdenarPorDeadline(List<Tarea> tareas)
+    {
+        for (int i = 0; i < tareas.Count - 1; i++)
+        {
+            for (int j = i + 1; j < tareas.Count; j++)
+            {
+                if (tareas[i].Deadline > tareas[j].Deadline)
+                {
+                    Tarea auxiliar = tareas[i];
+                    tareas[i] = tareas[j];
+                    tareas[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    static int CalcularPenalidad(List<Tarea> tareas)
+    {
+        int tiempoActual = 0;
+        int penalidadTotal = 0;
+
+        for (int i = 0; i < tareas.Count; i++)
+        {
+            tiempoActual += tareas[i].Duracion;
+
+            if (tiempoActual > tareas[i].Deadline)
+            {
+                penalidadTotal += tareas[i].Penalidad;
+            }
+        }
+
+        return penalidadTotal;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Tarea
+{
+    public int Numero;
+    public int Duracion;
+    public int Deadline;
+    public int Penalidad;
+
+    public Tarea(int numero, int duracion, int deadline, int penalidad)
+    {
+        Numero = numero;
+        Duracion = duracion;
+        Deadline = deadline;
+        Penalidad = penalidad;
+    }
+}
+
+class Program
+{
+    static int menorPenalidad = int.MaxValue;
+    static List<Tarea> mejorOrden = new List<Tarea>();
+
+    static void Main()
+    {
+        List<Tarea> tareas = new List<Tarea>();
+
+        Console.Write("Ingrese la cantidad de tareas: ");
+        int cantidadTareas = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidadTareas; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Tarea " + (i + 1));
+
+            Console.Write("Duracion: ");
+            int duracion = int.Parse(Console.ReadLine());
+
+            Console.Write("Deadline: ");
+            int deadline = int.Parse(Console.ReadLine());
+
+            Console.Write("Penalidad: ");
+            int penalidad = int.Parse(Console.ReadLine());
+
+            tareas.Add(new Tarea(i + 1, duracion, deadline, penalidad));
+        }
+
+        List<Tarea> ordenActual = new List<Tarea>();
+        bool[] usada = new bool[cantidadTareas];
+
+        BuscarMejorOrden(tareas, ordenActual, usada);
+
+        Console.WriteLine();
+        Console.WriteLine("Mejor orden de tareas:");
+
+        for (int i = 0; i < mejorOrden.Count; i++)
+        {
+            Console.WriteLine("Tarea " + mejorOrden[i].Numero);
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("Penalidad total minima: " + menorPenalidad);
+    }
+
+    static void BuscarMejorOrden(List<Tarea> tareas, List<Tarea> ordenActual, bool[] usada)
+    {
+        if (ordenActual.Count == tareas.Count)
+        {
+            int penalidadActual = CalcularPenalidadTotal(ordenActual);
+
+            if (penalidadActual < menorPenalidad)
+            {
+                menorPenalidad = penalidadActual;
+                mejorOrden = new List<Tarea>(ordenActual);
+            }
+
+            return;
+        }
+
+        for (int i = 0; i < tareas.Count; i++)
+        {
+            if (usada[i] == false)
+            {
+                usada[i] = true;
+                ordenActual.Add(tareas[i]);
+
+                BuscarMejorOrden(tareas, ordenActual, usada);
+
+                ordenActual.RemoveAt(ordenActual.Count - 1);
+                usada[i] = false;
+            }
+        }
+    }
+
+    static int CalcularPenalidadTotal(List<Tarea> orden)
+    {
+        int tiempoActual = 0;
+        int penalidadTotal = 0;
+
+        for (int i = 0; i < orden.Count; i++)
+        {
+            tiempoActual += orden[i].Duracion;
+
+            if (tiempoActual > orden[i].Deadline)
+            {
+                penalidadTotal += orden[i].Penalidad;
+            }
+        }
+
+        return penalidadTotal;
+    }
+}
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        int cantidadDeNodos = 5;
+
+        int[][] aristas = new int[][]
+        {
+            new int[] { 0, 1 },
+            new int[] { 1, 2 },
+            new int[] { 3, 4 }
+        };
+
+        int cantidadDeComponentes = ContarComponentesConectadas(cantidadDeNodos, aristas);
+
+        Console.WriteLine("Cantidad de componentes conectadas: " + cantidadDeComponentes);
+    }
+
+    static int ContarComponentesConectadas(int cantidadDeNodos, int[][] aristas)
+    {
+        List<int>[] listaDeAdyacentes = new List<int>[cantidadDeNodos];
+
+        for (int i = 0; i < cantidadDeNodos; i++)
+        {
+            listaDeAdyacentes[i] = new List<int>();
+        }
+
+        foreach (int[] arista in aristas)
+        {
+            int origen = arista[0];
+            int destino = arista[1];
+
+            listaDeAdyacentes[origen].Add(destino);
+            listaDeAdyacentes[destino].Add(origen);
+        }
+
+        bool[] nodosVisitados = new bool[cantidadDeNodos];
+        int cantidadDeComponentes = 0;
+
+        for (int nodoActual = 0; nodoActual < cantidadDeNodos; nodoActual++)
+        {
+            if (!nodosVisitados[nodoActual])
+            {
+                cantidadDeComponentes++;
+                RecorrerProfundidad(nodoActual, listaDeAdyacentes, nodosVisitados);
+            }
+        }
+
+        return cantidadDeComponentes;
+    }
+
+    static void RecorrerProfundidad(int nodoActual, List<int>[] listaDeAdyacencia, bool[] nodosVisitados)
+    {
+        nodosVisitados[nodoActual] = true;
+
+        foreach (int vecino in listaDeAdyacencia[nodoActual])
+        {
+            if (!nodosVisitados[vecino])
+            {
+                RecorrerProfundidad(vecino, listaDeAdyacencia, nodosVisitados);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        int cantidadDeNodos = 6;
+        int[][] aristas = new int[][]
+        {
+            new int[] {0,1},
+            new int[] {0,2},
+            new int[] {1,3},
+            new int[] {2,4},
+            new int[] {4,5}
+        };
+        int nodoOrigen = 0;
+
+        int[] distancias = CalcularDistanciasMinimas(cantidadDeNodos, aristas, nodoOrigen);
+
+        Console.WriteLine("[" + string.Join(",", distancias) + "]");
+    }
+
+    static int[] CalcularDistanciasMinimas(int cantidadDeNodos, int[][] aristas, int nodoOrigen)
+    {
+        List<int>[] listaDeAdyacencia = new List<int>[cantidadDeNodos];
+
+        for (int i = 0; i < cantidadDeNodos; i++)
+        {
+            listaDeAdyacencia[i] = new List<int>();
+        }
+
+        foreach (int[] arista in aristas)
+        {
+            int origen = arista[0];
+            int destino = arista[1];
+
+            listaDeAdyacencia[origen].Add(destino);
+            listaDeAdyacencia[destino].Add(origen);
+        }
+
+        int[] distancias = new int[cantidadDeNodos];
+        for (int i = 0; i < cantidadDeNodos; i++)
+        {
+            distancias[i] = -1;
+        }
+
+        Queue<int> cola = new Queue<int>();
+        cola.Enqueue(nodoOrigen);
+        distancias[nodoOrigen] = 0;
+
+        while (cola.Count > 0)
+        {
+            int nodoActual = cola.Dequeue();
+
+            foreach (int vecino in listaDeAdyacencia[nodoActual])
+            {
+                if (distancias[vecino] == -1)
+                {
+                    distancias[vecino] = distancias[nodoActual] + 1;
+                    cola.Enqueue(vecino);
+                }
+            }
+        }
+
+        return distancias;
+    }
+}

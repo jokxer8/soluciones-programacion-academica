@@ -1,0 +1,158 @@
+Segundo número mayor distinto en un arreglo
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class SegundoMayorDistinto_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] a = new int[n];
+        LeerArregloRec(a, 0);
+
+        // dp[i] = (mayor, segundoMayor) considerando 0..i
+        var memo = new Dictionary<int, (int mayor, int segundo, bool existeSegundo)>();
+
+        var res = SegundoMayorRecDP(a, n - 1, memo);
+
+        if (!res.existeSegundo)
+            Console.WriteLine("No existe segundo mayor distinto.");
+        else
+            Console.WriteLine("Segundo mayor distinto: " + res.segundo);
+    }
+
+    static (int mayor, int segundo, bool existeSegundo) SegundoMayorRecDP(
+        int[] a, int i,
+        Dictionary<int, (int mayor, int segundo, bool existeSegundo)> memo)
+    {
+        if (i == 0) return (a[0], 0, false);
+
+        if (memo.TryGetValue(i, out var ya))
+            return ya;
+
+        var prev = SegundoMayorRecDP(a, i - 1, memo);
+        int x = a[i];
+
+        int mayor = prev.mayor;
+        int segundo = prev.segundo;
+        bool existeSegundo = prev.existeSegundo;
+
+        if (x > mayor)
+        {
+            // el mayor baja a segundo (si era distinto)
+            segundo = mayor;
+            existeSegundo = true;
+            mayor = x;
+        }
+        else if (x < mayor) // distinto del mayor
+        {
+            if (!existeSegundo)
+            {
+                segundo = x;
+                existeSegundo = true;
+            }
+            else if (x > segundo)
+            {
+                segundo = x;
+            }
+        }
+        // si x == mayor, no cambia nada (queremos "distinto")
+
+        var res = (mayor, segundo, existeSegundo);
+        memo[i] = res;
+        return res;
+    }
+
+    // -------- Entrada recursiva (sin ciclos) --------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class SegundoMayorDistinto_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            a[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        // dpMayor[i], dpSegundo[i], dpExisteSegundo[i] para 0..i
+        int[] dpMayor = new int[n];
+        int[] dpSegundo = new int[n];
+        bool[] dpExiste = new bool[n];
+
+        dpMayor[0] = a[0];
+        dpExiste[0] = false;
+
+        for (int i = 1; i < n; i++)
+        {
+            dpMayor[i] = dpMayor[i - 1];
+            dpSegundo[i] = dpSegundo[i - 1];
+            dpExiste[i] = dpExiste[i - 1];
+
+            int x = a[i];
+
+            if (x > dpMayor[i])
+            {
+                dpSegundo[i] = dpMayor[i];
+                dpExiste[i] = true;
+                dpMayor[i] = x;
+            }
+            else if (x < dpMayor[i])
+            {
+                if (!dpExiste[i])
+                {
+                    dpSegundo[i] = x;
+                    dpExiste[i] = true;
+                }
+                else if (x > dpSegundo[i])
+                {
+                    dpSegundo[i] = x;
+                }
+            }
+        }
+
+        if (!dpExiste[n - 1])
+            Console.WriteLine("No existe segundo mayor distinto.");
+        else
+            Console.WriteLine("Segundo mayor distinto: " + dpSegundo[n - 1]);
+    }
+}

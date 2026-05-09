@@ -1,0 +1,119 @@
+using System;
+using System.Collections.Generic;
+
+class Arista
+{
+    public int Origen;
+    public int Destino;
+    public int Peso;
+
+    public Arista(int origen, int destino, int peso)
+    {
+        Origen = origen;
+        Destino = destino;
+        Peso = peso;
+    }
+}
+
+class UnionFind
+{
+    int[] padre;
+    int[] rango;
+
+    public UnionFind(int n)
+    {
+        padre = new int[n];
+        rango = new int[n];
+        for (int i = 0; i < n; i++)
+            padre[i] = i;
+    }
+
+    public int Buscar(int x)
+    {
+        if (padre[x] != x)
+            padre[x] = Buscar(padre[x]);
+        return padre[x];
+    }
+
+    public void Unir(int a, int b)
+    {
+        int raizA = Buscar(a);
+        int raizB = Buscar(b);
+        if (raizA == raizB) return;
+        if (rango[raizA] < rango[raizB])
+            padre[raizA] = raizB;
+        else if (rango[raizA] > rango[raizB])
+            padre[raizB] = raizA;
+        else
+        {
+            padre[raizB] = raizA;
+            rango[raizA]++;
+        }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        int n = LeerEntero("Ingrese la cantidad de nodos: ");
+        int m = LeerEntero("Ingrese la cantidad de aristas: ");
+        List<Arista> aristas = new List<Arista>();
+        Console.WriteLine("Ingrese cada arista en formato: origen destino peso");
+        for (int i = 0; i < m; i++)
+        {
+            int[] datos = LeerTresEnteros($"Arista {i + 1}: ");
+            int u = datos[0];
+            int v = datos[1];
+            int peso = datos[2];
+            aristas.Add(new Arista(u, v, peso));
+        }
+        Kruskal(n, aristas);
+    }
+
+    static void Kruskal(int n, List<Arista> aristas)
+    {
+        aristas.Sort((a, b) => a.Peso.CompareTo(b.Peso));
+        UnionFind uf = new UnionFind(n);
+        List<Arista> resultado = new List<Arista>();
+        int total = 0;
+        foreach (Arista a in aristas)
+        {
+            if (uf.Buscar(a.Origen) != uf.Buscar(a.Destino))
+            {
+                uf.Unir(a.Origen, a.Destino);
+                resultado.Add(a);
+                total += a.Peso;
+            }
+        }
+        if (resultado.Count != n - 1)
+        {
+            Console.WriteLine("No se puede formar un árbol de expansión mínima porque el grafo no es conexo.");
+            return;
+        }
+        Console.WriteLine("\nAristas del árbol de expansión mínima:");
+        foreach (Arista a in resultado)
+        {
+            Console.WriteLine($"{a.Origen} - {a.Destino}   peso: {a.Peso}");
+        }
+        Console.WriteLine("Peso total: " + total);
+    }
+
+    static int LeerEntero(string mensaje)
+    {
+        Console.Write(mensaje);
+        return int.Parse(Console.ReadLine());
+    }
+
+    static int[] LeerTresEnteros(string mensaje)
+    {
+        Console.Write(mensaje);
+        string[] partes = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        return new int[]
+        {
+            int.Parse(partes[0]),
+            int.Parse(partes[1]),
+            int.Parse(partes[2])
+        };
+    }
+}

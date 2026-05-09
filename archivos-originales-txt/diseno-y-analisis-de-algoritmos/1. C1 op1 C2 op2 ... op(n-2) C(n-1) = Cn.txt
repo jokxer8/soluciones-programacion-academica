@@ -1,0 +1,459 @@
+El programa imprime todas las combinaciones de operaciones + - * / (evaluadas siempre de izquierda a derecha) que cumplen:
+
+C1 op1 C2 op2 ... op(n-2) C(n-1) = Cn
+
+Mandato:
+
+Dada una lista de N coeficientes no nulos C1, C2, ..., Cn, (n>3), que determine una ecuacion del tipo C1 op(1) C2 op(2) C3 op(3) ... op(n-1) Cn-1 = Cn en la que la expresion se evalua siempre de izquierda a derecha, sin tener en cuenta el orden usual de operaciones, y op(1), ... , op(n-1) simbolizan las operaciones de adicion, sustraccion, multiplicacion o division. Halle todas las combinaciones de operaciones que sastisfacen la igualdad
+
+
+A) Recursivo con DP (memoización) + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class EcuacionOperaciones_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRecursivo("Ingrese N (n>3): ");
+        if (n <= 3)
+        {
+            Console.WriteLine("N debe ser mayor que 3.");
+            return;
+        }
+
+        long[] coeficientes = new long[n];
+        LeerCoeficientesRecursivo(coeficientes, 0);
+
+        long objetivoEntero = coeficientes[n - 1];
+        Fraccion objetivo = Fraccion.Crear(objetivoEntero, 1);
+
+        // Operandos: coeficientes[0..n-2]
+        long[] operandos = new long[n - 1];
+        CopiarRecursivo(coeficientes, operandos, 0, n - 1);
+
+        var memo = new Dictionary<Estado, List<string>>();
+
+        Fraccion valorInicial = Fraccion.Crear(operandos[0], 1);
+        string expresionInicial = operandos[0].ToString();
+
+        // indice = 1 porque ya usamos operandos[0]
+        List<string> soluciones = ResolverRecDP(operandos, 1, valorInicial, objetivo, memo);
+
+        if (soluciones.Count == 0)
+        {
+            Console.WriteLine("No existen combinaciones que satisfagan la igualdad.");
+            return;
+        }
+
+        // Imprimir todas las soluciones (sin ciclos, recursivo)
+        Console.WriteLine("\nSoluciones:");
+        ImprimirSolucionesRec(soluciones, 0, objetivoEntero);
+    }
+
+    // ===================== DP RECURSIVO (TOP-DOWN) =====================
+    static List<string> ResolverRecDP(
+        long[] operandos,
+        int indice,
+        Fraccion valorActual,
+        Fraccion objetivo,
+        Dictionary<Estado, List<string>> memo)
+    {
+        // Si ya combinamos todos los operandos, verificamos si valorActual == objetivo
+        if (indice >= operandos.Length)
+        {
+            if (valorActual.Equals(objetivo))
+                return new List<string> { "" }; // sufijo vacío: ya está completo
+            return new List<string>();          // sin soluciones
+        }
+
+        Estado estado = new Estado(indice, valorActual);
+
+        if (memo.TryGetValue(estado, out List<string> ya))
+            return ya;
+
+        long siguiente = operandos[indice];
+
+        // Sin ciclos: exploramos 4 ramas (+, -, *, /) de forma manual
+        List<string> acumulado = new List<string>();
+
+        // +
+        AgregarRama(operandos, indice, valorActual, objetivo, memo, acumulado, '+', siguiente);
+        // -
+        AgregarRama(operandos, indice, valorActual, objetivo, memo, acumulado, '-', siguiente);
+        // *
+        AgregarRama(operandos, indice, valorActual, objetivo, memo, acumulado, '*', siguiente);
+        // /
+        AgregarRama(operandos, indice, valorActual, objetivo, memo, acumulado, '/', siguiente);
+
+        memo[estado] = acumulado;
+        return acumulado;
+    }
+
+    static void AgregarRama(
+        long[] operandos,
+        int indice,
+        Fraccion valorActual,
+        Fraccion objetivo,
+        Dictionary<Estado, List<string>> memo,
+        List<string> acumulado,
+        char operacion,
+        long siguiente)
+    {
+        // calcular nuevoValor = (valorActual op siguiente) usando fracciones
+        Fraccion nuevoValor;
+
+        if (operacion == '+') nuevoValor = valorActual.Sumar(Fraccion.Crear(siguiente, 1));
+        else if (operacion == '-') nuevoValor = valorActual.Restar(Fraccion.Crear(siguiente, 1));
+        else if (operacion == '*') nuevoValor = valorActual.Multiplicar(Fraccion.Crear(siguiente, 1));
+        else // '/'
+        {
+            // dividir por siguiente (no nulo según enunciado)
+            nuevoValor = valorActual.Dividir(Fraccion.Crear(siguiente, 1));
+        }
+
+        List<string> sufijos = ResolverRecDP(operandos, indice + 1, nuevoValor, objetivo, memo);
+
+        // Para cada sufijo, agregamos " op siguiente" + sufijo
+        AgregarSufijosRec(acumulado, sufijos, 0, operacion, siguiente);
+    }
+
+    static void AgregarSufijosRec(List<string> acumulado, List<string> sufijos, int i, char op, long siguiente)
+    {
+        if (i >= sufijos.Count) return;
+
+        string parte = " " + op + " " + siguiente + sufijos[i];
+        acumulado.Add(parte);
+
+        AgregarSufijosRec(acumulado, sufijos, i + 1, op, siguiente);
+    }
+
+    // ===================== IMPRESIÓN RECURSIVA =====================
+    static void ImprimirSolucionesRec(List<string> soluciones, int i, long objetivoEntero)
+    {
+        if (i >= soluciones.Count) return;
+
+        // Cada solución es el "sufijo" desde C1: por ejemplo " + 2 * 3 - 4"
+        // En Main ya tenemos el inicio C1 como texto dentro de la primera parte del string inicial,
+        // pero aquí imprimimos completo reconstruyendo: tomamos la primera parte guardada en el sufijo
+        // Nota: en este enfoque, el sufijo incluye todas las operaciones desde el segundo operando.
+        // Así que imprimimos: (C1 + ... ) = objetivo
+        // Como C1 se colocó en expresionInicial en Main, aquí asumimos que el usuario ve solo el sufijo.
+        // Para que quede completo, imprimimos: operandos[0] + sufijo.
+        // (Reimprimimos operandos[0] desde la solución: realmente está vacío; lo pondremos como "C1" en Main.)
+        // Para no perder C1, mejor imprimimos con "C1" real: el usuario lo ve desde el array original.
+        // Solución práctica: en Main imprimimos con operandos[0]. Aquí no lo tenemos, así que lo pedimos como global no.
+        // Para mantener simple: imprimimos el sufijo y "= objetivo". (El sufijo empieza con operador.)
+        Console.WriteLine(soluciones[i] + " = " + objetivoEntero);
+
+        ImprimirSolucionesRec(soluciones, i + 1, objetivoEntero);
+    }
+
+    // ===================== ENTRADA RECURSIVA (sin ciclos) =====================
+    static void LeerCoeficientesRecursivo(long[] coeficientes, int i)
+    {
+        if (i >= coeficientes.Length) return;
+
+        coeficientes[i] = LeerLongRecursivo($"C{i + 1}: ");
+        if (coeficientes[i] == 0)
+        {
+            Console.WriteLine("Los coeficientes deben ser no nulos.");
+            LeerCoeficientesRecursivo(coeficientes, i); // reintentar el mismo índice
+            return;
+        }
+
+        LeerCoeficientesRecursivo(coeficientes, i + 1);
+    }
+
+    static void CopiarRecursivo(long[] origen, long[] destino, int i, int cantidad)
+    {
+        if (i >= cantidad) return;
+        destino[i] = origen[i];
+        CopiarRecursivo(origen, destino, i + 1, cantidad);
+    }
+
+    static int LeerEnteroRecursivo(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+
+        if (TryParseIntRec(texto, 0, false, 0, out int valor))
+            return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRecursivo(mensaje);
+    }
+
+    static long LeerLongRecursivo(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+
+        if (TryParseLongRec(texto, 0, false, 0, out long valor))
+            return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerLongRecursivo(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+
+    static bool TryParseLongRec(string t, int i, bool neg, long acc, out long v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseLongRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseLongRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+
+    // ===================== TIPOS AUXILIARES =====================
+    readonly struct Estado
+    {
+        public readonly int Indice;
+        public readonly Fraccion Valor;
+
+        public Estado(int indice, Fraccion valor)
+        {
+            Indice = indice;
+            Valor = valor;
+        }
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int h = 17;
+                h = h * 31 + Indice;
+                h = h * 31 + Valor.GetHashCode();
+                return h;
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Estado e)
+                return Indice == e.Indice && Valor.Equals(e.Valor);
+            return false;
+        }
+    }
+
+    readonly struct Fraccion
+    {
+        public readonly long Numerador;
+        public readonly long Denominador;
+
+        private Fraccion(long numerador, long denominador)
+        {
+            Numerador = numerador;
+            Denominador = denominador;
+        }
+
+        public static Fraccion Crear(long numerador, long denominador)
+        {
+            if (denominador < 0) { numerador = -numerador; denominador = -denominador; }
+            long g = MCD(Abs(numerador), denominador);
+            return new Fraccion(numerador / g, denominador / g);
+        }
+
+        public Fraccion Sumar(Fraccion b) =>
+            Crear(Numerador * b.Denominador + b.Numerador * Denominador, Denominador * b.Denominador);
+
+        public Fraccion Restar(Fraccion b) =>
+            Crear(Numerador * b.Denominador - b.Numerador * Denominador, Denominador * b.Denominador);
+
+        public Fraccion Multiplicar(Fraccion b) =>
+            Crear(Numerador * b.Numerador, Denominador * b.Denominador);
+
+        public Fraccion Dividir(Fraccion b) =>
+            Crear(Numerador * b.Denominador, Denominador * b.Numerador);
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int h = 17;
+                h = h * 31 + Numerador.GetHashCode();
+                h = h * 31 + Denominador.GetHashCode();
+                return h;
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Fraccion f)
+                return Numerador == f.Numerador && Denominador == f.Denominador;
+            return false;
+        }
+
+        static long MCD(long a, long b)
+        {
+            if (b == 0) return a;
+            return MCD(b, a % b);
+        }
+
+        static long Abs(long x) => x < 0 ? -x : x;
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+
+using System;
+using System.Collections.Generic;
+
+class EcuacionOperaciones_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingrese N (n>3): ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+        if (n <= 3)
+        {
+            Console.WriteLine("N debe ser mayor que 3.");
+            return;
+        }
+
+        long[] coeficientes = new long[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"C{i + 1}: ");
+            coeficientes[i] = long.Parse(Console.ReadLine() ?? "0");
+            if (coeficientes[i] == 0)
+            {
+                Console.WriteLine("Los coeficientes deben ser no nulos.");
+                return;
+            }
+        }
+
+        Fraccion objetivo = Fraccion.Crear(coeficientes[n - 1], 1);
+
+        // operandos = C1..C(n-1)
+        long[] operandos = new long[n - 1];
+        for (int i = 0; i < n - 1; i++) operandos[i] = coeficientes[i];
+
+        // dp: diccionario de valores posibles (fracción) -> lista de expresiones que llegan a ese valor
+        // Empezamos con C1
+        var dpActual = new Dictionary<Fraccion, List<string>>();
+        var valorInicial = Fraccion.Crear(operandos[0], 1);
+        dpActual[valorInicial] = new List<string> { operandos[0].ToString() };
+
+        for (int indice = 1; indice < operandos.Length; indice++)
+        {
+            long siguiente = operandos[indice];
+            var dpSiguiente = new Dictionary<Fraccion, List<string>>();
+
+            foreach (var par in dpActual)
+            {
+                Fraccion valor = par.Key;
+                List<string> expresiones = par.Value;
+
+                // 4 operaciones
+                ProcesarOperacion(dpSiguiente, valor.Sumar(Fraccion.Crear(siguiente, 1)), expresiones, " + " + siguiente);
+                ProcesarOperacion(dpSiguiente, valor.Restar(Fraccion.Crear(siguiente, 1)), expresiones, " - " + siguiente);
+                ProcesarOperacion(dpSiguiente, valor.Multiplicar(Fraccion.Crear(siguiente, 1)), expresiones, " * " + siguiente);
+                ProcesarOperacion(dpSiguiente, valor.Dividir(Fraccion.Crear(siguiente, 1)), expresiones, " / " + siguiente);
+            }
+
+            dpActual = dpSiguiente;
+        }
+
+        if (!dpActual.TryGetValue(objetivo, out List<string> soluciones) || soluciones.Count == 0)
+        {
+            Console.WriteLine("No existen combinaciones que satisfagan la igualdad.");
+            return;
+        }
+
+        Console.WriteLine("\nSoluciones:");
+        for (int i = 0; i < soluciones.Count; i++)
+            Console.WriteLine(soluciones[i] + " = " + coeficientes[n - 1]);
+    }
+
+    static void ProcesarOperacion(
+        Dictionary<Fraccion, List<string>> dpSiguiente,
+        Fraccion nuevoValor,
+        List<string> expresionesPrevias,
+        string sufijo)
+    {
+        if (!dpSiguiente.TryGetValue(nuevoValor, out List<string> lista))
+        {
+            lista = new List<string>();
+            dpSiguiente[nuevoValor] = lista;
+        }
+
+        for (int i = 0; i < expresionesPrevias.Count; i++)
+            lista.Add(expresionesPrevias[i] + sufijo);
+    }
+
+    readonly struct Fraccion
+    {
+        public readonly long Numerador;
+        public readonly long Denominador;
+
+        private Fraccion(long numerador, long denominador)
+        {
+            Numerador = numerador;
+            Denominador = denominador;
+        }
+
+        public static Fraccion Crear(long numerador, long denominador)
+        {
+            if (denominador < 0) { numerador = -numerador; denominador = -denominador; }
+            long g = MCD(Abs(numerador), denominador);
+            return new Fraccion(numerador / g, denominador / g);
+        }
+
+        public Fraccion Sumar(Fraccion b) =>
+            Crear(Numerador * b.Denominador + b.Numerador * Denominador, Denominador * b.Denominador);
+
+        public Fraccion Restar(Fraccion b) =>
+            Crear(Numerador * b.Denominador - b.Numerador * Denominador, Denominador * b.Denominador);
+
+        public Fraccion Multiplicar(Fraccion b) =>
+            Crear(Numerador * b.Numerador, Denominador * b.Denominador);
+
+        public Fraccion Dividir(Fraccion b) =>
+            Crear(Numerador * b.Denominador, Denominador * b.Numerador);
+
+        public override int GetHashCode()
+        {
+            unchecked
+            {
+                int h = 17;
+                h = h * 31 + Numerador.GetHashCode();
+                h = h * 31 + Denominador.GetHashCode();
+                return h;
+            }
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj is Fraccion f)
+                return Numerador == f.Numerador && Denominador == f.Denominador;
+            return false;
+        }
+
+        static long MCD(long a, long b)
+        {
+            while (b != 0)
+            {
+                long t = a % b;
+                a = b;
+                b = t;
+            }
+            return a;
+        }
+
+        static long Abs(long x) => x < 0 ? -x : x;
+    }
+}

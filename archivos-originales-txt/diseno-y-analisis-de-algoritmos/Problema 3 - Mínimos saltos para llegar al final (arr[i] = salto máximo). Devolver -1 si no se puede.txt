@@ -1,0 +1,268 @@
+Problema 3 — Mínimos saltos para llegar al final (arr[i] = salto máximo). Devolver -1 si no se puede
+
+Enunciado 
+
+Mandato: aquí NO exige Top-Down/Bottom-Up, pero te doy ambos igual como vienes pidiendo.
+
+Estado y recurrencia
+
+dp[i] = mínimo de saltos para llegar al final desde i
+
+dp[n-1]=0
+
+dp[i]=1+min(dp[i+k]) para 1<=k<=arr[i] y i+k<n, si existe; si no existe, INF.
+
+Respuesta: si dp[0] es INF, imprimir -1.
+
+Entrada propuesta (para mantener t): n t y luego n enteros del arreglo.
+
+C# (Top-Down y Bottom-Up con t)
+
+using System;
+using System.Collections.Generic;
+
+class Problema3_MinSaltos
+{
+    const int INF = 1_000_000_000;
+
+    static void Main()
+    {
+        var lector = new LectorRapido();
+        int n = lector.LeerEntero();
+        int t = lector.LeerEntero(); // 0 Top-Down, 1 Bottom-Up
+
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) arr[i] = lector.LeerEntero();
+
+        int res = (t == 0) ? ResolverTopDown(arr) : ResolverBottomUp(arr);
+        Console.WriteLine(res >= INF ? -1 : res);
+    }
+
+    // -------- TOP-DOWN ----------
+    static int ResolverTopDown(int[] arr)
+    {
+        var memo = new Dictionary<int, int>();
+        int ans = Dp(0, arr, memo);
+        return ans;
+    }
+
+    static int Dp(int i, int[] arr, Dictionary<int, int> memo)
+    {
+        int n = arr.Length;
+        if (i >= n - 1) return 0;
+
+        if (memo.TryGetValue(i, out int ya)) return ya;
+
+        int mejor = INF;
+        int maxSalto = arr[i];
+
+        for (int k = 1; k <= maxSalto; k++)
+        {
+            int j = i + k;
+            if (j >= n) break;
+            int sub = Dp(j, arr, memo);
+            if (sub < INF)
+            {
+                int cand = 1 + sub;
+                if (cand < mejor) mejor = cand;
+            }
+        }
+
+        memo[i] = mejor;
+        return mejor;
+    }
+
+    // -------- BOTTOM-UP ----------
+    static int ResolverBottomUp(int[] arr)
+    {
+        int n = arr.Length;
+        int[] dp = new int[n];
+
+        for (int i = 0; i < n; i++) dp[i] = INF;
+        dp[n - 1] = 0;
+
+        for (int i = n - 2; i >= 0; i--)
+        {
+            int maxSalto = arr[i];
+            int mejor = INF;
+
+            for (int k = 1; k <= maxSalto; k++)
+            {
+                int j = i + k;
+                if (j >= n) break;
+                if (dp[j] < INF)
+                {
+                    int cand = 1 + dp[j];
+                    if (cand < mejor) mejor = cand;
+                }
+            }
+
+            dp[i] = mejor;
+        }
+
+        return dp[0];
+    }
+
+    class LectorRapido
+    {
+        private readonly System.IO.Stream _entrada = Console.OpenStandardInput();
+        private readonly byte[] _buffer = new byte[1 << 16];
+        private int _len = 0, _ptr = 0;
+
+        private int LeerByte()
+        {
+            if (_ptr >= _len)
+            {
+                _len = _entrada.Read(_buffer, 0, _buffer.Length);
+                _ptr = 0;
+                if (_len <= 0) return -1;
+            }
+            return _buffer[_ptr++];
+        }
+
+        public int LeerEntero()
+        {
+            int c;
+            do c = LeerByte(); while (c <= 32 && c != -1);
+
+            int signo = 1;
+            if (c == '-')
+            {
+                signo = -1;
+                c = LeerByte();
+            }
+
+            int valor = 0;
+            while (c > 32 && c != -1)
+            {
+                valor = valor * 10 + (c - '0');
+                c = LeerByte();
+            }
+            return valor * signo;
+        }
+    }
+}
+
+
+
+A) Recursivo + memo + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class P3_RecursivoMemo_EntradaRec
+{
+    const int INF = 1_000_000_000;
+
+    static void Main()
+    {
+        int n = LeerEnteroRec("N: ");
+        int[] a = new int[n];
+        LeerArregloRec(a, 0);
+
+        var memo = new Dictionary<int, int>();
+        int ans = Dp(0, a, memo);
+
+        Console.WriteLine(ans >= INF ? -1 : ans);
+    }
+
+    static int Dp(int i, int[] a, Dictionary<int, int> memo)
+    {
+        int n = a.Length;
+        if (i >= n - 1) return 0;
+        if (memo.TryGetValue(i, out int ya)) return ya;
+
+        int mejor = INF;
+        mejor = ProbarSaltosRec(i, 1, a, memo, mejor);
+
+        memo[i] = mejor;
+        return mejor;
+    }
+
+    // sin ciclos: iterar k recursivamente
+    static int ProbarSaltosRec(int i, int k, int[] a, Dictionary<int, int> memo, int mejor)
+    {
+        if (k > a[i]) return mejor;
+
+        int j = i + k;
+        if (j < a.Length)
+        {
+            int sub = Dp(j, a, memo);
+            if (sub < INF)
+            {
+                int cand = 1 + sub;
+                if (cand < mejor) mejor = cand;
+            }
+        }
+        return ProbarSaltosRec(i, k + 1, a, memo, mejor);
+    }
+
+    // ---- entrada recursiva ----
+    static void LeerArregloRec(int[] a, int i)
+    {
+        if (i >= a.Length) return;
+        a[i] = LeerEnteroRec($"a[{i}]: ");
+        LeerArregloRec(a, i + 1);
+    }
+
+    static int LeerEnteroRec(string msg)
+    {
+        Console.Write(msg);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+        Console.WriteLine("Entrada inválida.");
+        return LeerEnteroRec(msg);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo + DP (tabulación)
+
+using System;
+
+class P3_IterativoTab
+{
+    const int INF = 1_000_000_000;
+
+    static void Main()
+    {
+        Console.Write("N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+        int[] a = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"a[{i}]: ");
+            a[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) dp[i] = INF;
+        dp[n - 1] = 0;
+
+        for (int i = n - 2; i >= 0; i--)
+        {
+            int mejor = INF;
+            for (int k = 1; k <= a[i]; k++)
+            {
+                int j = i + k;
+                if (j >= n) break;
+                if (dp[j] < INF) mejor = Math.Min(mejor, 1 + dp[j]);
+            }
+            dp[i] = mejor;
+        }
+
+        Console.WriteLine(dp[0] >= INF ? -1 : dp[0]);
+    }
+}
+

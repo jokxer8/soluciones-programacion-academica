@@ -1,0 +1,107 @@
+Potencia: calcular n^m recursivo sin usar fórmula
+
+A) Recursivo con DP + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class Potencia_RecursivoDP
+{
+    static void Main()
+    {
+        long n = LeerLongRec("Ingresa n (base): ");
+        int m = LeerEnteroRec("Ingresa m (exponente >=0): ");
+
+        var memo = new Dictionary<int, long>();
+        long res = PotenciaRecDP(n, m, memo);
+
+        Console.WriteLine($"{n}^{m} = {res}");
+    }
+
+    // DP por exponente
+    static long PotenciaRecDP(long n, int m, Dictionary<int, long> memo)
+    {
+        if (m == 0) return 1;
+        if (m == 1) return n;
+
+        if (memo.TryGetValue(m, out long ya))
+            return ya;
+
+        long res = n * PotenciaRecDP(n, m - 1, memo);
+        memo[m] = res;
+        return res;
+    }
+
+    // Entrada recursiva
+    static long LeerLongRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+
+        if (TryParseLongConSignoRec(t, 0, false, 0, out long v))
+            return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerLongRec(mensaje);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+
+        if (TryParseIntConSignoRec(t, 0, false, 0, out int v) && v >= 0)
+            return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo (m >= 0).");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseLongConSignoRec(string t, int i, bool neg, long acc, out long v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseLongConSignoRec(t, i + 1, true, 0, out v);
+
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseLongConSignoRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+
+    static bool TryParseIntConSignoRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntConSignoRec(t, i + 1, true, 0, out v);
+
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntConSignoRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Potencia_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa n (base): ");
+        long n = long.Parse(Console.ReadLine() ?? "0");
+        Console.Write("Ingresa m (exponente >=0): ");
+        int m = int.Parse(Console.ReadLine() ?? "0");
+
+        long[] dp = new long[Math.Max(2, m + 1)];
+        dp[0] = 1;
+        dp[1] = n;
+
+        for (int i = 2; i <= m; i++)
+            dp[i] = dp[i - 1] * n;
+
+        Console.WriteLine($"{n}^{m} = {dp[m]}");
+    }
+}

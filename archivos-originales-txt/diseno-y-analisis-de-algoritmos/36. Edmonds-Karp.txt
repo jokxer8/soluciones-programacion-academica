@@ -1,0 +1,104 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        int n = LeerEntero("Ingrese la cantidad de nodos: ");
+        int m = LeerEntero("Ingrese la cantidad de aristas: ");
+        int[,] capacidad = new int[n, n];
+        Console.WriteLine("Ingrese cada arista en formato: origen destino capacidad");
+        for (int i = 0; i < m; i++)
+        {
+            int[] datos = LeerTresEnteros($"Arista {i + 1}: ");
+            int u = datos[0];
+            int v = datos[1];
+            int cap = datos[2];
+            capacidad[u, v] += cap;
+        }
+        int fuente = LeerEntero("Ingrese el nodo fuente: ");
+        int sumidero = LeerEntero("Ingrese el nodo sumidero: ");
+        int flujoMaximo = EdmondsKarp(capacidad, fuente, sumidero);
+        Console.WriteLine("\nFlujo máximo: " + flujoMaximo);
+    }
+
+    static int EdmondsKarp(int[,] capacidad, int s, int t)
+    {
+        int n = capacidad.GetLength(0);
+        int[,] residual = new int[n, n];
+        for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+                residual[i, j] = capacidad[i, j];
+        int flujoMaximo = 0;
+        int[] padre = new int[n];
+        while (BFS(residual, s, t, padre))
+        {
+            int flujoCamino = int.MaxValue;
+            int v = t;
+            while (v != s)
+            {
+                int u = padre[v];
+                flujoCamino = Math.Min(flujoCamino, residual[u, v]);
+                v = u;
+            }
+            v = t;
+            while (v != s)
+            {
+                int u = padre[v];
+
+                residual[u, v] -= flujoCamino;
+                residual[v, u] += flujoCamino;
+
+                v = u;
+            }
+            flujoMaximo += flujoCamino;
+        }
+        return flujoMaximo;
+    }
+
+    static bool BFS(int[,] residual, int s, int t, int[] padre)
+    {
+        int n = residual.GetLength(0);
+        bool[] visitado = new bool[n];
+        Queue<int> cola = new Queue<int>();
+        for (int i = 0; i < n; i++)
+            padre[i] = -1;
+        cola.Enqueue(s);
+        visitado[s] = true;
+        while (cola.Count > 0)
+        {
+            int u = cola.Dequeue();
+            for (int v = 0; v < n; v++)
+            {
+                if (!visitado[v] && residual[u, v] > 0)
+                {
+                    cola.Enqueue(v);
+                    visitado[v] = true;
+                    padre[v] = u;
+                    if (v == t)
+                        return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    static int LeerEntero(string mensaje)
+    {
+        Console.Write(mensaje);
+        return int.Parse(Console.ReadLine());
+    }
+
+    static int[] LeerTresEnteros(string mensaje)
+    {
+        Console.Write(mensaje);
+        string[] partes = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        return new int[]
+        {
+            int.Parse(partes[0]),
+            int.Parse(partes[1]),
+            int.Parse(partes[2])
+        };
+    }
+}

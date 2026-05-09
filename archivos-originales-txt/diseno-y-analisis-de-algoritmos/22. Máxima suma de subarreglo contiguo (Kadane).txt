@@ -1,0 +1,118 @@
+Máxima suma de subarreglo contiguo (Kadane)
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class MaxSubarreglo_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] arreglo = new int[n];
+        LeerArregloRec(arreglo, 0);
+
+        // dpFin[i] = máxima suma de subarreglo que TERMINA en i
+        // dpMejor[i] = mejor suma en 0..i
+        var memoFin = new Dictionary<int, int>();
+        var memoMejor = new Dictionary<int, int>();
+
+        int mejor = MejorHastaRecDP(arreglo, n - 1, memoFin, memoMejor);
+        Console.WriteLine("Máxima suma subarreglo contiguo: " + mejor);
+    }
+
+    static int MejorHastaRecDP(int[] a, int i,
+        Dictionary<int, int> memoFin,
+        Dictionary<int, int> memoMejor)
+    {
+        if (i == 0) return a[0];
+
+        if (memoMejor.TryGetValue(i, out int ya))
+            return ya;
+
+        int mejorPrevio = MejorHastaRecDP(a, i - 1, memoFin, memoMejor);
+        int finEnI = FinEnRecDP(a, i, memoFin);
+
+        int res = (mejorPrevio > finEnI) ? mejorPrevio : finEnI;
+        memoMejor[i] = res;
+        return res;
+    }
+
+    static int FinEnRecDP(int[] a, int i, Dictionary<int, int> memoFin)
+    {
+        if (i == 0) return a[0];
+
+        if (memoFin.TryGetValue(i, out int ya))
+            return ya;
+
+        int finPrevio = FinEnRecDP(a, i - 1, memoFin);
+        int res = a[i] + ((finPrevio > 0) ? finPrevio : 0);
+
+        memoFin[i] = res;
+        return res;
+    }
+
+    // -------- Entrada recursiva (sin ciclos) --------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class MaxSubarreglo_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            a[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        // dpFin[i] = máxima suma terminando en i
+        int[] dpFin = new int[n];
+        dpFin[0] = a[0];
+
+        int mejor = dpFin[0];
+
+        for (int i = 1; i < n; i++)
+        {
+            dpFin[i] = a[i] + ((dpFin[i - 1] > 0) ? dpFin[i - 1] : 0);
+            if (dpFin[i] > mejor) mejor = dpFin[i];
+        }
+
+        Console.WriteLine("Máxima suma subarreglo contiguo: " + mejor);
+    }
+}

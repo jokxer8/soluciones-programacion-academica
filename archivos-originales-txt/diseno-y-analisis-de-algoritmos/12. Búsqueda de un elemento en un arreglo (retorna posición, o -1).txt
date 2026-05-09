@@ -1,0 +1,109 @@
+Búsqueda de un elemento en un arreglo (retorna posición, o -1)
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class BuscarElemento_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] arreglo = new int[n];
+        LeerArregloRec(arreglo, 0);
+
+        int objetivo = LeerEnteroRec("Elemento a buscar: ");
+
+        var memo = new Dictionary<int, int>();
+        int posicion = BuscarRecDP(arreglo, objetivo, 0, memo);
+
+        Console.WriteLine(posicion == -1
+            ? "No encontrado."
+            : $"Encontrado en posición (0-based): {posicion}");
+    }
+
+    // DP: memoiza el resultado de buscar desde el índice i hacia el final
+    static int BuscarRecDP(int[] arreglo, int objetivo, int i, Dictionary<int, int> memo)
+    {
+        if (i >= arreglo.Length) return -1;
+
+        if (memo.TryGetValue(i, out int ya))
+            return ya;
+
+        int res;
+        if (arreglo[i] == objetivo) res = i;
+        else res = BuscarRecDP(arreglo, objetivo, i + 1, memo);
+
+        memo[i] = res;
+        return res;
+    }
+
+    // -------- Entrada recursiva (sin ciclos) --------
+    static void LeerArregloRec(int[] arreglo, int i)
+    {
+        if (i >= arreglo.Length) return;
+        arreglo[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arreglo, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+
+        if (TryParseIntRec(texto, 0, false, 0, out int valor))
+            return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class BuscarElemento_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        int[] arreglo = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            arreglo[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        Console.Write("Elemento a buscar: ");
+        int objetivo = int.Parse(Console.ReadLine() ?? "0");
+
+        // DP: dp[i] = resultado de buscar desde i (posición encontrada o -1)
+        int[] dp = new int[n + 1];
+        dp[n] = -1;
+
+        for (int i = n - 1; i >= 0; i--)
+        {
+            if (arreglo[i] == objetivo) dp[i] = i;
+            else dp[i] = dp[i + 1];
+        }
+
+        Console.WriteLine(dp[0] == -1
+            ? "No encontrado."
+            : $"Encontrado en posición (0-based): {dp[0]}");
+    }
+}

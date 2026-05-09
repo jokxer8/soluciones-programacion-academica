@@ -1,0 +1,70 @@
+Imprima en orden ascendente todos los numeros de 4 cifras que es posible cconstruir empleando los digitos 4, 9y 3. Se admite repeticion de dígitos
+
+A) Recursivo con DP (memoización) + (sin entrada, porque el enunciado no pide)
+
+using System;
+using System.Collections.Generic;
+
+class Ej7_RecursivoDP
+{
+    static void Main()
+    {
+        int[] digitos = { 3, 4, 9 };
+        var memo = new Dictionary<string, bool>();
+
+        Console.WriteLine("Números de 4 cifras (ascendente):");
+        GenerarRecDP(digitos, 0, 0, memo);
+    }
+
+    static void GenerarRecDP(int[] digitos, int posicion, int numeroParcial, Dictionary<string, bool> memo)
+    {
+        string clave = posicion + "|" + numeroParcial;
+        if (memo.ContainsKey(clave)) return;
+        memo[clave] = true;
+
+        if (posicion == 4)
+        {
+            Console.WriteLine(numeroParcial);
+            return;
+        }
+
+        // Sin ciclos: 3 ramas
+        GenerarRecDP(digitos, posicion + 1, numeroParcial * 10 + digitos[0], memo);
+        GenerarRecDP(digitos, posicion + 1, numeroParcial * 10 + digitos[1], memo);
+        GenerarRecDP(digitos, posicion + 1, numeroParcial * 10 + digitos[2], memo);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Ej7_IterativoDP
+{
+    static void Main()
+    {
+        int[] digitos = { 3, 4, 9 };
+
+        int[] nivel = { 3, 4, 9 };           // longitud 1
+        nivel = Expandir(nivel, digitos);    // longitud 2
+        nivel = Expandir(nivel, digitos);    // longitud 3
+        nivel = Expandir(nivel, digitos);    // longitud 4
+
+        Console.WriteLine("Números de 4 cifras (DP, ascendente):");
+        for (int i = 0; i < nivel.Length; i++)
+            Console.WriteLine(nivel[i]);
+    }
+
+    static int[] Expandir(int[] anterior, int[] digitos)
+    {
+        int[] siguiente = new int[anterior.Length * digitos.Length];
+        int k = 0;
+
+        for (int i = 0; i < anterior.Length; i++)
+            for (int j = 0; j < digitos.Length; j++)
+                siguiente[k++] = anterior[i] * 10 + digitos[j];
+
+        return siguiente;
+    }
+}

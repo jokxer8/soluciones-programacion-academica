@@ -1,0 +1,130 @@
+Recorrer una matriz de forma recursiva
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej6_RecursivoDP
+{
+    static void Main()
+    {
+        int filas = LeerEnteroRec("Filas: ");
+        int columnas = LeerEnteroRec("Columnas: ");
+
+        int[,] matriz = new int[filas, columnas];
+        LlenarMatrizRec(matriz, filas, columnas, 0, 0);
+
+        Console.WriteLine("\nRecorrido (fila por fila):");
+        var memoVisitado = new Dictionary<int, bool>();
+        RecorrerMatrizRecDP(matriz, filas, columnas, 0, 0, memoVisitado);
+    }
+
+    // DP: memoiza que índice lineal ya fue "visitado"
+    static void RecorrerMatrizRecDP(int[,] matriz, int filas, int columnas, int i, int j,
+        Dictionary<int, bool> memo)
+    {
+        if (i >= filas) return;
+
+        int indiceLineal = i * columnas + j;
+        if (memo.ContainsKey(indiceLineal)) return;
+        memo[indiceLineal] = true;
+
+        Console.Write(matriz[i, j] + " ");
+
+        if (j + 1 < columnas)
+            RecorrerMatrizRecDP(matriz, filas, columnas, i, j + 1, memo);
+        else
+        {
+            Console.WriteLine();
+            RecorrerMatrizRecDP(matriz, filas, columnas, i + 1, 0, memo);
+        }
+    }
+
+    static void LlenarMatrizRec(int[,] matriz, int filas, int columnas, int i, int j)
+    {
+        if (i >= filas) return;
+
+        matriz[i, j] = LeerEnteroRec($"Elemento [{i},{j}]: ");
+
+        if (j + 1 < columnas)
+            LlenarMatrizRec(matriz, filas, columnas, i, j + 1);
+        else
+            LlenarMatrizRec(matriz, filas, columnas, i + 1, 0);
+    }
+
+    // Entrada recursiva
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+        if (TryParseIntRec(texto, 0, false, 0, out int valor)) return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string texto, int i, bool negativo, int acumulado, out int valor)
+    {
+        if (i >= texto.Length)
+        {
+            valor = negativo ? -acumulado : acumulado;
+            return texto.Length > 0;
+        }
+
+        char c = texto[i];
+        if (i == 0 && c == '-')
+            return TryParseIntRec(texto, i + 1, true, 0, out valor);
+
+        if (c < '0' || c > '9')
+        {
+            valor = 0;
+            return false;
+        }
+
+        int dig = c - '0';
+        return TryParseIntRec(texto, i + 1, negativo, acumulado * 10 + dig, out valor);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class Ej6_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Filas: ");
+        int filas = int.Parse(Console.ReadLine() ?? "0");
+        Console.Write("Columnas: ");
+        int columnas = int.Parse(Console.ReadLine() ?? "0");
+
+        int[,] matriz = new int[filas, columnas];
+
+        for (int i = 0; i < filas; i++)
+            for (int j = 0; j < columnas; j++)
+            {
+                Console.Write($"Elemento [{i},{j}]: ");
+                matriz[i, j] = int.Parse(Console.ReadLine() ?? "0");
+            }
+
+        int total = filas * columnas;
+        int[] dp = new int[total];
+
+        for (int k = 0; k < total; k++)
+        {
+            int i = k / columnas;
+            int j = k % columnas;
+            dp[k] = matriz[i, j];
+        }
+
+        Console.WriteLine("\nRecorrido (DP lineal):");
+        for (int k = 0; k < total; k++)
+        {
+            Console.Write(dp[k] + " ");
+            if ((k + 1) % columnas == 0) Console.WriteLine();
+        }
+    }
+}

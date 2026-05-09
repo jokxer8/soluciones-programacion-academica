@@ -1,0 +1,71 @@
+Dada una cantidad monetaria S y un conjunto de monedas M de algún sistema monetario. Determinar el cambio mínimo (mínima cantidad de monedas) de M que sumen S.
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese la cantidad de tipos de monedas: ");
+        int cantidadTiposMonedas = int.Parse(Console.ReadLine());
+
+        int[] monedas = new int[cantidadTiposMonedas];
+
+        for (int i = 0; i < cantidadTiposMonedas; i++)
+        {
+            Console.Write("Ingrese el valor de la moneda " + (i + 1) + ": ");
+            monedas[i] = int.Parse(Console.ReadLine());
+        }
+
+        Console.Write("Ingrese la cantidad monetaria: ");
+        int cantidadMonetaria = int.Parse(Console.ReadLine());
+
+        int cantidadMinimaMonedas = CalcularCantidadMinimaMonedas(monedas, cantidadMonetaria);
+
+        if (cantidadMinimaMonedas == -1)
+        {
+            Console.WriteLine("No se puede formar esa cantidad con las monedas dadas.");
+        }
+        else
+        {
+            Console.WriteLine("La cantidad minima de monedas es: " + cantidadMinimaMonedas);
+        }
+    }
+
+    static int CalcularCantidadMinimaMonedas(int[] monedas, int cantidadMonetaria)
+    {
+        int[] menorCantidadMonedas = new int[cantidadMonetaria + 1];
+
+        for (int i = 1; i <= cantidadMonetaria; i++)
+        {
+            menorCantidadMonedas[i] = 1000000;
+        }
+
+        menorCantidadMonedas[0] = 0;
+
+        for (int cantidadActual = 1; cantidadActual <= cantidadMonetaria; cantidadActual++)
+        {
+            for (int i = 0; i < monedas.Length; i++)
+            {
+                if (monedas[i] <= cantidadActual)
+                {
+                    int cantidadAnterior = cantidadActual - monedas[i];
+
+                    if (menorCantidadMonedas[cantidadAnterior] + 1 < menorCantidadMonedas[cantidadActual])
+                    {
+                        menorCantidadMonedas[cantidadActual] = menorCantidadMonedas[cantidadAnterior] + 1;
+                    }
+                }
+            }
+        }
+
+        if (menorCantidadMonedas[cantidadMonetaria] == 1000000)
+        {
+            return -1;
+        }
+
+        return menorCantidadMonedas[cantidadMonetaria];
+    }
+}

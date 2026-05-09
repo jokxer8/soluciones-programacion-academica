@@ -1,0 +1,124 @@
+Se te proporciona un conjunto de N actividades. Cada actividad está definida por tres valores:
+
+inicio: momento en que comienza la actividad
+fin: momento en que termina la actividad
+valor: beneficio obtenido al realizar dicha actividad
+
+Tu objetivo es seleccionar un subconjunto de actividades que no se solapen entre sí, de manera que el valor total sea máximo.
+
+
+using System;
+using System.Collections.Generic;
+
+class Actividad
+{
+    public int Inicio;
+    public int Fin;
+    public int Valor;
+
+    public Actividad(int inicio, int fin, int valor)
+    {
+        Inicio = inicio;
+        Fin = fin;
+        Valor = valor;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        List<Actividad> actividades = new List<Actividad>();
+
+        Console.Write("Ingrese la cantidad de actividades: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidad; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Actividad " + (i + 1));
+
+            Console.Write("Inicio: ");
+            int inicio = int.Parse(Console.ReadLine());
+
+            Console.Write("Fin: ");
+            int fin = int.Parse(Console.ReadLine());
+
+            Console.Write("Valor: ");
+            int valor = int.Parse(Console.ReadLine());
+
+            actividades.Add(new Actividad(inicio, fin, valor));
+        }
+
+        OrdenarPorFin(actividades);
+
+        int valorMaximo = CalcularValorMaximo(actividades);
+
+        Console.WriteLine();
+        Console.WriteLine("Valor total maximo: " + valorMaximo);
+    }
+
+    static void OrdenarPorFin(List<Actividad> actividades)
+    {
+        for (int i = 0; i < actividades.Count - 1; i++)
+        {
+            for (int j = i + 1; j < actividades.Count; j++)
+            {
+                if (actividades[i].Fin > actividades[j].Fin)
+                {
+                    Actividad auxiliar = actividades[i];
+                    actividades[i] = actividades[j];
+                    actividades[j] = auxiliar;
+                }
+            }
+        }
+    }
+
+    static int BuscarActividadCompatible(List<Actividad> actividades, int posicionActual)
+    {
+        for (int i = posicionActual - 1; i >= 0; i--)
+        {
+            if (actividades[i].Fin <= actividades[posicionActual].Inicio)
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    static int CalcularValorMaximo(List<Actividad> actividades)
+    {
+        if (actividades.Count == 0)
+            return 0;
+
+        int[] mejorValorHastaAqui = new int[actividades.Count];
+
+        mejorValorHastaAqui[0] = actividades[0].Valor;
+
+        for (int i = 1; i < actividades.Count; i++)
+        {
+            int valorTomandoActividadActual = actividades[i].Valor;
+
+            int posicionCompatible = BuscarActividadCompatible(actividades, i);
+
+            if (posicionCompatible != -1)
+            {
+                valorTomandoActividadActual += mejorValorHastaAqui[posicionCompatible];
+            }
+
+            int valorSinTomarActividadActual = mejorValorHastaAqui[i - 1];
+
+            if (valorTomandoActividadActual > valorSinTomarActividadActual)
+            {
+                mejorValorHastaAqui[i] = valorTomandoActividadActual;
+            }
+            else
+            {
+                mejorValorHastaAqui[i] = valorSinTomarActividadActual;
+            }
+        }
+
+        return mejorValorHastaAqui[actividades.Count - 1];
+    }
+}

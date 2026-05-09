@@ -1,0 +1,129 @@
+Subsequencia creciente más larga (LIS)
+
+Ejemplo: 3, 8, 4, 1, 5 → 3 (3,4,5)
+
+A) Recursivo con DP + entrada recursiva (sin ciclos)
+
+using System;
+using System.Collections.Generic;
+
+class LIS_RecursivoDP
+{
+    static void Main()
+    {
+        int n = LeerEnteroRec("Cantidad N: ");
+        int[] a = new int[n];
+        LeerArregloRec(a, 0);
+
+        var memoLisFin = new Dictionary<int, int>();
+        int mejor = MejorGlobalRecDP(a, n - 1, memoLisFin);
+
+        Console.WriteLine("Longitud LIS: " + (n == 0 ? 0 : mejor));
+    }
+
+    // Mejor LIS considerando índices 0..i
+    static int MejorGlobalRecDP(int[] a, int i, Dictionary<int, int> memoLisFin)
+    {
+        if (i < 0) return 0;
+        int mejorPrevio = MejorGlobalRecDP(a, i - 1, memoLisFin);
+        int lisEnI = LisFinRecDP(a, i, memoLisFin);
+        return (mejorPrevio > lisEnI) ? mejorPrevio : lisEnI;
+    }
+
+    // Lis que TERMINA en i
+    static int LisFinRecDP(int[] a, int i, Dictionary<int, int> memo)
+    {
+        if (memo.TryGetValue(i, out int ya))
+            return ya;
+
+        int mejorPrev = MejorPrevioRec(a, i, i - 1, memo); // mejor LIS fin en j < i y a[j] < a[i]
+        int res = 1 + mejorPrev;
+
+        memo[i] = res;
+        return res;
+    }
+
+    // recorre j desde (i-1) hacia 0 de forma recursiva
+    static int MejorPrevioRec(int[] a, int i, int j, Dictionary<int, int> memoLisFin)
+    {
+        if (j < 0) return 0;
+
+        int mejorSinJ = MejorPrevioRec(a, i, j - 1, memoLisFin);
+
+        if (a[j] < a[i])
+        {
+            int lisEnJ = LisFinRecDP(a, j, memoLisFin);
+            return (lisEnJ > mejorSinJ) ? lisEnJ : mejorSinJ;
+        }
+
+        return mejorSinJ;
+    }
+
+    // -------- Entrada recursiva --------
+    static void LeerArregloRec(int[] arr, int i)
+    {
+        if (i >= arr.Length) return;
+        arr[i] = LeerEnteroRec($"Elemento {i + 1}: ");
+        LeerArregloRec(arr, i + 1);
+    }
+
+    static int LeerEnteroRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string t = Console.ReadLine() ?? "";
+        if (TryParseIntRec(t, 0, false, 0, out int v)) return v;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerEnteroRec(mensaje);
+    }
+
+    static bool TryParseIntRec(string t, int i, bool neg, int acc, out int v)
+    {
+        if (i >= t.Length) { v = neg ? -acc : acc; return t.Length > 0; }
+        char c = t[i];
+        if (i == 0 && c == '-') return TryParseIntRec(t, i + 1, true, 0, out v);
+        if (c < '0' || c > '9') { v = 0; return false; }
+        return TryParseIntRec(t, i + 1, neg, acc * 10 + (c - '0'), out v);
+    }
+}
+
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+
+class LIS_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Cantidad N: ");
+        int n = int.Parse(Console.ReadLine() ?? "0");
+
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write($"Elemento {i + 1}: ");
+            a[i] = int.Parse(Console.ReadLine() ?? "0");
+        }
+
+        if (n == 0) { Console.WriteLine("Longitud LIS: 0"); return; }
+
+        // dp[i] = LIS que termina en i
+        int[] dp = new int[n];
+        for (int i = 0; i < n; i++) dp[i] = 1;
+
+        int mejor = 1;
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < i; j++)
+                if (a[j] < a[i] && dp[j] + 1 > dp[i])
+                    dp[i] = dp[j] + 1;
+
+            if (dp[i] > mejor) mejor = dp[i];
+        }
+
+        Console.WriteLine("Longitud LIS: " + mejor);
+    }
+}

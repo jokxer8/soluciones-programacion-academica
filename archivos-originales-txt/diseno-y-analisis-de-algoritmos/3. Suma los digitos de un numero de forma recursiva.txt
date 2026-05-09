@@ -1,0 +1,95 @@
+Suma los digitos de un numero de forma recursiva
+
+A) Recursivo con DP (memoización) + entrada recursiva
+
+using System;
+using System.Collections.Generic;
+
+class Ej5_RecursivoDP
+{
+    static void Main()
+    {
+        long numero = LeerLongRec("Ingresa un número entero (>=0): ");
+        var memo = new Dictionary<long, long>();
+        long suma = SumaDigitosRecDP(numero, memo);
+        Console.WriteLine("Suma de dígitos: " + suma);
+    }
+
+    static long SumaDigitosRecDP(long numero, Dictionary<long, long> memo)
+    {
+        if (numero == 0) return 0;
+
+        if (memo.TryGetValue(numero, out long ya))
+            return ya;
+
+        long res = (numero % 10) + SumaDigitosRecDP(numero / 10, memo);
+        memo[numero] = res;
+        return res;
+    }
+
+    // Entrada recursiva (sin ciclos)
+    static long LeerLongRec(string mensaje)
+    {
+        Console.Write(mensaje);
+        string texto = Console.ReadLine() ?? "";
+        if (TryParseLongRec(texto, 0, 0, out long valor) && valor >= 0) return valor;
+
+        Console.WriteLine("Entrada inválida. Intenta de nuevo.");
+        return LeerLongRec(mensaje);
+    }
+
+    static bool TryParseLongRec(string texto, int i, long acumulado, out long valor)
+    {
+        if (i >= texto.Length)
+        {
+            valor = acumulado;
+            return texto.Length > 0;
+        }
+
+        char c = texto[i];
+        if (c < '0' || c > '9')
+        {
+            valor = 0;
+            return false;
+        }
+
+        long dig = c - '0';
+        return TryParseLongRec(texto, i + 1, acumulado * 10 + dig, out valor);
+    }
+}
+
+
+B) Iterativo con DP (tabulación)
+
+using System;
+using System.Collections.Generic;
+
+class Ej5_IterativoDP
+{
+    static void Main()
+    {
+        Console.Write("Ingresa un número entero (>=0): ");
+        long numero = long.Parse(Console.ReadLine() ?? "0");
+
+        if (numero == 0)
+        {
+            Console.WriteLine("Suma de dígitos: 0");
+            return;
+        }
+
+        List<int> digitos = new List<int>();
+        while (numero > 0)
+        {
+            digitos.Add((int)(numero % 10));
+            numero /= 10;
+        }
+
+        long[] dp = new long[digitos.Count];
+        dp[0] = digitos[0];
+
+        for (int i = 1; i < digitos.Count; i++)
+            dp[i] = dp[i - 1] + digitos[i];
+
+        Console.WriteLine("Suma de dígitos: " + dp[dp.Length - 1]);
+    }
+}

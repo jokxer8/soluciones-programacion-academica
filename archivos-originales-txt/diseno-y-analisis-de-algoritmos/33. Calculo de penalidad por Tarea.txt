@@ -1,0 +1,126 @@
+Tienes N tareas que debes completar. Cada tarea tiene:
+
+duracion: tiempo que toma completarla
+deadline: tiempo máximo en el que debe terminarse
+penalidad: costo si la tarea termina después de su deadline
+
+Solo puedes trabajar en una tarea a la vez y todas comienzan desde el tiempo 0. 
+
+Tu objetivo es ordenar las tareas de manera que la penalidad total sea mínima.
+
+
+
+
+using System;
+using System.Collections.Generic;
+
+class Tarea
+{
+    public int Numero;
+    public int Duracion;
+    public int Deadline;
+    public int Penalidad;
+
+    public Tarea(int numero, int duracion, int deadline, int penalidad)
+    {
+        Numero = numero;
+        Duracion = duracion;
+        Deadline = deadline;
+        Penalidad = penalidad;
+    }
+}
+
+class Program
+{
+    static int menorPenalidad = int.MaxValue;
+    static List<Tarea> mejorOrden = new List<Tarea>();
+
+    static void Main()
+    {
+        List<Tarea> tareas = new List<Tarea>();
+
+        Console.Write("Ingrese la cantidad de tareas: ");
+        int cantidadTareas = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < cantidadTareas; i++)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Tarea " + (i + 1));
+
+            Console.Write("Duracion: ");
+            int duracion = int.Parse(Console.ReadLine());
+
+            Console.Write("Deadline: ");
+            int deadline = int.Parse(Console.ReadLine());
+
+            Console.Write("Penalidad: ");
+            int penalidad = int.Parse(Console.ReadLine());
+
+            tareas.Add(new Tarea(i + 1, duracion, deadline, penalidad));
+        }
+
+        List<Tarea> ordenActual = new List<Tarea>();
+        bool[] usada = new bool[cantidadTareas];
+
+        BuscarMejorOrden(tareas, ordenActual, usada);
+
+        Console.WriteLine();
+        Console.WriteLine("Mejor orden de tareas:");
+
+        for (int i = 0; i < mejorOrden.Count; i++)
+        {
+            Console.WriteLine("Tarea " + mejorOrden[i].Numero);
+        }
+
+        Console.WriteLine();
+        Console.WriteLine("Penalidad total minima: " + menorPenalidad);
+    }
+
+    static void BuscarMejorOrden(List<Tarea> tareas, List<Tarea> ordenActual, bool[] usada)
+    {
+        if (ordenActual.Count == tareas.Count)
+        {
+            int penalidadActual = CalcularPenalidadTotal(ordenActual);
+
+            if (penalidadActual < menorPenalidad)
+            {
+                menorPenalidad = penalidadActual;
+                mejorOrden = new List<Tarea>(ordenActual);
+            }
+
+            return;
+        }
+
+        for (int i = 0; i < tareas.Count; i++)
+        {
+            if (usada[i] == false)
+            {
+                usada[i] = true;
+                ordenActual.Add(tareas[i]);
+
+                BuscarMejorOrden(tareas, ordenActual, usada);
+
+                ordenActual.RemoveAt(ordenActual.Count - 1);
+                usada[i] = false;
+            }
+        }
+    }
+
+    static int CalcularPenalidadTotal(List<Tarea> orden)
+    {
+        int tiempoActual = 0;
+        int penalidadTotal = 0;
+
+        for (int i = 0; i < orden.Count; i++)
+        {
+            tiempoActual += orden[i].Duracion;
+
+            if (tiempoActual > orden[i].Deadline)
+            {
+                penalidadTotal += orden[i].Penalidad;
+            }
+        }
+
+        return penalidadTotal;
+    }
+}

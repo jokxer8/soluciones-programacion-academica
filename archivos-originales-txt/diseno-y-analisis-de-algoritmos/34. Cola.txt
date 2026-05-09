@@ -1,0 +1,35 @@
+Cola
+
+signature QUEUE = sig
+    type 'a queue
+    exception QueueException
+    val emptyQueue : 'a queue
+    val isEmpty : 'a queue -> bool
+    val enQueue : 'a queue * 'a -> 'a queue
+    val deQueue : 'a queue -> 'a queue
+    val front : 'a queue -> 'a
+    val back : 'a queue -> 'a
+end;
+
+structure Queue :> QUEUE = struct
+    type 'a queue = 'a list
+    exception QueueException;   
+    val emptyQueue = [];   
+    fun isEmpty [] = true
+    |   isEmpty (_::_) = false; 
+    fun enQueue (q, v) = q @ [v]; 
+    fun deQueue [] = raise QueueException
+    |   deQueue (v::q) = q; 
+    fun front [] = raise QueueException
+    |   front (v::q) = v;
+    fun back [] = raise QueueException
+    | back [v] = v
+    | back (_::q) = back q
+ end;
+
+val q1 = Queue.emptyQueue;
+val q2 = Queue.enQueue (q1, "a");
+val q3 = Queue.enQueue (q2, "b");
+val q4 = Queue.enQueue (q3, "c");
+
+val ultimo = Queue.back q4;
