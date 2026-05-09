@@ -1,0 +1,47 @@
+Para un entero positivo n definamos una función f:
+
+f(n) = - 1 + 2 - 3 + .. + ( - 1)nn
+
+Tu tarea es calcular f(n) para un número entero dado n.
+
+Entrada
+La línea única contiene el número entero positivo n (1 ≤ n ≤ 1015).
+
+Salida
+Imprimir f(n) en una sola línea.
+
+Ejemplos
+entrada
+4
+salida
+2
+entrada
+5
+salida
+-3
+Nota
+f(4) = - 1 + 2 - 3 + 4 = 2
+
+f(5) = - 1 + 2 - 3 + 4 - 5 = - 3
+
+
+
+
+
+
+using System;
+
+class Program
+{
+    static long CalculateF(long n)
+    {
+        return (n % 2 == 0) ? n / 2 : -((n + 1) / 2);
+    }
+    static void Main()
+    {
+        long n = long.Parse(Console.ReadLine());
+        long result = CalculateF(n);
+        Console.WriteLine(result);
+        Console.ReadLine();
+    }
+}

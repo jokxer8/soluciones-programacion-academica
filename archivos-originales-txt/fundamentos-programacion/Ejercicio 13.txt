@@ -1,0 +1,36 @@
+Petya estudia en una escuela y adora las matemáticas. Su clase ha estado estudiando expresiones aritméticas. En la última clase, el maestro escribió tres enteros positivos a, b, c en la pizarra. La tarea consistía en insertar signos de operaciones '+' y '*', y probablemente corchetes entre los números para que el valor de la expresión resultante sea lo más grande posible. Consideremos un ejemplo: supongamos que el maestro escribió los números 1, 2 y 3 en la pizarra. Aquí hay algunas formas de colocar letreros y corchetes:
+
+1+2*3=7
+1*(2+3)=5
+1*2*3=6
+(1+2)*3=9
+Tenga en cuenta que puede insertar signos de operación solo entre a y b, y entre b y c, es decir, no puede intercambiar enteros. Por ejemplo, en la muestra dada no se puede obtener expresión (1+3)*2.
+
+Es fácil ver que el valor máximo que puede obtener es 9.
+
+Tu tarea es: dada a, b y c imprima el valor máximo que puede obtener.
+
+Entrada
+La entrada contiene tres enteros a, b y c, cada uno en una sola línea (1 ≤ a, b, c ≤ 10).
+
+Salida
+Imprima el valor máximo de la expresión que puede obtener.
+
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = int.Parse(Console.ReadLine());
+        int b = int.Parse(Console.ReadLine());
+        int c = int.Parse(Console.ReadLine());
+
+        int result = Math.Max(a + b + c, Math.Max(a * b * c, Math.Max((a + b) * c, a * (b + c))));
+        Console.WriteLine(result);
+	Console.ReadLine();
+    }
+}

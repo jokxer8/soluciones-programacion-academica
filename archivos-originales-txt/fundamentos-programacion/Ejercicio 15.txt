@@ -1,0 +1,59 @@
+Bob se está preparando para pasar la prueba de CI. La tarea más frecuente en esta prueba es averiguar cuál de los dados n los números difieren de los demás. Bob observó que un número generalmente difiere de los demás en uniformidad. Ayuda a Bob — a verificar sus respuestas, necesita un programa que entre los dados n los números encuentran uno que es diferente en uniformidad.
+
+Entrada
+La primera línea contiene entero n (3 ≤ n ≤ 100) — cantidad de números en la tarea. La segunda línea contiene n números naturales separados por el espacio, que no excedan de 100. Está garantizado, que exactamente uno de estos números difiere de los otros en uniformidad.
+
+Salida
+Índice de salida del número que difiere de los demás en uniformidad. Los números están numerados a partir de 1 en el orden de entrada.
+
+Ejemplos
+entrada
+5
+2 4 7 8 10
+salida
+3
+entrada
+4
+1 2 1 1
+salida
+2
+
+
+
+
+using System;
+
+class Program
+{
+    static int FindOddEvenNumberIndex(int n, string[] numbers)
+    {
+        int oddCount = 0, evenCount = 0;
+        int oddIndex = 0, evenIndex = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            int number = int.Parse(numbers[i]);
+
+            if (number % 2 == 0)
+            {
+                evenCount++;
+                evenIndex = i;
+            }
+            else
+            {
+                oddCount++;
+                oddIndex = i;
+            }
+        }
+
+        return (evenCount == 1) ? evenIndex : oddIndex;
+    }
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        string[] numbers = Console.ReadLine().Split(' ');
+        int result = FindOddEvenNumberIndex(n, numbers);
+        Console.WriteLine(result + 1);
+        Console.ReadLine();
+    }
+}

@@ -1,0 +1,49 @@
+El científico loco Mike se entretiene organizando filas de fichas de dominó. Sin embargo, no necesita fichas de dominó: en su lugar usa imanes rectangulares. Cada imán tiene dos polos, positivo (un "más") y negativo (un "menos"). Si dos imanes se juntan a una distancia cercana, entonces los polos similares se repelerán entre sí y los polos opuestos se atraerán entre sí.
+
+Mike comienza colocando un imán horizontalmente sobre la mesa. Durante cada paso siguiente, Mike agrega un imán más horizontalmente al extremo derecho de la fila. Dependiendo de cómo Mike ponga el imán sobre la mesa, es atraído por el anterior (formando un grupo de imanes múltiples unidos entre sí) o repelido por él (entonces Mike coloca este imán a cierta distancia a la derecha del anterior uno). Suponemos que un único imán no vinculado a otros forma un grupo propio.
+
+-+-+-+ +- -+-+
+Mike arregló varios imanes seguidos. Determine el número de grupos que formaron los imanes.
+
+Entrada
+La primera línea de la entrada contiene un número entero n (1 ≤ n ≤ 100000) — el número de imanes. Entonces n las líneas siguen. El yo- línea (1 ≤ yo ≤ n) contiene cualquiera de los caracteres "01", si Mike puso el yoimán en la posición "más-menos", o caracteres "10", si Mike puso el imán en la posición "menos-plus.
+
+Salida
+En la línea única de la salida, imprima el número de grupos de imanes.
+
+
+
+
+using System;
+
+class Program
+{
+    static int CountGroups(string[] magnets)
+    {
+        int groups = 1;
+
+        for (int i = 1; i < magnets.Length; i++)
+        {
+            if (magnets[i] != magnets[i - 1])
+            {
+                groups++;
+            }
+        }
+
+        return groups;
+    }
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+
+        string[] magnets = new string[n];
+        for (int i = 0; i < n; i++)
+        {
+            magnets[i] = Console.ReadLine();
+        }
+
+        int groups = CountGroups(magnets);
+        Console.WriteLine(groups);
+        Console.ReadLine();
+    }
+}

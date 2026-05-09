@@ -1,0 +1,45 @@
+6- Implemente una función  para los arreglos similar al RemoveAt de lista (investigue como funciona RemoveAt).
+La función debe llamarse RemoveArrAt().
+
+
+using System;
+
+class Program
+{
+    static int[] RemoveArrAt(int[] array, int index)
+    {
+        if (index < 0 || index >= array.Length)
+        {
+            Console.WriteLine("Índice no válido. No se realizaron cambios en el arreglo.");
+            return array;
+        }
+        int[] newArray = new int[array.Length - 1];
+        for (int i = 0; i < index; i++)
+        {
+            newArray[i] = array[i];
+        }
+        for (int i = index + 1; i < array.Length; i++)
+        {
+            newArray[i - 1] = array[i];
+        }
+        return newArray;
+    }
+    static void MostrarArray(int[] array)
+    {
+        foreach (var elemento in array)
+        {
+            Console.Write(elemento + " ");
+        }
+        Console.WriteLine();
+    }
+    static void Main()
+    {
+        int[] numeros = { 1, 2, 3, 4, 5 };
+        Console.WriteLine("Arreglo original:");
+        MostrarArray(numeros);
+        numeros = RemoveArrAt(numeros, 2);
+        Console.WriteLine("Arreglo después de RemoveArrAt:");
+        MostrarArray(numeros);
+        Console.ReadLine();
+    }
+}

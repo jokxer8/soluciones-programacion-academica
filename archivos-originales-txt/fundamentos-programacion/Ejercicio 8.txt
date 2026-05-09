@@ -1,0 +1,58 @@
+8. "Contestante que gana un puntaje igual o mayor que el k el puntaje del finalista del lugar avanzará a la siguiente ronda, siempre que el concursante obtenga un puntaje positivo..." — un extracto de las reglas del concurso.
+
+Un total de n los participantes participaron en el concurso (n ≥ k), y ya conoces sus puntajes. Calcule cuántos participantes avanzarán a la siguiente ronda.
+
+Entrada
+La primera línea de la entrada contiene dos enteros n y k (1 ≤ k ≤ n ≤ 50) separados por un solo espacio.
+
+La segunda línea contiene n enteros separados por espacio a1, a2, ..., an (0 ≤ ayo ≤ 100), donde ayo es la puntuación obtenida por el participante que obtuvo el yo- el lugar. La secuencia dada no es creciente (es decir, para todos yo de 1 a n - 1 se cumple la siguiente condición: ayo ≥ ayo + 1).
+
+Salida
+Salga el número de participantes que avanzan a la siguiente ronda.
+
+Ejemplos
+entrada
+8 5
+10 9 8 7 7 7 5 5
+salida
+6
+entrada
+4 2
+0 0 0 0
+salida
+0
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] firstLine = Console.ReadLine().Split(' ');
+        int n = int.Parse(firstLine[0]);
+        int k = int.Parse(firstLine[1]);
+        string[] scores = Console.ReadLine().Split(' ');
+        int[] participantScores = new int[n];
+        for (int i = 0; i < n; i++)
+        {
+            participantScores[i] = int.Parse(scores[i]);
+        }
+        int advancingParticipants = 0;
+        int kthPlaceScore = participantScores[k - 1];
+        for (int i = 0; i < n; i++)
+        {
+            if (participantScores[i] > 0 && participantScores[i] >= kthPlaceScore)
+            {
+                advancingParticipants++;
+            }
+            else
+            {
+                break;
+            }
+        }
+        Console.WriteLine(advancingParticipants);
+   Console.ReadLine();
+    }
+}
+

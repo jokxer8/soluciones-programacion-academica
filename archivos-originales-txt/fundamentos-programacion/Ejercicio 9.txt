@@ -1,0 +1,37 @@
+Un día, tres mejores amigos Petya, Vasya y Tonya decidieron formar un equipo y participar en concursos de programación. A los participantes generalmente se les ofrecen varios problemas durante los concursos de programación. Mucho antes del comienzo, los amigos decidieron que implementarían un problema si al menos dos de ellos estaban seguros de la solución. De lo contrario, los amigos no escribirán la solución del problema.
+
+Este concurso ofrece n problemas a los participantes. Para cada problema que conocemos, qué amigo está seguro acerca de la solución. Ayude a los amigos a encontrar la cantidad de problemas para los que escribirán una solución.
+
+Entrada
+La primera línea de entrada contiene un único número entero n (1 ≤ n ≤ 1000) — el número de problemas en el concurso. Entonces n las líneas contienen tres enteros cada una, cada entero es cualquiera 0 o 1. Si el primer número en la línea es igual 1, entonces Petya está segura de la solución del problema, de lo contrario no está segura. El segundo número muestra la opinión de Vasya sobre la solución, el tercer número muestra la opinión de Tonya. Los números en las líneas están separados por espacios.
+
+Salida
+Imprima un solo número entero — la cantidad de problemas que los amigos implementarán en el concurso.
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        int implementedProblems = 0;
+        for (int i = 0; i < n; i++)
+        {
+            string[] views = Console.ReadLine().Split(' ');
+            int sureCount = 0;
+            for (int j = 0; j < 3; j++)
+            {
+                sureCount += int.Parse(views[j]);
+            }
+            if (sureCount >= 2)
+            {
+                implementedProblems++;
+            }
+        }
+        Console.WriteLine(implementedProblems);
+        Console.ReadLine();
+    }
+}

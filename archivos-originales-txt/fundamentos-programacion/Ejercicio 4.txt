@@ -1,0 +1,39 @@
+4- Investigue el tipo de dato Char y ver como se utiliza para resolver el siguiente ejercicio.
+Dada una cadena de caracteres (string) decir si es una palabra palíndroma o no. 
+
+Un palíndromo es una palabra, frase, número o cualquier otra secuencia de caracteres que se lee igual hacia adelante que hacia atrás. Para resolver este ejercicio en C#, podemos utilizar el tipo de dato char y comparar los caracteres desde el principio y el final de la cadena.
+
+
+using System;
+
+class Program
+{
+    static bool Palindromo(string palabra)
+    {
+        palabra = palabra.ToLower();
+        int longitud = palabra.Length;
+        for (int i = 0; i < longitud / 2; i++)
+        {
+            if (palabra[i] != palabra[longitud - i - 1])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    static void Main()
+    {
+        Console.Write("Ingrese una palabra: ");
+        string palabra = Console.ReadLine();
+        if (Palindromo(palabra))
+        {
+            Console.WriteLine($"{palabra} es un palindromo.");
+        }
+        else
+        {
+            Console.WriteLine($"{palabra} no es un palindromo.");
+        }
+
+        Console.ReadLine();
+    }
+}

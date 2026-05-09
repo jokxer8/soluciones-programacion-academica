@@ -1,0 +1,16 @@
+2- Mostrar los números pares entre el 0 y el 100.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Numeros pares entre 0 y 100:");
+        for (int i = 0; i <= 100; i += 2)
+        {
+            Console.Write(i + " ");
+        }
+        Console.ReadLine(); 
+    }
+}

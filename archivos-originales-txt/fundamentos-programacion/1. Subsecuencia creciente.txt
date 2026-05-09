@@ -1,0 +1,62 @@
+1- Dado un secuencia de números, encontrar la subsecuencia creciente más larga. Esta subsecuencia no necesariamente tiene que ser de valores continuos.
+
+Ejemplo: [0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15] resultado: [0, 2, 6, 9, 11, 15]
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static List<int> EncontrarSubsecuenciaCreciente(int[] secuencia)
+    {
+        int[] longitudSubsecuencia = new int[secuencia.Length];
+        int[] anteriorIndice = new int[secuencia.Length];
+
+        int maxLength = 0;
+        int lastIndex = 0;
+
+        for (int i = 0; i < secuencia.Length; i++)
+        {
+            longitudSubsecuencia[i] = 1;
+            anteriorIndice[i] = -1;
+
+            for (int j = 0; j < i; j++)
+            {
+                if (secuencia[i] > secuencia[j] && longitudSubsecuencia[i] < longitudSubsecuencia[j] + 1)
+                {
+                    longitudSubsecuencia[i] = longitudSubsecuencia[j] + 1;
+                    anteriorIndice[i] = j;
+                }
+            }
+
+            if (longitudSubsecuencia[i] > maxLength)
+            {
+                maxLength = longitudSubsecuencia[i];
+                lastIndex = i;
+            }
+        }
+
+        List<int> subsecuenciaCreciente = new List<int>();
+        while (lastIndex != -1)
+        {
+            subsecuenciaCreciente.Add(secuencia[lastIndex]);
+            lastIndex = anteriorIndice[lastIndex];
+        }
+
+        subsecuenciaCreciente.Reverse();
+        return subsecuenciaCreciente;
+    }
+    static void Main()
+    {
+        int[] secuencia = { 0, 8, 4, 12, 2, 10, 6, 14, 1, 9, 5, 13, 3, 11, 7, 15 };
+        var subsecuenciaCreciente = EncontrarSubsecuenciaCreciente(secuencia);
+
+        Console.WriteLine("Secuencia original: [" + string.Join(", ", secuencia) + "]");
+        Console.WriteLine("Subsecuencia creciente más larga: [" + string.Join(", ", subsecuenciaCreciente) + "]");
+        Console.ReadLine();
+    }
+}

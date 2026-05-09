@@ -1,0 +1,33 @@
+Parece que el año de 2013 llegó ayer. ¿Conoces un hecho curioso? El año de 2013 es el primer año después del viejo 1987 con sólo dígitos distintos.
+
+Ahora se le sugiere que resuelva el siguiente problema: dado un número de año, encuentre el número de año mínimo que sea estrictamente mayor que el dado y solo tenga dígitos distintos.
+
+Entrada
+La línea única contiene entero y (1000 ≤ y ≤ 9000) — el número de año.
+
+Salida
+Imprima un solo número entero — el número de año mínimo que es estrictamente mayor que y y todos sus dígitos son distintos. Se garantiza que la respuesta existe.
+
+
+
+using System;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        int y = int.Parse(Console.ReadLine());
+        while (true)
+        {
+            y++;
+            string yearString = y.ToString();
+            if (yearString.Distinct().Count() == yearString.Length)
+            {
+                Console.WriteLine(y);
+                break;
+            }
+        }
+        Console.ReadLine();
+    }
+}

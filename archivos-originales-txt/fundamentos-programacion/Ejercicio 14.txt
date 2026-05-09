@@ -1,0 +1,70 @@
+Manao trabaja en una TV deportiva. Ha pasado mucho tiempo viendo los partidos de fútbol de algún país. Después de un tiempo comenzó a notar diferentes patrones. Por ejemplo, cada equipo tiene dos conjuntos de uniformes: uniforme de hogar y uniforme de invitado. Cuando un equipo juega un partido en casa, los jugadores se ponen el uniforme de casa. Cuando un equipo juega como invitado en el estadio de otra persona, los jugadores se ponen el uniforme de invitado. La única excepción a esa regla es: cuando el color uniforme de la casa del equipo anfitrión coincide con el uniforme de los huéspedes, el equipo anfitrión se pone su uniforme de invitado también. Para cada equipo, el color del uniforme de hogar y huésped es diferente.
+
+Hay n equipos que participan en el campeonato nacional. El campeonato consiste en n·(n - 1) juegos: cada equipo se invita a su estadio. En este punto, Manao se preguntó: ¿cuántas veces durante el campeonato un equipo anfitrión se va a poner el uniforme de invitado? Tenga en cuenta que el orden de los juegos no afecta a este número.
+
+Conoces los colores de la casa y el uniforme de invitado para cada equipo. Por simplicidad, los colores están numerados por enteros de tal manera que no hay dos colores distintos que tengan el mismo número. Ayuda a Manao a encontrar la respuesta a su pregunta.
+
+Entrada
+La primera línea contiene un número entero n (2 ≤ n ≤ 30). Cada uno de los siguientes n las líneas contienen un par de números enteros separados por espacio distintos hyo, ayo (1 ≤ hyo, ayo ≤ 100) — los colores de la yolos uniformes domésticos e invitados del equipo, respectivamente.
+
+Salida
+En una sola línea, imprima el número de juegos en los que el equipo anfitrión jugará con el uniforme de invitado.
+
+Ejemplos
+entrada
+3
+1 2
+2 4
+3 4
+salida
+1
+entrada
+4
+100 42
+42 100
+5 42
+100 5
+salida
+5
+entrada
+2
+1 2
+1 2
+salida
+0
+
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        int[,] uniforms = new int[n, 2];
+
+        for (int i = 0; i < n; i++)
+        {
+            string[] colors = Console.ReadLine().Split();
+            uniforms[i, 0] = int.Parse(colors[0]);
+            uniforms[i, 1] = int.Parse(colors[1]);
+        }
+
+        int count = 0;
+
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if (i != j && uniforms[i, 0] == uniforms[j, 1])
+                {
+                    count++;
+                }
+            }
+        }
+
+        Console.WriteLine(count);
+    }
+}

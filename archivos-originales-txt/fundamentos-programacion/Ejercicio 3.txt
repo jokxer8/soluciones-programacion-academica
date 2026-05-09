@@ -1,0 +1,28 @@
+3- Mostrar los múltiplos de 3 y de 2 entre dos números dados.
+a. Mostrar en un mensaje los cuadrados y los cubos de los números encontrados.
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingrese el primer numero: ");
+        int primerNumero = int.Parse(Console.ReadLine());
+        Console.Write("Ingrese el segundo numero: ");
+        int segundoNumero = int.Parse(Console.ReadLine());
+        Console.WriteLine($"Múltiplos de 2 y 3 entre {primerNumero} y {segundoNumero}:");
+        for (int i = primerNumero; i <= segundoNumero; i++)
+        {
+            if (i % 2 == 0 && i % 3 == 0)
+            {
+                Console.WriteLine($"Numero: {i}");
+                Console.WriteLine($"Cuadrado: {Math.Pow(i, 2)}");
+                Console.WriteLine($"Cubo: {Math.Pow(i, 3)}");
+                Console.WriteLine(); 
+            }
+        }
+        Console.ReadLine(); 
+    }
+}

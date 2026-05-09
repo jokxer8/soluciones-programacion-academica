@@ -1,0 +1,51 @@
+A la pequeña Petya le gustan mucho los regalos. Recientemente ha recibido una nueva computadora portátil como regalo de Año Nuevo de su madre. Inmediatamente decidió dárselo a otra persona como lo que puede ser más agradable que darle regalos a alguien. Y en esta ocasión organizó una fiesta de Año Nuevo en su casa e invitó n sus amigos allí.
+
+Si hay algo que le gusta más a Petya que recibir regalos, es ver a otros dar regalos a otra persona. Por lo tanto, ocultó con seguridad la computadora portátil hasta el próximo Año Nuevo y decidió ver a sus amigos intercambiando regalos mientras no participa en el proceso. Él numeró a todos sus amigos con enteros de 1 a n. Petya recordó que un número de amigo yo le dio un regalo a un número de amigo pyo. También recordó que cada uno de sus amigos recibió exactamente un regalo.
+
+Ahora Petya quiere saber por cada amigo yo el número de un amigo que le ha dado un regalo.
+
+Entrada
+La primera línea contiene un número entero n (1 ≤ n ≤ 100) — la cantidad de amigos Petya invitados a la fiesta. La segunda línea contiene n enteros separados por espacio: el yoel número es pyo — el número de un amigo que le dio un regalo al número de amigo yo. Se garantiza que cada amigo recibió exactamente un regalo. Es posible que algunos amigos no compartan las ideas de Petya de dar regalos a otra persona. Esos amigos se dieron los regalos a sí mismos.
+
+Salida
+Imprimir n enteros separados por espacio: el yoel número debe ser igual al número del amigo que dio un regalo al número de amigo yo.
+
+Ejemplos
+entradaCopiar
+4
+2 3 4 1
+salidaCopiar
+4 1 2 3
+entradaCopiar
+3
+1 3 2
+salidaCopiar
+1 3 2
+entradaCopiar
+2
+1 2
+salidaCopiar
+1 2
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+        int[] gifts = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+
+        int[] givers = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            givers[gifts[i] - 1] = i + 1;
+        }
+
+        Console.WriteLine(string.Join(" ", givers));
+        Console.ReadLine();
+    }
+}

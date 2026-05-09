@@ -1,0 +1,33 @@
+7- Implemente una función para arreglos similar a FindAll de lista. La función debe llamarse FindAllArr.
+
+
+
+using System;
+using System.Linq;
+
+class Program
+{
+    static int[] FindAllArr(int[] array, Func<int, bool> predicate)
+    {
+        return array.Where(predicate).ToArray();
+    }
+    static void MostrarArray(int[] array)
+    {
+        foreach (var elemento in array)
+        {
+            Console.Write(elemento + " ");
+        }
+        Console.WriteLine();
+    }
+    static void Main()
+    {
+        int[] numeros = { 1, 2, 3, 4, 5, 2, 6, 7, 2 };
+        Console.WriteLine("Arreglo original:");
+        MostrarArray(numeros);
+        int[] resultados = FindAllArr(numeros, x => x == 2);
+        Console.WriteLine("Elementos encontrados con valor 2:");
+        MostrarArray(resultados);
+        Console.ReadLine();
+    }
+}
+

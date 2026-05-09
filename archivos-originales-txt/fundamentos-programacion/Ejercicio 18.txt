@@ -1,0 +1,68 @@
+Petya ama mucho el fútbol. Un día, mientras veía un partido de fútbol, estaba escribiendo las posiciones actuales de los jugadores en un pedazo de papel. Para simplificar la situación, lo describió como una cadena que consiste en ceros y unos. Un cero corresponde a jugadores de un equipo; uno corresponde a jugadores de otro equipo. Si hay al menos 7 los jugadores de algún equipo de pie uno tras otro, entonces la situación se considera peligrosa. Por ejemplo, la situación 0010011011111101 es peligroso y 11110111011101 no lo es. Se le da la situación actual. Determine si es peligroso o no.
+
+Entrada
+La primera línea de entrada contiene una cadena no vacía que consiste en los caracteres "0" y "1", que representa a los jugadores. La longitud de la cuerda no excede 100 personajes. Hay al menos un jugador de cada equipo presente en el campo.
+
+Salida
+Imprima "SÍ" si la situación es peligrosa. De lo contrario, imprima "NO".
+
+Ejemplos
+entrada
+001001
+salida
+NO
+entrada
+1000000001
+salida
+SÍ
+
+
+
+
+
+
+using System;
+
+class Program
+{
+    static bool IsDangerous(string situation)
+    {
+        const int threshold = 7;
+        int consecutiveOnes = 0;
+        int consecutiveZeroes = 0;
+
+        foreach (char c in situation)
+        {
+            if (c == '0')
+            {
+                consecutiveZeroes++;
+                consecutiveOnes = 0;
+            }
+            else
+            {
+                consecutiveOnes++;
+                consecutiveZeroes = 0;
+            }
+
+            if (consecutiveZeroes >= threshold || consecutiveOnes >= threshold)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    static void Main(string[] args)
+    {
+        string situation = Console.ReadLine();
+        if (IsDangerous(situation))
+        {
+            Console.WriteLine("YES");
+        }
+        else
+        {
+            Console.WriteLine("NO");
+        }
+        Console.ReadLine();
+    }
+}

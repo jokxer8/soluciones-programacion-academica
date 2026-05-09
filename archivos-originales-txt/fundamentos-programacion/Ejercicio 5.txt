@@ -1,0 +1,51 @@
+5- Cree una función que dado un string con la hora en formato de 24 horas me la convierta a la hora con formato de 12 horas Ej: 14:23---------> 2:23 pm 
+
+
+using System;
+
+class Program
+{
+    static string Convertir12(string hora24)
+    {
+        if (HoraValida(hora24))
+        {
+            int horas = int.Parse(hora24.Split(':')[0]);
+            int minutos = int.Parse(hora24.Split(':')[1]);
+            string amPm = (horas < 12) ? "AM" : "PM";
+            if (horas > 12)
+            {
+                horas -= 12;
+            }
+            else if (horas == 0)
+            {
+                horas = 12;
+            }
+            return $"{horas:D2}:{minutos:D2} {amPm}";
+        }
+        else
+        {
+            return "Formato de hora incorrecto";
+        }
+    }
+    static bool HoraValida(string hora24)
+    {
+        if (hora24.Length == 5 &&
+            int.TryParse(hora24.Substring(0, 2), out int horas) &&
+            int.TryParse(hora24.Substring(3, 2), out int minutos) &&
+            horas >= 0 && horas <= 23 &&
+            minutos >= 0 && minutos <= 59)
+        {
+            return true;
+        }
+        return false;
+    }
+    static void Main()
+    {
+        Console.Write("Introduce la hora en formato de 24 horas (hh:mm): ");
+        string hora24 = Console.ReadLine();
+        string hora12 = Convertir12(hora24);
+        Console.WriteLine($"Hora en formato de 24 horas: {hora24}");
+        Console.WriteLine($"Hora en formato de 12 horas: {hora12}");
+	Console.ReadLine();
+    }
+}

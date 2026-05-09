@@ -1,0 +1,44 @@
+A veces algunas palabras como "localización" o "internacionalización" son tan largos que escribirlos muchas veces en un texto es bastante tedioso.
+
+Consideremos una palabra demasiado largo, si su longitud es estrictamente más que 10 personajes. Las palabras demasiado largas deben reemplazarse con una abreviatura especial.
+
+Esta abreviatura se hace así: escribimos la primera y la última letra de una palabra y entre ellas escribimos el número de letras entre la primera y la última. Ese número está en el sistema decimal y no contiene ceros principales.
+
+Así, "localización" se deletreará como "l10n", y "internacionalización» se deletreará como "i18n".
+
+Se sugiere automatizar el proceso de cambiar las palabras con abreviaturas. En ese sentido, las palabras demasiado largas deben reemplazarse por la abreviatura y las palabras que no son demasiado largas no deben sufrir ningún cambio.
+
+Entrada
+La primera línea contiene un número entero n (1 ≤ n ≤ 100). Cada uno de los siguientes n las líneas contienen una palabra. Todas las palabras consisten en letras latinas minúsculas y poseen las longitudes de 1 a 100 personajes.
+
+Salida
+Imprimir n líneas. El yola línea -th debe contener el resultado de la sustitución de la yopalabra - la palabra de los datos de entrada.
+
+
+
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int n = int.Parse(Console.ReadLine());
+
+        for (int i = 0; i < n; i++)
+        {
+            string word = Console.ReadLine();
+
+            if (word.Length > 10)
+            {
+                string abbreviation = word[0] + (word.Length - 2).ToString() + word[word.Length - 1];
+                Console.WriteLine(abbreviation);
+            }
+            else
+            {
+                Console.WriteLine(word);
+            }
+        }
+        Console.ReadLine();
+    }
+}
