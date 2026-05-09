@@ -1,0 +1,289 @@
+Set de ejercicios 5
+
+Flujo de datos
+
+1) Escribir un programa que lea un archivo de texto, elimine los espacios adicionales entre las palabras y escriba el resultado en un archivo. Ingresar el nombre de archivo para leer y el nombre del archivo para escribir como argumentos del programa
+
+Codigo
+
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Ingrese la ruta completa del archivo de entrada:");
+        string archivoEntrada = Console.ReadLine().Trim(); 
+
+        Console.WriteLine("Ingrese la ruta completa del archivo de salida:");
+        string archivoSalida = Console.ReadLine().Trim(); 
+
+        try
+        {
+            string contenido = File.ReadAllText(archivoEntrada);
+
+            contenido = EliminarEspaciosAdicionales(contenido);
+
+            File.WriteAllText(archivoSalida, contenido);
+
+            Console.WriteLine("Proceso completado correctamente.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+
+        Console.ReadLine();
+    }
+
+    static string EliminarEspaciosAdicionales(string texto)
+    {
+        string[] palabras = texto.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+        return string.Join(" ", palabras);
+    }
+}
+
+
+2) Diseñar una App que almacene avisos (mensajes de texto) en un archivo secuencial llamado Avisos.txt y cuyo programa principal tenga un menú con las siguientes opciones:
+
+Menú de opciones
+1.- Grabar un aviso
+2.- Reporte de avisos almacenados
+3.- Serializacion y deserializacion
+0.- Salir
+
+Cada opción debe invocar un método para realizar la actividad solicitada.
+a. Método GrabarAviso() debe solicitar al usuario que capture un aviso y agregar el aviso al final del archivo de texto.
+b. Método ReporteAvisos() debe leer todos los avisos almacenados en el archivo de texto para desplegarlos en pantalla.
+c. Metodo Serializaciónydeserialización() debe usar el objeto de una clase que se pueda serializar y deserializar desde un archivo.
+
+NOTA: Todas las operaciones con el archivo deben estar controladas a través de las excepciones correspondientes.
+
+Codigo
+
+using System;
+using System.IO;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+class Program
+{
+    static string archivoAvisos;
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Ingrese la ubicación completa del archivo de avisos (ej. C:\\Avisos.txt):");
+        archivoAvisos = Console.ReadLine().Trim();
+
+        int opcion;
+
+        do
+        {
+            MostrarMenu();
+            opcion = LeerEntero("Ingrese una opción: ");
+
+            switch (opcion)
+            {
+                case 1:
+                    GrabarAviso();
+                    break;
+                case 2:
+                    ReporteAvisos();
+                    break;
+                case 3:
+                    SerializacionYDeserializacion();
+                    break;
+                case 0:
+                    Console.WriteLine("Saliendo del programa...");
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida. Intente nuevamente.");
+                    break;
+            }
+
+        } while (opcion != 0);
+    }
+
+    static void MostrarMenu()
+    {
+        Console.WriteLine("\nMenú de opciones");
+        Console.WriteLine("1.- Grabar un aviso");
+        Console.WriteLine("2.- Reporte de avisos almacenados");
+        Console.WriteLine("3.- Serialización y deserialización");
+        Console.WriteLine("0.- Salir");
+    }
+
+    static void GrabarAviso()
+    {
+        try
+        {
+            Console.WriteLine("\nIngrese el aviso a grabar:");
+            string aviso = Console.ReadLine();
+
+            using (StreamWriter writer = new StreamWriter(archivoAvisos, true))
+            {
+                writer.WriteLine(aviso);
+            }
+
+            Console.WriteLine("Aviso grabado correctamente.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al grabar el aviso: {ex.Message}");
+        }
+    }
+
+    static void ReporteAvisos()
+    {
+        try
+        {
+            Console.WriteLine("\nReporte de avisos almacenados:");
+
+            using (StreamReader reader = new StreamReader(archivoAvisos))
+            {
+                string linea;
+                while ((linea = reader.ReadLine()) != null)
+                {
+                    Console.WriteLine(linea);
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al leer los avisos: {ex.Message}");
+        }
+    }
+
+    static void SerializacionYDeserializacion()
+    {
+        try
+        {
+            List<string> listaAvisos = new List<string>();
+            listaAvisos.Add("Aviso 1");
+            listaAvisos.Add("Aviso 2");
+            listaAvisos.Add("Aviso 3");
+
+            IFormatter formatter = new BinaryFormatter();
+            using (Stream stream = new FileStream("data.bin", FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                formatter.Serialize(stream, listaAvisos);
+            }
+            Console.WriteLine("Datos serializados correctamente.");
+
+            List<string> listaDeserializada;
+            using (Stream stream = new FileStream("data.bin", FileMode.Open, FileAccess.Read, FileShare.Read))
+            {
+                listaDeserializada = (List<string>)formatter.Deserialize(stream);
+            }
+
+            Console.WriteLine("Datos deserializados:");
+            foreach (string aviso in listaDeserializada)
+            {
+                Console.WriteLine(aviso);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error en la serialización/deserialización: {ex.Message}");
+        }
+    }
+
+    static int LeerEntero(string mensaje)
+    {
+        int numero;
+        while (true)
+        {
+            Console.Write(mensaje);
+            if (int.TryParse(Console.ReadLine(), out numero))
+            {
+                return numero;
+            }
+            else
+            {
+                Console.WriteLine("Debe ingresar un número entero.");
+            }
+        }
+    }
+}
+
+
+3) Se dispone de un archivo telefono.txt, con nombres y números de teléfonos ordenados en orden alfabético. Escribir un programa que añada una nueva persona. El programa debe leer un nombre y número de teléfono de la nueva persona desde el terminal y, a continuación, insertar esta información en el lugar correcto del archivo de modo que permanezca ordenado. Sugerencia: utilizar un archivo temporal.
+
+Codigo
+
+using System;
+using System.IO;
+
+class Program
+{
+    static string archivoTelefonos;
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Ingrese la ubicación completa del archivo telefono.txt:");
+        archivoTelefonos = Console.ReadLine().Trim();
+
+        try
+        {
+            do
+            {
+                Console.WriteLine("Ingrese el nombre de la persona:");
+                string nombre = Console.ReadLine();
+
+                Console.WriteLine("Ingrese el número de teléfono:");
+                string telefono = Console.ReadLine();
+
+                string archivoTemporal = Path.GetTempFileName();
+
+                using (StreamReader reader = new StreamReader(archivoTelefonos))
+                using (StreamWriter writer = new StreamWriter(archivoTemporal))
+                {
+                    bool nombreInsertado = false;
+                    string linea;
+
+                    while ((linea = reader.ReadLine()) != null)
+                    {
+                        if (!nombreInsertado && string.Compare(nombre, ExtraerNombre(linea), true) < 0)
+                        {
+                            writer.WriteLine(FormatearLinea(nombre, telefono));
+                            nombreInsertado = true;
+                        }
+
+                        writer.WriteLine(linea);
+                    }
+
+                    if (!nombreInsertado)
+                    {
+                        writer.WriteLine(FormatearLinea(nombre, telefono));
+                    }
+                }
+
+                File.Delete(archivoTelefonos);
+                File.Move(archivoTemporal, archivoTelefonos);
+
+                Console.WriteLine("Persona añadida correctamente.");
+
+                Console.WriteLine("¿Desea agregar otro nombre y teléfono? (S/N)");
+            } while (Console.ReadLine().Trim().ToUpper() == "S");
+
+            Console.WriteLine("Programa finalizado.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    static string ExtraerNombre(string linea)
+    {
+        int separadorIndex = linea.IndexOf(':');
+        return linea.Substring(0, separadorIndex).Trim();
+    }
+
+    static string FormatearLinea(string nombre, string telefono)
+    {
+        return $"{nombre}: {telefono}";
+    }
+}

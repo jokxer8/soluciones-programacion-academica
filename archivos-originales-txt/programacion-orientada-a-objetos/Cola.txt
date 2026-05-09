@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+
+public class Cola
+{
+    private Queue<int> queue;
+
+    // Constructor
+    public Cola()
+    {
+        queue = new Queue<int>();
+        Console.WriteLine("Cola creada.");
+    }
+
+    // Destructor
+    ~Cola()
+    {
+        Console.WriteLine("Cola destruida.");
+    }
+
+    // Método para agregar un elemento a la cola
+    public void AgregarElemento(int elemento)
+    {
+        queue.Enqueue(elemento);
+        Console.WriteLine($"Elemento {elemento} agregado a la cola.");
+    }
+
+    // Método para eliminar un elemento de la cola
+    public void EliminarElemento()
+    {
+        if (queue.Count > 0)
+        {
+            int elemento = queue.Dequeue();
+            Console.WriteLine($"Elemento {elemento} eliminado de la cola.");
+        }
+        else
+        {
+            Console.WriteLine("La cola está vacía. No se puede eliminar ningún elemento.");
+        }
+    }
+
+    // Método para verificar si un elemento existe en la cola
+    public bool ExisteElemento(int elemento)
+    {
+        bool existe = queue.Contains(elemento);
+        Console.WriteLine(existe ? $"El elemento {elemento} existe en la cola." : $"El elemento {elemento} no existe en la cola.");
+        return existe;
+    }
+
+    // Método para mostrar todos los elementos de la cola
+    public void MostrarElementos()
+    {
+        if (queue.Count > 0)
+        {
+            Console.WriteLine("Elementos en la cola:");
+            foreach (int elemento in queue)
+            {
+                Console.WriteLine(elemento);
+            }
+        }
+        else
+        {
+            Console.WriteLine("La cola está vacía.");
+        }
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Cola miCola = new Cola();
+
+        miCola.AgregarElemento(10);
+        miCola.AgregarElemento(20);
+        miCola.AgregarElemento(30);
+
+        miCola.MostrarElementos();
+
+        miCola.ExisteElemento(20);
+        miCola.ExisteElemento(40);
+
+        miCola.EliminarElemento();
+        miCola.MostrarElementos();
+
+        // Forzar la recolección de basura para ver el destructor en acción (opcional)
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
+}

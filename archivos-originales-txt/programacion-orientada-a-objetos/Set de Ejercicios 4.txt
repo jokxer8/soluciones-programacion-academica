@@ -1,0 +1,381 @@
+Set de ejercicios 4
+
+Polimorfismo
+
+1) Una clase abstracta llamada Animal tiene un método constructor, una propiedad llamada Peso y un método denominado Dice.
+La propiedad Peso representa el peso del animal, un valor int.
+El método Dice devuelve una cadena, el ruido que hace el animal.
+
+La clase Animal tiene las subclases Vaca, Serpiente y Cerdo. Estas subclases realizan distintas implementaciones de Dice, las cuales devuelven los valores "mu", "sss" y "oinc", respectivamente.
+
+Escriba la clase Animal y las tres subclases. Cree los objetos mascotaVaca, mascotaSerpiente y mascotaCerdo a partir de las clases correspondientes, y utilice sus propiedades y métodos. Despliegue la información en un cuadro de texto
+
+Su solución debe tener:
+1. Clases (al menos dos)
+2. Método virtual
+3. Herencia multinivel
+
+Codigo.
+
+using System;
+
+public abstract class Animal
+{
+    public int Peso { get; set; }
+
+    public Animal(int peso)
+    {
+        Peso = peso;
+    }
+
+    public virtual string Dice()
+    {
+        return "Sonido del animal";
+    }
+}
+
+public class Vaca : Animal
+{
+    public Vaca(int peso) : base(peso) { }
+
+    public override string Dice()
+    {
+        return "mu";
+    }
+}
+
+public class Serpiente : Animal
+{
+    public Serpiente(int peso) : base(peso) { }
+
+    public override string Dice()
+    {
+        return "sss";
+    }
+}
+
+public class Cerdo : Animal
+{
+    public Cerdo(int peso) : base(peso) { }
+
+    public override string Dice()
+    {
+        return "oinc";
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        Vaca mascotaVaca = new Vaca(500);
+        Serpiente mascotaSerpiente = new Serpiente(5);
+        Cerdo mascotaCerdo = new Cerdo(120);
+
+        string infoVaca = $"Vaca: Peso = {mascotaVaca.Peso} kg, Dice = {mascotaVaca.Dice()}";
+        string infoSerpiente = $"Serpiente: Peso = {mascotaSerpiente.Peso} kg, Dice = {mascotaSerpiente.Dice()}";
+        string infoCerdo = $"Cerdo: Peso = {mascotaCerdo.Peso} kg, Dice = {mascotaCerdo.Dice()}";
+
+        Console.WriteLine(infoVaca);
+        Console.WriteLine(infoSerpiente);
+        Console.WriteLine(infoCerdo);
+        Console.ReadKey();
+    }
+}
+
+
+
+2) Un banco requiere controlar las cuentas de sus clientes y para ello las clasifica en dos:
+Cheques y ahorros. Todas las cuentas del banco tienen los siguientes datos:
+	• Número de cuenta (entero).
+	• Nombre del cliente (cadena).
+	• Saldo (numérico real).
+
+Además se realizan las siguientes operaciones con ellas:
+	• Consultar datos: A través de sus propiedades.
+	• Depositar: Incrementa el saldo con la cantidad de dinero que se deposita.
+	• Retirar: Antes de hacer el retiro, se debe verificar la suficiencia de saldo y en caso de aprobarlo, se disminuye el saldo.
+
+Las cuentas de ahorros presentan las siguientes características:
+	• Fecha de vencimiento.
+	• Porcentaje de interés mensual.
+	• Método para depositar los intereses el primer día de cada mes.
+	• Solamente se puede retirar dinero el día de la fecha de vencimiento.
+
+Las cuentas de cheques presentan las siguientes características:
+	• Comisión por uso de chequera.
+	• Comisión por emisión de cheques con saldo insuficiente, la cual se descuenta directamente del saldo
+
+Su solución debe tener:
+	1. Herencia jerárquica
+	2. Clase sellada
+	3. Método sellado
+
+
+Codigo
+
+using System;
+
+public abstract class Cuenta
+{
+    public int NumeroCuenta { get; private set; }
+    public string NombreCliente { get; private set; }
+    public decimal Saldo { get; protected set; }
+
+    public Cuenta(int numeroCuenta, string nombreCliente, decimal saldoInicial)
+    {
+        NumeroCuenta = numeroCuenta;
+        NombreCliente = nombreCliente;
+        Saldo = saldoInicial;
+    }
+
+    public void Depositar(decimal cantidad)
+    {
+        if (cantidad > 0)
+        {
+            Saldo += cantidad;
+            Console.WriteLine($"Deposito de {cantidad:C} realizado. Nuevo saldo: {Saldo:C}");
+        }
+    }
+
+    public virtual void Retirar(decimal cantidad)
+    {
+        if (cantidad > 0 && Saldo >= cantidad)
+        {
+            Saldo -= cantidad;
+            Console.WriteLine($"Retiro de {cantidad:C} realizado. Nuevo saldo: {Saldo:C}");
+        }
+        else
+        {
+            Console.WriteLine("Fondos insuficientes o cantidad inválida para retirar.");
+        }
+    }
+
+    public void ConsultarDatos()
+    {
+        Console.WriteLine($"Número de cuenta: {NumeroCuenta}");
+        Console.WriteLine($"Nombre del cliente: {NombreCliente}");
+        Console.WriteLine($"Saldo: {Saldo:C}");
+    }
+}
+
+public class CuentaAhorros : Cuenta
+{
+    public DateTime FechaVencimiento { get; private set; }
+    public decimal PorcentajeInteresMensual { get; private set; }
+
+    public CuentaAhorros(int numeroCuenta, string nombreCliente, decimal saldoInicial, DateTime fechaVencimiento, decimal porcentajeInteresMensual)
+        : base(numeroCuenta, nombreCliente, saldoInicial)
+    {
+        FechaVencimiento = fechaVencimiento;
+        PorcentajeInteresMensual = porcentajeInteresMensual;
+    }
+
+    public void DepositarIntereses()
+    {
+        decimal interes = Saldo * PorcentajeInteresMensual;
+        Saldo += interes;
+        Console.WriteLine($"Intereses de {interes:C} depositados. Nuevo saldo: {Saldo:C}");
+    }
+
+    public sealed override void Retirar(decimal cantidad)
+    {
+        if (DateTime.Now.Date == FechaVencimiento.Date)
+        {
+            base.Retirar(cantidad);
+        }
+        else
+        {
+            Console.WriteLine("Solo se puede retirar dinero el día de la fecha de vencimiento.");
+        }
+    }
+}
+
+public sealed class CuentaCheques : Cuenta
+{
+    public decimal ComisionUsoChequera { get; private set; }
+    public decimal ComisionSaldoInsuficiente { get; private set; }
+
+    public CuentaCheques(int numeroCuenta, string nombreCliente, decimal saldoInicial, decimal comisionUsoChequera, decimal comisionSaldoInsuficiente)
+        : base(numeroCuenta, nombreCliente, saldoInicial)
+    {
+        ComisionUsoChequera = comisionUsoChequera;
+        ComisionSaldoInsuficiente = comisionSaldoInsuficiente;
+    }
+
+    public sealed override void Retirar(decimal cantidad)
+    {
+        if (Saldo >= cantidad)
+        {
+            base.Retirar(cantidad);
+        }
+        else
+        {
+            Console.WriteLine("Saldo insuficiente. Comision por saldo insuficiente aplicada.");
+            Saldo -= ComisionSaldoInsuficiente;
+        }
+    }
+
+    public void UsarChequera()
+    {
+        Saldo -= ComisionUsoChequera;
+        Console.WriteLine($"Comision por uso de chequera de {ComisionUsoChequera:C} aplicada. Nuevo saldo: {Saldo:C}");
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        CuentaAhorros cuentaAhorros = new CuentaAhorros(12345, "Juan Perez", 1000.00m, new DateTime(2024, 12, 31), 0.01m);
+        CuentaCheques cuentaCheques = new CuentaCheques(67890, "Maria Lopez", 500.00m, 5.00m, 20.00m);
+
+        cuentaAhorros.ConsultarDatos();
+        cuentaAhorros.Depositar(200.00m);
+        cuentaAhorros.DepositarIntereses();
+        cuentaAhorros.Retirar(50.00m); 
+        Console.WriteLine();
+
+        cuentaCheques.ConsultarDatos();
+        cuentaCheques.Depositar(150.00m);
+        cuentaCheques.UsarChequera();
+        cuentaCheques.Retirar(1000.00m); 
+        cuentaCheques.Retirar(200.00m); 
+	Console.ReadKey();
+    }
+}
+
+
+3) Implementar el siguiente caso de estudio.
+
+Caso de estudio
+
+Suponer que un importador desea calcular el arancel de los vehículos de motor que importa.
+Supongamos que el software del importador debe aplicar cálculos diferentes dependiendo del tipo de vehículo.
+Investigar los aranceles de forma general (no tiene que implementarlos todos) que utiliza nuestro país para vehículos de motor. Incluir al menos 4 tipos de vehículos.
+
+Nota:
+Su solución debe tener
+4. Clase base (al menos dos)
+5. Clases derivadas (al menos dos)
+6. Interface
+7. Método abstracto
+8. Método virtual (al menos dos)
+
+Codigo
+
+using System;
+
+public interface ICalculoArancel
+{
+    decimal CalcularArancel();
+}
+
+public abstract class Vehiculo
+{
+    public string Marca { get; set; }
+    public string Modelo { get; set; }
+    public int Año { get; set; }
+    public decimal Precio { get; set; }
+
+    public Vehiculo(string marca, string modelo, int año, decimal precio)
+    {
+        Marca = marca;
+        Modelo = modelo;
+        Año = año;
+        Precio = precio;
+    }
+
+    public virtual void MostrarInformacion()
+    {
+        Console.WriteLine($"Marca: {Marca}, Modelo: {Modelo}, Año: {Año}, Precio: {Precio:C}");
+    }
+
+    public abstract decimal CalcularArancel();
+}
+public class Automovil : Vehiculo, ICalculoArancel
+{
+    public Automovil(string marca, string modelo, int año, decimal precio) : base(marca, modelo, año, precio) { }
+
+    public override decimal CalcularArancel()
+    {
+        return Precio * 0.10m;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine("Tipo de Vehículo: Automóvil");
+    }
+}
+
+public class Camion : Vehiculo, ICalculoArancel
+{
+    public Camion(string marca, string modelo, int año, decimal precio) : base(marca, modelo, año, precio) { }
+
+    public override decimal CalcularArancel()
+    {
+        return Precio * 0.15m;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine("Tipo de Vehículo: Camión");
+    }
+}
+
+public class Motocicleta : Vehiculo, ICalculoArancel
+{
+    public Motocicleta(string marca, string modelo, int año, decimal precio) : base(marca, modelo, año, precio) { }
+
+    public override decimal CalcularArancel()
+    {
+        return Precio * 0.08m;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine("Tipo de Vehículo: Motocicleta");
+    }
+}
+
+public class Autobus : Vehiculo, ICalculoArancel
+{
+    public Autobus(string marca, string modelo, int año, decimal precio) : base(marca, modelo, año, precio) { }
+
+    public override decimal CalcularArancel()
+    {
+        return Precio * 0.12m;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine("Tipo de Vehículo: Autobús");
+    }
+}
+public class Program
+{
+    public static void Main()
+    {
+        Vehiculo automovil = new Automovil("Toyota", "Corolla", 2020, 20000m);
+        Vehiculo camion = new Camion("Ford", "F-150", 2018, 30000m);
+        Vehiculo motocicleta = new Motocicleta("Yamaha", "YZF-R3", 2021, 5000m);
+        Vehiculo autobus = new Autobus("Mercedes", "Sprinter", 2019, 40000m);
+
+        MostrarArancel(automovil);
+        MostrarArancel(camion);
+        MostrarArancel(motocicleta);
+        MostrarArancel(autobus);
+    }
+
+    public static void MostrarArancel(Vehiculo vehiculo)
+    {
+        vehiculo.MostrarInformacion();
+        Console.WriteLine($"Arancel: {vehiculo.CalcularArancel():C}");
+        Console.WriteLine();
+	Console.ReadKey();
+    }
+}

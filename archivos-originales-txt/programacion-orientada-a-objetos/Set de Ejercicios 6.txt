@@ -1,0 +1,218 @@
+Set de ejercicios 6
+
+Manejo de Excepción
+
+1) Escribir un programa que controle al menos 2 tipos de excepciones y contenga la sentencia finally (el programa debe ser diferente a los ejemplos realizados en clase).
+
+Codigo
+
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        StreamReader sr = null;
+        
+        try
+        {
+            sr = new StreamReader("archivo.txt"); 
+            string contenido = sr.ReadToEnd();
+            Console.WriteLine("Contenido del archivo: " + contenido);
+        }
+        catch (FileNotFoundException e)
+        {
+            Console.WriteLine("Error: Archivo no encontrado.");
+        }
+        catch (IOException e)
+        {
+            Console.WriteLine("Error de E/S: " + e.Message);
+        }
+        finally
+        {
+            if (sr != null)
+                sr.Close(); 
+            Console.WriteLine("Bloque finally ejecutado.");
+        }
+        
+        Console.WriteLine("Programa continuando después del bloque try-catch-finally.");
+    }
+}
+
+
+2) Escribir una clase Cita para controlar la agenda de un médico. La clase tendrá los siguientes atributos y sus respectivas propiedades:
+a) Día de la semana (ejemplo: lunes).
+b) Hora (Entero entre 0 y 23)
+c) Minuto (Entero entre 0 y 59)
+d) Descripción de la cita (cadena)
+
+Agregar un constructor que reciba como parámetros todos los datos de la cita. Si el día, hora ó minuto no son válidos, entonces el constructor provocará una excepción de tipo ArgumentException.
+
+Codigo
+
+using System;
+
+class Cita
+{
+    private string diaSemana;
+    private int hora;
+    private int minuto;
+    private string descripcion;
+
+    public string DiaSemana { get { return diaSemana; } }
+    public int Hora { get { return hora; } }
+    public int Minuto { get { return minuto; } }
+    public string Descripcion { get { return descripcion; } }
+
+    public Cita(string diaSemana, int hora, int minuto, string descripcion)
+    {
+        string[] diasValidos = { "lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo" };
+        if (Array.IndexOf(diasValidos, diaSemana.ToLower()) == -1)
+        {
+            throw new ArgumentException("El día de la semana no es válido.");
+        }
+
+        if (hora < 0 || hora > 23)
+        {
+            throw new ArgumentException("La hora debe estar entre 0 y 23.");
+        }
+
+        if (minuto < 0 || minuto > 59)
+        {
+            throw new ArgumentException("El minuto debe estar entre 0 y 59.");
+        }
+
+        this.diaSemana = diaSemana;
+        this.hora = hora;
+        this.minuto = minuto;
+        this.descripcion = descripcion;
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        bool crearOtraCita = true;
+
+        do
+        {
+            try
+            {
+                Console.WriteLine("Ingrese los datos de la cita:");
+                Console.Write("Día de la semana (ejemplo: lunes): ");
+                string diaSemana = Console.ReadLine();
+                Console.Write("Hora (entre 0 y 23): ");
+                int hora = int.Parse(Console.ReadLine());
+                Console.Write("Minuto (entre 0 y 59): ");
+                int minuto = int.Parse(Console.ReadLine());
+                Console.Write("Descripción de la cita: ");
+                string descripcion = Console.ReadLine();
+
+                Cita cita = new Cita(diaSemana, hora, minuto, descripcion);
+
+                Console.WriteLine("Cita creada exitosamente:");
+                Console.WriteLine("Día: " + cita.DiaSemana);
+                Console.WriteLine("Hora: " + cita.Hora + ":" + cita.Minuto.ToString("00"));
+                Console.WriteLine("Descripción: " + cita.Descripcion);
+
+                Console.Write("\n¿Desea crear otra cita? (s/n): ");
+                string respuesta = Console.ReadLine();
+
+                if (respuesta.ToLower() != "s")
+                {
+                    crearOtraCita = false;
+                }
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine("Error al crear la cita: " + e.Message);
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Error: Entrada inválida. Asegúrese de ingresar un número para hora y minuto.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error inesperado: " + ex.Message);
+            }
+
+        } while (crearOtraCita);
+
+        Console.WriteLine("Programa finalizado.");
+    }
+}
+
+
+3) Escribir el código de una clase que lance excepciones para cuantas condiciones estime convenientes. Utilizar una cláusula catch que utilice una sentencia switch para seleccionar un mensaje apropiado y terminar el cálculo.
+
+Codigo
+
+using System;
+
+class CustomException : Exception
+{
+    public CustomException(string message) : base(message)
+    {
+    }
+}
+
+class Calculadora
+{
+    public int Dividir(int dividend, int divisor)
+    {
+        try
+        {
+            if (divisor == 0)
+            {
+                throw new CustomException("Error: División por cero no permitida.");
+            }
+
+            if (dividend < 0 || divisor < 0)
+            {
+                throw new CustomException("Error: Los números deben ser positivos.");
+            }
+
+            return dividend / divisor;
+        }
+        catch (CustomException ex)
+        {
+            Console.WriteLine("Se ha producido un error:");
+            switch (ex.Message)
+            {
+                case "Error: División por cero no permitida.":
+                    Console.WriteLine("No se puede dividir por cero.");
+                    break;
+                case "Error: Los números deben ser positivos.":
+                    Console.WriteLine("Los números deben ser positivos para realizar la operación.");
+                    break;
+                default:
+                    Console.WriteLine("Error desconocido.");
+                    break;
+            }
+            return 0; 
+        }
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Calculadora calculadora = new Calculadora();
+
+        Console.WriteLine("Ejemplo 1: División válida");
+        int resultado1 = calculadora.Dividir(10, 2);
+        Console.WriteLine("Resultado: " + resultado1);
+
+        Console.WriteLine("\nEjemplo 2: División por cero");
+        int resultado2 = calculadora.Dividir(8, 0);
+        Console.WriteLine("Resultado: " + resultado2);
+
+        Console.WriteLine("\nEjemplo 3: Números negativos");
+        int resultado3 = calculadora.Dividir(-12, 3);
+        Console.WriteLine("Resultado: " + resultado3);
+    }
+}
+

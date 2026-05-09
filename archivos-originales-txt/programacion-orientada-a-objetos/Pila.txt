@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+
+public class Pila
+{
+    private Stack<int> stack;
+
+    // Constructor
+    public Pila()
+    {
+        stack = new Stack<int>();
+        Console.WriteLine("Pila creada.");
+    }
+
+    // Destructor
+    ~Pila()
+    {
+        Console.WriteLine("Pila destruida.");
+    }
+
+    // Método para agregar un elemento a la pila
+    public void AgregarElemento(int elemento)
+    {
+        stack.Push(elemento);
+        Console.WriteLine($"Elemento {elemento} agregado a la pila.");
+    }
+
+    // Método para eliminar un elemento de la pila
+    public void EliminarElemento()
+    {
+        if (stack.Count > 0)
+        {
+            int elemento = stack.Pop();
+            Console.WriteLine($"Elemento {elemento} eliminado de la pila.");
+        }
+        else
+        {
+            Console.WriteLine("La pila está vacía. No se puede eliminar ningún elemento.");
+        }
+    }
+
+    // Método para verificar si un elemento existe en la pila
+    public bool ExisteElemento(int elemento)
+    {
+        bool existe = stack.Contains(elemento);
+        Console.WriteLine(existe ? $"El elemento {elemento} existe en la pila." : $"El elemento {elemento} no existe en la pila.");
+        return existe;
+    }
+
+    // Método para mostrar todos los elementos de la pila
+    public void MostrarElementos()
+    {
+        if (stack.Count > 0)
+        {
+            Console.WriteLine("Elementos en la pila:");
+            foreach (int elemento in stack)
+            {
+                Console.WriteLine(elemento);
+            }
+        }
+        else
+        {
+            Console.WriteLine("La pila está vacía.");
+        }
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Pila miPila = new Pila();
+
+        miPila.AgregarElemento(10);
+        miPila.AgregarElemento(20);
+        miPila.AgregarElemento(30);
+
+        miPila.MostrarElementos();
+
+        miPila.ExisteElemento(20);
+        miPila.ExisteElemento(40);
+
+        miPila.EliminarElemento();
+        miPila.MostrarElementos();
+
+        // Forzar la recolección de basura para ver el destructor en acción (opcional)
+        GC.Collect();
+        GC.WaitForPendingFinalizers();
+    }
+}

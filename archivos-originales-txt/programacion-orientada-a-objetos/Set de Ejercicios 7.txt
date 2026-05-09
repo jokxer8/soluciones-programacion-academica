@@ -1,0 +1,264 @@
+Set de ejercicios 7
+
+Interfaz grafica de usuario (GUI)
+
+1) Escribir un programa de conversión de temperatura que convierta de Fahrenheit a Celsius. La temperatura Fahrenheit debe ingresarse desde el teclado a través de un textbox (cuadro de texto). Utilizar una etiqueta para mostrar la temperatura convertida.
+
+Fórmula para la conversión:
+Celsius = ( 5 / 9 ) x ( Fahrenheit – 32 )
+
+Codigo
+
+using System;
+using System.Windows.Forms;
+
+namespace ConversorTemperatura
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnConvertir_Click(object sender, EventArgs e)
+        {
+            // Leer la temperatura Fahrenheit ingresada desde el TextBox
+            if (double.TryParse(txtFahrenheit.Text, out double fahrenheit))
+            {
+                // Calcular la temperatura en Celsius
+                double celsius = (5.0 / 9.0) * (fahrenheit - 32);
+
+                // Mostrar la temperatura convertida en el Label
+                lblResultado.Text = $"Celsius: {celsius:F2}";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese una temperatura válida en Fahrenheit.");
+            }
+        }
+    }
+}
+
+
+2) Escribir un programa que juegue a "adivina el número" de la siguiente manera: El programa elige el número a adivinar seleccionando un int al azar en el rango de 1 a 1000.
+
+A continuación, el programa muestra el siguiente texto en una etiqueta:
+Tengo un número entre 1 y 1000. ¿Puede adivinar mi número?
+Por favor ingrese su primera conjetura.
+
+Se debe usar un cuadro de texto para ingresar la suposición. A medida que se ingresa cada suposición, una etiqueta debe mostrar "Demasiado alto" o "Demasiado bajo" para ayudar al usuario a concentrarse en la respuesta correcta.
+
+Cuando el usuario adivine la respuesta correcta, muestre "¡Correcto!".
+
+Proporcionar un botón que permita al usuario volver a jugar. Cuando se hace clic en el botón, genera un nuevo número aleatorio y habilitar el cuadro de texto para ingresar conjetura.
+
+Codigo
+
+using System;
+using System.Windows.Forms;
+
+namespace AdivinaNumero
+{
+    public partial class Form1 : Form
+    {
+        private int numeroAdivinar;
+        private Random random;
+
+        public Form1()
+        {
+            InitializeComponent();
+            random = new Random();
+            ReiniciarJuego();
+        }
+
+        private void ReiniciarJuego()
+        {
+            numeroAdivinar = random.Next(1, 1001); // Genera un número aleatorio entre 1 y 1000
+            lblMensaje.Text = "Tengo un número entre 1 y 1000. ¿Puede adivinar mi número?";
+            txtConjetura.Enabled = true;
+            btnVerificar.Enabled = true;
+            btnReiniciar.Enabled = false;
+            txtConjetura.Text = "";
+            txtConjetura.Focus();
+        }
+
+        private void btnVerificar_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtConjetura.Text, out int conjetura))
+            {
+                if (conjetura == numeroAdivinar)
+                {
+                    lblMensaje.Text = "¡Correcto!";
+                    btnVerificar.Enabled = false;
+                    btnReiniciar.Enabled = true;
+                }
+                else if (conjetura < numeroAdivinar)
+                {
+                    lblMensaje.Text = "Demasiado bajo";
+                }
+                else
+                {
+                    lblMensaje.Text = "Demasiado alto";
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un número válido.");
+            }
+
+            txtConjetura.Text = "";
+            txtConjetura.Focus();
+        }
+
+        private void btnReiniciar_Click(object sender, EventArgs e)
+        {
+            ReiniciarJuego();
+        }
+    }
+}
+
+
+3) Diseñar una App que almacene los datos de los empleados de una empresa utilizando Windows forms. La App debe : insertar, editar y eliminar los datos del empleado en una tabla de base de datos.
+
+Datos del empleado:
+a) Número (int).
+b) Nombre (varchar).
+c) Sueldo (money).
+d) Sexo (char)
+e) Dirección
+f) FechaNacimiento
+
+La implementación debe:
+1. Aceptar todos los datos de entrada por pantalla. Validar los datos aceptados. utilizando manejo de excepciones
+2. Utilizar herencia
+3. Utilizar polimorfismo estático
+4. Utilizar los GUI control apropiados para cada atributo en la forma (evitar poner todos los atributos como textbox)
+
+Nota: Evitar el uso de case tools para generar código al realizar la implementación.
+
+Codigo
+
+**Empleado.cs**
+using System;
+
+namespace GestionEmpleadosApp
+{
+    public class Empleado
+    {
+        public int Numero { get; set; }
+        public string Nombre { get; set; }
+        public decimal Sueldo { get; set; }
+        public char Sexo { get; set; }
+        public string Direccion { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+
+        public Empleado(int numero, string nombre, decimal sueldo, char sexo, string direccion, DateTime fechaNacimiento)
+        {
+            Numero = numero;
+            Nombre = nombre;
+            Sueldo = sueldo;
+            Sexo = sexo;
+            Direccion = direccion;
+            FechaNacimiento = fechaNacimiento;
+        }
+    }
+}
+
+**EmpleadoForm.cs**
+using System;
+using System.Windows.Forms;
+
+namespace GestionEmpleadosApp
+{
+    public partial class EmpleadoForm : Form
+    {
+        private BindingSource bindingSource;
+        private DataGridView dataGridView;
+        private TextBox txtNumero;
+        private TextBox txtNombre;
+        private TextBox txtSueldo;
+        private TextBox txtSexo;
+        private TextBox txtDireccion;
+        private DateTimePicker dtpFechaNacimiento;
+
+        public EmpleadoForm()
+        {
+            InitializeComponent();
+            bindingSource = new BindingSource();
+            dataGridView.DataSource = bindingSource;
+        }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int numero = int.Parse(txtNumero.Text);
+                string nombre = txtNombre.Text;
+                decimal sueldo = decimal.Parse(txtSueldo.Text);
+                char sexo = char.Parse(txtSexo.Text);
+                string direccion = txtDireccion.Text;
+                DateTime fechaNacimiento = dtpFechaNacimiento.Value;
+
+                Empleado empleado = new Empleado(numero, nombre, sueldo, sexo, direccion, fechaNacimiento);
+
+                bindingSource.Add(empleado);
+
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Empleado empleado = (Empleado)dataGridView.CurrentRow.DataBoundItem;
+
+                empleado.Numero = int.Parse(txtNumero.Text);
+                empleado.Nombre = txtNombre.Text;
+                empleado.Sueldo = decimal.Parse(txtSueldo.Text);
+                empleado.Sexo = char.Parse(txtSexo.Text);
+                empleado.Direccion = txtDireccion.Text;
+                empleado.FechaNacimiento = dtpFechaNacimiento.Value;
+
+                bindingSource.ResetBindings(false);
+
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Empleado empleado = (Empleado)dataGridView.CurrentRow.DataBoundItem;
+
+                bindingSource.Remove(empleado);
+
+                LimpiarCampos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void LimpiarCampos()
+        {
+            txtNumero.Text = "";
+            txtNombre.Text = "";
+            txtSueldo.Text = "";
+            txtSexo.Text = "";
+            txtDireccion.Text = "";
+            dtpFechaNacimiento.Value = DateTime.Today;
+        }
+    }
+}

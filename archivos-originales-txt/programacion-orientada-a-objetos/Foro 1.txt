@@ -1,0 +1,294 @@
+Objetivo:
+1) Que el estudiante participe en el proceso de ensenanza-aprendizaje de forma activa
+2) Que el estudiante refuerce su conocimiento sobre el tema
+
+Importante:
+Esta actividad No es un bono 
+
+Dado el siguiente enunciado :
+
+Escribir un programa que acepte por pantalla  dos argumentos : 
+
+la cantidad de elementos del arreglo y  los elementos de dicho arreglo
+
+El programa debe calcular RECURSIVAMENTE la suma de todos los números del arreglo. 
+
+
+Nota: 
+
+Debe evidenciarse el uso de base case en la recursion
+
+Aceptar los datos por pantalla. Validar los datos (hacer TODAS las validaciones de lugar)
+
+
+
+Debe usar:
+
+Clases 
+Polimorfismo dinamico
+Metodo regular
+
+Cada grupo realizar:
+a) Código
+b)  Análisis de un problema computable (Ver instructivo 6 en sección Instructivos)
+
+
+1. Primera parte del Foro - Subir el ejercicio resuelto por cada grupo
+1.1 Cada grupo debe resolver el ejercicio 
+1.2 Nombrar los documentos. Ver  indicaciones en cronograma de la asignatura "Archivo de su grupo" en sección "Para foros".
+1.3 Subir los documentos al Foro - Pasos para subir la información
+    1.3.1 En Asunto poner: Grupo # (su número de grupo)
+    1.3.2 Anexar los documentos indicados en el paso 1.2.
+
+
+
+2. Segunda parte del Foro - Retroalimentacion entre grupos
+2.1 Los grupos pares deben leer lo escrito por los grupos impares (y viceversa).
+ 2.2 Completar el siguiente documento para cada grupo a retroalimentar
+    Plantilla Rúbrica retroalimentacion de foros
+
+2.3 Nombrar los documentos. Ver  indicaciones en cronograma de la asignatura "Archivo de replica" en sección "Para foros".
+2.4 Subir los documentos al Foro - Pasos para subir la informacion
+2.4.1 Dar click a cada grupo y luego dar click en replica.
+2.4.2 Una vez en replica anexar el documento correspondiente a ese grupo en formato PDF:  Rubrica retroalimentacion de foros completada
+2.4.3 Hacer lo indicado arriba para cada grupo a retroalimentar
+
+
+
+3. Tercera parte del Foro - Informe Retroalimentacion Recibida 
+
+ 3.1 Completar el siguiente documento para cada grupo a retroalimentar
+
+    Plantilla Rúbrica Informe retroalimentacion Recibida
+
+3.2 Nombrar los documentos. Ver  indicaciones en cronograma de la asignatura "Archivo de replica" en seccion "Para foros".
+3.3 Subir los documentos al Foro - Pasos para subir la informacion
+3.3.`1 Dar click a SU GRUPO y luego dar click en replica.
+3.3.2 Una vez en replica anexar el documento correspondiente a ese grupo en formato PDF: Plantilla Rúbrica Informe retroalimentacion Recibida completada
+3.3.3 Hacer lo indicado arriba UNA VEZ
+
+
+
+Codigo del problema:
+
+using System;
+
+namespace SumaRecursivaArreglo
+{
+    // Clase base
+    public abstract class ProcesadorArregloBase
+    {
+        // Método abstracto para la suma recursiva
+        public abstract int SumaRecursiva(int[] arreglo, int longitud);
+    }
+
+    // Clase derivada que implementa el método abstracto
+    public class ProcesadorArreglo : ProcesadorArregloBase
+    {
+        // Implementación del método recursivo para sumar los elementos del arreglo
+        public override int SumaRecursiva(int[] arreglo, int longitud)
+        {
+            // Caso base: si el arreglo está vacío, la suma es 0
+            if (longitud == 0)
+            {
+                return 0;
+            }
+            // Caso recursivo: suma el último elemento y llama recursivamente con el resto del arreglo
+            return arreglo[longitud - 1] + SumaRecursiva(arreglo, longitud - 1);
+        }
+
+        // Método para leer y validar los datos desde la consola
+        public void LeerYProcesarArreglo()
+        {
+            int longitud = 0;
+            while (true)
+            {
+                Console.Write("Ingrese la cantidad de elementos del arreglo: ");
+                string entradaLongitud = Console.ReadLine();
+                if (int.TryParse(entradaLongitud, out longitud) && longitud > 0)
+                {
+                    break;
+                }
+                Console.WriteLine("Entrada inválida. Debe ingresar un número entero positivo.");
+            }
+
+            int[] arreglo = new int[longitud];
+            for (int i = 0; i < longitud; i++)
+            {
+                while (true)
+                {
+                    Console.Write($"Ingrese el elemento {i + 1}: ");
+                    string entradaElemento = Console.ReadLine();
+                    if (int.TryParse(entradaElemento, out arreglo[i]))
+                    {
+                        break;
+                    }
+                    Console.WriteLine("Entrada inválida. Debe ingresar un número entero.");
+                }
+            }
+
+            int suma = SumaRecursiva(arreglo, longitud);
+            Console.WriteLine($"La suma de todos los elementos del arreglo es: {suma}");
+        }
+    }
+
+    class Programa
+    {
+        static void Main(string[] args)
+        {
+            ProcesadorArreglo procesadorArreglo = new ProcesadorArreglo();
+            procesadorArreglo.LeerYProcesarArreglo();
+        }
+    }
+}
+
+
+
+Explicación del Código:
+1. Clase Base ProcesadorArregloBase:
+
+Define un método abstracto SumaRecursiva que toma un arreglo y su longitud.
+
+2.Clase Derivada ProcesadorArreglo:
+
+Implementa el método SumaRecursiva para calcular la suma de los elementos de manera recursiva.
+Incluye el método LeerYProcesarArreglo que se encarga de leer y validar los datos ingresados por el usuario.
+
+3. Método SumaRecursiva:
+
+Caso base: Si la longitud del arreglo es 0, retorna 0.
+Caso recursivo: Suma el último elemento del arreglo y llama recursivamente al método con la longitud disminuida en 1.
+
+4.Método LeerYProcesarArreglo:
+
+Lee y valida la cantidad de elementos del arreglo.
+Lee y valida cada elemento del arreglo.
+Calcula y muestra la suma de todos los elementos usando el método recursivo.
+
+5. Ejecución del Programa:
+El programa solicita al usuario la cantidad de elementos del arreglo y luego cada elemento del mismo.
+Calcula recursivamente la suma de los elementos y la muestra en pantalla.
+Este programa utiliza clases, métodos regulares, polimorfismo dinámico, y validación de entrada de datos, cumpliendo con los requisitos especificados.
+
+
+
+------------------------------------------------------------------------------------------------
+
+Paso 1: Clase Base ProcesadorArregloBase
+csharp
+
+public abstract class ProcesadorArregloBase
+{
+    // Método abstracto para la suma recursiva
+    public abstract int SumaRecursiva(int[] arreglo, int longitud);
+}
+
+Descripción: Esta es una clase abstracta que define un método abstracto SumaRecursiva.
+Propósito: El método abstracto SumaRecursiva obliga a las clases derivadas a proporcionar una implementación específica de este método.
+
+Paso 2: Clase Derivada ProcesadorArreglo
+csharp
+
+public class ProcesadorArreglo : ProcesadorArregloBase
+{
+    // Implementación del método recursivo para sumar los elementos del arreglo
+    public override int SumaRecursiva(int[] arreglo, int longitud)
+    {
+        // Caso base: si el arreglo está vacío, la suma es 0
+        if (longitud == 0)
+        {
+            return 0;
+        }
+        // Caso recursivo: suma el último elemento y llama recursivamente con el resto del arreglo
+        return arreglo[longitud - 1] + SumaRecursiva(arreglo, longitud - 1);
+    }
+
+    // Método para leer y validar los datos desde la consola
+    public void LeerYProcesarArreglo()
+    {
+        int longitud = 0;
+        while (true)
+        {
+            Console.Write("Ingrese la cantidad de elementos del arreglo: ");
+            string entradaLongitud = Console.ReadLine();
+            if (int.TryParse(entradaLongitud, out longitud) && longitud > 0)
+            {
+                break;
+            }
+            Console.WriteLine("Entrada inválida. Debe ingresar un número entero positivo.");
+        }
+
+        int[] arreglo = new int[longitud];
+        for (int i = 0; i < longitud; i++)
+        {
+            while (true)
+            {
+                Console.Write($"Ingrese el elemento {i + 1}: ");
+                string entradaElemento = Console.ReadLine();
+                if (int.TryParse(entradaElemento, out arreglo[i]))
+                {
+                    break;
+                }
+                Console.WriteLine("Entrada inválida. Debe ingresar un número entero.");
+            }
+        }
+
+        int suma = SumaRecursiva(arreglo, longitud);
+        Console.WriteLine($"La suma de todos los elementos del arreglo es: {suma}");
+    }
+}
+
+Clase ProcesadorArreglo: 
+Esta clase hereda de ProcesadorArregloBase y proporciona la implementación del método abstracto SumaRecursiva.
+
+Método SumaRecursiva:
+Caso base: Si longitud es 0, retorna 0. Esto detiene la recursión.
+
+Caso recursivo: 
+Suma el último elemento del arreglo arreglo[longitud - 1] y llama recursivamente al método con longitud - 1.
+
+Método LeerYProcesarArreglo:
+Lectura y validación de la longitud del arreglo:
+Solicita al usuario ingresar la cantidad de elementos del arreglo y valida que sea un entero positivo.
+
+Lectura y validación de los elementos del arreglo:
+Solicita al usuario ingresar cada elemento del arreglo y valida que cada entrada sea un entero.
+
+Cálculo y muestra de la suma: 
+Llama al método SumaRecursiva para calcular la suma de los elementos y muestra el resultado.
+
+Paso 3: Clase Principal Programa
+csharp
+
+class Programa
+{
+    static void Main(string[] args)
+    {
+        ProcesadorArreglo procesadorArreglo = new ProcesadorArreglo();
+        procesadorArreglo.LeerYProcesarArreglo();
+    }
+}
+
+Método Main: 
+Es el punto de entrada del programa.
+
+Instancia de ProcesadorArreglo: 
+Crea una instancia de la clase ProcesadorArreglo.
+
+Llamada al método LeerYProcesarArreglo: 
+Invoca el método LeerYProcesarArreglo para iniciar el proceso de lectura, validación, cálculo y muestra de la suma de los elementos del arreglo.
+
+Ejecución del Programa
+Solicitar cantidad de elementos: 
+El programa pide al usuario ingresar la cantidad de elementos del arreglo y valida que sea un número entero positivo.
+
+Solicitar elementos del arreglo: 
+Luego, pide al usuario ingresar cada elemento del arreglo y valida que cada entrada sea un número entero.
+
+Calcular suma recursiva: 
+Utiliza el método recursivo SumaRecursiva para calcular la suma de los elementos.
+
+Mostrar resultado: 
+Finalmente, muestra la suma calculada en la consola.
+
+Este código utiliza clases, métodos regulares, polimorfismo dinámico y validación de entrada de datos, cumpliendo con los requisitos especificados en el problema.

@@ -1,0 +1,57 @@
+Palíndromo Mas largo.
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingresa una palabra o texto: ");
+        string s = Console.ReadLine() ?? "";
+
+        string mejor = PalindromoMasLargo(s);
+
+        Console.WriteLine($"\nPalíndromo más largo: \"{mejor}\"");
+        Console.WriteLine($"Longitud: {mejor.Length}");
+    }
+
+    // Encuentra el palíndromo más largo en una cadena usando "expandir desde el centro"
+    static string PalindromoMasLargo(string s)
+    {
+        if (string.IsNullOrEmpty(s)) return "";
+
+        int inicioMejor = 0;
+        int longitudMejor = 1;
+
+        for (int i = 0; i < s.Length; i++)
+        {
+            // Caso 1: palíndromo de longitud impar (centro en i)
+            ExpandirCentro(s, i, i, ref inicioMejor, ref longitudMejor);
+
+            // Caso 2: palíndromo de longitud par (centro entre i e i+1)
+            ExpandirCentro(s, i, i + 1, ref inicioMejor, ref longitudMejor);
+        }
+
+        return s.Substring(inicioMejor, longitudMejor);
+    }
+
+    // Expande mientras los caracteres a la izquierda y derecha sean iguales
+    static void ExpandirCentro(string s, int izquierda, int derecha, ref int inicioMejor, ref int longitudMejor)
+    {
+        while (izquierda >= 0 && derecha < s.Length && s[izquierda] == s[derecha])
+        {
+            izquierda--;
+            derecha++;
+        }
+
+        // Al salir del while, nos pasamos 1 posición por ambos lados
+        int inicio = izquierda + 1;
+        int longitud = derecha - izquierda - 1;
+
+        if (longitud > longitudMejor)
+        {
+            inicioMejor = inicio;
+            longitudMejor = longitud;
+        }
+    }
+}

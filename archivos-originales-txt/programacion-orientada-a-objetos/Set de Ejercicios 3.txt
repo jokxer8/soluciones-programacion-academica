@@ -1,0 +1,379 @@
+Set de ejercicios 3
+
+Herencia
+
+1) Una compañía editorial produce tanto libros impresos como audio-libros en discos compactos. Diseñe una clase denominada Publicación que almacene el título (cadena) y el precio (numérico real) de una publicación. A partir de esta clase, derive dos clases: Libro a la cual le agregue el número de páginas (entero) y CD, a la cual le agregue el tiempo de reproducción en minutos (numérico real). Cada una de las clases debe tener propiedades para acceder a sus respectivos datos.
+
+
+Codigo:
+
+using System;
+
+public class Publicacion
+{
+    public string Titulo { get; set; }
+    public double Precio { get; set; }
+
+    public Publicacion(string titulo, double precio)
+    {
+        Titulo = titulo;
+        Precio = precio;
+    }
+
+    public virtual void MostrarInformacion()
+    {
+        Console.WriteLine($"Título: {Titulo}, Precio: {Precio:C}");
+    }
+}
+
+public class Libro : Publicacion
+{
+    public int NumeroDePaginas { get; set; }
+
+    public Libro(string titulo, double precio, int numeroDePaginas)
+        : base(titulo, precio)
+    {
+        NumeroDePaginas = numeroDePaginas;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine($"Número de Páginas: {NumeroDePaginas}");
+    }
+}
+
+public class CD : Publicacion
+{
+    public double TiempoDeReproduccion { get; set; }
+
+    public CD(string titulo, double precio, double tiempoDeReproduccion)
+        : base(titulo, precio)
+    {
+        TiempoDeReproduccion = tiempoDeReproduccion;
+    }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+        Console.WriteLine($"Tiempo de Reproducción: {TiempoDeReproduccion} minutos");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Libro libro = new Libro("Cien Años de Soledad", 19.99, 417);
+        CD cd = new CD("Audiolibro: Cien Años de Soledad", 29.99, 300);
+
+        Console.WriteLine("Información del Libro:");
+        libro.MostrarInformacion();
+        Console.WriteLine();
+
+        Console.WriteLine("Información del CD:");
+        cd.MostrarInformacion();
+	Console.ReadKey();
+    }
+}
+
+
+2) Implementar una jerarquía de herencia de animales tal que contenga al menos seis niveles de derivación y doce clases
+
+using System;
+
+public class Animal
+{
+    public string Nombre { get; set; }
+
+    public Animal(string nombre)
+    {
+        Nombre = nombre;
+    }
+
+    public virtual void HacerSonido()
+    {
+        Console.WriteLine("El animal hace un sonido.");
+    }
+}
+
+public class Mamifero : Animal
+{
+    public Mamifero(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El mamífero hace un sonido.");
+    }
+}
+
+public class Ave : Animal
+{
+    public Ave(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El ave hace un sonido.");
+    }
+}
+
+public class Canino : Mamifero
+{
+    public Canino(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El canino ladra.");
+    }
+}
+
+public class Felino : Mamifero
+{
+    public Felino(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El felino maúlla.");
+    }
+}
+
+public class Rapaz : Ave
+{
+    public Rapaz(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El ave rapaz chilla.");
+    }
+}
+
+public class NoRapaz : Ave
+{
+    public NoRapaz(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El ave no rapaz canta.");
+    }
+}
+
+public class Perro : Canino
+{
+    public Perro(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El perro ladra.");
+    }
+}
+
+public class Lobo : Canino
+{
+    public Lobo(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El lobo aúlla.");
+    }
+}
+
+public class Gato : Felino
+{
+    public Gato(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El gato maúlla.");
+    }
+}
+
+public class Tigre : Felino
+{
+    public Tigre(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El tigre ruge.");
+    }
+}
+
+public class Aguila : Rapaz
+{
+    public Aguila(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El águila chilla.");
+    }
+}
+
+public class Halcon : Rapaz
+{
+    public Halcon(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El halcón chilla.");
+    }
+}
+
+public class Paloma : NoRapaz
+{
+    public Paloma(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("La paloma arrulla.");
+    }
+}
+
+public class Canario : NoRapaz
+{
+    public Canario(string nombre) : base(nombre) { }
+
+    public override void HacerSonido()
+    {
+        Console.WriteLine("El canario canta.");
+    }
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Animal[] animales = new Animal[]
+        {
+            new Perro("Fido"),
+            new Lobo("Lobo Gris"),
+            new Gato("Misi"),
+            new Tigre("Tigre de Bengala"),
+            new Aguila("Águila Real"),
+            new Halcon("Halcón Peregrino"),
+            new Paloma("Paloma Blanca"),
+            new Canario("Canario Amarillo")
+        };
+
+        foreach (var animal in animales)
+        {
+            Console.WriteLine($"{animal.Nombre}:");
+            animal.HacerSonido();
+            Console.WriteLine();
+        }
+    }
+}
+
+
+3) Implementar una jerarquía Empleado de cualquier tipo de empresa que le sea familiar. La jerarquía debe tener al menos tres niveles, con herencia de miembros datos, y métodos.
+
+Los métodos deben poder calcular los salarios, aumentos salariales y despidos (de la forma más básica. Evitar complejidad de código laboral, etc.).
+
+La jerarquía de herencia debe poder ser utilizada para proporcionar diferentes tipos de acceso a Empleados. Por ejemplo, el tipo de acceso garantizado al público diferirá del tipo de acceso proporcionado a un supervisor de empleado o al departamento de nóminas. Utilizar la herencia para distinguir entre al menos tres tipos diferentes de acceso a la información de Empleado.
+
+using System;
+
+public class Empleado
+{
+    protected string Nombre { get; set; }
+    protected double Salario { get; set; }
+
+    public Empleado(string nombre, double salario)
+    {
+        Nombre = nombre;
+        Salario = salario;
+    }
+
+    public virtual double CalcularSalario()
+    {
+        return Salario;
+    }
+
+    public void AumentarSalario(double porcentaje)
+    {
+        Salario += Salario * porcentaje / 100;
+    }
+
+    public void Despedir()
+    {
+        Salario = 0;
+        Console.WriteLine($"{Nombre} ha sido despedido.");
+    }
+
+    public virtual void MostrarInformacion()
+    {
+        Console.WriteLine($"Nombre: {Nombre}, Salario: {Salario:C}");
+    }
+}
+
+public class EmpleadoPublico : Empleado
+{
+    public EmpleadoPublico(string nombre, double salario) : base(nombre, salario) { }
+
+    public override void MostrarInformacion()
+    {
+        Console.WriteLine($"Nombre: {Nombre}");
+    }
+}
+
+public class Supervisor : Empleado
+{
+    public Supervisor(string nombre, double salario) : base(nombre, salario) { }
+
+    public override void MostrarInformacion()
+    {
+        base.MostrarInformacion();
+    }
+}
+
+public class DepartamentoNomina : Empleado
+{
+    public DepartamentoNomina(string nombre, double salario) : base(nombre, salario) { }
+
+    public override void MostrarInformacion()
+    {
+        Console.WriteLine($"Nombre: {Nombre}, Salario: {Salario:C}");
+    }
+
+    public void AumentarSalarioEmpleado(Empleado empleado, double porcentaje)
+    {
+        empleado.AumentarSalario(porcentaje);
+        Console.WriteLine($"Salario de {empleado.Nombre} aumentado en {porcentaje}%.");
+    }
+
+    public void DespedirEmpleado(Empleado empleado)
+    {
+        empleado.Despedir();
+    }
+}
+
+public class Gerente : Supervisor
+{
+    public Gerente(string nombre, double salario) : base(nombre, salario) { }
+
+}
+
+public class Director : Gerente
+{
+    public Director(string nombre, double salario) : base(nombre, salario) { }
+
+}
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        EmpleadoPublico empleado1 = new EmpleadoPublico("Juan Pérez", 30000);
+        Supervisor supervisor = new Supervisor("Ana López", 50000);
+        DepartamentoNomina departamentoNomina = new DepartamentoNomina("Carlos García", 60000);
+
+        empleado1.MostrarInformacion();
+        supervisor.MostrarInformacion();
+        departamentoNomina.MostrarInformacion();
+
+        Console.WriteLine();
+
+        departamentoNomina.AumentarSalarioEmpleado(empleado1, 10);
+        empleado1.MostrarInformacion();
+        departamentoNomina.DespedirEmpleado(empleado1);
+        empleado1.MostrarInformacion();
+    }
+}

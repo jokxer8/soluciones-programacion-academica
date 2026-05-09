@@ -1,0 +1,48 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingresa un número para calcular su factorial: ");
+        
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        if (n < 0)
+        {
+            Console.WriteLine("El factorial no está definido para números negativos.");
+        }
+        else
+        {
+            long factorial = CalcularFactorial(n);
+
+            Console.WriteLine($"El factorial de {n} es: {factorial}");
+        }
+    }
+
+    static long CalcularFactorial(int num)
+    {
+        long factorial = 1;
+
+        for (int i = 1; i <= num; i++)
+        {
+            factorial *= i;
+        }
+
+        return factorial;
+    }
+}
+
+
+
+    static long CalcularFactorial(int num)
+    {
+        if (num == 0 || num == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return num * CalcularFactorial(num - 1);
+        }
+    }

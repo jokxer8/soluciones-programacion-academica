@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Ingresa la cantidad de términos para la sucesión de Fibonacci: ");
+        
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Sucesión de Fibonacci:");
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write(CalcularFibonacci(i) + " ");
+        }
+    }
+
+    static int CalcularFibonacci(int num)
+    {
+        if (num <= 1)
+        {
+            return num;
+        }
+
+        int a = 0, b = 1, temp = 0;
+
+        for (int i = 2; i <= num; i++)
+        {
+            temp = a + b;
+            a = b;
+            b = temp;
+        }
+
+        return b;
+    }
+}
