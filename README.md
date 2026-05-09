@@ -1,6 +1,6 @@
 # Soluciones de Programación Académica
 
-Este repositorio reúne problemas resueltos de programación desarrollados durante mi formación académica en Ciencias de la Computación.
+Este repositorio reúne problemas resueltos de programación desarrollados durante mi formación académica en Ingeniería Ciencias de la Computación.
 
 El objetivo principal es documentar mi evolución técnica en lógica de programación, programación orientada a objetos, estructuras de datos, análisis de algoritmos y resolución de problemas mediante código.
 
