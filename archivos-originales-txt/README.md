@@ -1,19 +1,72 @@
-# Archivos originales TXT
+# Archivos Originales TXT
 
-Esta carpeta contiene los archivos originales en formato `.txt` correspondientes a problemas resueltos durante mi formación académica en programación.
+Esta carpeta conserva los archivos TXT originales utilizados como base académica para construir y organizar las soluciones profesionales del repositorio.
 
-## Propósito
+Los documentos aquí almacenados contienen ejercicios, prácticas o enunciados trabajados durante el proceso de formación en Ciencias de la Computación.
 
-Conservar los archivos originales como evidencia inicial del proceso de aprendizaje, antes de ser clasificados, depurados o convertidos a archivos de código con extensiones como `.cs`, `.cpp`, `.c` o `.sql`.
+---
 
-## Organización prevista
+## Objetivo de esta carpeta
 
-Los archivos serán organizados progresivamente en las siguientes áreas:
+Conservar una copia de los archivos originales para mantener la trazabilidad entre el material académico inicial y las soluciones organizadas en las carpetas principales del repositorio.
 
-- Fundamentos de la Programación
-- Programación Orientada a Objetos
-- Diseño y Análisis de Algoritmos
+Esta carpeta permite evidenciar que los ejercicios profesionalizados no fueron colocados de forma aislada, sino que surgieron a partir de documentos académicos previamente trabajados.
+
+---
+
+## Organización interna
+
+```text
+archivos-originales-txt/
+├── fundamentos-programacion/
+├── programacion-orientada-a-objetos/
+└── diseno-y-analisis-de-algoritmos/
+```
+
+---
+
+## Relación con las carpetas principales
+
+Los ejercicios seleccionados desde estos archivos fueron reorganizados en las siguientes áreas:
+
+| Carpeta profesionalizada | Área de aprendizaje |
+|---|---|
+| `01-fundamentos-programacion` | Fundamentos de Programación |
+| `02-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
+| `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
+
+---
+
+## Uso de los archivos originales
+
+Los archivos TXT originales se conservan únicamente como respaldo y evidencia documental.
+
+Las versiones finales, limpias y documentadas de los ejercicios se encuentran organizadas en carpetas individuales dentro de las áreas principales del repositorio.
+
+Cada ejercicio profesionalizado contiene:
+
+```text
+nombre-del-ejercicio/
+├── README.md
+└── solution.cs
+```
+
+---
+
+## Importancia de conservar estos archivos
+
+Mantener estos documentos permite:
+
+- Preservar el material académico original.
+- Mostrar el proceso de mejora y organización del código.
+- Evidenciar la evolución desde ejercicios iniciales hasta soluciones documentadas.
+- Facilitar futuras revisiones o ampliaciones del repositorio.
+- Mantener ordenado el respaldo de los archivos fuente utilizados.
+
+---
 
 ## Nota
 
-Los archivos contenidos aquí serán revisados antes de su publicación definitiva para evitar incluir información personal, datos institucionales privados o contenido que no corresponda a un portafolio profesional.
+Esta carpeta no contiene las soluciones finales del repositorio.
+
+Las soluciones finales están ubicadas en las carpetas principales, donde cada ejercicio cuenta con explicación, análisis y código fuente limpio en C#.
