@@ -1,7 +1,7 @@
 # Soluciones de Programación Académica
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-brightgreen)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 ![Tipo](https://img.shields.io/badge/Tipo-Repositorio%20Acad%C3%A9mico-lightgrey)
 
 Este repositorio reúne soluciones de programación desarrolladas durante mi formación académica en Ciencias de la Computación.
@@ -26,38 +26,6 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | 02 - Programación Orientada a Objetos | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
 | 03 - Diseño y Análisis de Algoritmos | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
 | Archivos originales TXT | Documentos originales utilizados como base académica para seleccionar y profesionalizar los ejercicios. | Conservado |
-
----
-
-## Estructura del repositorio
-
-```text
-soluciones-programacion-academica/
-├── 01-fundamentos-programacion/
-│   ├── analisis-cadena-texto/
-│   ├── busqueda-secuencial-arreglo/
-│   ├── calculadora-menu/
-│   ├── clasificacion-numeros/
-│   └── estadisticas-basicas-arreglo/
-│
-├── 02-programacion-orientada-a-objetos/
-│   ├── agenda-citas-poo/
-│   ├── avisos-archivo-serializacion-poo/
-│   ├── matriz-2x2-poo/
-│   ├── sistema-nomina-polimorfismo-poo/
-│   └── telefono-movil-poo/
-│
-├── 03-diseno-y-analisis-de-algoritmos/
-│   ├── busqueda-binaria/
-│   ├── cambio-monedas-limitado/
-│   ├── conteo-y-conexion-de-islas/
-│   ├── fibonacci-recursivo/
-│   ├── ordenamiento-rapido-quicksort/
-│   └── subsecuencia-creciente-suma-maxima/
-│
-├── archivos-originales-txt/
-└── README.md
-```
 
 ---
 
