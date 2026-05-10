@@ -1,6 +1,10 @@
 # Fundamentos de Programación
 
-Esta carpeta contiene ejercicios orientados al desarrollo de las bases esenciales de la programación.
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+![Nivel](https://img.shields.io/badge/Nivel-Introductorio%20a%20Intermedio-green)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
+
+Esta carpeta contiene ejercicios orientados al desarrollo de las bases esenciales de la programación utilizando C#.
 
 Los ejercicios aquí organizados trabajan conceptos iniciales como entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas de texto, métodos, validaciones y búsqueda secuencial.
 
@@ -19,7 +23,7 @@ Esta sección representa la base del proceso de formación académica antes de a
 | Ejercicio | Descripción | Conceptos aplicados |
 |---|---|---|
 | [Estadísticas básicas de un arreglo](estadisticas-basicas-arreglo) | Calcula suma, promedio, número mayor y número menor de un conjunto de datos. | Arreglos, ciclos, métodos, operaciones aritméticas |
-| [Clasificación de números](clasificacion-numeros) | Clasifica números como positivos, negativos, ceros, pares e impares. | Condicionales, contadores, acumuladores, módulo |
+| [Clasificación de números](clasificacion-numeros) | Clasifica números como positivos, negativos, ceros, pares e impares. | Condicionales, contadores, acumuladores, operador módulo |
 | [Análisis de cadena de texto](analisis-cadena-texto) | Analiza una frase contando caracteres, palabras, vocales, consonantes e invirtiendo el texto. | Cadenas, métodos, ciclos, caracteres |
 | [Calculadora con menú](calculadora-menu) | Permite realizar operaciones básicas mediante un menú interactivo. | Menú, ciclos, métodos, validación de división |
 | [Búsqueda secuencial en arreglo](busqueda-secuencial-arreglo) | Busca un número dentro de un arreglo recorriendo sus elementos uno por uno. | Arreglos, búsqueda lineal, validación, ciclos |
@@ -39,7 +43,8 @@ Esta carpeta demuestra habilidades en:
 - Creación y uso de métodos.
 - Validación básica de entradas.
 - Uso de contadores y acumuladores.
-- Resolución de problemas simples mediante lógica estructurada.
+- Resolución de problemas mediante lógica estructurada.
+- Organización de soluciones en carpetas documentadas.
 
 ---
 
@@ -63,7 +68,7 @@ El archivo `solution.cs` contiene la solución desarrollada en C#.
 
 Los ejercicios de esta sección corresponden a un nivel introductorio e intermedio básico.
 
-Su propósito principal es fortalecer la lógica de programación y preparar la base para problemas más complejos.
+Su propósito principal es fortalecer la lógica de programación y preparar la base para problemas más complejos relacionados con programación orientada a objetos, estructuras de datos y algoritmos.
 
 ---
 
