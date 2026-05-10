@@ -1,5 +1,9 @@
 # Programación Orientada a Objetos
 
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-orange)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
+
 Esta carpeta contiene ejercicios desarrollados para aplicar los principios fundamentales y avanzados de la programación orientada a objetos utilizando C#.
 
 Los ejercicios están orientados a demostrar el uso de clases, objetos, constructores, encapsulación, composición, listas, archivos, serialización, herencia, clases abstractas y polimorfismo.
@@ -8,9 +12,9 @@ Los ejercicios están orientados a demostrar el uso de clases, objetos, construc
 
 ## Objetivo de la carpeta
 
-Evidenciar la capacidad de diseñar soluciones organizadas mediante objetos, separando responsabilidades y aplicando estructuras reutilizables y extensibles.
+Evidenciar la capacidad de diseñar soluciones organizadas mediante objetos, separando responsabilidades y aplicando estructuras reutilizables, mantenibles y extensibles.
 
-Esta sección representa un avance desde la programación estructurada hacia el diseño de programas más organizados, mantenibles y cercanos a situaciones reales.
+Esta sección representa un avance desde la programación estructurada hacia el diseño de programas más cercanos a situaciones reales.
 
 ---
 
@@ -18,9 +22,9 @@ Esta sección representa un avance desde la programación estructurada hacia el 
 
 | Ejercicio | Descripción | Conceptos aplicados |
 |---|---|---|
-| [Teléfono móvil POO](telefono-movil-poo) | Modela un teléfono móvil con batería y pantalla como objetos relacionados. | Clases, objetos, composición, propiedades, métodos |
-| [Matriz 2x2 POO](matriz-2x2-poo) | Representa una matriz 2x2 y permite calcular determinante e inversa. | Clases, constructores, métodos, validación |
-| [Agenda de citas POO](agenda-citas-poo) | Registra citas en una agenda médica utilizando objetos y validaciones. | Enumeraciones, listas, excepciones, encapsulación |
+| [Teléfono móvil POO](telefono-movil-poo) | Modela un teléfono móvil compuesto por batería y pantalla. | Clases, objetos, composición, propiedades, métodos |
+| [Matriz 2x2 POO](matriz-2x2-poo) | Representa una matriz 2x2 y permite calcular su determinante e inversa. | Clases, constructores, métodos, validación |
+| [Agenda de citas POO](agenda-citas-poo) | Registra y muestra citas dentro de una agenda médica. | Enumeraciones, listas, excepciones, encapsulación |
 | [Avisos con archivo y serialización](avisos-archivo-serializacion-poo) | Administra avisos, genera reportes TXT y serializa datos en JSON. | Archivos, listas, JSON, serialización, deserialización |
 | [Sistema de nómina con polimorfismo](sistema-nomina-polimorfismo-poo) | Calcula salarios de diferentes tipos de empleados usando polimorfismo. | Abstracción, herencia, clases abstractas, sobrescritura, polimorfismo |
 
@@ -65,11 +69,31 @@ El archivo `solution.cs` contiene la implementación en C#.
 
 ---
 
+## Ejercicio destacado
+
+El ejercicio más avanzado de esta carpeta es:
+
+```text
+sistema-nomina-polimorfismo-poo
+```
+
+Este ejercicio evidencia un uso más completo de programación orientada a objetos, porque integra:
+
+- Clase abstracta.
+- Herencia.
+- Métodos abstractos.
+- Sobrescritura de métodos.
+- Lista de objetos de una clase base.
+- Polimorfismo en tiempo de ejecución.
+- Separación de responsabilidades.
+
+---
+
 ## Nivel de dificultad
 
 Los ejercicios de esta sección van desde un nivel intermedio hasta un nivel más avanzado.
 
-El ejercicio de nómina con polimorfismo representa uno de los ejemplos más completos de esta carpeta, ya que integra abstracción, herencia, métodos sobrescritos y manejo de objetos derivados desde una clase base común.
+El propósito principal es demostrar que el código puede organizarse mediante objetos y que una solución puede crecer sin perder claridad ni estructura.
 
 ---
 
