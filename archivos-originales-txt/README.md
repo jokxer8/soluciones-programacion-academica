@@ -1,5 +1,9 @@
 # Archivos Originales TXT
 
+![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
+![Formato](https://img.shields.io/badge/Formato-TXT-blue)
+![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
+
 Esta carpeta conserva los archivos TXT originales utilizados como base académica para construir y organizar las soluciones profesionales del repositorio.
 
 Los documentos aquí almacenados contienen ejercicios, prácticas o enunciados trabajados durante el proceso de formación en Ciencias de la Computación.
@@ -65,7 +69,7 @@ Mantener estos documentos permite:
 
 ---
 
-## Nota
+## Nota importante
 
 Esta carpeta no contiene las soluciones finales del repositorio.
 
