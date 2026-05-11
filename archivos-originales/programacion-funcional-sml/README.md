@@ -1,65 +1,86 @@
 # Archivos Originales - Programación Funcional con SML
 
-Esta carpeta conserva los archivos originales relacionados con la asignatura de Fundamentos de Programación trabajada mediante el lenguaje Standard ML.
+Esta carpeta conserva los archivos originales relacionados con la asignatura de Programación Funcional trabajada mediante el lenguaje Standard ML.
 
-Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, tareas, enunciados o materiales utilizados durante el aprendizaje de programación funcional.
+Los documentos almacenados aquí funcionan como respaldo académico de foros, actividades, respuestas, prácticas, enunciados y materiales utilizados durante el aprendizaje de programación funcional.
 
 ---
 
 ## Objetivo de esta carpeta
 
-Mantener una copia organizada de los documentos originales relacionados con programación funcional, especialmente aquellos desarrollados en Standard ML.
+Mantener una copia organizada de los documentos originales relacionados con programación funcional y Standard ML.
 
-Esta carpeta permite conservar la trazabilidad entre el material académico inicial y las futuras soluciones profesionalizadas que se organicen dentro del repositorio.
+Esta carpeta permite conservar la trazabilidad entre el material académico inicial y las soluciones profesionalizadas que se desarrollarán posteriormente dentro del repositorio.
 
 ---
 
-## Contenido esperado
+## Importancia académica
+
+Los archivos contenidos en esta carpeta evidencian el proceso de aprendizaje desarrollado en la asignatura, incluyendo participación en foros, resolución de actividades y aplicación de conceptos propios de la programación funcional.
+
+Estos documentos no representan necesariamente las versiones finales profesionalizadas, sino el material original que servirá como base para seleccionar, limpiar, documentar y convertir ejercicios en soluciones técnicas dentro de la carpeta principal correspondiente.
+
+---
+
+## Contenido de la carpeta
 
 Esta carpeta puede incluir archivos originales en diferentes formatos, tales como:
 
-- SML
-- TXT
 - PDF
+- PNG
+- JPG
+- TXT
 - DOCX
-- Imágenes
-- Enunciados de prácticas
-- Tareas académicas
-- Parciales o ejercicios evaluativos
+- Archivos SML
+- Capturas de respuestas
+- Actividades académicas
+- Participaciones en foros
+- Enunciados o evidencias de trabajo
+
+---
+
+## Tipos de materiales conservados
+
+Los archivos originales pueden corresponder a:
+
+- Actividades evaluativas.
+- Respuestas de ejercicios.
+- Participaciones en foros académicos.
+- Capturas de plataformas educativas.
+- Documentos de entrega.
+- Evidencias de práctica en Standard ML.
+- Material de apoyo para futuras soluciones profesionalizadas.
 
 ---
 
 ## Temas relacionados
 
-Los documentos originales de esta carpeta pueden incluir ejercicios sobre:
+Los documentos originales de esta carpeta pueden incluir ejercicios y explicaciones sobre:
 
-- Programación funcional
-- Funciones
-- Recursividad
-- Listas
-- Patrones
-- Tipos de datos
-- Evaluación de expresiones
-- Razonamiento lógico
-- Resolución de problemas mediante Standard ML
+- Programación funcional.
+- Standard ML.
+- Funciones.
+- Evaluación de expresiones.
+- Recursividad.
+- Listas.
+- Tuplas.
+- Patrones.
+- Tipos de datos.
+- Condicionales funcionales.
+- Razonamiento lógico.
+- Resolución de problemas mediante funciones.
 
 ---
 
 ## Relación con las soluciones finales
 
-Las soluciones finales y documentadas de esta área se organizarán posteriormente en una carpeta principal del repositorio, por ejemplo:
+Las soluciones finales y documentadas de esta área se organizarán en la carpeta principal:
 
 ```text
 04-fundamentos-programacion-sml/
 ```
 
-o:
-
-```text
-04-programacion-funcional-sml/
-```
-
-Allí cada ejercicio profesionalizado deberá contar con una estructura similar a:
+Allí cada ejercicio seleccionado deberá tener una estructura profesional similar a:
 
 ```text
 nombre-del-ejercicio/
@@ -67,10 +88,50 @@ nombre-del-ejercicio/
 └── solution.sml
 ```
 
+El archivo `README.md` explicará el problema, el objetivo, los conceptos aplicados, la entrada, la salida y el análisis de la solución.
+
+El archivo `solution.sml` contendrá el código limpio desarrollado en Standard ML.
+
 ---
 
-## Nota
+## Criterio para seleccionar ejercicios
 
-Los archivos de esta carpeta se conservan únicamente como respaldo académico.
+No todos los archivos originales serán convertidos en soluciones profesionales.
 
-Las versiones limpias, explicadas y profesionalizadas de los ejercicios se organizarán en la carpeta principal correspondiente a SML o Programación Funcional.
+Se priorizarán aquellos materiales que evidencien mejor:
+
+- Uso de funciones.
+- Aplicación de recursividad.
+- Manejo de listas.
+- Uso de patrones.
+- Resolución de problemas.
+- Claridad lógica.
+- Valor técnico para el portafolio académico.
+
+---
+
+## Organización recomendada para las soluciones
+
+A partir de estos archivos originales, las soluciones profesionalizadas podrán organizarse en ejercicios como:
+
+```text
+04-fundamentos-programacion-sml/
+├── funciones-basicas-sml/
+├── recursividad-sml/
+├── listas-sml/
+├── patrones-y-tuplas-sml/
+├── procesamiento-listas-sml/
+└── ejercicios-integradores-sml/
+```
+
+Esta organización permitirá mostrar de forma clara la evolución desde los fundamentos hasta ejercicios más completos de programación funcional.
+
+---
+
+## Nota importante
+
+Esta carpeta se utiliza únicamente como respaldo académico de los archivos originales.
+
+Las versiones limpias, explicadas y profesionalizadas de los ejercicios deben colocarse en la carpeta principal de Programación Funcional con SML.
+
+Antes de convertir cualquier archivo original en una solución profesional, se debe revisar que no contenga datos personales, calificaciones, matrículas, correos privados o información sensible.
