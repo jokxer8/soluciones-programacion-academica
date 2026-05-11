@@ -1,10 +1,10 @@
-# Archivos Originales TXT
+# Archivos Originales Académicos
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 ![Formato](https://img.shields.io/badge/Formato-TXT-blue)
 ![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
-Esta carpeta conserva los archivos TXT originales utilizados como base académica para construir y organizar las soluciones profesionales del repositorio.
+Esta carpeta conserva los archivos originales en formatos TXT, PDF, DOCX, SQL, SML, imágenes u otros documentos utilizados como base académica para construir y organizar las soluciones profesionales del repositorio.
 
 Los documentos aquí almacenados contienen ejercicios, prácticas o enunciados trabajados durante el proceso de formación en Ciencias de la Computación.
 
@@ -21,7 +21,7 @@ Esta carpeta permite evidenciar que los ejercicios profesionalizados no fueron c
 ## Organización interna
 
 ```text
-archivos-originales-txt/
+archivos-originales/
 ├── fundamentos-programacion/
 ├── programacion-orientada-a-objetos/
 └── diseno-y-analisis-de-algoritmos/
@@ -43,7 +43,7 @@ Los ejercicios seleccionados desde estos archivos fueron reorganizados en las si
 
 ## Uso de los archivos originales
 
-Los archivos TXT originales se conservan únicamente como respaldo y evidencia documental.
+Los archivos originales se conservan únicamente como respaldo y evidencia documental.
 
 Las versiones finales, limpias y documentadas de los ejercicios se encuentran organizadas en carpetas individuales dentro de las áreas principales del repositorio.
 
