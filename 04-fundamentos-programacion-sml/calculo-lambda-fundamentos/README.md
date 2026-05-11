@@ -57,17 +57,38 @@ La práctica se divide en tres partes:
 ```text
 calculo-lambda-fundamentos/
 ├── README.md
-└── desarrollo.md
+├── desarrollo.md
+└── actividad-calculo-lambda-fundamentos.pdf
 ```
+
+El archivo `README.md` presenta la actividad de forma general.
+
+El archivo `desarrollo.md` contiene una versión organizada y explicada del desarrollo de la actividad.
+
+El archivo `actividad-calculo-lambda-fundamentos.pdf` conserva la evidencia documental de la práctica original.
 
 ---
 
 ## Relación con los archivos originales
 
-El documento original de la actividad se conserva como respaldo académico en:
+El documento original de la actividad también se conserva como respaldo académico en:
 
 ```text
 archivos-originales/programacion-funcional-sml/
 ```
 
-Esta carpeta contiene una versión organizada y profesional del desarrollo.
+Esta carpeta contiene una versión organizada y profesional del desarrollo, mientras que la carpeta de archivos originales conserva la evidencia académica inicial.
+
+---
+
+## Nota sobre datos personales
+
+Para mantener una presentación profesional y proteger información personal, se recomienda que el PDF utilizado como evidencia no contenga datos sensibles como ID, matrícula, correo, calificaciones o información privada.
+
+En caso de que el documento original contenga datos personales, se debe subir una versión limpia o censurada.
+
+---
+
+## Estado
+
+Actividad organizada y documentada como parte del portafolio académico de Programación Funcional con SML.
