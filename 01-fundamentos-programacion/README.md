@@ -14,7 +14,7 @@ Los ejercicios aquí organizados trabajan conceptos iniciales como entrada y sal
 
 Evidenciar el dominio de los fundamentos necesarios para construir soluciones de programación claras, ordenadas y funcionales.
 
-Esta sección representa la base del proceso de formación académica antes de avanzar hacia programación orientada a objetos, estructuras de datos y análisis de algoritmos.
+Esta sección representa la base del proceso de formación académica antes de avanzar hacia programación orientada a objetos, estructuras de datos, programación funcional y análisis de algoritmos.
 
 ---
 
@@ -27,6 +27,35 @@ Esta sección representa la base del proceso de formación académica antes de a
 | [Análisis de cadena de texto](analisis-cadena-texto) | Analiza una frase contando caracteres, palabras, vocales, consonantes e invirtiendo el texto. | Cadenas, métodos, ciclos, caracteres |
 | [Calculadora con menú](calculadora-menu) | Permite realizar operaciones básicas mediante un menú interactivo. | Menú, ciclos, métodos, validación de división |
 | [Búsqueda secuencial en arreglo](busqueda-secuencial-arreglo) | Busca un número dentro de un arreglo recorriendo sus elementos uno por uno. | Arreglos, búsqueda lineal, validación, ciclos |
+
+---
+
+## Organización actual
+
+```text
+01-fundamentos-programacion/
+├── analisis-cadena-texto/
+│   ├── README.md
+│   └── solution.cs
+│
+├── busqueda-secuencial-arreglo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── calculadora-menu/
+│   ├── README.md
+│   └── solution.cs
+│
+├── clasificacion-numeros/
+│   ├── README.md
+│   └── solution.cs
+│
+├── estadisticas-basicas-arreglo/
+│   ├── README.md
+│   └── solution.cs
+│
+└── README.md
+```
 
 ---
 
@@ -43,8 +72,17 @@ Esta carpeta demuestra habilidades en:
 - Creación y uso de métodos.
 - Validación básica de entradas.
 - Uso de contadores y acumuladores.
+- Búsqueda secuencial en arreglos.
 - Resolución de problemas mediante lógica estructurada.
 - Organización de soluciones en carpetas documentadas.
+
+---
+
+## Enfoque académico
+
+Los ejercicios de esta sección representan una base importante dentro de la formación en Ciencias de la Computación.
+
+Aunque son ejercicios introductorios, permiten demostrar dominio de los elementos esenciales que luego se utilizan en problemas más avanzados, como estructuras de datos, programación orientada a objetos y análisis de algoritmos.
 
 ---
 
