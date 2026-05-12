@@ -2,11 +2,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 ![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
 Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
 
-El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión, signaturas, estructuras, tipos abstractos y razonamiento lógico aplicado a la programación funcional.
+El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión, signaturas, estructuras, tipos abstractos, listas perezosas y razonamiento lógico aplicado a la programación funcional.
 
 ---
 
@@ -27,6 +27,7 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 | [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner, tipos polimórficos |
 | [Serialización de Árboles de Expresión en SML](serializacion-arboles-expresion-sml) | Actividad sobre árboles binarios de expresión y recorridos en preorden, enorden y postorden. | Tipos recursivos, árboles, pattern matching, recursividad, serialización |
 | [Estructuras, Signaturas y Tipos Abstractos en SML](estructuras-signaturas-tipos-abstractos-sml) | Actividad sobre modularidad, tipos abstractos, estructuras, signaturas, records, listas de asociación y secuencias. | Signaturas, estructuras, tipos abstractos, records, listas de asociación, excepciones, tipos algebraicos |
+| [Listas Perezosas en SML](listas-perezosas-sml) | Actividad sobre secuencias infinitas, evaluación diferida, múltiplos, factoriales y Fibonacci. | Listas perezosas, evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial, Fibonacci |
 
 ---
 
@@ -63,34 +64,20 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 │   ├── solution.sml
 │   └── actividad-estructuras-signaturas-tipos-abstractos.pdf
 │
+├── listas-perezosas-sml/
+│   ├── README.md
+│   ├── desarrollo.md
+│   ├── solution.sml
+│   └── actividad-listas-perezosas-sml.pdf
+│
 └── README.md
-```
-
----
-
-## Organización prevista
-
-A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá ampliarse con temas como:
-
-```text
-04-fundamentos-programacion-sml/
-├── calculo-lambda-fundamentos/
-├── combinador-y-fibonacci-sml/
-├── map-inferencia-tipos-sml/
-├── serializacion-arboles-expresion-sml/
-├── estructuras-signaturas-tipos-abstractos-sml/
-├── recursividad-sml/
-├── listas-sml/
-├── patrones-y-tuplas-sml/
-├── procesamiento-listas-sml/
-└── ejercicios-integradores-sml/
 ```
 
 ---
 
 ## Habilidades evidenciadas
 
-Esta carpeta busca evidenciar habilidades en:
+Esta carpeta evidencia habilidades en:
 
 - Comprensión del cálculo lambda.
 - Interpretación de expresiones funcionales.
@@ -114,9 +101,11 @@ Esta carpeta busca evidenciar habilidades en:
 - Uso de listas de asociación.
 - Manejo de excepciones.
 - Diseño de pruebas para validar funciones.
-- Razonamiento lógico.
+- Construcción de listas perezosas.
+- Simulación de evaluación diferida en SML.
+- Generación de secuencias infinitas.
 - Resolución de problemas mediante programación funcional.
-- Organización de soluciones académicas en GitHub.
+- Organización profesional de soluciones académicas en GitHub.
 
 ---
 
@@ -135,3 +124,9 @@ La carpeta actual contiene las versiones limpias, explicadas y profesionalizadas
 ## Lenguaje utilizado
 
 Standard ML
+
+---
+
+## Estado de la sección
+
+Esta sección queda completada con seis actividades representativas de la asignatura, cubriendo fundamentos teóricos y prácticos de programación funcional con SML.
