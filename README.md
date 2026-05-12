@@ -1,20 +1,22 @@
 # Soluciones de Programación Académica
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
-![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
-![Tipo](https://img.shields.io/badge/Tipo-Repositorio%20Acad%C3%A9mico-lightgrey)
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-lightgrey)
+![Estado](https://img.shields.io/badge/Estado-En%20expansi%C3%B3n-yellow)
+![Tipo](https://img.shields.io/badge/Tipo-Portafolio%20Acad%C3%A9mico-lightgrey)
 
-Este repositorio reúne soluciones de programación desarrolladas durante mi formación académica en Ciencias de la Computación.
+Este repositorio reúne soluciones, actividades y trabajos de programación desarrollados durante mi formación académica en Ciencias de la Computación.
 
-El objetivo principal es organizar, documentar y presentar ejercicios resueltos que evidencian mi evolución técnica en lógica de programación, programación orientada a objetos, estructuras de datos, análisis de algoritmos y resolución de problemas mediante código.
+El objetivo principal es organizar, documentar y presentar ejercicios resueltos que evidencian mi evolución técnica en lógica de programación, programación orientada a objetos, programación funcional, bases de datos, análisis de algoritmos y resolución de problemas mediante código.
 
 ---
 
 ## Objetivo del repositorio
 
-Presentar de forma profesional una selección de ejercicios académicos resueltos, organizados por áreas de aprendizaje y acompañados de explicaciones, análisis de complejidad y código fuente limpio.
+Presentar de forma profesional una selección de ejercicios y actividades académicas organizadas por áreas de aprendizaje, acompañadas de explicaciones, análisis, documentación y código fuente limpio.
 
-Este repositorio funciona como evidencia de práctica constante, desarrollo del pensamiento lógico y aplicación progresiva de conceptos fundamentales y avanzados de programación.
+Este repositorio funciona como evidencia de práctica constante, desarrollo del pensamiento lógico, aplicación progresiva de conceptos fundamentales y dominio de diferentes paradigmas de programación.
 
 ---
 
@@ -25,11 +27,28 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | 01 - Fundamentos de Programación | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
 | 02 - Programación Orientada a Objetos | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
 | 03 - Diseño y Análisis de Algoritmos | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
-| Archivos originales TXT | Documentos originales utilizados como base académica para seleccionar y profesionalizar los ejercicios. | Conservado |
+| 04 - Fundamentos de Programación con SML | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
+| 05 - Bases de Datos | Carpeta destinada a organizar trabajos de SQL, modelo entidad-relación, normalización, consultas y proyectos de bases de datos. | En organización |
+| Archivos originales | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
 
 ---
 
-## Ejercicios destacados
+## Estructura del repositorio
+
+```text
+soluciones-programacion-academica/
+├── 01-fundamentos-programacion/
+├── 02-programacion-orientada-a-objetos/
+├── 03-diseno-y-analisis-de-algoritmos/
+├── 04-fundamentos-programacion-sml/
+├── 05-bases-de-datos/
+├── archivos-originales/
+└── README.md
+```
+
+---
+
+## Ejercicios y actividades destacadas
 
 ### Fundamentos de Programación
 
@@ -68,14 +87,38 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 
 ---
 
+### Fundamentos de Programación con SML
+
+| Actividad | Conceptos principales |
+|---|---|
+| [Cálculo Lambda - Fundamentos](04-fundamentos-programacion-sml/calculo-lambda-fundamentos) | Cálculo lambda, árboles de sintaxis, sustitución, reducción beta y forma normal |
+| [Combinador Y y Fibonacci en SML](04-fundamentos-programacion-sml/combinador-y-fibonacci-sml) | Combinador Y, punto fijo, Fibonacci, recursividad y funciones de orden superior |
+| [Función Map e Inferencia de Tipos en SML](04-fundamentos-programacion-sml/map-inferencia-tipos-sml) | Map, listas, Hindley-Milner, tipos polimórficos y funciones de orden superior |
+| [Serialización de Árboles de Expresión en SML](04-fundamentos-programacion-sml/serializacion-arboles-expresion-sml) | Tipos recursivos, árboles binarios, pattern matching, preorden, enorden y postorden |
+| [Estructuras, Signaturas y Tipos Abstractos en SML](04-fundamentos-programacion-sml/estructuras-signaturas-tipos-abstractos-sml) | Signaturas, estructuras, records, listas de asociación, excepciones y tipos abstractos |
+| [Listas Perezosas en SML](04-fundamentos-programacion-sml/listas-perezosas-sml) | Evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial y Fibonacci |
+
+---
+
+### Bases de Datos
+
+| Sección | Conceptos previstos |
+|---|---|
+| [Bases de Datos](05-bases-de-datos) | SQL, modelo entidad-relación, normalización, consultas, joins, scripts y proyectos académicos |
+
+---
+
 ## Tecnologías utilizadas
 
 - C#
 - .NET
+- Standard ML
+- SQL
 - Aplicaciones de consola
 - GitHub
 - Markdown
-- Archivos TXT como respaldo documental
+- PDF como evidencia documental
+- Archivos originales como respaldo académico
 
 ---
 
@@ -90,8 +133,16 @@ Este repositorio evidencia competencias en:
 - Manejo de arreglos, cadenas, listas y matrices.
 - Programación orientada a objetos.
 - Uso de clases abstractas, herencia y polimorfismo.
+- Programación funcional con Standard ML.
+- Comprensión del cálculo lambda.
+- Uso de funciones de orden superior.
+- Inferencia de tipos mediante Hindley-Milner.
+- Definición de tipos de datos recursivos.
+- Uso de signaturas, estructuras y tipos abstractos.
+- Simulación de evaluación diferida mediante listas perezosas.
 - Programación dinámica.
 - Análisis de complejidad algorítmica.
+- Organización de evidencia académica.
 - Documentación técnica en Markdown.
 - Organización profesional de repositorios en GitHub.
 
@@ -99,12 +150,36 @@ Este repositorio evidencia competencias en:
 
 ## Nota sobre los archivos originales
 
-La carpeta `archivos-originales-txt` conserva los archivos TXT originales utilizados como base académica.
+La carpeta `archivos-originales` conserva los documentos originales utilizados como base académica.
 
-A partir de esos documentos se seleccionaron ejercicios representativos y se organizaron en carpetas individuales con:
+A partir de esos documentos se seleccionan ejercicios representativos y se organizan en carpetas individuales con versiones limpias y profesionalizadas.
 
-- Un archivo `README.md` explicativo.
-- Un archivo `solution.cs` con la solución limpia en C#.
+Cada ejercicio o actividad profesionalizada puede contener:
+
+```text
+nombre-del-ejercicio/
+├── README.md
+├── desarrollo.md
+├── solution.cs / solution.sml / scripts.sql
+└── evidencia.pdf
+```
+
+---
+
+## Estado actual
+
+El repositorio se encuentra en expansión.
+
+Actualmente están completadas las secciones de:
+
+- Fundamentos de Programación.
+- Programación Orientada a Objetos.
+- Diseño y Análisis de Algoritmos.
+- Fundamentos de Programación con SML.
+
+La próxima sección en desarrollo será:
+
+- Bases de Datos.
 
 ---
 
@@ -112,4 +187,4 @@ A partir de esos documentos se seleccionaron ejercicios representativos y se org
 
 **Kelvin César Del Castillo Torres**
 
-Estudiante de Ciencias de la Computación, enfocado en fortalecer su perfil técnico mediante la organización profesional de proyectos académicos, resolución de problemas y documentación de código.
+Estudiante de Ciencias de la Computación, enfocado en fortalecer su perfil técnico mediante la organización profesional de proyectos académicos, resolución de problemas, documentación de código y construcción progresiva de un portafolio académico en GitHub.
