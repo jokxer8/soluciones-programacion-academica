@@ -14,19 +14,19 @@ El objetivo de esta sección es organizar de forma profesional evidencias acadé
 
 Presentar ejercicios y actividades desarrolladas durante la formación académica en programación funcional, organizadas de manera clara, documentada y profesional.
 
-Esta sección complementa los ejercicios de programación estructurada y orientada a objetos, mostrando el dominio de otro paradigma de programación.
+Esta sección complementa los ejercicios de programación estructurada, programación orientada a objetos y análisis de algoritmos, mostrando el dominio de otro paradigma de programación.
 
 ---
 
-## Contenido actual
+## Actividades incluidas
 
 | Actividad | Descripción | Conceptos aplicados |
 |---|---|---|
 | [Cálculo Lambda - Fundamentos](calculo-lambda-fundamentos) | Actividad teórica sobre árboles de sintaxis, sustituciones y reducciones beta. | Cálculo lambda, abstracción, sustitución, reducción beta, forma normal |
-| [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior, SML |
-| [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner, tipos polimórficos |
+| [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior |
+| [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner |
 | [Serialización de Árboles de Expresión en SML](serializacion-arboles-expresion-sml) | Actividad sobre árboles binarios de expresión y recorridos en preorden, enorden y postorden. | Tipos recursivos, árboles, pattern matching, recursividad, serialización |
-| [Estructuras, Signaturas y Tipos Abstractos en SML](estructuras-signaturas-tipos-abstractos-sml) | Actividad sobre modularidad, tipos abstractos, estructuras, signaturas, records, listas de asociación y secuencias. | Signaturas, estructuras, tipos abstractos, records, listas de asociación, excepciones, tipos algebraicos |
+| [Estructuras, Signaturas y Tipos Abstractos en SML](estructuras-signaturas-tipos-abstractos-sml) | Actividad sobre modularidad, tipos abstractos, estructuras, signaturas, records, listas de asociación y secuencias. | Signaturas, estructuras, tipos abstractos, records, listas de asociación, excepciones |
 | [Listas Perezosas en SML](listas-perezosas-sml) | Actividad sobre secuencias infinitas, evaluación diferida, múltiplos, factoriales y Fibonacci. | Listas perezosas, evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial, Fibonacci |
 
 ---
@@ -106,6 +106,30 @@ Esta carpeta evidencia habilidades en:
 - Generación de secuencias infinitas.
 - Resolución de problemas mediante programación funcional.
 - Organización profesional de soluciones académicas en GitHub.
+
+---
+
+## Enfoque académico
+
+Esta sección evidencia una base importante del pensamiento funcional.
+
+Las actividades muestran tanto la parte teórica de la programación funcional, mediante cálculo lambda y reducciones, como la parte práctica, mediante código en Standard ML, funciones de orden superior, tipos recursivos, estructuras, signaturas y listas perezosas.
+
+---
+
+## Organización de cada actividad
+
+Cada actividad está organizada en una carpeta independiente con una estructura similar a:
+
+```text
+nombre-de-la-actividad/
+├── README.md
+├── desarrollo.md
+├── solution.sml
+└── evidencia.pdf
+```
+
+No todas las actividades incluyen `solution.sml`, porque algunas son principalmente teóricas. En esos casos, la actividad se documenta mediante `README.md`, `desarrollo.md` y evidencia en PDF.
 
 ---
 
