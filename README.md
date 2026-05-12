@@ -24,16 +24,16 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 
 | Área | Descripción | Estado |
 |---|---|---|
-| 01 - Fundamentos de Programación | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
-| 02 - Programación Orientada a Objetos | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
-| 03 - Diseño y Análisis de Algoritmos | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
-| 04 - Fundamentos de Programación con SML | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
-| 05 - Bases de Datos | Carpeta destinada a organizar trabajos de SQL, modelo entidad-relación, normalización, consultas y proyectos de bases de datos. | En organización |
-| Archivos originales | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
+| [01 - Fundamentos de Programación](01-fundamentos-programacion) | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
+| [02 - Programación Orientada a Objetos](02-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
+| [03 - Diseño y Análisis de Algoritmos](03-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
+| [04 - Fundamentos de Programación con SML](04-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
+| [05 - Bases de Datos](05-bases-de-datos) | Carpeta destinada a organizar trabajos de SQL, modelo entidad-relación, normalización, consultas y proyectos de bases de datos. | En organización |
+| [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
 
 ---
 
-## Estructura del repositorio
+## Estructura general del repositorio
 
 ```text
 soluciones-programacion-academica/
