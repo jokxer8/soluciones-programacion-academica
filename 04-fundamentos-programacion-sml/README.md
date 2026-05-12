@@ -1,50 +1,78 @@
 # Fundamentos de Programación con SML
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
-![Materia](https://img.shields.io/badge/Materia-Fundamentos%20de%20Programaci%C3%B3n-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20organizaci%C3%B3n-yellow)
+![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
 
-Esta carpeta contiene ejercicios, prácticas y tareas desarrolladas en la asignatura Fundamentos de Programación utilizando el lenguaje Standard ML.
+Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
 
-El objetivo de esta sección es conservar y organizar evidencias académicas relacionadas con programación funcional, recursividad, funciones, listas, patrones y razonamiento lógico aplicado al código.
+El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos y razonamiento lógico aplicado a la programación funcional.
 
 ---
 
 ## Objetivo de la carpeta
 
-Organizar los ejercicios realizados en SML durante la asignatura Fundamentos de Programación, documentando cada solución de forma clara y profesional.
+Presentar ejercicios y actividades desarrolladas durante la formación académica en programación funcional, organizadas de manera clara, documentada y profesional.
 
-Esta carpeta complementa la sección de fundamentos en C#, mostrando que la formación académica incluyó diferentes paradigmas de programación.
+Esta sección complementa los ejercicios de programación estructurada y orientada a objetos, mostrando el dominio de otro paradigma de programación.
 
 ---
 
-## Conceptos trabajados
+## Contenido actual
 
-- Programación funcional.
-- Funciones.
-- Recursividad.
-- Listas.
-- Patrones.
-- Evaluación de expresiones.
-- Tipos de datos.
-- Razonamiento lógico.
-- Resolución de problemas mediante SML.
+| Actividad | Descripción | Conceptos aplicados |
+|---|---|---|
+| [Cálculo Lambda - Fundamentos](calculo-lambda-fundamentos) | Actividad teórica sobre árboles de sintaxis, sustituciones y reducciones beta. | Cálculo lambda, abstracción, sustitución, reducción beta, forma normal |
 
 ---
 
 ## Organización prevista
 
+A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá organizarse de la siguiente manera:
+
 ```text
 04-fundamentos-programacion-sml/
-├── ejercicios-basicos/
-├── recursividad/
-├── listas/
-├── tareas/
-└── README.md
+├── calculo-lambda-fundamentos/
+├── funciones-basicas-sml/
+├── recursividad-sml/
+├── listas-sml/
+├── patrones-y-tuplas-sml/
+├── procesamiento-listas-sml/
+└── ejercicios-integradores-sml/
 ```
 
 ---
 
-## Nota
+## Habilidades evidenciadas
 
-Los ejercicios se irán agregando progresivamente, seleccionando los trabajos más representativos de la asignatura.
+Esta carpeta busca evidenciar habilidades en:
+
+- Comprensión del cálculo lambda.
+- Interpretación de expresiones funcionales.
+- Uso de funciones.
+- Aplicación de recursividad.
+- Manejo de listas.
+- Uso de patrones.
+- Trabajo con tuplas.
+- Evaluación de expresiones.
+- Razonamiento lógico.
+- Resolución de problemas mediante programación funcional.
+- Organización de soluciones académicas en GitHub.
+
+---
+
+## Relación con archivos originales
+
+Los documentos originales utilizados como base académica se conservan en:
+
+```text
+archivos-originales/programacion-funcional-sml/
+```
+
+La carpeta actual contiene las versiones limpias, explicadas y profesionalizadas de las actividades seleccionadas.
+
+---
+
+## Lenguaje utilizado
+
+Standard ML
