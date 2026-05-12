@@ -6,11 +6,16 @@
    enorden y postorden.
 *)
 
-datatype tree = Leaf | Br of tree * string * tree;
+datatype tree =
+    Leaf
+  | Br of tree * string * tree;
 
-(* Árbol correspondiente a la expresión:
+(*
+   Árbol correspondiente a la expresión:
+
    (x * 45) + z / (y + 5050)
 *)
+
 val exprTree =
     Br(
         Br(
@@ -30,31 +35,49 @@ val exprTree =
         )
     );
 
-(* Une dos cadenas evitando espacios innecesarios *)
+(*
+   Une dos cadenas evitando espacios innecesarios.
+*)
 fun unir ("", s) = s
   | unir (s, "") = s
   | unir (s1, s2) = s1 ^ " " ^ s2;
 
-(* Une tres cadenas usando la función unir *)
-fun unir3 (a, b, c) = unir (unir (a, b), c);
+(*
+   Une tres cadenas usando la función unir.
+*)
+fun unir3 (a, b, c) =
+    unir (unir (a, b), c);
 
-(* Recorrido en preorden: raíz - izquierda - derecha *)
+(*
+   Recorrido en preorden:
+   raíz - izquierda - derecha
+*)
 fun preorden Leaf = ""
   | preorden (Br(izq, dato, der)) =
         unir3 (dato, preorden izq, preorden der);
 
-(* Recorrido en enorden: izquierda - raíz - derecha *)
+(*
+   Recorrido en enorden:
+   izquierda - raíz - derecha
+
+   Se agregan paréntesis para preservar la estructura
+   de la expresión aritmética.
+*)
 fun enorden Leaf = ""
   | enorden (Br(Leaf, dato, Leaf)) = dato
   | enorden (Br(izq, dato, der)) =
         "(" ^ enorden izq ^ " " ^ dato ^ " " ^ enorden der ^ ")";
 
-(* Recorrido en postorden: izquierda - derecha - raíz *)
+(*
+   Recorrido en postorden:
+   izquierda - derecha - raíz
+*)
 fun postorden Leaf = ""
   | postorden (Br(izq, dato, der)) =
         unir3 (postorden izq, postorden der, dato);
 
-(* Pruebas *)
+(* Casos de prueba *)
+
 val resultadoPreorden = preorden exprTree;
 val resultadoEnorden = enorden exprTree;
 val resultadoPostorden = postorden exprTree;
@@ -62,12 +85,12 @@ val resultadoPostorden = postorden exprTree;
 (*
    Resultados esperados:
 
-   resultadoPreorden:
+   resultadoPreorden =
    "+ * x 45 / z + y 5050"
 
-   resultadoEnorden:
+   resultadoEnorden =
    "((x * 45) + (z / (y + 5050)))"
 
-   resultadoPostorden:
+   resultadoPostorden =
    "x 45 * z y 5050 + / +"
 *)
