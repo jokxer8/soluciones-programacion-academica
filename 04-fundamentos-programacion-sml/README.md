@@ -23,16 +23,38 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 | Actividad | Descripción | Conceptos aplicados |
 |---|---|---|
 | [Cálculo Lambda - Fundamentos](calculo-lambda-fundamentos) | Actividad teórica sobre árboles de sintaxis, sustituciones y reducciones beta. | Cálculo lambda, abstracción, sustitución, reducción beta, forma normal |
+| [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior, SML |
+
+---
+
+## Organización actual
+
+```text
+04-fundamentos-programacion-sml/
+├── calculo-lambda-fundamentos/
+│   ├── README.md
+│   ├── desarrollo.md
+│   └── actividad-calculo-lambda-fundamentos.pdf
+│
+├── combinador-y-fibonacci-sml/
+│   ├── README.md
+│   ├── desarrollo.md
+│   ├── solution.sml
+│   └── actividad-combinador-y-fibonacci.pdf
+│
+└── README.md
+```
 
 ---
 
 ## Organización prevista
 
-A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá organizarse de la siguiente manera:
+A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá ampliarse con temas como:
 
 ```text
 04-fundamentos-programacion-sml/
 ├── calculo-lambda-fundamentos/
+├── combinador-y-fibonacci-sml/
 ├── funciones-basicas-sml/
 ├── recursividad-sml/
 ├── listas-sml/
@@ -49,12 +71,12 @@ Esta carpeta busca evidenciar habilidades en:
 
 - Comprensión del cálculo lambda.
 - Interpretación de expresiones funcionales.
-- Uso de funciones.
+- Aplicación de sustituciones y reducciones beta.
+- Comprensión del combinador Y.
+- Uso de funciones de orden superior.
 - Aplicación de recursividad.
-- Manejo de listas.
-- Uso de patrones.
-- Trabajo con tuplas.
-- Evaluación de expresiones.
+- Implementación de funciones en Standard ML.
+- Manejo de pruebas en SML.
 - Razonamiento lógico.
 - Resolución de problemas mediante programación funcional.
 - Organización de soluciones académicas en GitHub.
