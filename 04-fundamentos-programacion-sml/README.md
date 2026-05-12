@@ -6,7 +6,7 @@
 
 Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
 
-El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión y razonamiento lógico aplicado a la programación funcional.
+El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión, signaturas, estructuras, tipos abstractos y razonamiento lógico aplicado a la programación funcional.
 
 ---
 
@@ -26,6 +26,7 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 | [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior, SML |
 | [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner, tipos polimórficos |
 | [Serialización de Árboles de Expresión en SML](serializacion-arboles-expresion-sml) | Actividad sobre árboles binarios de expresión y recorridos en preorden, enorden y postorden. | Tipos recursivos, árboles, pattern matching, recursividad, serialización |
+| [Estructuras, Signaturas y Tipos Abstractos en SML](estructuras-signaturas-tipos-abstractos-sml) | Actividad sobre modularidad, tipos abstractos, estructuras, signaturas, records, listas de asociación y secuencias. | Signaturas, estructuras, tipos abstractos, records, listas de asociación, excepciones, tipos algebraicos |
 
 ---
 
@@ -56,6 +57,12 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 │   ├── solution.sml
 │   └── actividad-serializacion-arboles-expresion.pdf
 │
+├── estructuras-signaturas-tipos-abstractos-sml/
+│   ├── README.md
+│   ├── desarrollo.md
+│   ├── solution.sml
+│   └── actividad-estructuras-signaturas-tipos-abstractos.pdf
+│
 └── README.md
 ```
 
@@ -71,6 +78,7 @@ A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá
 ├── combinador-y-fibonacci-sml/
 ├── map-inferencia-tipos-sml/
 ├── serializacion-arboles-expresion-sml/
+├── estructuras-signaturas-tipos-abstractos-sml/
 ├── recursividad-sml/
 ├── listas-sml/
 ├── patrones-y-tuplas-sml/
@@ -99,7 +107,13 @@ Esta carpeta busca evidenciar habilidades en:
 - Representación de árboles binarios.
 - Serialización de árboles de expresión.
 - Uso de pattern matching.
-- Manejo de pruebas en SML.
+- Definición de signaturas.
+- Implementación de estructuras.
+- Uso de tipos abstractos de datos.
+- Manejo de records.
+- Uso de listas de asociación.
+- Manejo de excepciones.
+- Diseño de pruebas para validar funciones.
 - Razonamiento lógico.
 - Resolución de problemas mediante programación funcional.
 - Organización de soluciones académicas en GitHub.
