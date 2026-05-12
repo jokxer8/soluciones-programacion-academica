@@ -30,6 +30,35 @@ Esta sección representa un avance desde la programación estructurada hacia el 
 
 ---
 
+## Organización actual
+
+```text
+02-programacion-orientada-a-objetos/
+├── agenda-citas-poo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── avisos-archivo-serializacion-poo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── matriz-2x2-poo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── sistema-nomina-polimorfismo-poo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── telefono-movil-poo/
+│   ├── README.md
+│   └── solution.cs
+│
+└── README.md
+```
+
+---
+
 ## Habilidades evidenciadas
 
 Esta carpeta demuestra habilidades en:
@@ -53,19 +82,11 @@ Esta carpeta demuestra habilidades en:
 
 ---
 
-## Organización de cada ejercicio
+## Enfoque académico
 
-Cada ejercicio está organizado en una carpeta independiente con la siguiente estructura:
+Los ejercicios de esta sección muestran una transición desde programas estructurados hacia soluciones organizadas mediante objetos.
 
-```text
-nombre-del-ejercicio/
-├── README.md
-└── solution.cs
-```
-
-El archivo `README.md` describe el problema, el objetivo, los conceptos aplicados, la estructura del programa y el análisis de la solución.
-
-El archivo `solution.cs` contiene la implementación en C#.
+Cada ejercicio representa un escenario donde los datos y comportamientos se agrupan dentro de clases, permitiendo construir programas más claros, reutilizables y fáciles de mantener.
 
 ---
 
@@ -89,9 +110,25 @@ Este ejercicio evidencia un uso más completo de programación orientada a objet
 
 ---
 
+## Organización de cada ejercicio
+
+Cada ejercicio está organizado en una carpeta independiente con la siguiente estructura:
+
+```text
+nombre-del-ejercicio/
+├── README.md
+└── solution.cs
+```
+
+El archivo `README.md` describe el problema, el objetivo, los conceptos aplicados, la estructura del programa y el análisis de la solución.
+
+El archivo `solution.cs` contiene la implementación en C#.
+
+---
+
 ## Nivel de dificultad
 
-Los ejercicios de esta sección van desde un nivel intermedio hasta un nivel más avanzado.
+Los ejercicios de esta sección van desde un nivel intermedio hasta un nivel avanzado.
 
 El propósito principal es demostrar que el código puede organizarse mediante objetos y que una solución puede crecer sin perder claridad ni estructura.
 
