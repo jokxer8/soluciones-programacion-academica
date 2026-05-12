@@ -6,7 +6,7 @@
 
 Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
 
-El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos y razonamiento lógico aplicado a la programación funcional.
+El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos y razonamiento lógico aplicado a la programación funcional.
 
 ---
 
@@ -24,6 +24,7 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 |---|---|---|
 | [Cálculo Lambda - Fundamentos](calculo-lambda-fundamentos) | Actividad teórica sobre árboles de sintaxis, sustituciones y reducciones beta. | Cálculo lambda, abstracción, sustitución, reducción beta, forma normal |
 | [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior, SML |
+| [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner, tipos polimórficos |
 
 ---
 
@@ -42,6 +43,12 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 │   ├── solution.sml
 │   └── actividad-combinador-y-fibonacci.pdf
 │
+├── map-inferencia-tipos-sml/
+│   ├── README.md
+│   ├── desarrollo.md
+│   ├── solution.sml
+│   └── actividad-map-inferencia-tipos.pdf
+│
 └── README.md
 ```
 
@@ -55,7 +62,7 @@ A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá
 04-fundamentos-programacion-sml/
 ├── calculo-lambda-fundamentos/
 ├── combinador-y-fibonacci-sml/
-├── funciones-basicas-sml/
+├── map-inferencia-tipos-sml/
 ├── recursividad-sml/
 ├── listas-sml/
 ├── patrones-y-tuplas-sml/
@@ -76,6 +83,10 @@ Esta carpeta busca evidenciar habilidades en:
 - Uso de funciones de orden superior.
 - Aplicación de recursividad.
 - Implementación de funciones en Standard ML.
+- Manejo de listas.
+- Uso de la función `map`.
+- Inferencia de tipos mediante Hindley-Milner.
+- Comprensión de tipos polimórficos.
 - Manejo de pruebas en SML.
 - Razonamiento lógico.
 - Resolución de problemas mediante programación funcional.
