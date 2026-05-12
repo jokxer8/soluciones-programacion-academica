@@ -6,7 +6,7 @@
 
 Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
 
-El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos y razonamiento lógico aplicado a la programación funcional.
+El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión y razonamiento lógico aplicado a la programación funcional.
 
 ---
 
@@ -25,6 +25,7 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 | [Cálculo Lambda - Fundamentos](calculo-lambda-fundamentos) | Actividad teórica sobre árboles de sintaxis, sustituciones y reducciones beta. | Cálculo lambda, abstracción, sustitución, reducción beta, forma normal |
 | [Combinador Y y Fibonacci en SML](combinador-y-fibonacci-sml) | Actividad teórico-práctica sobre recursividad mediante el combinador Y y la función Fibonacci. | Combinador Y, punto fijo, Fibonacci, recursividad, funciones de orden superior, SML |
 | [Función Map e Inferencia de Tipos en SML](map-inferencia-tipos-sml) | Actividad sobre la función `map`, reducción de llamadas e inferencia de tipos Hindley-Milner. | Map, listas, funciones de orden superior, recursividad, Hindley-Milner, tipos polimórficos |
+| [Serialización de Árboles de Expresión en SML](serializacion-arboles-expresion-sml) | Actividad sobre árboles binarios de expresión y recorridos en preorden, enorden y postorden. | Tipos recursivos, árboles, pattern matching, recursividad, serialización |
 
 ---
 
@@ -49,6 +50,12 @@ Esta sección complementa los ejercicios de programación estructurada y orienta
 │   ├── solution.sml
 │   └── actividad-map-inferencia-tipos.pdf
 │
+├── serializacion-arboles-expresion-sml/
+│   ├── README.md
+│   ├── desarrollo.md
+│   ├── solution.sml
+│   └── actividad-serializacion-arboles-expresion.pdf
+│
 └── README.md
 ```
 
@@ -63,6 +70,7 @@ A medida que se seleccionen nuevas actividades y ejercicios, esta carpeta podrá
 ├── calculo-lambda-fundamentos/
 ├── combinador-y-fibonacci-sml/
 ├── map-inferencia-tipos-sml/
+├── serializacion-arboles-expresion-sml/
 ├── recursividad-sml/
 ├── listas-sml/
 ├── patrones-y-tuplas-sml/
@@ -87,6 +95,10 @@ Esta carpeta busca evidenciar habilidades en:
 - Uso de la función `map`.
 - Inferencia de tipos mediante Hindley-Milner.
 - Comprensión de tipos polimórficos.
+- Definición de tipos de datos recursivos.
+- Representación de árboles binarios.
+- Serialización de árboles de expresión.
+- Uso de pattern matching.
 - Manejo de pruebas en SML.
 - Razonamiento lógico.
 - Resolución de problemas mediante programación funcional.
