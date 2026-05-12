@@ -1,20 +1,20 @@
 # Archivos Originales Académicos
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
-![Formato](https://img.shields.io/badge/Formato-TXT-blue)
+![Formato](https://img.shields.io/badge/Formato-M%C3%BAltiples%20formatos-blue)
 ![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
-Esta carpeta conserva los archivos originales en formatos TXT, PDF, DOCX, SQL, SML, imágenes u otros documentos utilizados como base académica para construir y organizar las soluciones profesionales del repositorio.
+Esta carpeta conserva los archivos originales utilizados como base académica para construir, organizar y profesionalizar las soluciones del repositorio.
 
-Los documentos aquí almacenados contienen ejercicios, prácticas o enunciados trabajados durante el proceso de formación en Ciencias de la Computación.
+Los documentos almacenados aquí funcionan como respaldo de ejercicios, prácticas, tareas, foros, proyectos, enunciados, evidencias y materiales trabajados durante la formación en Ciencias de la Computación.
 
 ---
 
 ## Objetivo de esta carpeta
 
-Conservar una copia de los archivos originales para mantener la trazabilidad entre el material académico inicial y las soluciones organizadas en las carpetas principales del repositorio.
+Mantener una copia organizada de los documentos originales para conservar la trazabilidad entre el material académico inicial y las versiones finales documentadas en las carpetas principales del repositorio.
 
-Esta carpeta permite evidenciar que los ejercicios profesionalizados no fueron colocados de forma aislada, sino que surgieron a partir de documentos académicos previamente trabajados.
+Esta carpeta permite evidenciar que las soluciones profesionalizadas no fueron colocadas de forma aislada, sino que surgieron a partir de materiales académicos previamente desarrollados.
 
 ---
 
@@ -22,55 +22,121 @@ Esta carpeta permite evidenciar que los ejercicios profesionalizados no fueron c
 
 ```text
 archivos-originales/
-├── fundamentos-programacion/
-├── programacion-orientada-a-objetos/
-└── diseno-y-analisis-de-algoritmos/
+├── bases-de-datos/
+├── diseno-y-analisis-de-algoritmos/
+├── fundamentos-programacion-csharp/
+├── programacion-funcional-sml/
+└── programacion-orientada-a-objetos/
 ```
 
 ---
 
 ## Relación con las carpetas principales
 
-Los ejercicios seleccionados desde estos archivos fueron reorganizados en las siguientes áreas:
+Los archivos originales se relacionan con las áreas profesionalizadas del repositorio de la siguiente manera:
 
-| Carpeta profesionalizada | Área de aprendizaje |
-|---|---|
-| `01-fundamentos-programacion` | Fundamentos de Programación |
-| `02-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
-| `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
+| Carpeta de archivos originales | Carpeta profesionalizada | Área de aprendizaje |
+|---|---|---|
+| `fundamentos-programacion-csharp` | `01-fundamentos-programacion` | Fundamentos de Programación en C# |
+| `programacion-orientada-a-objetos` | `02-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
+| `diseno-y-analisis-de-algoritmos` | `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
+| `programacion-funcional-sml` | `04-fundamentos-programacion-sml` | Programación Funcional con SML |
+| `bases-de-datos` | `05-bases-de-datos` | Bases de Datos |
+
+---
+
+## Tipos de archivos conservados
+
+Esta carpeta puede contener archivos en diferentes formatos, tales como:
+
+- TXT
+- PDF
+- DOCX
+- PNG
+- JPG
+- SQL
+- SML
+- XLSX
+- Capturas de pantalla
+- Enunciados académicos
+- Respuestas originales
+- Evidencias de prácticas
+- Documentos de entrega
 
 ---
 
 ## Uso de los archivos originales
 
-Los archivos originales se conservan únicamente como respaldo y evidencia documental.
+Los archivos de esta carpeta se conservan como respaldo documental.
 
-Las versiones finales, limpias y documentadas de los ejercicios se encuentran organizadas en carpetas individuales dentro de las áreas principales del repositorio.
+Las versiones finales, limpias y profesionalizadas de los ejercicios, actividades o proyectos se organizan en las carpetas principales del repositorio.
 
-Cada ejercicio profesionalizado contiene:
+Cada versión profesionalizada puede tener una estructura como esta:
 
 ```text
-nombre-del-ejercicio/
+nombre-del-ejercicio-o-actividad/
 ├── README.md
-└── solution.cs
+├── desarrollo.md
+├── solution.cs / solution.sml / scripts.sql
+└── evidencia.pdf
 ```
 
 ---
 
 ## Importancia de conservar estos archivos
 
-Mantener estos documentos permite:
+Mantener los documentos originales permite:
 
-- Preservar el material académico original.
-- Mostrar el proceso de mejora y organización del código.
-- Evidenciar la evolución desde ejercicios iniciales hasta soluciones documentadas.
+- Preservar evidencia del proceso académico.
+- Mostrar la evolución desde trabajos iniciales hasta soluciones profesionalizadas.
 - Facilitar futuras revisiones o ampliaciones del repositorio.
-- Mantener ordenado el respaldo de los archivos fuente utilizados.
+- Mantener respaldo de actividades, prácticas y proyectos.
+- Relacionar cada solución final con su material de origen.
+- Organizar los documentos por asignatura o área técnica.
 
 ---
 
-## Nota importante
+## Criterio de organización
 
-Esta carpeta no contiene las soluciones finales del repositorio.
+Los archivos originales deben organizarse según el área académica correspondiente.
 
-Las soluciones finales están ubicadas en las carpetas principales, donde cada ejercicio cuenta con explicación, análisis y código fuente limpio en C#.
+También se recomienda utilizar nombres claros y profesionales, siguiendo esta regla:
+
+```text
+minusculas-sin-acentos-con-guiones.extension
+```
+
+Ejemplos recomendados:
+
+```text
+actividad-calculo-lambda-original.pdf
+actividad-map-inferencia-tipos-original.pdf
+proyecto-final-bases-de-datos-original.pdf
+modelo-entidad-relacion-original.png
+script-creacion-tablas-original.sql
+```
+
+---
+
+## Nota sobre datos personales
+
+Antes de subir documentos originales a un repositorio público, se recomienda revisar que no contengan información sensible, como:
+
+- Cédula.
+- Matrícula.
+- ID institucional.
+- Correos privados.
+- Calificaciones.
+- Teléfonos.
+- Información de terceros.
+- Datos personales innecesarios.
+
+Si un documento contiene información sensible, se recomienda subir una versión limpia o censurada.
+
+---
+
+## Estado de la carpeta
+
+Esta carpeta queda destinada exclusivamente a conservar archivos originales y evidencias académicas.
+
+Las soluciones finales deben mantenerse en las carpetas principales del repositorio.
