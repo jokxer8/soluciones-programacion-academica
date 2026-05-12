@@ -31,6 +31,39 @@ Esta sección representa una etapa más avanzada del proceso de formación, dond
 
 ---
 
+## Organización actual
+
+```text
+03-diseno-y-analisis-de-algoritmos/
+├── busqueda-binaria/
+│   ├── README.md
+│   └── solution.cs
+│
+├── cambio-monedas-limitado/
+│   ├── README.md
+│   └── solution.cs
+│
+├── conteo-y-conexion-de-islas/
+│   ├── README.md
+│   └── solution.cs
+│
+├── fibonacci-recursivo/
+│   ├── README.md
+│   └── solution.cs
+│
+├── ordenamiento-rapido-quicksort/
+│   ├── README.md
+│   └── solution.cs
+│
+├── subsecuencia-creciente-suma-maxima/
+│   ├── README.md
+│   └── solution.cs
+│
+└── README.md
+```
+
+---
+
 ## Habilidades evidenciadas
 
 Esta carpeta demuestra habilidades en:
@@ -52,19 +85,11 @@ Esta carpeta demuestra habilidades en:
 
 ---
 
-## Organización de cada ejercicio
+## Enfoque académico
 
-Cada ejercicio está organizado en una carpeta independiente con la siguiente estructura:
+Los ejercicios de esta sección representan un nivel más avanzado dentro del proceso de formación en Ciencias de la Computación.
 
-```text
-nombre-del-ejercicio/
-├── README.md
-└── solution.cs
-```
-
-El archivo `README.md` explica el problema, el objetivo, la entrada, la salida, los conceptos aplicados, el análisis del algoritmo y la complejidad.
-
-El archivo `solution.cs` contiene la solución desarrollada en C#.
+Aquí el objetivo no es únicamente resolver un problema, sino también analizar la estrategia utilizada, comprender la eficiencia de la solución y justificar el comportamiento del algoritmo.
 
 ---
 
@@ -79,6 +104,22 @@ conteo-y-conexion-de-islas
 ```
 
 Estos ejercicios evidencian un nivel más avanzado porque requieren análisis previo, selección de estrategia, optimización y comprensión del comportamiento del algoritmo.
+
+---
+
+## Organización de cada ejercicio
+
+Cada ejercicio está organizado en una carpeta independiente con la siguiente estructura:
+
+```text
+nombre-del-ejercicio/
+├── README.md
+└── solution.cs
+```
+
+El archivo `README.md` explica el problema, el objetivo, la entrada, la salida, los conceptos aplicados, el análisis del algoritmo y la complejidad.
+
+El archivo `solution.cs` contiene la solución desarrollada en C#.
 
 ---
 
