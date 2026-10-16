@@ -6,13 +6,30 @@ namespace HotelReservas
 {
     public static class Database
     {
-        private static readonly string connectionString =
-            Environment.GetEnvironmentVariable("HOTELRESERVAS_CONNECTION_STRING")
-            ?? @"Server=localhost;Database=HotelDB;Trusted_Connection=True;";
-
         public static SqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            string configured = Environment.GetEnvironmentVariable("HOTELRESERVAS_CONNECTION_STRING");
+            try
+            {
+                var builder = new SqlConnectionStringBuilder(string.IsNullOrWhiteSpace(configured)
+                    ? @"Server=localhost;Database=HotelDB;Trusted_Connection=True;" : configured);
+                if (string.IsNullOrWhiteSpace(builder.DataSource) || string.IsNullOrWhiteSpace(builder.InitialCatalog))
+                    throw new ArgumentException();
+                return new SqlConnection(builder.ConnectionString);
+            }
+            catch (ArgumentException)
+            {
+                throw new InvalidOperationException("La configuración de conexión no es válida. Revise HOTELRESERVAS_CONNECTION_STRING: indique servidor y base de datos.");
+            }
+        }
+
+        public static void AbrirConexion(SqlConnection connection)
+        {
+            try { connection.Open(); }
+            catch (SqlException)
+            {
+                throw new InvalidOperationException("No se pudo conectar con SQL Server. Compruebe la instancia, la base de datos y los permisos de Windows, o revise HOTELRESERVAS_CONNECTION_STRING.");
+            }
         }
 
         // =========================
@@ -40,7 +57,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 using (SqlCommand cmd = new SqlCommand("dbo.sp_ValidarLogin", conn))
                 {
@@ -86,7 +103,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -117,7 +134,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -162,7 +179,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Cliente
@@ -213,7 +230,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Cliente
@@ -247,7 +264,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "DELETE FROM dbo.Cliente WHERE IdCliente = @IdCliente;";
 
@@ -265,7 +282,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -292,7 +309,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -313,11 +330,12 @@ namespace HotelReservas
 
         public static DataTable ObtenerSucursalesAdmin()
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -343,11 +361,12 @@ namespace HotelReservas
 
         public static DataTable BuscarSucursales(string texto)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -390,9 +409,10 @@ namespace HotelReservas
             string email,
             bool estado)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Sucursal
@@ -437,9 +457,10 @@ namespace HotelReservas
             string email,
             bool estado)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Sucursal
@@ -469,9 +490,10 @@ namespace HotelReservas
 
         public static void EliminarSucursal(int idSucursal)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Sucursal
@@ -495,7 +517,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -519,7 +541,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -546,7 +568,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -583,7 +605,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.TipoHabitacion
@@ -622,7 +644,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.TipoHabitacion
@@ -650,7 +672,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "DELETE FROM dbo.TipoHabitacion WHERE IdTipoHabitacion = @IdTipoHabitacion;";
 
@@ -671,7 +693,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -695,7 +717,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -731,7 +753,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -777,7 +799,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -806,9 +828,10 @@ namespace HotelReservas
             decimal precioPorNoche,
             string descripcion)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Habitacion
@@ -857,9 +880,10 @@ namespace HotelReservas
             decimal precioPorNoche,
             string descripcion)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Habitacion
@@ -891,9 +915,10 @@ namespace HotelReservas
 
         public static void EliminarHabitacion(int idHabitacion)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "DELETE FROM dbo.Habitacion WHERE IdHabitacion = @IdHabitacion;";
 
@@ -914,7 +939,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -939,7 +964,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -966,7 +991,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1010,7 +1035,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1065,7 +1090,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "SELECT PrecioPorNoche FROM dbo.Habitacion WHERE IdHabitacion = @IdHabitacion;";
 
@@ -1098,7 +1123,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 using (SqlCommand cmd = new SqlCommand("dbo.sp_InsertarReserva", conn))
                 {
@@ -1131,7 +1156,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 SqlTransaction transaction = conn.BeginTransaction();
 
@@ -1233,7 +1258,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 SqlTransaction transaction = conn.BeginTransaction();
 
@@ -1293,7 +1318,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1322,7 +1347,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1371,7 +1396,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 using (SqlCommand cmd = new SqlCommand("dbo.sp_GenerarFactura", conn))
                 {
@@ -1389,7 +1414,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1424,7 +1449,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1474,7 +1499,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1498,7 +1523,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1532,7 +1557,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT ISNULL(SUM(Monto), 0)
@@ -1562,7 +1587,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 SqlTransaction transaction = conn.BeginTransaction();
 
@@ -1669,11 +1694,12 @@ namespace HotelReservas
         // =========================
         public static DataTable ObtenerRendimientoEmpleados()
         {
+            SesionUsuario.ExigirAcceso("Configuracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"SELECT * FROM dbo.vw_RendimientoEmpleados;";
 
@@ -1695,7 +1721,7 @@ namespace HotelReservas
             {
                 using (SqlConnection conn = GetConnection())
                 {
-                    conn.Open();
+                    Database.AbrirConexion(conn);
 
                     string sql = @"
                         INSERT INTO dbo.AuditLog
@@ -1730,11 +1756,12 @@ namespace HotelReservas
         // =========================
         public static string ObtenerConfiguracion(string clave, string valorDefault = "")
         {
+            SesionUsuario.ExigirAcceso("Configuracion");
             try
             {
                 using (SqlConnection conn = GetConnection())
                 {
-                    conn.Open();
+                    Database.AbrirConexion(conn);
 
                     string sql = @"SELECT Valor FROM dbo.ConfiguracionSistema WHERE Clave = @Clave;";
 
@@ -1758,9 +1785,10 @@ namespace HotelReservas
 
         public static void ActualizarConfiguracion(string clave, string valor)
         {
+            SesionUsuario.ExigirAcceso("Configuracion");
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.ConfiguracionSistema
@@ -1778,11 +1806,12 @@ namespace HotelReservas
 
         public static DataTable ObtenerTodasConfiguraciones()
         {
+            SesionUsuario.ExigirAcceso("Configuracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT Clave, Valor, Descripcion, FechaModificacion
@@ -1809,7 +1838,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1847,7 +1876,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1890,7 +1919,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT

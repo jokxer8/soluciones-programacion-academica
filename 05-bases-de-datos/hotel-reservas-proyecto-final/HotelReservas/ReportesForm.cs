@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -18,6 +18,8 @@ namespace HotelReservas
         private ComboBox cboAnio;
         private Button btnCargar;
         private Button btnExportarExcel;
+        private ComboBox cboSucursal;
+        private int? SucursalSeleccionada => cboSucursal.SelectedValue == null || Convert.ToInt32(cboSucursal.SelectedValue) == 0 ? (int?)null : Convert.ToInt32(cboSucursal.SelectedValue);
 
         private TabControl tabControl;
         private TabPage tabOperativos;
@@ -86,6 +88,7 @@ namespace HotelReservas
 
         public ReportesForm()
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             InicializarComponentes();
             AnimationEngine.Register(this);
 
@@ -389,6 +392,9 @@ namespace HotelReservas
 
         private void ReportesForm_Load(object sender, EventArgs e)
         {
+            var sucursales = Database.ObtenerSucursales();
+            var todas = sucursales.NewRow(); todas["IdSucursal"] = 0; todas["NombreSucursal"] = "Todas las sucursales"; sucursales.Rows.InsertAt(todas, 0);
+            cboSucursal.DisplayMember = "NombreSucursal"; cboSucursal.ValueMember = "IdSucursal"; cboSucursal.DataSource = sucursales;
             CargarAnios();
             dtDesde.Value = new DateTime(DateTime.Today.Year, 1, 1);
             dtHasta.Value = DateTime.Today;
@@ -403,7 +409,7 @@ namespace HotelReservas
 
             panelFiltros = new Panel();
             panelFiltros.Dock = DockStyle.Top;
-            panelFiltros.Height = 70;
+            panelFiltros.Height = 115;
             panelFiltros.Tag = "skip";
 
             lblDesde = new Label();
@@ -445,6 +451,10 @@ namespace HotelReservas
             btnExportarExcel.Size = new Size(130, 30);
             btnExportarExcel.Click += BtnExportarExcel_Click;
 
+            cboSucursal = new ComboBox { DropDownStyle = ComboBoxStyle.DropDownList, Location = new Point(20, 77), Width = 260 };
+            var btnPdf = new Button { Text = "Exportar a PDF", Location = new Point(570, 76), Size = new Size(130, 30) };
+            btnPdf.Click += (s, e) => ExportarActivo(true);
+            panelFiltros.Controls.Add(cboSucursal); panelFiltros.Controls.Add(btnPdf);
             panelFiltros.Controls.Add(lblDesde);
             panelFiltros.Controls.Add(dtDesde);
             panelFiltros.Controls.Add(lblHasta);
@@ -664,10 +674,10 @@ namespace HotelReservas
             try
             {
                 // Cargar KPI del mes actual para cada métrica
-                DataTable dtRevPAR = ReportesData.ObtenerRevPAR(anio);
-                DataTable dtADR = ReportesData.ObtenerADR(anio);
-                DataTable dtOccupancy = ReportesData.ObtenerOccupancyRate(anio);
-                DataTable dtGOPPAR = ReportesData.ObtenerGOPPAR(anio);
+                DataTable dtRevPAR = ReportesData.ObtenerRevPAR(anio, SucursalSeleccionada);
+                DataTable dtADR = ReportesData.ObtenerADR(anio, SucursalSeleccionada);
+                DataTable dtOccupancy = ReportesData.ObtenerOccupancyRate(anio, SucursalSeleccionada);
+                DataTable dtGOPPAR = ReportesData.ObtenerGOPPAR(anio, SucursalSeleccionada);
 
                 int mesActual = DateTime.Today.Month;
 
@@ -675,8 +685,8 @@ namespace HotelReservas
                 decimal revparMes = 0;
                 foreach (DataRow row in dtRevPAR.Rows)
                 {
-                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"]) == mesActual)
-                        revparMes += row["RevPAR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["RevPAR"]);
+                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"] == DBNull.Value ? 0 : row["Mes"]) == mesActual)
+                        revparMes += row["RevPAR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["RevPAR"] == DBNull.Value ? 0 : row["RevPAR"]);
                 }
                 lblRevPAR.Text = "RevPAR mes: " + revparMes.ToString("N2");
 
@@ -684,8 +694,8 @@ namespace HotelReservas
                 decimal adrMes = 0;
                 foreach (DataRow row in dtADR.Rows)
                 {
-                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"]) == mesActual)
-                        adrMes = row["ADR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["ADR"]);
+                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"] == DBNull.Value ? 0 : row["Mes"]) == mesActual)
+                        adrMes = row["ADR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["ADR"] == DBNull.Value ? 0 : row["ADR"]);
                 }
                 lblADR.Text = "ADR mes: " + adrMes.ToString("N2");
 
@@ -693,8 +703,8 @@ namespace HotelReservas
                 decimal occupancyMes = 0;
                 foreach (DataRow row in dtOccupancy.Rows)
                 {
-                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"]) == mesActual)
-                        occupancyMes = row["OccupancyRate"] == DBNull.Value ? 0m : Convert.ToDecimal(row["OccupancyRate"]);
+                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"] == DBNull.Value ? 0 : row["Mes"]) == mesActual)
+                        occupancyMes = row["OccupancyRate"] == DBNull.Value ? 0m : Convert.ToDecimal(row["OccupancyRate"] == DBNull.Value ? 0 : row["OccupancyRate"]);
                 }
                 lblOccupancy.Text = "Occupancy mes: " + occupancyMes.ToString("N2") + "%";
 
@@ -702,8 +712,8 @@ namespace HotelReservas
                 decimal gopparMes = 0;
                 foreach (DataRow row in dtGOPPAR.Rows)
                 {
-                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"]) == mesActual)
-                        gopparMes += row["GOPPAR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["GOPPAR"]);
+                    if (row["Mes"] != DBNull.Value && Convert.ToInt32(row["Mes"] == DBNull.Value ? 0 : row["Mes"]) == mesActual)
+                        gopparMes += row["GOPPAR"] == DBNull.Value ? 0m : Convert.ToDecimal(row["GOPPAR"] == DBNull.Value ? 0 : row["GOPPAR"]);
                 }
                 lblGOPPAR.Text = "GOPPAR mes: " + gopparMes.ToString("N2");
 
@@ -808,7 +818,9 @@ namespace HotelReservas
 
         private void BtnCargar_Click(object sender, EventArgs e) => CargarTodo();
 
-        private void BtnExportarExcel_Click(object sender, EventArgs e)
+        private void BtnExportarExcel_Click(object sender, EventArgs e) => ExportarActivo(false);
+
+        private void ExportarActivo(bool pdf)
         {
             // Exportar el grid activo de la tab seleccionada
             DataGridView dgvActivo = null;
@@ -847,14 +859,16 @@ namespace HotelReservas
                 return;
             }
 
-            ExportHelper.ExportarDataTableAExcel(dgvActivo.DataSource as DataTable, titulo);
+            titulo += " - " + cboSucursal.Text;
+            if (pdf) ExportHelper.ExportarDataTableAPdf(dgvActivo.DataSource as DataTable, titulo);
+            else ExportHelper.ExportarDataTableAExcel(dgvActivo.DataSource as DataTable, titulo);
         }
 
         private void CargarAnios()
         {
             try
             {
-                DataTable dt = ReportesData.ObtenerAniosDisponibles();
+                DataTable dt = ReportesData.ObtenerAniosDisponibles(SucursalSeleccionada);
                 cboAnio.DataSource = dt;
                 cboAnio.DisplayMember = "Anio";
                 cboAnio.ValueMember = "Anio";
@@ -888,24 +902,24 @@ namespace HotelReservas
         {
             try
             {
-                DataTable resumen = ReportesData.ObtenerResumenOperativo(desde, hasta);
+                DataTable resumen = ReportesData.ObtenerResumenOperativo(desde, hasta, SucursalSeleccionada);
                 if (resumen.Rows.Count > 0)
                 {
                     DataRow r = resumen.Rows[0];
-                    lblOpTotal.Text = "Total reservas: " + Convert.ToInt32(r["TotalReservas"]);
-                    lblOpPendientes.Text = "Pendientes: " + Convert.ToInt32(r["Pendientes"]);
-                    lblOpConfirmadas.Text = "Confirmadas: " + Convert.ToInt32(r["Confirmadas"]);
-                    lblOpCanceladas.Text = "Canceladas: " + Convert.ToInt32(r["Canceladas"]);
-                    lblOpFinalizadas.Text = "Finalizadas: " + Convert.ToInt32(r["Finalizadas"]);
+                    lblOpTotal.Text = "Total reservas: " + Convert.ToInt32(r["TotalReservas"] == DBNull.Value ? 0 : r["TotalReservas"]);
+                    lblOpPendientes.Text = "Pendientes: " + Convert.ToInt32(r["Pendientes"] == DBNull.Value ? 0 : r["Pendientes"]);
+                    lblOpConfirmadas.Text = "Confirmadas: " + Convert.ToInt32(r["Confirmadas"] == DBNull.Value ? 0 : r["Confirmadas"]);
+                    lblOpCanceladas.Text = "Canceladas: " + Convert.ToInt32(r["Canceladas"] == DBNull.Value ? 0 : r["Canceladas"]);
+                    lblOpFinalizadas.Text = "Finalizadas: " + Convert.ToInt32(r["Finalizadas"] == DBNull.Value ? 0 : r["Finalizadas"]);
                 }
 
-                DataTable mensual = ReportesData.ObtenerReservasMensuales(anio);
-                LlenarChartBarras(chartOperMensual, mensual, "Mes", "Cantidad", false);
+                DataTable mensual = ReportesData.ObtenerReservasMensuales(anio, SucursalSeleccionada);
+                LlenarChartBarras(chartOperMensual, mensual, "MesNombre", "Cantidad", false);
 
-                DataTable estados = ReportesData.ObtenerDistribucionEstadosReserva(anio);
+                DataTable estados = ReportesData.ObtenerDistribucionEstadosReserva(anio, SucursalSeleccionada);
                 LlenarChartPie(chartOperEstados, estados, "Estado", "Cantidad", "Porcentaje");
 
-                dgvOperativo.DataSource = ReportesData.ObtenerDetalleOperativo(desde, hasta);
+                dgvOperativo.DataSource = ReportesData.ObtenerDetalleOperativo(desde, hasta, SucursalSeleccionada);
                 ConfigurarGridOperativo();
             }
             catch (Exception ex)
@@ -919,27 +933,27 @@ namespace HotelReservas
         {
             try
             {
-                DataTable resumen = ReportesData.ObtenerResumenHabitacionesActual();
+                DataTable resumen = ReportesData.ObtenerResumenHabitacionesActual(SucursalSeleccionada);
                 if (resumen.Rows.Count > 0)
                 {
                     DataRow r = resumen.Rows[0];
-                    lblHabTotal.Text = "Total habitaciones: " + Convert.ToInt32(r["TotalHabitaciones"]);
-                    lblHabDisponibles.Text = "Disponibles: " + Convert.ToInt32(r["Disponibles"]);
-                    lblHabOcupadas.Text = "Ocupadas: " + Convert.ToInt32(r["Ocupadas"]);
-                    lblHabMantenimiento.Text = "Mantenimiento: " + Convert.ToInt32(r["Mantenimiento"]);
-                    lblHabLimpieza.Text = "Limpieza: " + Convert.ToInt32(r["Limpieza"]);
+                    lblHabTotal.Text = "Total habitaciones: " + Convert.ToInt32(r["TotalHabitaciones"] == DBNull.Value ? 0 : r["TotalHabitaciones"]);
+                    lblHabDisponibles.Text = "Disponibles: " + Convert.ToInt32(r["Disponibles"] == DBNull.Value ? 0 : r["Disponibles"]);
+                    lblHabOcupadas.Text = "Ocupadas: " + Convert.ToInt32(r["Ocupadas"] == DBNull.Value ? 0 : r["Ocupadas"]);
+                    lblHabMantenimiento.Text = "Mantenimiento: " + Convert.ToInt32(r["Mantenimiento"] == DBNull.Value ? 0 : r["Mantenimiento"]);
+                    lblHabLimpieza.Text = "Limpieza: " + Convert.ToInt32(r["Limpieza"] == DBNull.Value ? 0 : r["Limpieza"]);
                 }
 
-                DataTable estados = ReportesData.ObtenerDistribucionEstadoHabitaciones();
+                DataTable estados = ReportesData.ObtenerDistribucionEstadoHabitaciones(SucursalSeleccionada);
                 LlenarChartPie(chartHabEstados, estados, "Estado", "Cantidad", "Porcentaje");
 
-                DataTable top = ReportesData.ObtenerTopHabitacionesReservadas(anio);
+                DataTable top = ReportesData.ObtenerTopHabitacionesReservadas(anio, SucursalSeleccionada);
                 LlenarChartBarras(chartHabTop, top, "Numero", "TotalReservas", false);
 
-                DataTable tipo = ReportesData.ObtenerOcupacionPorTipoHabitacion(anio);
+                DataTable tipo = ReportesData.ObtenerOcupacionPorTipoHabitacion(anio, SucursalSeleccionada);
                 LlenarChartBarras(chartHabTipo, tipo, "TipoHabitacion", "Porcentaje", true);
 
-                dgvHabitaciones.DataSource = ReportesData.ObtenerMantenimientosPeriodo(desde, hasta);
+                dgvHabitaciones.DataSource = ReportesData.ObtenerMantenimientosPeriodo(desde, hasta, SucursalSeleccionada);
                 ConfigurarGridHabitaciones();
             }
             catch (Exception ex)
@@ -953,26 +967,26 @@ namespace HotelReservas
         {
             try
             {
-                DataTable resumen = ReportesData.ObtenerResumenGerencial(desde, hasta);
+                DataTable resumen = ReportesData.ObtenerResumenGerencial(desde, hasta, SucursalSeleccionada);
                 if (resumen.Rows.Count > 0)
                 {
                     DataRow r = resumen.Rows[0];
-                    lblGerFacturado.Text = "Total facturado: " + Convert.ToDecimal(r["TotalFacturado"]).ToString("N2");
-                    lblGerCobrado.Text = "Total cobrado: " + Convert.ToDecimal(r["TotalCobrado"]).ToString("N2");
-                    lblGerFacturas.Text = "Facturas: " + Convert.ToInt32(r["CantidadFacturas"]);
-                    lblGerTicket.Text = "Ticket promedio: " + Convert.ToDecimal(r["TicketPromedio"]).ToString("N2");
-                    lblGerClientes.Text = "Clientes únicos: " + Convert.ToInt32(r["ClientesUnicos"]);
-                    lblGerReservas.Text = "Reservas facturadas: " + Convert.ToInt32(r["ReservasFacturadas"]);
+                    lblGerFacturado.Text = "Total facturado: " + Convert.ToDecimal(r["TotalFacturado"] == DBNull.Value ? 0 : r["TotalFacturado"]).ToString("N2");
+                    lblGerCobrado.Text = "Total cobrado: " + Convert.ToDecimal(r["TotalCobrado"] == DBNull.Value ? 0 : r["TotalCobrado"]).ToString("N2");
+                    lblGerFacturas.Text = "Facturas: " + Convert.ToInt32(r["CantidadFacturas"] == DBNull.Value ? 0 : r["CantidadFacturas"]);
+                    lblGerTicket.Text = "Ticket promedio: " + Convert.ToDecimal(r["TicketPromedio"] == DBNull.Value ? 0 : r["TicketPromedio"]).ToString("N2");
+                    lblGerClientes.Text = "Clientes únicos: " + Convert.ToInt32(r["ClientesUnicos"] == DBNull.Value ? 0 : r["ClientesUnicos"]);
+                    lblGerReservas.Text = "Reservas facturadas: " + Convert.ToInt32(r["ReservasFacturadas"] == DBNull.Value ? 0 : r["ReservasFacturadas"]);
                 }
 
-                DataTable factMensual = ReportesData.ObtenerFacturacionMensual(anio);
-                LlenarChartBarras(chartGerFactMensual, factMensual, "Mes", "Total", false);
+                DataTable factMensual = ReportesData.ObtenerFacturacionMensual(anio, SucursalSeleccionada);
+                LlenarChartBarras(chartGerFactMensual, factMensual, "MesNombre", "Total", false);
 
-                DataTable empleados = ReportesData.ObtenerRendimientoEmpleadosGerencial(desde, hasta);
+                DataTable empleados = ReportesData.ObtenerRendimientoEmpleadosGerencial(desde, hasta, SucursalSeleccionada);
                 LlenarChartBarras(chartGerEmpleados, empleados, "Empleado", "PorcentajeParticipacion", true);
 
                 dgvGerEmpleados.DataSource = empleados;
-                dgvGerClientes.DataSource = ReportesData.ObtenerTopClientesGerencial(desde, hasta);
+                dgvGerClientes.DataSource = ReportesData.ObtenerTopClientesGerencial(desde, hasta, SucursalSeleccionada);
 
                 ConfigurarGridGerEmpleados();
                 ConfigurarGridGerClientes();
@@ -988,25 +1002,25 @@ namespace HotelReservas
         {
             try
             {
-                DataTable resumen = ReportesData.ObtenerResumenGlobalAnual(anio);
+                DataTable resumen = ReportesData.ObtenerResumenGlobalAnual(anio, SucursalSeleccionada);
                 if (resumen.Rows.Count > 0)
                 {
                     DataRow r = resumen.Rows[0];
-                    lblAnTotalReservas.Text = "Reservas año: " + Convert.ToInt32(r["TotalReservas"]);
-                    lblAnFacturado.Text = "Facturado año: " + Convert.ToDecimal(r["TotalFacturado"]).ToString("N2");
-                    lblAnCobrado.Text = "Cobrado año: " + Convert.ToDecimal(r["TotalCobrado"]).ToString("N2");
-                    lblAnServicios.Text = "Servicios año: " + Convert.ToDecimal(r["TotalServicios"]).ToString("N2");
-                    lblAnPromociones.Text = "Promociones año: " + Convert.ToDecimal(r["TotalPromociones"]).ToString("N2");
-                    lblAnPctCobro.Text = "% Cobro anual: " + Convert.ToDecimal(r["PorcentajeCobro"]).ToString("N2") + "%";
+                    lblAnTotalReservas.Text = "Reservas año: " + Convert.ToInt32(r["TotalReservas"] == DBNull.Value ? 0 : r["TotalReservas"]);
+                    lblAnFacturado.Text = "Facturado año: " + Convert.ToDecimal(r["TotalFacturado"] == DBNull.Value ? 0 : r["TotalFacturado"]).ToString("N2");
+                    lblAnCobrado.Text = "Cobrado año: " + Convert.ToDecimal(r["TotalCobrado"] == DBNull.Value ? 0 : r["TotalCobrado"]).ToString("N2");
+                    lblAnServicios.Text = "Servicios año: " + Convert.ToDecimal(r["TotalServicios"] == DBNull.Value ? 0 : r["TotalServicios"]).ToString("N2");
+                    lblAnPromociones.Text = "Promociones año: " + Convert.ToDecimal(r["TotalPromociones"] == DBNull.Value ? 0 : r["TotalPromociones"]).ToString("N2");
+                    lblAnPctCobro.Text = "% Cobro anual: " + Convert.ToDecimal(r["PorcentajeCobro"] == DBNull.Value ? 0 : r["PorcentajeCobro"]).ToString("N2") + "%";
                 }
 
-                DataTable ingresos = ReportesData.ObtenerComparativoIngresosMensual(anio);
+                DataTable ingresos = ReportesData.ObtenerComparativoIngresosMensual(anio, SucursalSeleccionada);
                 LlenarChartDosSeries(chartAnFactCobro, ingresos, "Facturado", "Cobrado", "Facturado", "Cobrado");
 
-                DataTable serviciosPromo = ReportesData.ObtenerServiciosPromocionesMensual(anio);
+                DataTable serviciosPromo = ReportesData.ObtenerServiciosPromocionesMensual(anio, SucursalSeleccionada);
                 LlenarChartDosSeries(chartAnServiciosPromo, serviciosPromo, "Servicios", "Promociones", "Servicios", "Promociones");
 
-                dgvAnualGlobal.DataSource = ReportesData.ObtenerResumenMensualGlobal(anio);
+                dgvAnualGlobal.DataSource = ReportesData.ObtenerResumenMensualGlobal(anio, SucursalSeleccionada);
                 ConfigurarGridGlobalAnual();
             }
             catch (Exception ex)
@@ -1037,7 +1051,7 @@ namespace HotelReservas
                         ? row["MesNombre"].ToString()
                         : row["MesNumero"].ToString();
 
-                    decimal valor = Convert.ToDecimal(row[valueField]);
+                    decimal valor = Convert.ToDecimal(row[valueField] == DBNull.Value ? 0 : row[valueField]);
                     int point = serie.Points.AddXY(mes, valor);
                     serie.Points[point].Label = porcentaje
                         ? valor.ToString("N2") + "%"
@@ -1067,8 +1081,8 @@ namespace HotelReservas
                 foreach (DataRow row in dt.Rows)
                 {
                     string nombre = row[labelField].ToString();
-                    decimal valor = Convert.ToDecimal(row[valueField]);
-                    decimal porcentaje = Convert.ToDecimal(row[pctField]);
+                    decimal valor = Convert.ToDecimal(row[valueField] == DBNull.Value ? 0 : row[valueField]);
+                    decimal porcentaje = Convert.ToDecimal(row[pctField] == DBNull.Value ? 0 : row[pctField]);
 
                     int point = serie.Points.AddXY(nombre, valor);
                     serie.Points[point].Label = nombre + " (" + porcentaje.ToString("N2") + "%)";
@@ -1102,8 +1116,8 @@ namespace HotelReservas
                 foreach (DataRow row in dt.Rows)
                 {
                     string mes = row["MesNombre"].ToString();
-                    decimal v1 = Convert.ToDecimal(row[field1]);
-                    decimal v2 = Convert.ToDecimal(row[field2]);
+                    decimal v1 = Convert.ToDecimal(row[field1] == DBNull.Value ? 0 : row[field1]);
+                    decimal v2 = Convert.ToDecimal(row[field2] == DBNull.Value ? 0 : row[field2]);
 
                     serie1.Points.AddXY(mes, v1);
                     serie1.Points[serie1.Points.Count - 1].Label = v1.ToString("N2");

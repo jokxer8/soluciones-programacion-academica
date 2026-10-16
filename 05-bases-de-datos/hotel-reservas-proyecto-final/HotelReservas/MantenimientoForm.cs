@@ -43,6 +43,7 @@ namespace HotelReservas
 
         public MantenimientoForm()
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             InicializarComponentes();
             Load += MantenimientoForm_Load;
             _themeHandler = (s, e) => ApplyTheme();

@@ -41,6 +41,8 @@ namespace HotelReservas
 
         // ── Session inactivity timeout ─────────────────────────────────────
         private Timer _timerInactividad;
+        private IMessageFilter _inactividadFilter;
+        private EventHandler _themeHandler;
         private Timer _timerContadorAviso;
         private const int InactividadMs    = 15 * 60 * 1000; // 15 minutes
         private const int AvisoMs          = 60 * 1000;       // 1 minute warning
@@ -49,10 +51,12 @@ namespace HotelReservas
 
         public MainForm()
         {
+            SesionUsuario.ExigirAcceso("Operaciones");
             InicializarComponentes();
 
             // Actualizar tema en respuesta al toggle sin reabrir el formulario
-            Theme.OnThemeChanged += (s, e) => ApplyTheme();
+            _themeHandler = (s, e) => ApplyTheme();
+            Theme.OnThemeChanged += _themeHandler;
 
             // ✅ NO registrar animación - los paneles cubren todo el fondo
             // AnimationEngine.Register(this);  // ❌ REMOVIDO
@@ -60,7 +64,8 @@ namespace HotelReservas
             IniciarTimerInactividad();
 
             // Intercept all mouse/keyboard at application level to reset inactivity
-            Application.AddMessageFilter(new InactividadMessageFilter(ResetearInactividad));
+            _inactividadFilter = new InactividadMessageFilter(ResetearInactividad);
+            Application.AddMessageFilter(_inactividadFilter);
         }
 
         // ═════════════════════════════════════════════════════════════════════
@@ -328,16 +333,16 @@ namespace HotelReservas
         private void ConfigurarSegunRol()
         {
             // Informes/Rendimiento: solo ADMIN
-            btnReportes.Visible = EsAdmin();
+            btnReportes.Visible = SesionUsuario.PuedeAcceder("Reportes");
 
             // Administración: ADMIN y SOPORTE
-            btnAdministracion.Visible = EsAdmin() || EsSoporte();
+            btnAdministracion.Visible = SesionUsuario.PuedeAcceder("Administracion");
 
             // Mantenimiento: ADMIN y SOPORTE
-            btnMantenimiento.Visible = EsAdmin() || EsSoporte();
+            btnMantenimiento.Visible = SesionUsuario.PuedeAcceder("Mantenimiento");
 
             // Configuracion: solo ADMIN
-            btnConfiguracion.Visible = EsAdmin();
+            btnConfiguracion.Visible = SesionUsuario.PuedeAcceder("Configuracion");
 
             // EMPLEADO y RECEPCION: módulos base únicamente
             if (EsEmpleado() || EsRecepcion())
@@ -359,8 +364,7 @@ namespace HotelReservas
 
             if (r == DialogResult.Yes)
             {
-                CerrarSesionSolicitada = true;
-                Close();
+                FinalizarSesion();
             }
         }
 
@@ -573,31 +577,30 @@ namespace HotelReservas
                 _timerContadorAviso?.Dispose();
                 _timerContadorAviso = null;
                 _avisoVisible = false;
-
-                if (frmAviso.DialogResult == DialogResult.OK)
-                {
-                    // User chose to continue — restart inactivity timer
-                    _timerInactividad?.Start();
-                }
-                else
-                {
-                    // Timeout expired — close session
-                    if (!IsDisposed)
-                    {
-                        CerrarSesionSolicitada = true;
-                        Close();
-                    }
-                }
             };
 
             _timerContadorAviso.Start();
-            frmAviso.ShowDialog(this);
+            DialogResult resultado = frmAviso.ShowDialog(this);
+            frmAviso.Dispose();
+            // Cerrar al propietario después de que termine el diálogo evita
+            // la reentrada de FormClosed al expirar el aviso de inactividad.
+            if (resultado == DialogResult.OK) _timerInactividad?.Start();
+            else if (!IsDisposed) FinalizarSesion();
+        }
+
+        private void FinalizarSesion()
+        {
+            SesionUsuario.Cerrar();
+            CerrarSesionSolicitada = true;
+            Close();
         }
 
         protected override void Dispose(bool disposing)
         {
             if (disposing)
             {
+                if (_inactividadFilter != null) Application.RemoveMessageFilter(_inactividadFilter);
+                if (_themeHandler != null) Theme.OnThemeChanged -= _themeHandler;
                 timerSidebar?.Dispose();
                 _slideInTimer?.Dispose();
                 _timerInactividad?.Dispose();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Drawing;
 using System.IO;
@@ -74,6 +74,7 @@ namespace HotelReservas
 
         public AdministracionForm()
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             InicializarComponentes();
             Load += AdministracionForm_Load;
             _themeHandler = (s, e) => ApplyTheme();

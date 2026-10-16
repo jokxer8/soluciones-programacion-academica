@@ -10,7 +10,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT COUNT(*)
@@ -31,7 +31,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT COUNT(*)
@@ -51,7 +51,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"SELECT COUNT(*) FROM dbo.Habitacion;";
 
@@ -67,7 +67,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT ISNULL(SUM(Total), 0)
@@ -88,7 +88,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT COUNT(*)
@@ -109,7 +109,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH Dias AS

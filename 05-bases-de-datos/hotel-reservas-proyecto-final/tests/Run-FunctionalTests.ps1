@@ -6,6 +6,11 @@ $created = $false
 $oldConnection = $env:HOTELRESERVAS_CONNECTION_STRING
 New-Item -ItemType Directory -Force -Path $ResultsDirectory | Out-Null
 $ResultsDirectory = (Resolve-Path $ResultsDirectory).Path
+$requestedResultsDirectory = $ResultsDirectory
+# Las bibliotecas .NET Framework de exportación trabajan en una ruta temporal
+# corta. Se conservan copias de las evidencias en el destino solicitado.
+$ResultsDirectory = Join-Path ([IO.Path]::GetTempPath()) $instance
+New-Item -ItemType Directory -Force -Path $ResultsDirectory | Out-Null
 Add-Type -AssemblyName System.Data
 try {
     & SqlLocalDB create $instance -s
@@ -44,10 +49,14 @@ try {
     $app = Join-Path $hotelRoot 'HotelReservas/bin/Release/HotelReservas.exe'
     $testExe = Join-Path (Split-Path $app) 'HotelReservas.FunctionalTests.exe'
     $compiler = Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
-    & $compiler /nologo /target:exe /platform:anycpu "/out:$testExe" "/reference:$app" /reference:System.Data.dll /reference:System.Windows.Forms.dll /reference:System.Drawing.dll (Join-Path $PSScriptRoot 'FunctionalTests.cs')
+    & $compiler /nologo /target:exe /platform:anycpu "/out:$testExe" "/reference:$app" "/reference:$(Join-Path (Split-Path $app) 'EPPlus.dll')" "/reference:$(Join-Path (Split-Path $app) 'itextsharp.dll')" /reference:System.Data.dll /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Xml.dll (Join-Path $PSScriptRoot 'FunctionalTests.cs')
     if ($LASTEXITCODE -ne 0) { throw 'No se pudieron compilar las pruebas.' }
     & $testExe $ResultsDirectory
-    if ($LASTEXITCODE -ne 0) { throw 'Hay pruebas funcionales fallidas. Consultar functional-results.tsv.' }
+    $testExitCode = $LASTEXITCODE
+    Get-ChildItem -LiteralPath $ResultsDirectory -File | Where-Object { $_.Extension -in @('.txt', '.tsv', '.json', '.pdf', '.xlsx') } | ForEach-Object {
+        Copy-Item -LiteralPath $_.FullName -Destination (Join-Path $requestedResultsDirectory $_.Name) -Force
+    }
+    if ($testExitCode -ne 0) { throw 'Hay pruebas funcionales fallidas. Consultar functional-results.tsv.' }
 } finally {
     if ($created) {
         [System.Data.SqlClient.SqlConnection]::ClearAllPools()

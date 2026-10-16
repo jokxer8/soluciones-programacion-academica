@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -1022,7 +1022,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1080,7 +1080,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1114,7 +1114,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT

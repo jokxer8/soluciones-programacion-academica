@@ -13,7 +13,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'Notificacion' AND schema_id = SCHEMA_ID('dbo'))
@@ -48,7 +48,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT COUNT(*)
@@ -74,7 +74,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -113,7 +113,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Notificacion
@@ -135,7 +135,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Notificacion
@@ -157,7 +157,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Notificacion (IdUsuarioDestino, Tipo, Titulo, Mensaje)

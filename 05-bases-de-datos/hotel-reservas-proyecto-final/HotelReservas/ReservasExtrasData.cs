@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -15,7 +15,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -59,7 +59,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "SELECT PrecioPorNoche FROM dbo.Habitacion WHERE IdHabitacion = @IdHabitacion;";
 
@@ -86,7 +86,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -111,7 +111,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -138,7 +138,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -169,7 +169,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.ServicioAdicional
@@ -200,7 +200,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.ServicioAdicional
@@ -226,7 +226,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.ServicioAdicional
@@ -250,7 +250,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -281,7 +281,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -311,7 +311,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -351,7 +351,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Promocion
@@ -398,7 +398,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Promocion
@@ -430,7 +430,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Promocion
@@ -454,7 +454,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -489,7 +489,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -524,7 +524,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -565,7 +565,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -661,7 +661,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     DELETE FROM dbo.ReservaServicio
@@ -681,7 +681,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -790,7 +790,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     DELETE FROM dbo.ReservaPromocion
@@ -810,7 +810,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE rp

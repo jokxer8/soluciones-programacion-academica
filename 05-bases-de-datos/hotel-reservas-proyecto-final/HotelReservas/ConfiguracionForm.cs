@@ -26,6 +26,7 @@ namespace HotelReservas
 
         public ConfiguracionForm()
         {
+            SesionUsuario.ExigirAcceso("Configuracion");
             InicializarComponentes();
             Load += ConfiguracionForm_Load;
             _themeHandler = (s, e) => ApplyTheme();

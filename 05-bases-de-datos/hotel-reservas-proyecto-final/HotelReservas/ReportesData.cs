@@ -6,13 +6,35 @@ namespace HotelReservas
 {
     public static class ReportesData
     {
-        public static DataTable ObtenerAniosDisponibles()
+        // Un alcance parametrizado por consulta evita estado global y mantiene
+        // el mismo filtro en numeradores, denominadores y subconsultas.
+        private static string AplicarSucursal(string sql)
         {
+            foreach (string table in new[] { "Habitacion", "Reserva", "Factura", "Pago", "Mantenimiento" })
+                sql = System.Text.RegularExpressions.Regex.Replace(sql, @"\bdbo\." + table + @"\b", "Alcance" + table);
+            // Un empleado puede gestionar reservas en otra sucursal: no eliminar
+            // esas reservas al resolver el nombre del empleado en un JOIN.
+            sql = System.Text.RegularExpressions.Regex.Replace(sql, @"\bFROM dbo\.Empleado\b", "FROM AlcanceEmpleado");
+            string scopes = @"
+                AlcanceHabitacion AS (SELECT * FROM dbo.Habitacion WHERE @IdSucursal IS NULL OR IdSucursal=@IdSucursal),
+                AlcanceReserva AS (SELECT r.* FROM dbo.Reserva r JOIN AlcanceHabitacion h ON h.IdHabitacion=r.IdHabitacion),
+                AlcanceFactura AS (SELECT f.* FROM dbo.Factura f JOIN AlcanceReserva r ON r.IdReserva=f.IdReserva),
+                AlcancePago AS (SELECT p.* FROM dbo.Pago p JOIN AlcanceFactura f ON f.IdFactura=p.IdFactura),
+                AlcanceMantenimiento AS (SELECT m.* FROM dbo.Mantenimiento m JOIN AlcanceHabitacion h ON h.IdHabitacion=m.IdHabitacion),
+                AlcanceEmpleado AS (SELECT * FROM dbo.Empleado WHERE @IdSucursal IS NULL OR IdSucursal=@IdSucursal)";
+            sql = sql.TrimStart();
+            return sql.StartsWith("WITH ", StringComparison.OrdinalIgnoreCase)
+                ? "WITH " + scopes + ", " + sql.Substring(5) : "WITH " + scopes + " " + sql;
+        }
+
+        public static DataTable ObtenerAniosDisponibles(int? idSucursal = null)
+        {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT DISTINCT Anio
@@ -29,8 +51,10 @@ namespace HotelReservas
                     WHERE Anio IS NOT NULL
                     ORDER BY Anio DESC;";
 
-                using (SqlDataAdapter da = new SqlDataAdapter(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
+                    cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
                     da.Fill(dt);
                 }
             }
@@ -46,13 +70,14 @@ namespace HotelReservas
         // =========================
         // OPERATIVOS
         // =========================
-        public static DataTable ObtenerResumenOperativo(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerResumenOperativo(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -66,14 +91,15 @@ namespace HotelReservas
                     WHERE r.FechaReserva >= @Desde
                       AND r.FechaReserva < DATEADD(DAY, 1, @Hasta);";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -81,13 +107,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerReservasMensuales(int anio)
+        public static DataTable ObtenerReservasMensuales(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -121,13 +148,14 @@ namespace HotelReservas
                     ) r ON r.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -135,13 +163,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerDistribucionEstadosReserva(int anio)
+        public static DataTable ObtenerDistribucionEstadosReserva(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH base AS
@@ -161,13 +190,14 @@ namespace HotelReservas
                     FROM base
                     ORDER BY Cantidad DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -175,13 +205,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerDetalleOperativo(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerDetalleOperativo(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -197,7 +228,7 @@ namespace HotelReservas
                         CAST(ISNULL(r.Subtotal, 0) AS DECIMAL(10,2)) AS Hospedaje,
                         CAST(ISNULL(srv.TotalServicios, 0) AS DECIMAL(10,2)) AS Servicios,
                         CAST(ISNULL(pro.TotalPromociones, 0) AS DECIMAL(10,2)) AS Promociones,
-                        CAST(ISNULL(r.Subtotal, 0) + ISNULL(srv.TotalServicios, 0) - ISNULL(pro.TotalPromociones, 0) AS DECIMAL(10,2)) AS TotalEstimado
+                        CAST(ISNULL(r.Subtotal, 0) + ISNULL(srv.TotalServicios, 0) - ISNULL(r.Descuento, 0) - ISNULL(pro.TotalPromociones, 0) AS DECIMAL(10,2)) AS TotalEstimado
                     FROM dbo.Reserva r
                     INNER JOIN dbo.Cliente c ON c.IdCliente = r.IdCliente
                     INNER JOIN dbo.Habitacion h ON h.IdHabitacion = r.IdHabitacion
@@ -219,14 +250,15 @@ namespace HotelReservas
                       AND r.FechaReserva < DATEADD(DAY, 1, @Hasta)
                     ORDER BY r.IdReserva DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -237,13 +269,14 @@ namespace HotelReservas
         // =========================
         // HABITACIONES
         // =========================
-        public static DataTable ObtenerResumenHabitacionesActual()
+        public static DataTable ObtenerResumenHabitacionesActual(int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -255,8 +288,10 @@ namespace HotelReservas
                     FROM dbo.Habitacion h
                     INNER JOIN dbo.EstadoHabitacion eh ON eh.IdEstadoHabitacion = h.IdEstadoHabitacion;";
 
-                using (SqlDataAdapter da = new SqlDataAdapter(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
+                    cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
                     da.Fill(dt);
                 }
             }
@@ -264,13 +299,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerDistribucionEstadoHabitaciones()
+        public static DataTable ObtenerDistribucionEstadoHabitaciones(int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH base AS
@@ -289,8 +325,10 @@ namespace HotelReservas
                     FROM base
                     ORDER BY Cantidad DESC;";
 
-                using (SqlDataAdapter da = new SqlDataAdapter(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
+                using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                 {
+                    cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
                     da.Fill(dt);
                 }
             }
@@ -298,13 +336,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerTopHabitacionesReservadas(int anio)
+        public static DataTable ObtenerTopHabitacionesReservadas(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT TOP 10
@@ -320,13 +359,14 @@ namespace HotelReservas
                     GROUP BY h.Numero, th.NombreTipo, s.NombreSucursal
                     ORDER BY TotalReservas DESC, h.Numero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -334,13 +374,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerOcupacionPorTipoHabitacion(int anio)
+        public static DataTable ObtenerOcupacionPorTipoHabitacion(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH base AS
@@ -361,13 +402,14 @@ namespace HotelReservas
                     FROM base
                     ORDER BY Cantidad DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -375,13 +417,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerMantenimientosPeriodo(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerMantenimientosPeriodo(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -400,14 +443,15 @@ namespace HotelReservas
                       AND m.FechaInicio < DATEADD(DAY, 1, @Hasta)
                     ORDER BY m.IdMantenimiento DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -418,13 +462,14 @@ namespace HotelReservas
         // =========================
         // GERENCIALES
         // =========================
-        public static DataTable ObtenerResumenGerencial(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerResumenGerencial(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -456,14 +501,15 @@ namespace HotelReservas
                           AND FechaPago < DATEADD(DAY, 1, @Hasta)
                     ) pag;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -471,13 +517,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerFacturacionMensual(int anio)
+        public static DataTable ObtenerFacturacionMensual(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -511,13 +558,14 @@ namespace HotelReservas
                     ) f ON f.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -525,13 +573,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerCobrosMensuales(int anio)
+        public static DataTable ObtenerCobrosMensuales(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -565,13 +614,14 @@ namespace HotelReservas
                     ) p ON p.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -579,13 +629,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerRendimientoEmpleadosGerencial(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerRendimientoEmpleadosGerencial(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH total_global AS
@@ -617,14 +668,15 @@ namespace HotelReservas
                     GROUP BY e.IdEmpleado, e.Nombre, e.Apellido, s.NombreSucursal
                     ORDER BY TotalFacturado DESC, TotalReservas DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -632,13 +684,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerTopClientesGerencial(DateTime desde, DateTime hasta)
+        public static DataTable ObtenerTopClientesGerencial(DateTime desde, DateTime hasta, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT TOP 10
@@ -654,14 +707,15 @@ namespace HotelReservas
                     GROUP BY c.IdCliente, c.Nombres, c.Apellidos
                     ORDER BY TotalFacturado DESC, TotalReservas DESC;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Desde", desde.Date);
                     cmd.Parameters.AddWithValue("@Hasta", hasta.Date);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -672,13 +726,14 @@ namespace HotelReservas
         // =========================
         // GLOBAL ANUAL
         // =========================
-        public static DataTable ObtenerResumenGlobalAnual(int anio)
+        public static DataTable ObtenerResumenGlobalAnual(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -740,13 +795,14 @@ namespace HotelReservas
                           AND Estado = 'PAGADA'
                     ) fp;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -754,13 +810,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerComparativoIngresosMensual(int anio)
+        public static DataTable ObtenerComparativoIngresosMensual(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -804,13 +861,14 @@ namespace HotelReservas
                     ) c ON c.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -818,13 +876,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerServiciosPromocionesMensual(int anio)
+        public static DataTable ObtenerServiciosPromocionesMensual(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -873,13 +932,14 @@ namespace HotelReservas
                     ) x ON x.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -887,13 +947,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerResumenMensualGlobal(int anio)
+        public static DataTable ObtenerResumenMensualGlobal(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     WITH meses AS
@@ -977,13 +1038,14 @@ namespace HotelReservas
                     ) sp ON sp.MesNumero = m.MesNumero
                     ORDER BY m.MesNumero;";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -995,13 +1057,14 @@ namespace HotelReservas
         // MÉTRICAS HOTELERAS
         // =========================
 
-        public static DataTable ObtenerRevPAR(int anio)
+        public static DataTable ObtenerRevPAR(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1017,13 +1080,14 @@ namespace HotelReservas
                     GROUP BY s.NombreSucursal, s.IdSucursal, MONTH(f.FechaFactura)
                     ORDER BY s.NombreSucursal, MONTH(f.FechaFactura);";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -1031,13 +1095,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerADR(int anio)
+        public static DataTable ObtenerADR(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1050,13 +1115,14 @@ namespace HotelReservas
                     GROUP BY MONTH(r.FechaEntrada)
                     ORDER BY MONTH(r.FechaEntrada);";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -1064,13 +1130,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerOccupancyRate(int anio)
+        public static DataTable ObtenerOccupancyRate(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1090,13 +1157,14 @@ namespace HotelReservas
                     GROUP BY MONTH(r.FechaEntrada)
                     ORDER BY MONTH(r.FechaEntrada);";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }
@@ -1104,13 +1172,14 @@ namespace HotelReservas
             return dt;
         }
 
-        public static DataTable ObtenerGOPPAR(int anio)
+        public static DataTable ObtenerGOPPAR(int anio, int? idSucursal = null)
         {
+            SesionUsuario.ExigirAcceso("Reportes");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -1134,13 +1203,14 @@ namespace HotelReservas
                     GROUP BY s.IdSucursal, s.NombreSucursal, MONTH(f.FechaFactura)
                     ORDER BY s.NombreSucursal, MONTH(f.FechaFactura);";
 
-                using (SqlCommand cmd = new SqlCommand(sql, conn))
+                using (SqlCommand cmd = new SqlCommand(AplicarSucursal(sql), conn))
                 {
                     cmd.Parameters.AddWithValue("@Anio", anio);
 
                     using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                     {
-                        da.Fill(dt);
+                        cmd.Parameters.Add("@IdSucursal", SqlDbType.Int).Value = (object)idSucursal ?? DBNull.Value;
+                    da.Fill(dt);
                     }
                 }
             }

@@ -19,8 +19,9 @@ namespace HotelReservas
         private static readonly BaseColor ColorSubText = new BaseColor(82, 94, 130);
         private static readonly BaseColor ColorWhite   = BaseColor.WHITE;
 
-        public static string ExportarPdf(int idFactura)
+        public static string ExportarPdf(int idFactura, string destino = null)
         {
+            SesionUsuario.ExigirAcceso("Operaciones");
             // Fetch all data needed
             DataTable dtResumen     = ObtenerResumenFactura(idFactura);
             DataTable dtServicios   = ObtenerServiciosFactura(idFactura);
@@ -34,7 +35,7 @@ namespace HotelReservas
 
             // Output path: Desktop
             string fileName = "Factura_" + idFactura + "_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".pdf";
-            string filePath = Path.Combine(
+            string filePath = destino ?? Path.Combine(
                 Environment.GetFolderPath(Environment.SpecialFolder.Desktop),
                 fileName);
 
@@ -334,7 +335,7 @@ namespace HotelReservas
 
             using (System.Data.SqlClient.SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -377,7 +378,7 @@ namespace HotelReservas
 
             using (System.Data.SqlClient.SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -410,7 +411,7 @@ namespace HotelReservas
 
             using (System.Data.SqlClient.SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT

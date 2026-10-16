@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -151,11 +151,12 @@ namespace HotelReservas
 
         public static DataTable ObtenerRoles()
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string columnaRol = ObtenerColumnaNombreRol(conn);
                 string sql = $@"
@@ -176,6 +177,7 @@ namespace HotelReservas
 
         public static DataTable ObtenerEstadosLaborales()
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
             dt.Columns.Add("EstadoLaboral", typeof(string));
 
@@ -190,11 +192,12 @@ namespace HotelReservas
 
         public static DataTable ObtenerEmpleadosUsuarios()
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = ConstruirConsultaBase(conn) + @"
                     ORDER BY
@@ -213,11 +216,12 @@ namespace HotelReservas
 
         public static DataTable BuscarEmpleadosUsuarios(string texto)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = ConstruirConsultaBase(conn) + @"
                     WHERE
@@ -268,9 +272,10 @@ namespace HotelReservas
             string rol,
             bool usuarioActivo)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -427,9 +432,10 @@ namespace HotelReservas
             string rol,
             bool usuarioActivo)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -593,9 +599,10 @@ namespace HotelReservas
             string rol,
             bool usuarioActivo)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -652,9 +659,10 @@ namespace HotelReservas
 
         public static void CancelarEmpleadoUsuario(int idEmpleado, int idUsuario)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -694,9 +702,10 @@ namespace HotelReservas
 
         public static void CancelarUsuarioSolo(int idUsuario)
         {
+            SesionUsuario.ExigirAcceso("Administracion");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 using (SqlCommand cmd = new SqlCommand(@"
                     UPDATE dbo.Usuarios

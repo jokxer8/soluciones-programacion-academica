@@ -11,11 +11,12 @@ namespace HotelReservas
         // =========================
         public static DataTable ObtenerTodos()
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -49,11 +50,12 @@ namespace HotelReservas
         // =========================
         public static DataTable Buscar(string texto)
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -105,9 +107,10 @@ namespace HotelReservas
             DateTime fechaInicio,
             DateTime? fechaFin)
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Mantenimiento
@@ -156,9 +159,10 @@ namespace HotelReservas
             decimal costo,
             DateTime? fechaFin)
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     UPDATE dbo.Mantenimiento
@@ -186,9 +190,10 @@ namespace HotelReservas
         // =========================
         public static void Eliminar(int idMantenimiento)
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     DELETE FROM dbo.Mantenimiento
@@ -207,11 +212,12 @@ namespace HotelReservas
         // =========================
         public static DataTable ObtenerHabitacionesCombo()
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -233,11 +239,12 @@ namespace HotelReservas
 
         public static DataTable ObtenerEmpleadosCombo()
         {
+            SesionUsuario.ExigirAcceso("Mantenimiento");
             DataTable dt = new DataTable();
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT

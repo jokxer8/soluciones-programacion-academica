@@ -73,6 +73,7 @@ jobs:
             'HotelReservas/bin/Release/HotelReservas.exe',
             'HotelReservas/bin/Release/EPPlus.dll',
             'HotelReservas/bin/Release/itextsharp.dll',
+            'HotelReservas/bin/Release/BouncyCastle.Crypto.dll',
             'HotelReservas/bin/Release/Assets/logo.png',
             'HotelReservas/bin/Release/Assets/logo.ico'
           )
@@ -87,7 +88,7 @@ jobs:
           - Entorno: Windows Server 2022, MSBuild y NuGet.
           - Framework: .NET Framework 4.8, Windows Forms, AnyCPU.
           - Revision: $env:GITHUB_SHA
-          - Alcance: compilacion; no se ejecuta la aplicacion ni SQL Server.
+          - Alcance de este paso: compilacion. Los resultados SQL se registran en el paso funcional.
           - No se firma ni se despliega la aplicacion.
           "@ | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
 

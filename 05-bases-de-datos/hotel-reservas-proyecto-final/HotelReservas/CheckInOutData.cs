@@ -15,7 +15,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
@@ -66,7 +66,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.CheckInOut
@@ -116,7 +116,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
                 SqlTransaction transaction = conn.BeginTransaction();
 
                 try
@@ -203,7 +203,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT er.NombreEstado

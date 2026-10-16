@@ -13,7 +13,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     IF NOT EXISTS (SELECT 1 FROM sys.tables WHERE name = 'Rating' AND schema_id = SCHEMA_ID('dbo'))
@@ -45,7 +45,7 @@ namespace HotelReservas
         {
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = "SELECT COUNT(*) FROM dbo.Rating WHERE IdReserva = @IdReserva;";
 
@@ -68,7 +68,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     INSERT INTO dbo.Rating (IdReserva, Puntuacion, Comentario)
@@ -95,7 +95,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT IdRating, IdReserva, Puntuacion, Comentario, FechaRating
@@ -125,7 +125,7 @@ namespace HotelReservas
 
             using (SqlConnection conn = Database.GetConnection())
             {
-                conn.Open();
+                Database.AbrirConexion(conn);
 
                 string sql = @"
                     SELECT
