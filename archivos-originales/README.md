@@ -25,6 +25,7 @@ archivos-originales/
 ├── bases-de-datos/
 ├── diseno-y-analisis-de-algoritmos/
 ├── fundamentos-programacion/
+├── fundamentos-sistemas-computacionales/
 ├── programacion-funcional-sml/
 └── programacion-orientada-a-objetos/
 ```
@@ -42,6 +43,7 @@ Los archivos originales se relacionan con las áreas profesionalizadas del repos
 | `diseno-y-analisis-de-algoritmos` | `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
 | `programacion-funcional-sml` | `04-fundamentos-programacion-sml` | Programación Funcional con SML |
 | `bases-de-datos` | `05-bases-de-datos` | Bases de Datos |
+| [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [06-fundamentos-sistemas-computacionales](../06-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
 
 ---
 
@@ -77,7 +79,7 @@ Cada versión profesionalizada puede tener una estructura como esta:
 nombre-del-ejercicio-o-actividad/
 ├── README.md
 ├── desarrollo.md
-├── solution.cs / solution.sml / scripts.sql
+├── solution.cs / solution.sml / solution.c / scripts.sql
 └── evidencia.pdf
 ```
 

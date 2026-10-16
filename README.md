@@ -1,6 +1,7 @@
 # Soluciones de Programación Académica
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-lightgrey)
 ![Estado](https://img.shields.io/badge/Estado-En%20expansi%C3%B3n-yellow)
@@ -29,6 +30,7 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | [03 - Diseño y Análisis de Algoritmos](03-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
 | [04 - Fundamentos de Programación con SML](04-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
 | [05 - Bases de Datos](05-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
+| [06 - Fundamentos de Sistema Computacionales](06-fundamentos-sistemas-computacionales) | Representación de datos, C, ensamblador FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Incorporado y documentado |
 | [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
 
 ---
@@ -42,6 +44,7 @@ soluciones-programacion-academica/
 ├── 03-diseno-y-analisis-de-algoritmos/
 ├── 04-fundamentos-programacion-sml/
 ├── 05-bases-de-datos/
+├── 06-fundamentos-sistemas-computacionales/
 ├── archivos-originales/
 └── README.md
 ```
@@ -114,13 +117,29 @@ soluciones-programacion-academica/
 
 ---
 
+### Fundamentos de Sistema Computacionales
+
+| Actividad | Conceptos principales |
+|---|---|
+| [Representación de datos y fundamentos](06-fundamentos-sistemas-computacionales/fundamentos-representacion-datos) | Sistemas de numeración, complemento a dos, IEEE 754 y tamaños de tipos. |
+| [Programación en C y ensamblador FASM](06-fundamentos-sistemas-computacionales/c-y-ensamblador) | Doce ejercicios equivalentes de entrada/salida, decisiones, ciclos, primos y patrones. |
+| [Estructuras y memoria dinámica](06-fundamentos-sistemas-computacionales/estructuras-y-memoria) | Diez ejercicios de estructuras, punteros, rectángulos, complejos y listas. |
+| [Listas, colas y pilas](06-fundamentos-sistemas-computacionales/listas-colas-pilas) | Diecinueve ejercicios de búsqueda, agregación, eliminación, ordenamiento, FIFO y LIFO. |
+| [Proyecto híbrido C y NASM](06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm) | Interoperabilidad C/ensamblador x64 para sumar, ordenar e intercambiar enteros. |
+| [Gestión de países — Proyecto final](06-fundamentos-sistemas-computacionales/proyecto-final-paises) | Lista doblemente enlazada con nodo cabecera, carga CSV, consultas, inserciones, eliminación y cuatro criterios de ordenamiento. |
+
+---
+
 ## Proyectos destacados
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
 | [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 65 pruebas SQL verificadas |
+| [Gestión de países](06-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Compilado y verificado localmente |
 
-El proyecto conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [65 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones y configuración de conexión verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
+El proyecto de países se encuentra en [Fundamentos de Sistema Computacionales](06-fundamentos-sistemas-computacionales/proyecto-final-paises), con su CSV y pruebas de estructuras dinámicas.
+
+El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [65 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones y configuración de conexión verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
 
 El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
 
@@ -131,6 +150,8 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 ## Tecnologías utilizadas
 
 - C#
+- C17
+- Ensamblador x86-64 (FASM y NASM)
 - .NET
 - Standard ML
 - SQL
@@ -183,7 +204,7 @@ Cada ejercicio o actividad profesionalizada puede contener:
 nombre-del-ejercicio/
 ├── README.md
 ├── desarrollo.md
-├── solution.cs / solution.sml / scripts.sql
+├── solution.cs / solution.sml / solution.c / scripts.sql
 └── evidencia.pdf
 ```
 
@@ -193,13 +214,16 @@ nombre-del-ejercicio/
 
 El repositorio se encuentra en expansión.
 
-Actualmente están completadas las secciones de:
+Los estados describen la organización de la evidencia disponible. Cada materia documenta por separado las pruebas ejecutadas y sus límites; «Completado» no implica cobertura exhaustiva ni acredita una nota institucional.
+
+Actualmente están organizadas las secciones de:
 
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
 - Diseño y Análisis de Algoritmos.
 - Fundamentos de Programación con SML.
 - Bases de Datos.
+- Fundamentos de Sistema Computacionales (evidencia disponible incorporada y documentada).
 
 ---
 

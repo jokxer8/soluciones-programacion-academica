@@ -1,0 +1,27 @@
+AUDITORIA TECNICA DEL PROYECTO FINAL
+====================================
+
+Se reviso el mandato completo y se comprobo lo siguiente:
+
+1. El CSV contiene 227 paises y 20 campos por pais.
+2. Cada pais se guarda en un nodo creado con memoria dinamica.
+3. Cada nodo tiene enlace siguiente y anterior.
+4. Insertar al principio corrige los dos enlaces necesarios.
+5. Insertar al final conecta el nuevo nodo con el antiguo ultimo.
+6. Borrar por nombre reconecta anterior->siguiente y, si existe,
+   siguiente->anterior antes de liberar la memoria.
+7. Borrar el primer nodo hace que el nuevo primero apunte hacia atras
+   al nodo cabeza.
+8. Borrar el ultimo nodo coloca en NULL el enlace siguiente del nuevo ultimo.
+9. Se probaron correctamente los casos de borrar un nodo intermedio,
+   el primero, el ultimo, el unico nodo y una lista vacia.
+10. Se verifico el recorrido hacia adelante y hacia atras despues de cada borrado.
+11. Los cuatro ordenamientos mantienen intactos los enlaces de la lista.
+12. listToArray realiza una copia independiente de las cadenas.
+13. Se libera la memoria de nombres, regiones, estructuras country,
+    nodos y arreglos.
+14. El programa compilo con advertencias activadas y paso pruebas con
+    AddressSanitizer y UndefinedBehaviorSanitizer sin errores detectados.
+
+Resultado de la auditoria:
+TODAS LAS PRUEBAS REALIZADAS PASARON CORRECTAMENTE.

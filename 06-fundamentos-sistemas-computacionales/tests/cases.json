@@ -1,0 +1,310 @@
+[
+  {
+    "source": "c-y-ensamblador/c/01-saludo-mundo.c",
+    "cwd": ".",
+    "input": "",
+    "name": "c-basico-1",
+    "pattern": "Saludos"
+  },
+  {
+    "source": "c-y-ensamblador/c/02-operaciones-enteros.c",
+    "cwd": ".",
+    "input": "5\n3\n",
+    "name": "c-basico-2",
+    "pattern": "(?s)Suma: 8.*Resta: 2.*Producto: 15"
+  },
+  {
+    "source": "c-y-ensamblador/c/03-suma-condicional.c",
+    "cwd": ".",
+    "input": "4\n4\n",
+    "name": "c-basico-3",
+    "pattern": "16"
+  },
+  {
+    "source": "c-y-ensamblador/c/04-cuenta-regresiva.c",
+    "cwd": ".",
+    "input": "15\n6\n",
+    "name": "c-basico-4",
+    "pattern": "15.*14.*13.*6"
+  },
+  {
+    "source": "c-y-ensamblador/c/05-rango-100-200.c",
+    "cwd": ".",
+    "input": "99\n100\n",
+    "name": "c-basico-5",
+    "pattern": "1\\s*$"
+  },
+  {
+    "source": "c-y-ensamblador/c/06-numero-primo.c",
+    "cwd": ".",
+    "input": "13\n",
+    "name": "c-basico-6",
+    "pattern": "13 es primo"
+  },
+  {
+    "source": "c-y-ensamblador/c/07-primos-hasta-n.c",
+    "cwd": ".",
+    "input": "20\n",
+    "name": "c-basico-7",
+    "pattern": "2.*3.*5.*7.*11.*13.*17.*19"
+  },
+  {
+    "source": "c-y-ensamblador/c/08-cuadrado-hueco.c",
+    "cwd": ".",
+    "input": "3\n",
+    "name": "c-basico-8",
+    "pattern": "\\*\\*\\*"
+  },
+  {
+    "source": "c-y-ensamblador/c/09-escalera-ascendente.c",
+    "cwd": ".",
+    "input": "3\n",
+    "name": "c-basico-9",
+    "pattern": "\\*"
+  },
+  {
+    "source": "c-y-ensamblador/c/10-escalera-descendente.c",
+    "cwd": ".",
+    "input": "3\n",
+    "name": "c-basico-10",
+    "pattern": "\\*"
+  },
+  {
+    "source": "c-y-ensamblador/c/11-piramide-vertical.c",
+    "cwd": ".",
+    "input": "3\n",
+    "name": "c-basico-11",
+    "pattern": "\\*"
+  },
+  {
+    "source": "c-y-ensamblador/c/12-escalera-invertida.c",
+    "cwd": ".",
+    "input": "3\n",
+    "name": "c-basico-12",
+    "pattern": "\\*"
+  },
+  {
+    "source": "c-y-ensamblador/c/03-suma-condicional.c",
+    "cwd": ".",
+    "input": "4\n3\n",
+    "name": "c-suma-diferentes",
+    "pattern": "7"
+  },
+  {
+    "source": "c-y-ensamblador/c/06-numero-primo.c",
+    "cwd": ".",
+    "input": "1\n",
+    "name": "c-primo-limite",
+    "pattern": "1 no es primo"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-01.c",
+    "cwd": ".",
+    "input": "Ana\n20\n80\nLuis\n22\n100\n",
+    "name": "estructuras-1",
+    "pattern": "90.00"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-02.c",
+    "cwd": ".",
+    "input": "1\n50\n30\n2\n20\n45\n",
+    "name": "estructuras-2",
+    "pattern": "04:11:15"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-03.c",
+    "cwd": ".",
+    "input": "A\nAutorA\n10\nB\nAutorB\n20\nC\nAutorC\n15\n",
+    "name": "estructuras-3",
+    "pattern": "(?s)caro.*Titulo: B.*20.00.*menor.*Titulo: A.*10.00"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-04.c",
+    "cwd": ".",
+    "input": "0 10\n5 0\n",
+    "name": "estructuras-4",
+    "pattern": "50.00"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-05.c",
+    "cwd": ".",
+    "input": "0 10\n10 0\n5 5\n",
+    "name": "estructuras-5",
+    "pattern": "punto esta dentro"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-06.c",
+    "cwd": ".",
+    "input": "0 10\n5 0\n",
+    "name": "estructuras-6",
+    "pattern": "50.00"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-07.c",
+    "cwd": ".",
+    "input": "-4.37\n9.5\n",
+    "name": "estructuras-7",
+    "pattern": "-4.37 \\+ j9.50"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-08.c",
+    "cwd": ".",
+    "input": "1\n2\n3\n4\n",
+    "name": "estructuras-8",
+    "pattern": "4.00 \\+ j6.00"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-09.c",
+    "cwd": ".",
+    "input": "",
+    "name": "estructuras-9",
+    "pattern": "\\[-4.37 \\+ j9.50\\]"
+  },
+  {
+    "source": "estructuras-y-memoria/ejercicio-10.c",
+    "cwd": ".",
+    "input": "3\n5\n6\n7\n",
+    "name": "estructuras-10",
+    "pattern": "(?s)al reves.*7.*6.*5"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-01.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-1",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-02.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-2",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-03.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-3",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-04.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-4",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-05.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-5",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-06.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-6",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-07.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-7",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-08.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-8",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-09.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-9",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-10.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-10",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-11.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-11",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-12.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-12",
+    "pattern": "Lista ordenada: 1 -> 3 -> 5 -> 7 -> 9"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-13.c",
+    "cwd": ".",
+    "input": "",
+    "name": "listas-demo-13",
+    "pattern": "\\S"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-14.c",
+    "cwd": ".",
+    "input": "1\n10\n1\n20\n2\n3\n0\n",
+    "name": "colas-pilas-14",
+    "pattern": "(?s)Se saco el numero 10.*20"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-17.c",
+    "cwd": ".",
+    "input": "1\n10\n1\n20\n2\n3\n0\n",
+    "name": "colas-pilas-17",
+    "pattern": "(?s)Se saco el numero 10.*20"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-18.c",
+    "cwd": ".",
+    "input": "1\n10\n1\n20\n2\n3\n0\n",
+    "name": "colas-pilas-18",
+    "pattern": "(?s)Se saco el numero 20.*10"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-19.c",
+    "cwd": ".",
+    "input": "1\n10\n1\n20\n2\n3\n0\n",
+    "name": "colas-pilas-19",
+    "pattern": "(?s)Se saco el numero 20.*10"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-15.c",
+    "cwd": ".",
+    "input": "3\n10\n20\n30\n",
+    "name": "cola-promedio",
+    "pattern": "Promedio de la cola: 20.00"
+  },
+  {
+    "source": "listas-colas-pilas/ejercicio-16.c",
+    "cwd": ".",
+    "input": "3\n10\n20\n30\n",
+    "name": "cola-maximo",
+    "pattern": "maximo es: 30"
+  },
+  {
+    "source": "proyecto-final-paises/solution.c",
+    "cwd": "proyecto-final-paises",
+    "input": "2\n3\nAfghanistan\n4\n11\n12\n13\n14\n0\n",
+    "name": "paises-menu",
+    "pattern": "(?s)Cantidad inicial de paises: 227.*Afghanistan.*Memoria liberada correctamente"
+  }
+]

@@ -1,0 +1,1095 @@
+{
+  "sourceFolder": "C:\\Users\\kelvi\\OneDrive\\Escritorio\\PUCMM\\Materias Aprobadas\\32. Funds de Sist. Computacionales",
+  "subject": "Fundamentos de Sistema Computacionales",
+  "records": [
+    {
+      "source": "1er Parcial Kelvin.pdf",
+      "bytes": 1260072,
+      "sha256": "b49678f8d57cea7cbe6695918ee6638fefdebe0e80f87bc1b4cf53fa3c3d5142",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/1er-parcial-kelvin.pdf",
+      "publishedSha256": "4f37f196b26c657f0de97ddbc61c4958583da091743e76737c8578a2f48e37d3",
+      "treatment": "Identificador manuscrito retirado mediante redacción PDF en páginas 1 y 3",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 1.pdf",
+      "bytes": 113166,
+      "sha256": "60afe77e22166df1450c058e01e4d6bbb3892af0cb04a9149f4f23e0436edce1",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf",
+      "publishedSha256": "60afe77e22166df1450c058e01e4d6bbb3892af0cb04a9149f4f23e0436edce1",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Entregable Kelvin.rar",
+      "bytes": 9437,
+      "sha256": "7762af2c1cbd82b475f807033f2ae49802141becf0b00f8aa4b8f3dac75583b5",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Contenedor redundante; listado y comparación de versiones registrados en auditoría"
+    },
+    {
+      "source": "espacio en memoria.png",
+      "bytes": 57382,
+      "sha256": "a0709c8f88eb1974640aa629bf6af05cf2cfc74c3bc318c418a31564249e4543",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/espacio-en-memoria.png",
+      "publishedSha256": "a0709c8f88eb1974640aa629bf6af05cf2cfc74c3bc318c418a31564249e4543",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Parcial_02_v2.pdf",
+      "bytes": 145711,
+      "sha256": "f7980e3bf0c7d066dab80703a0038dc781f8b16fa4751c27c0244059796720d0",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/parcial-02-v2.pdf",
+      "publishedSha256": "f7980e3bf0c7d066dab80703a0038dc781f8b16fa4751c27c0244059796720d0",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Tabla de Binarios, Octal y Hexadecimal.png",
+      "bytes": 5893,
+      "sha256": "392c160f6cada23a52ab703bc71a291605937ae0ba829a87d64dbbbe8992e806",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/tabla-de-binarios-octal-y-hexadecimal.png",
+      "publishedSha256": "392c160f6cada23a52ab703bc71a291605937ae0ba829a87d64dbbbe8992e806",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Teoria.txt",
+      "bytes": 2439,
+      "sha256": "5c5542497b45529fd0e5c0dc7002357bcfe7f051972abd79a769affcededae49",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas/teoria.txt",
+      "publishedSha256": "f6533ea1621765d66467ff7489cad831de5c03061c7af8391c56597f5aa4454b",
+      "treatment": "Registro de asistencia retirado; notas históricas sin corregir",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/1. saludo mundo.txt",
+      "bytes": 560,
+      "sha256": "07664cce850a0da7cf1e0c84cc2a8b7f83f1adb60f744c7c12f8a7ceafdd31e8",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/1-saludo-mundo.txt",
+      "publishedSha256": "07664cce850a0da7cf1e0c84cc2a8b7f83f1adb60f744c7c12f8a7ceafdd31e8",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/2. suma, resta y multiplicacion dos numeros 32bit.txt",
+      "bytes": 3432,
+      "sha256": "93ea1cf8d2160d214167b7ea99e7bc419faae3375a900bd906d148a9d96c535e",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/2-suma-resta-y-multiplicacion-dos-numeros-32bit.txt",
+      "publishedSha256": "93ea1cf8d2160d214167b7ea99e7bc419faae3375a900bd906d148a9d96c535e",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/3. suma iguales resultado doble.txt",
+      "bytes": 2550,
+      "sha256": "151f00e6fb749d8a26ab193d28e0fb1febf980c6f4aa8f21095ba9cac417da1f",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/3-suma-iguales-resultado-doble.txt",
+      "publishedSha256": "151f00e6fb749d8a26ab193d28e0fb1febf980c6f4aa8f21095ba9cac417da1f",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/4. regresion entre dos numeros.txt",
+      "bytes": 3576,
+      "sha256": "a04967ff5914f53b843ad9dba8f8b3193740a6b517d461cf274dcd4e4a6c4e84",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/4-regresion-entre-dos-numeros.txt",
+      "publishedSha256": "a04967ff5914f53b843ad9dba8f8b3193740a6b517d461cf274dcd4e4a6c4e84",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/5. numero entre 100 y 200.txt",
+      "bytes": 2614,
+      "sha256": "add921437b410453079db98b16064722aa42caae8d1dc93d1e5c9c8dea2a6b52",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/5-numero-entre-100-y-200.txt",
+      "publishedSha256": "add921437b410453079db98b16064722aa42caae8d1dc93d1e5c9c8dea2a6b52",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/6. N si es primo y los primos hasta N.txt",
+      "bytes": 2746,
+      "sha256": "623e77b9213766a246844b99f7a24203a669c5dd3505e30e2766f284f6f63dee",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/6-n-si-es-primo-y-los-primos-hasta-n.txt",
+      "publishedSha256": "623e77b9213766a246844b99f7a24203a669c5dd3505e30e2766f284f6f63dee",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/6. N si es primo.txt",
+      "bytes": 3767,
+      "sha256": "dfef0165dca5cbc4e4bc697af9dcad775709f59ecc681428a885049a2e2ffa59",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/6-n-si-es-primo.txt",
+      "publishedSha256": "dfef0165dca5cbc4e4bc697af9dcad775709f59ecc681428a885049a2e2ffa59",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/7. N si es primo y los primos hasta N.txt",
+      "bytes": 3957,
+      "sha256": "5337fc4d10ca75327cfec748f62a193fe162a28e997819b7797f76d38b17964b",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/7-n-si-es-primo-y-los-primos-hasta-n.txt",
+      "publishedSha256": "5337fc4d10ca75327cfec748f62a193fe162a28e997819b7797f76d38b17964b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/8.1 cuadrado de estrellas.txt",
+      "bytes": 2789,
+      "sha256": "af3b570680bef6226c210a67599a4a5a0b865dbd69d2ba2eb4d9b6064218f755",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/8-1-cuadrado-de-estrellas.txt",
+      "publishedSha256": "af3b570680bef6226c210a67599a4a5a0b865dbd69d2ba2eb4d9b6064218f755",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/8.2 escalera de menor a mayor con estrellas.txt",
+      "bytes": 2347,
+      "sha256": "088ec5e3603ba981b7aedef7eb597bf34f84d41ecf52d469c9f24f3238854519",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/8-2-escalera-de-menor-a-mayor-con-estrellas.txt",
+      "publishedSha256": "088ec5e3603ba981b7aedef7eb597bf34f84d41ecf52d469c9f24f3238854519",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/8.3 escalera de mayor a menor con estrellas.txt",
+      "bytes": 2708,
+      "sha256": "8b7df9b507cb9fd3c4155309dbcd0c231b70a56406638fea3d5b6e4c34b9beb2",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/8-3-escalera-de-mayor-a-menor-con-estrellas.txt",
+      "publishedSha256": "8b7df9b507cb9fd3c4155309dbcd0c231b70a56406638fea3d5b6e4c34b9beb2",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/8.4 piramide con horizonte vertical.txt",
+      "bytes": 3082,
+      "sha256": "5431fbc9d8ecc98a568f286abdde2d0bbbd62c05e1aacb189c3f48eb9b0ecd05",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/8-4-piramide-con-horizonte-vertical.txt",
+      "publishedSha256": "5431fbc9d8ecc98a568f286abdde2d0bbbd62c05e1aacb189c3f48eb9b0ecd05",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/8.5 escalera de menor a mayor e invertida.txt",
+      "bytes": 3588,
+      "sha256": "c08eeea69688536f8f0dfa5c8f147c8963a0e1c2c1606634e75f4bfb855dce42",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas-asignacion-02/8-5-escalera-de-menor-a-mayor-e-invertida.txt",
+      "publishedSha256": "c08eeea69688536f8f0dfa5c8f147c8963a0e1c2c1606634e75f4bfb855dce42",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/hw02_v2.pdf",
+      "bytes": 72074,
+      "sha256": "36ed5b70e867a23d713503e167496eca3b11b80db5e8ce648a451a3a38c44041",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/hw02-v2.pdf",
+      "publishedSha256": "36ed5b70e867a23d713503e167496eca3b11b80db5e8ce648a451a3a38c44041",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/Resumen del proyecto.pdf",
+      "bytes": 22564,
+      "sha256": "561bb8c2b1a2631953af13411dda6dd0880d4218599990f3b45d9a9aed2905e1",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/resumen-del-proyecto.pdf",
+      "publishedSha256": "561bb8c2b1a2631953af13411dda6dd0880d4218599990f3b45d9a9aed2905e1",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/1. Saludo mundo.asm",
+      "bytes": 316,
+      "sha256": "19a85750f3450306b9303106595aab9923a035218fae024de3308b786c53c78b",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/01-saludo-mundo.asm",
+      "publishedSha256": "19a85750f3450306b9303106595aab9923a035218fae024de3308b786c53c78b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/2. suma, resta y multiplicacion dos numeros 32bit.asm",
+      "bytes": 2870,
+      "sha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm",
+      "publishedSha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/3. suma iguales resultado doble.asm",
+      "bytes": 1990,
+      "sha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm",
+      "publishedSha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/4. regresion entre dos numeros.asm",
+      "bytes": 2811,
+      "sha256": "de7acf763ac2d6e1a4c21a826403cae83e70d03ee35c6d682dcd9f0a19af80a4",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm",
+      "publishedSha256": "ed3dd6fa2341559adb883730d3892627437856e441bfab8a60600baab38ae090",
+      "treatment": "Rectificación: completar longitud de coma (coma_1 = $ - coma) para permitir ensamblado FASM",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/5. numero entre 100 y 200.asm",
+      "bytes": 2007,
+      "sha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm",
+      "publishedSha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/6. N si es primo.asm",
+      "bytes": 2033,
+      "sha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm",
+      "publishedSha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/7. N si es primo y los primos hasta N.asm",
+      "bytes": 3054,
+      "sha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm",
+      "publishedSha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/8.1 Cuadrado de estrellas.asm",
+      "bytes": 1839,
+      "sha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm",
+      "publishedSha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/8.2 escalera de menor a mayor con estrellas.asm",
+      "bytes": 1549,
+      "sha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm",
+      "publishedSha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/8.3 escalera de mayor a menor con estrellas.asm",
+      "bytes": 1808,
+      "sha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm",
+      "publishedSha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/8.4 piramide con horizonte vertical.asm",
+      "bytes": 2082,
+      "sha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm",
+      "publishedSha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/ASM/8.5 escalera de menor a mayor e invertida.asm",
+      "bytes": 2372,
+      "sha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm",
+      "publishedSha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/1. Saludo mundo.c",
+      "bytes": 97,
+      "sha256": "522cd7e8943a5e576df8cea84eea8c1d07e1fc029711f87785f5d1cf2cfbc083",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/01-saludo-mundo.c",
+      "publishedSha256": "522cd7e8943a5e576df8cea84eea8c1d07e1fc029711f87785f5d1cf2cfbc083",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/2. suma, resta y multiplicacion dos numeros 32bit.c",
+      "bytes": 391,
+      "sha256": "dfb8274c9d0b2278fc10c0ab98b3d0b82acdb2a0b16d0b801472f8a4a732b597",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/02-operaciones-enteros.c",
+      "publishedSha256": "dfb8274c9d0b2278fc10c0ab98b3d0b82acdb2a0b16d0b801472f8a4a732b597",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/3. suma iguales resultado doble.c",
+      "bytes": 352,
+      "sha256": "bd53829fe8b91da8599871558361ecafa6f4bda527fbb121c9224f085c76b33c",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/03-suma-condicional.c",
+      "publishedSha256": "bd53829fe8b91da8599871558361ecafa6f4bda527fbb121c9224f085c76b33c",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/4. regresion entre dos numeros.c",
+      "bytes": 524,
+      "sha256": "3b8cb76c6fe118f0b357780a5946f09634ee6ffbb7f440d8d78cf80308c2ec9d",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/04-cuenta-regresiva.c",
+      "publishedSha256": "3b8cb76c6fe118f0b357780a5946f09634ee6ffbb7f440d8d78cf80308c2ec9d",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/5. numero entre 100 y 200.c",
+      "bytes": 340,
+      "sha256": "b2b2a9ebff7c1e28ef0926b4ecd74e7fff8b746fa595c05916e0a1fac6eaa3d4",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/05-rango-100-200.c",
+      "publishedSha256": "b2b2a9ebff7c1e28ef0926b4ecd74e7fff8b746fa595c05916e0a1fac6eaa3d4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/6. N si es primo.c",
+      "bytes": 509,
+      "sha256": "e78ff43ab8db6a5ce4864571bf1a86834fbf7e43312da21a411e341ecdc48ca4",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/06-numero-primo.c",
+      "publishedSha256": "e78ff43ab8db6a5ce4864571bf1a86834fbf7e43312da21a411e341ecdc48ca4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/7. N si es primo y los primos hasta N.c",
+      "bytes": 684,
+      "sha256": "9b40c02c3957ad77b368fb0e0c1647b295dbd6ab468f4cc838cb877a992eceef",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/07-primos-hasta-n.c",
+      "publishedSha256": "9b40c02c3957ad77b368fb0e0c1647b295dbd6ab468f4cc838cb877a992eceef",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/8.1 Cuadrado de estrellas.c",
+      "bytes": 560,
+      "sha256": "ccb474a0c91a9e01aef125884545356bb4295e4ee0fbf5a93399fd047fbfa9f3",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/08-cuadrado-hueco.c",
+      "publishedSha256": "ccb474a0c91a9e01aef125884545356bb4295e4ee0fbf5a93399fd047fbfa9f3",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/8.2 escalera de menor a mayor con estrellas.c",
+      "bytes": 420,
+      "sha256": "475b4f69c4fc57a1cc6bafb6e8fcc4de88ed7957dea787e9381862a21869e8cb",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/09-escalera-ascendente.c",
+      "publishedSha256": "475b4f69c4fc57a1cc6bafb6e8fcc4de88ed7957dea787e9381862a21869e8cb",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/8.3 escalera de mayor a menor con estrellas.c",
+      "bytes": 524,
+      "sha256": "295aef6e1dd221c8be00d310631ce08358c765f2de7e08d0921f69cd5c7f3df6",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/10-escalera-descendente.c",
+      "publishedSha256": "295aef6e1dd221c8be00d310631ce08358c765f2de7e08d0921f69cd5c7f3df6",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/8.4 piramide con horizonte vertical.c",
+      "bytes": 604,
+      "sha256": "6445e1d72add395161c8348513d20f7c96aec9e2f75b413305a496c3c7275f55",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/11-piramide-vertical.c",
+      "publishedSha256": "6445e1d72add395161c8348513d20f7c96aec9e2f75b413305a496c3c7275f55",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 2/C/8.5 escalera de menor a mayor e invertida.c",
+      "bytes": 810,
+      "sha256": "da00fa67ceb2e3fa9bf4e18d75670c601133d784aa6eae8d002976dc62cc4ec4",
+      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/12-escalera-invertida.c",
+      "publishedSha256": "da00fa67ceb2e3fa9bf4e18d75670c601133d784aa6eae8d002976dc62cc4ec4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/1. Kelvin.c",
+      "bytes": 1378,
+      "sha256": "b478e5f1b7b60d4d9b017e5762b3887d7d4054327f4db1518393d678103504cf",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-01.c",
+      "publishedSha256": "b478e5f1b7b60d4d9b017e5762b3887d7d4054327f4db1518393d678103504cf",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/10. Kelvin.c",
+      "bytes": 1362,
+      "sha256": "e3dadda54c6a937f2c44d8270be68e3356a6311f8320efc8ac57e317e9f498d6",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-10.c",
+      "publishedSha256": "e3dadda54c6a937f2c44d8270be68e3356a6311f8320efc8ac57e317e9f498d6",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/2. Kelvin.c",
+      "bytes": 1206,
+      "sha256": "f5c826a8a3c30a1b00d1087d5d2ef663c67d2403a3ae339df093e0889b20d304",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-02.c",
+      "publishedSha256": "f5c826a8a3c30a1b00d1087d5d2ef663c67d2403a3ae339df093e0889b20d304",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/3. Kelvin.c",
+      "bytes": 1423,
+      "sha256": "6562326d6dcfb228f91777774412805ccae0911f4f2858df79b9d6c44e38dfd4",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-03.c",
+      "publishedSha256": "6562326d6dcfb228f91777774412805ccae0911f4f2858df79b9d6c44e38dfd4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/4. Kelvin.c",
+      "bytes": 911,
+      "sha256": "541155ee8791048dffd0e285198d9e3f3d7922e9b2b1ede03947bbb86a5b875f",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-04.c",
+      "publishedSha256": "541155ee8791048dffd0e285198d9e3f3d7922e9b2b1ede03947bbb86a5b875f",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/5. Kelvin.c",
+      "bytes": 1400,
+      "sha256": "a4682bf5b4b703203143993d6edeaf3509f2d72fc067f6ab935ac973d49d53d4",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-05.c",
+      "publishedSha256": "a4682bf5b4b703203143993d6edeaf3509f2d72fc067f6ab935ac973d49d53d4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/6. Kelvin.c",
+      "bytes": 1478,
+      "sha256": "335b2745fa334b4d4db4c5d262fc57d8ce4be52f981cf29b0619e5db8d2c8e9f",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-06.c",
+      "publishedSha256": "335b2745fa334b4d4db4c5d262fc57d8ce4be52f981cf29b0619e5db8d2c8e9f",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/7. Kelvin.c",
+      "bytes": 576,
+      "sha256": "3a725a30f4cc905dd5d12dac231b95bb1ffd68d327ce5f16363db41bd8e1f272",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-07.c",
+      "publishedSha256": "3a725a30f4cc905dd5d12dac231b95bb1ffd68d327ce5f16363db41bd8e1f272",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/8. Kelvin.c",
+      "bytes": 1393,
+      "sha256": "2e20e344d121ded164b0bc85119388ed55ee52e10c90b073d18fc27af08f24a4",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-08.c",
+      "publishedSha256": "2e20e344d121ded164b0bc85119388ed55ee52e10c90b073d18fc27af08f24a4",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/9. Kelvin.c",
+      "bytes": 801,
+      "sha256": "3475c50d8a608c3e7318fcff1d3e2c0ee40c2461930880378a94106cd963d960",
+      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-09.c",
+      "publishedSha256": "3475c50d8a608c3e7318fcff1d3e2c0ee40c2461930880378a94106cd963d960",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 3/Asignacion 3.rar",
+      "bytes": 4749,
+      "sha256": "a565c0402b4cd9dd737c682cae841068e90a898acb79a5dcc9797d8e696e6a31",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Contenedor redundante; listado y comparación de versiones registrados en auditoría"
+    },
+    {
+      "source": "Asignacion 3/hw03_v2.pdf",
+      "bytes": 122492,
+      "sha256": "1d410bf7fe2b00daa8a80d7ebc09c802e8b4c03a6f1f9880428104d4f906580b",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/hw03-v2.pdf",
+      "publishedSha256": "1d410bf7fe2b00daa8a80d7ebc09c802e8b4c03a6f1f9880428104d4f906580b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/Asignacion 4 - Kelvin.zip",
+      "bytes": 14208,
+      "sha256": "9a4ecf82e221e22909d10782bd5edcdc07c1741958df66d5a8dcc98b3dd286f9",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Contenedor redundante; listado y comparación de versiones registrados en auditoría"
+    },
+    {
+      "source": "Asignacion 4/ejercicio_01.c",
+      "bytes": 1695,
+      "sha256": "9f985ac6fe2e8e316a9110d4546a7674f7529fb1b970af9cf6025a83a188a83e",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-01.c",
+      "publishedSha256": "9f985ac6fe2e8e316a9110d4546a7674f7529fb1b970af9cf6025a83a188a83e",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_02.c",
+      "bytes": 1418,
+      "sha256": "65262562a1099e7e33c1ae0b56bc812740c83ef6e65657e6fe5ce2d0087b14b5",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-02.c",
+      "publishedSha256": "65262562a1099e7e33c1ae0b56bc812740c83ef6e65657e6fe5ce2d0087b14b5",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_03.c",
+      "bytes": 1659,
+      "sha256": "4f71450138bff47d5c2bc35a8ca527057c8db3aa473e2c365349474bf4c1e738",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-03.c",
+      "publishedSha256": "4f71450138bff47d5c2bc35a8ca527057c8db3aa473e2c365349474bf4c1e738",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_04.c",
+      "bytes": 1658,
+      "sha256": "5f088f4dd1a6a432195eddb91d7aed9456ae1b70cfe310bd8751b5c73c7371ad",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-04.c",
+      "publishedSha256": "5f088f4dd1a6a432195eddb91d7aed9456ae1b70cfe310bd8751b5c73c7371ad",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_05.c",
+      "bytes": 1541,
+      "sha256": "43b227cbb433dc3de2122e97d490a73def0e09c0a0ef83638769fb45c6c8ee33",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-05.c",
+      "publishedSha256": "43b227cbb433dc3de2122e97d490a73def0e09c0a0ef83638769fb45c6c8ee33",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_06.c",
+      "bytes": 1990,
+      "sha256": "1325331940872b7dcf2ecc74e68f3de08cca506c8d19bd7ccc8b438d82280715",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-06.c",
+      "publishedSha256": "1325331940872b7dcf2ecc74e68f3de08cca506c8d19bd7ccc8b438d82280715",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_07.c",
+      "bytes": 2404,
+      "sha256": "3cefe93f18fe2c55140e6b3fdaebc51a4c054044bc0bd1625e56a52ef835215b",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-07.c",
+      "publishedSha256": "3cefe93f18fe2c55140e6b3fdaebc51a4c054044bc0bd1625e56a52ef835215b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_08.c",
+      "bytes": 2318,
+      "sha256": "fc63f95b409fb95afd8229dbc562de60474aa379ef33166ddfde107bada05571",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-08.c",
+      "publishedSha256": "fc63f95b409fb95afd8229dbc562de60474aa379ef33166ddfde107bada05571",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_09.c",
+      "bytes": 2160,
+      "sha256": "6a82d53189c5735397c7b6837e551d800115de7a5accd12e21fd821e132ee3b5",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-09.c",
+      "publishedSha256": "6a82d53189c5735397c7b6837e551d800115de7a5accd12e21fd821e132ee3b5",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_10.c",
+      "bytes": 1949,
+      "sha256": "2fbac9889fc29b14cbeee3faba764c3bd0a163ef547b5574f5ce6a46142aa2fa",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-10.c",
+      "publishedSha256": "2fbac9889fc29b14cbeee3faba764c3bd0a163ef547b5574f5ce6a46142aa2fa",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_11.c",
+      "bytes": 2509,
+      "sha256": "0d47bffb74fd509c3754fbde5cf9f65b8435e293f284460d90e73802a9a10f17",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-11.c",
+      "publishedSha256": "0d47bffb74fd509c3754fbde5cf9f65b8435e293f284460d90e73802a9a10f17",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_12.c",
+      "bytes": 3883,
+      "sha256": "fe1785cc9706b8c645f49d432076a0d058d935a7220b5d4b793f18d229f352db",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-12.c",
+      "publishedSha256": "fe1785cc9706b8c645f49d432076a0d058d935a7220b5d4b793f18d229f352db",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_13.c",
+      "bytes": 2293,
+      "sha256": "458baca28ee0891b911a9f97ee95b6ade1badbc3a8b04739d4fb7a42d3207ee3",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-13.c",
+      "publishedSha256": "458baca28ee0891b911a9f97ee95b6ade1badbc3a8b04739d4fb7a42d3207ee3",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_14.c",
+      "bytes": 2148,
+      "sha256": "9fdfc32fab0817a9eb36287d75117e68f6784c18b78cdf5e28f404cec28b1894",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-14.c",
+      "publishedSha256": "9fdfc32fab0817a9eb36287d75117e68f6784c18b78cdf5e28f404cec28b1894",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_15.c",
+      "bytes": 1318,
+      "sha256": "1e3fd1d1cbed4295b7fa4ba68d7cb62c267e92735fae22951f052b904aa5fe30",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-15.c",
+      "publishedSha256": "1e3fd1d1cbed4295b7fa4ba68d7cb62c267e92735fae22951f052b904aa5fe30",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_16.c",
+      "bytes": 1250,
+      "sha256": "1a11a279a393db907d2e691d30f85365da8fbeb490ddc49e79bc9751dfc8707c",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-16.c",
+      "publishedSha256": "1a11a279a393db907d2e691d30f85365da8fbeb490ddc49e79bc9751dfc8707c",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_17.c",
+      "bytes": 2832,
+      "sha256": "ef27aee6db01be07eb8f76a8f6417f76d9fb0185752c2857c8fbf66a55aa2a2c",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-17.c",
+      "publishedSha256": "ef27aee6db01be07eb8f76a8f6417f76d9fb0185752c2857c8fbf66a55aa2a2c",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_18.c",
+      "bytes": 2252,
+      "sha256": "42e1df720cc042f24e247a3b177f2e9a20088a504229947a9b6ee4dcdb9d1e4b",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-18.c",
+      "publishedSha256": "42e1df720cc042f24e247a3b177f2e9a20088a504229947a9b6ee4dcdb9d1e4b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/ejercicio_19.c",
+      "bytes": 2946,
+      "sha256": "c633402855c1152db681065c683ce3268547f4403cb742975cfb4a9a8cc76f80",
+      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-19.c",
+      "publishedSha256": "c633402855c1152db681065c683ce3268547f4403cb742975cfb4a9a8cc76f80",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Asignacion 4/hw04_v2.pdf",
+      "bytes": 96839,
+      "sha256": "f81d7d73fdf8bec4a1a9d835b4d172bf8e3d574234acf53d023535563b0cf251",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/hw04-v2.pdf",
+      "publishedSha256": "f81d7d73fdf8bec4a1a9d835b4d172bf8e3d574234acf53d023535563b0cf251",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_1_ES.pdf",
+      "bytes": 8196654,
+      "sha256": "8e2f3cf27587d82f72266922be5a8a5532a3857f0f01d06e305e460b0d7b8593",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_10_ES.pdf",
+      "bytes": 3520898,
+      "sha256": "7cb511e6ae1e2259fa52986ccb4b4bcaeb054b9256e3469f7d65ce61a1e383e9",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_11_ES.pdf",
+      "bytes": 4511862,
+      "sha256": "eb76c4118bfd823b06af031352c7d199d999ca7cbc2141669aa26b9e4aca6480",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_2_ES.pdf",
+      "bytes": 7044542,
+      "sha256": "e128849645a11a63a77b6ba1eed4423b5b79d064eae3da9724370df6f36f79cf",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_3_ES.pdf",
+      "bytes": 3853623,
+      "sha256": "b22bb76d0ca31680319e3029361076ecc0446e6b2f5b2a3a0488a9667d641f6d",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_4_ES.pdf",
+      "bytes": 3451726,
+      "sha256": "9064e43229a876037c6ab9e23047ce400c522cbeaea782b395e5a486dc5c9c21",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_5_ES.pdf",
+      "bytes": 4717551,
+      "sha256": "d9ed711d26670f6b40dee7dff5483fc6bf51d7d9227d4d6ed46bf58ca23c1df4",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_6_ES.pdf",
+      "bytes": 4674722,
+      "sha256": "988c29ebaf36484ec856a7bdfaea06ee0765716ab7b037a9b3e0fb2bab0f0175",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_7_ES.pdf",
+      "bytes": 3106375,
+      "sha256": "8a2a73c2e536f95cfcf93b007c22e53a8100590a6b8adc19758ae543b89933df",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_8_ES.pdf",
+      "bytes": 3348762,
+      "sha256": "a471d0aaed6d4d57e1901d29eb265216654010709cc4256ce6d0b11abf019004",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/HCIA_Security_V4_Bloque_9_ES.pdf",
+      "bytes": 3972943,
+      "sha256": "feb5832eb9365783479dae1f9b6f13085ab9916562211c5dd304b709a54041ad",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_1_ES_editable.pptx",
+      "bytes": 6897098,
+      "sha256": "79536d61dd0609998879656ac822609f8fb453ad00ad38e7955fe34f9005f823",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_10_ES_editable.pptx",
+      "bytes": 3327647,
+      "sha256": "4c180a24b43b4ceaa50584321b90dd4dd446cc8cec9af73e4d404c2c06c60b77",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_11_ES_editable.pptx",
+      "bytes": 4022638,
+      "sha256": "9ec164f4fb24bd5b6a9aaf0eb6bee3e8de403a6c7eab1ffd80b6584a707d6f34",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_2_ES_editable.pptx",
+      "bytes": 7320620,
+      "sha256": "dcc9831c9ad6dacd3a1f48e86a092003eafcc7e9ca5f7a40c21ffff126b4f344",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_3_ES_editable.pptx",
+      "bytes": 4002742,
+      "sha256": "55cd366979a702f5a918c844a09ad37e75d1583560df4454c12121279de884b8",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_4_ES_editable.pptx",
+      "bytes": 3679800,
+      "sha256": "bd6073a8f2c74eeb4518520ca2411c90e4f87c033cb404da08cb5edecdb2bfcf",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_5_ES_editable.pptx",
+      "bytes": 4464665,
+      "sha256": "ceaf798a628003fce257a1081f2b46912f8e9becefa9bd0068081590aed5fd85",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_6_ES_editable.pptx",
+      "bytes": 4511674,
+      "sha256": "16e868d7f661605a41974b486e08e394b8bb130d6a1db2ed8c196fbc97da56fe",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_7_ES_editable.pptx",
+      "bytes": 3046421,
+      "sha256": "695d2cafaea771cbad086a4694f87ce0cb15f57ee105180248b73a93f04c1083",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_8_ES_editable.pptx",
+      "bytes": 3235816,
+      "sha256": "35e65e62284753784c89acd6e2189138df212ef6e56b08643ed9f389dca4fad5",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/HCIA_Security_V4_Bloque_9_ES_editable.pptx",
+      "bytes": 4112834,
+      "sha256": "098270b56040f7c18bf53683a014ec279ca699addd7c9a3acc525201adffb0da",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Certificacion Huawei/PPT Editable/Material de en Español.zip",
+      "bytes": 48470131,
+      "sha256": "72bbe61e04d1bcda6da1760eed25f15ad64cd98b328a3f9eab3f300f79d23382",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Entregable Kelvin/bubble_sort.asm",
+      "bytes": 595,
+      "sha256": "84cd6427986049f9a5c71f87a7042249eed593277c42918967a8c725e24d2689",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/bubble_sort.asm",
+      "publishedSha256": "84cd6427986049f9a5c71f87a7042249eed593277c42918967a8c725e24d2689",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Entregable Kelvin/Informacion de la Aplicacion.txt",
+      "bytes": 1011,
+      "sha256": "f9e43cc242b3f9ec380578345b79cc64435e6e7cabb4c7eae3cd37fec16e3ee0",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/notas/informacion-de-la-aplicacion.txt",
+      "publishedSha256": "d3ba2b4d5440e07161fde9da9906283638387279e22c62d9946fbbe8c7af73ad",
+      "treatment": "Identificador institucional retirado",
+      "reason": ""
+    },
+    {
+      "source": "Entregable Kelvin/main.c",
+      "bytes": 2008,
+      "sha256": "550d48cfb4ac30fa154e6e58086688aa110f8fce5757dd16ad47a27f01dd75fc",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/main.c",
+      "publishedSha256": "550d48cfb4ac30fa154e6e58086688aa110f8fce5757dd16ad47a27f01dd75fc",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Entregable Kelvin/Parcial2_NASM.exe",
+      "bytes": 12800,
+      "sha256": "cf9e5f75209bc592468ee6c8ce4222e9e6443a1193a33ee5ef96a93b0747a634",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Binario precompilado omitido; se publican fuentes y compilación reproducible"
+    },
+    {
+      "source": "Entregable Kelvin/Parcial2_NASM.slnx",
+      "bytes": 168,
+      "sha256": "bf547b057c1346d4e494e62b453460e18d99e7b428222d4dba2ffb90b80d1b95",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Configuración local de Visual Studio omitida; sustitución por instrucciones reproducibles"
+    },
+    {
+      "source": "Entregable Kelvin/Parcial2_NASM.vcxproj",
+      "bytes": 10503,
+      "sha256": "490104a6b11b62d970fafcfa717b946f200ce76a11a548ac2a21c19ce858849e",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Configuración local de Visual Studio omitida; sustitución por instrucciones reproducibles"
+    },
+    {
+      "source": "Entregable Kelvin/sum.asm",
+      "bytes": 260,
+      "sha256": "7bffe09582b3b31d50c2ebe149ab9b973d990969a1a5711642c0b4373c32bbee",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/sum.asm",
+      "publishedSha256": "7bffe09582b3b31d50c2ebe149ab9b973d990969a1a5711642c0b4373c32bbee",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Entregable Kelvin/swap.asm",
+      "bytes": 136,
+      "sha256": "4842421ca74be42c885bf3b733e6c618b21c88b7c50279d9ca2a81caed82f29d",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/swap.asm",
+      "publishedSha256": "4842421ca74be42c885bf3b733e6c618b21c88b7c50279d9ca2a81caed82f29d",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Libros/Computer fundamentals and programming in C (Dey, Pradip Ghosh, Manas).pdf",
+      "bytes": 17453613,
+      "sha256": "ca3384546dbd59bc5fee6ebdd433995c67f3ecc4f4618afb306f5cf42ac904c5",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Libros/Computer Systems A Programmer’s Perspective.pdf",
+      "bytes": 5485172,
+      "sha256": "321352279a3e530f67ad6ef9cb2dc820ad072324ab474a2a16af31cdb73abdb9",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Libros/Digital_Systems_(Ronald_J._Tocci).pdf",
+      "bytes": 14429860,
+      "sha256": "1a6275ca57e6eab9719e812aa50242132231230e4d87a396e496136f0d0981ed",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Referencia de terceros; no se redistribuye ni se presenta como trabajo propio"
+    },
+    {
+      "source": "Proyecto Final - Kelvin/AUDITORIA_TECNICA.txt",
+      "bytes": 1370,
+      "sha256": "83873fbaeb1d1c5536f87a8f03c4d18ea90e6bec1976e089a1494cf6a86f0fdf",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/proyecto-final/auditoria-tecnica.txt",
+      "publishedSha256": "83873fbaeb1d1c5536f87a8f03c4d18ea90e6bec1976e089a1494cf6a86f0fdf",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/CAMBIOS_DE_CAMPOS.txt",
+      "bytes": 996,
+      "sha256": "aa97498ab067070792499ed1c6387431658517000b3793b8e211b3cb6d751976",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/proyecto-final/cambios-de-campos.txt",
+      "publishedSha256": "aa97498ab067070792499ed1c6387431658517000b3793b8e211b3cb6d751976",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/countries_of_the_world.csv",
+      "bytes": 31337,
+      "sha256": "dd90d3b541edbab8194ac3e4f242f7079bff55942fa1438ee8933646c19f2d52",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-final-paises/countries_of_the_world.csv",
+      "publishedSha256": "dd90d3b541edbab8194ac3e4f242f7079bff55942fa1438ee8933646c19f2d52",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/Guia_Proyecto_Final_Paises_Actualizada.docx",
+      "bytes": 37782,
+      "sha256": "5a0ab1b535f7c7d2086f67fcba0231bf2e5abc6884fd0e9ae89022010438fb79",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/proyecto-final/guia-proyecto-final-paises-actualizada.docx",
+      "publishedSha256": "5a0ab1b535f7c7d2086f67fcba0231bf2e5abc6884fd0e9ae89022010438fb79",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/LEEME.txt",
+      "bytes": 1302,
+      "sha256": "d6cc7d04352ce0922a39eda005b271ae09a5494bd6d4b2cd918a2cb55c67220f",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/proyecto-final/leeme.txt",
+      "publishedSha256": "d6cc7d04352ce0922a39eda005b271ae09a5494bd6d4b2cd918a2cb55c67220f",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/Proyecto Final - Kelvin.rar",
+      "bytes": 199206,
+      "sha256": "e4900097299b8487b6757a56bfa997522b8298b5f0cf0302ecad46d5356c5ee4",
+      "target": null,
+      "publishedSha256": null,
+      "treatment": "No publicado",
+      "reason": "Contenedor redundante; listado y comparación de versiones registrados en auditoría"
+    },
+    {
+      "source": "Proyecto Final - Kelvin/proyecto_final_v2.pdf",
+      "bytes": 151880,
+      "sha256": "8207d475b664565d938d4a68d91a5acaa6147003aebebaddd200bdac998d2b4b",
+      "target": "archivos-originales/fundamentos-sistemas-computacionales/documentos/proyecto-final-v2.pdf",
+      "publishedSha256": "8207d475b664565d938d4a68d91a5acaa6147003aebebaddd200bdac998d2b4b",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    },
+    {
+      "source": "Proyecto Final - Kelvin/proyecto_final.c",
+      "bytes": 26506,
+      "sha256": "019e803be3485f57a1b1265f313b36b80c7e609dcc47898a7c801dfce522c662",
+      "target": "06-fundamentos-sistemas-computacionales/proyecto-final-paises/solution.c",
+      "publishedSha256": "019e803be3485f57a1b1265f313b36b80c7e609dcc47898a7c801dfce522c662",
+      "treatment": "Copia sin cambios",
+      "reason": ""
+    }
+  ]
+}

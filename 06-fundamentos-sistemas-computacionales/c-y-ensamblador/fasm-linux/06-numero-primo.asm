@@ -1,0 +1,139 @@
+format ELF64 executable
+entry inicio
+
+segment readable executable
+
+inicio:
+    mov rsi, pedir_n
+    mov rdx, pedir_n_1
+    call imprimir
+    call leer_int
+    mov r12, rax
+    call salto_linea
+
+    cmp r12, 2
+    jl no_primo
+
+    mov r13, 2
+
+ciclo_primo:
+    mov rax, r13
+    imul rax, r13
+    cmp rax, r12
+    jg si_primo
+
+    mov rax, r12
+    cqo
+    idiv r13
+
+    cmp rdx, 0
+    je no_primo
+
+    inc r13
+    jmp ciclo_primo
+
+si_primo:
+    mov rsi, mensaje_primo
+    mov rdx, mensaje_primo_1
+    call imprimir
+    call salir
+
+no_primo:
+    mov rsi, mensaje_no_primo
+    mov rdx, mensaje_no_primo_1
+    call imprimir
+    call salir
+
+imprimir:
+    mov rax, 1
+    mov rdi, 1
+    syscall
+    ret
+
+leer_int:
+    mov rax, 0
+    mov rdi, 0
+    mov rsi, memoria
+    mov rdx, 64
+    syscall
+
+    mov rcx, rax
+    mov rsi, memoria
+    xor rax, rax
+    xor r8, r8
+
+buscar:
+    cmp rcx, 0
+    je fin_leer
+
+    mov bl, [rsi]
+
+    cmp bl, '-'
+    je negativo
+
+    cmp bl, '0'
+    jb avanzar
+    cmp bl, '9'
+    jbe leer_digitos
+
+avanzar:
+    inc rsi
+    dec rcx
+    jmp buscar
+
+negativo:
+    mov r8, 1
+    inc rsi
+    dec rcx
+
+leer_digitos:
+    cmp rcx, 0
+    je aplicar_signo
+
+    mov bl, [rsi]
+    cmp bl, '0'
+    jb aplicar_signo
+    cmp bl, '9'
+    ja aplicar_signo
+
+    imul rax, rax, 10
+    movzx rbx, bl
+    sub rbx, '0'
+    add rax, rbx
+
+    inc rsi
+    dec rcx
+    jmp leer_digitos
+
+aplicar_signo:
+    cmp r8, 1
+    jne fin_leer
+    neg rax
+
+fin_leer:
+    ret
+
+salto_linea:
+    mov rsi, nueva_linea
+    mov rdx, 1
+    call imprimir
+    ret
+
+salir:
+    mov rax, 60
+    xor rdi, rdi
+    syscall
+
+segment readable writeable
+
+memoria rb 64
+nueva_linea db 10
+
+pedir_n db 'Digite un numero entero positivo: '
+pedir_n_1 = $ - pedir_n
+
+mensaje_primo db 'El numero es primo.', 10
+mensaje_primo_1 = $ - mensaje_primo
+
+mensaje_no_primo db 'El numero no es primo.', 10
+mensaje_no_primo_1 = $ - mensaje_no_primo

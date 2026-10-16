@@ -1,0 +1,210 @@
+2. Escriba un programa en lenguaje C y ensamblador que devuelva la suma, resta y el producto de dos numero enteros de 32-bits
+
+
+C:
+
+#include <stdio.h>
+#include <stdint.h>
+
+int main(void) {
+    int32_t a, b;
+
+    printf("Digite el primer numero entero de 32 bits: ");
+    scanf("%d", &a);
+
+    printf("Digite el segundo numero entero de 32 bits: ");
+    scanf("%d", &b);
+
+    printf("Suma: %d\n", a + b);
+    printf("Resta: %d\n", a - b);
+    printf("Producto: %lld\n", (long long)a * b);
+
+    return 0;
+}
+
+
+
+Ensamblador FASM x86-64:
+
+format ELF64 executable
+entry inicio
+
+segment readable executable
+
+inicio:
+    mov rsi, pedir_a
+    mov rdx, pedir_a_1
+    call imprimir
+    call leer_int
+    mov r12, rax
+
+    mov rsi, pedir_b
+    mov rdx, pedir_b_1
+    call imprimir
+    call leer_int
+    mov r13, rax
+    call salto_linea
+
+    mov rsi, texto_suma
+    mov rdx, texto_suma_1
+    call imprimir
+    mov rax, r12
+    add rax, r13
+    call imprimir_int
+    call salto_linea
+
+    mov rsi, texto_resta
+    mov rdx, texto_resta_1
+    call imprimir
+    mov rax, r12
+    sub rax, r13
+    call imprimir_int
+    call salto_linea
+
+    mov rsi, texto_producto
+    mov rdx, texto_producto_1
+    call imprimir
+    mov rax, r12
+    imul rax, r13
+    call imprimir_int
+    call salto_linea
+
+    call exit
+
+imprimir:
+    mov rax, 1
+    mov rdi, 1
+    syscall
+    ret
+
+leer_int:
+    mov rax, 0
+    mov rdi, 0
+    mov rsi, memoria
+    mov rdx, 64
+    syscall
+
+    mov rcx, rax
+    mov rsi, memoria
+    xor rax, rax
+    xor r8, r8
+
+.buscar:
+    cmp rcx, 0
+    je .fin
+    mov bl, [rsi]
+    cmp bl, '-'
+    je .negativo
+    cmp bl, '0'
+    jb .avanzar
+    cmp bl, '9'
+    jbe .leer
+
+.avanzar:
+    inc rsi
+    dec rcx
+    jmp .buscar
+
+.negativo:
+    mov r8, 1
+    inc rsi
+    dec rcx
+
+.leer:
+    xor rax, rax
+
+.digito:
+    cmp rcx, 0
+    je .aplicar_signo
+    mov bl, [rsi]
+    cmp bl, '0'
+    jb .aplicar_signo
+    cmp bl, '9'
+    ja .aplicar_signo
+    imul rax, rax, 10
+    movzx rbx, bl
+    sub rbx, '0'
+    add rax, rbx
+    inc rsi
+    dec rcx
+    jmp .digito
+
+.aplicar_signo:
+    cmp r8, 1
+    jne .fin
+    neg rax
+
+.fin:
+    ret
+
+imprimir_int:
+    mov rsi, numero_memoria + 31
+    mov rbx, 10
+    xor r9, r9
+
+    cmp rax, 0
+    jne .verificar
+    dec rsi
+    mov byte [rsi], '0'
+    mov rdx, 1
+    jmp .imprimir
+
+.verificar:
+    cmp rax, 0
+    jge .convertir
+    neg rax
+    mov r9, 1
+
+.convertir:
+    xor rdx, rdx
+    div rbx
+    add dl, '0'
+    dec rsi
+    mov [rsi], dl
+    test rax, rax
+    jne .convertir
+
+    cmp r9, 1
+    jne .longitud
+    dec rsi
+    mov byte [rsi], '-'
+
+.longitud:
+    mov rdx, numero_memoria + 31
+    sub rdx, rsi
+
+.imprimir:
+    call imprimir
+    ret
+
+salto_linea:
+    mov rsi, nueva_linea
+    mov rdx, 1
+    call imprimir
+    ret
+
+exit:
+    mov rax, 60
+    xor rdi, rdi
+    syscall
+
+segment readable writeable
+
+memoria rb 64
+numero_memoria rb 32
+nueva_linea db 10
+
+pedir_a db 'Digite el primer numero entero de 32 bits: '
+pedir_a_1 = $ - pedir_a
+
+pedir_b db 'Digite el segundo numero entero de 32 bits: '
+pedir_b_1 = $ - pedir_b
+
+texto_suma db 'Suma: '
+texto_suma_1 = $ - texto_suma
+
+texto_resta db 'Resta: '
+texto_resta_1 = $ - texto_resta
+
+texto_producto db 'Producto: '
+texto_producto_1 = $ - texto_producto

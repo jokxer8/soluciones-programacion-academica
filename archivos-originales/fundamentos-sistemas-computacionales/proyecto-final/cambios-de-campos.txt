@@ -1,0 +1,34 @@
+EQUIVALENCIA DE LOS CAMPOS
+
+Campos de la estructura country:
+nombre_pais          -> country
+region               -> region
+poblacion            -> population
+area                 -> area
+densidad_poblacion   -> pop_density
+proporcion_costa     -> coastline
+migracion_neta       -> net_migration
+mortalidad_infantil  -> infant_mortality
+PIB                  -> GDP
+alfabetizacion       -> literacy
+telefonos            -> phones
+tierra_cultivable    -> arable
+cultivos             -> crops
+otros_terrenos       -> other
+clima                -> climate
+tasa_natalidad       -> birthrate
+tasa_mortalidad      -> deathrate
+agricultura          -> agriculture
+industria            -> industry
+servicios            -> service
+
+Campos de la estructura Node:
+pais                 -> coutry
+siguiente            -> next
+anterior             -> prev
+
+Valores del enum Fields:
+NOMBRE               -> NAME
+POBLACION            -> POPULATION
+AREA                 -> AREA
+DENSIDAD_POBLACION   -> POP_DENSITY

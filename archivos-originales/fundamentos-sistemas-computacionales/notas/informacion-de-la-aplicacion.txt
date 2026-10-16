@@ -1,0 +1,37 @@
+Proyecto: Parcial 02 - Proyecto híbrido C y Ensamblador NASM x86-64
+
+Este proyecto contiene un programa principal escrito en lenguaje C y tres funciones implementadas en ensamblador NASM x86-64:
+
+1. swap.asm
+   Intercambia los valores de dos enteros usando punteros.
+
+2. sum.asm
+   Recibe un arreglo de enteros y su tamaño. Retorna la suma de sus elementos.
+
+3. bubble_sort.asm
+   Recibe un arreglo de enteros y su tamaño. Ordena el arreglo de forma ascendente usando Bubble Sort.
+
+Archivo principal:
+main.c
+
+Ejecutable:
+Parcial2_NASM.exe
+
+Instrucciones:
+Ejecutar Parcial2_NASM.exe para probar el programa.
+
+El programa solicita por pantalla:
+- El tamaño del arreglo.
+- Los valores del arreglo.
+- Muestra el arreglo ordenado de forma ascendente.
+- Muestra la suma total.
+- Prueba la función swap con dos valores enteros.
+
+Para recompilar el proyecto se requiere:
+- Visual Studio en modo x64.
+- NASM instalado.
+
+
+Atentamente.
+Kelvin Cesar Del Castillo Torres
+Identificador institucional omitido en la copia pública.

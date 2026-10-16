@@ -1,0 +1,71 @@
+-ICC–133 Fundamentos de Sistemas
+Computacionales
+Prof.: Paul Vicioso
+Kelvin Cesar Del Castillo Torres
+
+Notas de clase: copia pública sin registro de asistencia.
+
+-------------------------------------------------
+
+Clase 2.
+6 de mayo del 2026
+
+tema: Sistemas numéricos
+Nota: los algoritmos de suma de estos sistemas funcionan es que al acabar el digito base, se vuelve a iniciar sumando 1 a la izquierda del primer digito base.
+
+1) Base_10 (decimal)
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Base 10 = 10^0
+decimal se escribe el numero solo
+
+2) Base_8 (2^3, Octal)
+0, 1, 2, 3, 4, 5, 6, 7
+Base 8 = 8^0
+se escribe con un cero adelante del numero (0)
+
+3) Base_2 (binario)
+0, 1
+Base 2 = 2^0
+se escribe con un cero y b adelante del numero (0b)
+
+4) Base_16 (hexadecimal)
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+Base 16 = 16^0
+se escribe con un cero y una x adelante del numero (0x)
+
+
+Las conversiones entre bases_10 a cualquier otra base, se divide entre el numero base al que vamos a convertir, partiendo de esto, se sigue dividiendo hasta que el reciduo sea 0, y se toman los resultados de derecha a izquierda para reescribir el numero en la base convertida.
+
+ejemplo:
+
+47 decimal a binario seria:
+
+47/2 = 1 (residuo) 23 (cociente)
+23/2 = 1 (residuo) 11 (cociente)
+11/2 = 1 (residuo) 5 (cociente)
+5/2 = 1 (residuo) 2 (cociente)
+2/2 = 0 (residuo) 1 (cociente)
+1/2 = 1 (residuo) 0 (cociente)
+
+entonces 47 decimal seria en binario = 0b101111
+
+se construye el numero desde el ultimo residuo hasta el primero.
+
+ahora para llevarlo de base_2 a llevarlo a decimal en vez de dividirlo, simplemente se multiplica por la base que queremos convertirlo.
+
+ejemplo:
+
+si tenemos 0b 1101110001 a decimal lo que hacemos e lo siguiente
+(1 x 2^0) + (0 x 2^1) + (0 x 2^2) + (0 x 2^3) + (1 x 2^4) + (1 x 2^5) + (1 x 2^6) + (0 x 2^7) + (1 x 2^8) + (1 x 2^9) = 1 + 0 + 0 + 0 + 16 + 32 + 64 + 0 + 256 + 512 = 881
+
+entonces 0b 1101110001 es 881 en decimal.
+
+Para convertir de una base binaria, octal o hexadecimal como son bases familiares entre ellas la conversión es mas fácil, sabiendo que binario es 2^1, octal es 2^3 y hexadecimal es 2^4, cualquier numero entre estas solo hay que agruparlo en base a la base que deseamos. 
+
+-----------------------------------------------------------------------------------------------------
+
+Clase 3
+11 mayo de 2026
+
+tema: Espacio en memoria, codificación binaria en números a negativo, a1 y a2
+

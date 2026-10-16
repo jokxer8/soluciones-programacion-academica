@@ -1,0 +1,532 @@
+[
+  {
+    "name": "c-y-ensamblador_c_01-saludo-mundo_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_02-operaciones-enteros_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_03-suma-condicional_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_04-cuenta-regresiva_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_05-rango-100-200_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_06-numero-primo_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_07-primos-hasta-n_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_08-cuadrado-hueco_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_09-escalera-ascendente_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_10-escalera-descendente_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_11-piramide-vertical_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-y-ensamblador_c_12-escalera-invertida_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-01_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-02_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-03_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-04_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-05_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-06_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-07_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-08_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-09_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-y-memoria_ejercicio-10_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-01_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-02_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-03_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-04_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-05_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-06_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-07_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-08_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-09_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-10_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-11_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-12_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-13_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-14_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-15_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-16_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-17_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-18_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-colas-pilas_ejercicio-19_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "proyecto-final-paises_solution_c",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-1",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-2",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-3",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-4",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-5",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-6",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-7",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-8",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-9",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-10",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-11",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-basico-12",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-suma-diferentes",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "c-primo-limite",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-1",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-2",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-3",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-4",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-5",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-6",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-7",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-8",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-9",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "estructuras-10",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-1",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-2",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-3",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-4",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-5",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-6",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-7",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-8",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-9",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-10",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-11",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-12",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "listas-demo-13",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "colas-pilas-14",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "colas-pilas-17",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "colas-pilas-18",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "colas-pilas-19",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "cola-promedio",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "cola-maximo",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "paises-menu",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "bubble_sort.asm",
+    "kind": "ensamblado NASM",
+    "status": "PASS"
+  },
+  {
+    "name": "sum.asm",
+    "kind": "ensamblado NASM",
+    "status": "PASS"
+  },
+  {
+    "name": "swap.asm",
+    "kind": "ensamblado NASM",
+    "status": "PASS"
+  },
+  {
+    "name": "hibrido",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "hibrido-orden-suma-swap",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "hibrido-validacion-entrada",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  },
+  {
+    "name": "01-saludo-mundo.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "02-operaciones-enteros.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "03-suma-condicional.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "04-cuenta-regresiva.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "05-rango-100-200.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "06-numero-primo.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "07-primos-hasta-n.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "08-cuadrado-hueco.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "09-escalera-ascendente.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "10-escalera-descendente.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "11-piramide-vertical.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "12-escalera-invertida.asm",
+    "kind": "ensamblado FASM; sin ejecucion Linux",
+    "status": "PASS"
+  },
+  {
+    "name": "countries-check",
+    "kind": "compilacion C",
+    "status": "PASS"
+  },
+  {
+    "name": "paises-invariantes-csv",
+    "kind": "ejecucion funcional",
+    "status": "PASS"
+  }
+]

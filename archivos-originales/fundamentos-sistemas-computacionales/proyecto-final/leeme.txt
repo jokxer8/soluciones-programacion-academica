@@ -1,0 +1,39 @@
+PROYECTO FINAL - VERSION CON CAMPOS TRADUCIDOS AL ESPANOL
+
+Archivos:
+1. proyecto_final.c
+   Codigo actualizado con variables, comentarios, mensajes y campos de las
+   estructuras escritos en espanol.
+
+2. countries_of_the_world.csv
+   Archivo de datos. Debe permanecer en la misma carpeta del programa.
+
+3. Guia_Proyecto_Final_Paises_Actualizada.docx
+   Guia general actualizada y tabla con la equivalencia entre cada campo en
+   espanol y su nombre original.
+
+CAMBIOS PRINCIPALES:
+- country ahora se usa como nombre_pais.
+- population ahora se usa como poblacion.
+- pop_density ahora se usa como densidad_poblacion.
+- GDP ahora se usa como PIB.
+- coutry ahora se usa como pais.
+- next ahora se usa como siguiente.
+- prev ahora se usa como anterior.
+- Los demas campos tambien fueron traducidos.
+- Cada declaracion incluye un comentario con el nombre original.
+
+IMPORTANTE:
+Se conservaron los nombres de los tipos country, Node y Fields, y los nombres
+obligatorios de las funciones como insertAtEnd(), insertAtFront(),
+findCountryByName() y las demas. Esto permite comparar el programa con los
+prototipos solicitados en el enunciado.
+
+COMPILAR CON GCC:
+gcc -std=c11 -Wall -Wextra -pedantic proyecto_final.c -o proyecto_final
+
+EJECUTAR EN WINDOWS:
+proyecto_final.exe
+
+EJECUTAR EN LINUX:
+./proyecto_final
