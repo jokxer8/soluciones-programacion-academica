@@ -29,3 +29,33 @@ La versión compilable se contrasta con casos normales y límites de entrada. El
 ```
 
 Los espacios iniciales son parte del resultado. Las rúbricas se identifican por el grupo al que corresponden y no se presentan como programas propios de otros equipos.
+
+---
+
+## Recorrido por pisos
+
+El ciclo exterior controla el número de fila. Dentro de cada fila completo primero los espacios y después los asteriscos; el salto de línea se escribe al terminar ambos ciclos interiores.
+
+| Piso p para n=3 | Espacios n−p | Asteriscos 2p−1 | Fila, con puntos para visualizar los espacios |
+|---|---|---|---|
+| 1 | 2 | 1 | `..*` |
+| 2 | 1 | 3 | `.***` |
+| 3 | 0 | 5 | `*****` |
+
+Los puntos son únicamente una ayuda de lectura: el programa imprime espacios. Si utilizara n−1 en todas las filas, la sangría quedaría constante y el dibujo no tendría el centrado previsto. Esta es la diferencia que aclaro frente al pseudocódigo y al DFD conservados.
+
+## Cuánto se imprime
+
+La fila p contiene el p-ésimo número impar de asteriscos. Al sumar 1+3+5+…+(2n−1), el total de asteriscos es n². Los espacios iniciales suman n(n−1)/2. El trabajo de impresión crece, por tanto, como O(n²), y solo se necesitan contadores: espacio auxiliar O(1).
+
+Con 60 pisos, la última fila contiene 119 asteriscos. El límite de 60 se refiere a filas, no a columnas. Si la consola es estrecha, una línea puede ajustarse visualmente aunque la secuencia de caracteres sea correcta.
+
+## Cómo compruebo el resultado
+
+La batería compara la salida con el patrón esperado sin eliminar los espacios iniciales. Prueba la altura mínima, una pirámide pequeña que puedo revisar a mano y la altura máxima. También comprueba que las entradas inválidas incluidas produzcan un error.
+
+## Análisis, revisión y autoría
+
+El foro corresponde al grupo 2; el número no identifica una versión del programa. Las rúbricas y respuestas registran observaciones sobre enumeración, sintaxis y representación del final del diagrama. Las conservo como parte del proceso de revisión, sin convertir las soluciones de los otros grupos en entregas propias.
+
+[Volver a la actividad](README.md) · [Validación de la materia](../VALIDACION.md)

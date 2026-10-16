@@ -1,40 +1,52 @@
 # Pendientes del repositorio
 
-Estado revisado el 16 de octubre de 2026. Se distingue el trabajo pendiente de las limitaciones y ampliaciones posibles. Los estados de incorporación de las materias no equivalen a una certificación de todas las pruebas.
+[Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-## Trabajo pendiente identificado
+Estado revisado el **16 de octubre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo lo que falta recuperar o comprobar de las ampliaciones que puedo hacer después. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
 
-| Área | Pendiente | Estado y referencia |
+## Documentos o soluciones por recuperar
+
+| Materia | Qué falta | Qué está publicado |
 |---|---|---|
-| Fundamentos de Sistema Computacionales | Localizar las respuestas originales de la asignación 1, si se conservan en otra ubicación. | Solo se encontró el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). No se presenta como resuelta ni se requiere recrearla para publicar la evidencia disponible. |
+| 00 · Sistemas Computacionales | Localizar las respuestas entregadas de la asignación 1, si se conservan. | Solo está el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf); no figura como resuelta. |
+| 01 · Introducción a la Programación | Localizar la solución entregada del primer parcial: comisiones y calificaciones. | [Enunciado y análisis](01-introduccion-programacion/enunciados-primer-parcial/README.md), sin atribuir una ejecución. |
+| 06 · Bases de Datos | Recuperar el esquema previo del que depende la práctica de bolsa de empleo. | [Objetos SQL y dependencias](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md); falta la base completa para reproducirla de forma autónoma. |
 
-## Límites documentados y ampliaciones posibles
+Estos documentos no se sustituyen por respuestas nuevas presentadas como entregas antiguas. Si no aparecen, el estado seguirá indicando el material que está disponible.
 
-- **C y memoria:** volver a ejecutar sanitizadores ASan/UBSan y ampliar casos de entrada inválida, fin de entrada, desbordamiento y falta de memoria. Las afirmaciones de la auditoría histórica no sustituyen estas comprobaciones actuales; véase [validación](00-fundamentos-sistemas-computacionales/VALIDACION.md).
-- **CSV de países:** identificar la procedencia y licencia del conjunto histórico, que no estaban indicadas en los archivos recibidos; véase [proyecto](00-fundamentos-sistemas-computacionales/proyecto-final-paises).
-- **Hotel:** realizar un recorrido visual completo de pantallas y, si se amplía su uso, pruebas de concurrencia entre operadores y despliegue. Las 79 pruebas verificadas no certifican esos alcances; véase [cierre de tareas](06-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
-- **Bolsa de empleo:** localizar el esquema completo previo para reproducir la práctica de forma autónoma. No estaba entre los entregables; véase [desarrollo](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md).
+## Verificaciones pendientes
 
-Estas ampliaciones no se han convertido automáticamente en nuevas tareas del tablero. Las tareas del hotel **#1–#8 están completadas**; #3, #5 y #7 no deben volver a contarse como pendientes.
+| Área | Siguiente comprobación | Situación actual |
+|---|---|---|
+| 00 · C y memoria dinámica | Ejecutar sanitizadores ASan/UBSan y ampliar casos de desbordamiento, fin de entrada y falta de memoria. | Hay compilaciones y casos comprobados; no equivalen a cubrir estos escenarios. [Alcance](00-fundamentos-sistemas-computacionales/VALIDACION.md). |
+| 00 · Datos de países | Identificar la procedencia y licencia del CSV histórico. | La información no estaba indicada en el conjunto disponible. [Proyecto](00-fundamentos-sistemas-computacionales/proyecto-final-paises/README.md). |
+| 01 · Diagrama del triángulo | Abrir y ejecutar el archivo en RAPTOR y contrastar su condición de salida con el pseudocódigo y el C++. | Archivo editable y diferencias documentados; no se ha registrado una ejecución en RAPTOR. [Desarrollo](01-introduccion-programacion/triangulo-rectangulo/desarrollo.md). |
+| 06 · Hotel | Completar un recorrido visual de todas las pantallas. | Las 79 pruebas incluyen comprobaciones técnicas y funcionales, pero no ese recorrido interactivo completo. [Cierre y límites](06-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md). |
+| 06 · Prácticas SQL fuera del hotel | Registrar ejecuciones reproducibles de las prácticas que solo cuentan con revisión documental o sintáctica. | Los 18 scripts de actividades pasaron análisis de sintaxis; ese resultado no demuestra su ejecución contra cada esquema. [Informe](06-bases-de-datos/VALIDACION.md). |
 
-## Contraseñas del hotel completadas
+En el hotel, el recorrido visual es una comprobación adicional al alcance ya completado de las tareas #1–#8. Esta lista no crea ni reabre tareas en el tablero.
 
-La tarea #8 queda cerrada con PBKDF2-SHA256, sal individual, coste configurable y migración compatible de cuentas existentes. **79 pruebas correctas y 0 fallidas**, locales y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210). [Guía de instalación y seguridad](06-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md).
+## Ampliaciones opcionales
 
-## Comparación Linux completada
+| Área | Posible ampliación |
+|---|---|
+| 01 · Entrada de los programas C++ | Añadir casos con decimales cuando se espera un entero, caracteres sobrantes y otras combinaciones de entrada inválida. Los 32 casos actuales cubren las entradas enumeradas en el [informe](01-introduccion-programacion/VALIDACION.md). |
+| 01 · Búsqueda de texto | Crear, como variante separada, búsqueda por palabras completas, reglas para mayúsculas y normalización de texto Unicode. La versión actual cuenta subcadenas exactas y superpuestas. |
+| 01 · Diagramas secuenciales | Añadir implementaciones identificadas como nuevas de 3.10–3.12. Actualmente tienen diagrama y traza manual; solo 3.9 dispone de código entregado. |
+| 02–05 · Programación, objetos, algoritmos y SML | Reunir en informes propios las compilaciones y ejecuciones reproducibles de los ejercicios; estas materias todavía no tienen un informe conjunto de validación como 00, 01 y 06. |
+| 06 · Hotel | Añadir pruebas de concurrencia entre operadores y un procedimiento de despliegue si se amplía su uso. |
 
-Los doce pares C/FASM pasan **132 comparaciones, 0 fallidas**, con pipe y terminal PTY en Ubuntu. Se corrigieron lectura, signos, rangos y alineación. [Resultados y ejecución](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). Este punto deja de figurar como pendiente.
+Estas ampliaciones no impiden consultar las entregas publicadas. Se mantendrían separadas de los trabajos originales y de los resultados ya comprobados.
 
-## Organización de las materias
+## Trabajo completado
 
-La materia introductoria pasó del prefijo `06` a `00`, se ubicó antes de `01` en el índice y se actualizaron enlaces, rutas del inventario y referencias documentales. El código y los resultados de pruebas anteriores se conservan.
-
-## Presentación y documentación revisadas
-
-Revisé las siete materias (00–06) y sus 46 actividades: navegación, ejemplos, explicaciones y referencias documentales. Aclaré las bases numéricas, las unidades y las siglas, y retiré las ubicaciones personales de los inventarios publicados. La [guía de lectura](GUIA-DE-LECTURA.md) reúne la notación compartida. Esta revisión es documental; los resultados de ejecución siguen en los informes enlazados arriba.
+| Trabajo | Resultado y evidencia |
+|---|---|
+| Organización y presentación | Siete materias y 46 actividades con README, desarrollo y enlaces a las soluciones o documentos disponibles. La 01 incluye ahora entradas, salidas, ejemplos de consola y recorridos manuales más detallados. |
+| Numeración | 00 Sistemas; 01 Introducción; 02 Fundamentos; 03 Objetos; 04 Algoritmos; 05 SML; 06 Bases de Datos. Índices, perfil, automatizaciones y enlaces de las ocho tareas del hotel actualizados. |
+| Introducción: C++ | Cinco programas, **32 casos correctos y 0 fallidos**, localmente y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). |
+| Sistemas: C/FASM en Linux | Doce pares de programas, **132 comparaciones correctas y 0 fallidas**. [Informe](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). |
+| Hotel: tareas #1–#8 | Instalación, operaciones, permisos, reportes, configuración, compilación y contraseñas completados, con **79 pruebas correctas y 0 fallidas**. [Validación tras renumerar](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703). |
+| Contraseñas del hotel | PBKDF2-SHA256 con sal individual, costo configurable y migración de cuentas existentes. [Guía](06-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md). |
 
 [Volver al repositorio](README.md)
-
-## Introducción a la Programación incorporada
-
-La materia 01 reúne siete actividades y cinco programas C++: **32 casos correctos y 0 fallidos** en Windows. [Validación y límites](01-introduccion-programacion/VALIDACION.md). Las materias anteriores 01–05 pasan a 02–06; la 00 conserva su posición. El primer parcial de Introducción se publica como enunciado, sin solución entregada localizada. Los diagramas RAPTOR y los documentos se revisaron, sin afirmar una ejecución del archivo RAPTOR.

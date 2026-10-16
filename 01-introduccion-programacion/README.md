@@ -32,6 +32,22 @@ Relacionar las entradas de un problema con los pasos necesarios para obtener una
 
 Cada actividad contiene un README con el planteamiento y sus documentos, y un desarrollo con el razonamiento y ejemplos. Cinco incluyen un archivo independiente `solution.cpp`. Los diagramas, textos y entregas grupales se enlazan desde [documentos de apoyo](../archivos-originales/introduccion-programacion/README.md).
 
+## Estructura de la sección
+
+```text
+01-introduccion-programacion/
+├── fundamentos-algoritmia/
+├── ejercicios-secuenciales/
+├── triangulo-rectangulo/
+├── piramide-asteriscos/
+├── busqueda-coincidencias-texto/
+├── fibonacci-traza/
+├── enunciados-primer-parcial/
+├── tests/
+├── README.md
+└── VALIDACION.md
+```
+
 ## Herramientas y conceptos
 
 - C++17 para las versiones compilables; C++ como lenguaje de las entregas.
@@ -54,3 +70,23 @@ Los cinco programas pasan **32 casos de prueba, sin fallos**, tanto en Windows l
 La sección reúne siete actividades, cinco programas preparados para compilar y documentos de lectura, diagramación y evaluación. Las diferencias entre entregas y versiones compilables están descritas en [VALIDACION.md](VALIDACION.md). El primer parcial se conserva como enunciado sin solución entregada disponible. El informe de resultados generales de la clase, los libros y los videos docentes no se publican como evidencia de trabajo propio.
 
 [Validación](VALIDACION.md) · [Inventario](../archivos-originales/introduccion-programacion/INVENTARIO.md) · [Guía de lectura](../GUIA-DE-LECTURA.md)
+
+---
+
+## Relación entre documentos y programas
+
+| Material | Qué aporta | Dónde lo consulto |
+|---|---|---|
+| README de actividad | Problema, entradas, salidas y ejemplo. | Tabla de actividades. |
+| Desarrollo | Recorridos manuales, decisiones, versiones y límites. | Dentro de cada actividad. |
+| `solution.cpp` | Programa independiente preparado para compilar. | Cinco actividades con código. |
+| Documentos académicos | Reporte, investigación, diagramas, textos y rúbricas. | [Documentos de apoyo](../archivos-originales/introduccion-programacion/README.md). |
+| Pruebas | Entradas comprobadas, salidas y estado de cada caso. | [Informe](VALIDACION.md) y [registro](tests/results-windows.json). |
+
+## Qué aprendí al comparar las versiones
+
+Un diagrama y un programa pueden partir del mismo problema y aun así diferir en una condición o un incremento. En el triángulo comparo métodos para obtener la raíz; en la pirámide, la sangría de cada fila; y en el texto, el significado de «coincidencia». Mantengo esas diferencias visibles para explicar el razonamiento y las correcciones.
+
+La organización sigue la de [Bases de Datos](../06-bases-de-datos/README.md): planteamiento, desarrollo, solución disponible, documentos y validación. El tipo de evidencia cambia con la actividad: una lectura o un enunciado no se presenta como un programa ejecutado.
+
+[Pendientes del repositorio](../PENDIENTES.md) · [Volver al inicio](../README.md)
