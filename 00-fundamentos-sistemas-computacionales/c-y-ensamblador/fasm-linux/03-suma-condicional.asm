@@ -44,61 +44,89 @@ imprimir:
     ret
 
 leer_int:
-    mov rax, 0
-    mov rdi, 0
+    ; Un byte por lectura conserva los tokens siguientes en pipes y terminales.
+    ; Syscall destruye RCX/R11; acumulador en R9 y signo en R8.
+    xor r9, r9
+    mov r8, 1
+    xor r10d, r10d
+.leer_byte:
+    xor eax, eax
+    xor edi, edi
     mov rsi, memoria
-    mov rdx, 64
+    mov edx, 1
     syscall
-
-    mov rcx, rax
-    mov rsi, memoria
-    xor rax, rax
-
-leer_digitos:
-    cmp rcx, 0
-    je fin_leer
-    mov bl, [rsi]
-    cmp bl, '0'
-    jb avanzar
-    cmp bl, '9'
-    ja fin_leer
-    imul rax, rax, 10
-    movzx rbx, bl
-    sub rbx, '0'
-    add rax, rbx
-
-avanzar:
-    inc rsi
-    dec rcx
-    jmp leer_digitos
-
-fin_leer:
+    cmp rax, 1
+    jne .terminar
+    movzx eax, byte [memoria]
+    cmp al, ' '
+    ja .no_blanco
+    test r10d, r10d
+    jnz .terminar
+    jmp .leer_byte
+.no_blanco:
+    test r10d, r10d
+    jnz .digito
+    cmp al, '-'
+    je .negativo
+    cmp al, '+'
+    je .signo
+.digito:
+    cmp al, '0'
+    jb .terminar
+    cmp al, '9'
+    ja .terminar
+    imul r9, r9, 10
+    sub eax, '0'
+    add r9, rax
+    mov r10d, 2
+    jmp .leer_byte
+.negativo:
+    mov r8, -1
+.signo:
+    mov r10d, 1
+    jmp .leer_byte
+.terminar:
+    mov rax, r9
+    imul rax, r8
     ret
 
 imprimir_int:
     mov rsi, numero_memoria + 31
     mov rbx, 10
+    xor r9, r9
 
     cmp rax, 0
-    jne convertir
+    jne .verificar
     dec rsi
     mov byte [rsi], '0'
     mov rdx, 1
-    jmp imprimirlo
+    jmp .imprimir
 
-convertir:
+.verificar:
+    cmp rax, 0
+    jge .convertir
+    neg rax
+    mov r9, 1
+
+.convertir:
     xor rdx, rdx
     div rbx
     add dl, '0'
     dec rsi
     mov [rsi], dl
     test rax, rax
-    jne convertir
+    jne .convertir
 
+    cmp r9, 1
+    jne .longitud
+    dec rsi
+    mov byte [rsi], '-'
+
+.longitud:
     mov rdx, numero_memoria + 31
     sub rdx, rsi
 
-imprimirlo:
+.imprimir:
     call imprimir
     ret
 

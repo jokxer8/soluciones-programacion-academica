@@ -95,7 +95,7 @@ def expected(number, values):
 
 CASES = {
     1: [()],
-    2: [(5, 3), (-5, 3), (0, 0), (40000, 40000), (-40000, 40000)],
+    2: [(5, 3), (-5, 3), (0, 0), (40000, 40000), (-40000, 40000), (50000, 50000)],
     3: [(4, 4), (4, 3), (-4, -4), (0, 0)],
     4: [(15, 6), (6, 15), (5, 5)],
     5: [(99, 100), (200, 201), (99, 201), (100, 200), (-1, 150)],
@@ -138,6 +138,7 @@ report = {
 Path("linux-results.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
 summary = f"Linux: {report['passed']} comparaciones correctas, {report['failed']} fallidas; 12 pares C/FASM."
 print(summary)
+print("REPORT_JSON:" + json.dumps(report, ensure_ascii=False))
 if os.environ.get("GITHUB_STEP_SUMMARY"):
     with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as stream:
         stream.write(summary + "\n\nCada caso contrasta ambos programas con un resultado independiente, por pipe y terminal PTY.\n")

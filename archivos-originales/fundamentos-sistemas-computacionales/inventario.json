@@ -214,7 +214,7 @@
       "bytes": 2870,
       "sha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm",
-      "publishedSha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
+      "publishedSha256": "81317d56b453fcfc50923dc0a5fe62dd50b1400cd6f15408531c745d725d0be3",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -223,7 +223,7 @@
       "bytes": 1990,
       "sha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm",
-      "publishedSha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
+      "publishedSha256": "ec3ef4fa4e63873a6d47aac0cbdaf512517cad4e64a534ed5a2c5e78aa4888ab",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -232,7 +232,7 @@
       "bytes": 2811,
       "sha256": "de7acf763ac2d6e1a4c21a826403cae83e70d03ee35c6d682dcd9f0a19af80a4",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm",
-      "publishedSha256": "ed3dd6fa2341559adb883730d3892627437856e441bfab8a60600baab38ae090",
+      "publishedSha256": "1c7d20c6590b46271fe1ca943ace750127ae9044f00846972f5f1548e252ed00",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -241,7 +241,7 @@
       "bytes": 2007,
       "sha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm",
-      "publishedSha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
+      "publishedSha256": "024a76d537d4761d6ce4bcc0ffb178f6aa30fae638b1b60506eddf126a42ecf7",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -250,7 +250,7 @@
       "bytes": 2033,
       "sha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm",
-      "publishedSha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
+      "publishedSha256": "a50bb1f49d1bee74387a4ef4d6e5921466d26eb5af7fc7dac33cd3e2edd97272",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -259,7 +259,7 @@
       "bytes": 3054,
       "sha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm",
-      "publishedSha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
+      "publishedSha256": "d3effa52b3ad78b61cb467bd6613b434e422d65e8cf57cb5e95d698a3db0ba4f",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -268,7 +268,7 @@
       "bytes": 1839,
       "sha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm",
-      "publishedSha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
+      "publishedSha256": "6000cae3f4922fe65ece1e5a9b8868032e7fca7ed13ffb660e28336a144ce6b3",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -277,7 +277,7 @@
       "bytes": 1549,
       "sha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm",
-      "publishedSha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
+      "publishedSha256": "13891118d69bbb01c02de5b3d1cce86883170d4d74eec40fb94bbe11494ff4cb",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -286,7 +286,7 @@
       "bytes": 1808,
       "sha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm",
-      "publishedSha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
+      "publishedSha256": "6ef845bfde529f5b16ef94c4604b65cfe94ac8ee56349d726c3b3ce156465ac8",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -295,7 +295,7 @@
       "bytes": 2082,
       "sha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm",
-      "publishedSha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
+      "publishedSha256": "ce2d88df16ffa353fad583ed9ab05a8d52b10cd5ccf1dfd2dbdeefc5332ad0b7",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
@@ -304,7 +304,7 @@
       "bytes": 2372,
       "sha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
       "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm",
-      "publishedSha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
+      "publishedSha256": "1bb4bc01a5c52e2a88c2c06ba7a27b34bb19054df1d8049ec2df562f492cc19a",
       "treatment": "Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md.",
       "reason": ""
     },
