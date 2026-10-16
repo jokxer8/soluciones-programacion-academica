@@ -114,6 +114,16 @@ soluciones-programacion-academica/
 
 ---
 
+## Proyectos destacados
+
+| Proyecto | Descripción | Tecnologías | Estado |
+|---|---|---|---|
+| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación verificada |
+
+El proyecto conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación de la base y distingue la compilación de las pruebas de funcionamiento pendientes en SQL Server.
+
+---
+
 ## Tecnologías utilizadas
 
 - C#
