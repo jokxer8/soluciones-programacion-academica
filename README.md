@@ -124,6 +124,8 @@ El proyecto conserva los créditos del equipo y las cuentas de demostración. Su
 
 El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
 
+[![Compilación del hotel en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
+
 ---
 
 ## Tecnologías utilizadas

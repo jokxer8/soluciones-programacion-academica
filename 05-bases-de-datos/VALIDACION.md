@@ -15,6 +15,10 @@ Se inventariaron 329 archivos del origen. El [registro de auditoría](AUDITORIA.
 - Revisión de la secuencia de instalación, cuentas de demostración, servidor local y tema inicial del hotel contra los scripts y el código.
 - Sustitución de valores de documento, teléfono y correo de los datos de demostración del hotel por valores ficticios. Las credenciales privadas y los archivos de empleados quedan fuera.
 
+## Compilación automática verificada
+
+El [workflow de Windows, MSBuild y NuGet](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) se ejecutó correctamente sobre la revisión `4128f7b`. La [ejecución #1](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909) completó la restauración desde NuGet, la compilación Release y la comprobación del ejecutable, bibliotecas y logotipos. Conserva la advertencia CS0168. No se ejecutan pruebas funcionales ni SQL Server en este workflow.
+
 ## Rectificaciones documentadas
 
 Restaurante incluye separadores GO, cierre de la función, consulta de ejemplo fuera de su cuerpo y un límite que incluye el día final completo. Alquiler de coches añade separadores y contexto de base donde faltaban. El hotel utiliza localhost como servidor de referencia e incluye la migración necesaria después del script inicial. Sus guías explican la recreación de HotelDB y la carga opcional de datos.

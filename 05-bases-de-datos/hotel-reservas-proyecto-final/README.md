@@ -1,5 +1,7 @@
 # Sistema de Reservas de Hotel - Proyecto Final
 
+[![Compilación Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
+
 ## Descripción de la actividad
 
 Proyecto grupal de C# Windows Forms y SQL Server que integra diseño relacional y gestión hotelera.
@@ -62,6 +64,12 @@ Kelvin Del Castillo Torres, Gabriel Galasso y Camila Vasquez, según los crédit
 ## Estado
 
 Proyecto académico incorporado y documentado. Las comprobaciones de compilación y las limitaciones de ejecución se registran en [VALIDACION.md](../VALIDACION.md).
+
+## Compilación automática
+
+El [workflow del hotel](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) restaura los paquetes con NuGet, compila en Release con MSBuild sobre Windows Server 2022 y comprueba el ejecutable, las bibliotecas y los recursos gráficos requeridos.
+
+La [primera ejecución](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909), sobre la revisión `4128f7b`, **finalizó correctamente**: restauración, compilación y verificación de salidas aprobadas. Conserva la advertencia CS0168 ya documentada. La [guía de compilación automática](docs/COMPILACION-AUTOMATICA.md) explica los disparadores, la ejecución manual y el alcance de la comprobación. El workflow no ejecuta la aplicación ni SQL Server.
 
 ## Seguimiento de mejoras y pruebas
 
