@@ -204,7 +204,7 @@
       "source": "Asignacion 2/ASM/1. Saludo mundo.asm",
       "bytes": 316,
       "sha256": "19a85750f3450306b9303106595aab9923a035218fae024de3308b786c53c78b",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/01-saludo-mundo.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/01-saludo-mundo.asm",
       "publishedSha256": "19a85750f3450306b9303106595aab9923a035218fae024de3308b786c53c78b",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -213,7 +213,7 @@
       "source": "Asignacion 2/ASM/2. suma, resta y multiplicacion dos numeros 32bit.asm",
       "bytes": 2870,
       "sha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm",
       "publishedSha256": "18e5d21a65c3f7bcd2eeff48082642c2291189f1f15265c7ff668c8d6a115262",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -222,7 +222,7 @@
       "source": "Asignacion 2/ASM/3. suma iguales resultado doble.asm",
       "bytes": 1990,
       "sha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm",
       "publishedSha256": "a8c0a6cabcae319f34344d90992e6ffae05a4222b5e81c4c5093d4a3b0328797",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -231,7 +231,7 @@
       "source": "Asignacion 2/ASM/4. regresion entre dos numeros.asm",
       "bytes": 2811,
       "sha256": "de7acf763ac2d6e1a4c21a826403cae83e70d03ee35c6d682dcd9f0a19af80a4",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm",
       "publishedSha256": "ed3dd6fa2341559adb883730d3892627437856e441bfab8a60600baab38ae090",
       "treatment": "Rectificación: completar longitud de coma (coma_1 = $ - coma) para permitir ensamblado FASM",
       "reason": ""
@@ -240,7 +240,7 @@
       "source": "Asignacion 2/ASM/5. numero entre 100 y 200.asm",
       "bytes": 2007,
       "sha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm",
       "publishedSha256": "f23f16b79c3c214e7d7cd9369b07969e6c071e30abcac5687a3cc1f350227a78",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -249,7 +249,7 @@
       "source": "Asignacion 2/ASM/6. N si es primo.asm",
       "bytes": 2033,
       "sha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm",
       "publishedSha256": "0302e95ad2ac352519d709f214ab80a816f7f80429cdec4e69c16a43d41ae906",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -258,7 +258,7 @@
       "source": "Asignacion 2/ASM/7. N si es primo y los primos hasta N.asm",
       "bytes": 3054,
       "sha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm",
       "publishedSha256": "66e05ea8191cd2083f49a86eb3690911dd3ce24c3b2c430ae349b6c7be45ef1b",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -267,7 +267,7 @@
       "source": "Asignacion 2/ASM/8.1 Cuadrado de estrellas.asm",
       "bytes": 1839,
       "sha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm",
       "publishedSha256": "ad90af5e0b8389f6097a1aebd5a4418b0ff962823258e5b31ef3c6818135168b",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -276,7 +276,7 @@
       "source": "Asignacion 2/ASM/8.2 escalera de menor a mayor con estrellas.asm",
       "bytes": 1549,
       "sha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm",
       "publishedSha256": "cf8b0fd36e1afe020ade498388694228e5e5db80df6f5c0299f9c2c4c72a84a5",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -285,7 +285,7 @@
       "source": "Asignacion 2/ASM/8.3 escalera de mayor a menor con estrellas.asm",
       "bytes": 1808,
       "sha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm",
       "publishedSha256": "345fa35c359437e81d64d329d0a0d2d6766bf92a24012f462102035222b91ff1",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -294,7 +294,7 @@
       "source": "Asignacion 2/ASM/8.4 piramide con horizonte vertical.asm",
       "bytes": 2082,
       "sha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm",
       "publishedSha256": "ecab85937a9ab2daf67cc408c6f652fb21edd7e2b723af23c0c7f9b12b6b672f",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -303,7 +303,7 @@
       "source": "Asignacion 2/ASM/8.5 escalera de menor a mayor e invertida.asm",
       "bytes": 2372,
       "sha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm",
       "publishedSha256": "76881a58e893670a6b8dae06ef590fa9166b913ce548909e1795d75e75f91f85",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -312,7 +312,7 @@
       "source": "Asignacion 2/C/1. Saludo mundo.c",
       "bytes": 97,
       "sha256": "522cd7e8943a5e576df8cea84eea8c1d07e1fc029711f87785f5d1cf2cfbc083",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/01-saludo-mundo.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/01-saludo-mundo.c",
       "publishedSha256": "522cd7e8943a5e576df8cea84eea8c1d07e1fc029711f87785f5d1cf2cfbc083",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -321,7 +321,7 @@
       "source": "Asignacion 2/C/2. suma, resta y multiplicacion dos numeros 32bit.c",
       "bytes": 391,
       "sha256": "dfb8274c9d0b2278fc10c0ab98b3d0b82acdb2a0b16d0b801472f8a4a732b597",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/02-operaciones-enteros.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/02-operaciones-enteros.c",
       "publishedSha256": "dfb8274c9d0b2278fc10c0ab98b3d0b82acdb2a0b16d0b801472f8a4a732b597",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -330,7 +330,7 @@
       "source": "Asignacion 2/C/3. suma iguales resultado doble.c",
       "bytes": 352,
       "sha256": "bd53829fe8b91da8599871558361ecafa6f4bda527fbb121c9224f085c76b33c",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/03-suma-condicional.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/03-suma-condicional.c",
       "publishedSha256": "bd53829fe8b91da8599871558361ecafa6f4bda527fbb121c9224f085c76b33c",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -339,7 +339,7 @@
       "source": "Asignacion 2/C/4. regresion entre dos numeros.c",
       "bytes": 524,
       "sha256": "3b8cb76c6fe118f0b357780a5946f09634ee6ffbb7f440d8d78cf80308c2ec9d",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/04-cuenta-regresiva.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/04-cuenta-regresiva.c",
       "publishedSha256": "3b8cb76c6fe118f0b357780a5946f09634ee6ffbb7f440d8d78cf80308c2ec9d",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -348,7 +348,7 @@
       "source": "Asignacion 2/C/5. numero entre 100 y 200.c",
       "bytes": 340,
       "sha256": "b2b2a9ebff7c1e28ef0926b4ecd74e7fff8b746fa595c05916e0a1fac6eaa3d4",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/05-rango-100-200.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/05-rango-100-200.c",
       "publishedSha256": "b2b2a9ebff7c1e28ef0926b4ecd74e7fff8b746fa595c05916e0a1fac6eaa3d4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -357,7 +357,7 @@
       "source": "Asignacion 2/C/6. N si es primo.c",
       "bytes": 509,
       "sha256": "e78ff43ab8db6a5ce4864571bf1a86834fbf7e43312da21a411e341ecdc48ca4",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/06-numero-primo.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/06-numero-primo.c",
       "publishedSha256": "e78ff43ab8db6a5ce4864571bf1a86834fbf7e43312da21a411e341ecdc48ca4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -366,7 +366,7 @@
       "source": "Asignacion 2/C/7. N si es primo y los primos hasta N.c",
       "bytes": 684,
       "sha256": "9b40c02c3957ad77b368fb0e0c1647b295dbd6ab468f4cc838cb877a992eceef",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/07-primos-hasta-n.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/07-primos-hasta-n.c",
       "publishedSha256": "9b40c02c3957ad77b368fb0e0c1647b295dbd6ab468f4cc838cb877a992eceef",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -375,7 +375,7 @@
       "source": "Asignacion 2/C/8.1 Cuadrado de estrellas.c",
       "bytes": 560,
       "sha256": "ccb474a0c91a9e01aef125884545356bb4295e4ee0fbf5a93399fd047fbfa9f3",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/08-cuadrado-hueco.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/08-cuadrado-hueco.c",
       "publishedSha256": "ccb474a0c91a9e01aef125884545356bb4295e4ee0fbf5a93399fd047fbfa9f3",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -384,7 +384,7 @@
       "source": "Asignacion 2/C/8.2 escalera de menor a mayor con estrellas.c",
       "bytes": 420,
       "sha256": "475b4f69c4fc57a1cc6bafb6e8fcc4de88ed7957dea787e9381862a21869e8cb",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/09-escalera-ascendente.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/09-escalera-ascendente.c",
       "publishedSha256": "475b4f69c4fc57a1cc6bafb6e8fcc4de88ed7957dea787e9381862a21869e8cb",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -393,7 +393,7 @@
       "source": "Asignacion 2/C/8.3 escalera de mayor a menor con estrellas.c",
       "bytes": 524,
       "sha256": "295aef6e1dd221c8be00d310631ce08358c765f2de7e08d0921f69cd5c7f3df6",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/10-escalera-descendente.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/10-escalera-descendente.c",
       "publishedSha256": "295aef6e1dd221c8be00d310631ce08358c765f2de7e08d0921f69cd5c7f3df6",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -402,7 +402,7 @@
       "source": "Asignacion 2/C/8.4 piramide con horizonte vertical.c",
       "bytes": 604,
       "sha256": "6445e1d72add395161c8348513d20f7c96aec9e2f75b413305a496c3c7275f55",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/11-piramide-vertical.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/11-piramide-vertical.c",
       "publishedSha256": "6445e1d72add395161c8348513d20f7c96aec9e2f75b413305a496c3c7275f55",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -411,7 +411,7 @@
       "source": "Asignacion 2/C/8.5 escalera de menor a mayor e invertida.c",
       "bytes": 810,
       "sha256": "da00fa67ceb2e3fa9bf4e18d75670c601133d784aa6eae8d002976dc62cc4ec4",
-      "target": "06-fundamentos-sistemas-computacionales/c-y-ensamblador/c/12-escalera-invertida.c",
+      "target": "00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/12-escalera-invertida.c",
       "publishedSha256": "da00fa67ceb2e3fa9bf4e18d75670c601133d784aa6eae8d002976dc62cc4ec4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -420,7 +420,7 @@
       "source": "Asignacion 3/1. Kelvin.c",
       "bytes": 1378,
       "sha256": "b478e5f1b7b60d4d9b017e5762b3887d7d4054327f4db1518393d678103504cf",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-01.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-01.c",
       "publishedSha256": "b478e5f1b7b60d4d9b017e5762b3887d7d4054327f4db1518393d678103504cf",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -429,7 +429,7 @@
       "source": "Asignacion 3/10. Kelvin.c",
       "bytes": 1362,
       "sha256": "e3dadda54c6a937f2c44d8270be68e3356a6311f8320efc8ac57e317e9f498d6",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-10.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-10.c",
       "publishedSha256": "e3dadda54c6a937f2c44d8270be68e3356a6311f8320efc8ac57e317e9f498d6",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -438,7 +438,7 @@
       "source": "Asignacion 3/2. Kelvin.c",
       "bytes": 1206,
       "sha256": "f5c826a8a3c30a1b00d1087d5d2ef663c67d2403a3ae339df093e0889b20d304",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-02.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-02.c",
       "publishedSha256": "f5c826a8a3c30a1b00d1087d5d2ef663c67d2403a3ae339df093e0889b20d304",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -447,7 +447,7 @@
       "source": "Asignacion 3/3. Kelvin.c",
       "bytes": 1423,
       "sha256": "6562326d6dcfb228f91777774412805ccae0911f4f2858df79b9d6c44e38dfd4",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-03.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-03.c",
       "publishedSha256": "6562326d6dcfb228f91777774412805ccae0911f4f2858df79b9d6c44e38dfd4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -456,7 +456,7 @@
       "source": "Asignacion 3/4. Kelvin.c",
       "bytes": 911,
       "sha256": "541155ee8791048dffd0e285198d9e3f3d7922e9b2b1ede03947bbb86a5b875f",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-04.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-04.c",
       "publishedSha256": "541155ee8791048dffd0e285198d9e3f3d7922e9b2b1ede03947bbb86a5b875f",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -465,7 +465,7 @@
       "source": "Asignacion 3/5. Kelvin.c",
       "bytes": 1400,
       "sha256": "a4682bf5b4b703203143993d6edeaf3509f2d72fc067f6ab935ac973d49d53d4",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-05.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-05.c",
       "publishedSha256": "a4682bf5b4b703203143993d6edeaf3509f2d72fc067f6ab935ac973d49d53d4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -474,7 +474,7 @@
       "source": "Asignacion 3/6. Kelvin.c",
       "bytes": 1478,
       "sha256": "335b2745fa334b4d4db4c5d262fc57d8ce4be52f981cf29b0619e5db8d2c8e9f",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-06.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-06.c",
       "publishedSha256": "335b2745fa334b4d4db4c5d262fc57d8ce4be52f981cf29b0619e5db8d2c8e9f",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -483,7 +483,7 @@
       "source": "Asignacion 3/7. Kelvin.c",
       "bytes": 576,
       "sha256": "3a725a30f4cc905dd5d12dac231b95bb1ffd68d327ce5f16363db41bd8e1f272",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-07.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-07.c",
       "publishedSha256": "3a725a30f4cc905dd5d12dac231b95bb1ffd68d327ce5f16363db41bd8e1f272",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -492,7 +492,7 @@
       "source": "Asignacion 3/8. Kelvin.c",
       "bytes": 1393,
       "sha256": "2e20e344d121ded164b0bc85119388ed55ee52e10c90b073d18fc27af08f24a4",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-08.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-08.c",
       "publishedSha256": "2e20e344d121ded164b0bc85119388ed55ee52e10c90b073d18fc27af08f24a4",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -501,7 +501,7 @@
       "source": "Asignacion 3/9. Kelvin.c",
       "bytes": 801,
       "sha256": "3475c50d8a608c3e7318fcff1d3e2c0ee40c2461930880378a94106cd963d960",
-      "target": "06-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-09.c",
+      "target": "00-fundamentos-sistemas-computacionales/estructuras-y-memoria/ejercicio-09.c",
       "publishedSha256": "3475c50d8a608c3e7318fcff1d3e2c0ee40c2461930880378a94106cd963d960",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -537,7 +537,7 @@
       "source": "Asignacion 4/ejercicio_01.c",
       "bytes": 1695,
       "sha256": "9f985ac6fe2e8e316a9110d4546a7674f7529fb1b970af9cf6025a83a188a83e",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-01.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-01.c",
       "publishedSha256": "9f985ac6fe2e8e316a9110d4546a7674f7529fb1b970af9cf6025a83a188a83e",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -546,7 +546,7 @@
       "source": "Asignacion 4/ejercicio_02.c",
       "bytes": 1418,
       "sha256": "65262562a1099e7e33c1ae0b56bc812740c83ef6e65657e6fe5ce2d0087b14b5",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-02.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-02.c",
       "publishedSha256": "65262562a1099e7e33c1ae0b56bc812740c83ef6e65657e6fe5ce2d0087b14b5",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -555,7 +555,7 @@
       "source": "Asignacion 4/ejercicio_03.c",
       "bytes": 1659,
       "sha256": "4f71450138bff47d5c2bc35a8ca527057c8db3aa473e2c365349474bf4c1e738",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-03.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-03.c",
       "publishedSha256": "4f71450138bff47d5c2bc35a8ca527057c8db3aa473e2c365349474bf4c1e738",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -564,7 +564,7 @@
       "source": "Asignacion 4/ejercicio_04.c",
       "bytes": 1658,
       "sha256": "5f088f4dd1a6a432195eddb91d7aed9456ae1b70cfe310bd8751b5c73c7371ad",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-04.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-04.c",
       "publishedSha256": "5f088f4dd1a6a432195eddb91d7aed9456ae1b70cfe310bd8751b5c73c7371ad",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -573,7 +573,7 @@
       "source": "Asignacion 4/ejercicio_05.c",
       "bytes": 1541,
       "sha256": "43b227cbb433dc3de2122e97d490a73def0e09c0a0ef83638769fb45c6c8ee33",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-05.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-05.c",
       "publishedSha256": "43b227cbb433dc3de2122e97d490a73def0e09c0a0ef83638769fb45c6c8ee33",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -582,7 +582,7 @@
       "source": "Asignacion 4/ejercicio_06.c",
       "bytes": 1990,
       "sha256": "1325331940872b7dcf2ecc74e68f3de08cca506c8d19bd7ccc8b438d82280715",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-06.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-06.c",
       "publishedSha256": "1325331940872b7dcf2ecc74e68f3de08cca506c8d19bd7ccc8b438d82280715",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -591,7 +591,7 @@
       "source": "Asignacion 4/ejercicio_07.c",
       "bytes": 2404,
       "sha256": "3cefe93f18fe2c55140e6b3fdaebc51a4c054044bc0bd1625e56a52ef835215b",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-07.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-07.c",
       "publishedSha256": "3cefe93f18fe2c55140e6b3fdaebc51a4c054044bc0bd1625e56a52ef835215b",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -600,7 +600,7 @@
       "source": "Asignacion 4/ejercicio_08.c",
       "bytes": 2318,
       "sha256": "fc63f95b409fb95afd8229dbc562de60474aa379ef33166ddfde107bada05571",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-08.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-08.c",
       "publishedSha256": "fc63f95b409fb95afd8229dbc562de60474aa379ef33166ddfde107bada05571",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -609,7 +609,7 @@
       "source": "Asignacion 4/ejercicio_09.c",
       "bytes": 2160,
       "sha256": "6a82d53189c5735397c7b6837e551d800115de7a5accd12e21fd821e132ee3b5",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-09.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-09.c",
       "publishedSha256": "6a82d53189c5735397c7b6837e551d800115de7a5accd12e21fd821e132ee3b5",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -618,7 +618,7 @@
       "source": "Asignacion 4/ejercicio_10.c",
       "bytes": 1949,
       "sha256": "2fbac9889fc29b14cbeee3faba764c3bd0a163ef547b5574f5ce6a46142aa2fa",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-10.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-10.c",
       "publishedSha256": "2fbac9889fc29b14cbeee3faba764c3bd0a163ef547b5574f5ce6a46142aa2fa",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -627,7 +627,7 @@
       "source": "Asignacion 4/ejercicio_11.c",
       "bytes": 2509,
       "sha256": "0d47bffb74fd509c3754fbde5cf9f65b8435e293f284460d90e73802a9a10f17",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-11.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-11.c",
       "publishedSha256": "0d47bffb74fd509c3754fbde5cf9f65b8435e293f284460d90e73802a9a10f17",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -636,7 +636,7 @@
       "source": "Asignacion 4/ejercicio_12.c",
       "bytes": 3883,
       "sha256": "fe1785cc9706b8c645f49d432076a0d058d935a7220b5d4b793f18d229f352db",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-12.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-12.c",
       "publishedSha256": "fe1785cc9706b8c645f49d432076a0d058d935a7220b5d4b793f18d229f352db",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -645,7 +645,7 @@
       "source": "Asignacion 4/ejercicio_13.c",
       "bytes": 2293,
       "sha256": "458baca28ee0891b911a9f97ee95b6ade1badbc3a8b04739d4fb7a42d3207ee3",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-13.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-13.c",
       "publishedSha256": "458baca28ee0891b911a9f97ee95b6ade1badbc3a8b04739d4fb7a42d3207ee3",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -654,7 +654,7 @@
       "source": "Asignacion 4/ejercicio_14.c",
       "bytes": 2148,
       "sha256": "9fdfc32fab0817a9eb36287d75117e68f6784c18b78cdf5e28f404cec28b1894",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-14.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-14.c",
       "publishedSha256": "9fdfc32fab0817a9eb36287d75117e68f6784c18b78cdf5e28f404cec28b1894",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -663,7 +663,7 @@
       "source": "Asignacion 4/ejercicio_15.c",
       "bytes": 1318,
       "sha256": "1e3fd1d1cbed4295b7fa4ba68d7cb62c267e92735fae22951f052b904aa5fe30",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-15.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-15.c",
       "publishedSha256": "1e3fd1d1cbed4295b7fa4ba68d7cb62c267e92735fae22951f052b904aa5fe30",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -672,7 +672,7 @@
       "source": "Asignacion 4/ejercicio_16.c",
       "bytes": 1250,
       "sha256": "1a11a279a393db907d2e691d30f85365da8fbeb490ddc49e79bc9751dfc8707c",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-16.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-16.c",
       "publishedSha256": "1a11a279a393db907d2e691d30f85365da8fbeb490ddc49e79bc9751dfc8707c",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -681,7 +681,7 @@
       "source": "Asignacion 4/ejercicio_17.c",
       "bytes": 2832,
       "sha256": "ef27aee6db01be07eb8f76a8f6417f76d9fb0185752c2857c8fbf66a55aa2a2c",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-17.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-17.c",
       "publishedSha256": "ef27aee6db01be07eb8f76a8f6417f76d9fb0185752c2857c8fbf66a55aa2a2c",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -690,7 +690,7 @@
       "source": "Asignacion 4/ejercicio_18.c",
       "bytes": 2252,
       "sha256": "42e1df720cc042f24e247a3b177f2e9a20088a504229947a9b6ee4dcdb9d1e4b",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-18.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-18.c",
       "publishedSha256": "42e1df720cc042f24e247a3b177f2e9a20088a504229947a9b6ee4dcdb9d1e4b",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -699,7 +699,7 @@
       "source": "Asignacion 4/ejercicio_19.c",
       "bytes": 2946,
       "sha256": "c633402855c1152db681065c683ce3268547f4403cb742975cfb4a9a8cc76f80",
-      "target": "06-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-19.c",
+      "target": "00-fundamentos-sistemas-computacionales/listas-colas-pilas/ejercicio-19.c",
       "publishedSha256": "c633402855c1152db681065c683ce3268547f4403cb742975cfb4a9a8cc76f80",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -924,7 +924,7 @@
       "source": "Entregable Kelvin/bubble_sort.asm",
       "bytes": 595,
       "sha256": "84cd6427986049f9a5c71f87a7042249eed593277c42918967a8c725e24d2689",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/bubble_sort.asm",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/bubble_sort.asm",
       "publishedSha256": "84cd6427986049f9a5c71f87a7042249eed593277c42918967a8c725e24d2689",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -942,7 +942,7 @@
       "source": "Entregable Kelvin/main.c",
       "bytes": 2008,
       "sha256": "550d48cfb4ac30fa154e6e58086688aa110f8fce5757dd16ad47a27f01dd75fc",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/main.c",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/main.c",
       "publishedSha256": "550d48cfb4ac30fa154e6e58086688aa110f8fce5757dd16ad47a27f01dd75fc",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -978,7 +978,7 @@
       "source": "Entregable Kelvin/sum.asm",
       "bytes": 260,
       "sha256": "7bffe09582b3b31d50c2ebe149ab9b973d990969a1a5711642c0b4373c32bbee",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/sum.asm",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/sum.asm",
       "publishedSha256": "7bffe09582b3b31d50c2ebe149ab9b973d990969a1a5711642c0b4373c32bbee",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -987,7 +987,7 @@
       "source": "Entregable Kelvin/swap.asm",
       "bytes": 136,
       "sha256": "4842421ca74be42c885bf3b733e6c618b21c88b7c50279d9ca2a81caed82f29d",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/swap.asm",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm/swap.asm",
       "publishedSha256": "4842421ca74be42c885bf3b733e6c618b21c88b7c50279d9ca2a81caed82f29d",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -1041,7 +1041,7 @@
       "source": "Proyecto Final - Kelvin/countries_of_the_world.csv",
       "bytes": 31337,
       "sha256": "dd90d3b541edbab8194ac3e4f242f7079bff55942fa1438ee8933646c19f2d52",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-final-paises/countries_of_the_world.csv",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-final-paises/countries_of_the_world.csv",
       "publishedSha256": "dd90d3b541edbab8194ac3e4f242f7079bff55942fa1438ee8933646c19f2d52",
       "treatment": "Copia sin cambios",
       "reason": ""
@@ -1086,7 +1086,7 @@
       "source": "Proyecto Final - Kelvin/proyecto_final.c",
       "bytes": 26506,
       "sha256": "019e803be3485f57a1b1265f313b36b80c7e609dcc47898a7c801dfce522c662",
-      "target": "06-fundamentos-sistemas-computacionales/proyecto-final-paises/solution.c",
+      "target": "00-fundamentos-sistemas-computacionales/proyecto-final-paises/solution.c",
       "publishedSha256": "019e803be3485f57a1b1265f313b36b80c7e609dcc47898a7c801dfce522c662",
       "treatment": "Copia sin cambios",
       "reason": ""

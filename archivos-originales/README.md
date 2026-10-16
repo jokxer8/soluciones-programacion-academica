@@ -43,7 +43,7 @@ Los archivos originales se relacionan con las áreas profesionalizadas del repos
 | `diseno-y-analisis-de-algoritmos` | `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
 | `programacion-funcional-sml` | `04-fundamentos-programacion-sml` | Programación Funcional con SML |
 | `bases-de-datos` | `05-bases-de-datos` | Bases de Datos |
-| [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [06-fundamentos-sistemas-computacionales](../06-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
+| [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [00-fundamentos-sistemas-computacionales](../00-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
 
 ---
 
