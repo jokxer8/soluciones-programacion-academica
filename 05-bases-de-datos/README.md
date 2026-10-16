@@ -116,4 +116,4 @@ Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El or
 
 [Volver al repositorio](../README.md)
 
-El proyecto del hotel dispone de un [tablero de mejoras y pruebas](https://github.com/users/jokxer8/projects/1). La organización de la sección está completada. El hotel cuenta con [65 pruebas funcionales SQL correctas](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), ejecutadas localmente y en Actions; las tareas de permisos, reportes y configuración están [completadas con evidencia](hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
+El proyecto del hotel dispone de un [tablero de mejoras y pruebas](https://github.com/users/jokxer8/projects/1). La organización de la sección está completada. El hotel cuenta con [79 pruebas funcionales SQL correctas](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), ejecutadas localmente y en Actions; las tareas de permisos, reportes y configuración están [completadas con evidencia](hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
