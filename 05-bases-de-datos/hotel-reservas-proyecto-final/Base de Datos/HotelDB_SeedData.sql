@@ -98,13 +98,12 @@ GO
 INSERT INTO dbo.Usuarios (IdEmpleado, NombreUsuario, Clave, NombreCompleto, IdRol, Estado)
 SELECT e.IdEmpleado,
        LOWER(LEFT(e.Nombre,1) + e.Apellido),
-       '1234',
+       LOWER(CONVERT(VARCHAR(64), HASHBYTES('SHA2_256', '1234'), 2)),
        e.Nombre + ' ' + e.Apellido,
        2,
        1
 FROM dbo.Empleado e
-WHERE e.Correo LIKE '%hotel.com%'
-  AND NOT EXISTS (SELECT 1 FROM dbo.Usuarios u WHERE u.IdEmpleado = e.IdEmpleado);
+WHERE NOT EXISTS (SELECT 1 FROM dbo.Usuarios u WHERE u.IdEmpleado = e.IdEmpleado);
 GO
 
 -- =========================================================
@@ -194,6 +193,11 @@ GO
 --    EstadoReserva: 1=PENDIENTE,2=CONFIRMADA,3=CANCELADA,4=FINALIZADA
 -- =========================================================
 
+-- Las referencias del seed se desplazan respecto a los datos de la base inicial.
+CREATE TABLE #SeedOffsets (ReservaOffset int, FacturaOffset int);
+INSERT #SeedOffsets VALUES (CONVERT(int, IDENT_CURRENT('dbo.Reserva')), CONVERT(int, IDENT_CURRENT('dbo.Factura')));
+GO
+
 -- ---- Reservas FINALIZADAS (historial, hace varios meses) -----
 INSERT INTO dbo.Reserva (IdCliente, IdHabitacion, IdEmpleado, IdEstadoReserva, FechaReserva, FechaEntrada, FechaSalida, CantidadHuespedes, Observacion, Subtotal, Descuento, Total)
 VALUES
@@ -263,97 +267,100 @@ GO
 --       4=Spa,5=Almuerzo,6=Cena,7=Piscina VIP,8=Tour Ciudad,
 --       9=Bicicleta,10=Masaje,11=Traslado Aero,12=Minibar
 -- =========================================================
+DECLARE @ReservaOffset int = (SELECT ReservaOffset FROM #SeedOffsets);
 INSERT INTO dbo.ReservaServicio (IdReserva, IdServicioAdicional, Cantidad, PrecioUnitario, Subtotal)
 VALUES
 -- Reservas finalizadas
-(1,  1, 3, 600,  1800),  -- Desayunos
-(2,  1, 6, 600,  3600),  -- Desayunos
-(2,  3, 1, 800,   800),  -- Lavandería
-(3,  4, 2, 2500, 5000),  -- Spa
-(3,  1, 4, 600,  2400),  -- Desayunos
-(4,  4, 1, 2500, 2500),  -- Spa
-(4,  6, 6, 1000, 6000),  -- Cenas
-(5,  1, 3, 600,  1800),  -- Desayunos
-(5,  8, 2, 2000, 4000),  -- Tours
-(6,  2, 1, 1500, 1500),  -- Transporte
-(7,  1, 4, 600,  2400),  -- Desayunos
-(8, 11, 2, 1200, 2400),  -- Traslado aeropuerto
-(9,  4, 2, 2500, 5000),  -- Spa
-(10, 5, 8, 800,  6400),  -- Almuerzos
-(10, 6, 8, 1000, 8000),  -- Cenas
-(11, 1, 3, 600,  1800),  -- Desayunos
-(12, 8, 1, 2000, 2000),  -- Tour
-(14, 1, 6, 600,  3600),  -- Desayunos
-(15, 3, 2, 800,  1600),  -- Lavandería
-(18, 7, 4, 500,  2000),  -- Piscina VIP
-(21,10, 2, 1800, 3600),  -- Masajes
-(22, 1, 5, 600,  3000),  -- Desayunos
+(@ReservaOffset+1,  1, 3, 600,  1800),  -- Desayunos
+(@ReservaOffset+2,  1, 6, 600,  3600),  -- Desayunos
+(@ReservaOffset+2,  3, 1, 800,   800),  -- Lavandería
+(@ReservaOffset+3,  4, 2, 2500, 5000),  -- Spa
+(@ReservaOffset+3,  1, 4, 600,  2400),  -- Desayunos
+(@ReservaOffset+4,  4, 1, 2500, 2500),  -- Spa
+(@ReservaOffset+4,  6, 6, 1000, 6000),  -- Cenas
+(@ReservaOffset+5,  1, 3, 600,  1800),  -- Desayunos
+(@ReservaOffset+5,  8, 2, 2000, 4000),  -- Tours
+(@ReservaOffset+6,  2, 1, 1500, 1500),  -- Transporte
+(@ReservaOffset+7,  1, 4, 600,  2400),  -- Desayunos
+(@ReservaOffset+8, 11, 2, 1200, 2400),  -- Traslado aeropuerto
+(@ReservaOffset+9,  4, 2, 2500, 5000),  -- Spa
+(@ReservaOffset+10, 5, 8, 800,  6400),  -- Almuerzos
+(@ReservaOffset+10, 6, 8, 1000, 8000),  -- Cenas
+(@ReservaOffset+11, 1, 3, 600,  1800),  -- Desayunos
+(@ReservaOffset+12, 8, 1, 2000, 2000),  -- Tour
+(@ReservaOffset+14, 1, 6, 600,  3600),  -- Desayunos
+(@ReservaOffset+15, 3, 2, 800,  1600),  -- Lavandería
+(@ReservaOffset+18, 7, 4, 500,  2000),  -- Piscina VIP
+(@ReservaOffset+21,10, 2, 1800, 3600),  -- Masajes
+(@ReservaOffset+22, 1, 5, 600,  3000),  -- Desayunos
 -- Reservas activas (confirmadas)
-(23, 1, 5, 600,  3000),  -- Desayunos
-(24,11, 2, 1200, 2400),  -- Traslado aeropuerto
-(25, 4, 1, 2500, 2500),  -- Spa
-(26, 1, 6, 600,  3600),  -- Desayunos
-(26, 6, 6, 1000, 6000),  -- Cenas
-(28, 1, 5, 600,  3000),  -- Desayunos
-(28, 4, 2, 2500, 5000),  -- Spa
-(30,12, 1, 950,   950);  -- Minibar
+(@ReservaOffset+23, 1, 5, 600,  3000),  -- Desayunos
+(@ReservaOffset+24,11, 2, 1200, 2400),  -- Traslado aeropuerto
+(@ReservaOffset+25, 4, 1, 2500, 2500),  -- Spa
+(@ReservaOffset+26, 1, 6, 600,  3600),  -- Desayunos
+(@ReservaOffset+26, 6, 6, 1000, 6000),  -- Cenas
+(@ReservaOffset+28, 1, 5, 600,  3000),  -- Desayunos
+(@ReservaOffset+28, 4, 2, 2500, 5000),  -- Spa
+(@ReservaOffset+30,12, 1, 950,   950);  -- Minibar
 GO
 
 -- =========================================================
 -- 11) FACTURAS Y PAGOS (solo para reservas FINALIZADAS)
 -- =========================================================
+DECLARE @ReservaOffset int = (SELECT ReservaOffset FROM #SeedOffsets);
 INSERT INTO dbo.Factura (IdReserva, FechaFactura, Subtotal, Descuento, Impuesto, Total, Estado)
 VALUES
-(1,  '2026-01-08', 12300.00, 0,     1476.00, 13776.00, 'PAGADA'),
-(2,  '2026-01-15', 19400.00, 0,     2328.00, 21728.00, 'PAGADA'),
-(3,  '2026-01-18', 26200.00, 1000,  3024.00, 28224.00, 'PAGADA'),
-(4,  '2026-01-26', 61300.00, 0,     7356.00, 68656.00, 'PAGADA'),
-(5,  '2026-01-25', 31300.00, 2000,  3516.00, 32816.00, 'PAGADA'),
-(6,  '2026-02-06', 12900.00, 0,     1548.00, 14448.00, 'PAGADA'),
-(7,  '2026-02-12', 17600.00, 0,     2112.00, 19712.00, 'PAGADA'),
-(8,  '2026-02-18', 23200.00, 0,     2784.00, 25984.00, 'PAGADA'),
-(9,  '2026-02-20', 38500.00, 1500,  4440.00, 41440.00, 'PAGADA'),
-(10, '2026-02-26', 54400.00, 0,     6528.00, 60928.00, 'PAGADA'),
-(11, '2026-03-06', 16800.00, 0,     2016.00, 18816.00, 'PAGADA'),
-(12, '2026-03-09', 26500.00, 1000,  3060.00, 28560.00, 'PAGADA'),
-(13, '2026-03-11',  9600.00, 0,     1152.00, 10752.00, 'PAGADA'),
-(14, '2026-03-13', 18000.00, 0,     2160.00, 20160.00, 'PAGADA'),
-(15, '2026-03-16', 20800.00, 0,     2496.00, 23296.00, 'PAGADA'),
-(16, '2026-03-21', 14400.00, 0,     1728.00, 16128.00, 'PAGADA'),
-(17, '2026-03-24', 36800.00, 2000,  4176.00, 38976.00, 'PAGADA'),
-(18, '2026-03-27', 16400.00, 0,     1968.00, 18368.00, 'PAGADA'),
-(19, '2026-03-29', 20400.00, 0,     2448.00, 22848.00, 'PAGADA'),
-(20, '2026-04-02', 46000.00, 2000,  5280.00, 49280.00, 'PAGADA'),
-(21, '2026-04-03', 60600.00, 0,     7272.00, 67872.00, 'PAGADA'),
-(22, '2026-04-04', 39400.00, 0,     4728.00, 44128.00, 'PAGADA');
+(@ReservaOffset+1,  '2026-01-08', 12300.00, 0,     1476.00, 13776.00, 'PAGADA'),
+(@ReservaOffset+2,  '2026-01-15', 19400.00, 0,     2328.00, 21728.00, 'PAGADA'),
+(@ReservaOffset+3,  '2026-01-18', 26200.00, 1000,  3024.00, 28224.00, 'PAGADA'),
+(@ReservaOffset+4,  '2026-01-26', 61300.00, 0,     7356.00, 68656.00, 'PAGADA'),
+(@ReservaOffset+5,  '2026-01-25', 31300.00, 2000,  3516.00, 32816.00, 'PAGADA'),
+(@ReservaOffset+6,  '2026-02-06', 12900.00, 0,     1548.00, 14448.00, 'PAGADA'),
+(@ReservaOffset+7,  '2026-02-12', 17600.00, 0,     2112.00, 19712.00, 'PAGADA'),
+(@ReservaOffset+8,  '2026-02-18', 23200.00, 0,     2784.00, 25984.00, 'PAGADA'),
+(@ReservaOffset+9,  '2026-02-20', 38500.00, 1500,  4440.00, 41440.00, 'PAGADA'),
+(@ReservaOffset+10, '2026-02-26', 54400.00, 0,     6528.00, 60928.00, 'PAGADA'),
+(@ReservaOffset+11, '2026-03-06', 16800.00, 0,     2016.00, 18816.00, 'PAGADA'),
+(@ReservaOffset+12, '2026-03-09', 26500.00, 1000,  3060.00, 28560.00, 'PAGADA'),
+(@ReservaOffset+13, '2026-03-11',  9600.00, 0,     1152.00, 10752.00, 'PAGADA'),
+(@ReservaOffset+14, '2026-03-13', 18000.00, 0,     2160.00, 20160.00, 'PAGADA'),
+(@ReservaOffset+15, '2026-03-16', 20800.00, 0,     2496.00, 23296.00, 'PAGADA'),
+(@ReservaOffset+16, '2026-03-21', 14400.00, 0,     1728.00, 16128.00, 'PAGADA'),
+(@ReservaOffset+17, '2026-03-24', 36800.00, 2000,  4176.00, 38976.00, 'PAGADA'),
+(@ReservaOffset+18, '2026-03-27', 16400.00, 0,     1968.00, 18368.00, 'PAGADA'),
+(@ReservaOffset+19, '2026-03-29', 20400.00, 0,     2448.00, 22848.00, 'PAGADA'),
+(@ReservaOffset+20, '2026-04-02', 46000.00, 2000,  5280.00, 49280.00, 'PAGADA'),
+(@ReservaOffset+21, '2026-04-03', 60600.00, 0,     7272.00, 67872.00, 'PAGADA'),
+(@ReservaOffset+22, '2026-04-04', 39400.00, 0,     4728.00, 44128.00, 'PAGADA');
 GO
 
 -- Pagos en efectivo y tarjeta
+DECLARE @FacturaOffset int = (SELECT FacturaOffset FROM #SeedOffsets);
 INSERT INTO dbo.Pago (IdFactura, IdMetodoPago, FechaPago, Monto, Referencia, Observacion)
 VALUES
-(1,  1, '2026-01-08', 13776.00, NULL,          'Pago completo efectivo'),
-(2,  2, '2026-01-15', 21728.00, 'TXN-20260115', NULL),
-(3,  2, '2026-01-18', 28224.00, 'TXN-20260118', NULL),
-(4,  3, '2026-01-26', 68656.00, 'TRF-20260126', 'Transferencia bancaria'),
-(5,  2, '2026-01-25', 32816.00, 'TXN-20260125', NULL),
-(6,  1, '2026-02-06', 14448.00, NULL,           NULL),
-(7,  2, '2026-02-12', 19712.00, 'TXN-20260212', NULL),
-(8,  1, '2026-02-18', 13000.00, NULL,           'Abono efectivo'),
-(8,  2, '2026-02-18', 12984.00, 'TXN-20260218', 'Saldo tarjeta'),
-(9,  2, '2026-02-20', 41440.00, 'TXN-20260220', NULL),
-(10, 3, '2026-02-26', 60928.00, 'TRF-20260226', NULL),
-(11, 1, '2026-03-06', 18816.00, NULL,           NULL),
-(12, 2, '2026-03-09', 28560.00, 'TXN-20260309', NULL),
-(13, 1, '2026-03-11', 10752.00, NULL,           NULL),
-(14, 2, '2026-03-13', 20160.00, 'TXN-20260313', NULL),
-(15, 2, '2026-03-16', 23296.00, 'TXN-20260316', NULL),
-(16, 1, '2026-03-21', 16128.00, NULL,           NULL),
-(17, 2, '2026-03-24', 38976.00, 'TXN-20260324', NULL),
-(18, 3, '2026-03-27', 18368.00, 'TRF-20260327', NULL),
-(19, 2, '2026-03-29', 22848.00, 'TXN-20260329', NULL),
-(20, 2, '2026-04-02', 49280.00, 'TXN-20260402', 'Semana Santa'),
-(21, 3, '2026-04-03', 67872.00, 'TRF-20260403', NULL),
-(22, 2, '2026-04-04', 44128.00, 'TXN-20260404', NULL);
+(@FacturaOffset+1,  1, '2026-01-08', 13776.00, NULL,          'Pago completo efectivo'),
+(@FacturaOffset+2,  2, '2026-01-15', 21728.00, 'TXN-20260115', NULL),
+(@FacturaOffset+3,  2, '2026-01-18', 28224.00, 'TXN-20260118', NULL),
+(@FacturaOffset+4,  3, '2026-01-26', 68656.00, 'TRF-20260126', 'Transferencia bancaria'),
+(@FacturaOffset+5,  2, '2026-01-25', 32816.00, 'TXN-20260125', NULL),
+(@FacturaOffset+6,  1, '2026-02-06', 14448.00, NULL,           NULL),
+(@FacturaOffset+7,  2, '2026-02-12', 19712.00, 'TXN-20260212', NULL),
+(@FacturaOffset+8,  1, '2026-02-18', 13000.00, NULL,           'Abono efectivo'),
+(@FacturaOffset+8,  2, '2026-02-18', 12984.00, 'TXN-20260218', 'Saldo tarjeta'),
+(@FacturaOffset+9,  2, '2026-02-20', 41440.00, 'TXN-20260220', NULL),
+(@FacturaOffset+10, 3, '2026-02-26', 60928.00, 'TRF-20260226', NULL),
+(@FacturaOffset+11, 1, '2026-03-06', 18816.00, NULL,           NULL),
+(@FacturaOffset+12, 2, '2026-03-09', 28560.00, 'TXN-20260309', NULL),
+(@FacturaOffset+13, 1, '2026-03-11', 10752.00, NULL,           NULL),
+(@FacturaOffset+14, 2, '2026-03-13', 20160.00, 'TXN-20260313', NULL),
+(@FacturaOffset+15, 2, '2026-03-16', 23296.00, 'TXN-20260316', NULL),
+(@FacturaOffset+16, 1, '2026-03-21', 16128.00, NULL,           NULL),
+(@FacturaOffset+17, 2, '2026-03-24', 38976.00, 'TXN-20260324', NULL),
+(@FacturaOffset+18, 3, '2026-03-27', 18368.00, 'TRF-20260327', NULL),
+(@FacturaOffset+19, 2, '2026-03-29', 22848.00, 'TXN-20260329', NULL),
+(@FacturaOffset+20, 2, '2026-04-02', 49280.00, 'TXN-20260402', 'Semana Santa'),
+(@FacturaOffset+21, 3, '2026-04-03', 67872.00, 'TRF-20260403', NULL),
+(@FacturaOffset+22, 2, '2026-04-04', 44128.00, 'TXN-20260404', NULL);
 GO
 
 -- =========================================================
@@ -373,17 +380,18 @@ GO
 -- =========================================================
 -- 13) PROMOCIONES EN RESERVAS (algunas reservas con descuento)
 -- =========================================================
+DECLARE @ReservaOffset int = (SELECT ReservaOffset FROM #SeedOffsets);
 INSERT INTO dbo.ReservaPromocion (IdReserva, IdPromocion, DescuentoAplicado)
 VALUES
-(3,  1, 1000.00),  -- Promo Corporativa
-(5,  2, 2000.00),  -- Semana Santa (prueba histórica)
-(9,  4, 1500.00),  -- Cliente Frecuente
-(10, 1, 0.00),     -- Corporativa sin descuento adicional
-(12, 1, 1000.00),  -- Corporativa
-(17, 3, 2000.00),  -- Navidad
-(20, 2, 2000.00),  -- Semana Santa
-(24, 4, 1000.00),  -- Cliente Frecuente
-(32, 6, 2000.00);  -- Cumpleaños - Fin de Semana
+(@ReservaOffset+3,  1, 1000.00),  -- Promo Corporativa
+(@ReservaOffset+5,  2, 2000.00),  -- Semana Santa (prueba histórica)
+(@ReservaOffset+9,  4, 1500.00),  -- Cliente Frecuente
+(@ReservaOffset+10, 1, 0.00),     -- Corporativa sin descuento adicional
+(@ReservaOffset+12, 1, 1000.00),  -- Corporativa
+(@ReservaOffset+17, 3, 2000.00),  -- Navidad
+(@ReservaOffset+20, 2, 2000.00),  -- Semana Santa
+(@ReservaOffset+24, 4, 1000.00),  -- Cliente Frecuente
+(@ReservaOffset+32, 6, 2000.00);  -- Cumpleaños - Fin de Semana
 GO
 
 PRINT 'Seed data insertado correctamente.';

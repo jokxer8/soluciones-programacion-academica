@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -37,7 +37,6 @@ namespace HotelReservas
 
             if (dt.Rows.Count == 0)
             {
-                dt.Columns.Add("Anio", typeof(int));
                 dt.Rows.Add(DateTime.Today.Year);
             }
 

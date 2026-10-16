@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -7,7 +7,8 @@ namespace HotelReservas
     public static class Database
     {
         private static readonly string connectionString =
-            @"Server=localhost;Database=HotelDB;Trusted_Connection=True;";
+            Environment.GetEnvironmentVariable("HOTELRESERVAS_CONNECTION_STRING")
+            ?? @"Server=localhost;Database=HotelDB;Trusted_Connection=True;";
 
         public static SqlConnection GetConnection()
         {
@@ -31,6 +32,7 @@ namespace HotelReservas
         // =========================
         public static bool ValidarLogin(string usuario, string clave)
         {
+            SesionUsuario.Cerrar();
             if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(clave))
                 return false;
 
@@ -1215,22 +1217,6 @@ namespace HotelReservas
                         cmdUpdate.Parameters.AddWithValue("@Total", total);
 
                         cmdUpdate.ExecuteNonQuery();
-                    }
-
-                    if (idHabitacionAnterior != 0 && idHabitacionAnterior != idHabitacion)
-                    {
-                        using (SqlCommand cmdLiberar = new SqlCommand(@"
-                            UPDATE dbo.Habitacion
-                            SET IdEstadoHabitacion = (
-                                SELECT TOP 1 IdEstadoHabitacion
-                                FROM dbo.EstadoHabitacion
-                                WHERE NombreEstado = 'DISPONIBLE'
-                            )
-                            WHERE IdHabitacion = @IdHabitacionAnterior;", conn, transaction))
-                        {
-                            cmdLiberar.Parameters.AddWithValue("@IdHabitacionAnterior", idHabitacionAnterior);
-                            cmdLiberar.ExecuteNonQuery();
-                        }
                     }
 
                     transaction.Commit();

@@ -80,7 +80,7 @@ namespace HotelReservas
                     VALUES
                     (
                         @IdReserva,
-                        @IdEmpleadoCheckIn,
+                        (SELECT IdEmpleado FROM dbo.Usuarios WHERE IdUsuario = @IdUsuario),
                         GETDATE(),
                         @ObservacionIn,
                         'CHECKED_IN'
@@ -89,7 +89,7 @@ namespace HotelReservas
                 using (SqlCommand cmd = new SqlCommand(sql, conn))
                 {
                     cmd.Parameters.AddWithValue("@IdReserva", idReserva);
-                    cmd.Parameters.AddWithValue("@IdEmpleadoCheckIn",
+                    cmd.Parameters.AddWithValue("@IdUsuario",
                         SesionUsuario.IdUsuario > 0 ? (object)SesionUsuario.IdUsuario : DBNull.Value);
                     cmd.Parameters.AddWithValue("@ObservacionIn",
                         string.IsNullOrWhiteSpace(observacion) ? (object)DBNull.Value : observacion.Trim());
@@ -125,7 +125,7 @@ namespace HotelReservas
                     string sqlUpdate = @"
                         UPDATE dbo.CheckInOut
                         SET
-                            IdEmpleadoCheckOut = @IdEmpleadoCheckOut,
+                            IdEmpleadoCheckOut = (SELECT IdEmpleado FROM dbo.Usuarios WHERE IdUsuario = @IdUsuario),
                             FechaCheckOut = GETDATE(),
                             ObservacionOut = @ObservacionOut,
                             Estado = 'CHECKED_OUT'
@@ -134,7 +134,7 @@ namespace HotelReservas
                     using (SqlCommand cmd = new SqlCommand(sqlUpdate, conn, transaction))
                     {
                         cmd.Parameters.AddWithValue("@IdCheckInOut", idCheckInOut);
-                        cmd.Parameters.AddWithValue("@IdEmpleadoCheckOut",
+                        cmd.Parameters.AddWithValue("@IdUsuario",
                             SesionUsuario.IdUsuario > 0 ? (object)SesionUsuario.IdUsuario : DBNull.Value);
                         cmd.Parameters.AddWithValue("@ObservacionOut",
                             string.IsNullOrWhiteSpace(observacion) ? (object)DBNull.Value : observacion.Trim());
@@ -175,6 +175,15 @@ namespace HotelReservas
                             cmdFact.Parameters.AddWithValue("@PorcImpuesto", porcItbis);
                             cmdFact.ExecuteNonQuery();
                         }
+                    }
+
+                    using (SqlCommand cmdFinalizar = new SqlCommand(@"
+                        UPDATE dbo.Reserva
+                        SET IdEstadoReserva = (SELECT IdEstadoReserva FROM dbo.EstadoReserva WHERE NombreEstado = 'FINALIZADA')
+                        WHERE IdReserva = @IdReserva;", conn, transaction))
+                    {
+                        cmdFinalizar.Parameters.AddWithValue("@IdReserva", idReserva);
+                        cmdFinalizar.ExecuteNonQuery();
                     }
 
                     transaction.Commit();

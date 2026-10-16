@@ -23,6 +23,15 @@
 -- =========================================================
 -- 1) CREAR BASE DE DATOS
 -- =========================================================
+SET QUOTED_IDENTIFIER ON;
+SET ANSI_NULLS ON;
+SET ANSI_PADDING ON;
+SET ANSI_WARNINGS ON;
+SET ARITHABORT ON;
+SET CONCAT_NULL_YIELDS_NULL ON;
+SET NUMERIC_ROUNDABORT OFF;
+GO
+
 USE master;
 GO
 
@@ -655,60 +664,35 @@ GO
 
 CREATE OR ALTER TRIGGER dbo.trg_Reserva_ActualizarEstadoHabitacion
 ON dbo.Reserva
-AFTER INSERT, UPDATE
+AFTER INSERT, UPDATE, DELETE
 AS
 BEGIN
     SET NOCOUNT ON;
-
     UPDATE h
-    SET h.IdEstadoHabitacion = eh.IdEstadoHabitacion
+    SET IdEstadoHabitacion = e.IdEstadoHabitacion
     FROM dbo.Habitacion h
-    INNER JOIN inserted i ON i.IdHabitacion = h.IdHabitacion
-    INNER JOIN dbo.EstadoReserva er ON er.IdEstadoReserva = i.IdEstadoReserva
-    CROSS APPLY
-    (
-        SELECT TOP 1 IdEstadoHabitacion
-        FROM dbo.EstadoHabitacion
-        WHERE NombreEstado = 'OCUPADA'
-    ) eh
-    WHERE er.NombreEstado = 'CONFIRMADA';
-
-    UPDATE h
-    SET h.IdEstadoHabitacion = eh.IdEstadoHabitacion
-    FROM dbo.Habitacion h
-    INNER JOIN inserted i ON i.IdHabitacion = h.IdHabitacion
-    INNER JOIN dbo.EstadoReserva er ON er.IdEstadoReserva = i.IdEstadoReserva
-    CROSS APPLY
-    (
-        SELECT TOP 1 IdEstadoHabitacion
-        FROM dbo.EstadoHabitacion
-        WHERE NombreEstado = 'DISPONIBLE'
-    ) eh
-    WHERE er.NombreEstado IN ('CANCELADA', 'FINALIZADA');
+    JOIN dbo.EstadoHabitacion e ON e.NombreEstado = CASE
+        WHEN EXISTS (SELECT 1 FROM dbo.Mantenimiento m WHERE m.IdHabitacion=h.IdHabitacion AND m.Estado IN ('PENDIENTE','EN PROCESO')) THEN 'MANTENIMIENTO'
+        WHEN EXISTS (SELECT 1 FROM dbo.Reserva r JOIN dbo.EstadoReserva er ON er.IdEstadoReserva=r.IdEstadoReserva WHERE r.IdHabitacion=h.IdHabitacion AND er.NombreEstado='CONFIRMADA') THEN 'OCUPADA'
+        ELSE 'DISPONIBLE' END
+    WHERE h.IdHabitacion IN (SELECT IdHabitacion FROM inserted UNION SELECT IdHabitacion FROM deleted);
 END;
 GO
 
 CREATE OR ALTER TRIGGER dbo.trg_Mantenimiento_ActualizarEstadoHabitacion
 ON dbo.Mantenimiento
-AFTER INSERT, UPDATE
+AFTER INSERT, UPDATE, DELETE
 AS
 BEGIN
     SET NOCOUNT ON;
-
     UPDATE h
-    SET h.IdEstadoHabitacion = eh.IdEstadoHabitacion
+    SET IdEstadoHabitacion = e.IdEstadoHabitacion
     FROM dbo.Habitacion h
-    INNER JOIN inserted i ON i.IdHabitacion = h.IdHabitacion
-    CROSS APPLY
-    (
-        SELECT TOP 1 IdEstadoHabitacion
-        FROM dbo.EstadoHabitacion
-        WHERE NombreEstado =
-            CASE
-                WHEN i.Estado IN ('PENDIENTE', 'EN PROCESO') THEN 'MANTENIMIENTO'
-                ELSE 'DISPONIBLE'
-            END
-    ) eh;
+    JOIN dbo.EstadoHabitacion e ON e.NombreEstado = CASE
+        WHEN EXISTS (SELECT 1 FROM dbo.Mantenimiento m WHERE m.IdHabitacion=h.IdHabitacion AND m.Estado IN ('PENDIENTE','EN PROCESO')) THEN 'MANTENIMIENTO'
+        WHEN EXISTS (SELECT 1 FROM dbo.Reserva r JOIN dbo.EstadoReserva er ON er.IdEstadoReserva=r.IdEstadoReserva WHERE r.IdHabitacion=h.IdHabitacion AND er.NombreEstado='CONFIRMADA') THEN 'OCUPADA'
+        ELSE 'DISPONIBLE' END
+    WHERE h.IdHabitacion IN (SELECT IdHabitacion FROM inserted UNION SELECT IdHabitacion FROM deleted);
 END;
 GO
 

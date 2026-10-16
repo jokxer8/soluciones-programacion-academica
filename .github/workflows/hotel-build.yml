@@ -6,12 +6,16 @@ on:
     paths:
       - '.github/workflows/hotel-build.yml'
       - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
       - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
   pull_request:
     branches: [main]
     paths:
       - '.github/workflows/hotel-build.yml'
       - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
       - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
   workflow_dispatch:
 
@@ -86,3 +90,22 @@ jobs:
           - Alcance: compilacion; no se ejecuta la aplicacion ni SQL Server.
           - No se firma ni se despliega la aplicacion.
           "@ | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
+
+      - name: Pruebas funcionales con SQL Server LocalDB
+        shell: powershell
+        run: ./tests/Run-FunctionalTests.ps1
+
+      - name: Registrar resultados funcionales
+        if: always()
+        run: |
+          if (Test-Path tests/results/installation.txt) {
+            '## Instalacion SQL Server' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            Get-Content tests/results/installation.txt | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
+          if (Test-Path tests/results/functional-results.tsv) {
+            '## Pruebas funcionales' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            '| Estado | Prueba | Detalle |', '|---|---|---|' | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+            Import-Csv tests/results/functional-results.tsv -Delimiter "`t" | ForEach-Object {
+              "| $($_.Estado) | $($_.Prueba) | $($_.Detalle.Replace('|', '/')) |"
+            } | Out-File $env:GITHUB_STEP_SUMMARY -Append -Encoding utf8
+          }
