@@ -1,0 +1,8 @@
+# Preserve source evidence and published checksums without newline conversion.
+* -text
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.pptx binary
+*.png binary
+*.xmind binary

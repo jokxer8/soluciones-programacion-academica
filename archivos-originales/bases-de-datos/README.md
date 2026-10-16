@@ -1,81 +1,34 @@
 # Archivos Originales - Bases de Datos
 
-Esta carpeta conserva los archivos originales relacionados con la asignatura de Bases de Datos.
+![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
+![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
-Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, proyectos, modelos, consultas, scripts o materiales utilizados durante el aprendizaje de diseño y manejo de bases de datos.
-
----
-
-## Objetivo de esta carpeta
-
-Mantener una copia organizada de los documentos originales relacionados con Bases de Datos.
-
-Esta carpeta permite conservar la trazabilidad entre el material académico inicial y las futuras soluciones profesionalizadas que se organicen dentro del repositorio.
+Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos utilizadas para preparar la [sección de la asignatura](../../05-bases-de-datos/README.md).
 
 ---
 
-## Contenido esperado
+## Procedencia
 
-Esta carpeta puede incluir archivos originales en diferentes formatos, tales como:
+El material corresponde exclusivamente a la carpeta Github del escritorio indicada por Kelvin. Se incluyen resúmenes, cuestionarios, compendios, casos, modelos, consultas y evaluaciones.
 
-- SQL
-- PDF
-- DOCX
-- TXT
-- XLSX
-- Imágenes
-- Diagramas entidad-relación
-- Scripts de creación de tablas
-- Consultas SQL
-- Proyectos académicos
-- Tareas o prácticas evaluativas
+## Organización
 
----
+Los nombres de las copias se normalizan en minúsculas y guiones. El [inventario](INVENTARIO.md) conserva los nombres originales y relaciona todas las rutas, incluidas las copias idénticas. Los [hashes](inventario.json) permiten verificar procedencia y contenido publicado.
 
-## Temas relacionados
+## Enunciados
 
-Los documentos originales de esta carpeta pueden incluir trabajos sobre:
+- [Primera Prueba Escrita BD.docx](enunciados/primera-prueba-escrita-bd.docx)
+- [Proyecto Final.docx](enunciados/proyecto-final.docx)
+- [Segunda Prueba Escrita.docx](enunciados/segunda-prueba-escrita.docx)
 
-- Modelo entidad-relación
-- Tablas
-- Llaves primarias
-- Llaves foráneas
-- Relaciones entre tablas
-- Normalización
-- Consultas SQL
-- Inserción de datos
-- Actualización de registros
-- Eliminación de registros
-- Filtros
-- JOIN
-- Agrupaciones
-- Funciones agregadas
-- Diseño de bases de datos relacionales
+Proyecto Final.docx define el trabajo solicitado; no contiene la implementación ni se presenta como un proyecto desarrollado.
 
----
+## Copias para publicación
 
-## Relación con las soluciones finales
+Se mantienen los créditos de los trabajos grupales. Los identificadores institucionales conocidos detectados como texto en PDF y documentos editables se retiraron de las copias públicas. Las evaluaciones escaneadas conservan su imagen y requieren revisión antes de una publicación pública. Los archivos del escritorio permanecen intactos.
 
-Las soluciones finales y documentadas de esta área se organizarán posteriormente en la carpeta principal:
+## Material de consulta y archivos excluidos
 
-```text
-05-bases-de-datos/
-```
+Los cuatro libros y las seis presentaciones se identificaron como material de consulta y no como trabajos originales del alumno. No se incorporan a los entregables del portafolio. También quedan fuera las transcripciones de reuniones, los archivos temporales de Office y desktop.ini.
 
-Allí cada trabajo profesionalizado podrá tener una estructura similar a:
-
-```text
-nombre-del-proyecto-o-practica/
-├── README.md
-├── script-creacion-tablas.sql
-├── consultas.sql
-└── documento-final.pdf
-```
-
----
-
-## Nota
-
-Los archivos de esta carpeta se conservan únicamente como respaldo académico.
-
-Las versiones limpias, explicadas y profesionalizadas de los ejercicios, prácticas o proyectos se organizarán en la carpeta principal de Bases de Datos.
+La carpeta del escritorio no contiene la aplicación del hotel ni los esquemas complementarios que se habían tomado de otra ruta; estos no forman parte de esta preparación.

@@ -1,0 +1,8 @@
+# Preserve the bytes recorded in the provenance inventory on every platform.
+* -text
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.png binary
+*.ico binary
+*.xmind binary

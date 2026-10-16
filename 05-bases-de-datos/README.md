@@ -2,52 +2,106 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-blue)
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)
-![Estado](https://img.shields.io/badge/Estado-En%20organizaci%C3%B3n-yellow)
+![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene ejercicios, prácticas y proyectos desarrollados en la asignatura Bases de Datos.
+Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**, organizados a partir de la carpeta académica Github.
 
-El objetivo de esta sección es organizar evidencias académicas relacionadas con diseño de bases de datos, consultas SQL, modelado entidad-relación, normalización y manipulación de datos.
+Los trabajos presentan la evolución desde fundamentos y diseño entidad-relación hasta normalización, implementación relacional, consultas y programación con SQL Server.
 
 ---
 
 ## Objetivo de la carpeta
 
-Presentar de forma ordenada los trabajos realizados en la asignatura Bases de Datos, mostrando la capacidad de diseñar, consultar y administrar información estructurada.
+Presentar de forma ordenada los trabajos realizados en la asignatura, acompañando las soluciones con análisis, diagramas, modelos, scripts y evidencia documental.
 
 ---
 
-## Conceptos trabajados
+## Actividades incluidas
 
-- Modelo entidad-relación.
-- Tablas.
-- Llaves primarias.
-- Llaves foráneas.
-- Normalización.
-- Consultas SQL.
-- Inserción de datos.
-- Actualización de registros.
-- Eliminación de registros.
-- Relaciones entre tablas.
-- Consultas con filtros.
-- Consultas con JOIN.
-- Agrupaciones y funciones agregadas.
+| Actividad | Descripción | Conceptos aplicados |
+|---|---|---|
+| [Fundamentos de Sistemas de Bases de Datos](fundamentos-sistemas-bases-datos) | Resúmenes y cuestionarios sobre gestión de datos, modelos y arquitectura de un DBMS. | Datos, información y metadatos, Esquema e instancia, DDL y DML |
+| [Flotilla de Aeronaves - Modelo Entidad-Relación](flotilla-aeronaves-modelo-relacional) | Caso grupal de diseño de una flotilla con mantenimiento e historial de bases y estados. | Entidades, atributos y cardinalidades, Claves primarias y foráneas, Relaciones temporales |
+| [Cine - Modelado y Normalización](cine-modelado-normalizacion) | Diseño de un cine y ejercicios de transformación relacional y normalización de ventas. | Modelo entidad-relación, Modelo relacional, Primera, segunda y tercera forma normal |
+| [Reservas de Coches - Creación y Carga de Datos](reservas-coches-creacion-datos) | Esquema de reservas con un coche por reserva, restricciones y datos de prueba. | SQL Server y T-SQL, DDL y DML, Claves y restricciones |
+| [Alquiler de Coches - Consultas SQL](alquiler-coches-consultas) | Consultas y evolución de un esquema con varios coches en una reserva. | Claves compuestas, Relación muchos a muchos, JOIN y subconsultas |
+| [Bolsa de Empleo - Vistas, Procedimientos y Auditoría](bolsa-empleo-objetos-sql) | Objetos de base de datos para consultar ofertas y registrar cambios de empresas. | Vistas, Procedimientos almacenados, Funciones escalares |
+| [Restaurante - Consultas del Segundo Parcial](restaurante-consultas-segundo-parcial) | Seis requerimientos SQL sobre órdenes, productos, clientes, meseros y propinas. | DISTINCT y JOIN, EXISTS, CTE |
+| [Evaluaciones - Evidencia Académica](evaluaciones-evidencia-academica) | Respaldo del primer parcial y referencia al segundo parcial resuelto. | Diseño relacional, Razonamiento de bases de datos, SQL |
 
 ---
 
-## Organización prevista
+## Organización actual
 
 ```text
 05-bases-de-datos/
-├── modelo-entidad-relacion/
-├── scripts-creacion-tablas/
-├── consultas-sql/
-├── normalizacion/
-├── proyectos/
+├── fundamentos-sistemas-bases-datos/
+├── flotilla-aeronaves-modelo-relacional/
+├── cine-modelado-normalizacion/
+├── reservas-coches-creacion-datos/
+├── alquiler-coches-consultas/
+├── bolsa-empleo-objetos-sql/
+├── restaurante-consultas-segundo-parcial/
+├── evaluaciones-evidencia-academica/
+├── VALIDACION.md
 └── README.md
 ```
 
 ---
 
-## Nota
+## Habilidades evidenciadas
 
-Los ejercicios y trabajos se irán agregando progresivamente, priorizando aquellos que evidencien mejor el dominio de SQL, diseño relacional y análisis de datos.
+- Interpretación de requisitos de información.
+- Identificación de entidades, atributos y cardinalidades.
+- Transformación de modelos entidad-relación a modelos relacionales.
+- Normalización y definición de diccionarios de datos.
+- Creación de tablas, claves y restricciones de integridad.
+- Consultas con JOIN, subconsultas, CTE y agrupaciones.
+- Creación de vistas, procedimientos almacenados, funciones y triggers.
+- Auditoría de cambios y documentación de soluciones académicas.
+
+---
+
+## Enfoque académico
+
+La sección complementa las áreas de programación del repositorio mostrando cómo se estructura, relaciona y consulta información persistente. Los casos de aeronaves y cine presentan decisiones de diseño; las actividades de coches, empleo y restaurante muestran su aplicación mediante SQL.
+
+---
+
+## Organización de cada actividad
+
+Cada actividad mantiene el esquema utilizado en la sección de SML:
+
+```text
+nombre-de-la-actividad/
+├── README.md
+├── desarrollo.md
+├── solution.sql / scripts numerados
+└── evidencia y modelos
+```
+
+Las actividades teóricas y de modelado se documentan sin inventar código SQL. Las evidencias de evaluación se conservan como respaldo del trabajo realizado.
+
+---
+
+## Relación con archivos originales
+
+Las versiones de trabajo, los enunciados y las evidencias están en [archivos-originales/bases-de-datos](../archivos-originales/bases-de-datos/README.md). El [inventario](../archivos-originales/bases-de-datos/INVENTARIO.md) permite contrastar su procedencia y consultar las variantes.
+
+El documento Proyecto Final.docx de la carpeta de origen contiene los requisitos del proyecto. No se presenta como un proyecto implementado porque esa carpeta no incluye su aplicación ni su base de datos final.
+
+---
+
+## Lenguaje utilizado
+
+SQL, principalmente T-SQL para Microsoft SQL Server. Los diagramas y modelos acompañan los ejercicios de diseño.
+
+---
+
+## Estado de la sección
+
+Sección organizada con siete actividades de fundamentos, diseño y SQL, y un conjunto adicional de evidencias de evaluación. El autor informa que aprobó la asignatura; la captura del primer parcial respalda esa evaluación concreta y no sustituye una certificación de nota final.
+
+Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El orden de ejecución, las dependencias y los scripts que recrean datos se explican en cada actividad y en [VALIDACION.md](VALIDACION.md).
+
+[Volver al repositorio](../README.md)
