@@ -1,6 +1,6 @@
 # Inventario de Bases de Datos
 
-Las rutas de origen son relativas a 30. Base de Datos. Se incluyen los materiales publicados desde Github, el proyecto del hotel y las evidencias adicionales. Los archivos reutilizados se referencian sin duplicar contenido. El [inventario verificable](inventario.json) contiene los hashes de origen y de publicación; las adaptaciones de datos y documentación se identifican por su hash diferente.
+Las rutas de origen son relativas a 30. Base de Datos. Se incluyen los materiales publicados desde Github, el proyecto del hotel y las evidencias adicionales. Los archivos reutilizados se referencian sin duplicar contenido. El [inventario verificable](inventario.json) contiene los hashes de origen y de publicación; las adaptaciones de datos, documentación y correcciones funcionales se identifican por su hash diferente. Las correcciones posteriores del hotel constan en el [informe funcional](../../05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md); los hashes de origen se conservan.
 
 | Origen | Archivo publicado | Tratamiento |
 |---|---|---|
@@ -145,7 +145,7 @@ Las rutas de origen son relativas a 30. Base de Datos. Se incluyen los materiale
 | Proyecto Hotel Final/HotelReservas/Assets/logo.png | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.png) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/Assets/Theme.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/Theme.cs) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/Assets/UIAnimations.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/UIAnimations.cs) | Copia sin cambios |
-| Proyecto Hotel Final/HotelReservas/CheckInOutData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs) | Copia sin cambios |
+| Proyecto Hotel Final/HotelReservas/CheckInOutData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs) | Corrección funcional documentada |
 | Proyecto Hotel Final/HotelReservas/ClientesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.cs) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/ClientesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.resx) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/ConfiguracionForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ConfiguracionForm.cs) | Copia sin cambios |
@@ -179,7 +179,7 @@ Las rutas de origen son relativas a 30. Base de Datos. Se incluyen los materiale
 | Proyecto Hotel Final/HotelReservas/Properties/Settings.settings | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.settings) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/RatingData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingData.cs) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/RatingForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingForm.cs) | Copia sin cambios |
-| Proyecto Hotel Final/HotelReservas/ReportesData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs) | Copia sin cambios |
+| Proyecto Hotel Final/HotelReservas/ReportesData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs) | Corrección funcional documentada |
 | Proyecto Hotel Final/HotelReservas/ReportesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.cs) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/ReportesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.resx) | Copia sin cambios |
 | Proyecto Hotel Final/HotelReservas/ReservasExtrasData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasExtrasData.cs) | Copia sin cambios |

@@ -11,13 +11,14 @@ El trabajo utiliza Windows Server 2022, el entorno de Visual Studio disponible e
 3. Restaurar HotelReservas/packages.config desde el catálogo público de NuGet en la carpeta packages, junto a HotelReservas.
 4. Ejecutar MSBuild con Rebuild sobre HotelReservas/HotelReservas.csproj.
 5. Comprobar que existen HotelReservas.exe, EPPlus.dll, itextsharp.dll y los dos recursos de logotipo previstos por el proyecto.
-6. Registrar un resumen de la compilación y la revisión de código en la página de la ejecución.
+6. Instalar esquema, migración y seed en una instancia LocalDB temporal; ejecutar las 53 pruebas funcionales y limpiar exclusivamente esa instancia.
+7. Registrar compilación, revisión y cada resultado funcional en el resumen de la ejecución.
 
 El acceso del token se limita a lectura del contenido. Las acciones se fijan a revisiones verificadas de sus repositorios oficiales. La ejecución tiene un máximo de 15 minutos y una nueva ejecución de la misma referencia sustituye a la anterior si aún está activa.
 
 ## Cuándo se ejecuta
 
-- Al publicar en main cambios del código, paquetes, recursos o proyecto del hotel, de su solución o de este workflow.
+- Al publicar en main cambios del código, paquetes, recursos, scripts SQL o pruebas del hotel, de su solución o de este workflow.
 - Al abrir o actualizar una solicitud de cambios hacia main que afecte a esas rutas.
 - Manualmente, desde Actions, Hotel - Compilacion Windows, Run workflow, seleccionando la rama.
 
@@ -31,9 +32,9 @@ La compilación conserva la advertencia CS0168 en DashboardForm.cs por una varia
 
 ## Alcance
 
-La restauración, la compilación y la existencia de los archivos de salida se comprueban en GitHub. No se inicia la interfaz, no se ejecutan los scripts de HotelDB y no se validan reservas, permisos, pagos ni reportes contra SQL Server. Estas verificaciones permanecen en las tareas correspondientes del tablero.
+Desde la [ejecución #2](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre `1b72dc8`, también se ejecutan los scripts de HotelDB y las **53 pruebas funcionales correctas** contra LocalDB 15.0.4382.1 en Windows Server 2022. El [informe funcional](PRUEBAS-FUNCIONALES.md) detalla cobertura y límites; exportaciones visuales, autorización avanzada e inactividad siguen pendientes.
 
-El workflow no firma, empaqueta ni despliega la aplicación y no necesita credenciales del servidor SQL. No existe todavía un proyecto de pruebas automatizadas.
+El workflow no firma, empaqueta ni despliega la aplicación y no necesita credenciales del servidor SQL. La batería C# y su ejecutor PowerShell se conservan en tests. El inicio de formularios es técnico y no recorre visualmente la aplicación.
 
 ## Consultar un fallo
 

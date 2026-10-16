@@ -789,14 +789,14 @@
       "source": "Proyecto Hotel Final/Base de Datos/HotelDB_Proyecto_Final.sql",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/HotelDB_Proyecto_Final.sql",
       "sha256": "976486cb546c1097de1553c692103e5c49c3a821bfe9a4d3c8dcc03574646f80",
-      "publishedSha256": "2aea2af5e1e3921feb89fc8f073159116f9c965b163c38ece79559422ed01522",
+      "publishedSha256": "bd63d34bd21a0abaf6d2f3f96f280f91bc2508a881cf2c9e0f0e8a79e16af2ac",
       "adapted": true
     },
     {
       "source": "Proyecto Hotel Final/Base de Datos/HotelDB_SeedData.sql",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/HotelDB_SeedData.sql",
       "sha256": "fd750f4f6d6c1148b74c18f53c736c81f7a102f35b8250dea3762e1cb0608dc2",
-      "publishedSha256": "90b16149a3c1b80d7d3dba61316a138af8801a8e160197106322baad86566ed0",
+      "publishedSha256": "47f28e0e85decf603840c8fff39e78f8fb6bd160cd3d29092455db37a1b80ae4",
       "adapted": true
     },
     {
@@ -888,7 +888,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/CheckInOutData.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs",
       "sha256": "4e252066495e4544cf41ae70e30b44664b42e0ad97661f521b42f30290a02579",
-      "publishedSha256": "4e252066495e4544cf41ae70e30b44664b42e0ad97661f521b42f30290a02579"
+      "publishedSha256": "ab0c1a1c7e69efeef044930f3efb5c4c29c423b4c50d7b34a10c1d78d6c0d171"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/ClientesForm.cs",
@@ -924,7 +924,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/Database.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Database.cs",
       "sha256": "046907f6eca168a13d057d37586c5dab6e86b37fe965a12578508a2f0ed78293",
-      "publishedSha256": "1baa88e342f344444b885d68f30c3b361dc1277aebd34b62640499cb7d6ba2d7",
+      "publishedSha256": "d92700f9373df93310be1e0398ed015d98052c4258f8871f5308174125e7b23d",
       "adapted": true
     },
     {
@@ -1093,7 +1093,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/ReportesData.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs",
       "sha256": "d293c730a7587ffb929502f66918d05b7f35f3331f03307127799db6f2f7e3d7",
-      "publishedSha256": "d293c730a7587ffb929502f66918d05b7f35f3331f03307127799db6f2f7e3d7"
+      "publishedSha256": "bd5b05420aca5a1d974291f49d9503ae7ec04ae92397ddc1890923af240d626c"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/ReportesForm.cs",
@@ -1177,7 +1177,7 @@
       "source": "Proyecto Hotel Final/LEER.txt",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/LEER.txt",
       "sha256": "63db086a683422424532c2c34c6de34cbfb903af4c58ad91db5738dbc787c3ac",
-      "publishedSha256": "a3b09bf744450bef7eb778e758ea73d7fdfae22129528a19b8d41092a01f6d6e",
+      "publishedSha256": "63b970f1d79575f292ab86ffff86b1d9f2b0618391e6fe6ba2db27e0ccb7fa79",
       "adapted": true
     },
     {

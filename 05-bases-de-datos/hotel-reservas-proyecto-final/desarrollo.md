@@ -18,7 +18,7 @@ Program.cs abre LoginForm. Database.cs centraliza la conexión y operaciones gen
 2. Ejecutar [HotelDB_Proyecto_Final.sql](Base%20de%20Datos/HotelDB_Proyecto_Final.sql). **Elimina y recrea HotelDB**: no utilizar sobre una base que contenga trabajo que se deba conservar.
 3. Ejecutar [HotelDB_Fase1_Migracion.sql](Base%20de%20Datos/HotelDB_Fase1_Migracion.sql) una vez sobre la base recién creada. Esta fase prepara el esquema y la autenticación para el código publicado.
 4. Opcionalmente ejecutar [HotelDB_SeedData.sql](Base%20de%20Datos/HotelDB_SeedData.sql) una sola vez para ampliar los datos de demostración.
-5. Ajustar Server=localhost en HotelReservas/Database.cs a la instancia elegida, por ejemplo localhost\SQLEXPRESS. Se utiliza autenticación de Windows.
+5. Definir HOTELRESERVAS_CONNECTION_STRING en el entorno de la aplicación para elegir una instancia de práctica, por ejemplo Server=(localdb)\MSSQLLocalDB;Database=HotelDB;Integrated Security=True;. Sin esa variable se utiliza localhost con autenticación de Windows.
 
 Los datos de identidad y contacto de los scripts publicados se han sustituido por valores ficticios, manteniendo referencias y unicidad. No se presenta ese conjunto como una base de clientes real.
 
@@ -38,4 +38,4 @@ Compilar Release o Debug y ejecutar después de instalar la base. LEER.txt docum
 
 ## 7. Validación y límites
 
-El registro [VALIDACION.md](../VALIDACION.md) contiene el resultado de compilación, el análisis sintáctico de SQL y las limitaciones de ejecución. La compilación no equivale a comprobar todos los formularios ni las operaciones sobre una instancia SQL Server. El mecanismo SHA256 corresponde a la implementación académica conservada.
+El registro [VALIDACION.md](../VALIDACION.md) contiene el resultado de compilación, el análisis sintáctico de SQL y las limitaciones de ejecución. La batería de [pruebas funcionales](docs/PRUEBAS-FUNCIONALES.md) verifica 53 casos contra LocalDB y se ejecuta también en Actions. No equivale a una revisión visual de todos los formularios. Las correcciones de la versión pública abarcan instalación, seed, sesiones, relación usuario/empleado, estados de habitación, check-out y reportes vacíos. El mecanismo SHA256 corresponde a la implementación académica conservada.

@@ -1,0 +1,54 @@
+Estado	Prueba	Detalle
+PASS	Instalacion: restricciones y objetos	OK
+PASS	Inicializacion de notificaciones y valoraciones idempotente	OK
+PASS	Login ADMIN	OK
+PASS	Login RECEPCION	OK
+PASS	Login EMPLEADO	OK
+PASS	Login SOPORTE	OK
+PASS	Login invalido y vacio	OK
+PASS	Usuarios del seed tienen claves compatibles	OK
+PASS	Login inactivo	OK
+PASS	Cierre de sesion	OK
+PASS	Login fallido borra sesion anterior	OK
+PASS	CRUD reserva, consulta y cancelacion	OK
+PASS	Fechas invalidas	OK
+PASS	Referencias inexistentes	OK
+PASS	Importes negativos rechazados	OK
+PASS	Solapamiento al crear y modificar	OK
+PASS	Cancelar no libera otra reserva confirmada	OK
+PASS	Trasladar reserva conserva ocupacion anterior	OK
+PASS	Mantenimiento prevalece y se recalcula al terminar	OK
+PASS	Check-in rechaza reserva pendiente	OK
+PASS	Check-out sin check-in rechazado	OK
+PASS	Check-in usa IdEmpleado y no IdUsuario	OK
+PASS	Ciclo check-in/out, factura y pagos	OK
+PASS	Check-out finaliza y libera habitacion	OK
+PASS	Rollback ante fallo intermedio de facturacion	OK
+PASS	ITBIS configurable y redondeo	OK
+PASS	Pago con referencia inexistente no altera saldo	OK
+PASS	Reportes: importes y filtros sin datos	OK
+PASS	Reporte SQL ObtenerAniosDisponibles	OK
+PASS	Reporte SQL ObtenerResumenOperativo	OK
+PASS	Reporte SQL ObtenerReservasMensuales	OK
+PASS	Reporte SQL ObtenerDistribucionEstadosReserva	OK
+PASS	Reporte SQL ObtenerDetalleOperativo	OK
+PASS	Reporte SQL ObtenerResumenHabitacionesActual	OK
+PASS	Reporte SQL ObtenerDistribucionEstadoHabitaciones	OK
+PASS	Reporte SQL ObtenerTopHabitacionesReservadas	OK
+PASS	Reporte SQL ObtenerOcupacionPorTipoHabitacion	OK
+PASS	Reporte SQL ObtenerMantenimientosPeriodo	OK
+PASS	Reporte SQL ObtenerResumenGerencial	OK
+PASS	Reporte SQL ObtenerFacturacionMensual	OK
+PASS	Reporte SQL ObtenerCobrosMensuales	OK
+PASS	Reporte SQL ObtenerRendimientoEmpleadosGerencial	OK
+PASS	Reporte SQL ObtenerTopClientesGerencial	OK
+PASS	Reporte SQL ObtenerResumenGlobalAnual	OK
+PASS	Reporte SQL ObtenerComparativoIngresosMensual	OK
+PASS	Reporte SQL ObtenerServiciosPromocionesMensual	OK
+PASS	Reporte SQL ObtenerResumenMensualGlobal	OK
+PASS	Reporte SQL ObtenerRevPAR	OK
+PASS	Reporte SQL ObtenerADR	OK
+PASS	Reporte SQL ObtenerOccupancyRate	OK
+PASS	Reporte SQL ObtenerGOPPAR	OK
+PASS	Reportes sin historial anual	OK
+PASS	Inicio de formularios con SQL	OK

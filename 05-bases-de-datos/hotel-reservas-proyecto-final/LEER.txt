@@ -8,7 +8,7 @@ INSTALACION
 4. Opcional: ejecutar HotelDB_SeedData.sql una vez.
 5. Abrir HotelReservas/HotelReservas.csproj en Visual Studio con .NET Framework 4.8 Developer Pack.
 6. Restaurar packages.config mediante NuGet en la carpeta packages junto a HotelReservas.
-7. Cambiar Server=localhost en Database.cs si se utiliza otra instancia SQL Server.
+7. Definir HOTELRESERVAS_CONNECTION_STRING para otra instancia de practica; sin esa variable se usa localhost con autenticacion de Windows.
 8. Compilar y ejecutar.
 
 CUENTAS DE DEMOSTRACION DE LA BASE INICIAL

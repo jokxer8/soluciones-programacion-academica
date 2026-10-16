@@ -69,12 +69,14 @@ Proyecto académico incorporado y documentado. Las comprobaciones de compilació
 
 El [workflow del hotel](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) restaura los paquetes con NuGet, compila en Release con MSBuild sobre Windows Server 2022 y comprueba el ejecutable, las bibliotecas y los recursos gráficos requeridos.
 
-La [primera ejecución](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909), sobre la revisión `4128f7b`, **finalizó correctamente**: restauración, compilación y verificación de salidas aprobadas. Conserva la advertencia CS0168 ya documentada. La [guía de compilación automática](docs/COMPILACION-AUTOMATICA.md) explica los disparadores, la ejecución manual y el alcance de la comprobación. El workflow no ejecuta la aplicación ni SQL Server.
+La [primera ejecución](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909), sobre la revisión `4128f7b`, **finalizó correctamente**: restauración, compilación y verificación de salidas aprobadas. Conserva la advertencia CS0168 ya documentada. La [guía de compilación automática](docs/COMPILACION-AUTOMATICA.md) explica los disparadores, la ejecución manual y el alcance de la comprobación.
+
+Desde la [ejecución #2](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre `1b72dc8`, también instala una base LocalDB aislada y ejecuta **53 pruebas funcionales, todas correctas**. El [informe funcional](docs/PRUEBAS-FUNCIONALES.md) registra los fallos corregidos, la reproducción y los pendientes. La batería prueba el código C# contra SQL Server real y el inicio técnico de formularios, sin recorrido visual completo.
 
 ## Seguimiento de mejoras y pruebas
 
 El [tablero de GitHub Projects](https://github.com/users/jokxer8/projects/1) reúne las tareas con los estados **Pendiente**, **En curso**, **Bloqueado** y **Completado**, además de prioridades P1 y P2.
 
-Las comprobaciones funcionales de SQL Server permanecen pendientes de un entorno accesible. La publicación y la compilación ya verificadas se registran como hitos completados. El [plan de seguimiento](docs/SEGUIMIENTO.md) enlaza cada tarea y sus criterios de aceptación.
+Instalación, reservas y operación de facturación/pagos se verificaron con SQL Server LocalDB. Autenticación y reportes tienen validación parcial: faltan autorización más allá del menú, inactividad y revisión visual de exportaciones. El [plan de seguimiento](docs/SEGUIMIENTO.md) enlaza cada tarea, sus resultados y los criterios pendientes.
 
 [Volver a Bases de Datos](../README.md)

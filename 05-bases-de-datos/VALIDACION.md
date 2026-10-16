@@ -17,7 +17,7 @@ Se inventariaron 329 archivos del origen. El [registro de auditoría](AUDITORIA.
 
 ## Compilación automática verificada
 
-El [workflow de Windows, MSBuild y NuGet](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) se ejecutó correctamente sobre la revisión `4128f7b`. La [ejecución #1](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909) completó la restauración desde NuGet, la compilación Release y la comprobación del ejecutable, bibliotecas y logotipos. Conserva la advertencia CS0168. No se ejecutan pruebas funcionales ni SQL Server en este workflow.
+El [workflow de Windows, MSBuild y NuGet](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) se ejecutó correctamente sobre la revisión `4128f7b`. La [ejecución #1](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909) completó la restauración desde NuGet, la compilación Release y la comprobación del ejecutable, bibliotecas y logotipos. Conserva la advertencia CS0168. Esa primera ejecución solo compilaba. La [ejecución #2](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre 1b72dc8, añadió la instalación SQL y **53 pruebas funcionales correctas**, con LocalDB 15.0.4382.1.
 
 ## Rectificaciones documentadas
 
@@ -25,7 +25,7 @@ Restaurante incluye separadores GO, cierre de la función, consulta de ejemplo f
 
 ## Límites de la revisión
 
-La conexión local a SQL Server no estaba disponible durante la revisión. No se ejecutaron los scripts sobre una instancia ni se probaron de extremo a extremo las pantallas y operaciones del hotel. La compilación y el análisis sintáctico no verifican resultados ni permisos en ejecución. NotificacionData y RatingData incluyen creación de tablas desde la aplicación, además del esquema preparado por los scripts.
+La primera revisión no tenía conexión al servidor localhost. La ampliación posterior utilizó una instancia LocalDB aislada: esquema, migración, seed y 53 pruebas funcionales terminaron correctamente, tanto localmente como en Actions. El [informe funcional](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md) registra las correcciones de código/SQL y los pendientes. Se verificó la creación repetida de tablas de NotificacionData y RatingData. No se certifican permisos más allá del menú, inactividad, exportaciones visuales ni un recorrido interactivo completo.
 
 Bolsa de empleo requiere un esquema previo no incluido y sus supuestos de fechas se explican en desarrollo.md. Las variantes de coches son independientes. Las opciones de los esquemas de práctica dependen de la versión de SQL Server.
 
