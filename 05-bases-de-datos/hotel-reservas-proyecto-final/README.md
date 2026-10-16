@@ -61,6 +61,12 @@ Kelvin Del Castillo Torres, Gabriel Galasso y Camila Vasquez, según los crédit
 
 ## Estado
 
-Proyecto académico incorporado y documentado. Las comprobaciones de compilación y las limitaciones de ejecución se registran en VALIDACION.md.
+Proyecto académico incorporado y documentado. Las comprobaciones de compilación y las limitaciones de ejecución se registran en [VALIDACION.md](../VALIDACION.md).
+
+## Seguimiento de mejoras y pruebas
+
+El [tablero de GitHub Projects](https://github.com/users/jokxer8/projects/1) reúne las tareas con los estados **Pendiente**, **En curso**, **Bloqueado** y **Completado**, además de prioridades P1 y P2.
+
+Las comprobaciones funcionales de SQL Server permanecen pendientes de un entorno accesible. La publicación y la compilación ya verificadas se registran como hitos completados. El [plan de seguimiento](docs/SEGUIMIENTO.md) enlaza cada tarea y sus criterios de aceptación.
 
 [Volver a Bases de Datos](../README.md)

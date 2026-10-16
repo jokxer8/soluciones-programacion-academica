@@ -122,6 +122,8 @@ soluciones-programacion-academica/
 
 El proyecto conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación de la base y distingue la compilación de las pruebas de funcionamiento pendientes en SQL Server.
 
+El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
+
 ---
 
 ## Tecnologías utilizadas

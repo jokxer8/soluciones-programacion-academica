@@ -113,3 +113,5 @@ Sección completada con nueve actividades de fundamentos, diseño, SQL y proyect
 Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El orden de ejecución, las dependencias y los scripts que recrean datos se explican en cada actividad y en [VALIDACION.md](VALIDACION.md).
 
 [Volver al repositorio](../README.md)
+
+El proyecto del hotel dispone de un [tablero de mejoras y pruebas](https://github.com/users/jokxer8/projects/1). La organización de la sección está completada; las pruebas funcionales y las mejoras de la aplicación tienen su propio seguimiento.
