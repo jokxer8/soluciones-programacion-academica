@@ -1,6 +1,6 @@
 # Revisión de la carpeta de Bases de Datos
 
-La revisión abarca los 329 archivos encontrados en la carpeta 30. Base de Datos completa. Se distingue el trabajo publicado del material de estudio, la configuración privada y los archivos de ejecución.
+La revisión abarca los 329 archivos encontrados en la carpeta de la asignatura cuando era participe de la asignatura. Se distingue el trabajo publicado del material de estudio, la configuración privada y los archivos de ejecución.
 
 ## Cobertura
 
