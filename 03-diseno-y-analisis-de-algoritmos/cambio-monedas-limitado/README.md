@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Busco alcanzar un importe usando monedas cuya disponibilidad es limitada. El importe y las denominaciones deben expresarse en la misma unidad. La cantidad de monedas disponibles no equivale al valor de cada moneda; esa diferencia determina qué combinaciones son posibles.
+
+## Planteamiento
 
 Este ejercicio consiste en determinar el mínimo número de monedas necesarias para formar exactamente un valor objetivo X.
 
@@ -73,3 +77,7 @@ Sea M la cantidad total de monedas disponibles después de expandir las cantidad
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Organizo datos mediante nodos enlazados. FIFO significa que sale primero el elemento que entró primero, como en una cola; LIFO significa que sale primero el último que entró, como en una pila. Los números de ejercicio sirven para localizar cada programa independiente.
+
 ## Descripción de la actividad
 
 Diecinueve ejercicios de búsqueda, agregación, eliminación, ordenamiento, FIFO y LIFO.
@@ -101,7 +105,7 @@ Compilar un solo archivo a la vez con C17. Para las estructuras con menú, repet
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/hw04-v2.pdf). El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 

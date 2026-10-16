@@ -1,10 +1,14 @@
-# Subsequencia Creciente con Suma Máxima
+# Subsecuencia Creciente con Suma Máxima
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Busco una subsecuencia creciente con la mayor suma. Puedo omitir elementos sin cambiar su orden: no tienen que ser consecutivos. La mejor suma tampoco exige la mayor cantidad de términos; dp[i] representa la mejor suma que termina en el elemento de índice i.
+
+## Planteamiento
 
 Este ejercicio consiste en encontrar una subsecuencia creciente dentro de un arreglo de números enteros, de forma que la suma de sus elementos sea la mayor posible.
 
@@ -41,7 +45,7 @@ Subsecuencia: 1 2 3 100
 
 - Arreglos
 - Programación dinámica
-- Subsequencias
+- Subsecuencias
 - Comparación de valores
 - Reconstrucción de solución
 - Análisis de complejidad
@@ -62,3 +66,7 @@ Para cada elemento, se revisan los elementos anteriores y se verifica si pueden 
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

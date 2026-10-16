@@ -9,7 +9,7 @@ Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos ut
 
 ## Procedencia
 
-El material procede de la carpeta académica 30. Base de Datos, incluidas las subcarpetas Github y Proyecto Hotel Final. Se incluyen resúmenes, cuestionarios, compendios, casos, modelos, consultas y evaluaciones.
+Esta sección reúne los documentos de apoyo de Bases de Datos y del proyecto final del hotel. Se incluyen resúmenes, cuestionarios, compendios, casos, modelos, consultas y evaluaciones.
 
 ## Organización
 

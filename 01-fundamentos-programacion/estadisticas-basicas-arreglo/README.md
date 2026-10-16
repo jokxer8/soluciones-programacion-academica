@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Recorro los datos para obtener suma, promedio y extremos. El promedio es la suma dividida entre la cantidad de elementos; no es el punto medio entre el mayor y el menor. En el análisis, n representa la cantidad de valores del arreglo.
+
+## Planteamiento
 
 Este ejercicio consiste en leer una cantidad de números enteros ingresados por el usuario y calcular estadísticas básicas sobre ellos.
 
@@ -76,3 +80,7 @@ El promedio se obtiene dividiendo la suma total entre la cantidad de elementos.
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

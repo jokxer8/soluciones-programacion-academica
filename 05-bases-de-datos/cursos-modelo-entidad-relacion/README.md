@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Modelo cursos y sus ofertas, instructores y certificados. Una relación 1:N permite asociar una instancia del primer tipo con varias del segundo. Esa proporción no indica cuántos registros existen actualmente; expresa una regla del diseño.
+
 ## Descripción de la actividad
 
 Diseño conceptual de cursos, ofertas, instructores, empleados, actividades y certificados.
@@ -47,7 +51,7 @@ Abrir el PDF para revisar el diseño y XMind para inspeccionar el archivo editab
 
 ## Relación con los archivos originales
 
-Los materiales proceden de la carpeta 30. Base de Datos del archivo académico del autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) registra el origen y las adaptaciones para publicación.
+Los modelos y documentos de apoyo se encuentran en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md), junto con las versiones publicadas y sus adaptaciones.
 
 ## Estado
 

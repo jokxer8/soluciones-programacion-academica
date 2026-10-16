@@ -1,8 +1,8 @@
-# Desarrollo — Subsequencia Creciente con Suma Máxima
+# Desarrollo — Subsecuencia Creciente con Suma Máxima
 
 [Actividad](README.md) · [Código](solution.cs) · [Materia](../README.md)
 
-Esta guía reúne el análisis técnico ya documentado en la actividad. El README conserva el enunciado, los ejemplos y las explicaciones originales.
+En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
 ## Objetivo
 
@@ -12,7 +12,7 @@ Aplicar programación dinámica para calcular la subsecuencia creciente con mayo
 
 - Arreglos
 - Programación dinámica
-- Subsequencias
+- Subsecuencias
 - Comparación de valores
 - Reconstrucción de solución
 - Análisis de complejidad

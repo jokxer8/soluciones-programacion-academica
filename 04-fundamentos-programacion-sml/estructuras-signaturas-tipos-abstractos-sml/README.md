@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Separo la interfaz de una estructura de su implementación. Una signatura declara los tipos y operaciones disponibles; el tipo abstracto permite utilizarlos sin depender de su representación interna. Los números de los ejemplos son datos de prueba, no identificadores de tipos.
+
 ## Descripción de la actividad
 
 Esta actividad trabaja conceptos avanzados de Standard ML relacionados con signaturas, estructuras, tipos abstractos de datos, records, listas de asociación, excepciones y tipos algebraicos.
@@ -103,7 +107,7 @@ La estructura implementa funciones para:
 
 ## Corrección aplicada
 
-En la versión profesionalizada se agregan casos de prueba con resultados esperados para mostrar la efectividad de las funciones.
+En la versión documentada se agregan casos de prueba con resultados esperados para mostrar la efectividad de las funciones.
 
 Esto corrige la debilidad señalada en el documento original, donde faltaba mostrar claramente la ejecución y los resultados de los casos de prueba.
 
@@ -143,7 +147,7 @@ Esta carpeta contiene una versión organizada, limpia y profesional de la activi
 
 ## Nota sobre datos personales
 
-Para mantener una presentación profesional y proteger información personal, se recomienda que el PDF utilizado como evidencia no contenga datos sensibles como ID, matrícula, correo, calificaciones o información privada.
+El PDF complementa la explicación y permite consultar el planteamiento académico de la actividad.
 
 En caso de que el documento original contenga datos personales, se debe subir una versión limpia o censurada.
 
@@ -152,3 +156,7 @@ En caso de que el documento original contenga datos personales, se debe subir un
 ## Estado
 
 Actividad organizada, corregida y documentada como parte del portafolio académico de Programación Funcional con SML.
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Busco sobre datos ordenados y reduzco a la mitad el intervalo en cada paso. n es la cantidad de elementos; log₂(n) describe cuántas divisiones sucesivas entre dos hacen falta. La condición de orden es necesaria para descartar correctamente una mitad.
+
+## Planteamiento
 
 Este ejercicio consiste en buscar un número dentro de un arreglo ordenado utilizando el algoritmo de búsqueda binaria.
 
@@ -63,3 +67,7 @@ En cada iteración se calcula la posición central del arreglo. Si el valor del 
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

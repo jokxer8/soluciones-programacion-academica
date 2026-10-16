@@ -25,8 +25,12 @@ La tarea #8 queda cerrada con PBKDF2-SHA256, sal individual, coste configurable 
 
 Los doce pares C/FASM pasan **132 comparaciones, 0 fallidas**, con pipe y terminal PTY en Ubuntu. Se corrigieron lectura, signos, rangos y alineación. [Resultados y ejecución](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). Este punto deja de figurar como pendiente.
 
-## Último ajuste completado
+## Organización de las materias
 
 La materia introductoria pasó del prefijo `06` a `00`, se ubicó antes de `01` en el índice y se actualizaron enlaces, rutas del inventario y referencias documentales. El código y los resultados de pruebas anteriores se conservan.
+
+## Presentación y documentación revisadas
+
+Revisé las seis materias (00–05) y sus 39 actividades: navegación, ejemplos, explicaciones y referencias documentales. Aclaré las bases numéricas, las unidades y las siglas, y retiré las ubicaciones personales de los inventarios publicados. La [guía de lectura](GUIA-DE-LECTURA.md) reúne la notación compartida. Esta revisión es documental; los resultados de ejecución siguen en los informes enlazados arriba.
 
 [Volver al repositorio](README.md)

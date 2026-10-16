@@ -10,7 +10,7 @@ Los documentos almacenados aquí funcionan como respaldo académico de foros, ac
 
 Mantener una copia organizada de los documentos originales relacionados con programación funcional y Standard ML.
 
-Esta carpeta permite conservar la trazabilidad entre el material académico inicial y las soluciones profesionalizadas que se desarrollarán posteriormente dentro del repositorio.
+Esta carpeta permite conservar la trazabilidad entre el material académico inicial y las soluciones documentadas dentro del repositorio.
 
 ---
 
@@ -18,7 +18,7 @@ Esta carpeta permite conservar la trazabilidad entre el material académico inic
 
 Los archivos contenidos en esta carpeta evidencian el proceso de aprendizaje desarrollado en la asignatura, incluyendo participación en foros, resolución de actividades y aplicación de conceptos propios de la programación funcional.
 
-Estos documentos no representan necesariamente las versiones finales profesionalizadas, sino el material original que servirá como base para seleccionar, limpiar, documentar y convertir ejercicios en soluciones técnicas dentro de la carpeta principal correspondiente.
+Estos documentos no representan necesariamente las versiones finales documentadas, sino el material de apoyo de las actividades dentro de la carpeta principal correspondiente.
 
 ---
 
@@ -49,7 +49,7 @@ Los archivos originales pueden corresponder a:
 - Capturas de plataformas educativas.
 - Documentos de entrega.
 - Evidencias de práctica en Standard ML.
-- Material de apoyo para futuras soluciones profesionalizadas.
+- Material de apoyo para futuras soluciones documentadas.
 
 ---
 
@@ -112,7 +112,7 @@ Se priorizarán aquellos materiales que evidencien mejor:
 
 ## Organización recomendada para las soluciones
 
-A partir de estos archivos originales, las soluciones profesionalizadas podrán organizarse en ejercicios como:
+A partir de estos archivos originales, las actividades documentadas se organizan en:
 
 ```text
 04-fundamentos-programacion-sml/
@@ -132,6 +132,6 @@ Esta organización permitirá mostrar de forma clara la evolución desde los fun
 
 Esta carpeta se utiliza únicamente como respaldo académico de los archivos originales.
 
-Las versiones limpias, explicadas y profesionalizadas de los ejercicios deben colocarse en la carpeta principal de Programación Funcional con SML.
+Las soluciones explicadas de los ejercicios se encuentran en la carpeta principal de Programación Funcional con SML.
 
 Antes de convertir cualquier archivo original en una solución profesional, se debe revisar que no contenga datos personales, calificaciones, matrículas, correos privados o información sensible.

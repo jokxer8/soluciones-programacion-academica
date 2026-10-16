@@ -1,6 +1,6 @@
 # Validación de Bases de Datos
 
-Revisión del 15 de octubre de 2026 sobre la sección ampliada con la carpeta 30. Base de Datos y el proyecto final del hotel.
+Revisión del 15 de octubre de 2026 sobre las actividades de Bases de Datos y el proyecto final del hotel.
 
 ## Alcance
 

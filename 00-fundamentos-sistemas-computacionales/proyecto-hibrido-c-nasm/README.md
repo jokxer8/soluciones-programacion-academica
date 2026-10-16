@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Integro funciones de ensamblador en un programa C. RCX, RDX, R8 y R9 son nombres de registros del procesador usados para pasar argumentos en Windows x64; no son valores hexadecimales. La convención de llamada determina cómo se comunican ambos lenguajes.
+
 ## Descripción de la actividad
 
 Interoperabilidad C/ensamblador x64 para sumar, ordenar e intercambiar enteros.
@@ -96,7 +100,7 @@ Los objetos y el ejecutable son productos de compilación, no nuevas evidencias 
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/resumen-del-proyecto.pdf). El resumen estaba guardado dentro de la asignación 2; su contenido describe este proyecto híbrido. El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 

@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Calculo términos de Fibonacci a partir de F(0)=0 y F(1)=1. n indica la posición del término: F(5)=5 y F(6)=8. La fórmula F(n)=F(n−1)+F(n−2) explica la recursión; el costo depende de si se vuelven a calcular términos o se guardan resultados.
+
+## Planteamiento
 
 Este ejercicio consiste en calcular el número de Fibonacci correspondiente a una posición indicada por el usuario.
 
@@ -60,3 +64,7 @@ La solución utiliza una función recursiva optimizada con memoización. Esto pe
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

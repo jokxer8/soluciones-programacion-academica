@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Resuelvo cada operación a partir de dos números y una opción. En el ejemplo, 1 selecciona la suma y 10 y 5 son sus operandos; el resultado es 15. El 0 del menú significa salir, mientras que un divisor igual a 0 impide efectuar la división.
+
+## Planteamiento
 
 Este ejercicio consiste en crear una calculadora básica utilizando un menú interactivo.
 
@@ -79,3 +83,7 @@ En el caso de la división, se valida que el segundo número no sea cero.
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

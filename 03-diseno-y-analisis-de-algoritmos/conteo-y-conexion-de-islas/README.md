@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Interpreto 0 como agua y 1 como tierra; las conexiones son horizontales o verticales. F y C son filas y columnas, y K es la cantidad de islas. Una máscara de bits representa un subconjunto: con tres islas, 101 en base 2 selecciona la primera y la tercera, no ciento una islas.
+
+## Planteamiento
 
 Este ejercicio trabaja con una matriz formada por agua y tierra.
 
@@ -91,3 +95,7 @@ Este enfoque es adecuado cuando la cantidad de islas no es demasiado grande.
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

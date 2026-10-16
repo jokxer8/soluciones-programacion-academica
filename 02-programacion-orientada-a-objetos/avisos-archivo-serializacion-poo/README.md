@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Organizo avisos como objetos y guardo su información en archivos. TXT es una representación de texto para lectura; JSON conserva una estructura de campos y valores que puede volver a cargarse. Guardar un archivo y recuperar correctamente sus datos son comprobaciones distintas.
+
+## Planteamiento
 
 Este ejercicio consiste en crear un programa para registrar avisos utilizando programación orientada a objetos.
 
@@ -99,3 +103,7 @@ La clase `Aviso` representa la información principal, mientras que la clase `Ge
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

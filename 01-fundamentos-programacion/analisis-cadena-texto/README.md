@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Analizo una frase mediante recorridos y contadores. La cantidad de caracteres incluye los espacios que se conserven en la entrada; la cantidad de palabras depende de cómo el programa separa el texto. Conviene distinguir ambos resultados antes de compararlos.
+
+## Planteamiento
 
 Este ejercicio consiste en leer una frase ingresada por el usuario y realizar diferentes análisis sobre su contenido.
 
@@ -73,3 +77,7 @@ Donde n representa la cantidad de caracteres de la frase.
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

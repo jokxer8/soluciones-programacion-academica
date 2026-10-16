@@ -15,10 +15,14 @@ La barra de cada actividad enlaza Inicio, Materia, Desarrollo y el código dispo
 
 Se mantienen títulos Markdown, tablas comparables, bloques de código con lenguaje e insignias de Shields: azul para C/C#, morado para SML, gris para SQL y verde para estados documentados. Las portadas del perfil y del repositorio usan la misma paleta. Las materias enlazan a sus vecinas y al índice general.
 
-## Alcance de esta revisión
+## Cobertura y redacción
 
 Se revisaron las **39 actividades**: 6 en la materia 00, 5 en 01, 5 en 02, 6 en 03, 6 en 04 y 11 en 05. Las 16 actividades de 01–03 incorporan ahora `desarrollo.md`, elaborado a partir de su análisis existente. Las 39 tienen guía de desarrollo y navegación común. Los ejemplos, explicaciones y código de 01–04 se conservan.
 
 La revisión visual/documental no equivale a ejecutar de nuevo todos los ejercicios. Los resultados comprobados siguen ligados a sus informes; la mejora de contraseñas del hotel tiene pruebas propias.
 
 [Inicio](README.md) · [Pendientes](PENDIENTES.md)
+
+Escribo las explicaciones desde el trabajo realizado: qué resuelvo, cómo lo organizo y qué resultado espero. Defino las siglas al usarlas y acompaño cifras, porcentajes y patrones de bits con su significado. Conservo los créditos de trabajos en equipo y distingo los enunciados sin solución de las entregas resueltas.
+
+Los enlaces de documentación apuntan al contenido publicado. Los inventarios identifican documentos y versiones sin incluir la ubicación de los materiales en mi computadora. La [guía de lectura](GUIA-DE-LECTURA.md) reúne la notación compartida.

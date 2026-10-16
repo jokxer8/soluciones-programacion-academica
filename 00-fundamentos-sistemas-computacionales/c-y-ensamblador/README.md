@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Comparo doce problemas resueltos en C y FASM. Los prefijos 01–12 identifican ejercicios equivalentes entre ambos lenguajes; no indican dificultad ni calificación. Las 132 comparaciones registradas corresponden a casos de entrada y modos de ejecución, no a 132 programas distintos.
+
 ## Descripción de la actividad
 
 Doce ejercicios equivalentes de entrada/salida, decisiones, ciclos, primos y patrones.
@@ -111,7 +115,7 @@ Para contrastar los doce pares, seguir la [reproducción de la batería Linux](.
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/hw02-v2.pdf). El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 

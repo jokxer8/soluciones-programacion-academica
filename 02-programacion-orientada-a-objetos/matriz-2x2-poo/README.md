@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Encapsulo una matriz de dos filas y dos columnas en una clase. Si sus filas son (a, b) y (c, d), el determinante es a·d − b·c. La matriz tiene inversa únicamente cuando ese determinante es distinto de 0; 2×2 describe sus dimensiones, no una multiplicación pendiente.
+
+## Planteamiento
 
 Este ejercicio consiste en crear una clase que represente una matriz de 2x2.
 
@@ -68,3 +72,7 @@ La clase `Matriz2x2` contiene los valores de la matriz y los métodos necesarios
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

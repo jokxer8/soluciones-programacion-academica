@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Represento cada cita con sus datos y reúno las citas en una agenda. La hora y los minutos son campos distintos: 09:30 significa nueve horas y treinta minutos. Las validaciones evitan construir citas con horarios fuera del rango permitido.
+
+## Planteamiento
 
 Este ejercicio consiste en crear un programa para registrar y mostrar citas dentro de una agenda.
 
@@ -86,3 +90,7 @@ La clase `Cita` se encarga de representar y validar los datos de una cita, mient
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

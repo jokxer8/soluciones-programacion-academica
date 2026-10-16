@@ -6,13 +6,11 @@
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**.
-
-Los trabajos presentan la evolución desde fundamentos y diseño entidad-relación hasta normalización, implementación relacional, consultas y programación con SQL Server.
+En esta materia trabajé el diseño y la implementación de bases de datos, desde los modelos conceptuales hasta consultas SQL y una aplicación de reservas de hotel. Reúno aquí mis actividades de **ICC-223 Bases de Datos**, incluidos los trabajos realizados en equipo.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Presentar de forma ordenada los trabajos realizados en la asignatura, acompañando las soluciones con análisis, diagramas, modelos, scripts y evidencia documental.
 
@@ -117,3 +115,11 @@ Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El or
 [Volver al repositorio](../README.md)
 
 El proyecto del hotel dispone de un [tablero de mejoras y pruebas](https://github.com/users/jokxer8/projects/1). La organización de la sección está completada. El hotel cuenta con [79 pruebas funcionales SQL correctas](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), ejecutadas localmente y en Actions; las tareas de permisos, reportes y configuración están [completadas con evidencia](hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

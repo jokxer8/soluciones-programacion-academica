@@ -6,13 +6,11 @@
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-orange)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene ejercicios desarrollados para aplicar los principios fundamentales y avanzados de la programación orientada a objetos utilizando C#.
-
-Los ejercicios están orientados a demostrar el uso de clases, objetos, constructores, encapsulación, composición, listas, archivos, serialización, herencia, clases abstractas y polimorfismo.
+En esta materia organicé soluciones en C# mediante clases y objetos. Los cinco ejercicios muestran cómo represento datos, valido su estado y distribuyo responsabilidades entre clases.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Evidenciar la capacidad de diseñar soluciones organizadas mediante objetos, separando responsabilidades y aplicando estructuras reutilizables, mantenibles y extensibles.
 
@@ -38,22 +36,27 @@ Esta sección representa un avance desde la programación estructurada hacia el 
 02-programacion-orientada-a-objetos/
 ├── agenda-citas-poo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── avisos-archivo-serializacion-poo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── matriz-2x2-poo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── sistema-nomina-polimorfismo-poo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── telefono-movil-poo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 └── README.md
@@ -119,6 +122,7 @@ Cada ejercicio está organizado en una carpeta independiente con la siguiente es
 ```text
 nombre-del-ejercicio/
 ├── README.md
+├── desarrollo.md
 └── solution.cs
 ```
 
@@ -139,3 +143,11 @@ El propósito principal es demostrar que el código puede organizarse mediante o
 ## Lenguaje utilizado
 
 C#
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

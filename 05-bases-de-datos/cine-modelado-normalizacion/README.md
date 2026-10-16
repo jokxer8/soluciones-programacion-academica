@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Relaciono el diseño del cine con la normalización de datos. 1FN, 2FN y 3FN significan primera, segunda y tercera forma normal; no son versiones del programa. Se justifican a partir de atributos, claves y dependencias funcionales.
+
 ## Descripción de la actividad
 
 Diseño de un cine y ejercicios de transformación relacional y normalización de ventas.
@@ -75,7 +79,7 @@ Consultar el diagrama y el modelo del ejercicio 5.1; después comparar las etapa
 
 ## Relación con los archivos originales
 
-Los archivos proceden de la carpeta académica Github indicada por el autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona cada origen con su copia publicada y registra las versiones y duplicados.
+Los enunciados, modelos y documentos de apoyo están relacionados en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md). Allí se pueden consultar las versiones publicadas y su tratamiento.
 
 ## Lenguaje y herramientas
 

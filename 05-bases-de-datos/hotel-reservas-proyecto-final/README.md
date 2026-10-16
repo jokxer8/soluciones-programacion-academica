@@ -6,6 +6,10 @@
 
 [![Compilación Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Integro el modelo relacional con una aplicación de escritorio desarrollada en equipo. Las 79 pruebas funcionales documentadas son casos comprobados, no pantallas ni tablas. En el almacenamiento de contraseñas, 600 000 indica iteraciones de derivación; una sal de 16 bytes equivale a 128 bits y la clave derivada de 32 bytes, a 256 bits. Estos tamaños no indican la longitud de la contraseña.
+
 ## Descripción de la actividad
 
 Proyecto grupal de C# Windows Forms y SQL Server que integra diseño relacional y gestión hotelera.
@@ -57,7 +61,7 @@ Seguir la instalación descrita en desarrollo.md. Ejecutar el esquema inicial, F
 
 ## Relación con los archivos originales
 
-Los materiales proceden de la carpeta 30. Base de Datos del archivo académico del autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) registra el origen y las adaptaciones para publicación.
+Los modelos y documentos de apoyo se encuentran en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md), junto con las versiones publicadas y sus adaptaciones.
 
 ## Autoría
 

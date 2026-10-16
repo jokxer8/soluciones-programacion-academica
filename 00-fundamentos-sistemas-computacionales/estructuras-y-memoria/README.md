@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Trabajo con estructuras y punteros para representar datos relacionados. Un puntero guarda una dirección de memoria; una dirección escrita en hexadecimal identifica una ubicación durante una ejecución y no debe interpretarse como el resultado numérico del problema.
+
 ## Descripción de la actividad
 
 Diez ejercicios de estructuras, punteros, rectángulos, complejos y listas.
@@ -97,7 +101,7 @@ Introducir por separado horas, minutos y segundos de ambos tiempos. Los datos de
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/hw03-v2.pdf). El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 

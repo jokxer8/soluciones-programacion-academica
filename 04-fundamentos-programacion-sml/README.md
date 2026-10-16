@@ -6,13 +6,11 @@
 ![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene actividades, ejercicios y soluciones relacionadas con Fundamentos de Programación y Programación Funcional utilizando Standard ML.
-
-El objetivo de esta sección es organizar de forma profesional evidencias académicas relacionadas con cálculo lambda, funciones, recursividad, listas, patrones, tipos de datos, inferencia de tipos, árboles de expresión, signaturas, estructuras, tipos abstractos, listas perezosas y razonamiento lógico aplicado a la programación funcional.
+En esta materia trabajé programación funcional con Standard ML y fundamentos de cálculo lambda. Las seis actividades relacionan funciones, tipos, recursión, módulos y estructuras de datos.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Presentar ejercicios y actividades desarrolladas durante la formación académica en programación funcional, organizadas de manera clara, documentada y profesional.
 
@@ -143,7 +141,7 @@ Los documentos originales utilizados como base académica se conservan en:
 archivos-originales/programacion-funcional-sml/
 ```
 
-La carpeta actual contiene las versiones limpias, explicadas y profesionalizadas de las actividades seleccionadas.
+La carpeta actual contiene las versiones limpias, explicadas y documentadas de las actividades seleccionadas.
 
 ---
 
@@ -156,3 +154,11 @@ Standard ML
 ## Estado de la sección
 
 Esta sección queda completada con seis actividades representativas de la asignatura, cubriendo fundamentos teóricos y prácticos de programación funcional con SML.
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

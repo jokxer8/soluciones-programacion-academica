@@ -45,7 +45,7 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | [03 - Diseño y Análisis de Algoritmos](03-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
 | [04 - Fundamentos de Programación con SML](04-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
 | [05 - Bases de Datos](05-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
-| [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
+| [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y documentar los ejercicios. | Conservado |
 
 ---
 
@@ -216,9 +216,9 @@ Este repositorio evidencia competencias en:
 
 La carpeta `archivos-originales` conserva los documentos originales utilizados como base académica.
 
-A partir de esos documentos se seleccionan ejercicios representativos y se organizan en carpetas individuales con versiones limpias y profesionalizadas.
+A partir de esos documentos se seleccionan ejercicios representativos y se organizan en carpetas individuales con versiones limpias y documentadas.
 
-Cada ejercicio o actividad profesionalizada puede contener:
+Cada ejercicio o actividad documentada puede contener:
 
 ```text
 nombre-del-ejercicio/

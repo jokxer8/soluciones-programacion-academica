@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Ordeno mediante particiones alrededor de un pivote. n indica la cantidad de elementos. O(n log n) describe el crecimiento promedio del trabajo y O(n²) el peor caso; estas expresiones no son tiempos medidos en segundos.
+
+## Planteamiento
 
 Este ejercicio consiste en ordenar un arreglo de números enteros utilizando el algoritmo QuickSort.
 
@@ -60,3 +64,7 @@ Este enfoque permite ordenar los datos de manera eficiente en la mayoría de los
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

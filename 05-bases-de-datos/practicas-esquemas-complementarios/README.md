@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Reúno esquemas de apoyo para practicar la lectura de tablas y relaciones. Librería, hospital y comida rápida son casos independientes. Sus tablas no deben combinarse en una sola base de datos sin revisar primero los nombres y las dependencias.
+
 ## Descripción de la actividad
 
 Material de estudio y esquemas de librería, hospital y comida rápida conservados en la asignatura.
@@ -52,7 +56,7 @@ Ejecutar cada esquema en una base independiente de práctica. BOOKSTORE crea su 
 
 ## Relación con los archivos originales
 
-Los materiales proceden de la carpeta 30. Base de Datos del archivo académico del autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) registra el origen y las adaptaciones para publicación.
+Los modelos y documentos de apoyo se encuentran en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md), junto con las versiones publicadas y sus adaptaciones.
 
 ## Estado
 

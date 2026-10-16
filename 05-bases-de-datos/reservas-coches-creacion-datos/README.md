@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Creo un esquema con un coche por reserva y cargo datos de práctica. Una clave primaria identifica cada registro y una clave foránea enlaza registros relacionados. Los identificadores numéricos no expresan importes ni cantidades de coches.
+
 ## Descripción de la actividad
 
 Esquema de reservas con un coche por reserva, restricciones y datos de prueba.
@@ -76,7 +80,7 @@ En SQL Server, crear una base vacía BD_ReservasCoches y seleccionarla en SSMS. 
 
 ## Relación con los archivos originales
 
-Los archivos proceden de la carpeta académica Github indicada por el autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona cada origen con su copia publicada y registra las versiones y duplicados.
+Los enunciados, modelos y documentos de apoyo están relacionados en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md). Allí se pueden consultar las versiones publicadas y su tratamiento.
 
 ## Lenguaje y herramientas
 

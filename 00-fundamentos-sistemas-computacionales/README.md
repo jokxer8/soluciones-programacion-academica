@@ -7,11 +7,11 @@
 ![Nivel](https://img.shields.io/badge/Nivel-Fundamentos%20a%20Aplicaci%C3%B3n-green)
 ![Estado](https://img.shields.io/badge/Estado-Incorporado%20y%20documentado-brightgreen)
 
-Trabajos de representación de datos, programación C, ensamblador y estructuras dinámicas realizados durante mi formación en Ciencias de la Computación. Los enunciados identifican la asignatura como «Fundamentos de Sistemas Computacionales», ICC-133; aquí se utiliza el nombre indicado para el portafolio.
+Trabajos de representación de datos, programación C, ensamblador y estructuras dinámicas realizados durante mi formación en Ciencias de la Computación. Los enunciados identifican la asignatura como «Fundamentos de Sistemas Computacionales», ICC-133; esta sección reúne mis trabajos de la asignatura.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Presentar los trabajos que conectan la representación de información con la construcción de programas en C y ensamblador. La sección muestra el recorrido desde bits y tipos de datos hasta estructuras dinámicas, interoperabilidad y un proyecto final con archivos.
 
@@ -131,3 +131,11 @@ C17, ensamblador x86-64, MSVC, GCC, FASM, NASM, archivos CSV y GitHub Actions. F
 **Kelvin César Del Castillo Torres**. Se preservan los créditos y enunciados de origen. Libros y módulos de Huawei se describen en el inventario, sin redistribuirlos como trabajo propio o como certificados obtenidos.
 
 [Volver al repositorio](../README.md)
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

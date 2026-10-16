@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Represento expresiones con árboles y las convierto a texto. En prefijo, el operador aparece antes de sus operandos; en postfijo, después. En infijo se sitúa entre ellos y los paréntesis permiten conservar la estructura de la expresión.
+
 ## Descripción de la actividad
 
 Esta actividad trabaja el uso de tipos de datos recursivos en Standard ML para representar árboles de expresión correspondientes a expresiones aritméticas.
@@ -128,7 +132,7 @@ Esta carpeta contiene una versión organizada, limpia y profesional de la activi
 
 ## Nota sobre datos personales
 
-Para mantener una presentación profesional y proteger información personal, se recomienda que el PDF utilizado como evidencia no contenga datos sensibles como ID, matrícula, correo, calificaciones o información privada.
+El PDF complementa la explicación y permite consultar el planteamiento académico de la actividad.
 
 En caso de que el documento original contenga datos personales, se debe subir una versión limpia o censurada.
 
@@ -137,3 +141,7 @@ En caso de que el documento original contenga datos personales, se debe subir un
 ## Estado
 
 Actividad organizada y documentada como parte del portafolio académico de Programación Funcional con SML.
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

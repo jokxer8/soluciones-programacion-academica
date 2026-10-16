@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Modelo distintas formas de calcular un pago mediante herencia y polimorfismo. Los importes del ejemplo son datos de práctica. En cada fórmula hay que distinguir cantidades monetarias, horas y tasas: una tasa de 0.10 equivale al 10 %, mientras que 10 como multiplicador tendría otro significado.
+
+## Planteamiento
 
 Este ejercicio consiste en crear un sistema de nómina utilizando programación orientada a objetos.
 
@@ -91,3 +95,7 @@ La clase abstracta `Empleado` define una estructura común para todos los emplea
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

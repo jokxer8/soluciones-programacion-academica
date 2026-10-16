@@ -6,13 +6,11 @@
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-red)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene ejercicios orientados al diseño, análisis e implementación de algoritmos utilizando C#.
-
-Los ejercicios aquí organizados trabajan conceptos como recursividad, búsqueda eficiente, ordenamiento, programación dinámica, optimización, matrices, grafos implícitos, búsqueda en anchura y análisis de complejidad.
+En esta materia comparé formas de resolver problemas de búsqueda, ordenamiento y optimización. Reúno seis ejercicios con sus ejemplos y el análisis del tiempo y la memoria que requieren.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Evidenciar la capacidad de resolver problemas computacionales utilizando algoritmos eficientes, analizando su comportamiento y seleccionando estrategias adecuadas según el tipo de problema.
 
@@ -39,26 +37,32 @@ Esta sección representa una etapa más avanzada del proceso de formación, dond
 03-diseno-y-analisis-de-algoritmos/
 ├── busqueda-binaria/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── cambio-monedas-limitado/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── conteo-y-conexion-de-islas/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── fibonacci-recursivo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── ordenamiento-rapido-quicksort/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── subsecuencia-creciente-suma-maxima/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 └── README.md
@@ -116,6 +120,7 @@ Cada ejercicio está organizado en una carpeta independiente con la siguiente es
 ```text
 nombre-del-ejercicio/
 ├── README.md
+├── desarrollo.md
 └── solution.cs
 ```
 
@@ -136,3 +141,11 @@ Los problemas de programación dinámica y conexión de islas representan los ej
 ## Lenguaje utilizado
 
 C#
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

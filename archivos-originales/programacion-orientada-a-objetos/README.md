@@ -2,7 +2,7 @@
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura o área de Programación Orientada a Objetos.
 
-Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, tareas o materiales utilizados como base para construir las soluciones profesionalizadas del repositorio.
+Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, tareas o materiales utilizados como base para construir las soluciones documentadas del repositorio.
 
 ---
 
@@ -76,4 +76,4 @@ nombre-del-ejercicio/
 
 Los archivos de esta carpeta se conservan únicamente como respaldo académico.
 
-Las versiones limpias, explicadas y profesionalizadas de los ejercicios están organizadas en la carpeta principal de Programación Orientada a Objetos.
+Las soluciones explicadas de los ejercicios están organizadas en la carpeta principal de Programación Orientada a Objetos.

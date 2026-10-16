@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Documento el diseño de la flotilla realizado en equipo. Distingo la identidad de una aeronave de sus cambios de base o estado a lo largo del tiempo. Las claves identifican registros; las fechas permiten interpretar su historial.
+
 ## Descripción de la actividad
 
 Caso grupal de diseño de una flotilla con mantenimiento e historial de bases y estados.
@@ -70,7 +74,7 @@ Revisar el informe final, abrir el DER en diagrams.net y comparar las claves con
 
 ## Relación con los archivos originales
 
-Los archivos proceden de la carpeta académica Github indicada por el autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona cada origen con su copia publicada y registra las versiones y duplicados.
+Los enunciados, modelos y documentos de apoyo están relacionados en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md). Allí se pueden consultar las versiones publicadas y su tratamiento.
 
 ## Autoría
 

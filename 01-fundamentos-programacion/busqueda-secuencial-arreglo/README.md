@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Busco un valor recorriendo el arreglo desde el principio. Los índices de C# empiezan en 0: el índice 2 identifica el tercer elemento. Si se muestra una posición para el usuario, hay que comprobar si el programa suma 1 al índice.
+
+## Planteamiento
 
 Este ejercicio consiste en buscar un número dentro de un arreglo de enteros utilizando el método de búsqueda secuencial.
 
@@ -74,3 +78,7 @@ Si termina el recorrido sin encontrar el número, retorna -1 para indicar que el
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

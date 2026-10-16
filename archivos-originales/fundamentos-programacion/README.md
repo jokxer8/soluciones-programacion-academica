@@ -2,7 +2,7 @@
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura o área de Fundamentos de Programación trabajada principalmente con C#.
 
-Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, parciales o materiales utilizados como base para construir las soluciones profesionalizadas del repositorio.
+Los documentos almacenados aquí funcionan como respaldo académico de ejercicios, prácticas, parciales o materiales utilizados como base para construir las soluciones documentadas del repositorio.
 
 ---
 
@@ -72,4 +72,4 @@ nombre-del-ejercicio/
 
 Los archivos de esta carpeta se conservan únicamente como respaldo académico.
 
-Las versiones limpias, explicadas y profesionalizadas de los ejercicios están organizadas en la carpeta principal de Fundamentos de Programación.
+Las soluciones explicadas de los ejercicios están organizadas en la carpeta principal de Fundamentos de Programación.

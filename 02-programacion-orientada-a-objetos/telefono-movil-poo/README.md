@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Agrupo las características de un teléfono y sus componentes mediante objetos. El precio, la capacidad de batería y las medidas de pantalla representan magnitudes diferentes; deben leerse con la unidad que acompañe al dato. mAh expresa capacidad de carga y no una duración fija en horas.
+
+## Planteamiento
 
 Este ejercicio consiste en modelar un teléfono móvil utilizando los principios de la programación orientada a objetos.
 
@@ -90,3 +94,7 @@ En este caso, un teléfono móvil contiene una batería y una pantalla. Esto rep
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

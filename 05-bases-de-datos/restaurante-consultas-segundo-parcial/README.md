@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Resuelvo seis requerimientos sobre la atención del restaurante. DISTINCT elimina filas repetidas del resultado; EXISTS comprueba si existe alguna coincidencia y una CTE da nombre a una consulta dentro de una instrucción. En cálculos porcentuales, 0.10 representa el 10 %.
+
 ## Descripción de la actividad
 
 Seis requerimientos SQL sobre órdenes, productos, clientes, meseros y propinas.
@@ -79,7 +83,7 @@ Ejecutar 01-base.sql y después solution.sql en SSMS. El primer archivo elimina 
 
 ## Relación con los archivos originales
 
-Los archivos proceden de la carpeta académica Github indicada por el autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona cada origen con su copia publicada y registra las versiones y duplicados.
+Los enunciados, modelos y documentos de apoyo están relacionados en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md). Allí se pueden consultar las versiones publicadas y su tratamiento.
 
 ## Lenguaje y herramientas
 

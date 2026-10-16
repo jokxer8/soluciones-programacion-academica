@@ -1,6 +1,6 @@
 # Auditoría de publicación
 
-Revisión de la carpeta «32. Funds de Sist. Computacionales», 15 de octubre de 2026 (hora de Santo Domingo).
+Revisión de los materiales de Fundamentos de Sistemas Computacionales, 15 de octubre de 2026 (hora de Santo Domingo).
 
 ## Trazabilidad y selección
 

@@ -6,13 +6,11 @@
 ![Nivel](https://img.shields.io/badge/Nivel-Introductorio%20a%20Intermedio-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene ejercicios orientados al desarrollo de las bases esenciales de la programación utilizando C#.
-
-Los ejercicios aquí organizados trabajan conceptos iniciales como entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas de texto, métodos, validaciones y búsqueda secuencial.
+En esta materia trabajé la lógica de programación con C#: lectura de datos, decisiones, ciclos, arreglos y métodos. Reúno cinco ejercicios que explican cómo paso del planteamiento a una solución de consola.
 
 ---
 
-## Objetivo de la carpeta
+## Objetivo de la materia
 
 Evidenciar el dominio de los fundamentos necesarios para construir soluciones de programación claras, ordenadas y funcionales.
 
@@ -38,22 +36,27 @@ Esta sección representa la base del proceso de formación académica antes de a
 01-fundamentos-programacion/
 ├── analisis-cadena-texto/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── busqueda-secuencial-arreglo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── calculadora-menu/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── clasificacion-numeros/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 ├── estadisticas-basicas-arreglo/
 │   ├── README.md
+│   ├── desarrollo.md
 │   └── solution.cs
 │
 └── README.md
@@ -95,6 +98,7 @@ Cada ejercicio está organizado en una carpeta independiente con la siguiente es
 ```text
 nombre-del-ejercicio/
 ├── README.md
+├── desarrollo.md
 └── solution.cs
 ```
 
@@ -115,3 +119,11 @@ Su propósito principal es fortalecer la lógica de programación y preparar la 
 ## Lenguaje utilizado
 
 C#
+
+---
+
+## Recorrido de la materia
+
+En la tabla de actividades se puede abrir cada trabajo y consultar su objetivo, explicación, solución y documentos de apoyo. Los ejemplos se leen junto con sus unidades y condiciones; los resultados ejecutados se identifican con su informe de pruebas.
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

@@ -4,6 +4,10 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## Qué trabajé y cómo leer los ejemplos
+
+Relaciono los conceptos de datos, información y metadatos con el diseño de una base de datos. DBMS significa sistema gestor de bases de datos; DDL agrupa instrucciones de definición y DML las de manipulación de datos.
+
 ## Descripción de la actividad
 
 Resúmenes y cuestionarios sobre gestión de datos, modelos y arquitectura de un DBMS.
@@ -68,7 +72,7 @@ Leer los resúmenes y los cuestionarios. Después, relacionar sus conceptos con 
 
 ## Relación con los archivos originales
 
-Los archivos proceden de la carpeta académica Github indicada por el autor. El [inventario](../../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona cada origen con su copia publicada y registra las versiones y duplicados.
+Los enunciados, modelos y documentos de apoyo están relacionados en el [inventario de documentos](../../archivos-originales/bases-de-datos/INVENTARIO.md). Allí se pueden consultar las versiones publicadas y su tratamiento.
 
 ## Lenguaje y herramientas
 

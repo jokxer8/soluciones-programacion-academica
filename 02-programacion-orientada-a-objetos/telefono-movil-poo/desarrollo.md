@@ -2,7 +2,7 @@
 
 [Actividad](README.md) · [Código](solution.cs) · [Materia](../README.md)
 
-Esta guía reúne el análisis técnico ya documentado en la actividad. El README conserva el enunciado, los ejemplos y las explicaciones originales.
+En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
 ## Objetivo
 

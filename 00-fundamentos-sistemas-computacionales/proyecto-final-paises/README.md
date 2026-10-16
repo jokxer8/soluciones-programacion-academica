@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Uso una lista doblemente enlazada para cargar y consultar países desde un archivo CSV. Los 227 registros pertenecen al conjunto de datos de la actividad: no representan estadísticas actuales. Las cifras deben interpretarse con el nombre y la unidad de su columna.
+
 ## Descripción de la actividad
 
 Lista doblemente enlazada con nodo cabecera, carga CSV, consultas, inserciones, eliminación y cuatro criterios de ordenamiento.
@@ -90,7 +94,7 @@ Compilar solution.c como C17 y ejecutar desde esta carpeta para que el nombre re
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/proyecto-final-v2.pdf). El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 

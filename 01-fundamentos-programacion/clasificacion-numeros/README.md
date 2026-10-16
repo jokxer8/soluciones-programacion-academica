@@ -4,7 +4,11 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
-## Descripción del problema
+## Qué trabajé y cómo leer los ejemplos
+
+Clasifico cada entrada según su signo y su paridad. Un mismo número puede pertenecer a ambas clasificaciones: −4 es negativo y par. El cero se cuenta por separado por su signo y también cumple la condición de paridad porque su residuo al dividir entre 2 es 0.
+
+## Planteamiento
 
 Este ejercicio consiste en leer varios números enteros ingresados por el usuario y clasificarlos según sus características.
 
@@ -82,3 +86,7 @@ Además, acumula la suma total de todos los números ingresados.
 ## Lenguaje utilizado
 
 C#
+
+---
+
+[Volver a la materia](../README.md) · [Notación y estados](../../GUIA-DE-LECTURA.md)

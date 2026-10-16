@@ -8,6 +8,10 @@
 
 ---
 
+## Qué trabajé y cómo leer los ejemplos
+
+Relaciono las bases numéricas con la forma en que se guardan enteros y números con decimales. En el desarrollo explico cada conversión, el ancho en bits y la diferencia entre interpretar un patrón como entero o como punto flotante.
+
 ## Descripción de la actividad
 
 Sistemas de numeración, complemento a dos, IEEE 754 y tamaños de tipos.
@@ -80,7 +84,7 @@ Comenzar por las conversiones de desarrollo.md, contrastarlas con el parcial y c
 
 [Documento de la entrega](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/1er-parcial-kelvin.pdf). El [inventario](../../archivos-originales/fundamentos-sistemas-computacionales/INVENTARIO.md) permite rastrear las rutas y los hashes de origen.
 
-Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). La documentación de revisión posterior se distingue del trabajo histórico.
+Los resultados y sus límites están en [VALIDACION.md](../VALIDACION.md). Las correcciones se explican por separado de las entregas originales.
 
 ---
 
