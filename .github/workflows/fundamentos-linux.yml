@@ -1,0 +1,26 @@
+name: Fundamentos - C y FASM en Linux
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '00-fundamentos-sistemas-computacionales/c-y-ensamblador/**'
+      - '00-fundamentos-sistemas-computacionales/tests/compare-linux.py'
+      - '.github/workflows/fundamentos-linux.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Preparar GCC y FASM
+        run: sudo apt-get update && sudo apt-get install -y gcc fasm
+      - name: Compilar y comparar los doce pares con pipe y terminal
+        run: python3 00-fundamentos-sistemas-computacionales/tests/compare-linux.py
