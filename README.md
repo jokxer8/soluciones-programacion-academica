@@ -148,7 +148,7 @@ soluciones-programacion-academica/
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
-| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 65 pruebas SQL verificadas |
+| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 79 pruebas SQL verificadas |
 | [Gestión de países](00-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Compilado y verificado localmente |
 
 La [comparación C/FASM en Linux](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md) verifica doce pares de programas con **132 comparaciones correctas y 0 fallidas**.
@@ -157,7 +157,7 @@ La [comparación C/FASM en Linux](00-fundamentos-sistemas-computacionales/PRUEBA
 
 El proyecto de países se encuentra en [Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales/proyecto-final-paises), con su CSV y pruebas de estructuras dinámicas.
 
-El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [65 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones y configuración de conexión verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
+El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [79 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones, configuración de conexión y [almacenamiento PBKDF2 de contraseñas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md) verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
 
 El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
 

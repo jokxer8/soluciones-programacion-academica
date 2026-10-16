@@ -28,3 +28,8 @@ La revisión abarca los 329 archivos encontrados en la carpeta 30. Base de Datos
 Los originales del escritorio permanecen intactos. Los libros, las presentaciones docentes y los documentos generales se identifican como consulta; no se presentan como trabajos del alumno. Los ejemplos de lectura de archivos en C++ no se atribuyen a la implementación del hotel. Los contenedores ZIP no se publican como entregables adicionales: se publica el proyecto de la carpeta expandida.
 
 Las configuraciones de conexión privadas, documentos de empleados, cachés, paquetes restaurables y archivos internos quedan fuera del repositorio. El [inventario](../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona los archivos publicados con su procedencia y los [resultados de validación](VALIDACION.md) explican qué se ha comprobado.
+
+
+## Actualización de contraseñas — 16 de octubre de 2026
+
+La tarea #8 sustituye el mecanismo rápido por PBKDF2 y añade Fase2 repetible. Los originales se conservan; los hashes públicos identifican las fuentes corregidas. PasswordSecurity.cs, Fase2 y las pruebas son ampliaciones posteriores a la entrega. [Resultados: 79 correctas y 0 fallidas](hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md).

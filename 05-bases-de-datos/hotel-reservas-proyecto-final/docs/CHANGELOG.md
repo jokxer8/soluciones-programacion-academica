@@ -1,5 +1,13 @@
 # Changelog
 
+## [Portafolio — tarea #8] - 2026-10-16
+
+- PBKDF2-SHA256 con sal individual, formato versionado y coste configurable.
+- Migración de SHA256 al acceso correcto; comparación binaria y actualización condicional.
+- Claves nuevas preservan Unicode/espacios; lista administrativa sin hashes; edición vacía conserva la clave.
+- Fase2 repetible y 14 casos nuevos: 79 pruebas locales correctas.
+- [Guía de instalación y seguridad](SEGURIDAD-CONTRASENAS.md).
+
 ## [1.1.0] - 2026-04-06
 ### Agregado
 - Rol RECEPCION con migracion de usuarios existentes

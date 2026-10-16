@@ -51,7 +51,7 @@ La aplicación utiliza formularios para la interfaz y Database.cs y clases *Data
 
 ## Cómo revisar la actividad
 
-Seguir la instalación descrita en desarrollo.md. Ejecutar el esquema inicial y después la migración en una instancia de práctica; opcionalmente cargar el seed. Restaurar NuGet y compilar HotelReservas.csproj con Visual Studio y .NET Framework 4.8. El script inicial elimina HotelDB si existe.
+Seguir la instalación descrita en desarrollo.md. Ejecutar el esquema inicial, Fase1, el seed opcional y [Fase2 de contraseñas](Base%20de%20Datos/HotelDB_Fase2_Contrasenas.sql), en ese orden, en una instancia de práctica. Para actualizar una base existente se ejecuta solo Fase2 con la nueva aplicación; véase [migración](docs/SEGURIDAD-CONTRASENAS.md). Restaurar NuGet y compilar HotelReservas.csproj con Visual Studio y .NET Framework 4.8. El script inicial elimina HotelDB si existe.
 
 ---
 
@@ -75,12 +75,12 @@ El [workflow del hotel](https://github.com/jokxer8/soluciones-programacion-acade
 
 La [primera ejecución](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909), sobre la revisión `4128f7b`, **finalizó correctamente**: restauración, compilación y verificación de salidas aprobadas. Conserva la advertencia CS0168 ya documentada. La [guía de compilación automática](docs/COMPILACION-AUTOMATICA.md) explica los disparadores, la ejecución manual y el alcance de la comprobación.
 
-La [ejecución #2](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre `1b72dc8`, incorporó la instalación de una base LocalDB aislada y una primera batería de 53 casos. La [ejecución final](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603), sobre `998db69`, verifica **65 pruebas funcionales correctas**. El [informe funcional](docs/PRUEBAS-FUNCIONALES.md) registra los fallos corregidos, la reproducción y los pendientes. La batería prueba el código C# contra SQL Server real y el inicio técnico de formularios, sin recorrido visual completo.
+La [ejecución #2](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre `1b72dc8`, incorporó la instalación de una base LocalDB aislada y una primera batería de 53 casos. La [ejecución de cierre de #3/#5/#7](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603), sobre `998db69`, verifica **65 pruebas funcionales correctas**. El [informe funcional](docs/PRUEBAS-FUNCIONALES.md) registra los fallos corregidos, la reproducción y los pendientes. La batería prueba el código C# contra SQL Server real y el inicio técnico de formularios, sin recorrido visual completo.
 
 ## Seguimiento de mejoras y pruebas
 
 El [tablero de GitHub Projects](https://github.com/users/jokxer8/projects/1) reúne las tareas con los estados **Pendiente**, **En curso**, **Bloqueado** y **Completado**, además de prioridades P1 y P2.
 
-Instalación, reservas y operación de facturación/pagos se verificaron con SQL Server LocalDB. Las tareas #3, #5 y #7 quedaron [completadas](docs/CIERRE-TAREAS.md): permisos, cierre por inactividad, filtros por sucursal, exportaciones PDF/Excel y errores de conexión verificados. La mejora de contraseñas #8 permanece pendiente. El [plan de seguimiento](docs/SEGUIMIENTO.md) enlaza cada tarea, sus resultados y los criterios pendientes.
+Instalación, reservas y operación de facturación/pagos se verificaron con SQL Server LocalDB. Las tareas #3, #5 y #7 quedaron [completadas](docs/CIERRE-TAREAS.md): permisos, cierre por inactividad, filtros por sucursal, exportaciones PDF/Excel y errores de conexión verificados. La [tarea #8 de contraseñas](docs/SEGURIDAD-CONTRASENAS.md) está completada: PBKDF2-SHA256, migración compatible y **79 pruebas correctas** locales y en [Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210). El [plan de seguimiento](docs/SEGUIMIENTO.md) enlaza cada tarea, sus resultados y los criterios pendientes.
 
 [Volver a Bases de Datos](../README.md)

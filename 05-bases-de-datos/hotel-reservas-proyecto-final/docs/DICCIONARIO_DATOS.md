@@ -17,7 +17,7 @@ Cuentas de acceso al sistema.
 | IdUsuario | INT IDENTITY | NO | PK |
 | IdEmpleado | INT | SI | FK a Empleado (NULL = usuario sin empleado) |
 | NombreUsuario | VARCHAR(50) | NO | Login unico |
-| Clave | VARCHAR(128) | NO | Hash SHA256 en hexadecimal minuscula |
+| Clave | VARCHAR(256) | NO | PBKDF2-SHA256 versionado; SHA256 heredado solo hasta migración por acceso válido |
 | NombreCompleto | VARCHAR(100) | NO | Nombre para mostrar |
 | IdRol | INT | NO | FK a Roles |
 | Estado | BIT | NO | 1=activo, 0=inactivo |
@@ -268,7 +268,7 @@ Columnas: IdEmpleado, Empleado, NombreSucursal, TotalReservas, TotalFacturado
 ## Stored Procedures
 
 ### dbo.sp_ValidarLogin(@NombreUsuario, @Clave)
-Valida credenciales (Clave = SHA256 hash). Retorna fila con IdUsuario, NombreUsuario, NombreCompleto, Rol.
+Tras Fase2 recibe solo NombreUsuario y recupera la cuenta activa con Clave, IdUsuario, NombreUsuario, NombreCompleto y Rol. La verificación y migración criptográfica se realizan en C#; véase [contraseñas](SEGURIDAD-CONTRASENAS.md).
 
 ### dbo.sp_InsertarReserva(...)
 Inserta reserva validando disponibilidad y calculando subtotal.

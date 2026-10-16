@@ -53,6 +53,11 @@ $env:HOTELRESERVAS_CONNECTION_STRING = 'Server=(localdb)\MSSQLLocalDB;Database=H
 
 Compilar Release y ejecutar tests/Run-FunctionalTests.ps1 según la [guía funcional](PRUEBAS-FUNCIONALES.md). El ejecutor crea una instancia y archivos SQL exclusivos, trabaja en una ruta temporal corta compatible con las bibliotecas .NET Framework y copia los resultados al destino solicitado. Después elimina solo la base y la instancia de esa ejecución.
 
-Las evidencias académicas de origen no se alteran. Los hashes publicados se actualizan para las correcciones y se conservan los hashes de origen. La advertencia CS0168 permanece sin afectar la compilación. La mejora de derivación de contraseñas [#8](https://github.com/jokxer8/soluciones-programacion-academica/issues/8) es una mejora separada y sigue pendiente; tampoco se certifican concurrencia de múltiples operadores o un despliegue de producción.
+Las evidencias académicas de origen no se alteran. Los hashes publicados se actualizan para las correcciones y se conservan los hashes de origen. La advertencia CS0168 permanece sin afectar la compilación. La mejora de derivación de contraseñas [#8](https://github.com/jokxer8/soluciones-programacion-academica/issues/8) se completó posteriormente con [79 pruebas correctas y guía de migración](SEGURIDAD-CONTRASENAS.md); tampoco se certifican concurrencia de múltiples operadores o un despliegue de producción.
 
 Referencia de la dependencia restaurada: [iTextSharp 5.5.13.3 en NuGet](https://www.nuget.org/packages/iTextSharp/5.5.13.3).
+
+
+## Ampliación: tarea #8 completada
+
+PBKDF2-SHA256 con sal individual, coste configurable y migración por acceso correcto. Las 14 comprobaciones nuevas se suman a las 65 del cierre anterior: **79 correctas, 0 fallidas**, localmente y en [Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210). [Formato, instalación y límites](SEGURIDAD-CONTRASENAS.md).

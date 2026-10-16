@@ -1,6 +1,6 @@
 # Seguimiento de mejoras y pruebas del hotel
 
-El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) es la referencia de estados actualizados. Este documento registra el alcance y los resultados verificados de compilación y pruebas funcionales SQL del 15 de octubre de 2026.
+El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) es la referencia de estados actualizados. Este documento registra el alcance y los resultados verificados de compilación y pruebas funcionales SQL actualizados al 16 de octubre de 2026.
 
 ## Estados y prioridades
 
@@ -9,7 +9,7 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 - **Bloqueado:** requiere resolver una dependencia o disponer de un entorno.
 - **Completado:** trabajo terminado con evidencia registrada.
 
-P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras y comprobaciones posteriores. La instalación quedó validada en LocalDB; el [informe funcional](PRUEBAS-FUNCIONALES.md) registra 65 casos correctos y sus límites.
+P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras y comprobaciones posteriores. La instalación quedó validada en LocalDB; el [informe funcional](PRUEBAS-FUNCIONALES.md) registra 79 casos correctos y sus límites.
 
 ## Pruebas y mejoras registradas
 
@@ -22,7 +22,7 @@ P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras
 | [Reportes y exportaciones PDF y Excel](https://github.com/jokxer8/soluciones-programacion-academica/issues/5) | P2 | Completado | Sucursal, importes, permisos y exportaciones reabiertas/renderizadas |
 | [Compilación con GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/issues/6) | P1 | Completado | [Ejecución #1 correcta](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909) |
 | [Configuración externa de conexión](https://github.com/jokxer8/soluciones-programacion-academica/issues/7) | P2 | Completado | Configuración vacía/inválida y conexión indisponible comprobadas |
-| [Almacenamiento de contraseñas](https://github.com/jokxer8/soluciones-programacion-academica/issues/8) | P2 | Pendiente | Diseño de derivación y migración |
+| [Almacenamiento de contraseñas](https://github.com/jokxer8/soluciones-programacion-academica/issues/8) | P2 | Completado | PBKDF2, migración y cambios de clave: 14 casos nuevos, 79 totales correctos |
 
 Cada tarea incluye criterios de aceptación verificables. Al cerrarla se deben registrar los pasos y resultados obtenidos, usando datos ficticios. No se debe marcar una prueba como aprobada a partir de la compilación solamente.
 
@@ -46,4 +46,4 @@ Referencias: [plantilla oficial .NET Desktop](https://github.com/actions/starter
 
 ## Cierre de las tareas en curso
 
-Las tareas #3, #5 y #7 están completadas con [65 pruebas correctas y revisión de exportaciones](CIERRE-TAREAS.md). La mejora de contraseñas #8 permanece pendiente.
+Las tareas #3, #5 y #7 están completadas con [65 pruebas correctas y revisión de exportaciones](CIERRE-TAREAS.md). La tarea #8 también quedó [completada con 79 pruebas correctas](SEGURIDAD-CONTRASENAS.md), incluidas las 14 nuevas de contraseñas.

@@ -40,15 +40,15 @@ Los valores de las operaciones se pasan mediante `@parametros`. Algunas consulta
 
 ### Database.cs
 - `GetConnection()`: retorna `SqlConnection` con la cadena de conexion
-- `HashPassword(string)`: SHA256 en hexadecimal minuscula
+- `HashPassword(string)`: delega en PasswordSecurity; PBKDF2-SHA256 con sal aleatoria y coste versionado
 - `RegistrarAccion(...)`: INSERT en `dbo.AuditLog` (silencia errores para no interrumpir)
 - `ObtenerConfiguracion(clave, default)`: lee `dbo.ConfiguracionSistema`
 - Metodos de datos maestros: clientes, habitaciones, sucursales, etc.
 
 ## Flujo de Autenticacion
 1. `LoginForm` captura usuario/clave
-2. `Database.ValidarLogin(usuario, clave)` — llama `sp_ValidarLogin` con hash SHA256 de la clave
-3. SP compara con el hash almacenado en `dbo.Usuarios.Clave`
+2. `Database.ValidarLogin(usuario, clave)` — recupera con `sp_ValidarLogin` la credencial de la cuenta activa, sin enviar un hash como contraseña
+3. `PasswordSecurity.Verify` contrasta PBKDF2 o SHA256 heredado; si procede, migra atómicamente y relee rol/estado. [Detalle de seguridad](SEGURIDAD-CONTRASENAS.md)
 4. Si valido: popula `SesionUsuario` (singleton estatico) con `IdUsuario`, `Rol`, `NombreCompleto`
 5. Abre `MainForm`, que llama `ConfigurarSegunRol()` para mostrar/ocultar botones del sidebar
 

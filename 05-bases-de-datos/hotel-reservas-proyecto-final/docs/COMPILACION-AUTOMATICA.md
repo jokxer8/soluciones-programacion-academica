@@ -42,4 +42,4 @@ Abrir la ejecución en Actions y revisar el primer paso fallido: restauración p
 
 ## Ampliación final verificada
 
-Las tareas #3, #5 y #7 quedaron completadas con **65 pruebas correctas, 0 fallidas**, revisión de PDF/Excel y [evidencia detallada](CIERRE-TAREAS.md). La [ejecución final de Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603) corresponde a 998db69. Los pendientes descritos en la primera revisión de 53 casos se resolvieron en esta ampliación; la mejora de contraseñas #8 permanece abierta.
+Las tareas #3, #5 y #7 quedaron completadas con **65 pruebas correctas, 0 fallidas**, revisión de PDF/Excel y [evidencia detallada](CIERRE-TAREAS.md). La [ejecución final de Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603) corresponde a 998db69. Los pendientes descritos en la primera revisión de 53 casos se resolvieron en esta ampliación; la mejora #8 también quedó completada posteriormente con **79 pruebas correctas, 0 fallidas**, registradas en [Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210).

@@ -803,20 +803,20 @@
       "source": "Proyecto Hotel Final/docs/ARQUITECTURA.md",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/ARQUITECTURA.md",
       "sha256": "ce62a52feac3db3d4837d9551748390d5927cbe92d90e4dcd46ec31722364644",
-      "publishedSha256": "508574d87a679397dc2e2555fc0c5892c4643cbfce7fee1d3c937c09100bcb73",
+      "publishedSha256": "7570dfb241e09a2922b8c87e2f95a9b0a2eded5d8b6e2c1a6a7721c261852652",
       "adapted": true
     },
     {
       "source": "Proyecto Hotel Final/docs/CHANGELOG.md",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/CHANGELOG.md",
       "sha256": "3283cfaa4d36ad1a24918fafcd09d6f78564a86ff3dd603e2ece5c4807dc4dc9",
-      "publishedSha256": "3283cfaa4d36ad1a24918fafcd09d6f78564a86ff3dd603e2ece5c4807dc4dc9"
+      "publishedSha256": "b5b26de9fe822d8c82435b5da8028d3a7195470bda97b098efe1ec000a97d164"
     },
     {
       "source": "Proyecto Hotel Final/docs/DICCIONARIO_DATOS.md",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/DICCIONARIO_DATOS.md",
       "sha256": "bc135404e2820af091443a8637ea07bb8caf7f927662af77f58381e9e30de8b0",
-      "publishedSha256": "bc135404e2820af091443a8637ea07bb8caf7f927662af77f58381e9e30de8b0"
+      "publishedSha256": "1d9701537fa4a2568810de4bf9f9a21a9d7ca4f6ec45a69858a0204dc4add79f"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/AdministracionData.cs",
@@ -1177,7 +1177,7 @@
       "source": "Proyecto Hotel Final/LEER.txt",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/LEER.txt",
       "sha256": "63db086a683422424532c2c34c6de34cbfb903af4c58ad91db5738dbc787c3ac",
-      "publishedSha256": "63b970f1d79575f292ab86ffff86b1d9f2b0618391e6fe6ba2db27e0ccb7fa79",
+      "publishedSha256": "a709fa2cd9311eb38e6bfa16444c112357b218f9eeb631f9f3d0614a5e80e9d7",
       "adapted": true
     },
     {

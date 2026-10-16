@@ -2,9 +2,9 @@
 
 ## Resultado actual
 
-**65 pruebas correctas y 0 fallidas**, verificadas localmente con LocalDB 17.0.4025.3 y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603), revisión 998db69. Los [casos y resultados](evidencias/functional-results.tsv) se conservan junto a la documentación. El [cierre de #3, #5 y #7](CIERRE-TAREAS.md) registra la matriz de roles, las exportaciones y los errores corregidos.
+**79 pruebas correctas y 0 fallidas**, verificadas localmente con LocalDB 17.0.4025.3 y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210), revisión 4cfeb99. Los [casos y resultados](evidencias/passwords-functional-results.tsv) se conservan junto a la documentación. El [cierre de #3, #5 y #7](CIERRE-TAREAS.md) registra la matriz de roles, las exportaciones y los errores corregidos.
 
-La batería llama al C# compilado contra SQL Server real. Cada ejecución instala esquema, migración y seed, en ese orden, en una instancia aleatoria HotelQA con archivos exclusivos. No usa bases personales ni inicia el servidor localhost. Al terminar elimina únicamente su base e instancia. Los archivos de prueba se generan en una ruta temporal corta y se copian al destino de evidencias solicitado.
+La batería llama al C# compilado contra SQL Server real. Cada ejecución instala esquema, Fase1, seed y Fase2 de contraseñas, en ese orden; repite Fase2 para comprobar su idempotencia, en una instancia aleatoria HotelQA con archivos exclusivos. No usa bases personales ni inicia el servidor localhost. Al terminar elimina únicamente su base e instancia. Los archivos de prueba se generan en una ruta temporal corta y se copian al destino de evidencias solicitado.
 
 ## Reproducción
 
@@ -27,7 +27,7 @@ Los resultados se guardan en tests/results, excluido de Git. El script falla si 
 | #5 Reportes | 24 consultas, fechas/sucursal, ocupación/importes de control, ausencia de datos, 3 XLSX y 5 PDF reabiertos y revisados | Completado |
 | #6 Actions | Restauración, compilación, archivos requeridos y batería SQL automática | Completado |
 | #7 Configuración | Variable externa, ejemplo local, cadenas vacías/inválidas, servidor inaccesible y mensajes sin datos privados | Completado |
-| #8 Contraseñas | Mejorar derivación y migración del mecanismo SHA256 académico | Pendiente |
+| #8 Contraseñas | PBKDF2, sal/coste, migración SHA256, alta y cambios de clave; 14 casos nuevos | Completado |
 
 ## Correcciones comprobadas
 
@@ -35,7 +35,9 @@ La primera fase corrigió opciones SET necesarias para índices, colisiones del 
 
 La fase final añadió autorización efectiva en los módulos restringidos, saneó errores de conexión, corrigió la recursión de cierre por inactividad, filtros por sucursal y descuento del detalle operativo, agregó exportación PDF y la dependencia BouncyCastle faltante, y ajustó anchos/formatos del Excel. El [informe de cierre](CIERRE-TAREAS.md) permite revisar cada criterio y sus evidencias.
 
-El primer conjunto de [53 casos](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702) forma parte del historial; no sustituye la comprobación final de 65. Durante el desarrollo se corrigieron también errores del propio test, que no se atribuyen al código del hotel.
+El primer conjunto de [53 casos](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702) forma parte del historial; no sustituye la comprobación actual de 79 (el cierre anterior de #3/#5/#7 tenía 65). Durante el desarrollo se corrigieron también errores del propio test, que no se atribuyen al código del hotel.
+
+La [guía de contraseñas](SEGURIDAD-CONTRASENAS.md) detalla las 14 comprobaciones añadidas y el despliegue de Fase2. Los [65 resultados anteriores](evidencias/functional-results.tsv) se conservan como historial.
 
 ## Límites
 
