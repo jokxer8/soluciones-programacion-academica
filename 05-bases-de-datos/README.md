@@ -6,7 +6,7 @@
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**, organizados a partir de la carpeta académica 30. Base de Datos, incluidas sus subcarpetas Github y Proyecto Hotel Final.
+Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**.
 
 Los trabajos presentan la evolución desde fundamentos y diseño entidad-relación hasta normalización, implementación relacional, consultas y programación con SQL Server.
 
