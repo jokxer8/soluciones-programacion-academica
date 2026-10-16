@@ -80,7 +80,7 @@ La sección complementa las áreas de programación del repositorio mostrando c�
 
 ## Organización de cada actividad
 
-Cada actividad mantiene el esquema utilizado en la sección de SML:
+Cada actividad mantiene el esquema:
 
 ```text
 nombre-de-la-actividad/
@@ -90,7 +90,7 @@ nombre-de-la-actividad/
 └── evidencia y modelos
 ```
 
-Las actividades teóricas y de modelado se documentan sin inventar código SQL. Las evidencias de evaluación se conservan como respaldo del trabajo realizado.
+Las actividades teóricas y de modelado se documentan. Las evidencias de evaluación se conservan como respaldo del trabajo realizado.
 
 ---
 
@@ -110,7 +110,7 @@ SQL, principalmente T-SQL para Microsoft SQL Server; C# con Windows Forms y .NET
 
 ## Estado de la sección
 
-Sección completada con nueve actividades de fundamentos, diseño, SQL y proyecto final, un apartado de esquemas de apoyo y un conjunto de evidencias de evaluación. El autor informa que aprobó la asignatura; la captura del primer parcial respalda esa evaluación concreta y no sustituye una certificación de nota final.
+Sección completada con nueve actividades de fundamentos, diseño, SQL y proyecto final, un apartado de esquemas de apoyo y un conjunto de evidencias de evaluación. Se aprobó la asignatura.
 
 Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El orden de ejecución, las dependencias y los scripts que recrean datos se explican en cada actividad y en [VALIDACION.md](VALIDACION.md).
 
