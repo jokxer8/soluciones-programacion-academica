@@ -37,3 +37,7 @@ El script compila en un directorio temporal y escribe el informe en `tests/resul
 El archivo RAPTOR se conserva como diagrama editable, sin afirmar que se ejecutó en RAPTOR. Los diagramas PNG se revisaron visualmente. Los PDF de lectura e investigación se revisaron y se retiraron los identificadores de las copias públicas, manteniendo el contenido y los créditos. El primer parcial solo dispone de enunciado: sus ejemplos explican la lectura de condiciones, no una solución entregada o probada.
 
 Las pruebas cubren los casos indicados. No incluyen todas las representaciones posibles de entradas inválidas, codificaciones de texto ni valores extremos de punto flotante.
+
+## Confirmación en GitHub Actions
+
+La [ejecución de Windows del commit 419155e](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711) compiló los cinco programas y confirmó **32 casos correctos y 0 fallidos**. La [compilación y validación del hotel](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703), ya ubicado en la materia 06, también terminó correctamente con **79 pruebas SQL correctas y 0 fallidas**.

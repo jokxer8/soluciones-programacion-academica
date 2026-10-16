@@ -48,6 +48,9 @@ Para compilar una solución con GCC: `g++ -std=c++17 -Wall -Wextra -pedantic sol
 
 ## Estado y resultados
 
+Los cinco programas pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711).
+
+
 La sección reúne siete actividades, cinco programas preparados para compilar y documentos de lectura, diagramación y evaluación. Las diferencias entre entregas y versiones compilables están descritas en [VALIDACION.md](VALIDACION.md). El primer parcial se conserva como enunciado sin solución entregada disponible. El informe de resultados generales de la clase, los libros y los videos docentes no se publican como evidencia de trabajo propio.
 
 [Validación](VALIDACION.md) · [Inventario](../archivos-originales/introduccion-programacion/INVENTARIO.md) · [Guía de lectura](../GUIA-DE-LECTURA.md)
