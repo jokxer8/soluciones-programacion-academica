@@ -1,0 +1,718 @@
+{
+  "subject": "Introducción a la Programación",
+  "records": [
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/3-10.drawio.png",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-001",
+      "bytes": 28428,
+      "sha256": "8d31402f7df5d1efa959c4144cf2cdc0af0857e10fade6eebff7ac3130443d84",
+      "document": "3.10.drawio.png",
+      "publishedSha256": "8d31402f7df5d1efa959c4144cf2cdc0af0857e10fade6eebff7ac3130443d84"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/3-11.drawio.png",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-002",
+      "bytes": 37652,
+      "sha256": "b023ca531487198ffeb0a019313a9ebd96d06c01c27971e12da0f0b69939c8ad",
+      "document": "3.11.drawio.png",
+      "publishedSha256": "b023ca531487198ffeb0a019313a9ebd96d06c01c27971e12da0f0b69939c8ad"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/3-12.drawio.png",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-003",
+      "bytes": 32750,
+      "sha256": "e0f11c47cba9a53c2ae343d21fd5fceb29ee37f73ecd5ede39564c675a08db4b",
+      "document": "3.12.drawio.png",
+      "publishedSha256": "e0f11c47cba9a53c2ae343d21fd5fceb29ee37f73ecd5ede39564c675a08db4b"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/3-9.drawio.png",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-004",
+      "bytes": 26075,
+      "sha256": "2bd54aca49eadb574183c8a1e237ebf6e702d8eb5a27e825a9d3f17c00d235b7",
+      "document": "3.9.drawio.png",
+      "publishedSha256": "2bd54aca49eadb574183c8a1e237ebf6e702d8eb5a27e825a9d3f17c00d235b7"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-005",
+      "bytes": 107927,
+      "sha256": "855c3ba677616fc3d8ef55005bd9a8e655f22cf682fb1673347c8ad8b0526060",
+      "document": "Calculo de Indice Academico-pdf.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/coincidencias/codigo-original.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-006",
+      "bytes": 1425,
+      "sha256": "35acda722cb795ffd91ee1ee436c49b7409475d102c2cedb32319331bd87cb17",
+      "document": "Codigo.txt",
+      "publishedSha256": "35acda722cb795ffd91ee1ee436c49b7409475d102c2cedb32319331bd87cb17"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/algoritmo-dfd.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-007",
+      "bytes": 117373,
+      "sha256": "011d6960b7b5c6e87aa71a3ace87ab31fc0066d61a49e3589222c5c3de968285",
+      "document": "Grupo 2 - AlgoritmoDFD - Foro 1.pdf",
+      "publishedSha256": "011d6960b7b5c6e87aa71a3ace87ab31fc0066d61a49e3589222c5c3de968285"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/analisis.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-008",
+      "bytes": 169519,
+      "sha256": "8755a2050f5f8f7b46d133bf38de2efa24811eefe55779a1848e9463b0008116",
+      "document": "Grupo 2 - Analisis Problema Computable - Foro 1.pdf",
+      "publishedSha256": "8755a2050f5f8f7b46d133bf38de2efa24811eefe55779a1848e9463b0008116"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/codigo-original.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-009",
+      "bytes": 792,
+      "sha256": "141accaffa7106d9795adb9c9c58b9b9c8d6956c2e01addbfe94e88d1cb2eef2",
+      "document": "Grupo 2 - Codigo - Foro 1.txt",
+      "publishedSha256": "141accaffa7106d9795adb9c9c58b9b9c8d6956c2e01addbfe94e88d1cb2eef2"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-010",
+      "bytes": 581935,
+      "sha256": "9702e0cb0b1fc117e9323d72eb13a385415b3899b38bd82301a53aa1ad6260b3",
+      "document": "guia-7.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-011",
+      "bytes": 577053,
+      "sha256": "02e66bd275fbb66384bb09418dbff8e7bf398a05960fc24d27298b4a4ecb2bee",
+      "document": "ICC-101 Introduccion a Algoritmia (Ejercicios y Cronograma) -Lunes.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/parcial-1/enunciado.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-012",
+      "bytes": 2613,
+      "sha256": "5db11300d8b2f3923788156926880879ad10e71c5f09cf31dbdea8f94bf1408b",
+      "document": "ICC-101- Parcial 1.txt",
+      "publishedSha256": "5db11300d8b2f3923788156926880879ad10e71c5f09cf31dbdea8f94bf1408b"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/coincidencias/enunciado.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-013",
+      "bytes": 777,
+      "sha256": "d1936466ff6f102c3ebcebe49c3ec5c51f0bc2daf0811fd90d86f63c334c8a32",
+      "document": "ICC-101- Tarea 2.txt",
+      "publishedSha256": "d1936466ff6f102c3ebcebe49c3ec5c51f0bc2daf0811fd90d86f63c334c8a32"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-014",
+      "bytes": 83456,
+      "sha256": "83acf08f9e2cec5c077057189810715ce12d90fa4b265844f83de1cf9bd62d69",
+      "document": "ICC-101-T Introducción a la Algoritmia.doc"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-015",
+      "bytes": 9283793,
+      "sha256": "7be3045ed895a0a626690934ebfae2496bfd8d275cfa1c74cbe60a617bb3fdb9",
+      "document": "Instructivo  5 - Bonos.mp4"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-016",
+      "bytes": 411495,
+      "sha256": "d153b3f084b7646517ce1a62a80dd22c9defe50d3f8e2b0db92b246af90ac3f2",
+      "document": "Instructivo  6 - ICC-102 - Analisis Problema Computable-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-017",
+      "bytes": 201842,
+      "sha256": "c2543a856bd1302b0b8753dfce99130e790324fcc680b6477db8391bace9d907",
+      "document": "Instructivo  7 - ICC-102 - Estructura de carpetas-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-018",
+      "bytes": 553155,
+      "sha256": "8331fcef484eaa8ff2f9b1c567bde0e1dcfbc8f497550fc278f37fc4a5dbd4a2",
+      "document": "Reglamento PUCMM.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-019",
+      "bytes": 447562,
+      "sha256": "e6243d4f54898f656de4556005cee03e34e03aa159f89afb8da571ecc1d74438",
+      "document": "Solucion Ejercicios de Practica en clase 2-pdf.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/coincidencias/algoritmo.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-020",
+      "bytes": 685,
+      "sha256": "056a9ac715eeeda554dabc72561e06a318d40e3056863748698f4e8edfd31f6a",
+      "document": "tarea_2_de_introduccion_al_algortimo.txt",
+      "publishedSha256": "056a9ac715eeeda554dabc72561e06a318d40e3056863748698f4e8edfd31f6a"
+    },
+    {
+      "target": null,
+      "treatment": "Duplicado del diagrama editable publicado.",
+      "reference": "IP-021",
+      "bytes": 13907,
+      "sha256": "ec8ee42187d1a779ad49bb692aed9e4dd4b3cda9fce88cb0501d740d73ab4398",
+      "document": "DFD - Tarea1.rap"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-022",
+      "bytes": 13776,
+      "sha256": "932a75e53822b6b442773f0cee0eb2ef82bb3bf11f0f1aa6f946342f630293f1",
+      "document": "DFD - Tarea1.rap.backup0"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-023",
+      "bytes": 12447,
+      "sha256": "d3a0a07ba0f15d409c32ca06d4199240e97f4516597a2e7c64ef231fe166a22d",
+      "document": "DFD - Tarea1.rap.backup1"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-024",
+      "bytes": 13499,
+      "sha256": "3a2b8d9e5c7806f93a00aa501afa2910f955a473975f5c00fafee960bdf1a2fd",
+      "document": "DFD - Tarea1.rap.backup2"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-025",
+      "bytes": 13645,
+      "sha256": "9dbf89f75ef43f75ff7e4a24905374681059c32d78e785dd5bfaf9d565796609",
+      "document": "DFD - Tarea1.rap.backup3"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-026",
+      "bytes": 563741,
+      "sha256": "fbeabc34925df98b4b80e0428b0dd68a2aab8d028a8c2330ac9dece293a1300d",
+      "document": "Lecture 1 (Fundamentos de algoritmia)-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-027",
+      "bytes": 605239,
+      "sha256": "1e94f83d23e3389c9aa35b90c9973913ee04ffd7b86eaeb55636d0902f07bb29",
+      "document": "Lecture 2 (Fundamentos de Programacion)-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-028",
+      "bytes": 678749,
+      "sha256": "7c76d31b33acb19a3fd05f10b0f5d6de8ff428c23b5842812e1769ce4bc9ee25",
+      "document": "Lecture 3 (Estructuras de control)-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-029",
+      "bytes": 716920,
+      "sha256": "7bcb302b0511e35722694646d5a95eceebb128ecad4d939871c6db2c240e27c8",
+      "document": "Lecture 4 (Funciones)-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-030",
+      "bytes": 705419,
+      "sha256": "25542e2ccdf16cec6d28edacd21a40c71de364d7fb9223798dfc808d394fed11",
+      "document": "Lecture 5 (Arreglos).pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-031",
+      "bytes": 430885,
+      "sha256": "bc3161d644c65a5e7cc724eaf464d6a504717a48a60adc9b48f59d0e00643ee3",
+      "document": "Ejercicios de Practica 1-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-032",
+      "bytes": 390615,
+      "sha256": "596343f3b8b28900315c77bccfc452d26324eb2a5514a9ddae793d0c0253c709",
+      "document": "Ejercicios de Practica 2-pdf.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/fibonacci/fragmento-original.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-033",
+      "bytes": 251,
+      "sha256": "2fe53d2163545eebef15bf04dd77d6e05a823ad211672cb5236753cb6e1f1dbb",
+      "document": "Ejercicios de Practica 3- Corrida escritorio.txt",
+      "publishedSha256": "2fe53d2163545eebef15bf04dd77d6e05a823ad211672cb5236753cb6e1f1dbb"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-034",
+      "bytes": 576962,
+      "sha256": "46099878c7252daeed03522724842864076a3f7d34b1cc74598ac4645a5873e8",
+      "document": "ICC-101 Introduccion a Algoritmia (Ejercicios y Cronograma) -Lunes.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-035",
+      "bytes": 423295,
+      "sha256": "08011a813c2eab52e6aaadd7bfd6c901703c1e1430c6bd432c3bf338ee748b0c",
+      "document": "Solucion Ejercicios de Practica 1-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-036",
+      "bytes": 447562,
+      "sha256": "e6243d4f54898f656de4556005cee03e34e03aa159f89afb8da571ecc1d74438",
+      "document": "Solucion Ejercicios de Practica en clase 2-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-037",
+      "bytes": 261486,
+      "sha256": "11b48daf520c6fe15be4ba2459b700202fced84f2377cf037a24cfde4c7ac3ff",
+      "document": "Grupo 2.zip"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/rubrica-foro-2-grupo-1.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-038",
+      "bytes": 25241,
+      "sha256": "78af622f9f1779a8a8f3e90774fe720831b59e09244f372937d8ce9d601b0d50",
+      "document": "Grupo1_-_Rubrica_Foro2.docx",
+      "publishedSha256": "78af622f9f1779a8a8f3e90774fe720831b59e09244f372937d8ce9d601b0d50"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/rubrica-foro-2-grupo-3.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-039",
+      "bytes": 25123,
+      "sha256": "dc127b46734ae5ac004bffe88cd27a7ebea96e56fe6bf8ec29fbdbd724958609",
+      "document": "Grupo3_-_Rubrica_Foro2.docx",
+      "publishedSha256": "dc127b46734ae5ac004bffe88cd27a7ebea96e56fe6bf8ec29fbdbd724958609"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-040",
+      "bytes": 19344,
+      "sha256": "83e72c5ec69e4bd1f14ac205b63797fda5dd287897fd2b5e559bbb1609d3d06f",
+      "document": "ICC-101-Plantilla Rubrica retroalimentacion de foros.docx"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/retroalimentacion-a-grupo-1.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-041",
+      "bytes": 102394,
+      "sha256": "d2d2fbee10d5170e7278ad45810851e7431e9fcfcad21eb96d0d90796886453c",
+      "document": "Para el Grupo 1 - Grupor 2 - Rubrica - Foro1.pdf",
+      "publishedSha256": "d2d2fbee10d5170e7278ad45810851e7431e9fcfcad21eb96d0d90796886453c"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/retroalimentacion-a-grupo-3.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-042",
+      "bytes": 102304,
+      "sha256": "b2a4346f8684fceb326f2c0e9ed62565a8c933ad52c956764a376b35c21a2cc9",
+      "document": "Para el Grupo 3 - Grupor 2 - Rubrica - Foro1.pdf",
+      "publishedSha256": "b2a4346f8684fceb326f2c0e9ed62565a8c933ad52c956764a376b35c21a2cc9"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/respuesta-a-grupo-3.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-043",
+      "bytes": 14346,
+      "sha256": "4d93fc5c9b4e8804c62b49465a865d9e2e4fde3dfb60fb5f9519f92435bbdb7b",
+      "document": "Plantilla_Rubrica_Informe_retroalimentacion_Recibida_grupo2..docx",
+      "publishedSha256": "4d93fc5c9b4e8804c62b49465a865d9e2e4fde3dfb60fb5f9519f92435bbdb7b"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/respuesta-a-grupo-1.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-044",
+      "bytes": 15158,
+      "sha256": "8a0b4798ae74f4a3a0cff209520695ddfe0359008bdebc5eb8aadd565b5bb0b3",
+      "document": "Plantilla_Rubrica_Informe_retroalimentacion_Recibida_grupo2.docx",
+      "publishedSha256": "8a0b4798ae74f4a3a0cff209520695ddfe0359008bdebc5eb8aadd565b5bb0b3"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/rubrica-grupo-1.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-045",
+      "bytes": 24814,
+      "sha256": "ea90457a115c0a1df9afa80d8f0b7ef3abcb1ff128db023b963c8ef33f41d5c2",
+      "document": "Plantilla_Rubrica_retroalimentacion_de_foros_Grupo_1_.docx",
+      "publishedSha256": "ea90457a115c0a1df9afa80d8f0b7ef3abcb1ff128db023b963c8ef33f41d5c2"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/piramide/rubrica-grupo-3.docx",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-046",
+      "bytes": 25268,
+      "sha256": "91016f28ad63b4fda12354aacd77d0c6f855f15f1353e09c1c28202db5e6f5dd",
+      "document": "Plantilla_Rubrica_retroalimentacion_de_foros_Grupo_3_.docx",
+      "publishedSha256": "91016f28ad63b4fda12354aacd77d0c6f855f15f1353e09c1c28202db5e6f5dd"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-047",
+      "bytes": 72301,
+      "sha256": "e5bd395131cfc4d0136581ed155c2bbcd476d2f7adf478c89a24a276332dc1d4",
+      "document": "Grupo 1 - AlgoritmoDFD - Foro 1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-048",
+      "bytes": 407692,
+      "sha256": "63c3605c1ab982723a94fa876d180cb02e814f839113c556db7ee51fc3fda5c8",
+      "document": "Grupo 1 - Analisis de Problema Computable - Foro 1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-049",
+      "bytes": 602,
+      "sha256": "a2ebddd90e9c9ee9320d54800cd53371d7401a5458d7d6bdad123933cc3d34dd",
+      "document": "Grupo 1 - Codigo - Foro 1.txt"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-050",
+      "bytes": 44493,
+      "sha256": "e47ccaaa84a1abcb9d1f25f2e503b7a92241b5d5153c989086bb198f2e24645d",
+      "document": "Grupo #3 - AlgoritmoDFD – Foro #1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-051",
+      "bytes": 89602,
+      "sha256": "d6cb6a56f1662c5a47aa70c6c913b513030298e68a080721d3e8e9536c1006ad",
+      "document": "Grupo #3 - Análisis - Foro #1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Trabajo de otros grupos; no se publica como entrega propia.",
+      "reference": "IP-052",
+      "bytes": 396,
+      "sha256": "0975b9ac75ac1da540a24ba79e9870736e3d95efbc91357dc213580dbd16c994",
+      "document": "Grupo #3 - Codigo - Foro #1.txt"
+    },
+    {
+      "target": null,
+      "treatment": "Duplicado de la entrega del grupo 2 publicada.",
+      "reference": "IP-053",
+      "bytes": 117373,
+      "sha256": "011d6960b7b5c6e87aa71a3ace87ab31fc0066d61a49e3589222c5c3de968285",
+      "document": "Grupo 2 - AlgoritmoDFD - Foro 1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Duplicado de la entrega del grupo 2 publicada.",
+      "reference": "IP-054",
+      "bytes": 169519,
+      "sha256": "8755a2050f5f8f7b46d133bf38de2efa24811eefe55779a1848e9463b0008116",
+      "document": "Grupo 2 - Analisis Problema Computable - Foro 1.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Duplicado de la entrega del grupo 2 publicada.",
+      "reference": "IP-055",
+      "bytes": 792,
+      "sha256": "141accaffa7106d9795adb9c9c58b9b9c8d6956c2e01addbfe94e88d1cb2eef2",
+      "document": "Grupo 2 - Codigo - Foro 1.txt"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-056",
+      "bytes": 4096713,
+      "sha256": "2172bc7b7135e9f7be18de85d6b137038ca76a8cf3f7d6626352ad9652463f19",
+      "document": "Instructivo  1 - Consulta de asistencia a clases en 5 pasos.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-057",
+      "bytes": 402359,
+      "sha256": "a561c15fb9ab2a6f9692977adf1e342b5a06b44415442ac08f250856d8984579",
+      "document": "Instructivo  2 - Instalar visual studio y acceder a replit-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-058",
+      "bytes": 701194,
+      "sha256": "cc010b337052d1408dc76d3a8e1ab50bdca0102c5e911c5be2b03060a63ff205",
+      "document": "Instructivo  3 - Crear primer programa paso a paso-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-059",
+      "bytes": 149212668,
+      "sha256": "363d63984a6a21f842def6a6f278538991cc524e97b224ce4edcd23fb020fa9c",
+      "document": "Instructivo  4 - Foros.mp4"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-060",
+      "bytes": 9283793,
+      "sha256": "7be3045ed895a0a626690934ebfae2496bfd8d275cfa1c74cbe60a617bb3fdb9",
+      "document": "Instructivo  5 - Bonos.mp4"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-061",
+      "bytes": 411495,
+      "sha256": "d153b3f084b7646517ce1a62a80dd22c9defe50d3f8e2b0db92b246af90ac3f2",
+      "document": "Instructivo  6 - ICC-102 - Analisis Problema Computable-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-062",
+      "bytes": 201842,
+      "sha256": "c2543a856bd1302b0b8753dfce99130e790324fcc680b6477db8391bace9d907",
+      "document": "Instructivo  7 - ICC-102 - Estructura de carpetas-pdf.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-063",
+      "bytes": 21897183,
+      "sha256": "1217dd5e6038f150f454198b9645b7f4b89929ff88ba3744ca2c446082f4fb47",
+      "document": "Fundamentos de programación, algoritmos, estructura de datos y objetos - Luis Joyanes Aguilar - 2008.pdf"
+    },
+    {
+      "target": null,
+      "treatment": "Material docente o de consulta; conservado sin publicar como entrega propia.",
+      "reference": "IP-064",
+      "bytes": 5849884,
+      "sha256": "84d66dfb000e3f728b9bdf12bffd2543b0c52a106d913fbeaca8aec6343e5cbd",
+      "document": "Learn C Programming - A beginner's guide to learning C programming the easy and disciplined way. Code - Jeff Szuhay - 2020.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/algoritmo-3-9.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-065",
+      "bytes": 255,
+      "sha256": "675e692e77fd3683be40f47677075e2159719aa7d9acd9fa19740103d86c8c61",
+      "document": "algoritmo 3.9.txt",
+      "publishedSha256": "675e692e77fd3683be40f47677075e2159719aa7d9acd9fa19740103d86c8c61"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/secuenciales/codigo-3-9.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-066",
+      "bytes": 274,
+      "sha256": "ea5e17ac4e8f47eba771f4a9bb1ced2d5731b46f82bc901a7b96940d98718936",
+      "document": "Codigo de 3.9.txt",
+      "publishedSha256": "ea5e17ac4e8f47eba771f4a9bb1ced2d5731b46f82bc901a7b96940d98718936"
+    },
+    {
+      "target": null,
+      "treatment": "Informe con información de evaluación; no se publica.",
+      "reference": "IP-067",
+      "bytes": 531672,
+      "sha256": "9e6c86d7d93d37b5d6c21332e6f26da526177aa2bfabd42d6784b8e078c67948",
+      "document": "1 Resultados ICC-101-Lunes.pdf"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/lectura/reporte-lectura.pdf",
+      "treatment": "Copia pública sin matrícula ni identificador estudiantil.",
+      "reference": "IP-068",
+      "bytes": 104375,
+      "sha256": "26a4ca45cd3d40fde21089a91b8b58804452a16eb5ca9d200ad613aaf7dbd284",
+      "document": "[identificador omitido] - Kelvin César Del Castillo Torres - Grupo 4 - Reporte de lectura 0 - Capítulo 0.pdf",
+      "publishedSha256": "6e1b5c5166eeb3885c654f0d5ed981f5b6f0a0649aa753197225a44a8a8cc060"
+    },
+    {
+      "target": null,
+      "treatment": "Versión editable del reporte conservado en PDF.",
+      "reference": "IP-069",
+      "bytes": 24292,
+      "sha256": "c3d32d3627a0f02f6c561271f0077731c13b08e38f83df25a95b3f07b9f3a4b6",
+      "document": "Reporte De Lectura.docx"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/algoritmo.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-070",
+      "bytes": 1024,
+      "sha256": "25d7291997d1aabe17510b30a7caefdaf67fd090b52662e4f8402f0b9a992c08",
+      "document": "algoritmo Tarea1.txt",
+      "publishedSha256": "25d7291997d1aabe17510b30a7caefdaf67fd090b52662e4f8402f0b9a992c08"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/diagrama.rap",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-071",
+      "bytes": 13907,
+      "sha256": "ec8ee42187d1a779ad49bb692aed9e4dd4b3cda9fce88cb0501d740d73ab4398",
+      "document": "DFD - Tarea1.rap",
+      "publishedSha256": "ec8ee42187d1a779ad49bb692aed9e4dd4b3cda9fce88cb0501d740d73ab4398"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/algoritmo-borrador.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-072",
+      "bytes": 53677,
+      "sha256": "e839e75c6cc1b6d4983fb707709461af9c6eb123a14b49de5ec459b6221e5a02",
+      "document": "Grupo 5 - Algoritmo - Tarea1.pdf",
+      "publishedSha256": "e839e75c6cc1b6d4983fb707709461af9c6eb123a14b49de5ec459b6221e5a02"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/codigo-borrador.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-073",
+      "bytes": 50315,
+      "sha256": "66a617207a64c5ef36f6e45887ac9cd6ab5318551b959b146a5aea04e44690fb",
+      "document": "Grupo 5 - Código - Tarea1.pdf",
+      "publishedSha256": "66a617207a64c5ef36f6e45887ac9cd6ab5318551b959b146a5aea04e44690fb"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/dfd-borrador.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-074",
+      "bytes": 183995,
+      "sha256": "324108d90477884f883709ad965fc15ca9de5535f476836e91ffca8ee7813d0f",
+      "document": "Grupo 5 - DFD - Tarea1.pdf",
+      "publishedSha256": "324108d90477884f883709ad965fc15ca9de5535f476836e91ffca8ee7813d0f"
+    },
+    {
+      "target": null,
+      "treatment": "Versión editable de la investigación grupal conservada en PDF.",
+      "reference": "IP-075",
+      "bytes": 26916,
+      "sha256": "22b7f695d9984a9b07bb6f9b78a87a71736d60abf7571c02f1ab8f8b91de555f",
+      "document": "Grupo 5 - Investigación - Tarea1.docx"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-076",
+      "bytes": 282932,
+      "sha256": "46ec0b0fedbe036dc2c3c621fed32948d9b64b87f032609cf456e96088658cfb",
+      "document": "Grupo 5 - Tarea1.zip"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/enunciado.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-077",
+      "bytes": 2622,
+      "sha256": "ba69cc0dc384a0a7a29709cb0c5229d8cf77d48076cf8b8fcbfcbb40fec4d86f",
+      "document": "ICC-101- Tarea 1.txt",
+      "publishedSha256": "ba69cc0dc384a0a7a29709cb0c5229d8cf77d48076cf8b8fcbfcbb40fec4d86f"
+    },
+    {
+      "target": null,
+      "treatment": "Aporte individual integrado en la investigación grupal publicada.",
+      "reference": "IP-078",
+      "bytes": 13520,
+      "sha256": "22a5e3ee33cd7ddd239d705ec1703d0e3bf95b54a60a73b252cfb9a24e8296b5",
+      "document": "[identificador omitido] - Eduardo Volquez - Historia de los Algoritmos.docx"
+    },
+    {
+      "target": null,
+      "treatment": "Aporte individual integrado en la investigación grupal publicada.",
+      "reference": "IP-079",
+      "bytes": 13187,
+      "sha256": "6e39f0482d2018a8e0eaed124d25fbfad3ecf5022fcb071b0a00add4fbb87d65",
+      "document": "Importancia de los algoritmos.docx"
+    },
+    {
+      "target": null,
+      "treatment": "Aporte individual integrado en la investigación grupal publicada.",
+      "reference": "IP-080",
+      "bytes": 15492,
+      "sha256": "72dafc10a94d379af8d398fd0eff43fe5ee4fee949c4a02a180d2473ab43c8c3",
+      "document": "Partes y Tipos.docx"
+    },
+    {
+      "target": null,
+      "treatment": "Aporte individual integrado en la investigación grupal publicada.",
+      "reference": "IP-081",
+      "bytes": 12332,
+      "sha256": "7f5d584a33f1ced2f365d85ada83db9fd5e0dd0df65b9aa9795fe45209746c0e",
+      "document": "Roberto McKinney [identificador omitido]  ICC-Algoritmia.docx"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/algoritmo-dfd-entrega.pdf",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-082",
+      "bytes": 281346,
+      "sha256": "a3f847e4ebdaf868a7faca376458fa4d1a879a4b1c37bcca5e3b8e8f52b84dc4",
+      "document": "Grupo 5 - AlgoritmoDFD - Tarea1.pdf",
+      "publishedSha256": "a3f847e4ebdaf868a7faca376458fa4d1a879a4b1c37bcca5e3b8e8f52b84dc4"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/codigo-original.txt",
+      "treatment": "Publicado sin cambios.",
+      "reference": "IP-083",
+      "bytes": 873,
+      "sha256": "f66f483d9b3cef0f52a464d1c42627fe73cca4738ab8906d33b5cba069766dac",
+      "document": "Grupo 5 - Código - Tarea1.txt",
+      "publishedSha256": "f66f483d9b3cef0f52a464d1c42627fe73cca4738ab8906d33b5cba069766dac"
+    },
+    {
+      "target": "archivos-originales/introduccion-programacion/triangulo/investigacion.pdf",
+      "treatment": "Copia pública sin identificadores estudiantiles ni correo docente; créditos conservados.",
+      "reference": "IP-084",
+      "bytes": 125669,
+      "sha256": "d75c6f301a5996f0964e3db217a7a6e77a4964af695cbbcd50f0651692f76a8b",
+      "document": "Grupo 5 - Investigación - Tarea1.pdf",
+      "publishedSha256": "7c71b1006748d5ae39375b62ec561c8568cd2a893a7d58dbdd93cd6a79ac05d3"
+    },
+    {
+      "target": null,
+      "treatment": "Copia de respaldo o contenedor; se conservan las entregas seleccionadas por separado.",
+      "reference": "IP-085",
+      "bytes": 394209,
+      "sha256": "b7573e520fe1d5f86c989d5f3e38b2a98f1c56de868655e7eac28a98f0090c0e",
+      "document": "Grupo 5 - Tarea1.zip"
+    }
+  ],
+  "hashExplanation": "SHA-256 identifica el contenido de un archivo; publishedSha256 identifica su versión publicada."
+}

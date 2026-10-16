@@ -13,7 +13,7 @@ Mantener una copia organizada de los documentos originales relacionados con los 
 Estos archivos permiten conservar la trazabilidad entre el material académico inicial y las soluciones finales documentadas en la carpeta principal:
 
 ```text
-01-fundamentos-programacion/
+02-fundamentos-programacion/
 ```
 
 ---
@@ -55,7 +55,7 @@ Los documentos originales de esta carpeta pueden incluir ejercicios sobre:
 Las soluciones finales y documentadas se encuentran en:
 
 ```text
-01-fundamentos-programacion/
+02-fundamentos-programacion/
 ```
 
 Allí cada ejercicio cuenta con:

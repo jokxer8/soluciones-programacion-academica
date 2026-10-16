@@ -2,6 +2,7 @@
 
 ![Portafolio académico de Kelvin César Del Castillo Torres](assets/portafolio-academico.svg)
 
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
@@ -21,7 +22,7 @@ El objetivo principal es organizar, documentar y presentar ejercicios resueltos 
 
 **Ruta de aprendizaje**
 
-[00 · Sistemas](00-fundamentos-sistemas-computacionales) → [01 · Programación](01-fundamentos-programacion) → [02 · Objetos](02-programacion-orientada-a-objetos) → [03 · Algoritmos](03-diseno-y-analisis-de-algoritmos) → [04 · Funcional](04-fundamentos-programacion-sml) → [05 · Datos](05-bases-de-datos)
+[00 · Sistemas](00-fundamentos-sistemas-computacionales) → [01 · Introducción](01-introduccion-programacion) → [02 · Programación](02-fundamentos-programacion) → [03 · Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos](04-diseno-y-analisis-de-algoritmos) → [05 · Funcional](05-fundamentos-programacion-sml) → [06 · Datos](06-bases-de-datos)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
@@ -40,11 +41,12 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | Área | Descripción | Estado |
 |---|---|---|
 | [00 - Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales) | Representación de datos, C, ensamblador FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Incorporado y documentado |
-| [01 - Fundamentos de Programación](01-fundamentos-programacion) | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
-| [02 - Programación Orientada a Objetos](02-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
-| [03 - Diseño y Análisis de Algoritmos](03-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
-| [04 - Fundamentos de Programación con SML](04-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
-| [05 - Bases de Datos](05-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
+| [01 - Introducción a la Programación](01-introduccion-programacion) | Primeros algoritmos, diagramas, C++, ciclos y búsqueda de texto; siete actividades documentadas. | Incorporado y documentado |
+| [02 - Fundamentos de Programación](02-fundamentos-programacion) | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
+| [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
+| [04 - Diseño y Análisis de Algoritmos](04-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
+| [05 - Fundamentos de Programación con SML](05-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
+| [06 - Bases de Datos](06-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
 | [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y documentar los ejercicios. | Conservado |
 
 ---
@@ -54,11 +56,12 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 ```text
 soluciones-programacion-academica/
 ├── 00-fundamentos-sistemas-computacionales/
-├── 01-fundamentos-programacion/
-├── 02-programacion-orientada-a-objetos/
-├── 03-diseno-y-analisis-de-algoritmos/
-├── 04-fundamentos-programacion-sml/
-├── 05-bases-de-datos/
+├── 01-introduccion-programacion/
+├── 02-fundamentos-programacion/
+├── 03-programacion-orientada-a-objetos/
+├── 04-diseno-y-analisis-de-algoritmos/
+├── 05-fundamentos-programacion-sml/
+├── 06-bases-de-datos/
 ├── archivos-originales/
 └── README.md
 ```
@@ -84,11 +87,11 @@ soluciones-programacion-academica/
 
 | Ejercicio | Conceptos principales |
 |---|---|
-| [Estadísticas básicas de un arreglo](01-fundamentos-programacion/estadisticas-basicas-arreglo) | Arreglos, ciclos, métodos, suma, promedio, mayor y menor |
-| [Clasificación de números](01-fundamentos-programacion/clasificacion-numeros) | Condicionales, contadores, acumuladores y operador módulo |
-| [Análisis de cadena de texto](01-fundamentos-programacion/analisis-cadena-texto) | Cadenas, caracteres, métodos y validaciones |
-| [Calculadora con menú](01-fundamentos-programacion/calculadora-menu) | Menú interactivo, métodos, ciclos y operaciones matemáticas |
-| [Búsqueda secuencial](01-fundamentos-programacion/busqueda-secuencial-arreglo) | Arreglos, búsqueda lineal, validación y recorrido secuencial |
+| [Estadísticas básicas de un arreglo](02-fundamentos-programacion/estadisticas-basicas-arreglo) | Arreglos, ciclos, métodos, suma, promedio, mayor y menor |
+| [Clasificación de números](02-fundamentos-programacion/clasificacion-numeros) | Condicionales, contadores, acumuladores y operador módulo |
+| [Análisis de cadena de texto](02-fundamentos-programacion/analisis-cadena-texto) | Cadenas, caracteres, métodos y validaciones |
+| [Calculadora con menú](02-fundamentos-programacion/calculadora-menu) | Menú interactivo, métodos, ciclos y operaciones matemáticas |
+| [Búsqueda secuencial](02-fundamentos-programacion/busqueda-secuencial-arreglo) | Arreglos, búsqueda lineal, validación y recorrido secuencial |
 
 ---
 
@@ -96,11 +99,11 @@ soluciones-programacion-academica/
 
 | Ejercicio | Conceptos principales |
 |---|---|
-| [Teléfono móvil POO](02-programacion-orientada-a-objetos/telefono-movil-poo) | Clases, objetos, composición, propiedades y métodos |
-| [Matriz 2x2 POO](02-programacion-orientada-a-objetos/matriz-2x2-poo) | Clases, constructores, determinante, inversa y validación |
-| [Agenda de citas POO](02-programacion-orientada-a-objetos/agenda-citas-poo) | Enumeraciones, listas, objetos, validaciones y excepciones |
-| [Avisos con archivo y serialización](02-programacion-orientada-a-objetos/avisos-archivo-serializacion-poo) | Archivos, listas, JSON, serialización y deserialización |
-| [Sistema de nómina con polimorfismo](02-programacion-orientada-a-objetos/sistema-nomina-polimorfismo-poo) | Abstracción, herencia, clases abstractas, sobrescritura y polimorfismo |
+| [Teléfono móvil POO](03-programacion-orientada-a-objetos/telefono-movil-poo) | Clases, objetos, composición, propiedades y métodos |
+| [Matriz 2x2 POO](03-programacion-orientada-a-objetos/matriz-2x2-poo) | Clases, constructores, determinante, inversa y validación |
+| [Agenda de citas POO](03-programacion-orientada-a-objetos/agenda-citas-poo) | Enumeraciones, listas, objetos, validaciones y excepciones |
+| [Avisos con archivo y serialización](03-programacion-orientada-a-objetos/avisos-archivo-serializacion-poo) | Archivos, listas, JSON, serialización y deserialización |
+| [Sistema de nómina con polimorfismo](03-programacion-orientada-a-objetos/sistema-nomina-polimorfismo-poo) | Abstracción, herencia, clases abstractas, sobrescritura y polimorfismo |
 
 ---
 
@@ -108,12 +111,12 @@ soluciones-programacion-academica/
 
 | Ejercicio | Conceptos principales |
 |---|---|
-| [Fibonacci recursivo](03-diseno-y-analisis-de-algoritmos/fibonacci-recursivo) | Recursividad, casos base, memoización y complejidad |
-| [Búsqueda binaria](03-diseno-y-analisis-de-algoritmos/busqueda-binaria) | Búsqueda eficiente, arreglos ordenados y complejidad O(log n) |
-| [QuickSort](03-diseno-y-analisis-de-algoritmos/ordenamiento-rapido-quicksort) | Divide y vencerás, pivote, recursividad y ordenamiento |
-| [Subsecuencia creciente con suma máxima](03-diseno-y-analisis-de-algoritmos/subsecuencia-creciente-suma-maxima) | Programación dinámica y reconstrucción de solución |
-| [Cambio de monedas limitado](03-diseno-y-analisis-de-algoritmos/cambio-monedas-limitado) | Programación dinámica, optimización y restricciones |
-| [Conteo y conexión de islas](03-diseno-y-analisis-de-algoritmos/conteo-y-conexion-de-islas) | Matrices, BFS, grafos implícitos, máscaras de bits y optimización |
+| [Fibonacci recursivo](04-diseno-y-analisis-de-algoritmos/fibonacci-recursivo) | Recursividad, casos base, memoización y complejidad |
+| [Búsqueda binaria](04-diseno-y-analisis-de-algoritmos/busqueda-binaria) | Búsqueda eficiente, arreglos ordenados y complejidad O(log n) |
+| [QuickSort](04-diseno-y-analisis-de-algoritmos/ordenamiento-rapido-quicksort) | Divide y vencerás, pivote, recursividad y ordenamiento |
+| [Subsecuencia creciente con suma máxima](04-diseno-y-analisis-de-algoritmos/subsecuencia-creciente-suma-maxima) | Programación dinámica y reconstrucción de solución |
+| [Cambio de monedas limitado](04-diseno-y-analisis-de-algoritmos/cambio-monedas-limitado) | Programación dinámica, optimización y restricciones |
+| [Conteo y conexión de islas](04-diseno-y-analisis-de-algoritmos/conteo-y-conexion-de-islas) | Matrices, BFS, grafos implícitos, máscaras de bits y optimización |
 
 ---
 
@@ -121,12 +124,12 @@ soluciones-programacion-academica/
 
 | Actividad | Conceptos principales |
 |---|---|
-| [Cálculo Lambda - Fundamentos](04-fundamentos-programacion-sml/calculo-lambda-fundamentos) | Cálculo lambda, árboles de sintaxis, sustitución, reducción beta y forma normal |
-| [Combinador Y y Fibonacci en SML](04-fundamentos-programacion-sml/combinador-y-fibonacci-sml) | Combinador Y, punto fijo, Fibonacci, recursividad y funciones de orden superior |
-| [Función Map e Inferencia de Tipos en SML](04-fundamentos-programacion-sml/map-inferencia-tipos-sml) | Map, listas, Hindley-Milner, tipos polimórficos y funciones de orden superior |
-| [Serialización de Árboles de Expresión en SML](04-fundamentos-programacion-sml/serializacion-arboles-expresion-sml) | Tipos recursivos, árboles binarios, pattern matching, preorden, enorden y postorden |
-| [Estructuras, Signaturas y Tipos Abstractos en SML](04-fundamentos-programacion-sml/estructuras-signaturas-tipos-abstractos-sml) | Signaturas, estructuras, records, listas de asociación, excepciones y tipos abstractos |
-| [Listas Perezosas en SML](04-fundamentos-programacion-sml/listas-perezosas-sml) | Evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial y Fibonacci |
+| [Cálculo Lambda - Fundamentos](05-fundamentos-programacion-sml/calculo-lambda-fundamentos) | Cálculo lambda, árboles de sintaxis, sustitución, reducción beta y forma normal |
+| [Combinador Y y Fibonacci en SML](05-fundamentos-programacion-sml/combinador-y-fibonacci-sml) | Combinador Y, punto fijo, Fibonacci, recursividad y funciones de orden superior |
+| [Función Map e Inferencia de Tipos en SML](05-fundamentos-programacion-sml/map-inferencia-tipos-sml) | Map, listas, Hindley-Milner, tipos polimórficos y funciones de orden superior |
+| [Serialización de Árboles de Expresión en SML](05-fundamentos-programacion-sml/serializacion-arboles-expresion-sml) | Tipos recursivos, árboles binarios, pattern matching, preorden, enorden y postorden |
+| [Estructuras, Signaturas y Tipos Abstractos en SML](05-fundamentos-programacion-sml/estructuras-signaturas-tipos-abstractos-sml) | Signaturas, estructuras, records, listas de asociación, excepciones y tipos abstractos |
+| [Listas Perezosas en SML](05-fundamentos-programacion-sml/listas-perezosas-sml) | Evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial y Fibonacci |
 
 ---
 
@@ -134,13 +137,13 @@ soluciones-programacion-academica/
 
 | Actividad | Conceptos principales |
 |---|---|
-| [Flotilla de Aeronaves - Modelo Entidad-Relación](05-bases-de-datos/flotilla-aeronaves-modelo-relacional) | Entidades, atributos y cardinalidades, Claves primarias y foráneas, Relaciones temporales, Transformación al modelo relacional, Normalización hasta 3FN, Diccionario de datos |
-| [Cine - Modelado y Normalización](05-bases-de-datos/cine-modelado-normalizacion) | Modelo entidad-relación, Modelo relacional, Primera, segunda y tercera forma normal, Dependencias funcionales, Diccionario de datos |
-| [Reservas de Coches - Creación y Carga de Datos](05-bases-de-datos/reservas-coches-creacion-datos) | SQL Server y T-SQL, DDL y DML, Claves y restricciones, Relación recursiva de aval, Atributos derivados |
-| [Alquiler de Coches - Consultas SQL](05-bases-de-datos/alquiler-coches-consultas) | Claves compuestas, Relación muchos a muchos, JOIN y subconsultas, GROUP BY y HAVING, ALTER TABLE, Funciones agregadas |
-| [Bolsa de Empleo - Vistas, Procedimientos y Auditoría](05-bases-de-datos/bolsa-empleo-objetos-sql) | Vistas, Procedimientos almacenados, Funciones escalares, Triggers, Tablas inserted y deleted, Agrupación temporal |
-| [Restaurante - Consultas del Segundo Parcial](05-bases-de-datos/restaurante-consultas-segundo-parcial) | DISTINCT y JOIN, EXISTS, CTE, Agregaciones, Vistas, Funciones escalares |
-| [Sistema de Reservas de Hotel - Proyecto Final](05-bases-de-datos/hotel-reservas-proyecto-final) | C#, Windows Forms, SQL Server, ADO.NET, reservas, facturación y roles |
+| [Flotilla de Aeronaves - Modelo Entidad-Relación](06-bases-de-datos/flotilla-aeronaves-modelo-relacional) | Entidades, atributos y cardinalidades, Claves primarias y foráneas, Relaciones temporales, Transformación al modelo relacional, Normalización hasta 3FN, Diccionario de datos |
+| [Cine - Modelado y Normalización](06-bases-de-datos/cine-modelado-normalizacion) | Modelo entidad-relación, Modelo relacional, Primera, segunda y tercera forma normal, Dependencias funcionales, Diccionario de datos |
+| [Reservas de Coches - Creación y Carga de Datos](06-bases-de-datos/reservas-coches-creacion-datos) | SQL Server y T-SQL, DDL y DML, Claves y restricciones, Relación recursiva de aval, Atributos derivados |
+| [Alquiler de Coches - Consultas SQL](06-bases-de-datos/alquiler-coches-consultas) | Claves compuestas, Relación muchos a muchos, JOIN y subconsultas, GROUP BY y HAVING, ALTER TABLE, Funciones agregadas |
+| [Bolsa de Empleo - Vistas, Procedimientos y Auditoría](06-bases-de-datos/bolsa-empleo-objetos-sql) | Vistas, Procedimientos almacenados, Funciones escalares, Triggers, Tablas inserted y deleted, Agrupación temporal |
+| [Restaurante - Consultas del Segundo Parcial](06-bases-de-datos/restaurante-consultas-segundo-parcial) | DISTINCT y JOIN, EXISTS, CTE, Agregaciones, Vistas, Funciones escalares |
+| [Sistema de Reservas de Hotel - Proyecto Final](06-bases-de-datos/hotel-reservas-proyecto-final) | C#, Windows Forms, SQL Server, ADO.NET, reservas, facturación y roles |
 
 ---
 
@@ -148,7 +151,7 @@ soluciones-programacion-academica/
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
-| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 79 pruebas SQL verificadas |
+| [Sistema de Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 79 pruebas SQL verificadas |
 | [Gestión de países](00-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Compilado y verificado localmente |
 
 La [comparación C/FASM en Linux](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md) verifica doce pares de programas con **132 comparaciones correctas y 0 fallidas**.
@@ -157,9 +160,9 @@ La [comparación C/FASM en Linux](00-fundamentos-sistemas-computacionales/PRUEBA
 
 El proyecto de países se encuentra en [Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales/proyecto-final-paises), con su CSV y pruebas de estructuras dinámicas.
 
-El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [79 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones, configuración de conexión y [almacenamiento PBKDF2 de contraseñas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md) verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
+El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [79 pruebas funcionales SQL correctas](06-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones, configuración de conexión y [almacenamiento PBKDF2 de contraseñas](06-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md) verificados; véase el [cierre de tareas](06-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
 
-El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
+El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](06-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
 
 [![Compilación del hotel en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
 

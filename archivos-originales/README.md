@@ -38,11 +38,11 @@ Los archivos originales se relacionan con las áreas documentadas del repositori
 
 | Carpeta de archivos originales | Carpeta documentada | Área de aprendizaje |
 |---|---|---|
-| `fundamentos-programacion` | `01-fundamentos-programacion` | Fundamentos de Programación en C# |
-| `programacion-orientada-a-objetos` | `02-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
-| `diseno-y-analisis-de-algoritmos` | `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
-| `programacion-funcional-sml` | `04-fundamentos-programacion-sml` | Programación Funcional con SML |
-| `bases-de-datos` | `05-bases-de-datos` | Bases de Datos |
+| `fundamentos-programacion` | `02-fundamentos-programacion` | Fundamentos de Programación en C# |
+| `programacion-orientada-a-objetos` | `03-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
+| `diseno-y-analisis-de-algoritmos` | `04-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
+| `programacion-funcional-sml` | `05-fundamentos-programacion-sml` | Programación Funcional con SML |
+| `bases-de-datos` | `06-bases-de-datos` | Bases de Datos |
 | [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [00-fundamentos-sistemas-computacionales](../00-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
 
 ---
@@ -141,6 +141,10 @@ Si un documento contiene información sensible, se recomienda subir una versión
 
 Esta carpeta queda destinada exclusivamente a conservar archivos originales y evidencias académicas.
 
-La sección de [Bases de Datos](bases-de-datos) reúne los trabajos de la asignatura, con versiones normalizadas, evidencias e inventario de procedencia. Su [sección documentada](../05-bases-de-datos) está completada con actividades de diseño y SQL, proyecto final del hotel, esquemas de apoyo y evaluaciones.
+La sección de [Bases de Datos](bases-de-datos) reúne los trabajos de la asignatura, con versiones normalizadas, evidencias e inventario de procedencia. Su [sección documentada](../06-bases-de-datos) está completada con actividades de diseño y SQL, proyecto final del hotel, esquemas de apoyo y evaluaciones.
 
 Las soluciones finales deben mantenerse en las carpetas principales del repositorio.
+
+## Introducción a la Programación
+
+Los [documentos de apoyo](introduccion-programacion/README.md) reúnen lectura, entregas grupales, diagramas, código y retroalimentación. La [materia 01](../01-introduccion-programacion) presenta las siete actividades y las diferencias entre versiones. El [inventario](introduccion-programacion/INVENTARIO.md) registra los documentos publicados y el material conservado sin republicar.

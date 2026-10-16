@@ -1,6 +1,6 @@
 # Programación Orientada a Objetos
 
-[Inicio](../README.md) · [← Materia 01](../01-fundamentos-programacion) · **Materia 02** · [Materia 03 →](../03-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 02](../02-fundamentos-programacion) · **Materia 03** · [Materia 04 →](../04-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-orange)
@@ -33,7 +33,7 @@ Esta sección representa un avance desde la programación estructurada hacia el 
 ## Organización actual
 
 ```text
-02-programacion-orientada-a-objetos/
+03-programacion-orientada-a-objetos/
 ├── agenda-citas-poo/
 │   ├── README.md
 │   ├── desarrollo.md

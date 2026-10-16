@@ -1,0 +1,67 @@
+Tarea1
+Nota: 
+Leer TODA la informacion de la asignacion que esta en la PVA ANTES DE HACER LOS EJERCICIOS.
+Los ejercicios que NO cumplan con todo lo indicado en la PVA y en este documento seran penalizados
+
+
+Escribir un programa que acepte por pantalla los catetos de un triangulo rectangulo y calcule : 
+a) La hipotenusa c = Sqrt((a x a) + (b x b))
+b) El area  A = (b x h)/2
+c) El perimetro P = (a + b + c)
+
+El programa debe aceptar por pantalla:
+a) los catetos
+
+El programa debe deplegar por pantalla:
+a) Hipotenusa, area y perimetro
+
+
+
+Temas: 
+        a) Fases para resolver un problema computable (Roberto)
+        b) Algoritmos computacionales : Partes y tipos de algoritmos computacionales (Jesus)
+        c) Historia de los algoritmos (Eduardo)
+        d) Importancia de los algoritmos  (Wesly)
+        e) Funciones de Librería (Library Functions) (Kellyn)
+
+Forma de Entrega en la PVA:
+• Solo un integrante de cada grupo debe subir la evaluación en un archivo ZIP. Nombrar archivo como: Grupo #
+
+1.  Poner en un DOCUMENTO PDF:
+    a) Investigación (trabajo)
+    b) Nombrar el archivo con su información en el siguiente formato: "Grupo#- trabajo -Tarea1"
+
+
+2.- Poner en OTRO DOCUMENTO PDF:
+    a) Diagrama de Flujo de datos(DFD)
+    b) Algoritmo 
+    c) Nombrar el archivo con su información en el siguiente formato: "Grupo#- AlgoritmoDFD -Tarea1". 
+    d) No incluir ningún tipo de comentarios en el algoritmo o DFD
+
+
+
+4.- Poner en un solo DOCUMENTO NOTEPAD: 
+ a) Código del programa. Verificar que el código sea compatible con Visual Studio 
+ b) Nombrar el archivo con su información en el siguiente formato: "Grupo# - Código -Tarea1".
+ c) No incluir ningún tipo de comentarios en el código
+
+
+Evaluación Oral
+En la evaluación oral se evaluara:
+1) Los temas del capitulo del libro correspondientes a la unidad del programa evaluada (ver cronograma)
+2) La asignación que suban a la PVA
+3) Duración : 5 minutos
+
+
+Grabación de Evaluación 
+La evaluación será grabada. 
+Para la evaluación se requiere para cada estudiante:
+1.  Cámara activa 
+2.  Micrófono activo (llevar auriculares)
+3.  Debe asistir a la entrega
+4. Debe tener MS Teams instalado en varios dispositivos con carga suficiente
+
+Importante:
+Para evitar penalidad:
+Si la PVA presenta problemas técnicos que no le permiten subir el archivo puede enviarlo a mi email (ver programa de la materia) ANTES de la fecha y hora indicada en la tarea.
+Todo documento que contenga informacion MANUSCRITA sera descartado y no obtendra el bono que pueda aplicarse a esa evaluacion

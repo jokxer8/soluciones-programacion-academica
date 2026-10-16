@@ -1,0 +1,22 @@
+Practica
+
+Nota: 
+Leer TODA la informacion de la asignacion que esta en la PVA ANTES DE HACER LOS EJERCICIOS.
+Los ejercicios que NO cumplan con todo lo indicado en la PVA y en este documento seran penalizados
+
+
+Evitar: 
+1) El uso de goto
+2) Implementaciones sin cuerpo o que hacen una tarea que no es relevante para la solucion del ejercicio (ej. desplegar un mensaje, etc).
+   Cada solicitud, indicada debajo, debe SER PARTE de la solucion del problema.
+
+Escribir un programa que acepte por pantalla una palabra y un texto y despliegue cuantas veces la palabra ingresada ocurre en dicho texto.
+
+
+El programa debe aceptar por pantalla:
+a) una palabra
+b) un texto
+
+El programa debe deplegar por pantalla:
+a) Cantidad de veces la palabra ocurre en el texto
+

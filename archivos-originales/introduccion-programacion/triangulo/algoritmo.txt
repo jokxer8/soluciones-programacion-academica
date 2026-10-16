@@ -1,0 +1,25 @@
+Algoritmo Tarea1
+
+1. Inicio 
+2. Inicializar en cero los acumuladores hipotenusa, area y perimetro 
+3. Desplegar mensaje por pantalla "Bienvenidos, vamos a calcular la hipotenusa, el área y el perímetro de un triángulo rectángulo."
+4. Desplegar por pantalla "Introduzca el primer cateto"
+5. Leer Cateto1
+6. Desplegar por pantalla "Introduzca el segundo cateto"
+7. Leer Cateto2
+8. Calcular la hipotenusa
+    raiz = 1.0
+    precision = 0.00001
+    Mientras | raiz * raiz - (cateto1 * cateto1 + cateto2 * cateto2)| > precision Hacer
+        raiz = 0.5 * (raiz + (cateto1 * cateto1 + cateto2 * cateto2) / raiz)
+    Fin Mientras
+9. hipotenusa = raiz
+10. Calcular el área
+    area = (cateto1 * cateto2) / 2
+11. Calcular el perímetro
+    perimetro = cateto1 + cateto2 + hipotenusa
+12. Desplegar por pantalla "Los resultados son: "
+13. Desplegar por pantalla "La hipotenusa: " + hipotenusa
+14. Desplegar por pantalla "El área: " + area
+15. Desplegar por pantalla "El perímetro: " + perimetro
+16. Fin

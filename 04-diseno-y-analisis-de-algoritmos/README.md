@@ -1,6 +1,6 @@
 # Diseño y Análisis de Algoritmos
 
-[Inicio](../README.md) · [← Materia 02](../02-programacion-orientada-a-objetos) · **Materia 03** · [Materia 04 →](../04-fundamentos-programacion-sml) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 03](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05 →](../05-fundamentos-programacion-sml) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-red)
@@ -34,7 +34,7 @@ Esta sección representa una etapa más avanzada del proceso de formación, dond
 ## Organización actual
 
 ```text
-03-diseno-y-analisis-de-algoritmos/
+04-diseno-y-analisis-de-algoritmos/
 ├── busqueda-binaria/
 │   ├── README.md
 │   ├── desarrollo.md

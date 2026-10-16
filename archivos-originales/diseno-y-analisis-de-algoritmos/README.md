@@ -13,7 +13,7 @@ Mantener una copia organizada de los documentos originales relacionados con algo
 Estos archivos permiten conservar la trazabilidad entre el material académico inicial y las soluciones finales documentadas en la carpeta principal:
 
 ```text
-03-diseno-y-analisis-de-algoritmos/
+04-diseno-y-analisis-de-algoritmos/
 ```
 
 ---
@@ -37,7 +37,7 @@ Esta carpeta puede incluir archivos originales en diferentes formatos, tales com
 Las soluciones finales y documentadas se encuentran en:
 
 ```text
-03-diseno-y-analisis-de-algoritmos/
+04-diseno-y-analisis-de-algoritmos/
 ```
 
 Allí cada ejercicio cuenta con:

@@ -3,7 +3,7 @@
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 ![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
-Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos utilizadas para preparar la [sección de la asignatura](../../05-bases-de-datos/README.md).
+Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos utilizadas para preparar la [sección de la asignatura](../../06-bases-de-datos/README.md).
 
 ---
 
@@ -21,7 +21,7 @@ Los nombres de las copias se normalizan en minúsculas y guiones. El [inventario
 - [Proyecto Final.docx](enunciados/proyecto-final.docx)
 - [Segunda Prueba Escrita.docx](enunciados/segunda-prueba-escrita.docx)
 
-Proyecto Final.docx define el trabajo solicitado. La [implementación del hotel](../../05-bases-de-datos/hotel-reservas-proyecto-final) incluye aplicación, scripts, modelos y documentación; se mantiene enlazada desde el inventario para evitar duplicar el proyecto completo.
+Proyecto Final.docx define el trabajo solicitado. La [implementación del hotel](../../06-bases-de-datos/hotel-reservas-proyecto-final) incluye aplicación, scripts, modelos y documentación; se mantiene enlazada desde el inventario para evitar duplicar el proyecto completo.
 
 ## Copias para publicación
 
@@ -31,4 +31,4 @@ Se mantienen los créditos de los trabajos grupales. Los identificadores institu
 
 Los libros y las presentaciones se identificaron como material de consulta y no como trabajos originales del alumno. No se incorporan a los entregables del portafolio. También quedan fuera las transcripciones de reuniones, los archivos temporales de Office y desktop.ini.
 
-La [auditoría](../../05-bases-de-datos/AUDITORIA.md) clasifica el contenido de la carpeta completa. Los archivos de credenciales, las carpetas de empleados, los binarios, las dependencias y los archivos temporales se conservan únicamente en el origen y no se publican. Los valores de identidad y contacto de los datos del hotel se sustituyen por demostraciones ficticias.
+La [auditoría](../../06-bases-de-datos/AUDITORIA.md) clasifica el contenido de la carpeta completa. Los archivos de credenciales, las carpetas de empleados, los binarios, las dependencias y los archivos temporales se conservan únicamente en el origen y no se publican. Los valores de identidad y contacto de los datos del hotel se sustituyen por demostraciones ficticias.

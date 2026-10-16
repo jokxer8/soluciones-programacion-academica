@@ -1,6 +1,6 @@
 # Fundamentos de Programación
 
-[Inicio](../README.md) · [← Materia 00](../00-fundamentos-sistemas-computacionales) · **Materia 01** · [Materia 02 →](../02-programacion-orientada-a-objetos) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 01](../01-introduccion-programacion) · **Materia 02** · [Materia 03 →](../03-programacion-orientada-a-objetos) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Introductorio%20a%20Intermedio-green)
@@ -33,7 +33,7 @@ Esta sección representa la base del proceso de formación académica antes de a
 ## Organización actual
 
 ```text
-01-fundamentos-programacion/
+02-fundamentos-programacion/
 ├── analisis-cadena-texto/
 │   ├── README.md
 │   ├── desarrollo.md

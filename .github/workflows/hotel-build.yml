@@ -5,18 +5,18 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/hotel-build.yml'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
   pull_request:
     branches: [main]
     paths:
       - '.github/workflows/hotel-build.yml'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
-      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/tests/**'
+      - '06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +34,7 @@ jobs:
     defaults:
       run:
         shell: pwsh
-        working-directory: 05-bases-de-datos/hotel-reservas-proyecto-final
+        working-directory: 06-bases-de-datos/hotel-reservas-proyecto-final
     steps:
       - name: Obtener el codigo
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7

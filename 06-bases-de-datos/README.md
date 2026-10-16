@@ -1,6 +1,6 @@
 # Bases de Datos
 
-[Inicio](../README.md) · [← Materia 04](../04-fundamentos-programacion-sml) · **Materia 05** · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 05](../05-fundamentos-programacion-sml) · **Materia 06** · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-blue)
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)
@@ -37,7 +37,7 @@ Presentar de forma ordenada los trabajos realizados en la asignatura, acompañan
 ## Organización actual
 
 ```text
-05-bases-de-datos/
+06-bases-de-datos/
 ├── fundamentos-sistemas-bases-datos/
 ├── flotilla-aeronaves-modelo-relacional/
 ├── cine-modelado-normalizacion/

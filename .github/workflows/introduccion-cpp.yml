@@ -1,0 +1,24 @@
+name: Introduccion - C++ en Windows
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '01-introduccion-programacion/**'
+      - '.github/workflows/introduccion-cpp.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-2022
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Compilar y probar los cinco programas
+        shell: pwsh
+        run: ./01-introduccion-programacion/tests/Run-Tests.ps1

@@ -91,121 +91,121 @@ Este índice relaciona los nombres de los documentos con sus versiones publicada
 | Modelo_Relacional_y_Diccionario_Datos.pdf | [Ver archivo](tareas/tarea-1-unidad-4/modelo-relacional-y-diccionario-datos.pdf) | Copia sin cambios |
 | Modelo_Relacionar - Alquiler_Coches.pdf | [Ver archivo](tareas/compendio-unidad-4/modelo-relacionar-alquiler-coches.pdf) | Duplicado referenciado |
 | SQL_ALQUILER_COCHES.sql | [Ver archivo](tareas/tarea-1-unidad-4/sql-alquiler-coches.sql) | Copia sin cambios |
-| Resumen Unidad 1 - BD - Kelvin.docx | [Ver archivo](../../05-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-1.docx) | Adaptación o copia depurada documentada |
-| Resumen Unidad 2 - BD - Kelvin.docx | [Ver archivo](../../05-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-2.docx) | Adaptación o copia depurada documentada |
-| Cuestionario - Kelvin Cesar.pdf | [Ver archivo](../../05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-fundamentos.pdf) | Adaptación o copia depurada documentada |
-| Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf | [Ver archivo](../../05-bases-de-datos/flotilla-aeronaves-modelo-relacional/informe-final.pdf) | Adaptación o copia depurada documentada |
-| ER Aeronave NUEVO-Final.drawio | [Ver archivo](../../05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.drawio) | Copia sin cambios |
-| ER Aeronave NUEVO-Final.png | [Ver archivo](../../05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.png) | Copia sin cambios |
-| Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx | [Ver archivo](../../05-bases-de-datos/flotilla-aeronaves-modelo-relacional/modelo-relacional-3fn.xlsx) | Copia sin cambios |
-| Diccionario Caso 1 Final.xlsx | [Ver archivo](../../05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diccionario-datos.xlsx) | Copia sin cambios |
-| 5.1_Cine.drawio | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.drawio) | Copia sin cambios |
-| 5.1_Cine.png | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.png) | Copia sin cambios |
-| Modelo Relacional Cine con Diccionario.pdf | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/modelo-y-diccionario.pdf) | Copia sin cambios |
-| Diccionario Cine 5.1.xlsx | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/diccionario-cine.xlsx) | Copia sin cambios |
-| Modelo Relacional - Cine 5.1.xlsx | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/modelo-relacional.xlsx) | Copia sin cambios |
-| 5.3 Normalizacion.pdf | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.pdf) | Copia sin cambios |
-| 5.3 - Cine.xlsx | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.xlsx) | Copia sin cambios |
-| 5.2 - Hospital.xlsx | [Ver archivo](../../05-bases-de-datos/cine-modelado-normalizacion/transformacion-hospital.xlsx) | Copia sin cambios |
-| 01_creacion_bd_reservas.sql | [Ver archivo](../../05-bases-de-datos/reservas-coches-creacion-datos/01-creacion.sql) | Copia sin cambios |
-| 02_carga_datos_reservas.sql | [Ver archivo](../../05-bases-de-datos/reservas-coches-creacion-datos/02-datos.sql) | Copia sin cambios |
-| Modelo_Relacional_y_Diccionario_Datos.pdf | [Ver archivo](../../05-bases-de-datos/reservas-coches-creacion-datos/modelo-y-diccionario.pdf) | Copia sin cambios |
-| SQL_Alquiler_Coches_Kelvin.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/01-creacion.sql) | Adaptación o copia depurada documentada |
-| SQL_Introduccion_Informacion_Coches_Kelvin.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/02-datos.sql) | Copia sin cambios |
-| SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/03-consultas-basicas.sql) | Copia sin cambios |
-| Modificaciones.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/04-modificaciones.sql) | Adaptación o copia depurada documentada |
-| UPDATES-INSERTS.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/05-actualizacion-datos.sql) | Adaptación o copia depurada documentada |
-| SQL_Tema2_AlquilerCarros Kelvin.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/06-consultas-ampliadas.sql) | Copia sin cambios |
-| SQL del 8 al 14.sql | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/07-consultas-8-a-14.sql) | Adaptación o copia depurada documentada |
-| Modelo_Relacionar___Alquiler_Coches.pdf | [Ver archivo](../../05-bases-de-datos/alquiler-coches-consultas/modelo-relacional.pdf) | Copia sin cambios |
-| solucion_caso2_bolsa_empleo.sql | [Ver archivo](../../05-bases-de-datos/bolsa-empleo-objetos-sql/solution.sql) | Copia sin cambios |
-| informe_caso2_bolsa_empleo.pdf | [Ver archivo](../../05-bases-de-datos/bolsa-empleo-objetos-sql/informe-solucion.pdf) | Copia sin cambios |
-| Caso2 - Bolsa Empleo.pdf | [Ver archivo](../../05-bases-de-datos/bolsa-empleo-objetos-sql/caso-bolsa-empleo.pdf) | Copia sin cambios |
-| restaurante_atencion.sql | [Ver archivo](../../05-bases-de-datos/restaurante-consultas-segundo-parcial/01-base.sql) | Copia sin cambios |
-| SQLQueryKelvinCesar.sql | [Ver archivo](../../05-bases-de-datos/restaurante-consultas-segundo-parcial/solution.sql) | Adaptación o copia depurada documentada |
-| diagrama_restaurante.png | [Ver archivo](../../05-bases-de-datos/restaurante-consultas-segundo-parcial/diagrama.png) | Copia sin cambios |
-| 2do Examen Kelvin.pdf | [Ver archivo](../../05-bases-de-datos/restaurante-consultas-segundo-parcial/evidencia-segundo-parcial.pdf) | Copia sin cambios |
-| Primer Parcial - Base De Datos.pdf | [Ver archivo](../../05-bases-de-datos/evaluaciones-evidencia-academica/evidencia-primer-parcial.pdf) | Copia sin cambios |
-| Primer Parcial - Calificacion.png | [Ver archivo](../../05-bases-de-datos/evaluaciones-evidencia-academica/calificacion-primer-parcial.png) | Copia sin cambios |
-| Cuestionario 2.docx | [Ver archivo](../../05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.docx) | Adaptación o copia depurada documentada |
-| HotelDB_Fase1_Migracion.sql | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_Fase1_Migracion.sql) | Copia sin cambios |
-| HotelDB_Proyecto_Final.sql | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_Proyecto_Final.sql) | Adaptación o copia depurada documentada |
-| HotelDB_SeedData.sql | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_SeedData.sql) | Adaptación o copia depurada documentada |
-| ARQUITECTURA.md | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/docs/ARQUITECTURA.md) | Adaptación o copia depurada documentada |
-| CHANGELOG.md | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/docs/CHANGELOG.md) | Copia sin cambios |
-| DICCIONARIO_DATOS.md | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/docs/DICCIONARIO_DATOS.md) | Copia sin cambios |
-| AdministracionData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionData.cs) | Corrección funcional documentada |
-| AdministracionForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.cs) | Corrección funcional documentada |
-| AdministracionForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.resx) | Copia sin cambios |
-| App.config | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/App.config) | Copia sin cambios |
-| AnimationEngine.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AnimationEngine.cs) | Copia sin cambios |
-| AppLogo.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AppLogo.cs) | Copia sin cambios |
-| DataGridViewExtensions.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/DataGridViewExtensions.cs) | Copia sin cambios |
-| logo.ico | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.ico) | Copia sin cambios |
-| logo.png | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.png) | Copia sin cambios |
-| Theme.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/Theme.cs) | Copia sin cambios |
-| UIAnimations.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/UIAnimations.cs) | Copia sin cambios |
-| CheckInOutData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs) | Corrección funcional documentada |
-| ClientesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.cs) | Copia sin cambios |
-| ClientesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.resx) | Copia sin cambios |
-| ConfiguracionForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ConfiguracionForm.cs) | Corrección funcional documentada |
-| DashboardData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardData.cs) | Corrección funcional documentada |
-| DashboardForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardForm.cs) | Copia sin cambios |
-| Database.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Database.cs) | Adaptación o copia depurada documentada |
-| ExportHelper.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ExportHelper.cs) | Corrección funcional documentada |
-| FacturaPdfExporter.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturaPdfExporter.cs) | Corrección funcional documentada |
-| FacturasForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.cs) | Corrección funcional documentada |
-| FacturasForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.resx) | Copia sin cambios |
-| HabitacionesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.cs) | Copia sin cambios |
-| HabitacionesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.resx) | Copia sin cambios |
-| HotelReservas.csproj | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HotelReservas.csproj) | Corrección funcional documentada |
-| InactividadMessageFilter.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/InactividadMessageFilter.cs) | Copia sin cambios |
-| LoginForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.cs) | Copia sin cambios |
-| LoginForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.resx) | Copia sin cambios |
-| MainForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.cs) | Corrección funcional documentada |
-| MainForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.resx) | Copia sin cambios |
-| MantenimientoData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoData.cs) | Corrección funcional documentada |
-| MantenimientoForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoForm.cs) | Corrección funcional documentada |
-| NotificacionData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionData.cs) | Corrección funcional documentada |
-| NotificacionesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionesForm.cs) | Copia sin cambios |
-| packages.config | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/packages.config) | Corrección funcional documentada |
-| Program.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Program.cs) | Copia sin cambios |
-| PromocionesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.cs) | Copia sin cambios |
-| PromocionesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.resx) | Copia sin cambios |
-| AssemblyInfo.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/AssemblyInfo.cs) | Copia sin cambios |
-| Resources.Designer.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.Designer.cs) | Copia sin cambios |
-| Resources.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.resx) | Copia sin cambios |
-| Settings.Designer.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.Designer.cs) | Copia sin cambios |
-| Settings.settings | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.settings) | Copia sin cambios |
-| RatingData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingData.cs) | Corrección funcional documentada |
-| RatingForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingForm.cs) | Copia sin cambios |
-| ReportesData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs) | Corrección funcional documentada |
-| ReportesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.cs) | Corrección funcional documentada |
-| ReportesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.resx) | Copia sin cambios |
-| ReservasExtrasData.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasExtrasData.cs) | Corrección funcional documentada |
-| ReservasForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.cs) | Copia sin cambios |
-| ReservasForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.resx) | Copia sin cambios |
-| ServiciosAdicionalesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.cs) | Copia sin cambios |
-| ServiciosAdicionalesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.resx) | Copia sin cambios |
-| SesionUsuario.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SesionUsuario.cs) | Corrección funcional documentada |
-| SucursalesForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.cs) | Copia sin cambios |
-| SucursalesForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.resx) | Copia sin cambios |
-| TiposHabitacionForm.cs | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.cs) | Copia sin cambios |
-| TiposHabitacionForm.resx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.resx) | Copia sin cambios |
-| HotelReservas.slnx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx) | Copia sin cambios |
-| LEER.txt | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/LEER.txt) | Adaptación o copia depurada documentada |
-| repository_link.txt | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/repository_link.txt) | Adaptación o copia depurada documentada |
-| Diagrama_Hotel.drawio | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/diagrama-hotel.drawio) | Copia sin cambios |
-| Modelo Relacional - Hotel.xlsx | [Ver archivo](../../05-bases-de-datos/hotel-reservas-proyecto-final/modelo-relacional-hotel.xlsx) | Copia sin cambios |
-| Cuestionario 2.pdf | [Ver archivo](../../05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.pdf) | Adaptación o copia depurada documentada |
-| Examen_SQL_Resuelto_Integrado.pdf | [Ver archivo](../../05-bases-de-datos/restaurante-consultas-segundo-parcial/guia-estudio-solucion-integrada.pdf) | Copia sin cambios |
-| Ejercicio 1 - Unidad 4 DER.png | [Ver archivo](../../05-bases-de-datos/reservas-coches-creacion-datos/diagrama-ejercicio-unidad-4.png) | Copia sin cambios |
-| DER CURSO.pdf | [Ver archivo](../../05-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.pdf) | Copia sin cambios |
-| DER CURSO.xmind | [Ver archivo](../../05-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.xmind) | Copia sin cambios |
-| bookstore_setup.sql | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/bookstore.sql) | Copia sin cambios |
-| diagrama_bookstore.png | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/diagrama-bookstore.png) | Copia sin cambios |
-| DB2.pdf | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.pdf) | Copia sin cambios |
-| 2DB.docx | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.docx) | Copia sin cambios |
-| hospital.sql | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/hospital.sql) | Copia sin cambios |
-| fast_food.sql | [Ver archivo](../../05-bases-de-datos/practicas-esquemas-complementarios/fast-food.sql) | Copia sin cambios |
+| Resumen Unidad 1 - BD - Kelvin.docx | [Ver archivo](../../06-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-1.docx) | Adaptación o copia depurada documentada |
+| Resumen Unidad 2 - BD - Kelvin.docx | [Ver archivo](../../06-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-2.docx) | Adaptación o copia depurada documentada |
+| Cuestionario - Kelvin Cesar.pdf | [Ver archivo](../../06-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-fundamentos.pdf) | Adaptación o copia depurada documentada |
+| Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf | [Ver archivo](../../06-bases-de-datos/flotilla-aeronaves-modelo-relacional/informe-final.pdf) | Adaptación o copia depurada documentada |
+| ER Aeronave NUEVO-Final.drawio | [Ver archivo](../../06-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.drawio) | Copia sin cambios |
+| ER Aeronave NUEVO-Final.png | [Ver archivo](../../06-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.png) | Copia sin cambios |
+| Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx | [Ver archivo](../../06-bases-de-datos/flotilla-aeronaves-modelo-relacional/modelo-relacional-3fn.xlsx) | Copia sin cambios |
+| Diccionario Caso 1 Final.xlsx | [Ver archivo](../../06-bases-de-datos/flotilla-aeronaves-modelo-relacional/diccionario-datos.xlsx) | Copia sin cambios |
+| 5.1_Cine.drawio | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.drawio) | Copia sin cambios |
+| 5.1_Cine.png | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.png) | Copia sin cambios |
+| Modelo Relacional Cine con Diccionario.pdf | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/modelo-y-diccionario.pdf) | Copia sin cambios |
+| Diccionario Cine 5.1.xlsx | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/diccionario-cine.xlsx) | Copia sin cambios |
+| Modelo Relacional - Cine 5.1.xlsx | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/modelo-relacional.xlsx) | Copia sin cambios |
+| 5.3 Normalizacion.pdf | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.pdf) | Copia sin cambios |
+| 5.3 - Cine.xlsx | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.xlsx) | Copia sin cambios |
+| 5.2 - Hospital.xlsx | [Ver archivo](../../06-bases-de-datos/cine-modelado-normalizacion/transformacion-hospital.xlsx) | Copia sin cambios |
+| 01_creacion_bd_reservas.sql | [Ver archivo](../../06-bases-de-datos/reservas-coches-creacion-datos/01-creacion.sql) | Copia sin cambios |
+| 02_carga_datos_reservas.sql | [Ver archivo](../../06-bases-de-datos/reservas-coches-creacion-datos/02-datos.sql) | Copia sin cambios |
+| Modelo_Relacional_y_Diccionario_Datos.pdf | [Ver archivo](../../06-bases-de-datos/reservas-coches-creacion-datos/modelo-y-diccionario.pdf) | Copia sin cambios |
+| SQL_Alquiler_Coches_Kelvin.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/01-creacion.sql) | Adaptación o copia depurada documentada |
+| SQL_Introduccion_Informacion_Coches_Kelvin.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/02-datos.sql) | Copia sin cambios |
+| SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/03-consultas-basicas.sql) | Copia sin cambios |
+| Modificaciones.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/04-modificaciones.sql) | Adaptación o copia depurada documentada |
+| UPDATES-INSERTS.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/05-actualizacion-datos.sql) | Adaptación o copia depurada documentada |
+| SQL_Tema2_AlquilerCarros Kelvin.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/06-consultas-ampliadas.sql) | Copia sin cambios |
+| SQL del 8 al 14.sql | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/07-consultas-8-a-14.sql) | Adaptación o copia depurada documentada |
+| Modelo_Relacionar___Alquiler_Coches.pdf | [Ver archivo](../../06-bases-de-datos/alquiler-coches-consultas/modelo-relacional.pdf) | Copia sin cambios |
+| solucion_caso2_bolsa_empleo.sql | [Ver archivo](../../06-bases-de-datos/bolsa-empleo-objetos-sql/solution.sql) | Copia sin cambios |
+| informe_caso2_bolsa_empleo.pdf | [Ver archivo](../../06-bases-de-datos/bolsa-empleo-objetos-sql/informe-solucion.pdf) | Copia sin cambios |
+| Caso2 - Bolsa Empleo.pdf | [Ver archivo](../../06-bases-de-datos/bolsa-empleo-objetos-sql/caso-bolsa-empleo.pdf) | Copia sin cambios |
+| restaurante_atencion.sql | [Ver archivo](../../06-bases-de-datos/restaurante-consultas-segundo-parcial/01-base.sql) | Copia sin cambios |
+| SQLQueryKelvinCesar.sql | [Ver archivo](../../06-bases-de-datos/restaurante-consultas-segundo-parcial/solution.sql) | Adaptación o copia depurada documentada |
+| diagrama_restaurante.png | [Ver archivo](../../06-bases-de-datos/restaurante-consultas-segundo-parcial/diagrama.png) | Copia sin cambios |
+| 2do Examen Kelvin.pdf | [Ver archivo](../../06-bases-de-datos/restaurante-consultas-segundo-parcial/evidencia-segundo-parcial.pdf) | Copia sin cambios |
+| Primer Parcial - Base De Datos.pdf | [Ver archivo](../../06-bases-de-datos/evaluaciones-evidencia-academica/evidencia-primer-parcial.pdf) | Copia sin cambios |
+| Primer Parcial - Calificacion.png | [Ver archivo](../../06-bases-de-datos/evaluaciones-evidencia-academica/calificacion-primer-parcial.png) | Copia sin cambios |
+| Cuestionario 2.docx | [Ver archivo](../../06-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.docx) | Adaptación o copia depurada documentada |
+| HotelDB_Fase1_Migracion.sql | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_Fase1_Migracion.sql) | Copia sin cambios |
+| HotelDB_Proyecto_Final.sql | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_Proyecto_Final.sql) | Adaptación o copia depurada documentada |
+| HotelDB_SeedData.sql | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/Base%20de%20Datos/HotelDB_SeedData.sql) | Adaptación o copia depurada documentada |
+| ARQUITECTURA.md | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/docs/ARQUITECTURA.md) | Adaptación o copia depurada documentada |
+| CHANGELOG.md | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/docs/CHANGELOG.md) | Copia sin cambios |
+| DICCIONARIO_DATOS.md | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/docs/DICCIONARIO_DATOS.md) | Copia sin cambios |
+| AdministracionData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionData.cs) | Corrección funcional documentada |
+| AdministracionForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.cs) | Corrección funcional documentada |
+| AdministracionForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.resx) | Copia sin cambios |
+| App.config | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/App.config) | Copia sin cambios |
+| AnimationEngine.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AnimationEngine.cs) | Copia sin cambios |
+| AppLogo.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AppLogo.cs) | Copia sin cambios |
+| DataGridViewExtensions.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/DataGridViewExtensions.cs) | Copia sin cambios |
+| logo.ico | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.ico) | Copia sin cambios |
+| logo.png | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.png) | Copia sin cambios |
+| Theme.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/Theme.cs) | Copia sin cambios |
+| UIAnimations.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/UIAnimations.cs) | Copia sin cambios |
+| CheckInOutData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs) | Corrección funcional documentada |
+| ClientesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.cs) | Copia sin cambios |
+| ClientesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.resx) | Copia sin cambios |
+| ConfiguracionForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ConfiguracionForm.cs) | Corrección funcional documentada |
+| DashboardData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardData.cs) | Corrección funcional documentada |
+| DashboardForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardForm.cs) | Copia sin cambios |
+| Database.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Database.cs) | Adaptación o copia depurada documentada |
+| ExportHelper.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ExportHelper.cs) | Corrección funcional documentada |
+| FacturaPdfExporter.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturaPdfExporter.cs) | Corrección funcional documentada |
+| FacturasForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.cs) | Corrección funcional documentada |
+| FacturasForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.resx) | Copia sin cambios |
+| HabitacionesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.cs) | Copia sin cambios |
+| HabitacionesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.resx) | Copia sin cambios |
+| HotelReservas.csproj | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HotelReservas.csproj) | Corrección funcional documentada |
+| InactividadMessageFilter.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/InactividadMessageFilter.cs) | Copia sin cambios |
+| LoginForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.cs) | Copia sin cambios |
+| LoginForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.resx) | Copia sin cambios |
+| MainForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.cs) | Corrección funcional documentada |
+| MainForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.resx) | Copia sin cambios |
+| MantenimientoData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoData.cs) | Corrección funcional documentada |
+| MantenimientoForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoForm.cs) | Corrección funcional documentada |
+| NotificacionData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionData.cs) | Corrección funcional documentada |
+| NotificacionesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionesForm.cs) | Copia sin cambios |
+| packages.config | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/packages.config) | Corrección funcional documentada |
+| Program.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Program.cs) | Copia sin cambios |
+| PromocionesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.cs) | Copia sin cambios |
+| PromocionesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.resx) | Copia sin cambios |
+| AssemblyInfo.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/AssemblyInfo.cs) | Copia sin cambios |
+| Resources.Designer.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.Designer.cs) | Copia sin cambios |
+| Resources.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.resx) | Copia sin cambios |
+| Settings.Designer.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.Designer.cs) | Copia sin cambios |
+| Settings.settings | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.settings) | Copia sin cambios |
+| RatingData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingData.cs) | Corrección funcional documentada |
+| RatingForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingForm.cs) | Copia sin cambios |
+| ReportesData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs) | Corrección funcional documentada |
+| ReportesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.cs) | Corrección funcional documentada |
+| ReportesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.resx) | Copia sin cambios |
+| ReservasExtrasData.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasExtrasData.cs) | Corrección funcional documentada |
+| ReservasForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.cs) | Copia sin cambios |
+| ReservasForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.resx) | Copia sin cambios |
+| ServiciosAdicionalesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.cs) | Copia sin cambios |
+| ServiciosAdicionalesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.resx) | Copia sin cambios |
+| SesionUsuario.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SesionUsuario.cs) | Corrección funcional documentada |
+| SucursalesForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.cs) | Copia sin cambios |
+| SucursalesForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.resx) | Copia sin cambios |
+| TiposHabitacionForm.cs | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.cs) | Copia sin cambios |
+| TiposHabitacionForm.resx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.resx) | Copia sin cambios |
+| HotelReservas.slnx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx) | Copia sin cambios |
+| LEER.txt | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/LEER.txt) | Adaptación o copia depurada documentada |
+| repository_link.txt | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/repository_link.txt) | Adaptación o copia depurada documentada |
+| Diagrama_Hotel.drawio | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/diagrama-hotel.drawio) | Copia sin cambios |
+| Modelo Relacional - Hotel.xlsx | [Ver archivo](../../06-bases-de-datos/hotel-reservas-proyecto-final/modelo-relacional-hotel.xlsx) | Copia sin cambios |
+| Cuestionario 2.pdf | [Ver archivo](../../06-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.pdf) | Adaptación o copia depurada documentada |
+| Examen_SQL_Resuelto_Integrado.pdf | [Ver archivo](../../06-bases-de-datos/restaurante-consultas-segundo-parcial/guia-estudio-solucion-integrada.pdf) | Copia sin cambios |
+| Ejercicio 1 - Unidad 4 DER.png | [Ver archivo](../../06-bases-de-datos/reservas-coches-creacion-datos/diagrama-ejercicio-unidad-4.png) | Copia sin cambios |
+| DER CURSO.pdf | [Ver archivo](../../06-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.pdf) | Copia sin cambios |
+| DER CURSO.xmind | [Ver archivo](../../06-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.xmind) | Copia sin cambios |
+| bookstore_setup.sql | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/bookstore.sql) | Copia sin cambios |
+| diagrama_bookstore.png | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/diagrama-bookstore.png) | Copia sin cambios |
+| DB2.pdf | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.pdf) | Copia sin cambios |
+| 2DB.docx | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.docx) | Copia sin cambios |
+| hospital.sql | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/hospital.sql) | Copia sin cambios |
+| fast_food.sql | [Ver archivo](../../06-bases-de-datos/practicas-esquemas-complementarios/fast-food.sql) | Copia sin cambios |
 | Proyecto Final.docx | [Ver archivo](enunciados/proyecto-final.docx) | Duplicado referenciado |

@@ -1,0 +1,12 @@
+algoritmo algoritmo 3.9
+
+1. Inicio 
+2. Inicializar en 0 acumuladores B 
+3. Desplegar mensaje por pantalla " Ingrasar el valor de A"
+4. Leer A
+5. Calcular el valor de B
+    B = A + 3
+6. Desplegar por pantalla "El resultado es " A y B 
+7. Fin
+
+

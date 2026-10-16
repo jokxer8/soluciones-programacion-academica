@@ -1,6 +1,6 @@
 # Fundamentos de Programación con SML
 
-[Inicio](../README.md) · [← Materia 03](../03-diseno-y-analisis-de-algoritmos) · **Materia 04** · [Materia 05 →](../05-bases-de-datos) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 04](../04-diseno-y-analisis-de-algoritmos) · **Materia 05** · [Materia 06 →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 ![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
@@ -34,7 +34,7 @@ Esta sección complementa los ejercicios de programación estructurada, programa
 ## Organización actual
 
 ```text
-04-fundamentos-programacion-sml/
+05-fundamentos-programacion-sml/
 ├── calculo-lambda-fundamentos/
 │   ├── README.md
 │   ├── desarrollo.md

@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main() {
+
+	int A = 0;
+	int B = 0;
+
+	std::cout << "Ingrese el valor de A: ";
+
+	std::cin >> A;
+
+	B = A + 3;
+
+	std::cout << "El valor de A es: " << A << std::endl;
+
+	std::cout << "El valor de B es: " << B << std::endl;
+
+	return 0;
+
+}

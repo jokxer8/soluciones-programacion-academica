@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    double cateto1, cateto2;
+
+    cout << "Bienvenidos, vamos a calcular la hipotenusa, el area y el perimetro de un triangulo rectangulo." << endl;
+    cout << "Ingrese el primer cateto: " << endl;
+    cin >> cateto1;
+
+    cout << "Ingrese el segundo cateto: " << endl;
+    cin >> cateto2;
+
+    double hipotenusa = 0;
+    double precision = cateto1 * cateto1 + cateto2 * cateto2;
+    for (double raiz = 1; raiz * raiz < precision; raiz += 0.01) {
+        hipotenusa = raiz;
+    }
+
+    double area = (cateto1 * cateto2) / 2;
+
+    double perimetro = cateto1 + cateto2 + hipotenusa;
+
+    cout << "Los resultados son: " << endl;
+    cout << "La Hipotenusa: " << hipotenusa << endl;
+    cout << "El Area: " << area << endl;
+    cout << "El Perimetro: " << perimetro << endl;
+
+    return 0;
+}

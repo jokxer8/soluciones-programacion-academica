@@ -1,6 +1,6 @@
 # Fundamentos de Sistema Computacionales
 
-[Inicio](../README.md) · **Materia 00** · [Materia 01 →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · **Materia 00** · [Materia 01 →](../01-introduccion-programacion) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Materia](https://img.shields.io/badge/Materia-Sistemas%20Computacionales-green)
@@ -68,7 +68,7 @@ La colección conserva **43 fuentes C y 15 fuentes ASM**: 42 programas C indepen
 
 ## Enfoque académico
 
-La asignatura ocupa la posición **00** porque introduce conceptos utilizados después en las demás materias. La representación de datos y el control de ejecución ayudan a comprender los programas de la [materia 01](../01-fundamentos-programacion); las estructuras dinámicas se relacionan con el estudio posterior de [algoritmos](../03-diseno-y-analisis-de-algoritmos). El proyecto de países organiza información en memoria y archivos, antes de abordar persistencia relacional en [Bases de Datos](../05-bases-de-datos).
+La asignatura ocupa la posición **00** porque introduce conceptos utilizados después en las demás materias. La representación de datos y el control de ejecución ayudan a comprender los programas de la [materia 02](../02-fundamentos-programacion); las estructuras dinámicas se relacionan con el estudio posterior de [algoritmos](../04-diseno-y-analisis-de-algoritmos). El proyecto de países organiza información en memoria y archivos, antes de abordar persistencia relacional en [Bases de Datos](../06-bases-de-datos).
 
 ---
 

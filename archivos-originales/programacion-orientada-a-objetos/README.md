@@ -13,7 +13,7 @@ Mantener una copia organizada de los documentos originales relacionados con prog
 Estos archivos permiten conservar la trazabilidad entre el material académico inicial y las soluciones finales documentadas en la carpeta principal:
 
 ```text
-02-programacion-orientada-a-objetos/
+03-programacion-orientada-a-objetos/
 ```
 
 ---
@@ -59,7 +59,7 @@ Los documentos originales de esta carpeta pueden incluir ejercicios sobre:
 Las soluciones finales y documentadas se encuentran en:
 
 ```text
-02-programacion-orientada-a-objetos/
+03-programacion-orientada-a-objetos/
 ```
 
 Allí cada ejercicio cuenta con:

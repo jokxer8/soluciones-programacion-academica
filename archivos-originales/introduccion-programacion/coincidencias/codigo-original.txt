@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string> 
+
+using namespace std;
+
+int main() {
+    cout << "Ingrese una palabra: ";
+    string palabra;
+    cin >> palabra;
+
+    cout << "Ingrese un texto: ";
+    cin.ignore(); // este codigo te permite hacer cambio de libreria sin almacenar errores
+    string texto;
+    getline(cin, texto); // getline me permite ingresar texto con los espacios y toda simbología adicional al texto tal cual el usuario la introduce
+
+    int contador = 0;
+    size_t posicion = texto.find(palabra, 0);  // aqui size_t te permite guardar la posición donde se encuentra la primera palabra encontrada en el texto y find es un codigo de busqueda predeterminado
+
+    while (posicion != string::npos) { // aqui el ciclo lo repetire hasta que el resultado de busqueda sea npos que significa que no hay mas coincidencia
+        contador++;
+        posicion = texto.find(palabra, posicion + 1); // lo que hacemos es que le damos el valor de la posición en que se encontro la primera palabra + 1 para que siga buscando donde se quedo y no cuente siempre la misma palabra y el ciclo se haga infinito
+    }
+
+    cout << "La palabra \"" << palabra << "\" Aparece " << contador << " veces en el texto." << endl;  // aqui coloque \" eso se utiliza para poder hacer que aparezca la simbologia de " en la pantalla, puse que la palabra buscada introducida por el usuario saliera entre comillas al imprimir.
+
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int numero;
+
+    cout << "Ingrese el numero de pisos para la piramide (de 1 a 60): ";
+    cin >> numero;
+
+    if (numero <= 0) {
+        cout << "¡Error! - El numero de pisos no puede ser menor o igual que 0." << endl;
+    }
+    else if (numero > 60) {
+        cout << "¡Error! El numero de pisos no puede ser mayor que 60." << endl;
+    }
+    else {
+        for (int piso = 1; piso <= numero; piso++) {
+            for (int espacio = 0; espacio < numero - piso; espacio++) {
+                cout << " ";
+            }
+
+            for (int asterisco = 0; asterisco < 2 * piso - 1; asterisco++) {
+                cout << "*";
+            }
+
+            cout << endl;
+        }
+    }
+
+    return 0;
+}

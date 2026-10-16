@@ -1,0 +1,14 @@
+1.0 inicio
+2.0 deplegar por pantalla "Ingrese una palabra: "
+3.0 aceptar la palabra
+4.0 deplegar por pantalla "Ingrese un texto: "
+5.0 ignorar la entrada hasta el salto de linea  
+6,0 aceptar el texto completo 
+7.0 inicializar contador con valor de cero
+8.0 posicion es igual a buscar la primera aparicion de la palabra en el texto apartir del indice cero 
+9.0 mientras posicion sea diferente a no encontrado 
+	9.1 incrementar contador en uno 
+	9.2 posicion es igual a la buscada en el texto de la palabra desde la poscion actual 
+	9.3 incrementar a poscion en uno
+10.0 deplegar por pantalla "La palabra "", palabra, "" aparece ", contador, " veces en el texto."
+11.0 fin 
