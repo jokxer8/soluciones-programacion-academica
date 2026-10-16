@@ -61,6 +61,12 @@ El archivo [desarrollo.md](desarrollo.md) explica las decisiones y el alcance de
 
 ---
 
+## Material de estudio complementario
+
+[Guía con solución integrada](guia-estudio-solucion-integrada.pdf), conservada como material de repaso. Sus marcadores de iniciales no sustituyen las respuestas originales del parcial.
+
+---
+
 ## Cómo revisar la actividad
 
 Ejecutar 01-base.sql y después solution.sql en SSMS. El primer archivo elimina y recrea RESTAURANTE_ATENCION: utilizar un entorno de práctica. Las correcciones y el tratamiento del intervalo de fechas se detallan en desarrollo.md.

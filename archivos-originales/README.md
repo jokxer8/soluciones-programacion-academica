@@ -139,6 +139,6 @@ Si un documento contiene información sensible, se recomienda subir una versión
 
 Esta carpeta queda destinada exclusivamente a conservar archivos originales y evidencias académicas.
 
-La sección de [Bases de Datos](bases-de-datos) conserva los trabajos de la carpeta académica Github, con versiones normalizadas, evidencias e inventario de procedencia. Su [sección documentada](../05-bases-de-datos) está completada con siete actividades y un apartado de evaluaciones.
+La sección de [Bases de Datos](bases-de-datos) conserva los trabajos de la carpeta académica 30. Base de Datos, con versiones normalizadas, evidencias e inventario de procedencia. Su [sección documentada](../05-bases-de-datos) está completada con actividades de diseño y SQL, proyecto final del hotel, esquemas de apoyo y evaluaciones.
 
 Las soluciones finales deben mantenerse en las carpetas principales del repositorio.

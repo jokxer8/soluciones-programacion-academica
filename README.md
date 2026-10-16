@@ -28,7 +28,7 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | [02 - Programación Orientada a Objetos](02-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
 | [03 - Diseño y Análisis de Algoritmos](03-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
 | [04 - Fundamentos de Programación con SML](04-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
-| [05 - Bases de Datos](05-bases-de-datos) | Trabajos de modelado entidad-relación, normalización, implementación relacional, consultas y objetos SQL. | Completado |
+| [05 - Bases de Datos](05-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
 | [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y profesionalizar los ejercicios. | Conservado |
 
 ---
@@ -110,6 +110,7 @@ soluciones-programacion-academica/
 | [Alquiler de Coches - Consultas SQL](05-bases-de-datos/alquiler-coches-consultas) | Claves compuestas, Relación muchos a muchos, JOIN y subconsultas, GROUP BY y HAVING, ALTER TABLE, Funciones agregadas |
 | [Bolsa de Empleo - Vistas, Procedimientos y Auditoría](05-bases-de-datos/bolsa-empleo-objetos-sql) | Vistas, Procedimientos almacenados, Funciones escalares, Triggers, Tablas inserted y deleted, Agrupación temporal |
 | [Restaurante - Consultas del Segundo Parcial](05-bases-de-datos/restaurante-consultas-segundo-parcial) | DISTINCT y JOIN, EXISTS, CTE, Agregaciones, Vistas, Funciones escalares |
+| [Sistema de Reservas de Hotel - Proyecto Final](05-bases-de-datos/hotel-reservas-proyecto-final) | C#, Windows Forms, SQL Server, ADO.NET, reservas, facturación y roles |
 
 ---
 
@@ -149,6 +150,7 @@ Este repositorio evidencia competencias en:
 - Análisis de complejidad algorítmica.
 - Modelado entidad-relación y normalización.
 - Consultas T-SQL y programación de objetos de bases de datos.
+- Integración de SQL Server con C# y ADO.NET.
 - Organización de evidencia académica.
 - Documentación técnica en Markdown.
 - Organización profesional de repositorios en GitHub.

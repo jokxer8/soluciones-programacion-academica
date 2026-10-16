@@ -4,7 +4,7 @@
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)
 
-Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**, organizados a partir de la carpeta académica Github.
+Esta carpeta contiene actividades, ejercicios y soluciones de **ICC-223 Bases de Datos**, organizados a partir de la carpeta académica 30. Base de Datos, incluidas sus subcarpetas Github y Proyecto Hotel Final.
 
 Los trabajos presentan la evolución desde fundamentos y diseño entidad-relación hasta normalización, implementación relacional, consultas y programación con SQL Server.
 
@@ -28,6 +28,9 @@ Presentar de forma ordenada los trabajos realizados en la asignatura, acompañan
 | [Bolsa de Empleo - Vistas, Procedimientos y Auditoría](bolsa-empleo-objetos-sql) | Objetos de base de datos para consultar ofertas y registrar cambios de empresas. | Vistas, Procedimientos almacenados, Funciones escalares |
 | [Restaurante - Consultas del Segundo Parcial](restaurante-consultas-segundo-parcial) | Seis requerimientos SQL sobre órdenes, productos, clientes, meseros y propinas. | DISTINCT y JOIN, EXISTS, CTE |
 | [Evaluaciones - Evidencia Académica](evaluaciones-evidencia-academica) | Respaldo del primer parcial y referencia al segundo parcial resuelto. | Diseño relacional, Razonamiento de bases de datos, SQL |
+| [Cursos - Modelo Entidad-Relación](cursos-modelo-entidad-relacion) | Diseño conceptual de cursos, ofertas, instructores, empleados, actividades y certificados. | Entidades y atributos, Claves y cardinalidades, Relaciones entre ofertas, cursos e instructores |
+| [Prácticas y Esquemas Complementarios](practicas-esquemas-complementarios) | Material de estudio y esquemas de librería, hospital y comida rápida conservados en la asignatura. | Lectura de esquemas relacionales, Claves primarias y foráneas, SQL Server |
+| [Sistema de Reservas de Hotel - Proyecto Final](hotel-reservas-proyecto-final) | Proyecto grupal de C# Windows Forms y SQL Server que integra diseño relacional y gestión hotelera. | C# y .NET Framework 4.8, Windows Forms, SQL Server y T-SQL |
 
 ---
 
@@ -43,6 +46,10 @@ Presentar de forma ordenada los trabajos realizados en la asignatura, acompañan
 ├── bolsa-empleo-objetos-sql/
 ├── restaurante-consultas-segundo-parcial/
 ├── evaluaciones-evidencia-academica/
+├── cursos-modelo-entidad-relacion/
+├── practicas-esquemas-complementarios/
+├── hotel-reservas-proyecto-final/
+├── AUDITORIA.md
 ├── VALIDACION.md
 └── README.md
 ```
@@ -59,6 +66,7 @@ Presentar de forma ordenada los trabajos realizados en la asignatura, acompañan
 - Consultas con JOIN, subconsultas, CTE y agrupaciones.
 - Creación de vistas, procedimientos almacenados, funciones y triggers.
 - Auditoría de cambios y documentación de soluciones académicas.
+- Integración de SQL Server con C# y ADO.NET en una aplicación de escritorio.
 
 ---
 
@@ -88,19 +96,19 @@ Las actividades teóricas y de modelado se documentan sin inventar código SQL. 
 
 Las versiones de trabajo, los enunciados y las evidencias están en [archivos-originales/bases-de-datos](../archivos-originales/bases-de-datos/README.md). El [inventario](../archivos-originales/bases-de-datos/INVENTARIO.md) permite contrastar su procedencia y consultar las variantes.
 
-El documento Proyecto Final.docx de la carpeta de origen contiene los requisitos del proyecto. No se presenta como un proyecto implementado porque esa carpeta no incluye su aplicación ni su base de datos final.
+El [proyecto final del hotel](hotel-reservas-proyecto-final) incluye la aplicación, los scripts, el diseño y su documentación. El documento de requisitos se conserva en los originales y se diferencia de la implementación. La [auditoría de la carpeta](AUDITORIA.md) explica el tratamiento de los materiales adicionales.
 
 ---
 
 ## Lenguaje utilizado
 
-SQL, principalmente T-SQL para Microsoft SQL Server. Los diagramas y modelos acompañan los ejercicios de diseño.
+SQL, principalmente T-SQL para Microsoft SQL Server; C# con Windows Forms y .NET Framework 4.8 en el proyecto del hotel. Los diagramas y modelos acompañan los ejercicios de diseño.
 
 ---
 
 ## Estado de la sección
 
-Sección organizada con siete actividades de fundamentos, diseño y SQL, y un conjunto adicional de evidencias de evaluación. El autor informa que aprobó la asignatura; la captura del primer parcial respalda esa evaluación concreta y no sustituye una certificación de nota final.
+Sección completada con nueve actividades de fundamentos, diseño, SQL y proyecto final, un apartado de esquemas de apoyo y un conjunto de evidencias de evaluación. El autor informa que aprobó la asignatura; la captura del primer parcial respalda esa evaluación concreta y no sustituye una certificación de nota final.
 
 Los scripts se revisaron documentalmente y mediante análisis de sintaxis. El orden de ejecución, las dependencias y los scripts que recrean datos se explican en cada actividad y en [VALIDACION.md](VALIDACION.md).
 

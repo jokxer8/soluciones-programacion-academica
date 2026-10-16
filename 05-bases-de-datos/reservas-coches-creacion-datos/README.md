@@ -58,6 +58,12 @@ El archivo [desarrollo.md](desarrollo.md) explica las decisiones y el alcance de
 
 ---
 
+## Diagrama de apoyo
+
+[DER del ejercicio de la unidad 4](diagrama-ejercicio-unidad-4.png). Se conserva como referencia del ejercicio; las variantes de coches deben contrastarse con su propio script.
+
+---
+
 ## Cómo revisar la actividad
 
 En SQL Server, crear una base vacía BD_ReservasCoches y seleccionarla en SSMS. Ejecutar 01-creacion.sql y luego 02-datos.sql. El primer script elimina tablas existentes: usar una base de práctica. Esta variante no se combina con el esquema de varios coches por reserva.

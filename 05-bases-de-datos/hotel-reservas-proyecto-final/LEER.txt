@@ -1,0 +1,24 @@
+PROYECTO FINAL: SISTEMA DE RESERVAS DE HOTEL
+Kelvin Del Castillo, Gabriel Galasso y Camila Vasquez.
+
+INSTALACION
+1. Usar una instancia SQL Server de practica. HotelDB_Proyecto_Final.sql ELIMINA y recrea HotelDB.
+2. Ejecutar Base de Datos/HotelDB_Proyecto_Final.sql.
+3. Ejecutar Base de Datos/HotelDB_Fase1_Migracion.sql una vez, sobre la base nueva.
+4. Opcional: ejecutar HotelDB_SeedData.sql una vez.
+5. Abrir HotelReservas/HotelReservas.csproj en Visual Studio con .NET Framework 4.8 Developer Pack.
+6. Restaurar packages.config mediante NuGet en la carpeta packages junto a HotelReservas.
+7. Cambiar Server=localhost en Database.cs si se utiliza otra instancia SQL Server.
+8. Compilar y ejecutar.
+
+CUENTAS DE DEMOSTRACION DE LA BASE INICIAL
+admin / 123456
+empleado1 / 1234
+recepcion2 / 4321
+gg.admin / 123456
+soporte1 / 123456
+
+Estas claves pertenecen a los datos de practica; no son credenciales del servidor.
+El tema inicial del codigo actual es claro; puede cambiarse durante la sesion.
+La copia publica sustituye documentos, telefonos y correos de ejemplo por valores ficticios.
+Consultar README.md y desarrollo.md para conocer el alcance y las comprobaciones.

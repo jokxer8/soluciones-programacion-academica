@@ -1,82 +1,82 @@
 {
-  "sourceFolder": "C:\\Users\\kelvi\\OneDrive\\Escritorio\\Github",
+  "sourceFolder": "C:\\Users\\kelvi\\OneDrive\\Escritorio\\PUCMM\\Materias Aprobadas\\30. Base de Datos",
   "records": [
     {
-      "source": "2do Parcial/2do Examen Kelvin.pdf",
+      "source": "Github/2do Parcial/2do Examen Kelvin.pdf",
       "target": "archivos-originales/bases-de-datos/2do-parcial/2do-examen-kelvin.pdf",
       "sha256": "e151eaaf5528a2d7c2b2346655b4787c099560beab0250447a3a2167a32eb74e",
       "publishedSha256": "e151eaaf5528a2d7c2b2346655b4787c099560beab0250447a3a2167a32eb74e"
     },
     {
-      "source": "2do Parcial/diagrama_restaurante.png",
+      "source": "Github/2do Parcial/diagrama_restaurante.png",
       "target": "archivos-originales/bases-de-datos/2do-parcial/diagrama-restaurante.png",
       "sha256": "135444752eef36e8ff25c8563d14b8f2d69b6a97bba2bdd8c6f7e99a17cb2355",
       "publishedSha256": "135444752eef36e8ff25c8563d14b8f2d69b6a97bba2bdd8c6f7e99a17cb2355"
     },
     {
-      "source": "2do Parcial/restaurante_atencion.sql",
+      "source": "Github/2do Parcial/restaurante_atencion.sql",
       "target": "archivos-originales/bases-de-datos/2do-parcial/restaurante-atencion.sql",
       "sha256": "f776532593be5fcd9d26e68cf94633059169ee61652687a3dcad1aa47daff5bb",
       "publishedSha256": "f776532593be5fcd9d26e68cf94633059169ee61652687a3dcad1aa47daff5bb"
     },
     {
-      "source": "2do Parcial/SQLQueryKelvinCesar.sql",
+      "source": "Github/2do Parcial/SQLQueryKelvinCesar.sql",
       "target": "archivos-originales/bases-de-datos/2do-parcial/sqlquerykelvincesar.sql",
       "sha256": "3e7b25b997f13ce5c324f98f001564b821e83484d52076b640bc1f0bb377933e",
       "publishedSha256": "3e7b25b997f13ce5c324f98f001564b821e83484d52076b640bc1f0bb377933e"
     },
     {
-      "source": "Primer Parcial/Primer Parcial - Base De Datos.pdf",
+      "source": "Github/Primer Parcial/Primer Parcial - Base De Datos.pdf",
       "target": "archivos-originales/bases-de-datos/primer-parcial/primer-parcial-base-de-datos.pdf",
       "sha256": "158710053978d049fffad88ad16219f5d2e5b3871ba725b5ece7ce32229a8c6c",
       "publishedSha256": "158710053978d049fffad88ad16219f5d2e5b3871ba725b5ece7ce32229a8c6c"
     },
     {
-      "source": "Primer Parcial/Primer Parcial - Calificacion.png",
+      "source": "Github/Primer Parcial/Primer Parcial - Calificacion.png",
       "target": "archivos-originales/bases-de-datos/primer-parcial/primer-parcial-calificacion.png",
       "sha256": "984fa30ba9d8f35acd0d0150270f81c6b9b281a8315b79435681075f946b5bf9",
       "publishedSha256": "984fa30ba9d8f35acd0d0150270f81c6b9b281a8315b79435681075f946b5bf9"
     },
     {
-      "source": "Primera Prueba Escrita BD.docx",
+      "source": "Github/Primera Prueba Escrita BD.docx",
       "target": "archivos-originales/bases-de-datos/enunciados/primera-prueba-escrita-bd.docx",
       "sha256": "cb78e40f2a00eebeafea4bb006fbee996011d8ff0ab4a2beb429a920e696731f",
       "publishedSha256": "cb78e40f2a00eebeafea4bb006fbee996011d8ff0ab4a2beb429a920e696731f"
     },
     {
-      "source": "Proyecto Final.docx",
+      "source": "Github/Proyecto Final.docx",
       "target": "archivos-originales/bases-de-datos/enunciados/proyecto-final.docx",
       "sha256": "bdab0102a80835ef08975f59e276dabafac0e540be8f03b9885ba5590c1b44d8",
       "publishedSha256": "bdab0102a80835ef08975f59e276dabafac0e540be8f03b9885ba5590c1b44d8"
     },
     {
-      "source": "Segunda Prueba Escrita.docx",
+      "source": "Github/Segunda Prueba Escrita.docx",
       "target": "archivos-originales/bases-de-datos/enunciados/segunda-prueba-escrita.docx",
       "sha256": "e5ff560c9ff421f5a02015251db477a2c591d7c42647f3fddc59cff4c5c1eb54",
       "publishedSha256": "e5ff560c9ff421f5a02015251db477a2c591d7c42647f3fddc59cff4c5c1eb54"
     },
     {
-      "source": "Tareas/Análisis de caso 1 - La flotilla de aviones.docx",
+      "source": "Github/Tareas/Análisis de caso 1 - La flotilla de aviones.docx",
       "target": "archivos-originales/bases-de-datos/tareas/analisis-de-caso-1-la-flotilla-de-aviones.docx",
       "sha256": "b41b4ddbd9fd4604c9a055627ca8b38e1e0557403bd7453400cc6fa3739fbfb0",
       "publishedSha256": "f6feca3de750975aff02bab41a7d8d23d806cd825ed4a13d194b2928c1679682",
       "adapted": true
     },
     {
-      "source": "Tareas/Análisis de caso 1 - La flotilla de aviones.pdf",
+      "source": "Github/Tareas/Análisis de caso 1 - La flotilla de aviones.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/analisis-de-caso-1-la-flotilla-de-aviones.pdf",
       "sha256": "c17e5fede22734726d3d810e64fa2830d2820e70ad00cc7da9e28004a37bba94",
       "publishedSha256": "844731ba7149b9e08ac05dbb9d3e59703ab8088d3da3de07f9b0eb634655608e",
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/5.3 - Cine.xlsx",
+      "source": "Github/Tareas/Caso 1/5.3 - Cine.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/5.3-cine.xlsx",
       "sha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3",
       "publishedSha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3"
     },
     {
-      "source": "Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones (1).pdf",
+      "source": "Github/Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones (1).pdf",
       "target": "archivos-originales/bases-de-datos/tareas/analisis-de-caso-1-la-flotilla-de-aviones.pdf",
       "sha256": "c17e5fede22734726d3d810e64fa2830d2820e70ad00cc7da9e28004a37bba94",
       "publishedSha256": "844731ba7149b9e08ac05dbb9d3e59703ab8088d3da3de07f9b0eb634655608e",
@@ -84,44 +84,44 @@
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones.pdf",
+      "source": "Github/Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/analisis-de-caso-1-la-flotilla-de-aviones.pdf",
       "sha256": "aa414ace0e4bcd0711c8969ade78d6babe4b64b41b31b2557b146f405d9efb98",
       "publishedSha256": "317955f983a19f7664651c13e2c83afaaf0d2bd3eb9f873166e76ebbd900d6d6",
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones.png",
+      "source": "Github/Tareas/Caso 1/Análisis de caso 1 - La flotilla de aviones.png",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/analisis-de-caso-1-la-flotilla-de-aviones.png",
       "sha256": "5a3c0e0487358a760acd310ff804b4d4ed58697931302dc0db602feb2b1f405e",
       "publishedSha256": "5a3c0e0487358a760acd310ff804b4d4ed58697931302dc0db602feb2b1f405e"
     },
     {
-      "source": "Tareas/Caso 1/Base de Datos - Caso 1.pdf",
+      "source": "Github/Tareas/Caso 1/Base de Datos - Caso 1.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/base-de-datos-caso-1.pdf",
       "sha256": "c631cac51a44b5aa747de7237148ea510bc3d118e7e8b8419c1200b3920eff94",
       "publishedSha256": "c631cac51a44b5aa747de7237148ea510bc3d118e7e8b8419c1200b3920eff94"
     },
     {
-      "source": "Tareas/Caso 1/Compendio de ejercicios 1.pptx",
+      "source": "Github/Tareas/Caso 1/Compendio de ejercicios 1.pptx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/compendio-de-ejercicios-1.pptx",
       "sha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a",
       "publishedSha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a"
     },
     {
-      "source": "Tareas/Caso 1/Diccionario Caso 1 Final.xlsx",
+      "source": "Github/Tareas/Caso 1/Diccionario Caso 1 Final.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/diccionario-caso-1-final.xlsx",
       "sha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb",
       "publishedSha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb"
     },
     {
-      "source": "Tareas/Caso 1/Diccionario Caso 1.docx",
+      "source": "Github/Tareas/Caso 1/Diccionario Caso 1.docx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/diccionario-caso-1.docx",
       "sha256": "011ab237865412012dfc3925a8ae43b0b679d7f493e67d2991f883c478628e1a",
       "publishedSha256": "011ab237865412012dfc3925a8ae43b0b679d7f493e67d2991f883c478628e1a"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Análisis de caso 1 - La flotilla de aviones.pdf",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Análisis de caso 1 - La flotilla de aviones.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/analisis-de-caso-1-la-flotilla-de-aviones.pdf",
       "sha256": "aa414ace0e4bcd0711c8969ade78d6babe4b64b41b31b2557b146f405d9efb98",
       "publishedSha256": "317955f983a19f7664651c13e2c83afaaf0d2bd3eb9f873166e76ebbd900d6d6",
@@ -129,655 +129,1149 @@
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Compendio de ejercicios 1.pptx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Compendio de ejercicios 1.pptx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/compendio-de-ejercicios-1.pptx",
       "sha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a",
       "publishedSha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a",
       "duplicate": true
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Diccionario Caso 1 Final.xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Diccionario Caso 1 Final.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/diccionario-caso-1-final.xlsx",
       "sha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb",
       "publishedSha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb",
       "duplicate": true
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Diccionario Caso 1.xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Diccionario Caso 1.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/diccionario-caso-1.xlsx",
       "sha256": "b746526f06bb23d449d7e6d39e4038249c54a66a14df15327a1c4f41496c9c06",
       "publishedSha256": "b746526f06bb23d449d7e6d39e4038249c54a66a14df15327a1c4f41496c9c06"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.drawio",
+      "source": "Github/Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.drawio",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/er-aeronave-nuevo-final.drawio",
       "sha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9",
       "publishedSha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.png",
+      "source": "Github/Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.png",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/er-aeronave-nuevo-final.png",
       "sha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef",
       "publishedSha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/modelo-relacional-caso-1-aeronave-3fn-con-datos.xlsx",
       "sha256": "8b4dd919bb55920564ed5c94a9eb3850ceea553486a71da8e0279c450769fcc0",
       "publishedSha256": "8b4dd919bb55920564ed5c94a9eb3850ceea553486a71da8e0279c450769fcc0"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN).xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN).xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/modelo-relacional-caso-1-aeronave-3fn.xlsx",
       "sha256": "80b148690d061d30aa6b1530ecc20526a336b2a0b944ecc17ca757be3831b492",
       "publishedSha256": "80b148690d061d30aa6b1530ecc20526a336b2a0b944ecc17ca757be3831b492"
     },
     {
-      "source": "Tareas/Caso 1/ER Aeronave NUEVO-Final.drawio",
+      "source": "Github/Tareas/Caso 1/ER Aeronave NUEVO-Final.drawio",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/er-aeronave-nuevo-final.drawio",
       "sha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9",
       "publishedSha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9",
       "duplicate": true
     },
     {
-      "source": "Tareas/Caso 1/ER Aeronave NUEVO-Final.png",
+      "source": "Github/Tareas/Caso 1/ER Aeronave NUEVO-Final.png",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/doc-finales/er-aeronave-nuevo-final.png",
       "sha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef",
       "publishedSha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef",
       "duplicate": true
     },
     {
-      "source": "Tareas/Caso 1/ER Aeronave NUEVO.drawio",
+      "source": "Github/Tareas/Caso 1/ER Aeronave NUEVO.drawio",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/er-aeronave-nuevo.drawio",
       "sha256": "86f905a506c8cb1c827e4672e68649875883c28cc43fe1d16a6c39a1338298ef",
       "publishedSha256": "86f905a506c8cb1c827e4672e68649875883c28cc43fe1d16a6c39a1338298ef"
     },
     {
-      "source": "Tareas/Caso 1/ER Aeronave.drawio",
+      "source": "Github/Tareas/Caso 1/ER Aeronave.drawio",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/er-aeronave.drawio",
       "sha256": "1f88ae92a518667e170226061914369a5300de8114e32cca2495c6453fd0f740",
       "publishedSha256": "1f88ae92a518667e170226061914369a5300de8114e32cca2495c6453fd0f740"
     },
     {
-      "source": "Tareas/Caso 1/ER Aeronave.png",
+      "source": "Github/Tareas/Caso 1/ER Aeronave.png",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/er-aeronave.png",
       "sha256": "107a75b647cf6e97510fc4e159cbb292047fbac807f727d271e2eb55b1974008",
       "publishedSha256": "107a75b647cf6e97510fc4e159cbb292047fbac807f727d271e2eb55b1974008"
     },
     {
-      "source": "Tareas/Caso 1/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.docx",
+      "source": "Github/Tareas/Caso 1/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.docx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/informe-del-analisis-de-caso-1-la-flotilla-de-aviones-final.docx",
       "sha256": "b6b1101cbafb74b8a5e954f38ef70fa27850cf0017da2b9ccffe370357164bf6",
       "publishedSha256": "b7a0169806c027b999d2aea3a3c53e623d2765f1d535905dc61edede6ab3823a",
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
+      "source": "Github/Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/modelo-relacional-caso-1-aeronave-3fn-con-datos.xlsx",
       "sha256": "e128697c19756255c6e1d53d13d7c9d217340a8b2b7f0ba2458d83e4ed7f14cb",
       "publishedSha256": "e128697c19756255c6e1d53d13d7c9d217340a8b2b7f0ba2458d83e4ed7f14cb"
     },
     {
-      "source": "Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave - Con Datos.docx",
+      "source": "Github/Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave - Con Datos.docx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/modelo-relacional-caso-1-aeronave-con-datos.docx",
       "sha256": "f5d629754f1e23fcceb0ccc1b915b682e7a4957246aa552cae9cd148ecc2b87a",
       "publishedSha256": "f5d629754f1e23fcceb0ccc1b915b682e7a4957246aa552cae9cd148ecc2b87a"
     },
     {
-      "source": "Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave - Con Datos.pdf",
+      "source": "Github/Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave - Con Datos.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/modelo-relacional-caso-1-aeronave-con-datos.pdf",
       "sha256": "8112b65b5a5f5ae9af171290c9dd855a6283717e0a98be0eb63d2c5015e34995",
       "publishedSha256": "8112b65b5a5f5ae9af171290c9dd855a6283717e0a98be0eb63d2c5015e34995"
     },
     {
-      "source": "Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave.xlsx",
+      "source": "Github/Tareas/Caso 1/Modelo Relacional - Caso 1 Aeronave.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/modelo-relacional-caso-1-aeronave.xlsx",
       "sha256": "b781e99152a4dfa0c7d96c2ad1d64a1e8c07ae171f320165e5ca8968852c9b04",
       "publishedSha256": "b781e99152a4dfa0c7d96c2ad1d64a1e8c07ae171f320165e5ca8968852c9b04"
     },
     {
-      "source": "Tareas/Caso 1/Primera Tablas Prueba DER - Caso 1.xlsx",
+      "source": "Github/Tareas/Caso 1/Primera Tablas Prueba DER - Caso 1.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/primera-tablas-prueba-der-caso-1.xlsx",
       "sha256": "1c2fd92cce9e30c91eb2a81e8ceb34ea86fd911cc4753e0760b73632fdfed1ab",
       "publishedSha256": "1c2fd92cce9e30c91eb2a81e8ceb34ea86fd911cc4753e0760b73632fdfed1ab"
     },
     {
-      "source": "Tareas/Caso 1/Solucion_Ejercicios_1-3.pptx",
+      "source": "Github/Tareas/Caso 1/Solucion_Ejercicios_1-3.pptx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/solucion-ejercicios-1-3.pptx",
       "sha256": "985a81cd0e4980ed480b530328de8acde53ebcf49009771c9e4cfc4f3af1367d",
       "publishedSha256": "985a81cd0e4980ed480b530328de8acde53ebcf49009771c9e4cfc4f3af1367d"
     },
     {
-      "source": "Tareas/Caso 1/Tablas Prueba DER - Caso 1.xlsx",
+      "source": "Github/Tareas/Caso 1/Tablas Prueba DER - Caso 1.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/tablas-prueba-der-caso-1.xlsx",
       "sha256": "94c26cd74653a3625feb1529ef92240cd0fcb51497a80a3dabbc64f28429ce3c",
       "publishedSha256": "94c26cd74653a3625feb1529ef92240cd0fcb51497a80a3dabbc64f28429ce3c"
     },
     {
-      "source": "Tareas/Caso 1/Transformacion_5_2.pdf",
+      "source": "Github/Tareas/Caso 1/Transformacion_5_2.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/transformacion-5-2.pdf",
       "sha256": "a492e0902f68b5020067bc58d3e05fb099c545f54bee180a6885d805af6a9f74",
       "publishedSha256": "a492e0902f68b5020067bc58d3e05fb099c545f54bee180a6885d805af6a9f74"
     },
     {
-      "source": "Tareas/Caso 2/Caso 2.docx",
+      "source": "Github/Tareas/Caso 2/Caso 2.docx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-2/caso-2.docx",
       "sha256": "af3674965cd3760577cd7ce31a6bf2e1190de8d06e1cb547d5c70768ee9d3a2a",
       "publishedSha256": "af3674965cd3760577cd7ce31a6bf2e1190de8d06e1cb547d5c70768ee9d3a2a"
     },
     {
-      "source": "Tareas/Caso 2/Caso2 - Bolsa Empleo.pdf",
+      "source": "Github/Tareas/Caso 2/Caso2 - Bolsa Empleo.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-2/caso2-bolsa-empleo.pdf",
       "sha256": "859e84d391baf205de82dc5d7f855a13e522dae65a6d5057e985498a28871e39",
       "publishedSha256": "859e84d391baf205de82dc5d7f855a13e522dae65a6d5057e985498a28871e39"
     },
     {
-      "source": "Tareas/Caso 2/informe_caso2_bolsa_empleo.pdf",
+      "source": "Github/Tareas/Caso 2/informe_caso2_bolsa_empleo.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/caso-2/informe-caso2-bolsa-empleo.pdf",
       "sha256": "a2c33b3381d2092e3cbf0e80d78fd0c62a361e6ea4f76faf190b99564a180c9b",
       "publishedSha256": "a2c33b3381d2092e3cbf0e80d78fd0c62a361e6ea4f76faf190b99564a180c9b"
     },
     {
-      "source": "Tareas/Caso 2/solucion_caso2_bolsa_empleo.sql",
+      "source": "Github/Tareas/Caso 2/solucion_caso2_bolsa_empleo.sql",
       "target": "archivos-originales/bases-de-datos/tareas/caso-2/solucion-caso2-bolsa-empleo.sql",
       "sha256": "07cae6f7a52ecaa9a19092df8d4836dcf8e49978fe49723bc0545200a0aae391",
       "publishedSha256": "07cae6f7a52ecaa9a19092df8d4836dcf8e49978fe49723bc0545200a0aae391"
     },
     {
-      "source": "Tareas/Compendio 5/5.1 - Cine.pdf",
+      "source": "Github/Tareas/Compendio 5/5.1 - Cine.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.1-cine.pdf",
       "sha256": "4caae9bc895c6ced7d0aa0487dbaf85c2d124108fe67abeea8b60c43f28d0cca",
       "publishedSha256": "4caae9bc895c6ced7d0aa0487dbaf85c2d124108fe67abeea8b60c43f28d0cca"
     },
     {
-      "source": "Tareas/Compendio 5/5.1 - Cine.xmind",
+      "source": "Github/Tareas/Compendio 5/5.1 - Cine.xmind",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.1-cine.xmind",
       "sha256": "dd4c30d5a5bed645ed7dfbb02e1dc04896942b30f000bb88084fb84ff123c52e",
       "publishedSha256": "dd4c30d5a5bed645ed7dfbb02e1dc04896942b30f000bb88084fb84ff123c52e"
     },
     {
-      "source": "Tareas/Compendio 5/5.1 Cine DER.xmind",
+      "source": "Github/Tareas/Compendio 5/5.1 Cine DER.xmind",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.1-cine-der.xmind",
       "sha256": "5b6d9c0fbb433f26b1972e748e27d9b9bfaf133ce57279cd9e929e3bd9dfe80b",
       "publishedSha256": "5b6d9c0fbb433f26b1972e748e27d9b9bfaf133ce57279cd9e929e3bd9dfe80b"
     },
     {
-      "source": "Tareas/Compendio 5/5.1_Cine.drawio",
+      "source": "Github/Tareas/Compendio 5/5.1_Cine.drawio",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.1-cine.drawio",
       "sha256": "9efa8a87c229bbda828f947265178b1783b01cf167eb7f668a1fd7d3a88e39a5",
       "publishedSha256": "9efa8a87c229bbda828f947265178b1783b01cf167eb7f668a1fd7d3a88e39a5"
     },
     {
-      "source": "Tareas/Compendio 5/5.1_Cine.png",
+      "source": "Github/Tareas/Compendio 5/5.1_Cine.png",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.1-cine.png",
       "sha256": "444c4b9f5840df1964b5bffa34be632c17facce8dd810c9f31fbb0153b55f9d2",
       "publishedSha256": "444c4b9f5840df1964b5bffa34be632c17facce8dd810c9f31fbb0153b55f9d2"
     },
     {
-      "source": "Tareas/Compendio 5/5.2 - Hospital.xlsx",
+      "source": "Github/Tareas/Compendio 5/5.2 - Hospital.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.2-hospital.xlsx",
       "sha256": "31548b157f370d9f1b81e546c0113de3bc31c53120cc736881602f5edd0445de",
       "publishedSha256": "31548b157f370d9f1b81e546c0113de3bc31c53120cc736881602f5edd0445de"
     },
     {
-      "source": "Tareas/Compendio 5/5.3 - Cine.xlsx",
+      "source": "Github/Tareas/Compendio 5/5.3 - Cine.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/5.3-cine.xlsx",
       "sha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3",
       "publishedSha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3",
       "duplicate": true
     },
     {
-      "source": "Tareas/Compendio 5/5.3 Normalizacion.docx",
+      "source": "Github/Tareas/Compendio 5/5.3 Normalizacion.docx",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.3-normalizacion.docx",
       "sha256": "2c6dd13cf4c9ab4f1157031be45347d0e26234720e5d2bdb4d09b138e726a31b",
       "publishedSha256": "2c6dd13cf4c9ab4f1157031be45347d0e26234720e5d2bdb4d09b138e726a31b"
     },
     {
-      "source": "Tareas/Compendio 5/5.3 Normalizacion.pdf",
+      "source": "Github/Tareas/Compendio 5/5.3 Normalizacion.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/5.3-normalizacion.pdf",
       "sha256": "c6017d31da2af666345d822dcf4c9c1b35d003e352ccdc3b5a38dc0eabbe48ab",
       "publishedSha256": "c6017d31da2af666345d822dcf4c9c1b35d003e352ccdc3b5a38dc0eabbe48ab"
     },
     {
-      "source": "Tareas/Compendio 5/Cine DER.pdf",
+      "source": "Github/Tareas/Compendio 5/Cine DER.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/cine-der.pdf",
       "sha256": "6e9fb96713160a5352392bc22c62a055fb5125f4508e3bc34de48593195f4406",
       "publishedSha256": "6e9fb96713160a5352392bc22c62a055fb5125f4508e3bc34de48593195f4406"
     },
     {
-      "source": "Tareas/Compendio 5/Diccionario Caso 1.pdf",
+      "source": "Github/Tareas/Compendio 5/Diccionario Caso 1.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/diccionario-caso-1.pdf",
       "sha256": "3f7daad822ab416ce3ab43f8637cab9b500dc7c2e996ea5259d72bc82a5c4099",
       "publishedSha256": "3f7daad822ab416ce3ab43f8637cab9b500dc7c2e996ea5259d72bc82a5c4099"
     },
     {
-      "source": "Tareas/Compendio 5/Diccionario Cine 5.1.xlsx",
+      "source": "Github/Tareas/Compendio 5/Diccionario Cine 5.1.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/diccionario-cine-5.1.xlsx",
       "sha256": "c121649e18a4b0482e60faa28b0beea2fe9f780b30f5b8987b7104bd7af5eacd",
       "publishedSha256": "c121649e18a4b0482e60faa28b0beea2fe9f780b30f5b8987b7104bd7af5eacd"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional - Cine 5.1.xlsx",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional - Cine 5.1.xlsx",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/modelo-relacional-cine-5.1.xlsx",
       "sha256": "f9a05db1d877dcfb8cc31ad3e889498dbf3a1e6dbe3c8b7221c06500d0968735",
       "publishedSha256": "f9a05db1d877dcfb8cc31ad3e889498dbf3a1e6dbe3c8b7221c06500d0968735"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional Cine con Diccionario.pdf",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional Cine con Diccionario.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/modelo-relacional-cine-con-diccionario.pdf",
       "sha256": "95b3bd9c6e08dd283a75ff19ba0b00aa7f959764a9cd6e6ef5859e2d8516c7e0",
       "publishedSha256": "95b3bd9c6e08dd283a75ff19ba0b00aa7f959764a9cd6e6ef5859e2d8516c7e0"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional Cine.docx",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional Cine.docx",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/modelo-relacional-cine.docx",
       "sha256": "24311c24c1a8a5211d30e260304cfffb639975b0aae5deac46a41e449e8cc492",
       "publishedSha256": "24311c24c1a8a5211d30e260304cfffb639975b0aae5deac46a41e449e8cc492"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional Cine.pdf",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional Cine.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/modelo-relacional-cine.pdf",
       "sha256": "c722373d8f29c219c30869ce2a486b83e361367548cdafc6e6485396f2dae1d0",
       "publishedSha256": "c722373d8f29c219c30869ce2a486b83e361367548cdafc6e6485396f2dae1d0"
     },
     {
-      "source": "Tareas/Compendio 5/Transformacion_5_2 (1).pdf",
+      "source": "Github/Tareas/Compendio 5/Transformacion_5_2 (1).pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-5/transformacion-5-2-1.pdf",
       "sha256": "ecbff28372ff2ae639dee850fb5fbba91fcb7875c0e88d9cb365eb1e5052a7eb",
       "publishedSha256": "ecbff28372ff2ae639dee850fb5fbba91fcb7875c0e88d9cb365eb1e5052a7eb"
     },
     {
-      "source": "Tareas/Compendio de ejercicios 1.pptx",
+      "source": "Github/Tareas/Compendio de ejercicios 1.pptx",
       "target": "archivos-originales/bases-de-datos/tareas/caso-1/compendio-de-ejercicios-1.pptx",
       "sha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a",
       "publishedSha256": "af0a1f2625f2eb06b10132ba5f2b5535eb9670fdc515a497b4cc314df393d28a",
       "duplicate": true
     },
     {
-      "source": "Tareas/Compendio ejercicios I - DER Kelvin.pdf",
+      "source": "Github/Tareas/Compendio ejercicios I - DER Kelvin.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-ejercicios-i-der-kelvin.pdf",
       "sha256": "330614a15f9e0db8b7ecfc1fbae6715b3a92a289e418624015647064775c6fa5",
       "publishedSha256": "4bbaa7dda5d7c1512935449b35ce609b7d9976d4bb2d39b512888cdee57a6665",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio ejercicios I.pdf",
+      "source": "Github/Tareas/Compendio ejercicios I.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-ejercicios-i.pdf",
       "sha256": "5a2335d0c24e06154d078a7cabe6b7d0b4f2081c9ea472c72aa68319f6a40805",
       "publishedSha256": "29a13629a74826644d39a1d09d12f7a2bc0308a44049f7252b5957fe99887c9b",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio Unidad 4/Modelo_Relacionar___Alquiler_Coches.pdf",
+      "source": "Github/Tareas/Compendio Unidad 4/Modelo_Relacionar___Alquiler_Coches.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/modelo-relacionar-alquiler-coches.pdf",
       "sha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4",
       "publishedSha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/Modificaciones.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/Modificaciones.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/modificaciones.sql",
       "sha256": "fe2f3c884a7b0cbdf724fc8affccbb62ae18aabac9526b122abf40e69d25d4e7",
       "publishedSha256": "fe2f3c884a7b0cbdf724fc8affccbb62ae18aabac9526b122abf40e69d25d4e7"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL del 8 al 14.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL del 8 al 14.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-del-8-al-14.sql",
       "sha256": "a12a3eac4fd2c2462e7facea19ee020cbf07949911b5e9cb3a80b894a0ece664",
       "publishedSha256": "a12a3eac4fd2c2462e7facea19ee020cbf07949911b5e9cb3a80b894a0ece664"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_ALQUILER_COCHES FINAL.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_ALQUILER_COCHES FINAL.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-alquiler-coches-final.sql",
       "sha256": "9ca5c1d292548c8b2df0b3886b14b0a0beac140d18b6d9a2a82cbc20246a894b",
       "publishedSha256": "9ca5c1d292548c8b2df0b3886b14b0a0beac140d18b6d9a2a82cbc20246a894b"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-alquiler-coches-ejercicio2-kelvin.sql",
       "sha256": "3d104fd6d4c330cab1602ac112cc11eab4929c25d0e24f5c3444f1f2ea5e493e",
       "publishedSha256": "3d104fd6d4c330cab1602ac112cc11eab4929c25d0e24f5c3444f1f2ea5e493e"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_ALQUILER_COCHES_INFORMACION.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_ALQUILER_COCHES_INFORMACION.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-alquiler-coches-informacion.sql",
       "sha256": "fe1355e206ad0d493b695e37bcb85a1d8b2e6e493fa6aa10daabddb9d2f5f397",
       "publishedSha256": "fe1355e206ad0d493b695e37bcb85a1d8b2e6e493fa6aa10daabddb9d2f5f397"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Kelvin.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-alquiler-coches-kelvin.sql",
       "sha256": "3f8b11cac7a9513f33e0f2cba2e86510d5c06e18b12d25cc1334ff6d73bf7638",
       "publishedSha256": "3f8b11cac7a9513f33e0f2cba2e86510d5c06e18b12d25cc1334ff6d73bf7638"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Introduccion_Informacion_Coches_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Introduccion_Informacion_Coches_Kelvin.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-introduccion-informacion-coches-kelvin.sql",
       "sha256": "6ea7204cf52f6079c3be0a00e6a61296887d2068ba035616bf772e1e14c34e94",
       "publishedSha256": "6ea7204cf52f6079c3be0a00e6a61296887d2068ba035616bf772e1e14c34e94"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Tema2_AlquilerCarros Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Tema2_AlquilerCarros Kelvin.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/sql-tema2-alquilercarros-kelvin.sql",
       "sha256": "7897fc3e14a515d0db6dd598664796f659634111af3098a9d035eade24a493b4",
       "publishedSha256": "7897fc3e14a515d0db6dd598664796f659634111af3098a9d035eade24a493b4"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/UPDATES-INSERTS.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/UPDATES-INSERTS.sql",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/updates-inserts.sql",
       "sha256": "09c0c9a6f570942abe3479d39bfcdda5b7b53d570d46ccdc3a622603ca9f82ce",
       "publishedSha256": "09c0c9a6f570942abe3479d39bfcdda5b7b53d570d46ccdc3a622603ca9f82ce"
     },
     {
-      "source": "Tareas/Cuestionario - Kelvin Cesar.pdf",
+      "source": "Github/Tareas/Cuestionario - Kelvin Cesar.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/cuestionario-kelvin-cesar.pdf",
       "sha256": "fc9364e0821e1ea1370a6fd6c54a3f54a666242f27e731db6bbcc3763ad64e38",
       "publishedSha256": "0a3ce8c27847e5d1191cfdc67399657f0ee69ed8bd08c11aef9ca6daeba1b17e",
       "adapted": true
     },
     {
-      "source": "Tareas/Cuestionario 2.docx",
+      "source": "Github/Tareas/Cuestionario 2.docx",
       "target": "archivos-originales/bases-de-datos/tareas/cuestionario-2.docx",
       "sha256": "7c727fe72e0457467bf2a1145695f7cf9af6a8b6116868e5c37e4bc54350e3b5",
       "publishedSha256": "1476967770239dac094b3ff979d1db33afd3172d5a30e8e64073fe7054c4b39c",
       "adapted": true
     },
     {
-      "source": "Tareas/Cuestionario.docx",
+      "source": "Github/Tareas/Cuestionario.docx",
       "target": "archivos-originales/bases-de-datos/tareas/cuestionario.docx",
       "sha256": "1828cfb4da2a794a5d018a9bf6ed0d6cde07cff7e0682e5f04de6970ca1b664b",
       "publishedSha256": "85fecdfdeb888f4b9711389600b6882f063b4577f8873555370b46df0b46508a",
       "adapted": true
     },
     {
-      "source": "Tareas/DER Cine 5.1 MR y DICC.pdf",
+      "source": "Github/Tareas/DER Cine 5.1 MR y DICC.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/der-cine-5.1-mr-y-dicc.pdf",
       "sha256": "9dc1e9a788e4f7610942b826bed887ef47ed0d137057e72ca30efc02b1c44ffb",
       "publishedSha256": "2e87d3fa61217c09ce2bdaa1d77cf779504288778952bf3e5245d3ae6449bf78",
       "adapted": true
     },
     {
-      "source": "Tareas/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf",
+      "source": "Github/Tareas/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/informe-del-analisis-de-caso-1-la-flotilla-de-aviones-final.pdf",
       "sha256": "c062b576dba12a9463e2538f041b346487d1853c8bea079257e1e782c95d8150",
       "publishedSha256": "15bf71915f9a93834bc210ec81819d47e1c8702bc59e9b8dbae2af7bd8cff5ab",
       "adapted": true
     },
     {
-      "source": "Tareas/Resumen Unidad 1 - BD - Kelvin.docx",
+      "source": "Github/Tareas/Resumen Unidad 1 - BD - Kelvin.docx",
       "target": "archivos-originales/bases-de-datos/tareas/resumen-unidad-1-bd-kelvin.docx",
       "sha256": "5e736471831bcf696fb367e3a2567ce757225c101f2ab879a85cab2180f9880f",
       "publishedSha256": "91b2a04e8366086a3ad236eabea7c4201a2f1d4bbb1d506219aac7a43372f460",
       "adapted": true
     },
     {
-      "source": "Tareas/Resumen Unidad 2 - BD - Kelvin.docx",
+      "source": "Github/Tareas/Resumen Unidad 2 - BD - Kelvin.docx",
       "target": "archivos-originales/bases-de-datos/tareas/resumen-unidad-2-bd-kelvin.docx",
       "sha256": "9d17768565aa53b763d9ea1980976d6bbb448d05a05176aa43f68428df58da08",
       "publishedSha256": "281093e00d2f706b546c1058832ce62f82800d71c2921f0c468ea01320a72077",
       "adapted": true
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/01_creacion_bd_reservas.sql",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/01_creacion_bd_reservas.sql",
       "target": "archivos-originales/bases-de-datos/tareas/tarea-1-unidad-4/01-creacion-bd-reservas.sql",
       "sha256": "ce5ad51cc845e71febfd5c318ad3e217075a64dcdf3905df6ed210f3920c5baf",
       "publishedSha256": "ce5ad51cc845e71febfd5c318ad3e217075a64dcdf3905df6ed210f3920c5baf"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/02_carga_datos_reservas.sql",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/02_carga_datos_reservas.sql",
       "target": "archivos-originales/bases-de-datos/tareas/tarea-1-unidad-4/02-carga-datos-reservas.sql",
       "sha256": "83909345362472159e1662ee6a40f8da1381bd9ae14b5551a5dd97e95e0d8750",
       "publishedSha256": "83909345362472159e1662ee6a40f8da1381bd9ae14b5551a5dd97e95e0d8750"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/Modelo_Relacional_y_Diccionario_Datos.pdf",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/Modelo_Relacional_y_Diccionario_Datos.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/tarea-1-unidad-4/modelo-relacional-y-diccionario-datos.pdf",
       "sha256": "bded00ae6455037a0b11e0b4f99e4dcaf8ed12f20ebbbcfa76f310c13e5e3c53",
       "publishedSha256": "bded00ae6455037a0b11e0b4f99e4dcaf8ed12f20ebbbcfa76f310c13e5e3c53"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/Modelo_Relacionar - Alquiler_Coches.pdf",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/Modelo_Relacionar - Alquiler_Coches.pdf",
       "target": "archivos-originales/bases-de-datos/tareas/compendio-unidad-4/modelo-relacionar-alquiler-coches.pdf",
       "sha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4",
       "publishedSha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4",
       "duplicate": true
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/SQL_ALQUILER_COCHES.sql",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/SQL_ALQUILER_COCHES.sql",
       "target": "archivos-originales/bases-de-datos/tareas/tarea-1-unidad-4/sql-alquiler-coches.sql",
       "sha256": "94fdb9306c6451806a4bdc4d3762c764d1977cc73a4c7cd7cd2f77615cc750e1",
       "publishedSha256": "94fdb9306c6451806a4bdc4d3762c764d1977cc73a4c7cd7cd2f77615cc750e1"
     },
     {
-      "source": "Tareas/Resumen Unidad 1 - BD - Kelvin.docx",
+      "source": "Github/Tareas/Resumen Unidad 1 - BD - Kelvin.docx",
       "target": "05-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-1.docx",
       "sha256": "5e736471831bcf696fb367e3a2567ce757225c101f2ab879a85cab2180f9880f",
       "publishedSha256": "91b2a04e8366086a3ad236eabea7c4201a2f1d4bbb1d506219aac7a43372f460",
       "adapted": true
     },
     {
-      "source": "Tareas/Resumen Unidad 2 - BD - Kelvin.docx",
+      "source": "Github/Tareas/Resumen Unidad 2 - BD - Kelvin.docx",
       "target": "05-bases-de-datos/fundamentos-sistemas-bases-datos/resumen-unidad-2.docx",
       "sha256": "9d17768565aa53b763d9ea1980976d6bbb448d05a05176aa43f68428df58da08",
       "publishedSha256": "281093e00d2f706b546c1058832ce62f82800d71c2921f0c468ea01320a72077",
       "adapted": true
     },
     {
-      "source": "Tareas/Cuestionario - Kelvin Cesar.pdf",
+      "source": "Github/Tareas/Cuestionario - Kelvin Cesar.pdf",
       "target": "05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-fundamentos.pdf",
       "sha256": "fc9364e0821e1ea1370a6fd6c54a3f54a666242f27e731db6bbcc3763ad64e38",
       "publishedSha256": "9597a41e9d6eb4547f81d14344a5c221d8725f72dbfb90e048c58bf9fd531dca",
       "adapted": true
     },
     {
-      "source": "Tareas/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf",
+      "source": "Github/Tareas/Informe del Análisis de Caso 1 - La flotilla de aviones - Final.pdf",
       "target": "05-bases-de-datos/flotilla-aeronaves-modelo-relacional/informe-final.pdf",
       "sha256": "c062b576dba12a9463e2538f041b346487d1853c8bea079257e1e782c95d8150",
       "publishedSha256": "f804200e6dbc50177812c19cadadfc8c71038ea5ff16a86cd0f20b875cd71a35",
       "adapted": true
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.drawio",
+      "source": "Github/Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.drawio",
       "target": "05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.drawio",
       "sha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9",
       "publishedSha256": "da80034bbb72feac5e7c8696b77945c8801608acbbc62e95dd43cad639f12cf9"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.png",
+      "source": "Github/Tareas/Caso 1/Doc Finales/ER Aeronave NUEVO-Final.png",
       "target": "05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diagrama.png",
       "sha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef",
       "publishedSha256": "0e4863702c0f3494fc0f5ebe931971cacd95638af2fe592d199eeb8e15ae79ef"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Modelo Relacional - Caso 1 Aeronave (3FN) - Con Datos.xlsx",
       "target": "05-bases-de-datos/flotilla-aeronaves-modelo-relacional/modelo-relacional-3fn.xlsx",
       "sha256": "8b4dd919bb55920564ed5c94a9eb3850ceea553486a71da8e0279c450769fcc0",
       "publishedSha256": "8b4dd919bb55920564ed5c94a9eb3850ceea553486a71da8e0279c450769fcc0"
     },
     {
-      "source": "Tareas/Caso 1/Doc Finales/Diccionario Caso 1 Final.xlsx",
+      "source": "Github/Tareas/Caso 1/Doc Finales/Diccionario Caso 1 Final.xlsx",
       "target": "05-bases-de-datos/flotilla-aeronaves-modelo-relacional/diccionario-datos.xlsx",
       "sha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb",
       "publishedSha256": "5964e5ebae037f30493a03ff76f8b1fab7f3100fca41ae3f70cedf3a111fc9bb"
     },
     {
-      "source": "Tareas/Compendio 5/5.1_Cine.drawio",
+      "source": "Github/Tareas/Compendio 5/5.1_Cine.drawio",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.drawio",
       "sha256": "9efa8a87c229bbda828f947265178b1783b01cf167eb7f668a1fd7d3a88e39a5",
       "publishedSha256": "9efa8a87c229bbda828f947265178b1783b01cf167eb7f668a1fd7d3a88e39a5"
     },
     {
-      "source": "Tareas/Compendio 5/5.1_Cine.png",
+      "source": "Github/Tareas/Compendio 5/5.1_Cine.png",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/diagrama-cine.png",
       "sha256": "444c4b9f5840df1964b5bffa34be632c17facce8dd810c9f31fbb0153b55f9d2",
       "publishedSha256": "444c4b9f5840df1964b5bffa34be632c17facce8dd810c9f31fbb0153b55f9d2"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional Cine con Diccionario.pdf",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional Cine con Diccionario.pdf",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/modelo-y-diccionario.pdf",
       "sha256": "95b3bd9c6e08dd283a75ff19ba0b00aa7f959764a9cd6e6ef5859e2d8516c7e0",
       "publishedSha256": "95b3bd9c6e08dd283a75ff19ba0b00aa7f959764a9cd6e6ef5859e2d8516c7e0"
     },
     {
-      "source": "Tareas/Compendio 5/Diccionario Cine 5.1.xlsx",
+      "source": "Github/Tareas/Compendio 5/Diccionario Cine 5.1.xlsx",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/diccionario-cine.xlsx",
       "sha256": "c121649e18a4b0482e60faa28b0beea2fe9f780b30f5b8987b7104bd7af5eacd",
       "publishedSha256": "c121649e18a4b0482e60faa28b0beea2fe9f780b30f5b8987b7104bd7af5eacd"
     },
     {
-      "source": "Tareas/Compendio 5/Modelo Relacional - Cine 5.1.xlsx",
+      "source": "Github/Tareas/Compendio 5/Modelo Relacional - Cine 5.1.xlsx",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/modelo-relacional.xlsx",
       "sha256": "f9a05db1d877dcfb8cc31ad3e889498dbf3a1e6dbe3c8b7221c06500d0968735",
       "publishedSha256": "f9a05db1d877dcfb8cc31ad3e889498dbf3a1e6dbe3c8b7221c06500d0968735"
     },
     {
-      "source": "Tareas/Compendio 5/5.3 Normalizacion.pdf",
+      "source": "Github/Tareas/Compendio 5/5.3 Normalizacion.pdf",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.pdf",
       "sha256": "c6017d31da2af666345d822dcf4c9c1b35d003e352ccdc3b5a38dc0eabbe48ab",
       "publishedSha256": "c6017d31da2af666345d822dcf4c9c1b35d003e352ccdc3b5a38dc0eabbe48ab"
     },
     {
-      "source": "Tareas/Compendio 5/5.3 - Cine.xlsx",
+      "source": "Github/Tareas/Compendio 5/5.3 - Cine.xlsx",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/normalizacion-ventas.xlsx",
       "sha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3",
       "publishedSha256": "cdf51dd2766c28a217f3a52f2f936b54d92f8f63d63641009e81c84f0c9ce9f3"
     },
     {
-      "source": "Tareas/Compendio 5/5.2 - Hospital.xlsx",
+      "source": "Github/Tareas/Compendio 5/5.2 - Hospital.xlsx",
       "target": "05-bases-de-datos/cine-modelado-normalizacion/transformacion-hospital.xlsx",
       "sha256": "31548b157f370d9f1b81e546c0113de3bc31c53120cc736881602f5edd0445de",
       "publishedSha256": "31548b157f370d9f1b81e546c0113de3bc31c53120cc736881602f5edd0445de"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/01_creacion_bd_reservas.sql",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/01_creacion_bd_reservas.sql",
       "target": "05-bases-de-datos/reservas-coches-creacion-datos/01-creacion.sql",
       "sha256": "ce5ad51cc845e71febfd5c318ad3e217075a64dcdf3905df6ed210f3920c5baf",
       "publishedSha256": "ce5ad51cc845e71febfd5c318ad3e217075a64dcdf3905df6ed210f3920c5baf"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/02_carga_datos_reservas.sql",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/02_carga_datos_reservas.sql",
       "target": "05-bases-de-datos/reservas-coches-creacion-datos/02-datos.sql",
       "sha256": "83909345362472159e1662ee6a40f8da1381bd9ae14b5551a5dd97e95e0d8750",
       "publishedSha256": "83909345362472159e1662ee6a40f8da1381bd9ae14b5551a5dd97e95e0d8750"
     },
     {
-      "source": "Tareas/Tarea 1 - Unidad 4/Modelo_Relacional_y_Diccionario_Datos.pdf",
+      "source": "Github/Tareas/Tarea 1 - Unidad 4/Modelo_Relacional_y_Diccionario_Datos.pdf",
       "target": "05-bases-de-datos/reservas-coches-creacion-datos/modelo-y-diccionario.pdf",
       "sha256": "bded00ae6455037a0b11e0b4f99e4dcaf8ed12f20ebbbcfa76f310c13e5e3c53",
       "publishedSha256": "bded00ae6455037a0b11e0b4f99e4dcaf8ed12f20ebbbcfa76f310c13e5e3c53"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Kelvin.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/01-creacion.sql",
       "sha256": "3f8b11cac7a9513f33e0f2cba2e86510d5c06e18b12d25cc1334ff6d73bf7638",
       "publishedSha256": "4e5aa6e45bf646e9bd71c9c1571fc4c0b79b05ccc0d38fceb9d7b6fd6eda2389",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Introduccion_Informacion_Coches_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Introduccion_Informacion_Coches_Kelvin.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/02-datos.sql",
       "sha256": "6ea7204cf52f6079c3be0a00e6a61296887d2068ba035616bf772e1e14c34e94",
       "publishedSha256": "6ea7204cf52f6079c3be0a00e6a61296887d2068ba035616bf772e1e14c34e94"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Alquiler_Coches_Ejercicio2_Kelvin.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/03-consultas-basicas.sql",
       "sha256": "3d104fd6d4c330cab1602ac112cc11eab4929c25d0e24f5c3444f1f2ea5e493e",
       "publishedSha256": "3d104fd6d4c330cab1602ac112cc11eab4929c25d0e24f5c3444f1f2ea5e493e"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/Modificaciones.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/Modificaciones.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/04-modificaciones.sql",
       "sha256": "fe2f3c884a7b0cbdf724fc8affccbb62ae18aabac9526b122abf40e69d25d4e7",
       "publishedSha256": "13ccda0ade23cf2e4b2302ed36e691e6f3a5c60a230584b95bb0af8013209292",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio Unidad 4/UPDATES-INSERTS.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/UPDATES-INSERTS.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/05-actualizacion-datos.sql",
       "sha256": "09c0c9a6f570942abe3479d39bfcdda5b7b53d570d46ccdc3a622603ca9f82ce",
       "publishedSha256": "4fffdd0b4f0d3b7a5205b56dd84ecf43cd444001c6aa06d5f0883cdf8d806a99",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL_Tema2_AlquilerCarros Kelvin.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL_Tema2_AlquilerCarros Kelvin.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/06-consultas-ampliadas.sql",
       "sha256": "7897fc3e14a515d0db6dd598664796f659634111af3098a9d035eade24a493b4",
       "publishedSha256": "7897fc3e14a515d0db6dd598664796f659634111af3098a9d035eade24a493b4"
     },
     {
-      "source": "Tareas/Compendio Unidad 4/SQL del 8 al 14.sql",
+      "source": "Github/Tareas/Compendio Unidad 4/SQL del 8 al 14.sql",
       "target": "05-bases-de-datos/alquiler-coches-consultas/07-consultas-8-a-14.sql",
       "sha256": "a12a3eac4fd2c2462e7facea19ee020cbf07949911b5e9cb3a80b894a0ece664",
       "publishedSha256": "f05f7cc27dda90b702a9e864ffe976e1120ff80dfc0b6911c1ab060583a99d14",
       "adapted": true
     },
     {
-      "source": "Tareas/Compendio Unidad 4/Modelo_Relacionar___Alquiler_Coches.pdf",
+      "source": "Github/Tareas/Compendio Unidad 4/Modelo_Relacionar___Alquiler_Coches.pdf",
       "target": "05-bases-de-datos/alquiler-coches-consultas/modelo-relacional.pdf",
       "sha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4",
       "publishedSha256": "44cb0895cb113ab6bdfcbaa811a9875cd1aab621eaefbdc81a3eb509b9f309f4"
     },
     {
-      "source": "Tareas/Caso 2/solucion_caso2_bolsa_empleo.sql",
+      "source": "Github/Tareas/Caso 2/solucion_caso2_bolsa_empleo.sql",
       "target": "05-bases-de-datos/bolsa-empleo-objetos-sql/solution.sql",
       "sha256": "07cae6f7a52ecaa9a19092df8d4836dcf8e49978fe49723bc0545200a0aae391",
       "publishedSha256": "07cae6f7a52ecaa9a19092df8d4836dcf8e49978fe49723bc0545200a0aae391"
     },
     {
-      "source": "Tareas/Caso 2/informe_caso2_bolsa_empleo.pdf",
+      "source": "Github/Tareas/Caso 2/informe_caso2_bolsa_empleo.pdf",
       "target": "05-bases-de-datos/bolsa-empleo-objetos-sql/informe-solucion.pdf",
       "sha256": "a2c33b3381d2092e3cbf0e80d78fd0c62a361e6ea4f76faf190b99564a180c9b",
       "publishedSha256": "a2c33b3381d2092e3cbf0e80d78fd0c62a361e6ea4f76faf190b99564a180c9b"
     },
     {
-      "source": "Tareas/Caso 2/Caso2 - Bolsa Empleo.pdf",
+      "source": "Github/Tareas/Caso 2/Caso2 - Bolsa Empleo.pdf",
       "target": "05-bases-de-datos/bolsa-empleo-objetos-sql/caso-bolsa-empleo.pdf",
       "sha256": "859e84d391baf205de82dc5d7f855a13e522dae65a6d5057e985498a28871e39",
       "publishedSha256": "859e84d391baf205de82dc5d7f855a13e522dae65a6d5057e985498a28871e39"
     },
     {
-      "source": "2do Parcial/restaurante_atencion.sql",
+      "source": "Github/2do Parcial/restaurante_atencion.sql",
       "target": "05-bases-de-datos/restaurante-consultas-segundo-parcial/01-base.sql",
       "sha256": "f776532593be5fcd9d26e68cf94633059169ee61652687a3dcad1aa47daff5bb",
       "publishedSha256": "f776532593be5fcd9d26e68cf94633059169ee61652687a3dcad1aa47daff5bb"
     },
     {
-      "source": "2do Parcial/SQLQueryKelvinCesar.sql",
+      "source": "Github/2do Parcial/SQLQueryKelvinCesar.sql",
       "target": "05-bases-de-datos/restaurante-consultas-segundo-parcial/solution.sql",
       "sha256": "3e7b25b997f13ce5c324f98f001564b821e83484d52076b640bc1f0bb377933e",
       "publishedSha256": "eeb36309b487d27561e6b3046de13d0893b6055cc15530f5f3f2680f604a00cf",
       "adapted": true
     },
     {
-      "source": "2do Parcial/diagrama_restaurante.png",
+      "source": "Github/2do Parcial/diagrama_restaurante.png",
       "target": "05-bases-de-datos/restaurante-consultas-segundo-parcial/diagrama.png",
       "sha256": "135444752eef36e8ff25c8563d14b8f2d69b6a97bba2bdd8c6f7e99a17cb2355",
       "publishedSha256": "135444752eef36e8ff25c8563d14b8f2d69b6a97bba2bdd8c6f7e99a17cb2355"
     },
     {
-      "source": "2do Parcial/2do Examen Kelvin.pdf",
+      "source": "Github/2do Parcial/2do Examen Kelvin.pdf",
       "target": "05-bases-de-datos/restaurante-consultas-segundo-parcial/evidencia-segundo-parcial.pdf",
       "sha256": "e151eaaf5528a2d7c2b2346655b4787c099560beab0250447a3a2167a32eb74e",
       "publishedSha256": "e151eaaf5528a2d7c2b2346655b4787c099560beab0250447a3a2167a32eb74e"
     },
     {
-      "source": "Primer Parcial/Primer Parcial - Base De Datos.pdf",
+      "source": "Github/Primer Parcial/Primer Parcial - Base De Datos.pdf",
       "target": "05-bases-de-datos/evaluaciones-evidencia-academica/evidencia-primer-parcial.pdf",
       "sha256": "158710053978d049fffad88ad16219f5d2e5b3871ba725b5ece7ce32229a8c6c",
       "publishedSha256": "158710053978d049fffad88ad16219f5d2e5b3871ba725b5ece7ce32229a8c6c"
     },
     {
-      "source": "Primer Parcial/Primer Parcial - Calificacion.png",
+      "source": "Github/Primer Parcial/Primer Parcial - Calificacion.png",
       "target": "05-bases-de-datos/evaluaciones-evidencia-academica/calificacion-primer-parcial.png",
       "sha256": "984fa30ba9d8f35acd0d0150270f81c6b9b281a8315b79435681075f946b5bf9",
       "publishedSha256": "984fa30ba9d8f35acd0d0150270f81c6b9b281a8315b79435681075f946b5bf9"
     },
     {
-      "source": "Tareas/Cuestionario 2.docx",
+      "source": "Github/Tareas/Cuestionario 2.docx",
       "target": "05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.docx",
       "sha256": "7c727fe72e0457467bf2a1145695f7cf9af6a8b6116868e5c37e4bc54350e3b5",
       "publishedSha256": "1476967770239dac094b3ff979d1db33afd3172d5a30e8e64073fe7054c4b39c",
       "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/Base de Datos/HotelDB_Fase1_Migracion.sql",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/HotelDB_Fase1_Migracion.sql",
+      "sha256": "63a097d06fb5ab5b31f5979976a9179326dfa3a539dd5e2febb8a8bc4059ff8c",
+      "publishedSha256": "63a097d06fb5ab5b31f5979976a9179326dfa3a539dd5e2febb8a8bc4059ff8c"
+    },
+    {
+      "source": "Proyecto Hotel Final/Base de Datos/HotelDB_Proyecto_Final.sql",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/HotelDB_Proyecto_Final.sql",
+      "sha256": "976486cb546c1097de1553c692103e5c49c3a821bfe9a4d3c8dcc03574646f80",
+      "publishedSha256": "2aea2af5e1e3921feb89fc8f073159116f9c965b163c38ece79559422ed01522",
+      "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/Base de Datos/HotelDB_SeedData.sql",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/Base de Datos/HotelDB_SeedData.sql",
+      "sha256": "fd750f4f6d6c1148b74c18f53c736c81f7a102f35b8250dea3762e1cb0608dc2",
+      "publishedSha256": "90b16149a3c1b80d7d3dba61316a138af8801a8e160197106322baad86566ed0",
+      "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/docs/ARQUITECTURA.md",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/ARQUITECTURA.md",
+      "sha256": "ce62a52feac3db3d4837d9551748390d5927cbe92d90e4dcd46ec31722364644",
+      "publishedSha256": "508574d87a679397dc2e2555fc0c5892c4643cbfce7fee1d3c937c09100bcb73",
+      "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/docs/CHANGELOG.md",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/CHANGELOG.md",
+      "sha256": "3283cfaa4d36ad1a24918fafcd09d6f78564a86ff3dd603e2ece5c4807dc4dc9",
+      "publishedSha256": "3283cfaa4d36ad1a24918fafcd09d6f78564a86ff3dd603e2ece5c4807dc4dc9"
+    },
+    {
+      "source": "Proyecto Hotel Final/docs/DICCIONARIO_DATOS.md",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/docs/DICCIONARIO_DATOS.md",
+      "sha256": "bc135404e2820af091443a8637ea07bb8caf7f927662af77f58381e9e30de8b0",
+      "publishedSha256": "bc135404e2820af091443a8637ea07bb8caf7f927662af77f58381e9e30de8b0"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/AdministracionData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionData.cs",
+      "sha256": "fd27c90a9bc3785771a20a974081eee689167e1a407854e6bc5565dc26e9d59a",
+      "publishedSha256": "fd27c90a9bc3785771a20a974081eee689167e1a407854e6bc5565dc26e9d59a"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/AdministracionForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.cs",
+      "sha256": "452a2d51bc0157beab68eafd14a8ce0efa0dd12674deab6eed238d55245773fa",
+      "publishedSha256": "452a2d51bc0157beab68eafd14a8ce0efa0dd12674deab6eed238d55245773fa"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/AdministracionForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/App.config",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/App.config",
+      "sha256": "16286566d54d81c3721f7ecf7f426d965de364e9be2f9e628d7363b684b6fe6a",
+      "publishedSha256": "16286566d54d81c3721f7ecf7f426d965de364e9be2f9e628d7363b684b6fe6a"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/AnimationEngine.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AnimationEngine.cs",
+      "sha256": "97d0b6c0780b83ced98ab68d679612d091bfdade584a1c00b95e926bc9395bfc",
+      "publishedSha256": "97d0b6c0780b83ced98ab68d679612d091bfdade584a1c00b95e926bc9395bfc"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/AppLogo.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/AppLogo.cs",
+      "sha256": "5133ed29633663028ebb4f1e8bd3838c0eb4391265fb86edce6d5897a39042ed",
+      "publishedSha256": "5133ed29633663028ebb4f1e8bd3838c0eb4391265fb86edce6d5897a39042ed"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/DataGridViewExtensions.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/DataGridViewExtensions.cs",
+      "sha256": "c9b501269e0c5ddb3f19c15f284badbdb45ae905041bb8ac94a194989738895b",
+      "publishedSha256": "c9b501269e0c5ddb3f19c15f284badbdb45ae905041bb8ac94a194989738895b"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/logo.ico",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.ico",
+      "sha256": "956403fa24c383f68414cc31af484445114a1a8c0b7596d3f1e76f4277a516c0",
+      "publishedSha256": "956403fa24c383f68414cc31af484445114a1a8c0b7596d3f1e76f4277a516c0"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/logo.png",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/logo.png",
+      "sha256": "478422b92f7312ccc2ed6aec17cf1d6f3d7b88a45368295b3ef5081afee605f3",
+      "publishedSha256": "478422b92f7312ccc2ed6aec17cf1d6f3d7b88a45368295b3ef5081afee605f3"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/Theme.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/Theme.cs",
+      "sha256": "8874b3c7a60b9b9ce9b6d72d092126b2257fc916fa89cc94bb8a564addd613e2",
+      "publishedSha256": "8874b3c7a60b9b9ce9b6d72d092126b2257fc916fa89cc94bb8a564addd613e2"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Assets/UIAnimations.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Assets/UIAnimations.cs",
+      "sha256": "45011c9c20de60dd956be8d3f44022fdab4ab8fa7a85fae7d324bb87b81d3a20",
+      "publishedSha256": "45011c9c20de60dd956be8d3f44022fdab4ab8fa7a85fae7d324bb87b81d3a20"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/CheckInOutData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/CheckInOutData.cs",
+      "sha256": "4e252066495e4544cf41ae70e30b44664b42e0ad97661f521b42f30290a02579",
+      "publishedSha256": "4e252066495e4544cf41ae70e30b44664b42e0ad97661f521b42f30290a02579"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ClientesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.cs",
+      "sha256": "ceabaa370ea466d59c6c87dc55272e168f75a225fe733d012b491c75b6f6507a",
+      "publishedSha256": "ceabaa370ea466d59c6c87dc55272e168f75a225fe733d012b491c75b6f6507a"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ClientesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ClientesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ConfiguracionForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ConfiguracionForm.cs",
+      "sha256": "bc9d2ed7549bd439d64120ab89bb1fb0ba2fcb4a9da86488109dc628c102d6a9",
+      "publishedSha256": "bc9d2ed7549bd439d64120ab89bb1fb0ba2fcb4a9da86488109dc628c102d6a9"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/DashboardData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardData.cs",
+      "sha256": "9bea98f2602ca46a5bcb723028d3b3335699b3a1d4f4fb2b1fdf18b5e7a0b6d7",
+      "publishedSha256": "9bea98f2602ca46a5bcb723028d3b3335699b3a1d4f4fb2b1fdf18b5e7a0b6d7"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/DashboardForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/DashboardForm.cs",
+      "sha256": "03032b5e0588d78a94ab22fd03052e573dfef1b1fa0d02ee76dba8285ceafb41",
+      "publishedSha256": "03032b5e0588d78a94ab22fd03052e573dfef1b1fa0d02ee76dba8285ceafb41"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Database.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Database.cs",
+      "sha256": "046907f6eca168a13d057d37586c5dab6e86b37fe965a12578508a2f0ed78293",
+      "publishedSha256": "1baa88e342f344444b885d68f30c3b361dc1277aebd34b62640499cb7d6ba2d7",
+      "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ExportHelper.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ExportHelper.cs",
+      "sha256": "4a47982809749385933f402379eaa30fbd4f8039bec96189d9b0fd925762cf52",
+      "publishedSha256": "4a47982809749385933f402379eaa30fbd4f8039bec96189d9b0fd925762cf52"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/FacturaPdfExporter.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturaPdfExporter.cs",
+      "sha256": "8ec50d1b8f7f49789b59861cc70e7f4b8951af6f69ed225dd8d8179de8920a9c",
+      "publishedSha256": "8ec50d1b8f7f49789b59861cc70e7f4b8951af6f69ed225dd8d8179de8920a9c"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/FacturasForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.cs",
+      "sha256": "a9f7e07803dc964ff3f13ad0e41d77b3550063bcb8452e63a434dfc8c63d532d",
+      "publishedSha256": "a9f7e07803dc964ff3f13ad0e41d77b3550063bcb8452e63a434dfc8c63d532d"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/FacturasForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/FacturasForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/HabitacionesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.cs",
+      "sha256": "b5ef9bbfe2dc9fe75ec0060ba9fd9746d560233c39499418432c131a193944bd",
+      "publishedSha256": "b5ef9bbfe2dc9fe75ec0060ba9fd9746d560233c39499418432c131a193944bd"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/HabitacionesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HabitacionesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/HotelReservas.csproj",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HotelReservas.csproj",
+      "sha256": "16b5029ec045330d763da46de53bb070d17081aab3a693030b496d242d6af7c1",
+      "publishedSha256": "16b5029ec045330d763da46de53bb070d17081aab3a693030b496d242d6af7c1"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/InactividadMessageFilter.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/InactividadMessageFilter.cs",
+      "sha256": "6b161d503e9c7b87cb51c30c21392cd53e9421be33b03f0a4b6ad1bc7fe8d9b0",
+      "publishedSha256": "6b161d503e9c7b87cb51c30c21392cd53e9421be33b03f0a4b6ad1bc7fe8d9b0"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/LoginForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.cs",
+      "sha256": "3c96195f2c67eb72f5e1c40c146e786f7676ca0a2fa5c389b4569281ca900ee5",
+      "publishedSha256": "3c96195f2c67eb72f5e1c40c146e786f7676ca0a2fa5c389b4569281ca900ee5"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/LoginForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/MainForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.cs",
+      "sha256": "98ee10bdd7ed2866279591c81b5201104f2c30028bef405ce2fb32e21a1041f4",
+      "publishedSha256": "98ee10bdd7ed2866279591c81b5201104f2c30028bef405ce2fb32e21a1041f4"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/MainForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MainForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/MantenimientoData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoData.cs",
+      "sha256": "75f7b59be387ccf7c14827ce482e98661a9edf380918e7c66f4309f1c54b1c5b",
+      "publishedSha256": "75f7b59be387ccf7c14827ce482e98661a9edf380918e7c66f4309f1c54b1c5b"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/MantenimientoForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/MantenimientoForm.cs",
+      "sha256": "eee211063930de75eb04df5d0adbb3ff1af713a3c21c2b0b2c221e0def01f36e",
+      "publishedSha256": "eee211063930de75eb04df5d0adbb3ff1af713a3c21c2b0b2c221e0def01f36e"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/NotificacionData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionData.cs",
+      "sha256": "1fefaeb793d2b42eeac4c505af87990781298d6e4f87a221633b80e2ba2360a1",
+      "publishedSha256": "1fefaeb793d2b42eeac4c505af87990781298d6e4f87a221633b80e2ba2360a1"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/NotificacionesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/NotificacionesForm.cs",
+      "sha256": "2b2fd874fc97f31db133f55d9280ca4778d36951a023521e4f53a2963c287d97",
+      "publishedSha256": "2b2fd874fc97f31db133f55d9280ca4778d36951a023521e4f53a2963c287d97"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/packages.config",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/packages.config",
+      "sha256": "47da20a0b369f8825e510b86b26cc81ecc433d3e6cc8aaa3780cf1427a1cd5b4",
+      "publishedSha256": "47da20a0b369f8825e510b86b26cc81ecc433d3e6cc8aaa3780cf1427a1cd5b4"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Program.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Program.cs",
+      "sha256": "558861f18a91b6f9c2555aa234c44ca7f787d45196ca3143fa853dbbaaa558eb",
+      "publishedSha256": "558861f18a91b6f9c2555aa234c44ca7f787d45196ca3143fa853dbbaaa558eb"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/PromocionesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.cs",
+      "sha256": "c19abe24f0ee13b887dbd15a4870589a5e8e955c8d4fd6048082ef8525546e88",
+      "publishedSha256": "c19abe24f0ee13b887dbd15a4870589a5e8e955c8d4fd6048082ef8525546e88"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/PromocionesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/PromocionesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Properties/AssemblyInfo.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/AssemblyInfo.cs",
+      "sha256": "2fb95575c2a6d6fd71e36c59da60727cc0ec38656f6e9e182770d31c7a6f4654",
+      "publishedSha256": "2fb95575c2a6d6fd71e36c59da60727cc0ec38656f6e9e182770d31c7a6f4654"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Properties/Resources.Designer.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.Designer.cs",
+      "sha256": "74f17511eec1e8961a14921e043e52fcbaef9e1d3e8821ade4d668d72d284cce",
+      "publishedSha256": "74f17511eec1e8961a14921e043e52fcbaef9e1d3e8821ade4d668d72d284cce"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Properties/Resources.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Resources.resx",
+      "sha256": "66b5ebd1b0fc73f041ba669ce2184f6f471d5e3524efa34ca31233e9f5395262",
+      "publishedSha256": "66b5ebd1b0fc73f041ba669ce2184f6f471d5e3524efa34ca31233e9f5395262"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Properties/Settings.Designer.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.Designer.cs",
+      "sha256": "b2dc4967acadf989275e08ae3c1f5008a5d2be02eb757a12033dc3626f90db56",
+      "publishedSha256": "b2dc4967acadf989275e08ae3c1f5008a5d2be02eb757a12033dc3626f90db56"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/Properties/Settings.settings",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Properties/Settings.settings",
+      "sha256": "f6a4290723520caddd934b8800319c7ca6cc7eeab647059ec89b7a13b1513265",
+      "publishedSha256": "f6a4290723520caddd934b8800319c7ca6cc7eeab647059ec89b7a13b1513265"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/RatingData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingData.cs",
+      "sha256": "443a26142a7437fb0d44d394ee856bdb6ce58f909355ed90d370708c557ac4ad",
+      "publishedSha256": "443a26142a7437fb0d44d394ee856bdb6ce58f909355ed90d370708c557ac4ad"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/RatingForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/RatingForm.cs",
+      "sha256": "a66efe9336b2aa168d64d77066b97de8172da496c3cc240159700066a5ffd4f0",
+      "publishedSha256": "a66efe9336b2aa168d64d77066b97de8172da496c3cc240159700066a5ffd4f0"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReportesData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesData.cs",
+      "sha256": "d293c730a7587ffb929502f66918d05b7f35f3331f03307127799db6f2f7e3d7",
+      "publishedSha256": "d293c730a7587ffb929502f66918d05b7f35f3331f03307127799db6f2f7e3d7"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReportesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.cs",
+      "sha256": "ffa535fc2dcdf7efd8f47776596500fed48eab76efbd7336292bd95a731089a4",
+      "publishedSha256": "ffa535fc2dcdf7efd8f47776596500fed48eab76efbd7336292bd95a731089a4"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReportesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReportesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReservasExtrasData.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasExtrasData.cs",
+      "sha256": "ae186806d109460024f1ef578fcdc8ac027e84b2f94a1ced804f93e0454ef38a",
+      "publishedSha256": "ae186806d109460024f1ef578fcdc8ac027e84b2f94a1ced804f93e0454ef38a"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReservasForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.cs",
+      "sha256": "b977b40dbd03f2f30642b665eb0c0e1c41fb18fdd070592b24aeb2232dda6d4b",
+      "publishedSha256": "b977b40dbd03f2f30642b665eb0c0e1c41fb18fdd070592b24aeb2232dda6d4b"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ReservasForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ReservasForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ServiciosAdicionalesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.cs",
+      "sha256": "5295436986f60ba7dff9609d327b5b41168696eb50746ed6933cc0930bf57a1b",
+      "publishedSha256": "5295436986f60ba7dff9609d327b5b41168696eb50746ed6933cc0930bf57a1b"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/ServiciosAdicionalesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/ServiciosAdicionalesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/SesionUsuario.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SesionUsuario.cs",
+      "sha256": "7ff46a9e452b5344b615d85332c5db717bfae04d194e8d1fce308feedc836880",
+      "publishedSha256": "7ff46a9e452b5344b615d85332c5db717bfae04d194e8d1fce308feedc836880"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/SucursalesForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.cs",
+      "sha256": "af6e2105a02c2bd083695e1461d37fc2daf0242e8631ed386cc021cf671b01c3",
+      "publishedSha256": "af6e2105a02c2bd083695e1461d37fc2daf0242e8631ed386cc021cf671b01c3"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/SucursalesForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/SucursalesForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/TiposHabitacionForm.cs",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.cs",
+      "sha256": "6eafadfbd022963cd972135abe490302c62867fcd9be0ca3c8d83503b42147e8",
+      "publishedSha256": "6eafadfbd022963cd972135abe490302c62867fcd9be0ca3c8d83503b42147e8"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas/TiposHabitacionForm.resx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/TiposHabitacionForm.resx",
+      "sha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298",
+      "publishedSha256": "4363cd7d5b8671c72442ce1a1bfc10d64ebd24b2d718b54bd4fcd025e4967298"
+    },
+    {
+      "source": "Proyecto Hotel Final/HotelReservas.slnx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx",
+      "sha256": "a5555f2c81c361ff1205f7d3be74f809458ff8a0f98ed7a34d4ba23765d4d8c8",
+      "publishedSha256": "a5555f2c81c361ff1205f7d3be74f809458ff8a0f98ed7a34d4ba23765d4d8c8"
+    },
+    {
+      "source": "Proyecto Hotel Final/LEER.txt",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/LEER.txt",
+      "sha256": "63db086a683422424532c2c34c6de34cbfb903af4c58ad91db5738dbc787c3ac",
+      "publishedSha256": "a3b09bf744450bef7eb778e758ea73d7fdfae22129528a19b8d41092a01f6d6e",
+      "adapted": true
+    },
+    {
+      "source": "Proyecto Hotel Final/repository_link.txt",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/repository_link.txt",
+      "sha256": "2918f1c5235d1e1b49baf0f2926ada7525748f343a42a30038cf2da4336a13ea",
+      "publishedSha256": "c580153ee655034ddec8a4c655afa1ec69b9bbae26242ff7c8ef70614e67b889",
+      "adapted": true
+    },
+    {
+      "source": "Diagrama_Hotel.drawio",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/diagrama-hotel.drawio",
+      "sha256": "f244696de71344b77cb2cd4ad6b24bcd994aba505d123a5eebc51383a34eea97",
+      "publishedSha256": "f244696de71344b77cb2cd4ad6b24bcd994aba505d123a5eebc51383a34eea97"
+    },
+    {
+      "source": "Modelo Relacional - Hotel.xlsx",
+      "target": "05-bases-de-datos/hotel-reservas-proyecto-final/modelo-relacional-hotel.xlsx",
+      "sha256": "1412d03fab0118a761ed762712fa65930c61f825daf519012729add005e5a053",
+      "publishedSha256": "1412d03fab0118a761ed762712fa65930c61f825daf519012729add005e5a053"
+    },
+    {
+      "source": "Cuestionario 2.pdf",
+      "target": "05-bases-de-datos/fundamentos-sistemas-bases-datos/cuestionario-2.pdf",
+      "sha256": "1533b7ab70cfaee70c76ecbb28a6bb13f631a6b2bd01bb765332245ab1e72185",
+      "publishedSha256": "c3d95717c77f30955ff0e70da8e786905487a67056a1a62c7b3e101040e8dded",
+      "adapted": true
+    },
+    {
+      "source": "Archivos/Examen_SQL_Resuelto_Integrado.pdf",
+      "target": "05-bases-de-datos/restaurante-consultas-segundo-parcial/guia-estudio-solucion-integrada.pdf",
+      "sha256": "49b25d274a2410a74b05ed5f91861cb66e1e04b605a1b89b07fad22c500bb768",
+      "publishedSha256": "49b25d274a2410a74b05ed5f91861cb66e1e04b605a1b89b07fad22c500bb768"
+    },
+    {
+      "source": "UNIDAD 4/Tareas/Ejercicio 1 - Unidad 4 DER.png",
+      "target": "05-bases-de-datos/reservas-coches-creacion-datos/diagrama-ejercicio-unidad-4.png",
+      "sha256": "0af2980e399c7e444229c50ed1bba19e78da280858c94fc3e435f06264f59b18",
+      "publishedSha256": "0af2980e399c7e444229c50ed1bba19e78da280858c94fc3e435f06264f59b18"
+    },
+    {
+      "source": "DER CURSO.pdf",
+      "target": "05-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.pdf",
+      "sha256": "38e946eae336ab62c6a944d9f084298691fa8244fc000427d764c5410d7cac8c",
+      "publishedSha256": "38e946eae336ab62c6a944d9f084298691fa8244fc000427d764c5410d7cac8c"
+    },
+    {
+      "source": "DER CURSO.xmind",
+      "target": "05-bases-de-datos/cursos-modelo-entidad-relacion/diagrama-cursos.xmind",
+      "sha256": "95175dbf61cf05e04973bd419a2e06307c41107268cf79665f6eeead11243a7e",
+      "publishedSha256": "95175dbf61cf05e04973bd419a2e06307c41107268cf79665f6eeead11243a7e"
+    },
+    {
+      "source": "bookstore_setup.sql",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/bookstore.sql",
+      "sha256": "be93f423b952e460843fedbff581d0ee65591597e4851a5695c7d612c35aabd4",
+      "publishedSha256": "be93f423b952e460843fedbff581d0ee65591597e4851a5695c7d612c35aabd4"
+    },
+    {
+      "source": "diagrama_bookstore.png",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/diagrama-bookstore.png",
+      "sha256": "7a2359e50cae2eefd201a23700587ae51094bc44fae0bdcee6531b389545405e",
+      "publishedSha256": "7a2359e50cae2eefd201a23700587ae51094bc44fae0bdcee6531b389545405e"
+    },
+    {
+      "source": "DB2.pdf",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.pdf",
+      "sha256": "c804bb45f765587dc3b1ccc6c608bf160749c38ca98b859a20911d1012a5b706",
+      "publishedSha256": "c804bb45f765587dc3b1ccc6c608bf160749c38ca98b859a20911d1012a5b706"
+    },
+    {
+      "source": "2DB.docx",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/guia-estudio-bookstore.docx",
+      "sha256": "051eba1a717653e0c1e1eac4fce698bd09880d2d085be494866c7b8f60b9a226",
+      "publishedSha256": "051eba1a717653e0c1e1eac4fce698bd09880d2d085be494866c7b8f60b9a226"
+    },
+    {
+      "source": "Archivos/hospital.sql",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/hospital.sql",
+      "sha256": "03e191aedfe3b22f2d2ecac1243155f12a458881b32664191acdc2c78ca15d95",
+      "publishedSha256": "03e191aedfe3b22f2d2ecac1243155f12a458881b32664191acdc2c78ca15d95"
+    },
+    {
+      "source": "Archivos/fast_food.sql",
+      "target": "05-bases-de-datos/practicas-esquemas-complementarios/fast-food.sql",
+      "sha256": "2695a87ce07b4032a8beae8451abe9aa1961b84b77a94bdcb94a0fe43bac0dc3",
+      "publishedSha256": "2695a87ce07b4032a8beae8451abe9aa1961b84b77a94bdcb94a0fe43bac0dc3"
+    },
+    {
+      "source": "Proyecto Hotel Final/Proyecto Final.docx",
+      "target": "archivos-originales/bases-de-datos/enunciados/proyecto-final.docx",
+      "sha256": "bdab0102a80835ef08975f59e276dabafac0e540be8f03b9885ba5590c1b44d8",
+      "publishedSha256": "bdab0102a80835ef08975f59e276dabafac0e540be8f03b9885ba5590c1b44d8",
+      "duplicate": true
     }
   ]
 }

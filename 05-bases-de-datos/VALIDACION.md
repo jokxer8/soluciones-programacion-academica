@@ -1,27 +1,28 @@
 # Validación de Bases de Datos
 
-Revisión del 15 de octubre de 2026 sobre la preparación adaptada a la carpeta Github del escritorio.
+Revisión del 15 de octubre de 2026 sobre la sección ampliada con la carpeta 30. Base de Datos y el proyecto final del hotel.
 
 ## Alcance
 
-Se comparó el contenido del repositorio remoto, consultado mediante git fetch, con la carpeta indicada y la preparación anterior. Las otras cuatro materias se conservan sin cambios. La sección contiene siete actividades y un grupo adicional de evidencias.
+Se inventariaron 329 archivos del origen. El [registro de auditoría](AUDITORIA.md) clasifica todos los materiales y el [inventario](../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona los entregables con sus fuentes. Las otras cuatro materias publicadas se conservan sin cambios. La sección mantiene el patrón README, desarrollo, código y evidencia.
 
-## Comprobaciones
+## Comprobaciones realizadas
 
-- Revisión de las estructuras y documentación de las cuatro materias publicadas: 22 actividades y 21 soluciones de C# o SML.
-- Coincidencia exacta de los 88 archivos de trabajo comparables con las copias revisadas anteriormente. La transcripción de reunión no se incorpora.
-- Análisis de sintaxis de los 12 scripts T-SQL de actividades mediante Microsoft.SqlServer.TransactSql.ScriptDom: sin errores.
-- Verificación de 254 enlaces locales y de los hashes de origen y destino de los 124 registros del inventario, que representan 87 archivos de origen.
-- Apertura de 33 copias PDF y comprobación de 39 contenedores Office y XMind y sus XML, además de seis diagramas Draw.io.
-- Conservación de créditos y de las copias depuradas de identificadores institucionales conocidos en texto. Las imágenes escaneadas no equivalen a texto revisado.
+- Compilación Release de HotelReservas.csproj con MSBuild de Visual Studio: **correcta**, con una advertencia CS0168 por una variable ex sin uso en DashboardForm.cs. Se utilizaron los paquetes conservados con el proyecto; paquetes y binarios quedan excluidos de Git.
+- Análisis de los **18 scripts T-SQL** de actividades mediante Microsoft.SqlServer.TransactSql.ScriptDom: **sin errores de sintaxis**.
+- Verificación de 382 enlaces locales y de los hashes de origen y publicación de los 205 registros del inventario, correspondientes a 168 archivos de origen.
+- Apertura de 37 copias PDF y comprobación de 42 contenedores Office y XMind y siete diagramas Draw.io, junto con sus XML.
+- Revisión de la secuencia de instalación, cuentas de demostración, servidor local y tema inicial del hotel contra los scripts y el código.
+- Sustitución de valores de documento, teléfono y correo de los datos de demostración del hotel por valores ficticios. Las credenciales privadas y los archivos de empleados quedan fuera.
 
-## Adaptaciones de SQL
+## Rectificaciones documentadas
 
-Restaurante incluye GO para separar objetos, cierre de la función, consulta de ejemplo fuera de su cuerpo y un límite de fechas que incluye el día final completo. Alquiler de coches añade separadores y contexto de base de datos donde faltaban. Los scripts originales permanecen como respaldo y las modificaciones se explican en desarrollo.md.
+Restaurante incluye separadores GO, cierre de la función, consulta de ejemplo fuera de su cuerpo y un límite que incluye el día final completo. Alquiler de coches añade separadores y contexto de base donde faltaban. El hotel utiliza localhost como servidor de referencia e incluye la migración necesaria después del script inicial. Sus guías explican la recreación de HotelDB y la carga opcional de datos.
 
-## Límites
+## Límites de la revisión
 
-No se ejecutaron los scripts contra una instancia SQL Server: la conexión local no estaba disponible. Un análisis de sintaxis no verifica dependencias, resultados ni integridad de los datos en ejecución. Bolsa de empleo requiere un esquema previo no incluido. Las dos variantes de coches son independientes.
+La conexión local a SQL Server no estaba disponible durante la revisión. No se ejecutaron los scripts sobre una instancia ni se probaron de extremo a extremo las pantallas y operaciones del hotel. La compilación y el análisis sintáctico no verifican resultados ni permisos en ejecución. NotificacionData y RatingData incluyen creación de tablas desde la aplicación, además del esquema preparado por los scripts.
 
-Los DOCX y XLSX conservan su estructura académica; no se revisó su paginación en Word o Excel. Las evaluaciones muestran resultados parciales y no un acta de nota final.
+Bolsa de empleo requiere un esquema previo no incluido y sus supuestos de fechas se explican en desarrollo.md. Las variantes de coches son independientes. Las opciones de los esquemas de práctica dependen de la versión de SQL Server.
 
+Los DOCX y XLSX conservan su diseño académico; se comprobaron su integridad y XML, sin revisar paginación en Word o Excel. Las evidencias escaneadas se publican según la autorización del autor. Las evaluaciones parciales no sustituyen un acta oficial de nota final.

@@ -47,6 +47,7 @@ fundamentos-sistemas-bases-datos/
 ```
 
 - [cuestionario-2.docx](cuestionario-2.docx)
+- [cuestionario-2.pdf](cuestionario-2.pdf)
 - [cuestionario-fundamentos.pdf](cuestionario-fundamentos.pdf)
 - [resumen-unidad-1.docx](resumen-unidad-1.docx)
 - [resumen-unidad-2.docx](resumen-unidad-2.docx)
