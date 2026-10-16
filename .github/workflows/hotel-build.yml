@@ -1,0 +1,88 @@
+name: Hotel - Compilacion Windows
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/hotel-build.yml'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/hotel-build.yml'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/**'
+      - '05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas.slnx'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: hotel-build-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Compilar HotelReservas - Release
+    runs-on: windows-2022
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: pwsh
+        working-directory: 05-bases-de-datos/hotel-reservas-proyecto-final
+    steps:
+      - name: Obtener el codigo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+
+      - name: Preparar MSBuild
+        uses: microsoft/setup-msbuild@30375c66a4eea26614e0d39710365f22f8b0af57 # v3
+
+      - name: Preparar NuGet
+        uses: NuGet/setup-nuget@12c57947e9458a5b976961b08ea0706a17dd71ae # v3
+        with:
+          nuget-version: '6.x'
+
+      - name: Restaurar packages.config
+        run: >-
+          nuget restore HotelReservas/packages.config
+          -PackagesDirectory packages
+          -Source https://api.nuget.org/v3/index.json
+          -NonInteractive
+          -Verbosity normal
+
+      - name: Compilar Release con MSBuild
+        run: >-
+          msbuild HotelReservas/HotelReservas.csproj
+          /t:Rebuild
+          /p:Configuration=Release
+          /p:Platform=AnyCPU
+          /m
+          /verbosity:minimal
+          /nologo
+
+      - name: Verificar archivos generados
+        run: |
+          $requiredOutputs = @(
+            'HotelReservas/bin/Release/HotelReservas.exe',
+            'HotelReservas/bin/Release/EPPlus.dll',
+            'HotelReservas/bin/Release/itextsharp.dll',
+            'HotelReservas/bin/Release/Assets/logo.png',
+            'HotelReservas/bin/Release/Assets/logo.ico'
+          )
+          foreach ($outputPath in $requiredOutputs) {
+            if (-not (Test-Path -LiteralPath $outputPath -PathType Leaf)) {
+              throw "No se genero el archivo requerido: $outputPath"
+            }
+          }
+          @"
+          ## Compilacion del hotel
+          - Resultado: Release compilado y archivos requeridos verificados.
+          - Entorno: Windows Server 2022, MSBuild y NuGet.
+          - Framework: .NET Framework 4.8, Windows Forms, AnyCPU.
+          - Revision: $env:GITHUB_SHA
+          - Alcance: compilacion; no se ejecuta la aplicacion ni SQL Server.
+          - No se firma ni se despliega la aplicacion.
+          "@ | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Encoding utf8 -Append
