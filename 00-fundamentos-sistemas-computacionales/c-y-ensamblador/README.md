@@ -1,5 +1,7 @@
 # Programación en C y ensamblador FASM
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [C](c) · [FASM](fasm-linux)
+
 ![Estado](https://img.shields.io/badge/Estado-Documentado-brightgreen)
 
 Doce ejercicios equivalentes de entrada/salida, decisiones, ciclos, primos y patrones.

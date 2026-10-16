@@ -1,5 +1,7 @@
 # Estructuras y memoria dinámica
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.)
+
 ![Estado](https://img.shields.io/badge/Estado-Documentado-brightgreen)
 
 Diez ejercicios de estructuras, punteros, rectángulos, complejos y listas.

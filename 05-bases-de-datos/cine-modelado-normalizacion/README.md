@@ -1,5 +1,9 @@
 # Cine - Modelado y Normalización
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](modelo-y-diccionario.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Diseño de un cine y ejercicios de transformación relacional y normalización de ventas.

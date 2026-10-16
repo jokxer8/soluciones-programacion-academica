@@ -482,7 +482,7 @@ namespace HotelReservas
                 return false;
             }
 
-            if (string.IsNullOrWhiteSpace(txtClave.Text))
+            if (idUsuarioSeleccionado <= 0 && string.IsNullOrWhiteSpace(txtClave.Text))
             {
                 MessageBox.Show("Debe escribir la clave.");
                 txtClave.Focus();
@@ -750,7 +750,7 @@ namespace HotelReservas
                     cvFinal,
                     cboEstadoLaboral.Text,
                     txtNombreUsuario.Text.Trim(),
-                    txtClave.Text.Trim(),
+                    txtClave.Text,
                     cboRol.Text,
                     chkUsuarioActivo.Checked
                 );
@@ -808,7 +808,7 @@ namespace HotelReservas
                         cvFinal,
                         cboEstadoLaboral.Text,
                         txtNombreUsuario.Text.Trim(),
-                        txtClave.Text.Trim(),
+                        txtClave.Text,
                         cboRol.Text,
                         chkUsuarioActivo.Checked
                     );
@@ -829,7 +829,7 @@ namespace HotelReservas
                     AdministracionData.ActualizarUsuarioSolo(
                         idUsuarioSeleccionado,
                         txtNombreUsuario.Text.Trim(),
-                        txtClave.Text.Trim(),
+                        txtClave.Text,
                         ConstruirNombreCompletoUsuarioSolo(),
                         cboRol.Text,
                         chkUsuarioActivo.Checked
@@ -968,7 +968,7 @@ namespace HotelReservas
                     cboEstadoLaboral.Text = estadoLaboral;
 
                 txtNombreUsuario.Text = ObtenerTextoCelda(fila, "NombreUsuario");
-                txtClave.Text = ObtenerTextoCelda(fila, "Clave");
+                txtClave.Clear(); // En edicion, vacio conserva la clave; nunca cargar el hash.
 
                 string rol = ObtenerTextoCelda(fila, "Rol");
                 if (string.IsNullOrWhiteSpace(rol))

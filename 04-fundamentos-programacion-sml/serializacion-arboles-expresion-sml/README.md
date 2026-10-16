@@ -1,5 +1,9 @@
 # Serialización de Árboles de Expresión en SML
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-serializacion-arboles-expresion.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja el uso de tipos de datos recursivos en Standard ML para representar árboles de expresión correspondientes a expresiones aritméticas.

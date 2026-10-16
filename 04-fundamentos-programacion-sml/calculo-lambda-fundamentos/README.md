@@ -1,5 +1,9 @@
 # Cálculo Lambda - Fundamentos de Programación Funcional
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](actividad-calculo-lambda-fundamentos.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja conceptos fundamentales del cálculo lambda, una base teórica importante para comprender la programación funcional.

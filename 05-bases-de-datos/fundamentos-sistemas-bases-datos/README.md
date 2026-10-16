@@ -1,5 +1,9 @@
 # Fundamentos de Sistemas de Bases de Datos
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](cuestionario-2.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Resúmenes y cuestionarios sobre gestión de datos, modelos y arquitectura de un DBMS.

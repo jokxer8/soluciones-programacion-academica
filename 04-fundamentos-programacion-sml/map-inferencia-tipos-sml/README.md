@@ -1,5 +1,9 @@
 # Función Map e Inferencia de Tipos en SML
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-map-inferencia-tipos.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja la función `map` en Standard ML y el proceso de inferencia de tipos según Hindley-Milner.

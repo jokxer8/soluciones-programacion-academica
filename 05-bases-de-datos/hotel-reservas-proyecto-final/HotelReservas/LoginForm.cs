@@ -344,7 +344,7 @@ namespace HotelReservas
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
-            string clave = txtClave.Text.Trim();
+            string clave = txtClave.Text;
 
             if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(clave))
             {

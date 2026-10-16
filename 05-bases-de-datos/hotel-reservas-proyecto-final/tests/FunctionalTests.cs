@@ -50,6 +50,102 @@ class FunctionalTests
     static int State(string name) { return Number("SELECT IdEstadoReserva FROM dbo.EstadoReserva WHERE NombreEstado='"+name+"'"); }
     static string RoomState(int room) { return Convert.ToString(Scalar("SELECT e.NombreEstado FROM dbo.Habitacion h JOIN dbo.EstadoHabitacion e ON e.IdEstadoHabitacion=h.IdEstadoHabitacion WHERE h.IdHabitacion="+room)); }
     static void Update(int reservation,int room,int state) { Database.ActualizarReserva(reservation,1,room,1,state,arrival,arrival.AddDays(2),1,"Actualizada"); }
+    static string Credential(string user) { return Convert.ToString(Scalar("SELECT Clave FROM dbo.Usuarios WHERE NombreUsuario='"+user+"'")); }
+    static void StoreCredential(string user,string value) {
+        using(var c=Database.GetConnection()) {c.Open();using(var q=new SqlCommand("UPDATE dbo.Usuarios SET Clave=@Clave WHERE NombreUsuario=@User",c)) {
+            q.Parameters.AddWithValue("@Clave",value);q.Parameters.AddWithValue("@User",user);q.ExecuteNonQuery();
+        }}
+    }
+    static void PasswordTests()
+    {
+        string hash = null;
+        Test("Clave PBKDF2: formato, sal individual y verificacion",delegate {
+            hash=Database.HashPassword("Clave QA 2026!"); bool upgrade;
+            Assert(hash.StartsWith("pbkdf2-sha256$v1$600000$"),"Formato o coste inesperado");
+            Assert(hash!=Database.HashPassword("Clave QA 2026!"),"Sal repetida");
+            Assert(PasswordSecurity.Verify("Clave QA 2026!",hash,out upgrade)&&!upgrade,"No verifica");
+            Assert(!PasswordSecurity.Verify("incorrecta",hash,out upgrade),"Acepta clave incorrecta");
+        });
+        Test("Clave PBKDF2: vector independiente Python hashlib",delegate {
+            bool upgrade;
+            Assert(PasswordSecurity.Verify("vector-prueba","pbkdf2-sha256$v1$600000$AAECAwQFBgcICQoLDA0ODw==$a2YS3Uz7BpviObcqU2GyY2DKX9XcZ0kHCvvSk8C9uq4=",out upgrade),"No coincide con PBKDF2 estandar");
+        });
+        Test("Clave PBKDF2: Unicode y espacios significativos",delegate {
+            bool upgrade;string value=Database.HashPassword("  Contraseña ñ 🔑  ");
+            Assert(PasswordSecurity.Verify("  Contraseña ñ 🔑  ",value,out upgrade),"No conserva Unicode");
+            Assert(!PasswordSecurity.Verify("Contraseña ñ 🔑",value,out upgrade),"Recorta clave nueva");
+        });
+        Test("Clave PBKDF2: formatos corruptos y costes extremos rechazados",delegate {
+            bool upgrade;
+            foreach(string bad in new[]{null,"","texto-plano",new string('g',64),hash+"$extra",hash.Replace("v1","v2"),hash.Replace("600000","0"),hash.Replace("600000","2147483647"),"pbkdf2-sha256$v1$600000$!!$!!","pbkdf2-sha256$v1$600000$AA==$AA=="})
+                Assert(!PasswordSecurity.Verify("Clave QA 2026!",bad,out upgrade),"Acepta formato corrupto");
+        });
+        Test("Clave PBKDF2: configuracion invalida falla sin sesion",delegate {
+            string previous=Environment.GetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS");
+            try {foreach(string bad in new[]{"599999","2000001","abc","-1"}) {
+                Environment.SetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS",bad);
+                Reject(delegate{Database.HashPassword("QA");},"HOTELRESERVAS_PASSWORD_ITERATIONS");
+            }} finally{Environment.SetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS",previous);}
+        });
+        Test("Clave PBKDF2: altas administrativas y acceso",delegate {
+            Assert(Database.ValidarLogin("admin","123456"),"No inicia admin");
+            AdministracionData.InsertarEmpleadoUsuario(1,"Clave","QA","QA-CLAVE-2026","","","",null,DateTime.Today,"QA","","","ACTIVO","qa_password","Clave QA 2026!","ADMIN",true);
+            string stored=Credential("qa_password");
+            Assert(stored.StartsWith("pbkdf2-sha256$v1$"),"Alta guarda clave debil");
+            Assert(Database.ValidarLogin("qa_password","Clave QA 2026!"),"Alta no accede");
+            Assert(!Database.ValidarLogin("qa_password",stored),"Acepta hash como clave");
+        });
+        Test("Clave PBKDF2: editar sin clave conserva credencial",delegate {
+            Database.ValidarLogin("admin","123456");int id=Number("SELECT IdUsuario FROM dbo.Usuarios WHERE NombreUsuario='qa_password'");string before=Credential("qa_password");
+            AdministracionData.ActualizarUsuarioSolo(id,"qa_password","","Nombre modificado","ADMIN",true);
+            Assert(Credential("qa_password")==before,"Reescribe clave al editar perfil");
+            Assert(Database.ValidarLogin("qa_password","Clave QA 2026!"),"Perdio acceso");
+        });
+        Test("Clave PBKDF2: cambio de clave invalida la anterior",delegate {
+            int id=Number("SELECT IdUsuario FROM dbo.Usuarios WHERE NombreUsuario='qa_password'");
+            AdministracionData.ActualizarUsuarioSolo(id,"qa_password","Nueva clave ñ 2026!","QA","ADMIN",true);
+            Assert(Credential("qa_password").StartsWith("pbkdf2-sha256$v1$"),"Cambio guarda texto plano");
+            Assert(!Database.ValidarLogin("qa_password","Clave QA 2026!"),"Acepta clave anterior");
+            Assert(Database.ValidarLogin("qa_password","Nueva clave ñ 2026!"),"No accede con nueva clave");
+        });
+        Test("Clave PBKDF2: cambio por empleado tambien deriva",delegate {
+            int id=Number("SELECT IdUsuario FROM dbo.Usuarios WHERE NombreUsuario='qa_password'");int employee=Number("SELECT IdEmpleado FROM dbo.Usuarios WHERE IdUsuario="+id);
+            AdministracionData.ActualizarEmpleadoUsuario(employee,id,1,"Clave","QA","QA-CLAVE-2026","","","",null,DateTime.Today,"QA","","","ACTIVO","qa_password","Empleado nueva 2026!","ADMIN",true);
+            Assert(Database.ValidarLogin("qa_password","Empleado nueva 2026!"),"No cambia clave por empleado");
+        });
+        Test("Clave PBKDF2: lista administrativa no expone hashes",delegate {
+            foreach(DataRow row in AdministracionData.ObtenerEmpleadosUsuarios().Rows) Assert(Convert.ToString(row["Clave"])=="","Lista expone hash");
+        });
+        Test("Clave PBKDF2: migracion SHA256 solo tras acceso correcto",delegate {
+            Exec("UPDATE dbo.Usuarios SET Clave=LOWER(CONVERT(varchar(64),HASHBYTES('SHA2_256','legacy-qa'),2)) WHERE NombreUsuario='qa_password'");string before=Credential("qa_password");
+            Assert(!Database.ValidarLogin("qa_password","incorrecta") && Credential("qa_password")==before,"Fallo modifica cuenta");
+            Assert(Database.ValidarLogin("qa_password","  legacy-qa  "),"No conserva compatibilidad historica");string migrated=Credential("qa_password");
+            Assert(migrated.StartsWith("pbkdf2-sha256$v1$"),"No migra");
+            Assert(Database.ValidarLogin("qa_password","legacy-qa")&&Credential("qa_password")==migrated,"Remigra o bloquea cuenta");
+        });
+        Test("Clave PBKDF2: cuenta inactiva no se migra",delegate {
+            Exec("UPDATE dbo.Usuarios SET Estado=0,Clave=LOWER(CONVERT(varchar(64),HASHBYTES('SHA2_256','legacy-qa'),2)) WHERE NombreUsuario='qa_password'");string before=Credential("qa_password");
+            Assert(!Database.ValidarLogin("qa_password","legacy-qa") && SesionUsuario.IdUsuario==0,"Acepta inactivo");
+            Assert(Credential("qa_password")==before,"Migra inactivo");Exec("UPDATE dbo.Usuarios SET Estado=1 WHERE NombreUsuario='qa_password'");
+        });
+        Test("Clave PBKDF2: hash malformado no abre sesion",delegate {
+            StoreCredential("qa_password","pbkdf2-sha256$v1$999999999$!!$!!");
+            Assert(!Database.ValidarLogin("qa_password","legacy-qa")&&SesionUsuario.IdUsuario==0,"Formato invalido abre sesion");
+        });
+        Test("Clave PBKDF2: aumento de coste y sin degradacion",delegate {
+            StoreCredential("qa_password",Database.HashPassword("Coste QA"));
+            string previous=Environment.GetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS");
+            try {
+                Environment.SetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS","600001");
+                Assert(Database.ValidarLogin("qa_password","Coste QA"),"No aumenta coste");string stronger=Credential("qa_password");
+                Assert(stronger.Contains("$600001$"),"No actualiza coste");
+                Environment.SetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS","600000");
+                Assert(Database.ValidarLogin("qa_password","Coste QA") && Credential("qa_password")==stronger,"Degrada coste existente");
+            } finally {Environment.SetEnvironmentVariable("HOTELRESERVAS_PASSWORD_ITERATIONS",previous);}
+        });
+        Database.ValidarLogin("admin","123456");
+    }
+
     [STAThread]
     static int Main(string[] args)
     {
@@ -71,7 +167,7 @@ class FunctionalTests
         }
         Test("Login invalido y vacio",delegate { SesionUsuario.Cerrar(); Assert(!Database.ValidarLogin("admin","incorrecta"),"Clave invalida aceptada"); Assert(!Database.ValidarLogin("",""),"Vacio aceptado"); });
         Test("Usuarios del seed tienen claves compatibles",delegate {
-            Assert(Number("SELECT COUNT(*) FROM dbo.Usuarios WHERE LEN(Clave)<>64")==0,"Quedaron claves sin migrar");
+            Assert(Number("SELECT COUNT(*) FROM dbo.Usuarios WHERE LEN(Clave)<>64 AND Clave NOT LIKE 'pbkdf2-sha256$v1$%'")==0,"Quedaron claves sin migrar");
             string user=Convert.ToString(Scalar("SELECT TOP 1 NombreUsuario FROM dbo.Usuarios WHERE IdEmpleado>4 ORDER BY IdUsuario"));
             Assert(!string.IsNullOrEmpty(user) && Database.ValidarLogin(user,"1234"),"No accede usuario ampliado");
         });
@@ -189,6 +285,7 @@ class FunctionalTests
             });
         }
         AdvancedTests(args[0]);
+        PasswordTests();
         Test("Reportes sin historial anual",delegate {
             Exec("DELETE dbo.Pago; DELETE dbo.Factura; DELETE dbo.CheckInOut; DELETE dbo.ReservaServicio; DELETE dbo.ReservaPromocion; DELETE dbo.Rating; DELETE dbo.Reserva; DELETE dbo.Mantenimiento;");
             var years=ReportesData.ObtenerAniosDisponibles();

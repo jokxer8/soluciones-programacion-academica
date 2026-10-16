@@ -1,5 +1,9 @@
 # Sistema de Nómina con Polimorfismo - POO
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+
 ## Descripción del problema
 
 Este ejercicio consiste en crear un sistema de nómina utilizando programación orientada a objetos.

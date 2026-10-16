@@ -1,5 +1,9 @@
 # Estructuras, Signaturas y Tipos Abstractos en SML
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-estructuras-signaturas-tipos-abstractos.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja conceptos avanzados de Standard ML relacionados con signaturas, estructuras, tipos abstractos de datos, records, listas de asociación, excepciones y tipos algebraicos.

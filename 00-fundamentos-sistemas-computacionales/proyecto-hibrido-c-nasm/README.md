@@ -1,5 +1,7 @@
 # Proyecto híbrido C y NASM
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.)
+
 ![Estado](https://img.shields.io/badge/Estado-Documentado-brightgreen)
 
 Interoperabilidad C/ensamblador x64 para sumar, ordenar e intercambiar enteros.

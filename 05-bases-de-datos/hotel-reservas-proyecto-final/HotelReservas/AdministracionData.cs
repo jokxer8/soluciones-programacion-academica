@@ -104,7 +104,7 @@ namespace HotelReservas
                         ISNULL(e.Estado, 0) AS EmpleadoActivo,
                         ISNULL(e.EstadoLaboral, '') AS EstadoLaboral,
                         ISNULL(u.NombreUsuario, '') AS NombreUsuario,
-                        ISNULL(u.Clave, '') AS Clave,
+                        CAST('' AS varchar(256)) AS Clave,
                         {rolExprEmpleado} AS Rol,
                         ISNULL(u.Estado, 0) AS UsuarioActivo,
                         CASE WHEN ISNULL(u.Estado, 0) = 1 THEN 'ACTIVO' ELSE 'INACTIVO' END AS EstadoUsuarioTexto
@@ -136,7 +136,7 @@ namespace HotelReservas
                         CAST(0 AS bit) AS EmpleadoActivo,
                         '' AS EstadoLaboral,
                         ISNULL(u.NombreUsuario, '') AS NombreUsuario,
-                        ISNULL(u.Clave, '') AS Clave,
+                        CAST('' AS varchar(256)) AS Clave,
                         {rolExprSoloUsuario} AS Rol,
                         ISNULL(u.Estado, 0) AS UsuarioActivo,
                         CASE WHEN ISNULL(u.Estado, 0) = 1 THEN 'ACTIVO' ELSE 'INACTIVO' END AS EstadoUsuarioTexto
@@ -617,7 +617,7 @@ namespace HotelReservas
                             UPDATE dbo.Usuarios
                             SET
                                 NombreUsuario = @NombreUsuario,
-                                Clave = @Clave,
+                                Clave = COALESCE(@Clave, Clave),
                                 NombreCompleto = @NombreCompleto,
                                 IdRol = @IdRol,
                                 Rol = @Rol,
@@ -627,7 +627,7 @@ namespace HotelReservas
                             UPDATE dbo.Usuarios
                             SET
                                 NombreUsuario = @NombreUsuario,
-                                Clave = @Clave,
+                                Clave = COALESCE(@Clave, Clave),
                                 NombreCompleto = @NombreCompleto,
                                 IdRol = @IdRol,
                                 Estado = @Estado
@@ -637,7 +637,7 @@ namespace HotelReservas
                     {
                         cmd.Parameters.AddWithValue("@IdUsuario", idUsuario);
                         cmd.Parameters.AddWithValue("@NombreUsuario", nombreUsuario);
-                        cmd.Parameters.AddWithValue("@Clave", clave);
+                        cmd.Parameters.Add("@Clave", SqlDbType.VarChar, 256).Value = string.IsNullOrEmpty(clave) ? (object)DBNull.Value : Database.HashPassword(clave);
                         cmd.Parameters.AddWithValue("@NombreCompleto", string.IsNullOrWhiteSpace(nombreCompleto) ? nombreUsuario : nombreCompleto);
                         cmd.Parameters.AddWithValue("@IdRol", idRol);
                         if (existeRolTexto)

@@ -17,7 +17,7 @@ El objetivo principal es organizar, documentar y presentar ejercicios resueltos 
 
 ## Explorar el portafolio
 
-[Materias y estados](#áreas-principales) · [Proyectos destacados](#proyectos-destacados) · [Evidencias originales](archivos-originales) · [Pendientes](PENDIENTES.md) · [Perfil del autor](https://github.com/jokxer8)
+[Materias y estados](#áreas-principales) · [Proyectos destacados](#proyectos-destacados) · [Evidencias originales](archivos-originales) · [Pendientes](PENDIENTES.md) · [Perfil del autor](https://github.com/jokxer8) · [Guía de presentación](GUIA-DE-ESTILO.md)
 
 **Ruta de aprendizaje**
 

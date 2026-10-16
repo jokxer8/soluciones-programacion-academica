@@ -1,5 +1,9 @@
 # Prácticas y Esquemas Complementarios
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.) · [Evidencia](guia-estudio-bookstore.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Material de estudio y esquemas de librería, hospital y comida rápida conservados en la asignatura.

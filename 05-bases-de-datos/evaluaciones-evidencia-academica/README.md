@@ -1,5 +1,9 @@
 # Evaluaciones - Evidencia Académica
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](evidencia-primer-parcial.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Respaldo del primer parcial y referencia al segundo parcial resuelto.

@@ -94,6 +94,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="PasswordSecurity.cs" />
     <Compile Include="FacturasForm.cs">
       <SubType>Form</SubType>
     </Compile>

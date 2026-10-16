@@ -1,5 +1,9 @@
 # Estadísticas Básicas de un Arreglo
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+
 ## Descripción del problema
 
 Este ejercicio consiste en leer una cantidad de números enteros ingresados por el usuario y calcular estadísticas básicas sobre ellos.

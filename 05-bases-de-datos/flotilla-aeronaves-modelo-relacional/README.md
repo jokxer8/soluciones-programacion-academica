@@ -1,5 +1,9 @@
 # Flotilla de Aeronaves - Modelo Entidad-Relación
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](informe-final.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Caso grupal de diseño de una flotilla con mantenimiento e historial de bases y estados.

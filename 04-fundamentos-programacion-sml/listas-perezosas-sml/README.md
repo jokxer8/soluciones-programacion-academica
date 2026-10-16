@@ -1,5 +1,9 @@
 # Listas Perezosas en SML
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-listas-perezosas-sml.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja la construcción y manipulación de listas perezosas en Standard ML.

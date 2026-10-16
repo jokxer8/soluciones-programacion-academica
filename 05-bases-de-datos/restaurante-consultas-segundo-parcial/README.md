@@ -1,5 +1,9 @@
 # Restaurante - Consultas del Segundo Parcial
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.) · [Evidencia](evidencia-segundo-parcial.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Seis requerimientos SQL sobre órdenes, productos, clientes, meseros y propinas.

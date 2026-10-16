@@ -37,61 +37,67 @@ namespace HotelReservas
         // =========================
         public static string HashPassword(string plainText)
         {
-            using (var sha = System.Security.Cryptography.SHA256.Create())
-            {
-                byte[] bytes = sha.ComputeHash(System.Text.Encoding.UTF8.GetBytes(plainText));
-                return BitConverter.ToString(bytes).Replace("-", "").ToLower();
-            }
+            return PasswordSecurity.Hash(plainText);
         }
 
-        // =========================
-        // LOGIN
-        // =========================
         public static bool ValidarLogin(string usuario, string clave)
         {
             SesionUsuario.Cerrar();
-            if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(clave))
-                return false;
-
-            string hashedClave = HashPassword(clave.Trim());
-
-            using (SqlConnection conn = GetConnection())
+            if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(clave)) return false;
+            using (var conn = GetConnection())
             {
-                Database.AbrirConexion(conn);
-
-                using (SqlCommand cmd = new SqlCommand("dbo.sp_ValidarLogin", conn))
+                AbrirConexion(conn);
+                var account = new DataTable();
+                using (var cmd = new SqlCommand("dbo.sp_ValidarLogin", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@NombreUsuario", usuario.Trim());
-                    cmd.Parameters.AddWithValue("@Clave", hashedClave);
-
-                    using (SqlDataReader dr = cmd.ExecuteReader())
+                    cmd.Parameters.Add("@NombreUsuario", SqlDbType.VarChar, 50).Value = usuario.Trim();
+                    using (var adapter = new SqlDataAdapter(cmd)) adapter.Fill(account);
+                }
+                if (account.Rows.Count != 1) return false;
+                int id = Convert.ToInt32(account.Rows[0]["IdUsuario"]);
+                string stored = Convert.ToString(account.Rows[0]["Clave"]);
+                bool needsUpgrade;
+                if (!PasswordSecurity.Verify(clave, stored, out needsUpgrade)) return false;
+                if (needsUpgrade)
+                {
+                    // El login historico recortaba espacios; conservar esa clave canonica.
+                    string upgraded = HashPassword(PasswordSecurity.IsLegacy(stored) ? clave.Trim() : clave);
+                    using (var cmd = new SqlCommand(@"
+                        UPDATE dbo.Usuarios SET Clave=@Nueva
+                        WHERE IdUsuario=@Id AND Estado=1
+                        AND CONVERT(varbinary(256),Clave)=CONVERT(varbinary(256),@Anterior);", conn))
                     {
-                        if (dr.Read())
-                        {
-                            SesionUsuario.IdUsuario = dr["IdUsuario"] == DBNull.Value
-                                ? 0
-                                : Convert.ToInt32(dr["IdUsuario"]);
-
-                            SesionUsuario.NombreUsuario = dr["NombreUsuario"] == DBNull.Value
-                                ? ""
-                                : dr["NombreUsuario"].ToString();
-
-                            SesionUsuario.NombreCompleto = dr["NombreCompleto"] == DBNull.Value
-                                ? SesionUsuario.NombreUsuario
-                                : dr["NombreCompleto"].ToString();
-
-                            SesionUsuario.Rol = dr["Rol"] == DBNull.Value
-                                ? "EMPLEADO"
-                                : dr["Rol"].ToString();
-
-                            return true;
-                        }
+                        cmd.Parameters.Add("@Nueva", SqlDbType.VarChar, 256).Value = upgraded;
+                        cmd.Parameters.Add("@Anterior", SqlDbType.VarChar, 256).Value = stored;
+                        cmd.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                        // No sobrescribir un cambio de clave simultaneo ni abrir esa sesion.
+                        if (cmd.ExecuteNonQuery() != 1) return false;
+                    }
+                    stored = upgraded;
+                }
+                // Releer rol y estado; la comparacion binaria conserva mayusculas de Base64.
+                using (var cmd = new SqlCommand(@"
+                    SELECT u.IdUsuario,u.NombreUsuario,
+                        ISNULL(NULLIF(LTRIM(RTRIM(u.NombreCompleto)),''),u.NombreUsuario) AS NombreCompleto,
+                        r.NombreRol AS Rol
+                    FROM dbo.Usuarios u JOIN dbo.Roles r ON r.IdRol=u.IdRol
+                    WHERE u.IdUsuario=@Id AND u.Estado=1
+                    AND CONVERT(varbinary(256),u.Clave)=CONVERT(varbinary(256),@Clave);", conn))
+                {
+                    cmd.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                    cmd.Parameters.Add("@Clave", SqlDbType.VarChar, 256).Value = stored;
+                    using (var dr = cmd.ExecuteReader())
+                    {
+                        if (!dr.Read()) return false;
+                        SesionUsuario.IdUsuario = Convert.ToInt32(dr["IdUsuario"]);
+                        SesionUsuario.NombreUsuario = Convert.ToString(dr["NombreUsuario"]);
+                        SesionUsuario.NombreCompleto = Convert.ToString(dr["NombreCompleto"]);
+                        SesionUsuario.Rol = Convert.ToString(dr["Rol"]);
+                        return true;
                     }
                 }
             }
-
-            return false;
         }
 
         // =========================

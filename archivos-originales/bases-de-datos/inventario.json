@@ -822,13 +822,13 @@
       "source": "Proyecto Hotel Final/HotelReservas/AdministracionData.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionData.cs",
       "sha256": "fd27c90a9bc3785771a20a974081eee689167e1a407854e6bc5565dc26e9d59a",
-      "publishedSha256": "6fe694041d69c89def70a1e73ee9561dd331aa6ab9122eb799ba0aa902e44775"
+      "publishedSha256": "55af092308c1e142a309aa333599823e805efe302251c237943e72f663df2e79"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/AdministracionForm.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/AdministracionForm.cs",
       "sha256": "452a2d51bc0157beab68eafd14a8ce0efa0dd12674deab6eed238d55245773fa",
-      "publishedSha256": "650dbd60498e6a2327e82918f4f349560a444a11954d23b570114f2a07ac980e"
+      "publishedSha256": "752385f43f304793bd2c877c84a40e85175f9a97236c3e61f89ef9cc4b2db351"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/AdministracionForm.resx",
@@ -924,7 +924,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/Database.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/Database.cs",
       "sha256": "046907f6eca168a13d057d37586c5dab6e86b37fe965a12578508a2f0ed78293",
-      "publishedSha256": "47d99ae6a56f8e3c13881920e68dd1950e46c8961e2c7550699b5b453e743b85",
+      "publishedSha256": "99e9e68834d13fb2bfa8d01d7e7f346e337656c3bbc65332f8bfb8794d5e0e7f",
       "adapted": true
     },
     {
@@ -967,7 +967,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/HotelReservas.csproj",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/HotelReservas.csproj",
       "sha256": "16b5029ec045330d763da46de53bb070d17081aab3a693030b496d242d6af7c1",
-      "publishedSha256": "5cc6e8cc03f413c298b281aa1c0a66c60848892c8b510fa26e6c405ca7a09a84"
+      "publishedSha256": "5cc965bf9657c367f9b6e5332a530721770d05e8787d3592d0a9928327526f6b"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/InactividadMessageFilter.cs",
@@ -979,7 +979,7 @@
       "source": "Proyecto Hotel Final/HotelReservas/LoginForm.cs",
       "target": "05-bases-de-datos/hotel-reservas-proyecto-final/HotelReservas/LoginForm.cs",
       "sha256": "3c96195f2c67eb72f5e1c40c146e786f7676ca0a2fa5c389b4569281ca900ee5",
-      "publishedSha256": "3c96195f2c67eb72f5e1c40c146e786f7676ca0a2fa5c389b4569281ca900ee5"
+      "publishedSha256": "2606b1e2e8c986fbcbe35d4f9273f5eaf49eb59dcc3ccf0735abe8472d2bef0e"
     },
     {
       "source": "Proyecto Hotel Final/HotelReservas/LoginForm.resx",

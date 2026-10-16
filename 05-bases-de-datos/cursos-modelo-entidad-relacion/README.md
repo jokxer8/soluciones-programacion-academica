@@ -1,5 +1,9 @@
 # Cursos - Modelo Entidad-Relación
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](diagrama-cursos.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Diseño conceptual de cursos, ofertas, instructores, empleados, actividades y certificados.

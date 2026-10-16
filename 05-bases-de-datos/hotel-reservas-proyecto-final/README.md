@@ -1,5 +1,9 @@
 # Sistema de Reservas de Hotel - Proyecto Final
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Aplicación](HotelReservas)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 [![Compilación Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
 
 ## Descripción de la actividad

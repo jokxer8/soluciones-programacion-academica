@@ -1,5 +1,9 @@
 # Reservas de Coches - Creación y Carga de Datos
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.) · [Evidencia](modelo-y-diccionario.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Esquema de reservas con un coche por reserva, restricciones y datos de prueba.

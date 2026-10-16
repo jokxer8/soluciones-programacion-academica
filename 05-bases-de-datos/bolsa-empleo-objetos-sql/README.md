@@ -1,5 +1,9 @@
 # Bolsa de Empleo - Vistas, Procedimientos y Auditoría
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sql) · [Evidencia](caso-bolsa-empleo.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
+
 ## Descripción de la actividad
 
 Objetos de base de datos para consultar ofertas y registrar cambios de empresas.

@@ -1,5 +1,7 @@
 # Gestión de países — Proyecto final
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.c)
+
 ![Estado](https://img.shields.io/badge/Estado-Documentado-brightgreen)
 
 Lista doblemente enlazada con nodo cabecera, carga CSV, consultas, inserciones, eliminación y cuatro criterios de ordenamiento.

@@ -25,7 +25,7 @@ try {
         $versionCommand.CommandText = "SELECT CONVERT(varchar(30), SERVERPROPERTY('ProductVersion'))"
         $version = $versionCommand.ExecuteScalar()
         "SQL Server LocalDB $version" | Set-Content (Join-Path $ResultsDirectory 'installation.txt') -Encoding UTF8
-        foreach ($file in @('HotelDB_Proyecto_Final.sql', 'HotelDB_Fase1_Migracion.sql', 'HotelDB_SeedData.sql')) {
+        foreach ($file in @('HotelDB_Proyecto_Final.sql', 'HotelDB_Fase1_Migracion.sql', 'HotelDB_SeedData.sql', 'HotelDB_Fase2_Contrasenas.sql', 'HotelDB_Fase2_Contrasenas.sql')) {
             $sql = [IO.File]::ReadAllText((Join-Path $hotelRoot "Base de Datos/$file"))
             if ($file -eq 'HotelDB_Proyecto_Final.sql') {
                 # LocalDB comparte una ruta predeterminada entre instancias del mismo usuario.

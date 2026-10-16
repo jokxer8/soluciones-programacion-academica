@@ -1,5 +1,9 @@
 # Búsqueda Secuencial en un Arreglo
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+
 ## Descripción del problema
 
 Este ejercicio consiste en buscar un número dentro de un arreglo de enteros utilizando el método de búsqueda secuencial.

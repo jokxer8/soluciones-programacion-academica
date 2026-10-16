@@ -1,5 +1,9 @@
 # Combinador Y y Fibonacci en SML
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-combinador-y-fibonacci.pdf)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
+
 ## Descripción de la actividad
 
 Esta actividad trabaja el uso del combinador Y para expresar funciones recursivas dentro del contexto de la programación funcional.

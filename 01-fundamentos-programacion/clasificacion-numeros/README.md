@@ -1,5 +1,9 @@
 # Clasificación de Números
 
+[Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
+
 ## Descripción del problema
 
 Este ejercicio consiste en leer varios números enteros ingresados por el usuario y clasificarlos según sus características.
