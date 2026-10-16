@@ -67,7 +67,19 @@ namespace HotelReservas
                 sheet.Cells[2,1,Math.Max(2,data.Rows.Count+2),data.Columns.Count].AutoFilter=true;
                 sheet.View.FreezePanes(3,1);
                 sheet.Cells[sheet.Dimension.Address].AutoFitColumns(14,45);
-                if(data.Rows.Count==0) sheet.Cells[3,1].Value="Sin datos para los filtros seleccionados.";
+                // AutoFit omite celdas con WrapText: fijar un ancho legible
+                // también para fechas, encabezados y tablas vacías.
+                for(int c=0;c<data.Columns.Count;c++) {
+                    int length=data.Columns[c].ColumnName.Length;
+                    foreach(DataRow row in data.Rows) length=Math.Max(length,Convert.ToString(row[c]).Length);
+                    sheet.Column(c+1).Width=data.Columns[c].DataType==typeof(DateTime)?18:Math.Max(20,Math.Min(45,length+3));
+                }
+                if(data.Rows.Count==0) {
+                    sheet.Cells[3,1,3,data.Columns.Count].Merge=true;
+                    sheet.Cells[3,1].Value="Sin datos para los filtros seleccionados.";
+                    sheet.Cells[3,1].Style.WrapText=true;
+                    sheet.Row(3).Height=35;
+                }
                 sheet.PrinterSettings.Orientation=eOrientation.Landscape;
                 sheet.PrinterSettings.FitToPage=true;
                 sheet.PrinterSettings.FitToWidth=1; sheet.PrinterSettings.FitToHeight=0;
