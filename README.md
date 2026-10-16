@@ -172,6 +172,7 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 
 - C#
 - C17
+- C++17
 - Ensamblador x86-64 (FASM y NASM)
 - .NET
 - Standard ML
@@ -227,7 +228,7 @@ Cada ejercicio o actividad documentada puede contener:
 nombre-del-ejercicio/
 ├── README.md
 ├── desarrollo.md
-├── solution.cs / solution.sml / solution.c / scripts.sql
+├── solution.cs / solution.cpp / solution.sml / solution.c / scripts.sql
 └── evidencia.pdf
 ```
 
@@ -244,6 +245,7 @@ Los estados describen la organización de la evidencia disponible. Cada materia 
 Actualmente están organizadas las secciones de:
 
 - Fundamentos de Sistema Computacionales (evidencia disponible incorporada y documentada).
+- Introducción a la Programación.
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
 - Diseño y Análisis de Algoritmos.
