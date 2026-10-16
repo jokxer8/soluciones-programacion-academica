@@ -1,6 +1,6 @@
 # Inventario de la carpeta académica
 
-121 archivos examinados: 88 seleccionados y 33 excluidos. El [registro JSON](inventario.json) contiene tamaño, SHA-256 de origen, ruta publicada, SHA-256 público y tratamiento. Las rutas excluidas sirven para justificar el alcance y no publican su contenido.
+121 archivos examinados: 88 seleccionados y 33 excluidos. El [registro JSON](inventario.json) contiene hashes de origen y publicación. Las correcciones FASM están explicadas en [PRUEBAS-LINUX.md](../../00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
 
 | Ruta de origen | Destino | Tratamiento o motivo |
 |---|---|---|
@@ -27,17 +27,17 @@
 | `Asignacion 2/hw02_v2.pdf` | [Publicado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/hw02-v2.pdf) | Copia sin cambios |
 | `Asignacion 2/Resumen del proyecto.pdf` | [Publicado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/resumen-del-proyecto.pdf) | Copia sin cambios |
 | `Asignacion 2/ASM/1. Saludo mundo.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/01-saludo-mundo.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/2. suma, resta y multiplicacion dos numeros 32bit.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/3. suma iguales resultado doble.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/4. regresion entre dos numeros.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm) | Rectificación: completar la expresión de longitud como `coma_1 = $ - coma` |
-| `Asignacion 2/ASM/5. numero entre 100 y 200.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/6. N si es primo.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/7. N si es primo y los primos hasta N.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/8.1 Cuadrado de estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/8.2 escalera de menor a mayor con estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/8.3 escalera de mayor a menor con estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/8.4 piramide con horizonte vertical.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm) | Copia sin cambios |
-| `Asignacion 2/ASM/8.5 escalera de menor a mayor e invertida.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm) | Copia sin cambios |
+| `Asignacion 2/ASM/2. suma, resta y multiplicacion dos numeros 32bit.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/02-operaciones-enteros.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/3. suma iguales resultado doble.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/03-suma-condicional.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/4. regresion entre dos numeros.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/04-cuenta-regresiva.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/5. numero entre 100 y 200.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/05-rango-100-200.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/6. N si es primo.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/06-numero-primo.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/7. N si es primo y los primos hasta N.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/07-primos-hasta-n.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/8.1 Cuadrado de estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/08-cuadrado-hueco.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/8.2 escalera de menor a mayor con estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/09-escalera-ascendente.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/8.3 escalera de mayor a menor con estrellas.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/10-escalera-descendente.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/8.4 piramide con horizonte vertical.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/11-piramide-vertical.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
+| `Asignacion 2/ASM/8.5 escalera de menor a mayor e invertida.asm` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/fasm-linux/12-escalera-invertida.asm) | Corrección Linux: lectura por token con signo; ajustes de impresión, validación o alineación según ejercicio. Véase PRUEBAS-LINUX.md. |
 | `Asignacion 2/C/1. Saludo mundo.c` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/01-saludo-mundo.c) | Copia sin cambios |
 | `Asignacion 2/C/2. suma, resta y multiplicacion dos numeros 32bit.c` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/02-operaciones-enteros.c) | Copia sin cambios |
 | `Asignacion 2/C/3. suma iguales resultado doble.c` | [Publicado](../../00-fundamentos-sistemas-computacionales/c-y-ensamblador/c/03-suma-condicional.c) | Copia sin cambios |

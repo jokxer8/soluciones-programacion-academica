@@ -1,5 +1,7 @@
 # Fundamentos de Programación con SML
 
+[Inicio](../README.md) · [← Materia 03](../03-diseno-y-analisis-de-algoritmos) · **Materia 04** · [Materia 05 →](../05-bases-de-datos) · [Pendientes](../PENDIENTES.md)
+
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 ![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)

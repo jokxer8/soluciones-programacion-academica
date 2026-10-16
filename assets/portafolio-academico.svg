@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="270" viewBox="0 0 1280 270" role="img" aria-labelledby="title desc">
+  <title id="title">Soluciones de Programación Académica</title>
+  <desc id="desc">Portafolio de Kelvin César Del Castillo Torres. Del fundamento computacional a los proyectos de software.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101c35"/><stop offset="1" stop-color="#193a59"/></linearGradient></defs>
+  <rect width="1280" height="270" rx="18" fill="url(#bg)"/>
+  <path d="M0 252H1280" stroke="#4ca9e8" stroke-width="4"/>
+  <circle cx="1160" cy="45" r="180" fill="#805ad5" opacity=".10"/>
+  <circle cx="1070" cy="235" r="150" fill="#39c59a" opacity=".08"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="58" y="52" fill="#72d8bb" font-size="14" font-weight="700" letter-spacing="3">APRENDER · RESOLVER · DOCUMENTAR</text>
+    <text x="55" y="111" fill="#f6f9ff" font-size="43" font-weight="700">Soluciones de Programación Académica</text>
+    <text x="58" y="151" fill="#c8d9ed" font-size="21">Del fundamento computacional a los proyectos de software.</text>
+    <text x="58" y="212" fill="#e0eaf7" font-size="17">Kelvin César Del Castillo Torres</text>
+    <g font-size="14" font-weight="600" text-anchor="middle">
+      <rect x="740" y="188" width="66" height="32" rx="16" fill="#2266a5"/><text x="773" y="209" fill="white">C / C#</text>
+      <rect x="818" y="188" width="64" height="32" rx="16" fill="#57657a"/><text x="850" y="209" fill="white">SQL</text>
+      <rect x="894" y="188" width="64" height="32" rx="16" fill="#7450a9"/><text x="926" y="209" fill="white">SML</text>
+      <rect x="970" y="188" width="76" height="32" rx="16" fill="#247a66"/><text x="1008" y="209" fill="white">ASM</text>
+    </g>
+  </g>
+</svg>

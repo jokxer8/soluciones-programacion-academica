@@ -1,5 +1,7 @@
 # Soluciones de Programación Académica
 
+![Portafolio académico de Kelvin César Del Castillo Torres](assets/portafolio-academico.svg)
+
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
@@ -10,6 +12,18 @@
 Este repositorio reúne soluciones, actividades y trabajos de programación desarrollados durante mi formación académica en Ciencias de la Computación.
 
 El objetivo principal es organizar, documentar y presentar ejercicios resueltos que evidencian mi evolución técnica en lógica de programación, programación orientada a objetos, programación funcional, bases de datos, análisis de algoritmos y resolución de problemas mediante código.
+
+---
+
+## Explorar el portafolio
+
+[Materias y estados](#áreas-principales) · [Proyectos destacados](#proyectos-destacados) · [Evidencias originales](archivos-originales) · [Pendientes](PENDIENTES.md) · [Perfil del autor](https://github.com/jokxer8)
+
+**Ruta de aprendizaje**
+
+[00 · Sistemas](00-fundamentos-sistemas-computacionales) → [01 · Programación](01-fundamentos-programacion) → [02 · Objetos](02-programacion-orientada-a-objetos) → [03 · Algoritmos](03-diseno-y-analisis-de-algoritmos) → [04 · Funcional](04-fundamentos-programacion-sml) → [05 · Datos](05-bases-de-datos)
+
+Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
 ---
 
@@ -137,6 +151,10 @@ soluciones-programacion-academica/
 | [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 65 pruebas SQL verificadas |
 | [Gestión de países](00-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Compilado y verificado localmente |
 
+La [comparación C/FASM en Linux](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md) verifica doce pares de programas con **132 comparaciones correctas y 0 fallidas**.
+
+[![C y FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/fundamentos-linux.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/fundamentos-linux.yml)
+
 El proyecto de países se encuentra en [Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales/proyecto-final-paises), con su CSV y pruebas de estructuras dinámicas.
 
 El proyecto del hotel conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [65 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones y configuración de conexión verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
@@ -187,6 +205,8 @@ Este repositorio evidencia competencias en:
 - Consultas T-SQL y programación de objetos de bases de datos.
 - Integración de SQL Server con C# y ADO.NET.
 - Organización de evidencia académica.
+- Programación en C, memoria dinámica e interoperabilidad con ensamblador.
+- Pruebas reproducibles en Windows y Linux mediante GitHub Actions.
 - Documentación técnica en Markdown.
 - Organización profesional de repositorios en GitHub.
 

@@ -7,7 +7,6 @@ Estado revisado el 15 de octubre de 2026. Se distingue el trabajo pendiente de l
 | Área | Pendiente | Estado y referencia |
 |---|---|---|
 | Hotel | Mejorar la derivación de contraseñas y definir la migración del mecanismo académico actual. | [Tarea #8 abierta](https://github.com/jokxer8/soluciones-programacion-academica/issues/8); única incidencia abierta al consultar GitHub. |
-| Fundamentos de Sistema Computacionales | Ejecutar los doce programas FASM en Linux x86-64 y contrastar entrada interactiva y resultados con sus versiones C. | Ensamblan correctamente; [ejecución Linux sin verificar](00-fundamentos-sistemas-computacionales/VALIDACION.md). |
 | Fundamentos de Sistema Computacionales | Localizar las respuestas originales de la asignación 1, si se conservan en otra ubicación. | Solo se encontró el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). No se presenta como resuelta ni se requiere recrearla para publicar la evidencia disponible. |
 
 ## Límites documentados y ampliaciones posibles
@@ -18,6 +17,10 @@ Estado revisado el 15 de octubre de 2026. Se distingue el trabajo pendiente de l
 - **Bolsa de empleo:** localizar el esquema completo previo para reproducir la práctica de forma autónoma. No estaba entre los entregables; véase [desarrollo](05-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md).
 
 Estas ampliaciones no se han convertido automáticamente en nuevas tareas del tablero. Las tareas del hotel **#1–#7 están completadas**; #3, #5 y #7 no deben volver a contarse como pendientes.
+
+## Comparación Linux completada
+
+Los doce pares C/FASM pasan **132 comparaciones, 0 fallidas**, con pipe y terminal PTY en Ubuntu. Se corrigieron lectura, signos, rangos y alineación. [Resultados y ejecución](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). Este punto deja de figurar como pendiente.
 
 ## Último ajuste completado
 

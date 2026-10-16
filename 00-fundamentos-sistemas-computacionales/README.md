@@ -1,5 +1,7 @@
 # Fundamentos de Sistema Computacionales
 
+[Inicio](../README.md) · **Materia 00** · [Materia 01 →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
+
 ![Lenguaje](https://img.shields.io/badge/Lenguajes-C%20%2F%20Ensamblador-blue)
 ![Estado](https://img.shields.io/badge/Estado-Incorporado%20y%20documentado-brightgreen)
 
@@ -24,11 +26,15 @@ Cada actividad sigue el patrón `README.md` + `desarrollo.md` + código o enlace
 
 ## Ejecución y alcance
 
+[![C y FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/fundamentos-linux.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/fundamentos-linux.yml)
+
+**Linux verificado:** 132 comparaciones correctas y 0 fallidas entre los doce pares C/FASM, con pipe y terminal PTY. [Resultados, correcciones y reproducción](PRUEBAS-LINUX.md).
+
 Los programas C independientes se compilan por separado. El proyecto híbrido necesita Windows x64 y NASM; las otras doce fuentes ASM usan FASM y generan ELF64 para Linux. El proyecto de países utiliza un CSV local y no requiere una base de datos SQL.
 
 [Resultados reproducibles y límites](VALIDACION.md) · [Auditoría de publicación](AUDITORIA.md).
 
-El estado de incorporación indica que la evidencia disponible está organizada. No afirma que se localizaron todas las respuestas ni equivale a una certificación de calificación: la asignación 1 solo contiene su enunciado y la ejecución FASM en Linux sigue sin verificarse.
+El estado de incorporación indica que la evidencia disponible está organizada. No afirma que se localizaron todas las respuestas ni equivale a una certificación de calificación: la asignación 1 solo contiene su enunciado y sus respuestas siguen sin localizarse.
 
 ## Autor
 

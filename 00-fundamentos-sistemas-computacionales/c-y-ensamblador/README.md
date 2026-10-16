@@ -23,7 +23,7 @@ Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la ent
 | Pirámide vertical | [11-piramide-vertical.c](c/11-piramide-vertical.c) | [11-piramide-vertical.asm](fasm-linux/11-piramide-vertical.asm) |
 | Escalera invertida | [12-escalera-invertida.c](c/12-escalera-invertida.c) | [12-escalera-invertida.asm](fasm-linux/12-escalera-invertida.asm) |
 
-Los archivos `.asm` usan **FASM**, formato ELF64 y llamadas al sistema Linux. NASM no acepta directamente esta sintaxis. En Windows se puede verificar su ensamblado; para ejecutarlos se necesita Linux x86-64. La equivalencia funcional completa entre ambas versiones queda pendiente de pruebas en Linux.
+Los archivos `.asm` usan **FASM**, formato ELF64 y llamadas al sistema Linux. NASM no acepta directamente esta sintaxis. En Windows se puede verificar su ensamblado; para ejecutarlos se necesita Linux x86-64. La comparación en Linux de los doce pares está verificada para los casos documentados: **132 correctos y 0 fallidos**, con pipe y terminal PTY. [Informe de pruebas y correcciones](../PRUEBAS-LINUX.md).
 
 ## Evidencia y validación
 

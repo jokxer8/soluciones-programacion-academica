@@ -1,5 +1,7 @@
 # Programación Orientada a Objetos
 
+[Inicio](../README.md) · [← Materia 01](../01-fundamentos-programacion) · **Materia 02** · [Materia 03 →](../03-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
+
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-orange)
 ![Estado](https://img.shields.io/badge/Estado-Completado-brightgreen)

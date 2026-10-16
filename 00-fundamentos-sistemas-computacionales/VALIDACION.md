@@ -1,6 +1,6 @@
 # Validación de Fundamentos de Sistema Computacionales
 
-Revisión local en Windows x64, 15 de octubre de 2026. Los resultados se generan con el código publicado; no se atribuyen a la entrega histórica.
+Revisión inicial local en Windows x64 y ampliación con ejecución Linux en GitHub Actions, 15 de octubre de 2026 (Santo Domingo). Los resultados se generan con el código publicado; no se atribuyen a la entrega histórica.
 
 ## Herramientas y reproducción
 
@@ -16,7 +16,7 @@ Descargar de los sitios oficiales, comprobar los hashes y extraer fuera del repo
 
 El script localiza las herramientas C++ de Visual Studio, compila en una carpeta temporal, copia el CSV y las fuentes ASM necesarias, limita cada ejecución a cinco segundos y contrasta la salida con [casos reproducibles](tests/cases.json). No utiliza el EXE recibido con la entrega.
 
-## Resultado de la ejecución final
+## Resultado de la revisión inicial en Windows
 
 | Comprobación | Resultado |
 |---|---|
@@ -28,11 +28,15 @@ El script localiza las herramientas C++ de Visual Studio, compila en una carpeta
 | Fuentes NASM Windows x64 | 3/3 ensamblan |
 | Fuentes FASM ELF64 | 12/12 ensamblan después de la corrección |
 
-[Registro estructurado de resultados](tests/results-windows.json). La compilación con `/W4` conserva advertencias en el registro temporal; no se afirma ausencia de advertencias. Estas pruebas se ejecutaron localmente, no en GitHub Actions.
+[Registro estructurado de resultados](tests/results-windows.json). La compilación con `/W4` conserva advertencias en el registro temporal; no se afirma ausencia de advertencias. La batería Windows inicial se ejecutó localmente. La ampliación Linux siguiente se ejecutó en GitHub Actions.
+
+## Ejecución Linux completada
+
+Los doce pares C/FASM pasan **132 comparaciones y 0 fallos**, con pipe y terminal PTY. Las fuentes C se compilan con advertencias tratadas como errores. Véanse [informe, entorno y correcciones](PRUEBAS-LINUX.md) y [registro JSON](tests/results-linux.json).
 
 ## Revisión documental
 
-Se comprobaron los 54 README del repositorio y sus 327 enlaces locales, sin rutas rotas. Los 121 archivos locales de origen mantienen sus hashes; las 88 publicaciones coinciden con los hashes públicos del inventario. Las diferencias deliberadas incluyen la redacción de datos personales y la corrección FASM.
+En la incorporación inicial se comprobaron los 54 README del repositorio y sus 327 enlaces locales, sin rutas rotas. Los 121 archivos locales de origen mantienen sus hashes; las 88 publicaciones coinciden con los hashes públicos del inventario. Las diferencias deliberadas incluyen la redacción de datos personales y la corrección FASM.
 
 ## Alcance
 
@@ -46,7 +50,7 @@ FASM detectó una expresión incompleta al final de `04-cuenta-regresiva.asm`: `
 
 ## Límites
 
-El ensamblado FASM genera ELF64; no se ejecutó en Linux. Falta comprobar allí la entrada interactiva y la equivalencia de los doce pares C/ASM. Tampoco se ejecutaron ASan/UBSan en esta revisión, ni se certifica resistencia general a entradas inválidas, desbordamiento o falta de memoria. La auditoría TXT entregada se conserva como referencia histórica.
+La ejecución FASM ELF64 en Linux está comprobada para los casos de [PRUEBAS-LINUX.md](PRUEBAS-LINUX.md). No se ejecutaron ASan/UBSan en esta revisión, ni se certifica resistencia general a entradas inválidas, desbordamiento o falta de memoria. La auditoría TXT entregada se conserva como referencia histórica.
 
 La asignación 1 solo aporta enunciado. Los libros y módulos Huawei no prueban autoría, aprobación ni certificación y no se redistribuyen. Los resultados del hotel pertenecen a otra materia y siguen documentados en su sección.
 

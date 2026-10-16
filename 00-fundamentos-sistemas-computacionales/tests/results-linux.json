@@ -1,0 +1,1098 @@
+{
+  "system": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+  "commit": "a81dcad179ccd8765dee920802ca23f5b5636b0d",
+  "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "cases": [
+    {
+      "program": "01-saludo-mundo",
+      "input": [],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "01-saludo-mundo",
+      "input": [],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        5,
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        5,
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        -5,
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        -5,
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        0,
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        0,
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        40000,
+        40000
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        40000,
+        40000
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        -40000,
+        40000
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        -40000,
+        40000
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        50000,
+        50000
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "02-operaciones-enteros",
+      "input": [
+        50000,
+        50000
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        4,
+        4
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        4,
+        4
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        4,
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        4,
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        -4,
+        -4
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        -4,
+        -4
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        0,
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "03-suma-condicional",
+      "input": [
+        0,
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        15,
+        6
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        15,
+        6
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        6,
+        15
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        6,
+        15
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        5,
+        5
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "04-cuenta-regresiva",
+      "input": [
+        5,
+        5
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        99,
+        100
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        99,
+        100
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        200,
+        201
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        200,
+        201
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        99,
+        201
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        99,
+        201
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        100,
+        200
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        100,
+        200
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        -1,
+        150
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "05-rango-100-200",
+      "input": [
+        -1,
+        150
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        13
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        13
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        25
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        25
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        97
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "06-numero-primo",
+      "input": [
+        97
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        50
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "07-primos-hasta-n",
+      "input": [
+        50
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        21
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "08-cuadrado-hueco",
+      "input": [
+        21
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        21
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "09-escalera-ascendente",
+      "input": [
+        21
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        21
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "10-escalera-descendente",
+      "input": [
+        21
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        21
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "11-piramide-vertical",
+      "input": [
+        21
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        -1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        -1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        0
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        0
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        1
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        1
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        2
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        2
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        3
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        3
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        20
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        20
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        21
+      ],
+      "mode": "pipe",
+      "status": "PASS"
+    },
+    {
+      "program": "12-escalera-invertida",
+      "input": [
+        21
+      ],
+      "mode": "pty",
+      "status": "PASS"
+    }
+  ],
+  "passed": 132,
+  "failed": 0,
+  "run": "https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38847529558"
+}
