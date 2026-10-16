@@ -9,7 +9,7 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 - **Bloqueado:** requiere resolver una dependencia o disponer de un entorno.
 - **Completado:** trabajo terminado con evidencia registrada.
 
-P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras y comprobaciones posteriores. La instalación quedó validada en LocalDB; el [informe funcional](PRUEBAS-FUNCIONALES.md) registra 53 casos correctos y sus límites.
+P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras y comprobaciones posteriores. La instalación quedó validada en LocalDB; el [informe funcional](PRUEBAS-FUNCIONALES.md) registra 65 casos correctos y sus límites.
 
 ## Pruebas y mejoras registradas
 
@@ -17,11 +17,11 @@ P1 identifica las validaciones y automatización prioritarias. P2 agrupa mejoras
 |---|---|---|---|
 | [Validar instalación completa en SQL Server](https://github.com/jokxer8/soluciones-programacion-academica/issues/1) | P1 | Completado | LocalDB aislado, scripts y arranque técnico verificados |
 | [Reservas, disponibilidad e integridad](https://github.com/jokxer8/soluciones-programacion-academica/issues/2) | P1 | Completado | Casos SQL verificados; véase informe funcional |
-| [Autenticación y permisos por rol](https://github.com/jokxer8/soluciones-programacion-academica/issues/3) | P1 | En curso | Login verificado; faltan autorización efectiva e inactividad |
+| [Autenticación y permisos por rol](https://github.com/jokxer8/soluciones-programacion-academica/issues/3) | P1 | Completado | Matriz de roles, restricciones directas y diálogo de inactividad verificados |
 | [Check-in, check-out, facturación y pagos](https://github.com/jokxer8/soluciones-programacion-academica/issues/4) | P1 | Completado | Casos SQL verificados; véase informe funcional |
-| [Reportes y exportaciones PDF y Excel](https://github.com/jokxer8/soluciones-programacion-academica/issues/5) | P2 | En curso | Consultas y controles SQL correctos; faltan exportaciones, sucursal y permisos |
+| [Reportes y exportaciones PDF y Excel](https://github.com/jokxer8/soluciones-programacion-academica/issues/5) | P2 | Completado | Sucursal, importes, permisos y exportaciones reabiertas/renderizadas |
 | [Compilación con GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/issues/6) | P1 | Completado | [Ejecución #1 correcta](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909) |
-| [Configuración externa de conexión](https://github.com/jokxer8/soluciones-programacion-academica/issues/7) | P2 | En curso | Variable de entorno verificada; falta tratamiento de errores |
+| [Configuración externa de conexión](https://github.com/jokxer8/soluciones-programacion-academica/issues/7) | P2 | Completado | Configuración vacía/inválida y conexión indisponible comprobadas |
 | [Almacenamiento de contraseñas](https://github.com/jokxer8/soluciones-programacion-academica/issues/8) | P2 | Pendiente | Diseño de derivación y migración |
 
 Cada tarea incluye criterios de aceptación verificables. Al cerrarla se deben registrar los pasos y resultados obtenidos, usando datos ficticios. No se debe marcar una prueba como aprobada a partir de la compilación solamente.
@@ -43,3 +43,7 @@ HotelReservas utiliza Windows Forms con .NET Framework 4.8 y un proyecto csproj 
 La [tarea de Actions](https://github.com/jokxer8/soluciones-programacion-academica/issues/6) queda completada con la [ejecución correcta](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38838846909). La [guía de compilación automática](COMPILACION-AUTOMATICA.md) documenta la configuración y sus límites. No se han habilitado firma ni despliegue automático y la batería automatizada de tests verifica operaciones contra LocalDB.
 
 Referencias: [plantilla oficial .NET Desktop](https://github.com/actions/starter-workflows/blob/main/ci/dotnet-desktop.yml) y [configuración de MSBuild](https://github.com/microsoft/setup-msbuild).
+
+## Cierre de las tareas en curso
+
+Las tareas #3, #5 y #7 están completadas con [65 pruebas correctas y revisión de exportaciones](CIERRE-TAREAS.md). La mejora de contraseñas #8 permanece pendiente.

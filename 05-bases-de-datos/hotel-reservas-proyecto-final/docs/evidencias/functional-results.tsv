@@ -50,5 +50,17 @@ PASS	Reporte SQL ObtenerRevPAR	OK
 PASS	Reporte SQL ObtenerADR	OK
 PASS	Reporte SQL ObtenerOccupancyRate	OK
 PASS	Reporte SQL ObtenerGOPPAR	OK
+PASS	Matriz de modulos y llamadas directas ADMIN	OK
+PASS	Matriz de modulos y llamadas directas RECEPCION	OK
+PASS	Matriz de modulos y llamadas directas EMPLEADO	OK
+PASS	Matriz de modulos y llamadas directas SOPORTE	OK
+PASS	Sin sesion y rol alterado no acceden a datos restringidos	OK
+PASS	Cierre explicito invalida inmediatamente la sesion	OK
+PASS	Aviso de inactividad permite continuar	OK
+PASS	Inactividad expira y revoca acceso	OK
+PASS	Filtro por sucursal en las 24 consultas	OK
+PASS	Ocupacion contrastada con noches disponibles	OK
+PASS	Exportaciones con acentos, importes y archivos reabiertos	OK
+PASS	Configuracion vacia, invalida y servidor indisponible	OK
 PASS	Reportes sin historial anual	OK
 PASS	Inicio de formularios con SQL	OK

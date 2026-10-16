@@ -1,56 +1,42 @@
 # Pruebas funcionales con SQL Server
 
-## Resultado comprobado
+## Resultado actual
 
-La batería ejecutada el 15 de octubre de 2026 en Windows y SQL Server LocalDB **17.0.4025.3** terminó con **53 pruebas correctas y 0 fallidas** después de corregir los fallos reproducidos. Se cargan el esquema, la migración y el seed en ese orden. Las pruebas llaman al código C# compilado del hotel contra una base real; no sustituyen SQL Server por respuestas simuladas.
+**65 pruebas correctas y 0 fallidas**, verificadas localmente con LocalDB 17.0.4025.3 y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603), revisión 998db69. Los [casos y resultados](evidencias/functional-results.tsv) se conservan junto a la documentación. El [cierre de #3, #5 y #7](CIERRE-TAREAS.md) registra la matriz de roles, las exportaciones y los errores corregidos.
 
-El [registro de casos](evidencias/functional-results.tsv) conserva el resultado local. La [ejecución de GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702), sobre la revisión `1b72dc8`, ejecuta también esta batería desde un checkout limpio y muestra los casos en su resumen. La ejecución remota terminó correctamente con 53/53 y LocalDB 15.0.4382.1; la versión del ejecutor queda registrada en el resumen.
+La batería llama al C# compilado contra SQL Server real. Cada ejecución instala esquema, migración y seed, en ese orden, en una instancia aleatoria HotelQA con archivos exclusivos. No usa bases personales ni inicia el servidor localhost. Al terminar elimina únicamente su base e instancia. Los archivos de prueba se generan en una ruta temporal corta y se copian al destino de evidencias solicitado.
 
-## Entorno aislado y reproducción
+## Reproducción
 
-El servidor habitual localhost estaba detenido. Se utilizó LocalDB ya instalado, sin iniciar ese servicio ni utilizar bases personales. Cada ejecución del script crea una instancia HotelQA con un nombre aleatorio y archivos de datos exclusivos, instala los datos ficticios y al terminar elimina únicamente esa base y esa instancia. No acepta un servidor existente como destino. El seed sigue siendo de una sola ejecución sobre una base recién instalada.
-
-Requisitos: Windows, .NET Framework 4.8, MSBuild, NuGet y SQL Server Express LocalDB. Desde la carpeta del hotel, restaurar paquetes y compilar Release como indica la [guía de compilación](COMPILACION-AUTOMATICA.md); después ejecutar en Windows PowerShell:
+Requiere Windows, .NET Framework 4.8, MSBuild, NuGet y SQL Server Express LocalDB. Restaurar packages.config en packages, junto a HotelReservas, y compilar Release según la [guía de compilación](COMPILACION-AUTOMATICA.md). Desde la carpeta del hotel:
 
 ```powershell
 powershell.exe -NoProfile -File tests/Run-FunctionalTests.ps1
 ```
 
-Los resultados aparecen en tests/results, excluido de Git. El script devuelve error si falla la instalación, la compilación de las pruebas o cualquier caso. Usa la variable de entorno HOTELRESERVAS_CONNECTION_STRING solo durante la ejecución y restaura su valor anterior. La aplicación acepta esa variable para seleccionar una instancia de práctica; si no existe, mantiene localhost con autenticación de Windows. No se publican cadenas privadas ni credenciales de servidor.
+Los resultados se guardan en tests/results, excluido de Git. El script falla si no se instala la base, no compilan las pruebas o falla cualquier caso. Configura HOTELRESERVAS_CONNECTION_STRING durante la prueba y restaura su valor anterior. El seed se ejecuta una sola vez sobre una base nueva.
 
-## Cobertura y estados
+## Cobertura y seguimiento
 
-| Tarea | Resultado | Estado |
+| Tarea | Cobertura | Estado |
 |---|---|---|
-| [#1 Instalación](https://github.com/jokxer8/soluciones-programacion-academica/issues/1) | Esquema, migración y seed; 21 tablas iniciales y 23 al inicializar módulos dos veces; claves y restricciones habilitadas y confiables; procedimientos, triggers e inicio técnico de formularios Login y Main | Completado |
-| [#2 Reservas](https://github.com/jokxer8/soluciones-programacion-academica/issues/2) | Crear, consultar, modificar, cancelar y eliminar; rechazar fechas inválidas, importes negativos y referencias inexistentes; solapamientos al crear y modificar; coherencia al cancelar, trasladar y finalizar mantenimiento | Completado |
-| [#3 Autenticación y roles](https://github.com/jokxer8/soluciones-programacion-academica/issues/3) | Acceso ADMIN, RECEPCION, EMPLEADO y SOPORTE; clave incorrecta, usuario inactivo y vacío; cierre de sesión y eliminación de sesión previa tras un acceso fallido | En curso: falta autorización más allá del menú y cierre por inactividad |
-| [#4 Operación y pagos](https://github.com/jokxer8/soluciones-programacion-academica/issues/4) | Estados de check-in/out; empleado correcto aunque su identificador difiera del usuario; noches, servicios, promociones, descuentos, ITBIS configurable y redondeo; factura única, pagos parciales/completos y rollback ante fallos deliberados | Completado |
-| [#5 Reportes](https://github.com/jokxer8/soluciones-programacion-academica/issues/5) | Las 24 consultas públicas se ejecutan; conteos e importes contrastados con SQL de control; filtros por fecha y ausencia de historial | En curso: faltan exportaciones visuales, sucursal y permisos |
+| #1 Instalación | Esquema, migración, seed, restricciones y objetos; 21 tablas y 23 tras inicializar módulos dos veces; inicio técnico de Login/Main | Completado |
+| #2 Reservas | CRUD, fechas/importes/referencias inválidos, solapamientos, cancelación, traslado y coherencia con mantenimiento | Completado |
+| #3 Autenticación | Cuatro roles, matriz de módulos, llamadas directas denegadas, cuenta inactiva, rol alterado, cierre explícito, continuar/expirar aviso | Completado |
+| #4 Operación y pagos | Check-in/out, relación usuario/empleado, noches, servicios, promociones, descuentos, ITBIS, redondeo, pagos y rollback deliberado | Completado |
+| #5 Reportes | 24 consultas, fechas/sucursal, ocupación/importes de control, ausencia de datos, 3 XLSX y 5 PDF reabiertos y revisados | Completado |
+| #6 Actions | Restauración, compilación, archivos requeridos y batería SQL automática | Completado |
+| #7 Configuración | Variable externa, ejemplo local, cadenas vacías/inválidas, servidor inaccesible y mensajes sin datos privados | Completado |
+| #8 Contraseñas | Mejorar derivación y migración del mecanismo SHA256 académico | Pendiente |
 
-Los estados completados corresponden a los criterios automatizados indicados. No acreditan una revisión visual completa ni concurrencia de varios operadores.
+## Correcciones comprobadas
 
-## Fallos reproducidos y correcciones
+La primera fase corrigió opciones SET necesarias para índices, colisiones del seed con reservas y facturas iniciales, selección y claves de usuarios ampliados, sesión retenida tras login fallido, relación IdUsuario/IdEmpleado, check-out que no finalizaba la reserva, estados de habitación incorrectos y columna Anio duplicada en reportes sin historial.
 
-| Problema observado | Corrección |
-|---|---|
-| La instalación desde sqlcmd fallaba al crear un índice con QUOTED_IDENTIFIER desactivado | Declarar las opciones SET necesarias en el script inicial |
-| El seed reutilizaba identificadores de reservas y facturas ya creados por la base inicial; colisión en ReservaServicio | Calcular desplazamientos antes de insertar reservas y aplicarlos a servicios, facturas, pagos y promociones |
-| La selección de empleados del seed dependía de correos hotel.com que fueron sustituidos por ejemplos; sus nuevas claves no estaban hasheadas | Seleccionar empleados sin usuario y generar claves compatibles con el login después de la migración |
-| Un login fallido conservaba la sesión anterior | Limpiar SesionUsuario antes de validar credenciales |
-| Check-in/out escribía IdUsuario en una clave foránea de Empleado | Resolver IdEmpleado mediante Usuarios en ambas operaciones |
-| El check-out generaba factura pero no finalizaba la reserva ni liberaba la habitación | Finalizar la reserva dentro de la misma transacción, después de facturar |
-| Cancelar o trasladar una reserva y finalizar mantenimiento podían liberar una habitación con otra reserva confirmada | Recalcular el estado usando todas las reservas y mantenimientos de la habitación, incluidos los cambios de habitación y eliminaciones |
-| Reportes sin historial lanzaba una excepción por una columna Anio duplicada | Reutilizar el esquema que devuelve la consulta y agregar solo la fila del año actual |
+La fase final añadió autorización efectiva en los módulos restringidos, saneó errores de conexión, corrigió la recursión de cierre por inactividad, filtros por sucursal y descuento del detalle operativo, agregó exportación PDF y la dependencia BouncyCastle faltante, y ajustó anchos/formatos del Excel. El [informe de cierre](CIERRE-TAREAS.md) permite revisar cada criterio y sus evidencias.
 
-Los casos de regresión comprueban estas correcciones. Durante el desarrollo también se ajustaron dos errores de la batería: una cuenta de prueba infringía la unicidad de empleado y una aserción usaba un nombre de columna incorrecto. Esos errores del test no se atribuyen a la aplicación.
+El primer conjunto de [53 casos](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38840293702) forma parte del historial; no sustituye la comprobación final de 65. Durante el desarrollo se corrigieron también errores del propio test, que no se atribuyen al código del hotel.
 
-## Pendientes y límites
+## Límites
 
-- El acceso a módulos se configura por visibilidad de botones en MainForm. Esta batería no certifica autorización en la capa de datos: las clases públicas de datos usan la misma conexión de Windows. La tarea #3 permanece abierta para definir y comprobar restricciones efectivas y el flujo de inactividad.
-- No se han abierto exportaciones PDF/Excel ni revisado acentos, totales y legibilidad en los archivos exportados. Tampoco se certifica un filtro por sucursal; las firmas actuales de ReportesData reciben año o fechas. La tarea #5 permanece abierta.
-- La prueba de inicio crea los formularios y sus controles nativos sin un recorrido interactivo completo. No valida todos los botones ni todos los formularios.
-- No se probaron dos operadores simultáneos, despliegue, restauración de una base real ni migración de datos personales. Las correcciones SQL se verificaron en instalaciones nuevas; no se debe recrear una base con información que se necesite conservar.
-- Se conserva la advertencia de compilación CS0168. La configuración externa ya se usa en las pruebas; su tratamiento de errores sigue en curso en #7. El almacenamiento de contraseñas sigue pendiente en #8.
-
-Referencia técnica de la instalación: [opciones necesarias para índices filtrados de SQL Server](https://learn.microsoft.com/en-us/sql/t-sql/statements/create-index-transact-sql?view=sql-server-ver17).
+La revisión visual corresponde a las exportaciones renderizadas, no a cada versión de Microsoft Excel. Las pruebas de inactividad adelantan el evento y ejercitan el diálogo real, sin esperar quince minutos en CI. El inicio y los controles de formularios se prueban técnicamente; no se afirma una revisión manual de todos los botones. No se probaron múltiples operadores simultáneos, despliegue ni migración de bases personales. La autorización pertenece al programa y no reemplaza los permisos de Windows/SQL. Se conserva la advertencia CS0168 no bloqueante. Las fuentes académicas y sus hashes de origen se mantienen.

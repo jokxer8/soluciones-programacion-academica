@@ -24,7 +24,7 @@ Los datos de identidad y contacto de los scripts publicados se han sustituido po
 
 ## 5. Compilación y ejecución
 
-Se requiere Windows, Visual Studio con desarrollo de escritorio .NET y .NET Framework 4.8 Developer Pack. Abrir HotelReservas/HotelReservas.csproj y restaurar packages.config con NuGet en packages, junto a HotelReservas. Las dependencias son EPPlus 4.5.3.3 e iTextSharp 5.5.13.3. El archivo slnx se conserva para ediciones de Visual Studio compatibles con ese formato; el csproj permite abrir directamente el proyecto.
+Se requiere Windows, Visual Studio con desarrollo de escritorio .NET y .NET Framework 4.8 Developer Pack. Abrir HotelReservas/HotelReservas.csproj y restaurar packages.config con NuGet en packages, junto a HotelReservas. Las dependencias son EPPlus 4.5.3.3 e iTextSharp 5.5.13.3, junto a su dependencia BouncyCastle 1.8.9. El archivo slnx se conserva para ediciones de Visual Studio compatibles con ese formato; el csproj permite abrir directamente el proyecto.
 
 Compilar Release o Debug y ejecutar después de instalar la base. LEER.txt documenta las cuentas de demostración que realmente crea el script inicial. No son credenciales del servidor.
 
@@ -38,4 +38,6 @@ Compilar Release o Debug y ejecutar después de instalar la base. LEER.txt docum
 
 ## 7. Validación y límites
 
-El registro [VALIDACION.md](../VALIDACION.md) contiene el resultado de compilación, el análisis sintáctico de SQL y las limitaciones de ejecución. La batería de [pruebas funcionales](docs/PRUEBAS-FUNCIONALES.md) verifica 53 casos contra LocalDB y se ejecuta también en Actions. No equivale a una revisión visual de todos los formularios. Las correcciones de la versión pública abarcan instalación, seed, sesiones, relación usuario/empleado, estados de habitación, check-out y reportes vacíos. El mecanismo SHA256 corresponde a la implementación académica conservada.
+El registro [VALIDACION.md](../VALIDACION.md) contiene el resultado de compilación, el análisis sintáctico de SQL y las limitaciones de ejecución. La batería de [pruebas funcionales](docs/PRUEBAS-FUNCIONALES.md) verifica 65 casos contra LocalDB y se ejecuta también en Actions. No equivale a una revisión visual de todos los formularios. Las correcciones de la versión pública abarcan instalación, seed, sesiones, relación usuario/empleado, estados de habitación, check-out y reportes vacíos. El mecanismo SHA256 corresponde a la implementación académica conservada.
+
+El [cierre de tareas](docs/CIERRE-TAREAS.md) documenta la matriz de roles, la inactividad, los filtros por sucursal, las exportaciones revisadas y los errores de conexión controlados.

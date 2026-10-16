@@ -118,9 +118,9 @@ soluciones-programacion-academica/
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
-| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 53 pruebas SQL verificadas |
+| [Sistema de Reservas de Hotel](05-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 65 pruebas SQL verificadas |
 
-El proyecto conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [53 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos avanzados y exportaciones permanecen abiertos en el tablero.
+El proyecto conserva los créditos del equipo y las cuentas de demostración. Su documentación explica el orden de instalación y registra [65 pruebas funcionales SQL correctas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md), verificadas localmente y en Actions. Permisos, inactividad, filtros por sucursal, exportaciones y configuración de conexión verificados; véase el [cierre de tareas](05-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md).
 
 El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) organiza las pruebas y mejoras con prioridades y estados. El [seguimiento del hotel](05-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGUIMIENTO.md) resume el alcance y enlaza las tareas del repositorio.
 

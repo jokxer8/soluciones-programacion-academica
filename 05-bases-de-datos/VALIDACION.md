@@ -25,8 +25,12 @@ Restaurante incluye separadores GO, cierre de la función, consulta de ejemplo f
 
 ## Límites de la revisión
 
-La primera revisión no tenía conexión al servidor localhost. La ampliación posterior utilizó una instancia LocalDB aislada: esquema, migración, seed y 53 pruebas funcionales terminaron correctamente, tanto localmente como en Actions. El [informe funcional](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md) registra las correcciones de código/SQL y los pendientes. Se verificó la creación repetida de tablas de NotificacionData y RatingData. No se certifican permisos más allá del menú, inactividad, exportaciones visuales ni un recorrido interactivo completo.
+La primera revisión no tenía conexión al servidor localhost. La ampliación posterior utilizó una instancia LocalDB aislada: esquema, migración, seed y 53 pruebas funcionales terminaron correctamente, tanto localmente como en Actions. El [informe funcional](hotel-reservas-proyecto-final/docs/PRUEBAS-FUNCIONALES.md) registra las correcciones de código/SQL y los pendientes. Se verificó la creación repetida de tablas de NotificacionData y RatingData. La ampliación final certifica permisos de aplicación más allá del menú, los dos resultados del aviso de inactividad y exportaciones reabiertas/renderizadas, según el cierre de tareas. No equivale a un recorrido interactivo de todas las pantallas ni a una certificación de producción.
 
 Bolsa de empleo requiere un esquema previo no incluido y sus supuestos de fechas se explican en desarrollo.md. Las variantes de coches son independientes. Las opciones de los esquemas de práctica dependen de la versión de SQL Server.
 
 Los DOCX y XLSX conservan su diseño académico; se comprobaron su integridad y XML, sin revisar paginación en Word o Excel. Las evidencias escaneadas se publican según la autorización del autor. Las evaluaciones parciales no sustituyen un acta oficial de nota final.
+
+## Ampliación final verificada
+
+Las tareas #3, #5 y #7 quedaron completadas con **65 pruebas correctas, 0 fallidas**, revisión de PDF/Excel y [evidencia detallada](hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md). La [ejecución final de Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603) corresponde a 998db69. Los pendientes descritos en la primera revisión de 53 casos se resolvieron en esta ampliación; la mejora de contraseñas #8 permanece abierta.
