@@ -25,4 +25,3 @@ No se ejecutaron los scripts contra una instancia SQL Server: la conexión local
 
 Los DOCX y XLSX conservan su estructura académica; no se revisó su paginación en Word o Excel. Las evaluaciones muestran resultados parciales y no un acta de nota final.
 
-La compilación del hotel correspondía a la preparación anterior y no valida este conjunto: ese proyecto fue retirado por estar fuera de la carpeta indicada.

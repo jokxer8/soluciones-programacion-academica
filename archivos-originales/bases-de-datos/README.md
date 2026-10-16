@@ -25,10 +25,10 @@ Proyecto Final.docx define el trabajo solicitado; no contiene la implementación
 
 ## Copias para publicación
 
-Se mantienen los créditos de los trabajos grupales. Los identificadores institucionales conocidos detectados como texto en PDF y documentos editables se retiraron de las copias públicas. Las evaluaciones escaneadas conservan su imagen y requieren revisión antes de una publicación pública. Los archivos del escritorio permanecen intactos.
+Se mantienen los créditos de los trabajos grupales. Los identificadores institucionales conocidos detectados como texto en PDF y documentos editables se retiraron de las copias públicas. Las evaluaciones escaneadas conservan su imagen original y se incluyen con autorización del autor para su publicación. Los archivos del escritorio permanecen intactos.
 
 ## Material de consulta y archivos excluidos
 
 Los cuatro libros y las seis presentaciones se identificaron como material de consulta y no como trabajos originales del alumno. No se incorporan a los entregables del portafolio. También quedan fuera las transcripciones de reuniones, los archivos temporales de Office y desktop.ini.
 
-La carpeta del escritorio no contiene la aplicación del hotel ni los esquemas complementarios que se habían tomado de otra ruta; estos no forman parte de esta preparación.
+El conjunto publicado corresponde a los trabajos y evidencias presentes en la carpeta de origen.

@@ -24,7 +24,7 @@ Esta carpeta permite evidenciar que las soluciones profesionalizadas no fueron c
 archivos-originales/
 ├── bases-de-datos/
 ├── diseno-y-analisis-de-algoritmos/
-├── fundamentos-programacion-csharp/
+├── fundamentos-programacion/
 ├── programacion-funcional-sml/
 └── programacion-orientada-a-objetos/
 ```
@@ -37,7 +37,7 @@ Los archivos originales se relacionan con las áreas profesionalizadas del repos
 
 | Carpeta de archivos originales | Carpeta profesionalizada | Área de aprendizaje |
 |---|---|---|
-| `fundamentos-programacion-csharp` | `01-fundamentos-programacion` | Fundamentos de Programación en C# |
+| `fundamentos-programacion` | `01-fundamentos-programacion` | Fundamentos de Programación en C# |
 | `programacion-orientada-a-objetos` | `02-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
 | `diseno-y-analisis-de-algoritmos` | `03-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
 | `programacion-funcional-sml` | `04-fundamentos-programacion-sml` | Programación Funcional con SML |
@@ -138,5 +138,7 @@ Si un documento contiene información sensible, se recomienda subir una versión
 ## Estado de la carpeta
 
 Esta carpeta queda destinada exclusivamente a conservar archivos originales y evidencias académicas.
+
+La sección de [Bases de Datos](bases-de-datos) conserva los trabajos de la carpeta académica Github, con versiones normalizadas, evidencias e inventario de procedencia. Su [sección documentada](../05-bases-de-datos) está completada con siete actividades y un apartado de evaluaciones.
 
 Las soluciones finales deben mantenerse en las carpetas principales del repositorio.
