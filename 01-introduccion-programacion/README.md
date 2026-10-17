@@ -66,6 +66,8 @@ Para compilar una solución con GCC: `g++ -std=c++17 -Wall -Wextra -pedantic sol
 
 Los cinco programas pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711).
 
+El triángulo también cuenta con [ejecución real en RAPTOR](triangulo-rectangulo/PRUEBAS-RAPTOR.md): se documentó el fallo de la entrega original y se añadió un diagrama corregido con **siete casos numéricos comprobados**. El informe explica su relación con el pseudocódigo y el C++, sin confundir las versiones ni sus pruebas.
+
 
 La sección reúne siete actividades, cinco programas preparados para compilar y documentos de lectura, diagramación y evaluación. Las diferencias entre entregas y versiones compilables están descritas en [VALIDACION.md](VALIDACION.md). El primer parcial se conserva como enunciado sin solución entregada disponible. El informe de resultados generales de la clase, los libros y los videos docentes no se publican como evidencia de trabajo propio.
 

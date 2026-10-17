@@ -45,10 +45,13 @@ Primero leo ambos catetos. Si falta alguno, la lectura falla o alguno no es posi
 |---|---|---|
 | Código entregado | Recorre aproximaciones separadas por 0.01. | Conserva el último valor que cumple la condición del ciclo; no garantiza obtener la raíz exacta. |
 | Pseudocódigo | Describe la actualización de Newton. | Es una propuesta distinta del código entregado. |
-| Diagrama RAPTOR | Utiliza otra progresión por incrementos. | Debe contrastarse con su propia condición de salida. |
+| Diagrama RAPTOR original | Incrementa enteros y sale cuando el cuadrado supera a²+b². | Ejecutado con 3 y 4: devuelve 6 como hipotenusa y 13 como perímetro. |
 | `solution.cpp` | Utiliza `std::hypot` y valida las entradas. | Es la versión compilable que respalda el informe de pruebas actual. |
+| Diagrama corregido | Utiliza la raíz con escala y comprueba el rango de los resultados. | Ejecutado en RAPTOR: siete casos numéricos con el resultado esperado. |
 
 La variable llamada `precision` en el código original contiene a²+b²: ese nombre no representa allí una tolerancia de error. En el pseudocódigo, en cambio, aparece una tolerancia de 0.00001. Por eso leo el uso de cada variable antes de comparar sus nombres.
+
+La ejecución confirmó que las entregas no implementan el mismo método. El [informe de RAPTOR](PRUEBAS-RAPTOR.md) reúne la evidencia del fallo, el cálculo corregido y su comparación con el C++. Incluyo un [pseudocódigo revisado](pseudocodigo-corregido.md) para que el diagrama actual tenga una descripción coherente; el algoritmo de Newton de la entrega queda conservado.
 
 ## Casos y costo de la solución
 

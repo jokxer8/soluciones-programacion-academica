@@ -1,0 +1,93 @@
+{
+  "nota": "El pseudocódigo histórico se transcribió a Python; no es una ejecución de RAPTOR. C++ es el ejecutable compilado de solution.cpp.",
+  "casos": [
+    {
+      "caso": "T1",
+      "catetos": [
+        3,
+        4
+      ],
+      "cpp_codigo": 0,
+      "cpp_salida": "Ingrese los dos catetos: \nHipotenusa: 5.000000\nArea: 6.000000\nPerimetro: 12.000000\n",
+      "cpp_error": "",
+      "pseudocodigo_original_transcrito_python": {
+        "hipotenusa": 5.000000000053722,
+        "area": 6.0,
+        "perimetro": 12.000000000053722,
+        "iteraciones": 6
+      }
+    },
+    {
+      "caso": "T2",
+      "catetos": [
+        5,
+        12
+      ],
+      "cpp_codigo": 0,
+      "cpp_salida": "Ingrese los dos catetos: \nHipotenusa: 13.000000\nArea: 30.000000\nPerimetro: 30.000000\n",
+      "cpp_error": "",
+      "pseudocodigo_original_transcrito_python": {
+        "hipotenusa": 13.000000070110696,
+        "area": 30.0,
+        "perimetro": 30.000000070110694,
+        "iteraciones": 7
+      }
+    },
+    {
+      "caso": "T3",
+      "catetos": [
+        0.3,
+        0.4
+      ],
+      "cpp_codigo": 0,
+      "cpp_salida": "Ingrese los dos catetos: \nHipotenusa: 0.500000\nArea: 0.060000\nPerimetro: 1.200000\n",
+      "cpp_error": "",
+      "pseudocodigo_original_transcrito_python": {
+        "hipotenusa": 0.5000000232305737,
+        "area": 0.06,
+        "perimetro": 1.2000000232305736,
+        "iteraciones": 4
+      }
+    },
+    {
+      "caso": "T4",
+      "catetos": [
+        0,
+        4
+      ],
+      "cpp_codigo": 1,
+      "cpp_salida": "Ingrese los dos catetos: ",
+      "cpp_error": "Error: los catetos deben ser positivos y finitos.\n"
+    },
+    {
+      "caso": "T5",
+      "catetos": [
+        -3,
+        4
+      ],
+      "cpp_codigo": 1,
+      "cpp_salida": "Ingrese los dos catetos: ",
+      "cpp_error": "Error: los catetos deben ser positivos y finitos.\n"
+    },
+    {
+      "caso": "T6",
+      "catetos": [
+        1e+308,
+        1e+308
+      ],
+      "cpp_codigo": 1,
+      "cpp_salida": "Ingrese los dos catetos: ",
+      "cpp_error": "Error: resultado fuera de rango.\n"
+    },
+    {
+      "caso": "T7",
+      "catetos": [
+        1e-300,
+        1e-300
+      ],
+      "cpp_codigo": 0,
+      "cpp_salida": "Ingrese los dos catetos: \nHipotenusa: 0.000000\nArea: 0.000000\nPerimetro: 0.000000\n",
+      "cpp_error": ""
+    }
+  ]
+}

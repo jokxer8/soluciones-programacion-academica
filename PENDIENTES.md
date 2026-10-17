@@ -4,6 +4,8 @@
 
 Estado revisado el **16 de octubre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo lo que falta recuperar o comprobar de las ampliaciones que puedo hacer después. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
 
+En esta revisión cierro el nombre de Programación Funcional-SML y la comprobación del triángulo en RAPTOR. Las verificaciones y ampliaciones siguientes quedan pendientes para otra sesión; no se han ejecutado ni marcado como completadas para reducir el consumo de uso.
+
 ## Documentos o soluciones por recuperar
 
 | Materia | Qué falta | Qué está publicado |
@@ -20,7 +22,6 @@ Estos documentos no se sustituyen por respuestas nuevas presentadas como entrega
 |---|---|---|
 | 00 · C y memoria dinámica | Ejecutar sanitizadores ASan/UBSan y ampliar casos de desbordamiento, fin de entrada y falta de memoria. | Hay compilaciones y casos comprobados; no equivalen a cubrir estos escenarios. [Alcance](00-fundamentos-sistemas-computacionales/VALIDACION.md). |
 | 00 · Datos de países | Identificar la procedencia y licencia del CSV histórico. | La información no estaba indicada en el conjunto disponible. [Proyecto](00-fundamentos-sistemas-computacionales/proyecto-final-paises/README.md). |
-| 01 · Diagrama del triángulo | Abrir y ejecutar el archivo en RAPTOR y contrastar su condición de salida con el pseudocódigo y el C++. | Archivo editable y diferencias documentados; no se ha registrado una ejecución en RAPTOR. [Desarrollo](01-introduccion-programacion/triangulo-rectangulo/desarrollo.md). |
 | 06 · Hotel | Completar un recorrido visual de todas las pantallas. | Las 79 pruebas incluyen comprobaciones técnicas y funcionales, pero no ese recorrido interactivo completo. [Cierre y límites](06-bases-de-datos/hotel-reservas-proyecto-final/docs/CIERRE-TAREAS.md). |
 | 06 · Prácticas SQL fuera del hotel | Registrar ejecuciones reproducibles de las prácticas que solo cuentan con revisión documental o sintáctica. | Los 18 scripts de actividades pasaron análisis de sintaxis; ese resultado no demuestra su ejecución contra cada esquema. [Informe](06-bases-de-datos/VALIDACION.md). |
 
@@ -45,6 +46,8 @@ Estas ampliaciones no impiden consultar las entregas publicadas. Se mantendrían
 | Organización y presentación | Siete materias y 46 actividades con README, desarrollo y enlaces a las soluciones o documentos disponibles. La 01 incluye ahora entradas, salidas, ejemplos de consola y recorridos manuales más detallados. |
 | Numeración | 00 Sistemas; 01 Introducción; 02 Fundamentos; 03 Objetos; 04 Algoritmos; 05 SML; 06 Bases de Datos. Índices, perfil, automatizaciones y enlaces de las ocho tareas del hotel actualizados. |
 | Introducción: C++ | Cinco programas, **32 casos correctos y 0 fallidos**, localmente y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). |
+| Introducción: triángulo en RAPTOR | Original ejecutado y error confirmado; diagrama y pseudocódigo corregidos. **Siete casos numéricos con el resultado esperado**, comparación con C++ y Newton, y capturas en el [informe](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md). |
+| Nombre de la materia 05 | **Programación Funcional-SML**, corregido en carpeta, índices, navegación, documentación y perfil. |
 | Sistemas: C/FASM en Linux | Doce pares de programas, **132 comparaciones correctas y 0 fallidas**. [Informe](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). |
 | Hotel: tareas #1–#8 | Instalación, operaciones, permisos, reportes, configuración, compilación y contraseñas completados, con **79 pruebas correctas y 0 fallidas**. [Validación tras renumerar](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703). |
 | Contraseñas del hotel | PBKDF2-SHA256 con sal individual, costo configurable y migración de cuentas existentes. [Guía](06-bases-de-datos/hotel-reservas-proyecto-final/docs/SEGURIDAD-CONTRASENAS.md). |

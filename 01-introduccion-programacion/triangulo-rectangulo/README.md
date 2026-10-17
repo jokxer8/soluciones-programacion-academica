@@ -62,13 +62,20 @@ Perimetro: 12.000000
 
 La versión [solution.cpp](solution.cpp) se prepara para esta edición del portafolio. Los textos y documentos enlazados conservan la entrega previa; las diferencias se explican en el [desarrollo](desarrollo.md).
 
+La revisión añade el [diagrama corregido](diagrama-corregido.rap), su [pseudocódigo](pseudocodigo-corregido.md) y el [informe de ejecución en RAPTOR](PRUEBAS-RAPTOR.md). Para importar la entrega antigua en RAPTOR Avalonia incluyo una [copia `.oldrap`](diagrama-original.oldrap), con los mismos bytes del archivo conservado.
+
 ## Archivos de esta carpeta
 
 ```text
 triangulo-rectangulo/
 ├── README.md
 ├── desarrollo.md
-└── solution.cpp
+├── solution.cpp
+├── diagrama-corregido.rap
+├── diagrama-original.oldrap
+├── pseudocodigo-corregido.md
+├── PRUEBAS-RAPTOR.md
+└── evidencias/
 ```
 
 Los documentos de apoyo están enlazados en la tabla anterior; no se duplican dentro de la actividad. El [desarrollo](desarrollo.md) amplía el recorrido de los datos, las decisiones y los límites.
@@ -80,5 +87,7 @@ Compilo el archivo independiente con un compilador C++17 y comparo sus resultado
 ## Pruebas y estado
 
 7 casos: tres pares válidos y cuatro entradas rechazadas. La versión compilable está verificada en Windows local y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). Los datos y salidas de los casos se pueden consultar en el [registro de resultados](../tests/results-windows.json).
+
+También ejecuté el diagrama original y la corrección en RAPTOR. El original devuelve 6 como hipotenusa para 3 y 4; la versión corregida devuelve 5, área 6 y perímetro 12. La batería numérica RAPTOR completó **siete casos con el resultado esperado**, con entradas y límites distintos de los siete casos C++. El [informe](PRUEBAS-RAPTOR.md) incluye las capturas, la comparación con Newton y C++, y los pasos para repetirla.
 
 [Materia](../README.md) · [Notación](../../GUIA-DE-LECTURA.md) · [Inventario](../../archivos-originales/introduccion-programacion/INVENTARIO.md)

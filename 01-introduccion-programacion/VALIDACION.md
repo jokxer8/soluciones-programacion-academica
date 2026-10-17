@@ -34,7 +34,7 @@ El script compila en un directorio temporal y escribe el informe en `tests/resul
 
 ## Alcance
 
-El archivo RAPTOR se conserva como diagrama editable, sin afirmar que se ejecutó en RAPTOR. Los diagramas PNG se revisaron visualmente. Los PDF de lectura e investigación se revisaron y se retiraron los identificadores de las copias públicas, manteniendo el contenido y los créditos. El primer parcial solo dispone de enunciado: sus ejemplos explican la lectura de condiciones, no una solución entregada o probada.
+El diagrama del triángulo se ejecutó en RAPTOR Avalonia: se confirmó el error del original con catetos 3 y 4 y se comprobó la corrección con siete casos numéricos. El [informe específico](triangulo-rectangulo/PRUEBAS-RAPTOR.md) distingue la ejecución interactiva, la batería RAPTOR y la transcripción del pseudocódigo de Newton. Estas pruebas locales no forman parte del workflow C++. Los demás diagramas PNG se revisaron visualmente. Los PDF de lectura e investigación se revisaron y se retiraron los identificadores de las copias públicas, manteniendo el contenido y los créditos. El primer parcial solo dispone de enunciado: sus ejemplos explican la lectura de condiciones, no una solución entregada o probada.
 
 Las pruebas cubren los casos indicados. No incluyen todas las representaciones posibles de entradas inválidas, codificaciones de texto ni valores extremos de punto flotante.
 
