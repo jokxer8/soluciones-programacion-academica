@@ -10,9 +10,9 @@
 ![Estado](https://img.shields.io/badge/Estado-En%20expansi%C3%B3n-yellow)
 ![Tipo](https://img.shields.io/badge/Tipo-Portafolio%20Acad%C3%A9mico-lightgrey)
 
-Este repositorio reúne soluciones, actividades y trabajos de programación desarrollados durante mi formación académica en Ciencias de la Computación.
+Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
-El objetivo principal es organizar, documentar y presentar ejercicios resueltos que evidencian mi evolución técnica en lógica de programación, programación orientada a objetos, programación funcional, bases de datos, análisis de algoritmos y resolución de problemas mediante código.
+El portafolio incluye **siete materias y 46 actividades**: desde los primeros algoritmos hasta la programación orientada a objetos, la programación funcional y las aplicaciones con bases de datos. Explico cómo abordé cada problema, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales.
 
 ---
 
@@ -32,7 +32,7 @@ Cada actividad conecta **enunciado → desarrollo → código → evidencia**. L
 
 Presentar de forma profesional una selección de ejercicios y actividades académicas organizadas por áreas de aprendizaje, acompañadas de explicaciones, análisis, documentación y código fuente limpio.
 
-Este repositorio funciona como evidencia de práctica constante, desarrollo del pensamiento lógico, aplicación progresiva de conceptos fundamentales y dominio de diferentes paradigmas de programación.
+El código y los documentos permiten seguir mi práctica con distintos paradigmas de programación. Cuando hay pruebas ejecutadas, enlazo sus resultados y explico sus límites. Los enunciados que todavía no tienen solución se identifican como pendientes.
 
 ---
 
@@ -80,6 +80,22 @@ soluciones-programacion-academica/
 | [Listas, colas y pilas](00-fundamentos-sistemas-computacionales/listas-colas-pilas) | Diecinueve ejercicios de búsqueda, agregación, eliminación, ordenamiento, FIFO y LIFO. |
 | [Proyecto híbrido C y NASM](00-fundamentos-sistemas-computacionales/proyecto-hibrido-c-nasm) | Interoperabilidad C/ensamblador x64 para sumar, ordenar e intercambiar enteros. |
 | [Gestión de países — Proyecto final](00-fundamentos-sistemas-computacionales/proyecto-final-paises) | Lista doblemente enlazada con nodo cabecera, carga CSV, consultas, inserciones, eliminación y cuatro criterios de ordenamiento. |
+
+---
+
+### Introducción a la Programación
+
+| Actividad | Conceptos principales |
+|---|---|
+| [Fundamentos de algoritmia](01-introduccion-programacion/fundamentos-algoritmia) | Problemas, algoritmos y su relación con los programas. |
+| [Triángulo rectángulo](01-introduccion-programacion/triangulo-rectangulo) | Hipotenusa, área, perímetro y comparación entre pseudocódigo, RAPTOR y C++. |
+| [Pirámide de asteriscos](01-introduccion-programacion/piramide-asteriscos) | Validaciones, ciclos anidados y patrones. |
+| [Coincidencias en un texto](01-introduccion-programacion/busqueda-coincidencias-texto) | Cadenas, búsqueda y coincidencias superpuestas. |
+| [Diagramas secuenciales](01-introduccion-programacion/ejercicios-secuenciales) | Asignaciones y seguimiento de variables. |
+| [Fibonacci y corrida manual](01-introduccion-programacion/fibonacci-traza) | Ciclos y actualización de variables. |
+| [Primer parcial](01-introduccion-programacion/enunciados-primer-parcial) | Enunciados y análisis de comisiones y calificaciones; soluciones pendientes. |
+
+Los cinco programas C++ cuentan con **32 casos correctos y 0 fallidos** en la [validación de Windows](01-introduccion-programacion/VALIDACION.md). El [triángulo en RAPTOR](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md) incluye el fallo observado en el original, la corrección y siete casos numéricos comprobados.
 
 ---
 
@@ -258,4 +274,4 @@ Actualmente están organizadas las secciones de:
 
 **Kelvin César Del Castillo Torres**
 
-Estudiante de Ciencias de la Computación, enfocado en fortalecer su perfil técnico mediante la organización profesional de proyectos académicos, resolución de problemas, documentación de código y construcción progresiva de un portafolio académico en GitHub.
+Estudio Ingeniería en Ciencias de la Computación en PUCMM y combino mi formación con experiencia en organización y análisis de información, coordinación de proyectos tecnológicos y soporte técnico. En este repositorio documento el trabajo académico; en mi [perfil](https://github.com/jokxer8) presento también mi experiencia profesional y otros proyectos.
