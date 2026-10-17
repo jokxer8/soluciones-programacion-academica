@@ -2,19 +2,19 @@
 
 [Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-Estado revisado el **16 de octubre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo lo que falta recuperar o comprobar de las ampliaciones que puedo hacer después. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
+Estado revisado el **16 de octubre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo las actividades por resolver, las verificaciones pendientes y las ampliaciones que puedo hacer después. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
 
 En esta revisión cierro el nombre de Programación Funcional-SML y la comprobación del triángulo en RAPTOR. Las verificaciones y ampliaciones siguientes quedan pendientes para otra sesión; no se han ejecutado ni marcado como completadas para reducir el consumo de uso.
 
-## Documentos o soluciones por recuperar
+## Actividades por resolver y documentar
 
 | Materia | Qué falta | Qué está publicado |
 |---|---|---|
-| 00 · Sistemas Computacionales | Localizar las respuestas entregadas de la asignación 1, si se conservan. | Solo está el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf); no figura como resuelta. |
-| 01 · Introducción a la Programación | Localizar la solución entregada del primer parcial: comisiones y calificaciones. | [Enunciado y análisis](01-introduccion-programacion/enunciados-primer-parcial/README.md), sin atribuir una ejecución. |
-| 06 · Bases de Datos | Recuperar el esquema previo del que depende la práctica de bolsa de empleo. | [Objetos SQL y dependencias](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md); falta la base completa para reproducirla de forma autónoma. |
+| 00 · Sistemas Computacionales | Resolver la asignación 1 y documentar las respuestas como una elaboración nueva para el portafolio. | Solo está el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf); la solución sigue pendiente. |
+| 01 · Introducción a la Programación | Resolver los ejercicios de comisiones y calificaciones del primer parcial, explicar las decisiones y probar las soluciones nuevas. | [Enunciado y análisis](01-introduccion-programacion/enunciados-primer-parcial/README.md); todavía no hay soluciones ejecutadas publicadas. |
+| 06 · Bases de Datos | Preparar un esquema nuevo compatible con los objetos SQL de bolsa de empleo, documentar los supuestos, añadir datos de prueba y verificar la práctica. | [Objetos SQL y dependencias](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md); falta una base completa que permita reproducirla de forma autónoma. |
 
-Estos documentos no se sustituyen por respuestas nuevas presentadas como entregas antiguas. Si no aparecen, el estado seguirá indicando el material que está disponible.
+No dispongo de las soluciones o del material original necesario para estas actividades. Algunas evaluaciones se realizaron en papel y no conservo evidencia; en otros casos no cuento con una solución disponible. No queda pendiente buscar archivos: queda pendiente dar respuesta a los ejercicios y completar lo necesario para reproducirlos. Cada incorporación se identificará como una elaboración nueva, con su explicación y sus comprobaciones, sin atribuirle la fecha ni la condición de una entrega original. Esta actualización solo cambia la planificación; las actividades siguen sin resolver.
 
 ## Verificaciones pendientes
 
