@@ -1,4 +1,4 @@
-# Archivos Originales - Programación Funcional con SML
+# Archivos Originales - Programación Funcional-SML
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura de Programación Funcional trabajada mediante el lenguaje Standard ML.
 
@@ -77,7 +77,7 @@ Los documentos originales de esta carpeta pueden incluir ejercicios y explicacio
 Las soluciones finales y documentadas de esta área se organizarán en la carpeta principal:
 
 ```text
-05-fundamentos-programacion-sml/
+05-programacion-funcional-sml/
 ```
 
 Allí cada ejercicio seleccionado deberá tener una estructura profesional similar a:
@@ -115,7 +115,7 @@ Se priorizarán aquellos materiales que evidencien mejor:
 A partir de estos archivos originales, las actividades documentadas se organizan en:
 
 ```text
-05-fundamentos-programacion-sml/
+05-programacion-funcional-sml/
 ├── funciones-basicas-sml/
 ├── recursividad-sml/
 ├── listas-sml/
@@ -132,6 +132,6 @@ Esta organización permitirá mostrar de forma clara la evolución desde los fun
 
 Esta carpeta se utiliza únicamente como respaldo académico de los archivos originales.
 
-Las soluciones explicadas de los ejercicios se encuentran en la carpeta principal de Programación Funcional con SML.
+Las soluciones explicadas de los ejercicios se encuentran en la carpeta principal de Programación Funcional-SML.
 
 Antes de convertir cualquier archivo original en una solución profesional, se debe revisar que no contenga datos personales, calificaciones, matrículas, correos privados o información sensible.

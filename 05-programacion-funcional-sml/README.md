@@ -1,4 +1,4 @@
-# Fundamentos de Programación con SML
+# Programación Funcional-SML
 
 [Inicio](../README.md) · [← Materia 04](../04-diseno-y-analisis-de-algoritmos) · **Materia 05** · [Materia 06 →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
 
@@ -34,7 +34,7 @@ Esta sección complementa los ejercicios de programación estructurada, programa
 ## Organización actual
 
 ```text
-05-fundamentos-programacion-sml/
+05-programacion-funcional-sml/
 ├── calculo-lambda-fundamentos/
 │   ├── README.md
 │   ├── desarrollo.md

@@ -1,6 +1,6 @@
 # Bases de Datos
 
-[Inicio](../README.md) · [← Materia 05](../05-fundamentos-programacion-sml) · **Materia 06** · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 05](../05-programacion-funcional-sml) · **Materia 06** · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-blue)
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)

@@ -172,7 +172,7 @@ En caso de que el documento original contenga datos personales, se debe subir un
 
 ## Estado
 
-Actividad organizada y documentada como parte del portafolio académico de Programación Funcional con SML.
+Actividad organizada y documentada como parte del portafolio académico de Programación Funcional-SML.
 
 ---
 

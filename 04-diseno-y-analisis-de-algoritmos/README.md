@@ -1,6 +1,6 @@
 # Diseño y Análisis de Algoritmos
 
-[Inicio](../README.md) · [← Materia 03](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05 →](../05-fundamentos-programacion-sml) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 03](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05 →](../05-programacion-funcional-sml) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-red)

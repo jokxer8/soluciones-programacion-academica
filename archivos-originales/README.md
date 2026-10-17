@@ -41,7 +41,7 @@ Los archivos originales se relacionan con las áreas documentadas del repositori
 | `fundamentos-programacion` | `02-fundamentos-programacion` | Fundamentos de Programación en C# |
 | `programacion-orientada-a-objetos` | `03-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
 | `diseno-y-analisis-de-algoritmos` | `04-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
-| `programacion-funcional-sml` | `05-fundamentos-programacion-sml` | Programación Funcional con SML |
+| `programacion-funcional-sml` | `05-programacion-funcional-sml` | Programación Funcional-SML |
 | `bases-de-datos` | `06-bases-de-datos` | Bases de Datos |
 | [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [00-fundamentos-sistemas-computacionales](../00-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
 

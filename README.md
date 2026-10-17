@@ -22,7 +22,7 @@ El objetivo principal es organizar, documentar y presentar ejercicios resueltos 
 
 **Ruta de aprendizaje**
 
-[00 · Sistemas](00-fundamentos-sistemas-computacionales) → [01 · Introducción](01-introduccion-programacion) → [02 · Programación](02-fundamentos-programacion) → [03 · Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos](04-diseno-y-analisis-de-algoritmos) → [05 · Funcional](05-fundamentos-programacion-sml) → [06 · Datos](06-bases-de-datos)
+[00 · Sistemas](00-fundamentos-sistemas-computacionales) → [01 · Introducción](01-introduccion-programacion) → [02 · Programación](02-fundamentos-programacion) → [03 · Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos](04-diseno-y-analisis-de-algoritmos) → [05 · Funcional](05-programacion-funcional-sml) → [06 · Datos](06-bases-de-datos)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
@@ -45,7 +45,7 @@ Este repositorio funciona como evidencia de práctica constante, desarrollo del 
 | [02 - Fundamentos de Programación](02-fundamentos-programacion) | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
 | [04 - Diseño y Análisis de Algoritmos](04-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
-| [05 - Fundamentos de Programación con SML](05-fundamentos-programacion-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
+| [05 - Programación Funcional-SML](05-programacion-funcional-sml) | Actividades de programación funcional, cálculo lambda, combinador Y, inferencia de tipos, árboles, signaturas, tipos abstractos y listas perezosas. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Trabajos de modelado, normalización, consultas y objetos SQL, con proyecto final de hotel en C# y SQL Server. | Completado |
 | [Archivos originales](archivos-originales) | Documentos originales utilizados como respaldo académico para seleccionar, organizar y documentar los ejercicios. | Conservado |
 
@@ -60,7 +60,7 @@ soluciones-programacion-academica/
 ├── 02-fundamentos-programacion/
 ├── 03-programacion-orientada-a-objetos/
 ├── 04-diseno-y-analisis-de-algoritmos/
-├── 05-fundamentos-programacion-sml/
+├── 05-programacion-funcional-sml/
 ├── 06-bases-de-datos/
 ├── archivos-originales/
 └── README.md
@@ -120,16 +120,16 @@ soluciones-programacion-academica/
 
 ---
 
-### Fundamentos de Programación con SML
+### Programación Funcional-SML
 
 | Actividad | Conceptos principales |
 |---|---|
-| [Cálculo Lambda - Fundamentos](05-fundamentos-programacion-sml/calculo-lambda-fundamentos) | Cálculo lambda, árboles de sintaxis, sustitución, reducción beta y forma normal |
-| [Combinador Y y Fibonacci en SML](05-fundamentos-programacion-sml/combinador-y-fibonacci-sml) | Combinador Y, punto fijo, Fibonacci, recursividad y funciones de orden superior |
-| [Función Map e Inferencia de Tipos en SML](05-fundamentos-programacion-sml/map-inferencia-tipos-sml) | Map, listas, Hindley-Milner, tipos polimórficos y funciones de orden superior |
-| [Serialización de Árboles de Expresión en SML](05-fundamentos-programacion-sml/serializacion-arboles-expresion-sml) | Tipos recursivos, árboles binarios, pattern matching, preorden, enorden y postorden |
-| [Estructuras, Signaturas y Tipos Abstractos en SML](05-fundamentos-programacion-sml/estructuras-signaturas-tipos-abstractos-sml) | Signaturas, estructuras, records, listas de asociación, excepciones y tipos abstractos |
-| [Listas Perezosas en SML](05-fundamentos-programacion-sml/listas-perezosas-sml) | Evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial y Fibonacci |
+| [Cálculo Lambda - Fundamentos](05-programacion-funcional-sml/calculo-lambda-fundamentos) | Cálculo lambda, árboles de sintaxis, sustitución, reducción beta y forma normal |
+| [Combinador Y y Fibonacci en SML](05-programacion-funcional-sml/combinador-y-fibonacci-sml) | Combinador Y, punto fijo, Fibonacci, recursividad y funciones de orden superior |
+| [Función Map e Inferencia de Tipos en SML](05-programacion-funcional-sml/map-inferencia-tipos-sml) | Map, listas, Hindley-Milner, tipos polimórficos y funciones de orden superior |
+| [Serialización de Árboles de Expresión en SML](05-programacion-funcional-sml/serializacion-arboles-expresion-sml) | Tipos recursivos, árboles binarios, pattern matching, preorden, enorden y postorden |
+| [Estructuras, Signaturas y Tipos Abstractos en SML](05-programacion-funcional-sml/estructuras-signaturas-tipos-abstractos-sml) | Signaturas, estructuras, records, listas de asociación, excepciones y tipos abstractos |
+| [Listas Perezosas en SML](05-programacion-funcional-sml/listas-perezosas-sml) | Evaluación diferida, secuencias infinitas, mapSeq, filterSeq, factorial y Fibonacci |
 
 ---
 
@@ -249,7 +249,7 @@ Actualmente están organizadas las secciones de:
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
 - Diseño y Análisis de Algoritmos.
-- Fundamentos de Programación con SML.
+- Programación Funcional-SML.
 - Bases de Datos.
 
 ---
