@@ -81,7 +81,7 @@ La sección reúne siete actividades, siete programas C++ independientes y docum
 |---|---|---|
 | README de actividad | Problema, entradas, salidas y ejemplo. | Tabla de actividades. |
 | Desarrollo | Recorridos manuales, decisiones, versiones y límites. | Dentro de cada actividad. |
-| `solution.cpp` | Programa independiente preparado para compilar. | Cinco actividades con código. |
+| `solution.cpp` | Programa independiente preparado para compilar. | Cinco actividades con código; el parcial aporta dos fuentes adicionales. |
 | Documentos académicos | Reporte, investigación, diagramas, textos y rúbricas. | [Documentos de apoyo](../archivos-originales/introduccion-programacion/README.md). |
 | Pruebas | Entradas comprobadas, salidas y estado de cada caso. | [Informe](VALIDACION.md) y [registro](tests/results-windows.json). |
 
