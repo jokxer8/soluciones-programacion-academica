@@ -1,4 +1,11 @@
-# Estructuras y memoria dinámica
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Estructuras y memoria dinámica (Data Structures and Dynamic Memory)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0891B2?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](.)
 

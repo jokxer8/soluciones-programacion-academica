@@ -1,4 +1,11 @@
-# Introducción a la Algoritmia
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Introducción a la Algoritmia (Introduction to Algorithms)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · **Materia 00** · [Materia 01: Fundamentos de Programación →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
 

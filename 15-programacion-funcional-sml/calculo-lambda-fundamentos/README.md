@@ -1,4 +1,11 @@
-# Cálculo Lambda - Fundamentos de Programación Funcional
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Cálculo Lambda - Fundamentos de Programación Funcional (Lambda Calculus — Functional Programming Fundamentals)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](actividad-calculo-lambda-fundamentos.pdf)
 

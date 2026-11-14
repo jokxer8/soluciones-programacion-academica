@@ -1,4 +1,11 @@
-# Práctica 04 — Resolución de recurrencias
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 04 — Resolución de recurrencias (Practice 04 — Solving Recurrence Relations)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 03 ←](../practica-03/README.md) · [Práctica 05 →](../practica-05/README.md)
 

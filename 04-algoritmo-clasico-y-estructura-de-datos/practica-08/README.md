@@ -1,4 +1,11 @@
-# Práctica 08 — Tablas hash y colisiones
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 08 — Tablas hash y colisiones (Practice 08 — Hash Tables and Collisions)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 07 ←](../practica-07/README.md) · [Práctica 09 →](../practica-09/README.md)
 

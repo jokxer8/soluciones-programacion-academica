@@ -1,4 +1,11 @@
-# Archivos Originales - Programación Orientada a Objetos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos Originales - Programación Orientada a Objetos (Original Files — Object-Oriented Programming)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura o área de Programación Orientada a Objetos.
 

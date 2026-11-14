@@ -1,4 +1,11 @@
-# Práctica 01 — Límites y crecimiento asintótico
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 01 — Límites y crecimiento asintótico (Practice 01 — Limits and Asymptotic Growth)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 02 →](../practica-02/README.md)
 

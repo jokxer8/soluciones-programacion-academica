@@ -1,4 +1,11 @@
-# Gestión de países — Proyecto final
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Gestión de países — Proyecto final (Country Management — Final Project)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0891B2?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.c)
 

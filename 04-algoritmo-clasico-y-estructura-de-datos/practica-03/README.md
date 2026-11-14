@@ -1,4 +1,11 @@
-# Práctica 03 — Análisis de algoritmos recursivos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 03 — Análisis de algoritmos recursivos (Practice 03 — Recursive Algorithm Analysis)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 02 ←](../practica-02/README.md) · [Práctica 04 →](../practica-04/README.md)
 

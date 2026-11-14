@@ -1,4 +1,11 @@
-# Práctica 07 — Árboles de expansión mínima
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 07 — Árboles de expansión mínima (Practice 07 — Minimum Spanning Trees)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 06 ←](../practica-06/README.md) · [Práctica 08 →](../practica-08/README.md)
 

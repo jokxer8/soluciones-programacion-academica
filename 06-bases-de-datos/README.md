@@ -1,4 +1,11 @@
-# Bases de Datos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Bases de Datos (Databases)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · [← Materia 05: Diseño y Análisis de Algoritmos](../05-diseno-y-analisis-de-algoritmos) · **Materia 06** · [Materia 07: Fundamentos de Redes →](../07-fundamentos-de-redes) · [Pendientes](../PENDIENTES.md)
 

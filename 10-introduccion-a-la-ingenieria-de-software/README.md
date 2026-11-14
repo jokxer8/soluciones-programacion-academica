@@ -1,4 +1,11 @@
-# Introducción a la Ingeniería de Software
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Introducción a la Ingeniería de Software (Introduction to Software Engineering)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · **Materia 10** · [Índice de materias](../README.md#áreas-principales) · [Pendientes](../PENDIENTES.md)
 

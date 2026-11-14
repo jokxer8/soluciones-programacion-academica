@@ -1,4 +1,11 @@
-# Archivos Originales - Diseño y Análisis de Algoritmos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos Originales - Diseño y Análisis de Algoritmos (Original Files — Algorithm Design and Analysis)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura o área de Diseño y Análisis de Algoritmos.
 

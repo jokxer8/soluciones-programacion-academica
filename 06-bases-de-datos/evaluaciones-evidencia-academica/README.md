@@ -1,4 +1,11 @@
-# Evaluaciones - Evidencia Académica
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Evaluaciones - Evidencia Académica (Assessments — Academic Evidence)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](evidencia-primer-parcial.pdf)
 
@@ -6,7 +13,7 @@
 
 ## Qué trabajé y cómo leer los ejemplos
 
-Reúno las evidencias de evaluación y los enlaces a las soluciones relacionadas. Una calificación de un parcial corresponde a esa evaluación concreta y no equivale por sí sola a la nota final de la asignatura.
+Reúno las evidencias de evaluación y los enlaces a las soluciones relacionadas. Las evidencias conservadas corresponden a evaluaciones concretas y no deben interpretarse como nota final de la asignatura.
 
 ## Descripción de la actividad
 
@@ -31,7 +38,7 @@ Relacionar las evaluaciones conservadas con las competencias expuestas en los tr
 
 ## Actividad desarrollada
 
-Se conserva la prueba escaneada y su captura de retroalimentación. La segunda prueba y sus consultas se presentan en la actividad de restaurante. La evidencia del primer parcial muestra 13.50 de 15.00 puntos; corresponde a esa evaluación, no a la nota final de la asignatura.
+Se conserva la prueba escaneada y su captura de retroalimentación. La segunda prueba y sus consultas se presentan en la actividad de restaurante. La evidencia del primer parcial se conserva como respaldo de esa evaluación y no como indicador de la nota final de la asignatura.
 
 ---
 

@@ -1,4 +1,11 @@
-# Subsecuencia Creciente con Suma Máxima
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Subsecuencia Creciente con Suma Máxima (Increasing Subsequence with Maximum Sum)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cs)
 

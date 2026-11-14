@@ -1,7 +1,13 @@
-# Archivos Originales Académicos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos Originales Académicos (Original Academic Files)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
-![Formato](https://img.shields.io/badge/Formato-M%C3%BAltiples%20formatos-blue)
+
+</div>![Formato](https://img.shields.io/badge/Formato-M%C3%BAltiples%20formatos-blue)
 ![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
 Esta carpeta conserva los archivos originales utilizados como base académica para construir, organizar y documentar las soluciones del repositorio.

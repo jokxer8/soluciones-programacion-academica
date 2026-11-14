@@ -1,4 +1,11 @@
-# Búsqueda de coincidencias en un texto
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Búsqueda de coincidencias en un texto (Finding Text Matches)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cpp)
 

@@ -1,4 +1,11 @@
-# Fundamentos de Programación
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Fundamentos de Programación (Programming Fundamentals)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-3B82F6?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · [← Materia 00: Introducción a la Algoritmia](../00-introduccion-a-la-algoritmia) · **Materia 01** · [Materia 02: Fundamentos de Sistemas Computacionales →](../02-fundamentos-sistemas-computacionales) · [Pendientes](../PENDIENTES.md)
 

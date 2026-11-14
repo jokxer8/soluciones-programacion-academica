@@ -1,4 +1,11 @@
-# Serialización de Árboles de Expresión en SML
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Serialización de Árboles de Expresión en SML (Expression Tree Serialization in SML)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-serializacion-arboles-expresion.pdf)
 

@@ -1,7 +1,13 @@
-# Archivos Originales - Bases de Datos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos Originales - Bases de Datos (Original Files — Databases)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
-![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
+
+</div>![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
 Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos utilizadas para preparar la [sección de la asignatura](../../06-bases-de-datos/README.md).
 

@@ -1,4 +1,11 @@
-# Fundamentos de algoritmia y lectura inicial
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Fundamentos de algoritmia y lectura inicial (Algorithm Fundamentals and Introductory Reading)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md)
 

@@ -1,4 +1,11 @@
-# Arquitectura de Software
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Arquitectura de Software (Software Architecture)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · **Materia 11** · [Índice de materias](../README.md#áreas-principales) · [Pendientes](../PENDIENTES.md)
 

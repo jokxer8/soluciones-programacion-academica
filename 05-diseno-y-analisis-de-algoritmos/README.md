@@ -1,4 +1,11 @@
-# Diseño y Análisis de Algoritmos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Diseño y Análisis de Algoritmos (Algorithm Design and Analysis)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · [← Materia 04: Algoritmo Clásico y Estructura de Datos](../04-algoritmo-clasico-y-estructura-de-datos) · **Materia 05** · [Materia 06: Bases de Datos →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
 

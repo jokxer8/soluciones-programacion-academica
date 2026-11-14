@@ -1,4 +1,11 @@
-# Ejercicios complementarios del Tema 1
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Ejercicios complementarios del Tema 1 (Supplementary Exercises: Topic 1)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de materiales](../MATERIALES.md)
 

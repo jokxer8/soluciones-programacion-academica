@@ -1,4 +1,11 @@
-# Primer parcial: comisiones y calificaciones
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Primer parcial: comisiones y calificaciones (Midterm 1: Commissions and Grades)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md)
 

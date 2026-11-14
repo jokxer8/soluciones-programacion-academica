@@ -1,4 +1,11 @@
-# Bolsa de Empleo - Vistas, Procedimientos y Auditoría
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Bolsa de Empleo - Vistas, Procedimientos y Auditoría (Job Board — Views, Procedures, and Auditing)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sql) · [Evidencia](caso-bolsa-empleo.pdf)
 

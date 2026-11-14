@@ -1,4 +1,11 @@
-# Práctica 02 — Notaciones O, Ω y Θ
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 02 — Notaciones O, Ω y Θ (Practice 02 — O, Ω, and Θ Notations)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 01 ←](../practica-01/README.md) · [Práctica 03 →](../practica-03/README.md)
 

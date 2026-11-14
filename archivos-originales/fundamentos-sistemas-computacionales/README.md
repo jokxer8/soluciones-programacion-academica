@@ -1,4 +1,11 @@
-# Archivos originales — Fundamentos de Sistemas Computacionales
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos originales — Fundamentos de Sistemas Computacionales (Original Files — Computer Systems Fundamentals)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 Respaldo de los trabajos seleccionados para [la sección 02](../../02-fundamentos-sistemas-computacionales). El código se publica una sola vez en las actividades; el inventario relaciona esos archivos con sus rutas académicas originales.
 

@@ -1,4 +1,11 @@
-# Cursos - Modelo Entidad-Relación
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Cursos - Modelo Entidad-Relación (Courses — Entity-Relationship Model)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](diagrama-cursos.pdf)
 

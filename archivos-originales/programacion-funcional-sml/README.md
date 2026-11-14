@@ -1,4 +1,11 @@
-# Archivos Originales - Programación Funcional-SML
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos Originales - Programación Funcional-SML (Original Files — Functional Programming in SML)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 Esta carpeta conserva los archivos originales relacionados con la asignatura de Programación Funcional trabajada mediante el lenguaje Standard ML.
 

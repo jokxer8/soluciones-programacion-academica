@@ -1,4 +1,11 @@
-# Algoritmos Clásicos y Estructuras de Datos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Algoritmos Clásicos y Estructuras de Datos (Classic Algorithms and Data Structures)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · [Materia 03: Programación Orientada a Objetos](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05: Diseño y Análisis de Algoritmos](../05-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
 

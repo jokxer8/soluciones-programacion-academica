@@ -1,4 +1,11 @@
-# Flotilla de Aeronaves - Modelo Entidad-Relación
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Flotilla de Aeronaves - Modelo Entidad-Relación (Aircraft Fleet — Entity-Relationship Model)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Evidencia](informe-final.pdf)
 

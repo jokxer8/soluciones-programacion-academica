@@ -1,4 +1,11 @@
-# Listas Perezosas en SML
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Listas Perezosas en SML (Lazy Lists in SML)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.sml) · [Evidencia](actividad-listas-perezosas-sml.pdf)
 

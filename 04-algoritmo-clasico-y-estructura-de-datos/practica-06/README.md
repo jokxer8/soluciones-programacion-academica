@@ -1,4 +1,11 @@
-# Práctica 06 — Caminos mínimos y fiabilidad
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Práctica 06 — Caminos mínimos y fiabilidad (Practice 06 — Shortest Paths and Reliability)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 05 ←](../practica-05/README.md) · [Práctica 07 →](../practica-07/README.md)
 

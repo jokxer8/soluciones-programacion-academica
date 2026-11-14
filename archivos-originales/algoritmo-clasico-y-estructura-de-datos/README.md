@@ -1,7 +1,13 @@
-# Archivos originales — Algoritmos Clásicos y Estructuras de Datos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Archivos originales — Algoritmos Clásicos y Estructuras de Datos (Original Files — Classic Algorithms and Data Structures)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
-![Materia](https://img.shields.io/badge/Materia-ICC--211--T-blue)
+
+</div>![Materia](https://img.shields.io/badge/Materia-ICC--211--T-blue)
 ![Estado](https://img.shields.io/badge/Estado-Organizado-yellow)
 
 Esta sección mantiene la trazabilidad del material utilizado para documentar [ICC-211-T Algoritmos Clásicos y Estructuras de Datos](../../04-algoritmo-clasico-y-estructura-de-datos/README.md).

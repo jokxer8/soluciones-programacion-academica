@@ -1,4 +1,11 @@
-# Documentos de Introducción a la Programación
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Documentos de Introducción a la Programación (Introduction to Programming Documents)
+
+![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../../README.md) · [Materia 00](../../00-introduccion-a-la-algoritmia/README.md) · [Inventario](INVENTARIO.md)
 

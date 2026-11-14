@@ -1,4 +1,11 @@
-# Programación Orientada a Objetos
+<!-- Jokxer visual header -->
+<div align="center">
+
+# Programación Orientada a Objetos (Object-Oriented Programming)
+
+![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-7C3AED?style=for-the-badge&logo=github&logoColor=white)
+
+</div>
 
 [Inicio](../README.md) · [← Materia 02: Fundamentos de Sistemas Computacionales](../02-fundamentos-sistemas-computacionales) · **Materia 03** · [Materia 04: Algoritmo Clásico y Estructura de Datos →](../04-algoritmo-clasico-y-estructura-de-datos) · [Pendientes](../PENDIENTES.md)
 
