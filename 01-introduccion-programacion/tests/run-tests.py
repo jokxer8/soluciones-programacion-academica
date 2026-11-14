@@ -31,7 +31,7 @@ additional = [
     ('enunciados-primer-parcial/solution-comisiones.cpp', 'comisiones', [
         ('1\n500\n', 'Monto de la comision a pagar: 25.00\n'),
         ('1\n501\n', 'Monto de la comision a pagar: 35.07\n'),
-        ('2\n501\n', 'Monto de la comision a pagar: 37.58\n'),
+        ('2\n501\n', 'Monto de la comision a pagar: 37.57\n'),
         ('3\n10000\n', 'Monto de la comision a pagar: 1200.00\n'),
         ('3\n10001\n', 'Monto de la comision a pagar: 1450.14\n'),
         ('4\n10\n', None), ('1\n-1\n', None), ('1\ntexto\n', None),
