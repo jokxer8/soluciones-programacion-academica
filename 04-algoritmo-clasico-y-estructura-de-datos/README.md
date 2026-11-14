@@ -52,3 +52,5 @@ El [mapa de materiales](MATERIALES.md) resume los temas de cada práctica, los a
 **En revisión.** Los nombres de los PDF se uniformaron y las entregas disponibles quedaron enlazadas. Para cerrar el inventario de prácticas falta la entrega de la **Práctica 3**. Además, las entregas y proyectos aún requieren una revisión de contenido y, cuando aplique, validación de las respuestas antes de describirlos como soluciones comprobadas.
 
 [Mapa de materiales y alcance de revisión](MATERIALES.md) · [Volver al repositorio](../README.md)
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)

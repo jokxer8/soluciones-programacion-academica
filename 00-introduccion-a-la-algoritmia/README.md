@@ -93,3 +93,5 @@ Un diagrama y un programa pueden partir del mismo problema y aun así diferir en
 La organización sigue la de [Bases de Datos](../06-bases-de-datos/README.md): planteamiento, desarrollo, solución disponible, documentos y validación. El tipo de evidencia cambia con la actividad: una lectura o un enunciado no se presenta como un programa ejecutado.
 
 [Pendientes del repositorio](../PENDIENTES.md) · [Volver al inicio](../README.md)
+
+[Cómo leer la notación y los estados](../GUIA-DE-LECTURA.md) · [Criterios de presentación](../GUIA-DE-ESTILO.md)
