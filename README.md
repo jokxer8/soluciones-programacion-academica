@@ -93,9 +93,9 @@ soluciones-programacion-academica/
 | [Coincidencias en un texto](01-introduccion-programacion/busqueda-coincidencias-texto) | Cadenas, búsqueda y coincidencias superpuestas. |
 | [Diagramas secuenciales](01-introduccion-programacion/ejercicios-secuenciales) | Asignaciones y seguimiento de variables. |
 | [Fibonacci y corrida manual](01-introduccion-programacion/fibonacci-traza) | Ciclos y actualización de variables. |
-| [Primer parcial](01-introduccion-programacion/enunciados-primer-parcial) | Enunciados y análisis de comisiones y calificaciones; soluciones pendientes. |
+| [Primer parcial](01-introduccion-programacion/enunciados-primer-parcial) | Dos soluciones nuevas de comisiones y calificaciones, separadas de la entrega original. |
 
-Los cinco programas C++ cuentan con **32 casos correctos y 0 fallidos** en la [validación de Windows](01-introduccion-programacion/VALIDACION.md). El [triángulo en RAPTOR](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md) incluye el fallo observado en el original, la corrección y siete casos numéricos comprobados.
+Los cinco programas originales C++ cuentan con **32 casos correctos y 0 fallidos**; la batería ampliada incorpora otros 21 casos para las dos soluciones nuevas del parcial en la [validación de Windows](01-introduccion-programacion/VALIDACION.md). El [triángulo en RAPTOR](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md) incluye el fallo observado en el original, la corrección y siete casos numéricos comprobados.
 
 ---
 
