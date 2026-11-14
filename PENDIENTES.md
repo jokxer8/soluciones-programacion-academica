@@ -18,7 +18,9 @@ El índice contiene las materias 00–15 en el orden académico. Siete materias 
 | 13 | [Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Pendiente de subir |
 | 14 | [Contabilidad para Ciencias de la Computación](14-contabilidad-para-ciencias-de-la-computacion) | Pendiente de subir |
 
-## Verificaciones pendientes
+## Verificaciones adicionales
+
+Estas comprobaciones mejoran la reproducibilidad y la evidencia técnica; **no bloquean el estado académico de Bases de Datos como completada**. El README de la materia indica que la asignatura fue aprobada y que su sección está completada. Las limitaciones y mejoras se conservan aquí para distinguirlas de las actividades ya publicadas.
 
 - **06 · Bases de Datos:** preparar un esquema reproducible para los objetos SQL de bolsa de empleo. [Objetos SQL](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md)
 - **02 · Sistemas Computacionales:** ampliar pruebas de memoria y entradas límite. [Validación](02-fundamentos-sistemas-computacionales/VALIDACION.md)

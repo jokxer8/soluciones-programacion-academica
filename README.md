@@ -46,7 +46,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
 | [04 - Algoritmo Clásico y Estructura de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Espacio reservado para actividades por incorporar. | Pendiente |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
-| [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Contenido publicado; verificaciones registradas |
+| [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
 | [08 - Sistemas Operativos](08-sistemas-operativos) | Materia planificada; contenido pendiente. | Pendiente |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
