@@ -24,6 +24,7 @@ Esta carpeta permite evidenciar que las soluciones documentadas no fueron coloca
 archivos-originales/
 ├── bases-de-datos/
 ├── diseno-y-analisis-de-algoritmos/
+├── introduccion-programacion/
 ├── fundamentos-programacion/
 ├── fundamentos-sistemas-computacionales/
 ├── programacion-funcional-sml/
@@ -38,12 +39,13 @@ Los archivos originales se relacionan con las áreas documentadas del repositori
 
 | Carpeta de archivos originales | Carpeta documentada | Área de aprendizaje |
 |---|---|---|
-| `fundamentos-programacion` | `02-fundamentos-programacion` | Fundamentos de Programación en C# |
+| `introduccion-programacion` | `00-introduccion-a-la-algoritmia` | Introducción a la Algoritmia (material fuente archivado bajo su nombre de origen) |
+| `fundamentos-programacion` | `01-fundamentos-programacion` | Fundamentos de Programación en C# |
 | `programacion-orientada-a-objetos` | `03-programacion-orientada-a-objetos` | Programación Orientada a Objetos |
-| `diseno-y-analisis-de-algoritmos` | `04-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
-| `programacion-funcional-sml` | `05-programacion-funcional-sml` | Programación Funcional-SML |
+| `diseno-y-analisis-de-algoritmos` | `05-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
+| `programacion-funcional-sml` | `15-programacion-funcional-sml` | Programación Funcional-SML |
 | `bases-de-datos` | `06-bases-de-datos` | Bases de Datos |
-| [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [00-fundamentos-sistemas-computacionales](../00-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
+| [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [02-fundamentos-sistemas-computacionales](../02-fundamentos-sistemas-computacionales) | Fundamentos de Sistema Computacionales |
 
 ---
 
@@ -145,6 +147,6 @@ La sección de [Bases de Datos](bases-de-datos) reúne los trabajos de la asigna
 
 Las soluciones finales deben mantenerse en las carpetas principales del repositorio.
 
-## Introducción a la Programación
+## Introducción a la Algoritmia
 
-Los [documentos de apoyo](introduccion-programacion/README.md) reúnen lectura, entregas grupales, diagramas, código y retroalimentación. La [materia 01](../01-introduccion-programacion) presenta las siete actividades y las diferencias entre versiones. El [inventario](introduccion-programacion/INVENTARIO.md) registra los documentos publicados y el material conservado sin republicar.
+Los [documentos de apoyo](introduccion-programacion/README.md) reúnen lectura, entregas grupales, diagramas, código y retroalimentación. La [materia 01](../00-introduccion-a-la-algoritmia) presenta las siete actividades y las diferencias entre versiones. El [inventario](introduccion-programacion/INVENTARIO.md) registra los documentos publicados y el material conservado sin republicar.

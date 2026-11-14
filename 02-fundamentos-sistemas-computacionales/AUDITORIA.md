@@ -18,7 +18,7 @@ La revisión posterior ejecutó los doce pares C/FASM en Linux y corrigió lectu
 
 La matrícula manuscrita se retiró del PDF público del parcial, páginas 1 y 3. Ambas páginas se renderizaron y comprobaron visualmente después de la redacción; se conservaron nombre y respuestas. Se retiraron el identificador de una nota y el registro de asistencia de teoría. Se excluyeron las configuraciones locales con rutas personales.
 
-La asignación 1 tiene enunciado, sin respuestas localizadas. Las rectificaciones del primer parcial están separadas del manuscrito. El resumen encontrado en la asignación 2 corresponde al proyecto híbrido C/NASM. La imagen de tamaños no describe todos los modelos de datos de 64 bits.
+El documento `Asignacion 1.pdf` se conserva como enunciado; no se localizaron respuestas. Las rectificaciones del primer parcial están separadas del manuscrito. El resumen encontrado en la asignación 2 corresponde al proyecto híbrido C/NASM. La imagen de tamaños no describe todos los modelos de datos de 64 bits.
 
 ## Límites y créditos
 

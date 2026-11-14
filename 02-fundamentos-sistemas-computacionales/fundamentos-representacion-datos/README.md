@@ -16,7 +16,7 @@ Relaciono las bases numéricas con la forma en que se guardan enteros y números
 
 Sistemas de numeración, complemento a dos, IEEE 754 y tamaños de tipos.
 
-Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
+Materia: [Fundamentos de Sistemas Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
 
 ---
 
@@ -45,7 +45,7 @@ Las notas de teoría, tablas visuales y respuestas manuscritas se presentan junt
 - [Notas de teoría](../../archivos-originales/fundamentos-sistemas-computacionales/notas/teoria.txt).
 - [Tabla visual](../../archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/tabla-de-binarios-octal-y-hexadecimal.png).
 - [Tamaños de memoria](../../archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/espacio-en-memoria.png).
-- [Asignación 1: enunciado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). La asignación 1 permanece sin resolver: se conserva el enunciado, pero no se encontraron respuestas o material suficiente para reconstruir la solución.
+- [`Asignacion 1.pdf`: enunciado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). El documento `Asignacion 1.pdf` se conserva únicamente como enunciado; no se encontraron respuestas o material suficiente para reconstruir una solución.
 
 ---
 
@@ -76,7 +76,7 @@ Evidencia enlazada en archivos-originales/:
 
 ## Cómo revisar la actividad
 
-Comenzar por las conversiones de desarrollo.md, contrastarlas con el parcial y consultar las notas como respaldo. La asignación 1 se identifica expresamente como actividad no realizada: solo está disponible el enunciado. La tabla visual de tamaños se interpreta como LP64; no se extrapola a todos los sistemas de 64 bits.
+Comenzar por las conversiones de desarrollo.md, contrastarlas con el parcial y consultar las notas como respaldo. El documento `Asignacion 1.pdf` está disponible como enunciado; no se encontraron respuestas ni solución. La tabla visual de tamaños se interpreta como LP64; no se extrapola a todos los sistemas de 64 bits.
 
 ---
 

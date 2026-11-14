@@ -77,7 +77,7 @@ Los documentos originales de esta carpeta pueden incluir ejercicios y explicacio
 Las soluciones finales y documentadas de esta área se organizarán en la carpeta principal:
 
 ```text
-05-programacion-funcional-sml/
+15-programacion-funcional-sml/
 ```
 
 Allí cada ejercicio seleccionado deberá tener una estructura profesional similar a:
@@ -115,7 +115,7 @@ Se priorizarán aquellos materiales que evidencien mejor:
 A partir de estos archivos originales, las actividades documentadas se organizan en:
 
 ```text
-05-programacion-funcional-sml/
+15-programacion-funcional-sml/
 ├── funciones-basicas-sml/
 ├── recursividad-sml/
 ├── listas-sml/

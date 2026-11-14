@@ -1,6 +1,6 @@
 # Documentos de Introducción a la Programación
 
-[Inicio](../../README.md) · [Materia 01](../../01-introduccion-programacion/README.md) · [Inventario](INVENTARIO.md)
+[Inicio](../../README.md) · [Materia 00](../../00-introduccion-a-la-algoritmia/README.md) · [Inventario](INVENTARIO.md)
 
 Reúno las entregas que acompañan las siete actividades: reporte de lectura, investigación y cálculo del triángulo, foro de la pirámide, búsqueda de texto, diagramas secuenciales, fragmento de Fibonacci y enunciado del parcial.
 

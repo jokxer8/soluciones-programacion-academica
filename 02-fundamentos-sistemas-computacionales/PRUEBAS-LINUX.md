@@ -48,7 +48,7 @@ Los originales locales siguen intactos. Los hashes de origen y los de las versio
 En Linux x86-64 con Python 3, GCC y FASM instalados, desde la raíz del repositorio:
 
 ```sh
-python3 00-fundamentos-sistemas-computacionales/tests/compare-linux.py
+python3 02-fundamentos-sistemas-computacionales/tests/compare-linux.py
 ```
 
 El script usa una carpeta temporal y genera `linux-results.json` en el directorio de ejecución. El [workflow](../.github/workflows/fundamentos-linux.yml) se ejecuta al cambiar las fuentes comparadas o la batería, y también permite ejecución manual.

@@ -69,7 +69,7 @@ La colección conserva **43 fuentes C y 15 fuentes ASM**: 42 programas C indepen
 
 ## Enfoque académico
 
-La asignatura ocupa la posición **02** porque introduce conceptos utilizados después en las demás materias. La representación de datos y el control de ejecución ayudan a comprender los programas de la [materia 02](../01-fundamentos-programacion); las estructuras dinámicas se relacionan con el estudio posterior de [algoritmos](../05-diseno-y-analisis-de-algoritmos). El proyecto de países organiza información en memoria y archivos, antes de abordar persistencia relacional en [Bases de Datos](../06-bases-de-datos).
+La asignatura ocupa la posición **02** porque introduce conceptos utilizados después en las demás materias. La representación de datos y el control de ejecución ayudan a comprender los programas de la [materia 01](../01-fundamentos-programacion); las estructuras dinámicas se relacionan con el estudio posterior de [algoritmos](../05-diseno-y-analisis-de-algoritmos). El proyecto de países organiza información en memoria y archivos, antes de abordar persistencia relacional en [Bases de Datos](../06-bases-de-datos).
 
 ---
 
@@ -117,7 +117,7 @@ Los programas C independientes se compilan por separado. El proyecto híbrido ne
 
 Las seis actividades están organizadas y documentadas. El alcance de las pruebas se registra por separado para cada tecnología y proyecto.
 
-**Estado: completado en alcance documental.** La evidencia disponible está organizada y validada dentro de los límites registrados. La asignación 1 conserva únicamente su enunciado; sus respuestas y solución no están disponibles, por lo que esa actividad queda expresamente identificada como no realizada. Este cierre no equivale a una certificación de calificación ni afirma que se resolvieron materiales ausentes.
+**Estado: completado en alcance documental.** La evidencia disponible está organizada y validada dentro de los límites registrados. El documento `Asignacion 1.pdf` conserva únicamente el enunciado; no se localizaron respuestas ni una solución publicada. Este cierre no equivale a una certificación de calificación ni afirma que se resolvieron materiales ausentes.
 
 ---
 

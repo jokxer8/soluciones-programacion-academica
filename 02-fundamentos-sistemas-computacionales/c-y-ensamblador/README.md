@@ -16,7 +16,7 @@ Comparo doce problemas resueltos en C y FASM. Los prefijos 01–12 identifican e
 
 Doce ejercicios equivalentes de entrada/salida, decisiones, ciclos, primos y patrones.
 
-Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
+Materia: [Fundamentos de Sistemas Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
 
 ---
 

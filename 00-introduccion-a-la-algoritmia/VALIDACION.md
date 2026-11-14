@@ -1,4 +1,4 @@
-# Validación de Introducción a la Programación
+# Validación de Introducción a la Algoritmia
 
 [Materia](README.md) · [Casos y resultados](tests/results-windows.json) · [Pruebas reproducibles](tests/run-tests.py)
 

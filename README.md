@@ -42,7 +42,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 |---|---|---|
 | [00 - Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) | Primeros algoritmos, diagramas, C++, ciclos, búsqueda de texto y actividades introductorias. | Completado; alcance documentado |
 | [01 - Fundamentos de Programación](01-fundamentos-programacion) | Lectura de datos, variables, condicionales, ciclos, arreglos, cadenas y métodos. | Completado |
-| [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; asignación 1 no realizada y documentada |
+| [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; el alcance del documento `Asignacion 1.pdf` está documentado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
 | [04 - Algoritmo Clásico y Estructura de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Espacio reservado para actividades por incorporar. | Pendiente |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
@@ -277,8 +277,8 @@ Los estados describen la organización de la evidencia disponible. Cada materia 
 
 Actualmente están organizadas las secciones de:
 
-- Fundamentos de Sistemas Computacionales (completado dentro de la evidencia disponible; asignación 1 no realizada y documentada).
-- Introducción a la Programación (incluye soluciones nuevas para los dos problemas del primer parcial).
+- Fundamentos de Sistemas Computacionales (completado dentro del alcance documentado; el archivo `Asignacion 1.pdf` se conserva sin respuestas).
+- Introducción a la Algoritmia (incluye soluciones nuevas para los dos problemas del primer parcial).
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
 - Diseño y Análisis de Algoritmos.

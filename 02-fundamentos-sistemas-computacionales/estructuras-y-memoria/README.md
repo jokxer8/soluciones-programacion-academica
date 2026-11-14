@@ -16,7 +16,7 @@ Trabajo con estructuras y punteros para representar datos relacionados. Un punte
 
 Diez ejercicios de estructuras, punteros, rectángulos, complejos y listas.
 
-Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
+Materia: [Fundamentos de Sistemas Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
 
 ---
 

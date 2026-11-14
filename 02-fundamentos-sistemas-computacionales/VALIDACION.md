@@ -1,4 +1,4 @@
-# Validación de Fundamentos de Sistema Computacionales
+# Validación de Fundamentos de Sistemas Computacionales
 
 Revisión inicial local en Windows x64 y ampliación con ejecución Linux en GitHub Actions, 15 de octubre de 2026 (Santo Domingo). Los resultados se generan con el código publicado; no se atribuyen a la entrega histórica.
 
@@ -52,7 +52,7 @@ FASM detectó una expresión incompleta al final de `04-cuenta-regresiva.asm`: `
 
 La ejecución FASM ELF64 en Linux está comprobada para los casos de [PRUEBAS-LINUX.md](PRUEBAS-LINUX.md). No se ejecutaron ASan/UBSan en esta revisión, ni se certifica resistencia general a entradas inválidas, desbordamiento o falta de memoria. La auditoría TXT entregada se conserva como referencia histórica.
 
-La asignación 1 solo aporta enunciado. Los libros y módulos Huawei no prueban autoría, aprobación ni certificación y no se redistribuyen. Los resultados del hotel pertenecen a otra materia y siguen documentados en su sección.
+El documento `Asignacion 1.pdf` solo aporta el enunciado. Los libros y módulos Huawei no prueban autoría, aprobación ni certificación y no se redistribuyen. Los resultados del hotel pertenecen a otra materia y siguen documentados en su sección.
 
 [Materia](README.md) · [Auditoría](AUDITORIA.md)
 

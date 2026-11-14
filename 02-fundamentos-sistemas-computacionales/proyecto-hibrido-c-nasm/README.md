@@ -16,7 +16,7 @@ Integro funciones de ensamblador en un programa C. RCX, RDX, R8 y R9 son nombres
 
 Interoperabilidad C/ensamblador x64 para sumar, ordenar e intercambiar enteros.
 
-Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
+Materia: [Fundamentos de Sistemas Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
 
 ---
 

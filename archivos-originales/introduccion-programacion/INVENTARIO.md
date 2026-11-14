@@ -1,6 +1,6 @@
 # Inventario de Introducción a la Programación
 
-[Materia](../../01-introduccion-programacion/README.md) · [Documentos](README.md) · [Registro JSON](inventario.json)
+[Materia](../../00-introduccion-a-la-algoritmia/README.md) · [Documentos](README.md) · [Registro JSON](inventario.json)
 
 Revisé 85 archivos y seleccioné 32 documentos. Los demás corresponden a materiales de consulta, aportes integrados, trabajos de otros grupos, informes de evaluación, duplicados o respaldos. Los códigos IP identifican registros; los hashes SHA-256 son huellas de contenido, no notas ni contraseñas. No se incluyen ubicaciones personales.
 

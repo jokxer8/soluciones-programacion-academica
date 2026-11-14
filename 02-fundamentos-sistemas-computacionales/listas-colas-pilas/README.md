@@ -16,7 +16,7 @@ Organizo datos mediante nodos enlazados. FIFO significa que sale primero el elem
 
 Diecinueve ejercicios de búsqueda, agregación, eliminación, ordenamiento, FIFO y LIFO.
 
-Materia: [Fundamentos de Sistema Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
+Materia: [Fundamentos de Sistemas Computacionales](../README.md). Autor de la entrega: Kelvin César Del Castillo Torres.
 
 ---
 
