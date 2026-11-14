@@ -25,4 +25,4 @@ La revisión visual y documental no equivale a ejecutar de nuevo todos los ejerc
 
 Escribo las explicaciones desde el trabajo realizado: qué resuelvo, cómo lo organizo y qué resultado espero. Defino las siglas al usarlas y acompaño cifras, porcentajes y patrones de bits con su significado. Conservo los créditos de trabajos en equipo y distingo los enunciados sin solución de las entregas resueltas.
 
-Los enlaces de documentación apuntan al contenido publicado. Los inventarios identifican documentos y versiones sin incluir la ubicación de los materiales en mi computadora. La [guía de lectura](GUIA-DE-LECTURA.md) reúne la notación compartida.
+Los enlaces de documentación apuntan al contenido publicado. Los inventarios identifican documentos y versiones sin incluir la ubicación de los materiales en mi computadora. En `archivos-originales/` se conservan los nombres de origen para mantener la trazabilidad; los nombres normalizados se aplican a las entregas organizadas en las carpetas de cada materia, y sus índices conservan los títulos académicos originales. La [guía de lectura](GUIA-DE-LECTURA.md) reúne la notación compartida.

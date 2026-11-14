@@ -42,6 +42,7 @@ La subcarpeta dentro de la carpeta fuente repite varios DOCX y PPTX. Las copias 
 ## Estado documental
 
 - El programa y los enunciados con texto seleccionable se usaron para clasificar las actividades.
+- Las entregas publicadas se enlazan desde el [índice de la materia 04](../../04-algoritmo-clasico-y-estructura-de-datos/MATERIALES.md); la Práctica 3 no aparece entre los archivos publicados.
 - Algunas entregas son imágenes escaneadas; su extracción textual no basta para afirmar que las respuestas están correctas.
 - Ciertos enunciados incluyen grafos o árboles en figuras, por lo que su texto extraído no representa por sí solo toda la consigna.
 - Las fuentes de terceros se describen por su tema y procedencia general, sin redistribuir sus archivos completos.
