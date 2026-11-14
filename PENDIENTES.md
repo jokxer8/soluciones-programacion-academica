@@ -50,7 +50,7 @@ Estas ampliaciones no impiden consultar las entregas publicadas. Se mantendrían
 |---|---|
 | Organización y presentación | Siete materias y 46 actividades con README, desarrollo y enlaces a las soluciones o documentos disponibles. La 01 incluye ahora entradas, salidas, ejemplos de consola y recorridos manuales más detallados. |
 | Numeración | 00 Sistemas; 01 Introducción; 02 Fundamentos; 03 Objetos; 04 Algoritmos; 05 SML; 06 Bases de Datos. Índices, perfil, automatizaciones y enlaces de las ocho tareas del hotel actualizados. |
-| Introducción: C++ | Siete programas: los cinco originales tienen **32 casos correctos y 0 fallidos**; se añadieron 21 casos para las dos soluciones nuevas en la [batería actualizada](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/introduccion-cpp.yml). |
+| Introducción: C++ | Siete programas: **53 casos correctos y 0 fallidos** en la [batería actualizada de Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43595819295). |
 | Introducción: triángulo en RAPTOR | Original ejecutado y error confirmado; diagrama y pseudocódigo corregidos. **Siete casos numéricos con el resultado esperado**, comparación con C++ y Newton, y capturas en el [informe](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md). |
 | Nombre de la materia 05 | **Programación Funcional-SML**, corregido en carpeta, índices, navegación, documentación y perfil. |
 | Sistemas: C/FASM en Linux | Doce pares de programas, **132 comparaciones correctas y 0 fallidas**. [Informe](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). |
