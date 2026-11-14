@@ -75,5 +75,7 @@ for rel, slug, cases in additional:
                             'stdout': p.stdout, 'stderr': p.stderr})
 out={'environment':'Windows x64; MSVC; C++17; /W4 /WX','programs':7,'passed':sum(x['status']=='PASS' for x in results),'failed':sum(x['status']=='FAIL' for x in results),'results':results}
 (S/'tests').mkdir(exist_ok=True);(S/'tests/results-windows.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
-for item in results:\n if item['status']=='FAIL':print(json.dumps(item,ensure_ascii=False))\nprint(json.dumps({k:v for k,v in out.items() if k!='results'},ensure_ascii=False))
+for item in results:
+ if item['status']=='FAIL':print(json.dumps(item,ensure_ascii=False))
+print(json.dumps({k:v for k,v in out.items() if k!='results'},ensure_ascii=False))
 if out['failed']:raise RuntimeError('Hay casos fallidos')
