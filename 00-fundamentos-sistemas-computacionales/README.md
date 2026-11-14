@@ -5,7 +5,7 @@
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Materia](https://img.shields.io/badge/Materia-Sistemas%20Computacionales-green)
 ![Nivel](https://img.shields.io/badge/Nivel-Fundamentos%20a%20Aplicaci%C3%B3n-green)
-![Estado](https://img.shields.io/badge/Estado-Incorporado%20y%20documentado-brightgreen)
+![Estado](https://img.shields.io/badge/Estado-Completado%20con%20alcance%20documentado-brightgreen)
 
 Trabajos de representación de datos, programación C, ensamblador y estructuras dinámicas realizados durante mi formación en Ciencias de la Computación. Los enunciados identifican la asignatura como «Fundamentos de Sistemas Computacionales», ICC-133; esta sección reúne mis trabajos de la asignatura.
 
@@ -116,7 +116,7 @@ Los programas C independientes se compilan por separado. El proyecto híbrido ne
 
 Las seis actividades están organizadas y documentadas. El alcance de las pruebas se registra por separado para cada tecnología y proyecto.
 
-El estado de incorporación indica que la evidencia disponible está organizada. No afirma que se localizaron todas las respuestas ni equivale a una certificación de calificación: la asignación 1 solo contiene su enunciado y sus respuestas siguen sin localizarse.
+**Estado: completado en alcance documental.** La evidencia disponible está organizada y validada dentro de los límites registrados. La asignación 1 conserva únicamente su enunciado; sus respuestas y solución no están disponibles, por lo que esa actividad queda expresamente identificada como no realizada. Este cierre no equivale a una certificación de calificación ni afirma que se resolvieron materiales ausentes.
 
 ---
 
