@@ -1,6 +1,8 @@
 # Bases de Datos
 
-[Inicio](../README.md) · [← Materia 05](../05-programacion-funcional-sml) · **Materia 06** · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 05: Diseño y Análisis de Algoritmos](../05-diseno-y-analisis-de-algoritmos) · **Materia 06** · [Materia 07: Fundamentos de Redes →](../07-fundamentos-de-redes) · [Pendientes](../PENDIENTES.md)
+
+[Inicio](../README.md) · [← Materia 05](../15-programacion-funcional-sml) · **Materia 06** · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-blue)
 ![Materia](https://img.shields.io/badge/Materia-Bases%20de%20Datos-green)

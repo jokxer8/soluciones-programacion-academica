@@ -1,6 +1,8 @@
 # Programación Funcional-SML
 
-[Inicio](../README.md) · [← Materia 04](../04-diseno-y-analisis-de-algoritmos) · **Materia 05** · [Materia 06 →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 14: Contabilidad para Ciencias de la Computación](../14-contabilidad-para-ciencias-de-la-computacion) · **Materia 15** · Fin del plan numerado · [Pendientes](../PENDIENTES.md)
+
+[Inicio](../README.md) · [← Materia 04](../05-diseno-y-analisis-de-algoritmos) · **Materia 05** · [Materia 06 →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 ![Paradigma](https://img.shields.io/badge/Paradigma-Programaci%C3%B3n%20Funcional-blue)
@@ -34,7 +36,7 @@ Esta sección complementa los ejercicios de programación estructurada, programa
 ## Organización actual
 
 ```text
-05-programacion-funcional-sml/
+15-programacion-funcional-sml/
 ├── calculo-lambda-fundamentos/
 │   ├── README.md
 │   ├── desarrollo.md

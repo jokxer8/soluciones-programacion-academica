@@ -1,6 +1,8 @@
 # Diseño y Análisis de Algoritmos
 
-[Inicio](../README.md) · [← Materia 03](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05 →](../05-programacion-funcional-sml) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · [← Materia 04: Algoritmo Clásico y Estructura de Datos](../04-algoritmo-clasico-y-estructura-de-datos) · **Materia 05** · [Materia 06: Bases de Datos →](../06-bases-de-datos) · [Pendientes](../PENDIENTES.md)
+
+[Inicio](../README.md) · [← Materia 03](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05 →](../15-programacion-funcional-sml) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-red)
@@ -34,7 +36,7 @@ Esta sección representa una etapa más avanzada del proceso de formación, dond
 ## Organización actual
 
 ```text
-04-diseno-y-analisis-de-algoritmos/
+05-diseno-y-analisis-de-algoritmos/
 ├── busqueda-binaria/
 │   ├── README.md
 │   ├── desarrollo.md

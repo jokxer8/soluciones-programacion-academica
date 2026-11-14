@@ -1,6 +1,8 @@
-# Introducción a la Programación
+# Introducción a la Algoritmia
 
-[Inicio](../README.md) · [← Materia 00](../00-fundamentos-sistemas-computacionales) · **Materia 01** · [Materia 02 →](../02-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
+[Inicio](../README.md) · **Materia 00** · [Materia 01: Fundamentos de Programación →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
+
+[Inicio](../README.md) · [← Materia 00](../02-fundamentos-sistemas-computacionales) · **Materia 01** · [Materia 02 →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 ![Materia](https://img.shields.io/badge/Materia-Introducción%20a%20la%20Programación-green)
@@ -35,7 +37,7 @@ Cada actividad contiene un README con el planteamiento y sus documentos, y un de
 ## Estructura de la sección
 
 ```text
-01-introduccion-programacion/
+00-introduccion-a-la-algoritmia/
 ├── fundamentos-algoritmia/
 ├── ejercicios-secuenciales/
 ├── triangulo-rectangulo/
