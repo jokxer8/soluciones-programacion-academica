@@ -58,4 +58,4 @@ El documento `Asignacion 1.pdf` solo aporta el enunciado. Los libros y módulos 
 
 ## Cierre de alcance
 
-La asignación 1 permanece **no realizada**: el conjunto disponible conserva el enunciado, pero no incluye respuestas ni material suficiente para reconstruirlas con trazabilidad. Esta ausencia queda registrada en [Representación de datos](fundamentos-representacion-datos/README.md). El estado de la materia se cierra como completado respecto de la evidencia disponible; no implica que esa asignación esté resuelta.
+El documento `Asignacion 1.pdf` se conserva únicamente como enunciado; no se localizaron respuestas ni material suficiente para reconstruir una solución con trazabilidad. Esta ausencia queda registrada en [Representación de datos](fundamentos-representacion-datos/README.md). El estado de la materia se cierra como completado respecto de la evidencia disponible; no implica que esa asignación esté resuelta.

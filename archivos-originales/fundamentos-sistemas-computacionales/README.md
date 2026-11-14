@@ -1,6 +1,6 @@
-# Archivos originales — Fundamentos de Sistema Computacionales
+# Archivos originales — Fundamentos de Sistemas Computacionales
 
-Respaldo de los trabajos seleccionados para [la sección 00](../../02-fundamentos-sistemas-computacionales). El código se publica una sola vez en las actividades; el inventario relaciona esos archivos con sus rutas académicas originales.
+Respaldo de los trabajos seleccionados para [la sección 02](../../02-fundamentos-sistemas-computacionales). El código se publica una sola vez en las actividades; el inventario relaciona esos archivos con sus rutas académicas originales.
 
 - `documentos/`: enunciados y primer parcial manuscrito.
 - `referencias-visuales/`: tablas aportadas con las notas.

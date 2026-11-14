@@ -31,7 +31,7 @@ Estas comprobaciones mejoran la reproducibilidad y la evidencia técnica; **no b
 ## Trabajo completado
 
 - **00 · Introducción a la Algoritmia:** 53 casos correctos y 0 fallidos en la [batería registrada](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43595819295).
-- **02 · Sistemas Computacionales:** asignación 1 no realizada porque solo se conserva el enunciado; 132 comparaciones C/FASM correctas en [Linux](02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
+- **02 · Sistemas Computacionales:** el documento `Asignacion 1.pdf` se conserva sin respuestas; 132 comparaciones C/FASM correctas en [Linux](02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
 - **06 · Bases de Datos:** tareas #1–#8 del hotel completadas; 79 pruebas correctas y 0 fallidas en la [validación](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703).
 - **15 · Programación Funcional-SML:** seis actividades publicadas.
 
