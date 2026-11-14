@@ -62,3 +62,14 @@ Los valores fuera de [0,100] son inválidos. La condición debe expresar «menor
 Se conserva el planteamiento y este análisis, sin archivo `solution.cpp` ni resultado de ejecución. Si aparece la solución entregada, se podrá comparar con las reglas y los casos límite. Crear una solución nueva sería una ampliación identificada como tal, no una recuperación del examen original.
 
 [Volver a la actividad](README.md) · [Validación de la materia](../VALIDACION.md)
+
+## Soluciones nuevas en C++
+
+Se añadieron dos programas independientes a partir del enunciado conservado:
+
+- [solution-comisiones.cpp](solution-comisiones.cpp): valida el código de ciudad y un volumen de ventas no negativo, selecciona una sola tasa de la tabla para el volumen completo y muestra el importe con dos decimales. No calcula una tarifa marginal por tramos.
+- [solution-calificaciones.cpp](solution-calificaciones.cpp): solicita los cinco datos indicados y presenta la letra y el mensaje. Para resolver los extremos solapados del enunciado, interpreta los rangos como [0,60), [60,70), [70,80), [80,90) y [90,100].
+
+Son elaboraciones nuevas, no recuperaciones de la solución histórica. Para compilarlas individualmente con MSVC: `cl /std:c++17 /EHsc /W4 /WX /utf-8 solution-comisiones.cpp` o `cl /std:c++17 /EHsc /W4 /WX /utf-8 solution-calificaciones.cpp`.
+
+La batería de Windows incluye ahora casos para las dos soluciones nuevas; los resultados se generan en `tests/results-windows.json` al correr [Run-Tests.ps1](../tests/Run-Tests.ps1). Los límites que no define el enunciado —como moneda y regla de redondeo en empates— no se inventan como requisitos académicos.
