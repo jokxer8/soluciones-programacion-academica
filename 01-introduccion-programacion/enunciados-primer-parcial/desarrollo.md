@@ -72,4 +72,4 @@ Se añadieron dos programas independientes a partir del enunciado conservado:
 
 Son elaboraciones nuevas, no recuperaciones de la solución histórica. Para compilarlas individualmente con MSVC: `cl /std:c++17 /EHsc /W4 /WX /utf-8 solution-comisiones.cpp` o `cl /std:c++17 /EHsc /W4 /WX /utf-8 solution-calificaciones.cpp`.
 
-La batería de Windows incluye ahora casos para las dos soluciones nuevas; los resultados se generan en `tests/results-windows.json` al correr [Run-Tests.ps1](../tests/Run-Tests.ps1). Los límites que no define el enunciado —como moneda y regla de redondeo en empates— no se inventan como requisitos académicos.
+La batería de Windows incluye ahora casos para las dos soluciones nuevas; los resultados se generan en `tests/results-windows.json` al correr [Run-Tests.ps1](../tests/Run-Tests.ps1). El enunciado exige dos decimales, pero no especifica cómo resolver empates exactos. La salida usa el redondeo de la biblioteca estándar de C++ en el entorno de compilación; por ejemplo, 501 × 7.50 % se muestra como 37.57. Esto es una decisión de implementación, no un requisito histórico.
