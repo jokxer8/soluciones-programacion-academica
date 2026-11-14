@@ -44,7 +44,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [01 - Fundamentos de Programación](01-fundamentos-programacion) | Lectura de datos, variables, condicionales, ciclos, arreglos, cadenas y métodos. | Completado |
 | [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; el alcance del documento `Asignacion 1.pdf` está documentado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
-| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas de práctica, mandatos, entregas disponibles, ejercicios complementarios y dos proyectos; la Práctica 3 tiene mandato documentado, pero falta su enunciado original y entrega. | En revisión |
+| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas, mandatos, entregas disponibles, desarrollo didáctico complementario para la Práctica 3 y dos proyectos. La entrega original de la Práctica 3 no fue presentada. | Completado dentro del alcance documental publicado |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
@@ -147,7 +147,7 @@ Los cinco programas originales C++ cuentan con **32 casos correctos y 0 fallidos
 | [Programa y actividades](04-algoritmo-clasico-y-estructura-de-datos) | ICC-211-T: análisis asintótico, recurrencias, árboles, tablas hash y grafos; incluye el mapa de prácticas y proyectos disponibles. |
 | [Mapa de materiales](04-algoritmo-clasico-y-estructura-de-datos/MATERIALES.md) | Relaciona prácticas 1–9, proyectos parciales y final, apuntes y límites de la evidencia. |
 
-Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible. La Práctica 3 cuenta con una síntesis del mandato, pero falta localizar su enunciado original y entrega; las fichas no presentan las respuestas de los PDF como soluciones técnicamente verificadas.
+Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible. La Práctica 3 no fue presentada originalmente; su desarrollo didáctico complementario explica el tema sin atribuir una entrega. Las fichas no presentan las respuestas de los PDF como soluciones técnicamente verificadas.
 
 ---
 
@@ -292,7 +292,7 @@ Actualmente están organizadas las secciones de:
 - Introducción a la Algoritmia (incluye soluciones nuevas para los dos problemas del primer parcial).
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
-- Algoritmos Clásicos y Estructuras de Datos (fuentes y actividades clasificadas; soluciones pendientes de documentar y validar).
+- Algoritmos Clásicos y Estructuras de Datos (materia completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y está acompañada por un desarrollo didáctico identificado como complementario).
 - Diseño y Análisis de Algoritmos.
 - Programación Funcional-SML.
 - Bases de Datos.
