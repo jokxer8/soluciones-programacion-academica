@@ -2,13 +2,13 @@
 
 [Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-El índice contiene las materias 00–15 en el orden académico. Siete materias tienen actividades publicadas; la materia 04 ya cuenta con fuentes revisadas y organizadas, con soluciones aún por documentar. Las materias 07–14 siguen como espacios pendientes. La materia 15 ya cuenta con actividades porque se cursó antes.
+El índice contiene las materias 00–15 en el orden académico. Ocho materias tienen actividades publicadas. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07–14 siguen como espacios pendientes. La materia 15 ya cuenta con actividades porque se cursó antes.
 
 ## Materias con material en organización
 
 | Posición | Materia | Estado |
 |---:|---|---|
-| 04 | [Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas individuales publicadas; hay entregas PDF para las prácticas 1, 2 y 4–9, ejercicios complementarios y dos proyectos. La Práctica 3 tiene un mandato resumido, pero faltan el enunciado original y la entrega; los PDF no tienen validación independiente |
+
 
 ## Materias pendientes de contenido
 
