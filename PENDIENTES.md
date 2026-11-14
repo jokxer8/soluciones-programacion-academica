@@ -2,19 +2,24 @@
 
 [Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-Estado revisado el **16 de octubre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo las actividades por resolver, las verificaciones pendientes y las ampliaciones que puedo hacer después. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
+Estado revisado el **14 de noviembre de 2026**. El portafolio tiene siete materias, de la 00 a la 06, y 46 actividades. Distingo las tareas realmente pendientes de las limitaciones cerradas mediante documentación. Las tareas del hotel #1–#8 están cerradas; no vuelven a contarse como pendientes.
 
-En esta revisión cierro el nombre de Programación Funcional-SML y la comprobación del triángulo en RAPTOR. Las verificaciones y ampliaciones siguientes quedan pendientes para otra sesión; no se han ejecutado ni marcado como completadas para reducir el consumo de uso.
+En esta revisión se cierran las materias 00 y 01 dentro de la evidencia disponible: las soluciones nuevas del parcial de Introducción se incorporan al flujo de pruebas; la asignación 1 de Sistemas queda marcada como no realizada porque solo está disponible el enunciado.
 
 ## Actividades por resolver y documentar
 
 | Materia | Qué falta | Qué está publicado |
 |---|---|---|
-| 00 · Sistemas Computacionales | Resolver la asignación 1 y documentar las respuestas como una elaboración nueva para el portafolio. | Solo está el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf); la solución sigue pendiente. |
-| 01 · Introducción a la Programación | Resolver los ejercicios de comisiones y calificaciones del primer parcial, explicar las decisiones y probar las soluciones nuevas. | [Enunciado y análisis](01-introduccion-programacion/enunciados-primer-parcial/README.md); todavía no hay soluciones ejecutadas publicadas. |
 | 06 · Bases de Datos | Preparar un esquema nuevo compatible con los objetos SQL de bolsa de empleo, documentar los supuestos, añadir datos de prueba y verificar la práctica. | [Objetos SQL y dependencias](06-bases-de-datos/bolsa-empleo-objetos-sql/desarrollo.md); falta una base completa que permita reproducirla de forma autónoma. |
 
-No dispongo de las soluciones o del material original necesario para estas actividades. Algunas evaluaciones se realizaron en papel y no conservo evidencia; en otros casos no cuento con una solución disponible. No queda pendiente buscar archivos: queda pendiente dar respuesta a los ejercicios y completar lo necesario para reproducirlos. Cada incorporación se identificará como una elaboración nueva, con su explicación y sus comprobaciones, sin atribuirle la fecha ni la condición de una entrega original. Esta actualización solo cambia la planificación; las actividades siguen sin resolver.
+La limitación de las materias 00–01 no crea una búsqueda de archivos pendiente. En el parcial de la materia 01, las soluciones añadidas son trabajos nuevos y se prueban con la batería automatizada. En la materia 00 no se infiere una respuesta a la asignación 1: el cierre declara esa actividad no realizada y deja enlazado el enunciado.
+
+## Cierre de alcance de las materias 00–01
+
+| Materia | Estado de cierre | Evidencia y límite |
+|---|---|---|
+| 00 · Sistemas Computacionales | Sección completada; asignación 1 no realizada. | Solo se conserva el [enunciado](archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf), sin respuestas localizadas. No se presenta como resuelta. |
+| 01 · Introducción a la Programación | Sección completada; dos soluciones nuevas añadidas. | [Comisiones y calificaciones](01-introduccion-programacion/enunciados-primer-parcial/README.md). Se distinguen de la entrega histórica y se integran en la batería Windows. |
 
 ## Verificaciones pendientes
 
@@ -45,7 +50,7 @@ Estas ampliaciones no impiden consultar las entregas publicadas. Se mantendrían
 |---|---|
 | Organización y presentación | Siete materias y 46 actividades con README, desarrollo y enlaces a las soluciones o documentos disponibles. La 01 incluye ahora entradas, salidas, ejemplos de consola y recorridos manuales más detallados. |
 | Numeración | 00 Sistemas; 01 Introducción; 02 Fundamentos; 03 Objetos; 04 Algoritmos; 05 SML; 06 Bases de Datos. Índices, perfil, automatizaciones y enlaces de las ocho tareas del hotel actualizados. |
-| Introducción: C++ | Cinco programas, **32 casos correctos y 0 fallidos**, localmente y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). |
+| Introducción: C++ | Siete programas: los cinco originales tienen **32 casos correctos y 0 fallidos**; se añadieron 21 casos para las dos soluciones nuevas en la [batería actualizada](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/introduccion-cpp.yml). |
 | Introducción: triángulo en RAPTOR | Original ejecutado y error confirmado; diagrama y pseudocódigo corregidos. **Siete casos numéricos con el resultado esperado**, comparación con C++ y Newton, y capturas en el [informe](01-introduccion-programacion/triangulo-rectangulo/PRUEBAS-RAPTOR.md). |
 | Nombre de la materia 05 | **Programación Funcional-SML**, corregido en carpeta, índices, navegación, documentación y perfil. |
 | Sistemas: C/FASM en Linux | Doce pares de programas, **132 comparaciones correctas y 0 fallidas**. [Informe](00-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md). |
