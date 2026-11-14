@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Archivos Originales - Fundamentos de Programación en C# (Original Files — C# Programming Fundamentals)
+<h1 align="center"><img src="../../assets/readme-banners/archivos-originales-fundamentos-programacion.svg" alt="Archivos Originales - Fundamentos de Programación en C# (Original Files — C# Programming Fundamentals)" width="100%"></h1>
 
-![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

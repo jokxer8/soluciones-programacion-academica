@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Ordenamiento Rápido - QuickSort (Quicksort)
+<h1 align="center"><img src="../../assets/readme-banners/05-diseno-y-analisis-de-algoritmos-ordenamiento-rapido-quicksort.svg" alt="Ordenamiento Rápido - QuickSort (Quicksort)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

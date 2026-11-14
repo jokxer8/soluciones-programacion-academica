@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Introducción a la Inteligencia Artificial (Introduction to Artificial Intelligence)
+<h1 align="center"><img src="../assets/readme-banners/13-introduccion-a-la-inteligencia-artificial.svg" alt="Introducción a la Inteligencia Artificial (Introduction to Artificial Intelligence)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

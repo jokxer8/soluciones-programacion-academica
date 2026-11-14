@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Función Map e Inferencia de Tipos en SML (Map Function and Type Inference in SML)
+<h1 align="center"><img src="../../assets/readme-banners/15-programacion-funcional-sml-map-inferencia-tipos-sml.svg" alt="Función Map e Inferencia de Tipos en SML (Map Function and Type Inference in SML)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

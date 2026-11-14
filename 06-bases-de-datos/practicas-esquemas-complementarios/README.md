@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Prácticas y Esquemas Complementarios (Supplementary Exercises and Schemas)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-practicas-esquemas-complementarios.svg" alt="Prácticas y Esquemas Complementarios (Supplementary Exercises and Schemas)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

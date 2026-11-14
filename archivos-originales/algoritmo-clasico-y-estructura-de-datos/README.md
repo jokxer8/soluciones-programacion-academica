@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Archivos originales — Algoritmos Clásicos y Estructuras de Datos (Original Files — Classic Algorithms and Data Structures)
+<h1 align="center"><img src="../../assets/readme-banners/archivos-originales-algoritmo-clasico-y-estructura-de-datos.svg" alt="Archivos originales — Algoritmos Clásicos y Estructuras de Datos (Original Files — Classic Algorithms and Data Structures)" width="100%"></h1>
 
-![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 

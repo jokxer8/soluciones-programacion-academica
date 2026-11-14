@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Archivos Originales - Programación Orientada a Objetos (Original Files — Object-Oriented Programming)
+<h1 align="center"><img src="../../assets/readme-banners/archivos-originales-programacion-orientada-a-objetos.svg" alt="Archivos Originales - Programación Orientada a Objetos (Original Files — Object-Oriented Programming)" width="100%"></h1>
 
-![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

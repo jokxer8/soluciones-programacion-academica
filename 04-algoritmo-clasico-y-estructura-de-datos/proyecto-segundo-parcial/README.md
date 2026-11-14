@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Proyecto del segundo parcial (Second Midterm Project)
+<h1 align="center"><img src="../../assets/readme-banners/04-algoritmo-clasico-y-estructura-de-datos-proyecto-segundo-parcial.svg" alt="Proyecto del segundo parcial (Second Midterm Project)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

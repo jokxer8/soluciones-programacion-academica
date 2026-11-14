@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Sistema de Avisos con Archivo y Serialización - POO (Notification System with File Storage and Serialization — OOP)
+<h1 align="center"><img src="../../assets/readme-banners/03-programacion-orientada-a-objetos-avisos-archivo-serializacion-poo.svg" alt="Sistema de Avisos con Archivo y Serialización - POO (Notification System with File Storage and Serialization — OOP)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-7C3AED?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

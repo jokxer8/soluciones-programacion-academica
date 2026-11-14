@@ -1,7 +1,7 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Soluciones de Programación Académica (Academic Programming Solutions)
+<h1 align="center"><img src="assets/readme-banners/inicio.svg" alt="Soluciones de Programación Académica (Academic Programming Solutions)" width="100%"></h1>
 
 ### Algoritmos · programación · bases de datos · proyectos
 

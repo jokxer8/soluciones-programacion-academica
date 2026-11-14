@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Archivos Originales - Diseño y Análisis de Algoritmos (Original Files — Algorithm Design and Analysis)
+<h1 align="center"><img src="../../assets/readme-banners/archivos-originales-diseno-y-analisis-de-algoritmos.svg" alt="Archivos Originales - Diseño y Análisis de Algoritmos (Original Files — Algorithm Design and Analysis)" width="100%"></h1>
 
-![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Estadísticas Básicas de un Arreglo (Basic Array Statistics)
+<h1 align="center"><img src="../../assets/readme-banners/01-fundamentos-programacion-estadisticas-basicas-arreglo.svg" alt="Estadísticas Básicas de un Arreglo (Basic Array Statistics)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-3B82F6?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

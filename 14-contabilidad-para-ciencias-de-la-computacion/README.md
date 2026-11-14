@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Contabilidad para Ciencias de la Computación (Accounting for Computer Science)
+<h1 align="center"><img src="../assets/readme-banners/14-contabilidad-para-ciencias-de-la-computacion.svg" alt="Contabilidad para Ciencias de la Computación (Accounting for Computer Science)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Cálculo Lambda - Fundamentos de Programación Funcional (Lambda Calculus — Functional Programming Fundamentals)
+<h1 align="center"><img src="../../assets/readme-banners/15-programacion-funcional-sml-calculo-lambda-fundamentos.svg" alt="Cálculo Lambda - Fundamentos de Programación Funcional (Lambda Calculus — Functional Programming Fundamentals)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

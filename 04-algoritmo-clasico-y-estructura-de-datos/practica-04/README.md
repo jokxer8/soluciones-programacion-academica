@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Práctica 04 — Resolución de recurrencias (Practice 04 — Solving Recurrence Relations)
+<h1 align="center"><img src="../../assets/readme-banners/04-algoritmo-clasico-y-estructura-de-datos-practica-04.svg" alt="Práctica 04 — Resolución de recurrencias (Practice 04 — Solving Recurrence Relations)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-4F46E5?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

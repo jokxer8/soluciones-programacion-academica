@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Búsqueda Binaria (Binary Search)
+<h1 align="center"><img src="../../assets/readme-banners/05-diseno-y-analisis-de-algoritmos-busqueda-binaria.svg" alt="Búsqueda Binaria (Binary Search)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

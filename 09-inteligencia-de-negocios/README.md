@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Inteligencia de Negocios (Business Intelligence)
+<h1 align="center"><img src="../assets/readme-banners/09-inteligencia-de-negocios.svg" alt="Inteligencia de Negocios (Business Intelligence)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

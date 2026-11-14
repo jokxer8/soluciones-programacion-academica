@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Estructuras, Signaturas y Tipos Abstractos en SML (Structures, Signatures, and Abstract Types in SML)
+<h1 align="center"><img src="../../assets/readme-banners/15-programacion-funcional-sml-estructuras-signaturas-tipos-abstractos-sml.svg" alt="Estructuras, Signaturas y Tipos Abstractos en SML (Structures, Signatures, and Abstract Types in SML)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

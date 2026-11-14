@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Listas Perezosas en SML (Lazy Lists in SML)
+<h1 align="center"><img src="../../assets/readme-banners/15-programacion-funcional-sml-listas-perezosas-sml.svg" alt="Listas Perezosas en SML (Lazy Lists in SML)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-9333EA?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

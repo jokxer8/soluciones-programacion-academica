@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Sistema de Reservas de Hotel - Proyecto Final (Hotel Reservation System — Final Project)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-hotel-reservas-proyecto-final.svg" alt="Sistema de Reservas de Hotel - Proyecto Final (Hotel Reservation System — Final Project)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

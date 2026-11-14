@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Evaluaciones - Evidencia Académica (Assessments — Academic Evidence)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-evaluaciones-evidencia-academica.svg" alt="Evaluaciones - Evidencia Académica (Assessments — Academic Evidence)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

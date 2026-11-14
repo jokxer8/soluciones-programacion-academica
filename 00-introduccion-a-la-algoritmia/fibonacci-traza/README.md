@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Fibonacci: ciclos y corrida manual (Fibonacci: Loops and Manual Trace)
+<h1 align="center"><img src="../../assets/readme-banners/00-introduccion-a-la-algoritmia-fibonacci-traza.svg" alt="Fibonacci: ciclos y corrida manual (Fibonacci: Loops and Manual Trace)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Bolsa de Empleo - Vistas, Procedimientos y Auditoría (Job Board — Views, Procedures, and Auditing)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-bolsa-empleo-objetos-sql.svg" alt="Bolsa de Empleo - Vistas, Procedimientos y Auditoría (Job Board — Views, Procedures, and Auditing)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

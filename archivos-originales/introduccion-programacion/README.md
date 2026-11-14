@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Documentos de Introducción a la Programación (Introduction to Programming Documents)
+<h1 align="center"><img src="../../assets/readme-banners/archivos-originales-introduccion-programacion.svg" alt="Documentos de Introducción a la Programación (Introduction to Programming Documents)" width="100%"></h1>
 
-![Jokxer · ARCHIVO ACADÉMICO](https://img.shields.io/badge/JOKXER-ARCHIVO%20ACAD%C3%89MICO-64748B?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

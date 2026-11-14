@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Reservas de Coches - Creación y Carga de Datos (Car Reservations — Data Creation and Loading)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-reservas-coches-creacion-datos.svg" alt="Reservas de Coches - Creación y Carga de Datos (Car Reservations — Data Creation and Loading)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Conteo y Conexión de Islas (Counting and Connecting Islands)
+<h1 align="center"><img src="../../assets/readme-banners/05-diseno-y-analisis-de-algoritmos-conteo-y-conexion-de-islas.svg" alt="Conteo y Conexión de Islas (Counting and Connecting Islands)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Representación de datos y fundamentos (Data Representation Fundamentals)
+<h1 align="center"><img src="../../assets/readme-banners/02-fundamentos-sistemas-computacionales-fundamentos-representacion-datos.svg" alt="Representación de datos y fundamentos (Data Representation Fundamentals)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0891B2?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

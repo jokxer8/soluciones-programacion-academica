@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Programación Web (Web Programming)
+<h1 align="center"><img src="../assets/readme-banners/12-programacion-web.svg" alt="Programación Web (Web Programming)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Cambio de Monedas con Cantidad Limitada (Coin Change with Limited Quantities)
+<h1 align="center"><img src="../../assets/readme-banners/05-diseno-y-analisis-de-algoritmos-cambio-monedas-limitado.svg" alt="Cambio de Monedas con Cantidad Limitada (Coin Change with Limited Quantities)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0EA5E9?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

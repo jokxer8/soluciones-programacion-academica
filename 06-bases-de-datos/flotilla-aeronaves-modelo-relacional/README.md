@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Flotilla de Aeronaves - Modelo Entidad-Relación (Aircraft Fleet — Entity-Relationship Model)
+<h1 align="center"><img src="../../assets/readme-banners/06-bases-de-datos-flotilla-aeronaves-modelo-relacional.svg" alt="Flotilla de Aeronaves - Modelo Entidad-Relación (Aircraft Fleet — Entity-Relationship Model)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-0F766E?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 

@@ -1,9 +1,8 @@
-<!-- Jokxer visual header -->
+
 <div align="center">
 
-# Arquitectura de Software (Software Architecture)
+<h1 align="center"><img src="../assets/readme-banners/11-arquitectura-de-software.svg" alt="Arquitectura de Software (Software Architecture)" width="100%"></h1>
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
 
 </div>
 
