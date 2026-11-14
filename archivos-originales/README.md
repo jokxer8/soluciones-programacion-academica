@@ -22,6 +22,7 @@ Esta carpeta permite evidenciar que las soluciones documentadas no fueron coloca
 
 ```text
 archivos-originales/
+├── algoritmo-clasico-y-estructura-de-datos/
 ├── bases-de-datos/
 ├── diseno-y-analisis-de-algoritmos/
 ├── introduccion-programacion/
@@ -45,6 +46,7 @@ Los archivos originales se relacionan con las áreas documentadas del repositori
 | `diseno-y-analisis-de-algoritmos` | `05-diseno-y-analisis-de-algoritmos` | Diseño y Análisis de Algoritmos |
 | `programacion-funcional-sml` | `15-programacion-funcional-sml` | Programación Funcional-SML |
 | `bases-de-datos` | `06-bases-de-datos` | Bases de Datos |
+| [algoritmo-clasico-y-estructura-de-datos](algoritmo-clasico-y-estructura-de-datos/README.md) | [04-algoritmo-clasico-y-estructura-de-datos](../04-algoritmo-clasico-y-estructura-de-datos) | Algoritmos Clásicos y Estructuras de Datos |
 | [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [02-fundamentos-sistemas-computacionales](../02-fundamentos-sistemas-computacionales) | Fundamentos de Sistemas Computacionales |
 
 ---
@@ -150,3 +152,7 @@ Las soluciones finales deben mantenerse en las carpetas principales del reposito
 ## Introducción a la Algoritmia
 
 Los [documentos de apoyo](introduccion-programacion/README.md) reúnen lectura, entregas grupales, diagramas, código y retroalimentación. La [materia 01](../00-introduccion-a-la-algoritmia) presenta las siete actividades y las diferencias entre versiones. El [inventario](introduccion-programacion/INVENTARIO.md) registra los documentos publicados y el material conservado sin republicar.
+
+## Algoritmos Clásicos y Estructuras de Datos
+
+El [inventario](algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) registra las fuentes revisadas y los límites de publicación; la materia documentada está en [04-algoritmo-clasico-y-estructura-de-datos](../04-algoritmo-clasico-y-estructura-de-datos).

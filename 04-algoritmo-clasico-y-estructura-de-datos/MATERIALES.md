@@ -74,6 +74,10 @@ Se localizaron presentaciones de análisis de algoritmos, coste y modelo RAM, an
 
 También hay documentos de ejercicios de límites, leyes de límites, derivadas y regla de L’Hôpital. Se registran como apoyo matemático, no como unidades adicionales del programa ICC-211-T.
 
+## Publicación de fuentes
+
+El material se usó para elaborar este mapa, pero no todos los archivos se adjuntaron al repositorio. Las [notas del archivo original](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/README.md) explican el criterio aplicado y el [inventario](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) registra el contenido de la carpeta local.
+
 ## Inventario de fuentes consultadas
 
 ### Programa, apuntes y referencias

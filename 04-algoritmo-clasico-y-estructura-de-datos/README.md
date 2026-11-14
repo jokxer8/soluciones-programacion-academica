@@ -46,6 +46,10 @@ Los títulos conservan la nomenclatura visible en las fuentes disponibles. La de
 | [Proyecto 2do Parcial](MATERIALES.md#proyecto-2do-parcial) | Recurrencias, recorridos de árboles, construcción de BST y rebalanceo AVL |
 | [Proyecto final](MATERIALES.md#proyecto-final) | BST, rehashing, caminos mínimos y árboles de expansión mínima |
 
+## Fuentes originales
+
+El [archivo de ICC-211-T](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/README.md) explica qué documentos de origen están disponibles, cómo se clasificaron y qué limitaciones se aplican a su publicación. El [inventario](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) distingue enunciados, entregas, apuntes y referencias.
+
 ## Material complementario
 
 Los apuntes de clase amplían las unidades de análisis de algoritmos, modelo RAM, recursividad, árboles, grafos y hashing. La colección también incluye ejercicios de límites, derivadas y regla de L’Hôpital como apoyo matemático. El [mapa de materiales](MATERIALES.md) registra las fuentes, variantes y límites de revisión.
@@ -55,7 +59,8 @@ Los apuntes de clase amplían las unidades de análisis de algoritmos, modelo RA
 ```text
 04-algoritmo-clasico-y-estructura-de-datos/
 ├── README.md
-└── MATERIALES.md
+├── MATERIALES.md
+└── soluciones y evidencias por incorporar
 ```
 
 ## Estado de la sección
