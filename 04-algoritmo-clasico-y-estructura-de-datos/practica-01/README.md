@@ -1,0 +1,31 @@
+# Práctica 01 — Límites y crecimiento asintótico
+
+[Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 02 →](../practica-02/README.md)
+
+## Propósito
+
+Aplicar límites y reglas de crecimiento para justificar el orden de una función y relacionarlo con el trabajo que realiza un algoritmo.
+
+## Mandato
+
+La actividad trabaja límites, comparación y orden exacto de crecimiento, notaciones asintóticas y análisis del coste temporal de fragmentos de código.
+
+## Qué se trabaja
+
+Ejercicios de límites y clasificación de crecimiento; análisis de expresiones y fragmentos de código.
+
+## Qué aporta esta actividad
+
+Aplicar límites y reglas de crecimiento para justificar el orden de una función y relacionarlo con el trabajo que realiza un algoritmo. El aprendizaje esperado es razonar sobre el método y justificar el resultado, no solo registrar una respuesta. Esta ficha enlaza el material disponible y señala sus límites para que se entienda qué permite comprobar.
+
+## Entrega
+
+[Abrir entrega PDF](entrega.pdf)
+
+## Estado de revisión
+
+La ficha resume el mandato disponible y enlaza la entrega publicada. No certifica la exactitud de los desarrollos del PDF.
+
+La carpeta documenta el tema y la evidencia localizada. No se dispone aquí de una comprobación independiente de cada paso ni de la calificación de la actividad.
+
+[Volver al índice de prácticas](../MATERIALES.md) · [Volver a la materia](../README.md)

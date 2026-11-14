@@ -1,60 +1,43 @@
-# Mapa de materiales — ICC-211-T
+# Índice de entregas y materiales — ICC-211-T
 
-[← Materia 04: Algoritmos Clásicos y Estructuras de Datos](README.md) · [Inicio](../README.md)
+[← Materia 04](README.md) · [Inicio del portafolio](../README.md) · [Inventario de fuentes](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md)
 
-Este mapa relaciona el programa oficial, las actividades identificadas y los archivos de entrega que están publicados actualmente. Los nombres de las entregas se normalizaron para facilitar su consulta; los títulos de origen y el contenido temático se conservan aquí para mantener la trazabilidad.
-
-## Programa oficial y cobertura localizada
-
-| Unidad | Cobertura en las fuentes revisadas |
-|---|---|
-| I. Análisis de algoritmos | Crecimiento, notaciones asintóticas, modelo RAM, límites y cálculo de coste |
-| II. Análisis de recurrencias | Análisis recursivo, recurrencias, sustitución, árbol de recursión y teorema maestro |
-| III. Árboles | BST, recorridos, balanceo AVL y árboles rojo-negro |
-| IV. Tablas hash | Funciones hash, colisiones, encadenamiento, sondeo y rehashing |
-| V. Grafos | Dijkstra, Bellman-Ford, Floyd-Warshall, Prim y Kruskal |
-
-El programa también incluye árboles B, de segmentos y Fenwick, además de BFS, DFS, ordenamiento topológico y componentes fuertemente conectados. El inventario disponible no identifica una práctica específica publicada para esos temas.
+Este índice organiza las prácticas y proyectos por número, enlaza sus fichas individuales y distingue las entregas disponibles de la actividad cuyo documento no se ha localizado. Cada ficha explica el mandato, el propósito y el alcance de la evidencia.
 
 ## Prácticas
 
-| Número | Título o material de origen | Entrega en el repositorio | Tema revisado |
+| Práctica | Tema | Ficha | Entrega |
 |---:|---|---|---|
-| 1 | Ejercicios 1 | [practica-01.pdf](practica-01.pdf) | Entrega disponible; corresponde al material identificado como ejercicios 1. |
-| 2 | Clase Práctica 2 | [practica-02.pdf](practica-02.pdf) | Demostraciones y comparación de funciones en O, Ω y Θ. |
-| 3 | Clase Práctica 3 | **No localizada entre los archivos publicados** | Análisis de algoritmos recursivos y formulación de recurrencias. |
-| 4 | Clase Práctica 4 | [practica-04.pdf](practica-04.pdf) | Árbol de recursión, sustitución y teorema maestro. |
-| 5 | Clase Práctica 5 | [practica-05.pdf](practica-05.pdf) | BST, recorridos, balanceo AVL y árboles rojo-negro. |
-| 6 | Clase Práctica 6 | [practica-06.pdf](practica-06.pdf) | Caminos mínimos mediante Dijkstra, Bellman-Ford y Floyd-Warshall. |
-| 7 | Clase Práctica 7 | [practica-07.pdf](practica-07.pdf) | Árboles de expansión mínima mediante Prim y Kruskal. |
-| 8 | Clase Práctica 8 | [practica-08.pdf](practica-08.pdf) | Hashing, colisiones, direccionamiento abierto y hashing extensible. |
-| 9 | Clase Práctica 9 | [practica-09.pdf](practica-09.pdf) | Rehashing con sondeo lineal, cuadrático, doble hashing y encadenamiento. |
+| 1 | Límites y crecimiento asintótico | [Leer ficha](practica-01/README.md) | [PDF](practica-01/entrega.pdf) |
+| 2 | Notaciones asintóticas O, Ω y Θ | [Leer ficha](practica-02/README.md) | [PDF](practica-02/entrega.pdf) |
+| 3 | Análisis de algoritmos recursivos y formulación de recurrencias | [Mandato y alcance](practica-03/README.md) | No se ha localizado la entrega |
+| 4 | Recurrencias: árbol, sustitución y teorema maestro | [Leer ficha](practica-04/README.md) | [PDF](practica-04/entrega.pdf) |
+| 5 | Árboles BST, AVL y rojo-negro | [Leer ficha](practica-05/README.md) | [PDF](practica-05/entrega.pdf) |
+| 6 | Caminos mínimos y máxima fiabilidad | [Leer ficha](practica-06/README.md) | [PDF](practica-06/entrega.pdf) |
+| 7 | Árboles de expansión mínima con Prim y Kruskal | [Leer ficha](practica-07/README.md) | [PDF](practica-07/entrega.pdf) |
+| 8 | Tablas hash y resolución de colisiones | [Leer ficha](practica-08/README.md) | [PDF](practica-08/entrega.pdf) |
+| 9 | Rehashing y comparación de colisiones | [Leer ficha](practica-09/README.md) | [PDF](practica-09/entrega.pdf) |
 
-Los nombres uniformes reflejan el orden de las prácticas y no sustituyen los títulos originales, que se mantienen en esta tabla.
+## Ejercicios y proyectos
 
-## Ejercicios y proyectos adicionales
-
-| Material | Archivo publicado | Descripción |
+| Trabajo | Ficha | Entrega |
 |---|---|---|
-| Ejercicios Tema 1 | [ejercicios-tema-01.pdf](ejercicios-tema-01.pdf) | Afirmaciones y demostraciones sobre notación asintótica; se conserva separado de la secuencia de prácticas. |
-| Proyecto 2do Parcial | [proyecto-segundo-parcial.pdf](proyecto-segundo-parcial.pdf) | Recurrencias, recorridos de árboles, construcción de BST y rebalanceo AVL. |
-| Proyecto final | [proyecto-final.pdf](proyecto-final.pdf) | BST, rehashing, caminos mínimos y árboles de expansión mínima. |
+| Ejercicios complementarios del Tema 1 | [Leer ficha](ejercicios-tema-01/README.md) | [PDF](ejercicios-tema-01/entrega.pdf) |
+| Proyecto del segundo parcial | [Leer ficha](proyecto-segundo-parcial/README.md) | [PDF](proyecto-segundo-parcial/entrega.pdf) |
+| Proyecto final | [Leer ficha](proyecto-final/README.md) | [PDF](proyecto-final/entrega.pdf) |
 
-## Apuntes y material complementario revisados
+## Contenidos del programa sin práctica localizada
 
-Se localizaron presentaciones de análisis de algoritmos, coste y modelo RAM, análisis recursivo, árboles, grafos y tablas hash. También hay referencias escritas sobre complejidad y hashing, además de ejercicios de límites, derivadas y regla de L’Hôpital como apoyo matemático. Este material se describe en el [inventario de fuentes](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md); no todos esos documentos están publicados como archivos.
+El programa de la asignatura también incluye BFS y DFS, ordenamiento topológico, componentes fuertemente conectados, árboles B, árboles de segmentos y árboles Fenwick. El inventario consultado no identifica una práctica publicada que desarrolle esos temas en esta carpeta. Esta lista describe cobertura documental; no supone que el curso no los haya tratado.
 
-## Alcance y límites de la revisión
+## Cómo leer las fichas y las entregas
 
-- Los PDF enlazados están disponibles como entregas académicas; sus nombres de archivo anteriores incluían variantes, nombre o identificador del autor.
-- Los nombres de archivo se estandarizaron sin alterar el contenido de los PDF.
-- La palabra «solucionada» que aparecía en algunos nombres originales no se interpreta como validación independiente.
-- No se ejecutaron implementaciones: esta sección no contiene código asociado a las prácticas ni informes de pruebas.
-- La Práctica 3 está identificada en el inventario de fuentes, pero su entrega no aparece en la carpeta publicada.
-- Algunos enunciados incluyen diagramas esenciales; el texto extraído por sí solo no basta para reconstruirlos ni para evaluar una respuesta.
+Cada ficha presenta el mandato conocido, explica qué conceptos se trabajan y señala lo que la evidencia permite afirmar. Los PDF son entregas académicas; sus nombres anteriores indicaban que algunas estaban solucionadas, pero ese rótulo no reemplaza una revisión de cada respuesta. No se afirma que hayan sido validadas de forma independiente ni que sus calificaciones estén verificadas.
 
-## Criterio de publicación de fuentes
+La Práctica 3 se documenta con una síntesis del mandato registrada en el mapa anterior y en el inventario. No se encontró el archivo original ni la entrega; por eso la ficha diferencia lo confirmado de lo que queda pendiente.
 
-El inventario distingue programa, enunciados, apuntes, referencias y entregas. Las fuentes de terceros se describen por tema y procedencia general, sin redistribuir sus archivos completos. Las entregas escaneadas se mantienen como material académico del autor; una entrega no se presenta como solución verificada hasta completar su revisión.
+## Materiales de apoyo
 
-[Inventario de fuentes y límites](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) · [Volver a la materia](README.md)
+Se identificaron apuntes sobre análisis de algoritmos, modelo RAM, recurrencias, árboles, grafos y hashing, además de ejercicios de límites, derivadas y regla de L’Hôpital. Las fuentes de terceros se describen en el [inventario](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md), sin redistribuirlas como archivos completos.
+
+[Volver a la materia](README.md) · [Volver al repositorio](../README.md)
