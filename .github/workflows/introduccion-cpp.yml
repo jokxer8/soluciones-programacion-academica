@@ -19,6 +19,6 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - name: Compilar y probar los cinco programas
+      - name: Compilar y probar los siete programas
         shell: pwsh
         run: ./01-introduccion-programacion/tests/Run-Tests.ps1
