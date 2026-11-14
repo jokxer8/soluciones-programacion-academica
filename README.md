@@ -40,8 +40,8 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 
 | Área | Descripción | Estado |
 |---|---|---|
-| [00 - Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales) | Representación de datos, C, ensamblador FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Incorporado y documentado |
-| [01 - Introducción a la Programación](01-introduccion-programacion) | Primeros algoritmos, diagramas, C++, ciclos y búsqueda de texto; siete actividades documentadas. | Incorporado y documentado |
+| [00 - Fundamentos de Sistema Computacionales](00-fundamentos-sistemas-computacionales) | Representación de datos, C, ensamblador FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; asignación 1 no realizada y documentada |
+| [01 - Introducción a la Programación](01-introduccion-programacion) | Primeros algoritmos, diagramas, C++, ciclos y búsqueda de texto; siete actividades y dos soluciones nuevas del parcial. | Completado; alcance y verificación documentados |
 | [02 - Fundamentos de Programación](02-fundamentos-programacion) | Ejercicios de entrada y salida de datos, variables, condicionales, ciclos, arreglos, cadenas, métodos y validaciones. | Completado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Ejercicios con clases, objetos, constructores, encapsulación, composición, herencia, clases abstractas, polimorfismo, archivos y serialización. | Completado |
 | [04 - Diseño y Análisis de Algoritmos](04-diseno-y-analisis-de-algoritmos) | Ejercicios de recursividad, búsqueda, ordenamiento, programación dinámica, grafos implícitos, matrices y análisis de complejidad. | Completado |
@@ -260,8 +260,8 @@ Los estados describen la organización de la evidencia disponible. Cada materia 
 
 Actualmente están organizadas las secciones de:
 
-- Fundamentos de Sistema Computacionales (evidencia disponible incorporada y documentada).
-- Introducción a la Programación.
+- Fundamentos de Sistema Computacionales (completado dentro de la evidencia disponible; asignación 1 no realizada y documentada).
+- Introducción a la Programación (incluye soluciones nuevas para los dos problemas del primer parcial).
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
 - Diseño y Análisis de Algoritmos.
