@@ -4,28 +4,30 @@
 
 ## Propósito
 
-Traducir la estructura de una llamada recursiva a una recurrencia que permita estudiar el coste del algoritmo; sirve de puente entre el análisis asintótico y las técnicas de la Práctica 4.
+Analizar cómo el tamaño del problema y las llamadas recursivas determinan el tiempo y el espacio que utiliza un algoritmo. La actividad conecta el análisis asintótico de las prácticas anteriores con las técnicas de recurrencias de la Práctica 4.
 
-## Mandato
+## Mandato localizado
 
-La síntesis disponible indica analizar algoritmos recursivos, identificar el tamaño de entrada y la operación básica, estudiar los casos y formular la relación de recurrencia.
+La síntesis disponible indica analizar algoritmos recursivos, identificar el tamaño de entrada y la operación básica, estudiar los casos y formular la relación de recurrencia. No se localizó el enunciado original, por lo que esta descripción no pretende reproducir su redacción literal ni sus ejercicios específicos.
 
-## Qué se trabaja
+## Desarrollo didáctico complementario
 
-El mandato se reconstruye como resumen a partir del mapa e inventario de la materia. No se encontró el enunciado original ni una entrega.
+El archivo [desarrollo.md](desarrollo.md) contiene una resolución explicativa elaborada para completar la documentación: suma recursiva, búsqueda binaria y Fibonacci ingenuo. Cada ejemplo identifica la recurrencia, el caso base, la operación básica y las complejidades temporal y espacial.
 
-## Qué aporta esta actividad
+**Importante:** este desarrollo es material complementario creado para este repositorio; no es una entrega original del estudiante, no reemplaza el documento de la maestra y no se presenta como evidencia de que la práctica se entregó o recibió calificación.
 
-Traducir la estructura de una llamada recursiva a una recurrencia que permita estudiar el coste del algoritmo; sirve de puente entre el análisis asintótico y las técnicas de la Práctica 4. El aprendizaje esperado es razonar sobre el método y justificar el resultado, no solo registrar una respuesta. Esta ficha enlaza el material disponible y señala sus límites para que se entienda qué permite comprobar.
+## Resultado de aprendizaje
 
-## Entrega
+Al terminar el desarrollo se distingue entre:
 
-**No localizada.** La ficha registra el mandato disponible; no contiene una entrega ni reemplaza el enunciado original.
+- una llamada recursiva que reduce el problema en una unidad;
+- una llamada que reduce el tamaño por un factor;
+- varias llamadas recursivas por nivel;
+- tiempo de ejecución y espacio de la pila;
+- mejor caso y peor caso cuando el algoritmo puede terminar antes.
 
-## Estado de revisión
+## Estado de la práctica
 
-No hay PDF de entrega en la carpeta. La redacción literal, los ejercicios concretos y los criterios de evaluación siguen pendientes de confirmar.
+**Sin entrega original localizada.** La materia se presenta como completada dentro del alcance documental publicado, dejando explícita esta ausencia. La ficha y el desarrollo complementario permiten entender el tema sin atribuir al estudiante una entrega que no presentó.
 
-La carpeta documenta el tema y la evidencia localizada. No se dispone aquí de una comprobación independiente de cada paso ni de la calificación de la actividad.
-
-[Volver al índice de prácticas](../MATERIALES.md) · [Volver a la materia](../README.md)
+[Leer el desarrollo complementario](desarrollo.md) · [Volver al índice de prácticas](../MATERIALES.md) · [Volver a la materia](../README.md)
