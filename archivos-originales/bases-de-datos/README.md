@@ -7,7 +7,9 @@
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 
-</div>![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
+</div>
+
+![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
 Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos utilizadas para preparar la [sección de la asignatura](../../06-bases-de-datos/README.md).
 
