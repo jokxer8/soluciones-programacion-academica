@@ -2,10 +2,9 @@
 
 [Inicio](../README.md) · **Materia 00** · [Materia 01: Fundamentos de Programación →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
 
-[Inicio](../README.md) · [← Materia 00](../02-fundamentos-sistemas-computacionales) · **Materia 01** · [Materia 02 →](../01-fundamentos-programacion) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
-![Materia](https://img.shields.io/badge/Materia-Introducción%20a%20la%20Programación-green)
+![Materia](https://img.shields.io/badge/Materia-Introducción%20a%20la%20Algoritmia-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado%20con%20alcance%20documentado-brightgreen)
 
 En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos, dibujar diagramas de flujo y convertirlos en programas C++. Los documentos de la asignatura utilizan también el nombre «Introducción a la Algoritmia», ICC-101. La ubico antes de Fundamentos de Programación para seguir la progresión de mis estudios.

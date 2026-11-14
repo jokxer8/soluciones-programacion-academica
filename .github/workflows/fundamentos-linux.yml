@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - '00-fundamentos-sistemas-computacionales/c-y-ensamblador/**'
-      - '00-fundamentos-sistemas-computacionales/tests/compare-linux.py'
+      - '02-fundamentos-sistemas-computacionales/c-y-ensamblador/**'
+      - '02-fundamentos-sistemas-computacionales/tests/compare-linux.py'
       - '.github/workflows/fundamentos-linux.yml'
   workflow_dispatch:
 
@@ -23,4 +23,4 @@ jobs:
       - name: Preparar GCC y FASM
         run: sudo apt-get update && sudo apt-get install -y gcc fasm
       - name: Compilar y comparar los doce pares con pipe y terminal
-        run: python3 00-fundamentos-sistemas-computacionales/tests/compare-linux.py
+        run: python3 02-fundamentos-sistemas-computacionales/tests/compare-linux.py

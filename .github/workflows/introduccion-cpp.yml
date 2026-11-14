@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - '01-introduccion-programacion/**'
+      - '00-introduccion-a-la-algoritmia/**'
       - '.github/workflows/introduccion-cpp.yml'
   workflow_dispatch:
 
@@ -21,4 +21,4 @@ jobs:
           persist-credentials: false
       - name: Compilar y probar los siete programas
         shell: pwsh
-        run: ./01-introduccion-programacion/tests/Run-Tests.ps1
+        run: ./00-introduccion-a-la-algoritmia/tests/Run-Tests.ps1

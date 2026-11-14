@@ -2,7 +2,6 @@
 
 [Inicio](../README.md) · [← Materia 02: Fundamentos de Sistemas Computacionales](../02-fundamentos-sistemas-computacionales) · **Materia 03** · [Materia 04: Algoritmo Clásico y Estructura de Datos →](../04-algoritmo-clasico-y-estructura-de-datos) · [Pendientes](../PENDIENTES.md)
 
-[Inicio](../README.md) · [← Materia 02](../01-fundamentos-programacion) · **Materia 03** · [Materia 04 →](../05-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Nivel](https://img.shields.io/badge/Nivel-Intermedio%20a%20Avanzado-orange)
