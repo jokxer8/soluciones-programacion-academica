@@ -8,7 +8,7 @@ El índice contiene las materias 00–15 en el orden académico. Siete materias 
 
 | Posición | Materia | Estado |
 |---:|---|---|
-| 04 | [Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Programa, prácticas 1–9, proyectos y apuntes revisados; las soluciones publicables y su validación siguen pendientes |
+| 04 | [Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Entregas PDF publicadas para las prácticas 1, 2 y 4–9, ejercicios complementarios y dos proyectos; falta publicar la práctica 3 y revisar el contenido antes de marcar soluciones como verificadas |
 
 ## Materias pendientes de contenido
 

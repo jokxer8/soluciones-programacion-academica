@@ -17,9 +17,9 @@ Se mantienen títulos Markdown, tablas comparables, bloques de código con lengu
 
 ## Cobertura y redacción
 
-Se revisaron las **46 actividades**: 6 en la materia 00, 7 en 01, 5 en 02, 5 en 03, 6 en 04, 6 en 05 y 11 en 06. Las 16 actividades de 02–04 incorporan ahora `desarrollo.md`, elaborado a partir de su análisis existente. Las 46 tienen guía de desarrollo y navegación común. Los ejemplos, explicaciones y código de 02–05 se conservan.
+Las carpetas con actividades mantienen una navegación y una presentación común, con tablas e insignias cuando ayudan a recorrer el material. Los índices reflejan los archivos presentes y distinguen con claridad entre enunciados, entregas, soluciones documentadas y resultados ejecutados.
 
-La revisión visual/documental no equivale a ejecutar de nuevo todos los ejercicios. Los resultados comprobados siguen ligados a sus informes; la mejora de contraseñas del hotel tiene pruebas propias.
+La revisión visual y documental no equivale a ejecutar de nuevo todos los ejercicios. Los resultados comprobados siguen ligados a sus informes; la mejora de contraseñas del hotel tiene pruebas propias. La materia 04 registra por separado las entregas disponibles, el archivo de práctica que falta y las actividades que todavía no han pasado una validación independiente.
 
 [Inicio](README.md) · [Pendientes](PENDIENTES.md)
 

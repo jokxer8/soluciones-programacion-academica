@@ -44,7 +44,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [01 - Fundamentos de Programación](01-fundamentos-programacion) | Lectura de datos, variables, condicionales, ciclos, arreglos, cadenas y métodos. | Completado |
 | [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; el alcance del documento `Asignacion 1.pdf` está documentado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
-| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Programa ICC-211-T, prácticas, proyectos y materiales clasificados; soluciones individuales aún por documentar y validar. | En documentación |
+| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Programa ICC-211-T, ocho entregas de prácticas, ejercicios complementarios y dos proyectos; la práctica 3 no está publicada y las entregas no tienen validación independiente. | En revisión |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
@@ -147,7 +147,7 @@ Los cinco programas originales C++ cuentan con **32 casos correctos y 0 fallidos
 | [Programa y actividades](04-algoritmo-clasico-y-estructura-de-datos) | ICC-211-T: análisis asintótico, recurrencias, árboles, tablas hash y grafos; incluye el mapa de prácticas y proyectos disponibles. |
 | [Mapa de materiales](04-algoritmo-clasico-y-estructura-de-datos/MATERIALES.md) | Relaciona prácticas 1–9, proyectos parciales y final, apuntes y límites de la evidencia. |
 
-La carpeta ya tiene fuentes organizadas; el estado distingue los enunciados revisados de las soluciones que todavía requieren documentación y validación.
+El índice enlaza las entregas publicadas con nombres uniformes. Falta localizar o incorporar la práctica 3; los PDF se conservan como entregas académicas y no se presentan como soluciones técnicamente verificadas.
 
 ---
 

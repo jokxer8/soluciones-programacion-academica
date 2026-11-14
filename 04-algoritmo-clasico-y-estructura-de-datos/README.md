@@ -3,70 +3,52 @@
 [Inicio](../README.md) · [Materia 03: Programación Orientada a Objetos](../03-programacion-orientada-a-objetos) · **Materia 04** · [Materia 05: Diseño y Análisis de Algoritmos](../05-diseno-y-analisis-de-algoritmos) · [Pendientes](../PENDIENTES.md)
 
 ![Materia](https://img.shields.io/badge/Materia-ICC--211--T-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20documentaci%C3%B3n-yellow)
+![Estado](https://img.shields.io/badge/Estado-En%20revisi%C3%B3n-yellow)
 
-Esta materia corresponde a **ICC-211-T Algoritmos Clásicos y Estructuras de Datos**, según el programa de la PUCMM. La carpeta reúne el programa oficial, notas de clase, ejercicios de práctica, evaluaciones y documentos de apoyo. El nombre de este encabezado sigue la denominación oficial del programa; el directorio conserva su ruta ya establecida en el portafolio.
-
----
+Esta sección corresponde a **ICC-211-T Algoritmos Clásicos y Estructuras de Datos**, según el programa de PUCMM. Reúne el temario, las entregas de prácticas y proyectos que están publicadas y un mapa de los materiales revisados.
 
 ## Propósito
 
-Documentar el estudio de algoritmos clásicos y estructuras de datos, vinculando el análisis de eficiencia con la selección e implementación de estructuras adecuadas. El material se organiza según el programa de la asignatura y los nombres publicados para las prácticas y proyectos.
+Organizar las actividades según el programa y conservar una distinción clara entre enunciados, entregas personales, material de apoyo y soluciones verificadas. Los nombres de los PDF de entrega siguen ahora un formato uniforme; los títulos académicos originales se explican en el índice de materiales.
 
 ## Programa de la asignatura
 
-El programa consultado identifica estos cinco bloques:
-
-| Unidad | Contenidos |
+| Unidad | Contenidos principales |
 |---|---|
-| I. Análisis de algoritmos | Crecimiento de funciones, notaciones asintóticas, modelo RAM y cálculo del tiempo de ejecución |
-| II. Análisis de recurrencias | Tipos de recurrencia, sustitución, árbol de recursión y teorema maestro |
-| III. Árboles | Propiedades, árboles binarios de búsqueda (BST), AVL, rojo-negro, B, de segmentos y Fenwick |
-| IV. Tablas de hash | Diccionarios, acceso directo, funciones hash, colisiones, encadenamiento, sondeo lineal y cuadrático, hashing doble |
-| V. Grafos | Representación, BFS y DFS, caminos mínimos, Dijkstra, Bellman-Ford, Floyd-Warshall, Prim, Kruskal, ordenamiento topológico y componentes fuertemente conectados |
+| I. Análisis de algoritmos | Crecimiento de funciones, notaciones asintóticas, modelo RAM y análisis de tiempo |
+| II. Análisis de recurrencias | Sustitución, árbol de recursión y teorema maestro |
+| III. Árboles | Árboles binarios de búsqueda, recorridos, AVL, rojo-negro, B, de segmentos y Fenwick |
+| IV. Tablas hash | Funciones hash, colisiones, encadenamiento, sondeo y hashing doble |
+| V. Grafos | BFS, DFS, caminos mínimos, árboles de expansión mínima y otros algoritmos del programa |
 
-El programa indica como prerrequisitos **MAT-134-T** e **ICC-104-T**, y señala **ICC-212-T Diseño y Análisis de Algoritmos** como continuación de la secuencia.
+## Prácticas y entregas publicadas
 
-## Actividades y proyectos identificados
+| Actividad | Entrega publicada | Alcance descrito |
+|---|---|---|
+| Práctica 1 | [PDF](practica-01.pdf) | Archivo de entrega identificado como ejercicios 1. |
+| Práctica 2 | [PDF](practica-02.pdf) | Entrega de la clase práctica 2. |
+| Práctica 3 | **No publicada** | No hay un PDF de entrega de esta práctica en la carpeta actual. |
+| Práctica 4 | [PDF](practica-04.pdf) | Entrega titulada como solucionada en el archivo de origen. |
+| Práctica 5 | [PDF](practica-05.pdf) | Entrega titulada como solucionada en el archivo de origen. |
+| Práctica 6 | [PDF](practica-06.pdf) | Entrega titulada como solucionada en el archivo de origen. |
+| Práctica 7 | [PDF](practica-07.pdf) | Entrega titulada como solucionada en el archivo de origen. |
+| Práctica 8 | [PDF](practica-08.pdf) | Entrega titulada como solucionada en el archivo de origen. |
+| Práctica 9 | [PDF](practica-09.pdf) | Entrega titulada como solucionada en el archivo de origen. |
 
-Los títulos conservan la nomenclatura visible en las fuentes disponibles. La descripción resume el contenido revisado; no significa que el enunciado tenga una solución publicada o validada.
+Además, la carpeta contiene [ejercicios complementarios del Tema 1](ejercicios-tema-01.pdf), el [proyecto del segundo parcial](proyecto-segundo-parcial.pdf) y el [proyecto final](proyecto-final.pdf).
 
-| Actividad | Contenido identificado |
-|---|---|
-| [Clase Práctica 1](MATERIALES.md#clase-práctica-1) | Límites, crecimiento asintótico y análisis de fragmentos de código |
-| [Clase Práctica 2](MATERIALES.md#clase-práctica-2) | Demostraciones de pertenencia a O, Ω y Θ y comparación de funciones |
-| [Ejercicios Tema 1](MATERIALES.md#ejercicios-tema-1) | Afirmaciones verdadero/falso sobre notación asintótica |
-| [Clase Práctica 3](MATERIALES.md#clase-práctica-3) | Análisis de algoritmos recursivos y formulación de recurrencias |
-| [Clase Práctica 4](MATERIALES.md#clase-práctica-4) | Árboles de recurrencia, sustitución y teorema maestro |
-| [Clase Práctica 5](MATERIALES.md#clase-práctica-5) | Árboles binarios de búsqueda, recorridos, balanceo AVL y árboles rojo-negro |
-| [Clase Práctica 6](MATERIALES.md#clase-práctica-6) | Caminos mínimos con Dijkstra, Bellman-Ford y Floyd-Warshall |
-| [Clase Práctica 7](MATERIALES.md#clase-práctica-7) | Árboles de expansión mínima mediante Prim y Kruskal |
-| [Clase Práctica 8](MATERIALES.md#clase-práctica-8) | Funciones hash, colisiones, direccionamiento abierto y hashing extensible |
-| [Clase Práctica 9](MATERIALES.md#clase-práctica-9) | Rehashing con encadenamiento, sondeo lineal, cuadrático y doble hashing |
-| [Proyecto 2do Parcial](MATERIALES.md#proyecto-2do-parcial) | Recurrencias, recorridos de árboles, construcción de BST y rebalanceo AVL |
-| [Proyecto final](MATERIALES.md#proyecto-final) | BST, rehashing, caminos mínimos y árboles de expansión mínima |
+## Cómo interpretar estas entregas
 
-## Fuentes originales
+Los PDF son entregas académicas disponibles en el repositorio. La denominación de origen «solucionada» se conserva como contexto en el [mapa de materiales](MATERIALES.md); por sí sola no acredita una revisión técnica independiente. No se publican aquí implementaciones de código ni resultados de pruebas ejecutadas para estas actividades.
 
-El [archivo de ICC-211-T](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/README.md) explica qué documentos de origen están disponibles, cómo se clasificaron y qué limitaciones se aplican a su publicación. El [inventario](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) distingue enunciados, entregas, apuntes y referencias.
+El programa también enumera contenidos para los cuales el inventario no identifica una práctica individual, entre ellos BFS/DFS, ordenamiento topológico, componentes fuertemente conectados, árboles B, de segmentos y Fenwick. Su inclusión en el temario no implica que estén resueltos en esta sección.
 
-## Material complementario
+## Materiales y trazabilidad
 
-Los apuntes de clase amplían las unidades de análisis de algoritmos, modelo RAM, recursividad, árboles, grafos y hashing. La colección también incluye ejercicios de límites, derivadas y regla de L’Hôpital como apoyo matemático. El [mapa de materiales](MATERIALES.md) registra las fuentes, variantes y límites de revisión.
-
-## Organización
-
-```text
-04-algoritmo-clasico-y-estructura-de-datos/
-├── README.md
-├── MATERIALES.md
-└── soluciones y evidencias por incorporar
-```
+El [mapa de materiales](MATERIALES.md) resume los temas de cada práctica, los archivos disponibles, los faltantes y el alcance de la revisión. El [inventario de fuentes](../archivos-originales/algoritmo-clasico-y-estructura-de-datos/INVENTARIO.md) registra los documentos consultados sin redistribuir materiales ajenos completos.
 
 ## Estado de la sección
 
-**En documentación.** Se contrastó la denominación y el temario con el programa ICC-211-T, y se clasificaron las prácticas 1–9, dos proyectos, los apuntes y los materiales complementarios disponibles. La colección incluye enunciados y algunas entregas manuscritas escaneadas; estas últimas no se han convertido aquí en soluciones verificadas. Los enunciados documentados no se presentan como trabajos resueltos.
+**En revisión.** Los nombres de los PDF se uniformaron y las entregas disponibles quedaron enlazadas. Para cerrar el inventario de prácticas falta la entrega de la **Práctica 3**. Además, las entregas y proyectos aún requieren una revisión de contenido y, cuando aplique, validación de las respuestas antes de describirlos como soluciones comprobadas.
 
-Esta sección podrá pasar a completada cuando las soluciones que se incorporen estén identificadas con sus títulos publicados, explicadas y verificadas dentro del alcance que se registre.
-
-[Mapa de materiales y límites de la evidencia](MATERIALES.md) · [Volver al repositorio](../README.md)
+[Mapa de materiales y alcance de revisión](MATERIALES.md) · [Volver al repositorio](../README.md)
