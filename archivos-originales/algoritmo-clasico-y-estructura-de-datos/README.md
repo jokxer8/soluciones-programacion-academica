@@ -7,7 +7,9 @@
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 
-</div>![Materia](https://img.shields.io/badge/Materia-ICC--211--T-blue)
+</div>
+
+![Materia](https://img.shields.io/badge/Materia-ICC--211--T-blue)
 ![Estado](https://img.shields.io/badge/Estado-Organizado-yellow)
 
 Esta sección mantiene la trazabilidad del material utilizado para documentar [ICC-211-T Algoritmos Clásicos y Estructuras de Datos](../../04-algoritmo-clasico-y-estructura-de-datos/README.md).
