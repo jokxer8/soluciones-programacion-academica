@@ -7,7 +7,9 @@
 
 ![Portafolio académico de Kelvin César Del Castillo Torres](assets/portafolio-academico.svg)
 
-</div>![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
+</div>
+
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
