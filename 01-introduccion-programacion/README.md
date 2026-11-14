@@ -4,7 +4,7 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 ![Materia](https://img.shields.io/badge/Materia-Introducción%20a%20la%20Programación-green)
-![Estado](https://img.shields.io/badge/Estado-Incorporado%20y%20documentado-brightgreen)
+![Estado](https://img.shields.io/badge/Estado-Completado%20con%20alcance%20documentado-brightgreen)
 
 En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos, dibujar diagramas de flujo y convertirlos en programas C++. Los documentos de la asignatura utilizan también el nombre «Introducción a la Algoritmia», ICC-101. La ubico antes de Fundamentos de Programación para seguir la progresión de mis estudios.
 
@@ -24,13 +24,13 @@ Relacionar las entradas de un problema con los pasos necesarios para obtener una
 | [Búsqueda de coincidencias en un texto](busqueda-coincidencias-texto) | Recorrer las apariciones de una cadena mediante std::string::find. | C++ y documentación |
 | [Asignaciones y diagramas secuenciales](ejercicios-secuenciales) | Seguir cómo cambia el valor de una variable después de cada instrucción. | C++ y documentación |
 | [Fibonacci: ciclos y corrida manual](fibonacci-traza) | Relacionar la actualización de variables con la secuencia generada. | C++ y documentación |
-| [Primer parcial: comisiones y calificaciones](enunciados-primer-parcial) | Identificar entradas, condiciones y límites a partir de un enunciado. | Documentación |
+| [Primer parcial: comisiones y calificaciones](enunciados-primer-parcial) | Dos soluciones C++ nuevas para comisiones y clasificación de calificaciones; se aclaran los límites solapados. | C++ y documentación |
 
 ---
 
 ## Organización
 
-Cada actividad contiene un README con el planteamiento y sus documentos, y un desarrollo con el razonamiento y ejemplos. Cinco incluyen un archivo independiente `solution.cpp`. Los diagramas, textos y entregas grupales se enlazan desde [documentos de apoyo](../archivos-originales/introduccion-programacion/README.md).
+Cada actividad contiene un README con el planteamiento y sus documentos, y un desarrollo con el razonamiento y ejemplos. Cinco actividades tienen `solution.cpp`; el primer parcial agrega dos programas independientes (`solution-comisiones.cpp` y `solution-calificaciones.cpp`), identificados como elaboraciones nuevas. Los diagramas, textos y entregas grupales se enlazan desde [documentos de apoyo](../archivos-originales/introduccion-programacion/README.md).
 
 ## Estructura de la sección
 
@@ -64,12 +64,12 @@ Para compilar una solución con GCC: `g++ -std=c++17 -Wall -Wextra -pedantic sol
 
 ## Estado y resultados
 
-Los cinco programas pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711).
+Los cinco programas del conjunto principal pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). Los dos programas nuevos del primer parcial no están incluidos en ese conteo histórico de 32.
 
 El triángulo también cuenta con [ejecución real en RAPTOR](triangulo-rectangulo/PRUEBAS-RAPTOR.md): se documentó el fallo de la entrega original y se añadió un diagrama corregido con **siete casos numéricos comprobados**. El informe explica su relación con el pseudocódigo y el C++, sin confundir las versiones ni sus pruebas.
 
 
-La sección reúne siete actividades, cinco programas preparados para compilar y documentos de lectura, diagramación y evaluación. Las diferencias entre entregas y versiones compilables están descritas en [VALIDACION.md](VALIDACION.md). El primer parcial se conserva como enunciado sin solución entregada disponible. El informe de resultados generales de la clase, los libros y los videos docentes no se publican como evidencia de trabajo propio.
+La sección reúne siete actividades, siete programas C++ independientes y documentos de lectura, diagramación y evaluación. Las diferencias entre entregas y versiones compilables están descritas en [VALIDACION.md](VALIDACION.md). El primer parcial conserva su enunciado original y ahora incluye dos soluciones nuevas, no atribuibles a la entrega histórica. El informe de resultados generales de la clase, los libros y los videos docentes no se publican como evidencia de trabajo propio.
 
 [Validación](VALIDACION.md) · [Inventario](../archivos-originales/introduccion-programacion/INVENTARIO.md) · [Guía de lectura](../GUIA-DE-LECTURA.md)
 
