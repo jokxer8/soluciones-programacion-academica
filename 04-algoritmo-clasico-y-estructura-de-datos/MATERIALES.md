@@ -36,7 +36,7 @@ Pasos para analizar algoritmos recursivos, identificar el tamaño de entrada y o
 
 ### Clase Práctica 4
 
-Recurrencias resueltas mediante árbol de recursión y sustitución, seguidas de ejercicios del teorema maestro. Hay un PDF de texto y una copia escaneada.
+Ejercicios para resolver recurrencias mediante árbol de recursión y sustitución, seguidos de problemas del teorema maestro. Hay un PDF de texto y una copia escaneada.
 
 ### Clase Práctica 5
 
@@ -73,6 +73,29 @@ El enunciado incluye reconstrucción de BST desde recorridos, rehashing con elim
 Se localizaron presentaciones de análisis de algoritmos, coste y modelo RAM, análisis recursivo, árboles, grafos y tablas hash. Los documentos escritos complementan complejidad algorítmica y hashing. Estos materiales sirvieron para clasificar y contrastar el contenido del curso.
 
 También hay documentos de ejercicios de límites, leyes de límites, derivadas y regla de L’Hôpital. Se registran como apoyo matemático, no como unidades adicionales del programa ICC-211-T.
+
+## Inventario de fuentes consultadas
+
+### Programa, apuntes y referencias
+
+- Programa oficial: `ICC-211-T Algoritmos Clásicos y Estructuras de Datos.docx`.
+- Presentaciones: `Análisis coste de algoritmos modelo RAM.pptx`, `Análisis coste de algoritmos.pptx` (más de una variante), `Análisis de algoritmia.pptx`, `Analisis_de_Algoritmos.pptx`, `Análisis de algoritmos Recursivos.pptx`, `Análisis de algoritmos Recursivos II.pptx`, `Árboles.pptx`, `Grafos.pptx`, `Grafos II.pptx`, `Hash 2.pptx` y `Tabla Hash.pptx`.
+- Referencias escritas: `Complejidad de los algoritmos.pdf`, `TABLA_DE_HASH.pdf` y `Hashing - Técnicas y Hash para la Proteccion de Datos.pdf`.
+
+### Enunciados y ejercicios
+
+- Análisis asintótico: `Ejercicios Clase Práctica 1.docx/.pdf`, `Clase Práctica 2.docx/.pdf` y `Ejercicios Tema 1.docx/.pdf).
+- Recurrencias y algoritmos recursivos: `Clase Practica3.pdf` y `Clase Práctica 4.pdf`.
+- Árboles: `Clase Práctica 5.pdf`.
+- Grafos: `Ejercicios Clase Práctica 6.pdf` y `Ejercicios Clase Práctica 7.pdf`.
+- Hashing: `Ejercicios Clase Práctica 8.pdf`, `Ejercicios Clase Práctica 9.pdf` y `Practica 8.pdf`.
+- Proyectos: `Proyecto 2do Parcial.pdf` y `Proyecto final.pdf`.
+
+### Apoyo matemático y entregas locales
+
+- Apoyo de límites y cálculo: `Ejercicios de limites.docx/.pdf`, `Ley de los límites.docx`, `Derivadas.docx` y `LHöpital.docx).
+- La carpeta contiene copias escaneadas de prácticas y entregas personales para algunos de los ejercicios y proyectos anteriores. También aparecen archivos de límites y análisis con respuestas manuscritas.
+- Los documentos duplicados en la subcarpeta interior, incluidas copias exactas, se tomaron como una sola fuente al hacer el mapa. Las variantes de las diapositivas de coste se tuvieron en cuenta como versiones del mismo bloque temático.
 
 ## Variantes, duplicados y límites
 
