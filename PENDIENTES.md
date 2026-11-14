@@ -36,7 +36,7 @@ En el hotel, el recorrido visual es una comprobación adicional al alcance ya co
 
 | Área | Posible ampliación |
 |---|---|
-| 01 · Entrada de los programas C++ | Añadir casos con decimales cuando se espera un entero, caracteres sobrantes y otras combinaciones de entrada inválida. Los 32 casos actuales cubren las entradas enumeradas en el [informe](01-introduccion-programacion/VALIDACION.md). |
+| 01 · Entrada de los programas C++ | Ampliar la cobertura de entrada inválida en los programas originales. Los 32 casos de esos cinco programas cubren lo registrado en el [informe](01-introduccion-programacion/VALIDACION.md); el parcial ya tiene sus 21 casos nuevos. |
 | 01 · Búsqueda de texto | Crear, como variante separada, búsqueda por palabras completas, reglas para mayúsculas y normalización de texto Unicode. La versión actual cuenta subcadenas exactas y superpuestas. |
 | 01 · Diagramas secuenciales | Añadir implementaciones identificadas como nuevas de 3.10–3.12. Actualmente tienen diagrama y traza manual; solo 3.9 dispone de código entregado. |
 | 02–05 · Programación, objetos, algoritmos y SML | Reunir en informes propios las compilaciones y ejecuciones reproducibles de los ejercicios; estas materias todavía no tienen un informe conjunto de validación como 00, 01 y 06. |
