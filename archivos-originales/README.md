@@ -7,7 +7,9 @@
 
 ![Tipo](https://img.shields.io/badge/Tipo-Respaldo%20Acad%C3%A9mico-lightgrey)
 
-</div>![Formato](https://img.shields.io/badge/Formato-M%C3%BAltiples%20formatos-blue)
+</div>
+
+![Formato](https://img.shields.io/badge/Formato-M%C3%BAltiples%20formatos-blue)
 ![Estado](https://img.shields.io/badge/Estado-Conservado-brightgreen)
 
 Esta carpeta conserva los archivos originales utilizados como base académica para construir, organizar y documentar las soluciones del repositorio.
