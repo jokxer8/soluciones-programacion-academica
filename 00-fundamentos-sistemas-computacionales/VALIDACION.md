@@ -55,3 +55,7 @@ La ejecución FASM ELF64 en Linux está comprobada para los casos de [PRUEBAS-LI
 La asignación 1 solo aporta enunciado. Los libros y módulos Huawei no prueban autoría, aprobación ni certificación y no se redistribuyen. Los resultados del hotel pertenecen a otra materia y siguen documentados en su sección.
 
 [Materia](README.md) · [Auditoría](AUDITORIA.md)
+
+## Cierre de alcance
+
+La asignación 1 permanece **no realizada**: el conjunto disponible conserva el enunciado, pero no incluye respuestas ni material suficiente para reconstruirlas con trazabilidad. Esta ausencia queda registrada en [Representación de datos](fundamentos-representacion-datos/README.md). El estado de la materia se cierra como completado respecto de la evidencia disponible; no implica que esa asignación esté resuelta.
