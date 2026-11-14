@@ -7,7 +7,7 @@
 ![Materia](https://img.shields.io/badge/Materia-Introducción%20a%20la%20Algoritmia-green)
 ![Estado](https://img.shields.io/badge/Estado-Completado%20con%20alcance%20documentado-brightgreen)
 
-En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos, dibujar diagramas de flujo y convertirlos en programas C++. Los documentos de la asignatura utilizan también el nombre «Introducción a la Algoritmia», ICC-101. La ubico antes de Fundamentos de Programación para seguir la progresión de mis estudios.
+En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos, dibujar diagramas de flujo y convertirlos en programas C++. En el programa de estudios de la PUCMM, la asignatura se denomina «Introducción a la Algoritmia» (ICC-101). La ubico antes de Fundamentos de Programación para seguir la progresión de mis estudios.
 
 ---
 
