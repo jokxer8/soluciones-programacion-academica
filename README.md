@@ -12,7 +12,7 @@
 
 Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
-El portafolio reúne **siete materias con contenido y 46 actividades documentadas**, además de materias planificadas en estado pendiente.: desde los primeros algoritmos hasta la programación orientada a objetos, la programación funcional y las aplicaciones con bases de datos. Explico cómo abordé cada problema, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales.
+El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente: desde los primeros algoritmos hasta las estructuras de datos, la programación orientada a objetos, la programación funcional y las aplicaciones con bases de datos. Explico cómo abordé cada problema, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales.
 
 ---
 
@@ -22,7 +22,7 @@ El portafolio reúne **siete materias con contenido y 46 actividades documentada
 
 **Ruta de aprendizaje**
 
-[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmo Clásico y Estructura de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
+[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
@@ -44,7 +44,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [01 - Fundamentos de Programación](01-fundamentos-programacion) | Lectura de datos, variables, condicionales, ciclos, arreglos, cadenas y métodos. | Completado |
 | [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; el alcance del documento `Asignacion 1.pdf` está documentado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
-| [04 - Algoritmo Clásico y Estructura de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Espacio reservado para actividades por incorporar. | Pendiente |
+| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Programa ICC-211-T, prácticas, proyectos y materiales clasificados; soluciones individuales aún por documentar y validar. | En documentación |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
@@ -69,7 +69,7 @@ Las carpetas numeradas siguen el orden académico. Las materias sin contenido es
 01-fundamentos-programacion/
 02-fundamentos-sistemas-computacionales/
 03-programacion-orientada-a-objetos/
-04-algoritmo-clasico-y-estructura-de-datos/ (pendiente)
+04-algoritmo-clasico-y-estructura-de-datos/ (materiales organizados; actividades en documentación)
 05-diseno-y-analisis-de-algoritmos/
 06-bases-de-datos/
 07-fundamentos-de-redes/ (pendiente)
@@ -137,6 +137,17 @@ Los cinco programas originales C++ cuentan con **32 casos correctos y 0 fallidos
 | [Agenda de citas POO](03-programacion-orientada-a-objetos/agenda-citas-poo) | Enumeraciones, listas, objetos, validaciones y excepciones |
 | [Avisos con archivo y serialización](03-programacion-orientada-a-objetos/avisos-archivo-serializacion-poo) | Archivos, listas, JSON, serialización y deserialización |
 | [Sistema de nómina con polimorfismo](03-programacion-orientada-a-objetos/sistema-nomina-polimorfismo-poo) | Abstracción, herencia, clases abstractas, sobrescritura y polimorfismo |
+
+---
+
+### Algoritmos Clásicos y Estructuras de Datos
+
+| Material | Alcance |
+|---|---|
+| [Programa y actividades](04-algoritmo-clasico-y-estructura-de-datos) | ICC-211-T: análisis asintótico, recurrencias, árboles, tablas hash y grafos; incluye el mapa de prácticas y proyectos disponibles. |
+| [Mapa de materiales](04-algoritmo-clasico-y-estructura-de-datos/MATERIALES.md) | Relaciona prácticas 1–9, proyectos parciales y final, apuntes y límites de la evidencia. |
+
+La carpeta ya tiene fuentes organizadas; el estado distingue los enunciados revisados de las soluciones que todavía requieren documentación y validación.
 
 ---
 
@@ -281,6 +292,7 @@ Actualmente están organizadas las secciones de:
 - Introducción a la Algoritmia (incluye soluciones nuevas para los dos problemas del primer parcial).
 - Fundamentos de Programación.
 - Programación Orientada a Objetos.
+- Algoritmos Clásicos y Estructuras de Datos (fuentes y actividades clasificadas; soluciones pendientes de documentar y validar).
 - Diseño y Análisis de Algoritmos.
 - Programación Funcional-SML.
 - Bases de Datos.
