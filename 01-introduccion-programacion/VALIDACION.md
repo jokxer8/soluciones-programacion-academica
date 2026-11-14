@@ -41,3 +41,9 @@ Las pruebas cubren los casos indicados. No incluyen todas las representaciones p
 ## Confirmación en GitHub Actions
 
 La [ejecución de Windows del commit 419155e](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711) compiló los cinco programas y confirmó **32 casos correctos y 0 fallidos**. La [compilación y validación del hotel](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703), ya ubicado en la materia 06, también terminó correctamente con **79 pruebas SQL correctas y 0 fallidas**.
+
+## Primer parcial incorporado después del registro histórico
+
+La batería se amplió para compilar los dos programas nuevos del primer parcial con MSVC y opciones `/W4 /WX`. Incluye **8 casos de comisiones** (tasas, límites, ciudad inválida, volumen negativo y entrada no numérica) y **13 casos de calificaciones** (los cinco intervalos y sus extremos, además de notas inválidas). Los resultados del registro anterior de 32 casos corresponden a los cinco programas originales; no deben confundirse con la nueva cobertura. La ejecución actualizada queda registrada en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/introduccion-cpp.yml).
+
+La letra en 70, 80 y 90 sigue la convención semiabierta descrita en el desarrollo, ya que el enunciado presenta rangos que comparten esos límites. No se afirma que esa convención fuera la de una solución histórica.
