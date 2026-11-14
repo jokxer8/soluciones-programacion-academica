@@ -7,7 +7,7 @@
 
 ## Qué trabajé
 
-Incluyo el enunciado de dos problemas del primer parcial. No se encontró una solución entregada para estos ejercicios; por eso presento el planteamiento y su análisis sin atribuirles una ejecución.
+El enunciado original de los dos problemas se conserva. Como no se encontró una solución entregada, añadí dos elaboraciones nuevas en C++ y las identifico como tales; no se atribuyen a la entrega histórica.
 
 ---
 
@@ -25,7 +25,7 @@ El primer problema calcula una comisión según ciudad y volumen de ventas. Los 
 |---|---|
 | Problema 1 | Código de ciudad y volumen de ventas → importe de comisión. |
 | Problema 2 | Datos descriptivos de asignatura y nota → letra y mensaje. |
-| Material disponible | Enunciado del parcial; no se localizó una solución entregada. |
+| Material disponible | Enunciado original, análisis y dos soluciones nuevas no históricas. |
 | Estado | Análisis documental; sin compilación ni pruebas de estos dos problemas. |
 
 ## Ejemplo y lectura de resultados
@@ -40,7 +40,7 @@ Para Santiago y ventas de 500, corresponde el 5 %: 500×0.05=25.00. Para 501, co
 |---|---|
 | [Enunciado conservado](../../archivos-originales/introduccion-programacion/parcial-1/enunciado.txt) | Texto conservado |
 
-Esta actividad se consulta mediante sus documentos y el análisis; no se añade código para sustituir una entrega que no está disponible.
+Esta actividad incluye el análisis y dos programas nuevos. La solución de comisión utiliza la tasa del intervalo completo; la de calificaciones usa intervalos semiabiertos para que 70, 80 y 90 tengan una sola letra.
 
 ## Archivos de esta carpeta
 
@@ -58,6 +58,6 @@ Leo primero el planteamiento, sigo el desarrollo y consulto los documentos enlaz
 
 ## Estado de la actividad
 
-Documentación y análisis disponibles. Esta actividad no forma parte de los 32 casos ejecutados de C++: su alcance es documental.
+Documentación, análisis y dos soluciones C++ nuevas disponibles. No forman parte de los 32 casos históricos y su verificación automatizada se documenta como pendiente.
 
 [Materia](../README.md) · [Notación](../../GUIA-DE-LECTURA.md) · [Inventario](../../archivos-originales/introduccion-programacion/INVENTARIO.md)
