@@ -3,7 +3,6 @@
 #include <cmath>
 #include <iomanip>
 #include <iostream>
-#include <limits>
 
 int main() {
     int ciudad = 0;
@@ -16,8 +15,12 @@ int main() {
     }
 
     std::cout << "Volumen de ventas: ";
-    if (!(std::cin >> ventas) || !std::isfinite(ventas) || ventas < 0.0 ||
-        std::cin.peek() != '\\n' && std::cin.peek() != EOF) {
+    if (!(std::cin >> ventas) || !std::isfinite(ventas) || ventas < 0.0) {
+        std::cerr << "error\n";
+        return 1;
+    }
+    std::cin >> std::ws;
+    if (!std::cin.eof()) {
         std::cerr << "error\n";
         return 1;
     }
@@ -44,6 +47,6 @@ int main() {
     }
 
     std::cout << "Monto de la comision a pagar: "
-              << std::fixed << std::setprecision(2) << comision << '\\n';
+              << std::fixed << std::setprecision(2) << comision << '\n';
     return 0;
 }
