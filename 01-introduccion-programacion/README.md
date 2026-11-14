@@ -64,7 +64,7 @@ Para compilar una solución con GCC: `g++ -std=c++17 -Wall -Wextra -pedantic sol
 
 ## Estado y resultados
 
-Los cinco programas del conjunto principal pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). Los dos programas nuevos del primer parcial no están incluidos en ese conteo histórico de 32.
+Los cinco programas del conjunto principal pasan **32 casos de prueba, sin fallos**, tanto en Windows local como en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024711). Los dos programas nuevos del primer parcial no están incluidos en ese conteo histórico de 32; la batería ampliada compiló los siete programas y pasó **53 casos con 0 fallidos** en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43595819295).
 
 El triángulo también cuenta con [ejecución real en RAPTOR](triangulo-rectangulo/PRUEBAS-RAPTOR.md): se documentó el fallo de la entrega original y se añadió un diagrama corregido con **siete casos numéricos comprobados**. El informe explica su relación con el pseudocódigo y el C++, sin confundir las versiones ni sus pruebas.
 
