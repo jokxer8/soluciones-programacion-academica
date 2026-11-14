@@ -3,19 +3,15 @@
 
 # Soluciones de Programación Académica (Academic Programming Solutions)
 
-![Jokxer · PORTAFOLIO ACADÉMICO](https://img.shields.io/badge/JOKXER-PORTAFOLIO%20ACAD%C3%89MICO-2563EB?style=for-the-badge&logo=github&logoColor=white)
+### Algoritmos · programación · bases de datos · proyectos
 
-![Portafolio académico de Kelvin César Del Castillo Torres](assets/portafolio-academico.svg)
+![Proyecto](https://img.shields.io/badge/proyecto-portafolio%20acad%C3%A9mico-7C3AED?style=for-the-badge)
+![Estado](https://img.shields.io/badge/estado-en%20expansi%C3%B3n-F59E0B?style=for-the-badge)
+![Visibilidad](https://img.shields.io/badge/repositorio-p%C3%BAblico-059669?style=for-the-badge)
+
+[🧭 Explorar el portafolio](#explorar-el-portafolio)
 
 </div>
-
-![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-C%20%2F%20Ensamblador-blue)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL-lightgrey)
-![Estado](https://img.shields.io/badge/Estado-En%20expansi%C3%B3n-yellow)
-![Tipo](https://img.shields.io/badge/Tipo-Portafolio%20Acad%C3%A9mico-lightgrey)
 
 Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
