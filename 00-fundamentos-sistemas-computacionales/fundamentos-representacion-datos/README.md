@@ -45,7 +45,7 @@ Las notas de teoría, tablas visuales y respuestas manuscritas se presentan junt
 - [Notas de teoría](../../archivos-originales/fundamentos-sistemas-computacionales/notas/teoria.txt).
 - [Tabla visual](../../archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/tabla-de-binarios-octal-y-hexadecimal.png).
 - [Tamaños de memoria](../../archivos-originales/fundamentos-sistemas-computacionales/referencias-visuales/espacio-en-memoria.png).
-- [Asignación 1: enunciado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). No se encontraron respuestas a esta asignación; no se presenta como resuelta.
+- [Asignación 1: enunciado](../../archivos-originales/fundamentos-sistemas-computacionales/documentos/asignacion-1.pdf). La asignación 1 permanece sin resolver: se conserva el enunciado, pero no se encontraron respuestas o material suficiente para reconstruir la solución.
 
 ---
 
@@ -76,7 +76,7 @@ Evidencia enlazada en archivos-originales/:
 
 ## Cómo revisar la actividad
 
-Comenzar por las conversiones de desarrollo.md, contrastarlas con el parcial y consultar las notas como respaldo. La asignación 1 se identifica expresamente como enunciado sin respuestas localizadas. La tabla visual de tamaños se interpreta como LP64; no se extrapola a todos los sistemas de 64 bits.
+Comenzar por las conversiones de desarrollo.md, contrastarlas con el parcial y consultar las notas como respaldo. La asignación 1 se identifica expresamente como actividad no realizada: solo está disponible el enunciado. La tabla visual de tamaños se interpreta como LP64; no se extrapola a todos los sistemas de 64 bits.
 
 ---
 
