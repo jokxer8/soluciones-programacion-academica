@@ -64,12 +64,12 @@ int main() {
         mensaje = "estudiante sobresaliente";
     }
 
-    std::cout << "Nombre estudiante: " << nombre << '\\n'
-              << "Clave asignatura: " << clave << '\\n'
-              << "Seccion: " << seccion << '\\n'
-              << "Descripcion asignatura: " << descripcion << '\\n'
-              << "Calificacion: " << std::fixed << std::setprecision(2) << nota << '\\n'
-              << "Letra: " << letra << '\\n'
-              << "Mensaje: " << mensaje << '\\n';
+    std::cout << "Nombre estudiante: " << nombre << '\n'
+              << "Clave asignatura: " << clave << '\n'
+              << "Seccion: " << seccion << '\n'
+              << "Descripcion asignatura: " << descripcion << '\n'
+              << "Calificacion: " << std::fixed << std::setprecision(2) << nota << '\n'
+              << "Letra: " << letra << '\n'
+              << "Mensaje: " << mensaje << '\n';
     return 0;
 }
