@@ -15,7 +15,7 @@
 
 Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
-El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente. Explico cómo abordé los problemas, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales. Las materias 08 y 10 ya reúnen programas de estudio, evidencias en PDF, documentación de actividades y proyectos, y competencias relacionadas con los trabajos publicados.
+El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente. Explico cómo abordé los problemas, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales. Las materias 08 y 10 reúnen programas de estudio, evidencias, actividades, proyectos y competencias; ambas se consideran completadas dentro del alcance documental publicado.
 
 ---
 
@@ -51,9 +51,9 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
-| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Contenido publicado; alcance documentado |
+| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Completado dentro del alcance documentado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
-| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Contenido publicado; alcance documentado |
+| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado dentro del alcance documentado |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
 | [12 - Programación Web](12-programacion-web) | Materia planificada; contenido pendiente. | Pendiente |
 | [13 - Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Materia planificada; contenido pendiente. | Pendiente |
@@ -303,8 +303,8 @@ Actualmente están organizadas las secciones de:
 - Diseño y Análisis de Algoritmos.
 - Programación Funcional-SML.
 - Bases de Datos.
-- Sistemas Operativos (material, tareas y competencias documentados).
-- Introducción a la Ingeniería de Software (programa, material de apoyo, actividades, proyectos, competencias y recurso de práctica documentados; las evaluaciones se mantienen fuera del portafolio público).
+- Sistemas Operativos (completado dentro del alcance documental publicado: materiales, tareas, proyectos y competencias disponibles organizados).
+- Introducción a la Ingeniería de Software (completada dentro del alcance documental publicado: programa, material de apoyo, actividades, proyectos, competencias y recurso de práctica organizados; las evaluaciones se mantienen fuera del portafolio público).
 
 ---
 
