@@ -50,7 +50,7 @@ El mapa presenta la evidencia hallada; no implica que cada tema tenga una entreg
 
 ## Estado de las evidencias
 
-Se publican los ocho PDF de material de apoyo autorizados, los tres PDF propios vinculados a actividad/proyectos y un simulador HTML. No se incorporaron capturas de actividades; algunas de las revisadas muestran datos de perfil y sesión del equipo. Tampoco se publica el intento de parcial exportado desde la plataforma, que contiene preguntas y respuestas de evaluación junto a datos personales, ni se redistribuyen libros completos de terceros.
+Se publican los ocho PDF de material de apoyo autorizados, los tres PDF propios vinculados a actividad/proyectos y un simulador HTML. No se incorporaron capturas de actividades; algunas de las revisadas muestran datos de perfil y sesión del equipo. El documento de recuperación del primer parcial también se mantiene fuera del portafolio público por corresponder a una evaluación. Tampoco se publica el intento exportado desde la plataforma, que contiene preguntas y respuestas junto a datos personales, ni se redistribuyen libros completos de terceros.
 
 La carpeta local no contiene material de apoyo identificado como unidad 6. El simulador incluye preguntas de RUP para esa unidad y señala que se basan en fases y disciplinas estándar; esa sección debe leerse como recurso de práctica, no como transcripción de una presentación docente.
 
