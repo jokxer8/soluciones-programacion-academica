@@ -12,7 +12,7 @@ Esta matriz conecta los temas estudiados con evidencias localizadas en la carpet
 | Automatización | Explicar el Shell, diferenciar tipos de comandos y plantear scripts para automatizar operaciones en Windows. | [Tarea 4 y proyecto grupal](../actividades/tarea-04/README.md) |
 | Respaldo y cuentas | Describir copias de seguridad, grupos de trabajo y administración de usuarios. | [Tarea 5](../actividades/tarea-05/README.md) · [Tarea 7](../actividades/tarea-07/README.md) |
 | Seguridad | Identificar controles de protección, firewall, antivirus, actualizaciones, cifrado y mantenimiento del sistema. | [Tarea 8](../actividades/tarea-08/README.md) · [Tarea 9](../actividades/tarea-09/README.md) |
-| Diversidad de sistemas | Comparar sistemas operativos móviles, macOS y Linux, además de documentar su instalación virtualizada. | [Tareas 10 y 11](../actividades/tarea-10/README.md) |
+| Diversidad de sistemas y kernel Linux | Comparar sistemas móviles, macOS y Linux; documentar la instalación virtualizada y el trabajo grupal de compilación de un kernel con una llamada al sistema personalizada. | [Tareas 10 y 11](../actividades/tarea-10/README.md) · [Proyecto NEXO Linux](../proyectos/README.md) |
 | Almacenamiento y memoria | Explicar respaldos en Linux, sistemas de archivos, uso de disco y memoria virtual. | [Tareas 12–14](../actividades/tarea-12/README.md) |
 | Administración de servidores | Describir Windows Server, TCP/IP, DNS, DHCP, dominios, usuarios, grupos y unidades organizativas. | [Tareas 15–17](../actividades/tarea-15/README.md) |
 
@@ -20,7 +20,7 @@ Esta matriz conecta los temas estudiados con evidencias localizadas en la carpet
 
 - Organicé entregas teóricas y prácticas en una secuencia navegable vinculada al programa de la asignatura.
 - Documenté un proyecto colaborativo de Shell y scripts para Windows, indicando la contribución individual.
-- Documenté **NEXO Linux**, un proyecto de preparación de entorno virtual y trabajo con el kernel.
+- Documenté **NEXO Linux**, un proyecto grupal que preparó una VM, compiló y arrancó el kernel `7.3.4-nexo`, y comprobó la syscall personalizada `nexo_saludo`.
 - Relacioné conceptos de sistemas operativos de escritorio, Linux y administración de servidores con las evidencias encontradas.
 
 Las actividades marcadas con “PDF no localizado” no se presentan como entregas verificadas. Los logros se mantienen dentro del alcance de los documentos existentes.
