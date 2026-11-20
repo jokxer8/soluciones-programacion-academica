@@ -15,7 +15,7 @@
 
 Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
-El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente: desde los primeros algoritmos hasta las estructuras de datos, la programación orientada a objetos, la programación funcional y las aplicaciones con bases de datos. Explico cómo abordé cada problema, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales.
+El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente. Explico cómo abordé los problemas, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales. La materia 08 ya incorpora el programa de estudio, tareas individuales en PDF, proyectos y competencias documentadas.
 
 ---
 
@@ -25,7 +25,7 @@ El portafolio reúne materias cursadas con actividades y fuentes académicas doc
 
 **Ruta de aprendizaje**
 
-[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
+[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07 · Fundamentos de Redes](PENDIENTES.md) → [08 · Sistemas Operativos](08-sistemas-operativos) → [09–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
@@ -51,7 +51,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
-| [08 - Sistemas Operativos](08-sistemas-operativos) | Materia planificada; contenido pendiente. | Pendiente |
+| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Contenido publicado; alcance documentado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
 | [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Materia planificada; contenido pendiente. | Pendiente |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
@@ -65,7 +65,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 
 ## Estructura general del repositorio
 
-Las carpetas numeradas siguen el orden académico. Las materias sin contenido están marcadas como pendientes.
+Las carpetas numeradas siguen el orden académico. Las materias sin contenido están marcadas como pendientes; las materias documentadas enlazan a sus índices y evidencias.
 
 ```text
 00-introduccion-a-la-algoritmia/
@@ -76,7 +76,7 @@ Las carpetas numeradas siguen el orden académico. Las materias sin contenido es
 05-diseno-y-analisis-de-algoritmos/
 06-bases-de-datos/
 07-fundamentos-de-redes/ (pendiente)
-08-sistemas-operativos/ (pendiente)
+08-sistemas-operativos/ (programa, actividades, evidencias y proyectos)
 09-inteligencia-de-negocios/ (pendiente)
 10-introduccion-a-la-ingenieria-de-software/ (pendiente)
 11-arquitectura-de-software/ (pendiente)
@@ -228,6 +228,7 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 - GitHub
 - Markdown
 - PDF como evidencia documental
+- Sistemas operativos, virtualización y administración básica de servidores
 - Archivos originales como respaldo académico
 
 ---
@@ -260,6 +261,9 @@ Este repositorio evidencia competencias en:
 - Pruebas reproducibles en Windows y Linux mediante GitHub Actions.
 - Documentación técnica en Markdown.
 - Organización profesional de repositorios en GitHub.
+- Fundamentos de sistemas operativos, Linux y Windows Server.
+- Virtualización, gestión básica de sistemas, seguridad y servicios de red.
+- Documentación de tareas técnicas y proyectos colaborativos.
 
 ---
 
@@ -299,6 +303,7 @@ Actualmente están organizadas las secciones de:
 - Diseño y Análisis de Algoritmos.
 - Programación Funcional-SML.
 - Bases de Datos.
+- Sistemas Operativos (material, tareas y competencias documentados).
 
 ---
 

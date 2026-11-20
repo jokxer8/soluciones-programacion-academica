@@ -2,7 +2,7 @@
 
 [Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-El índice contiene las materias 00–15 en el orden académico. Ocho materias tienen actividades publicadas. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07–14 siguen como espacios pendientes. La materia 15 ya cuenta con actividades porque se cursó antes.
+El índice contiene las materias 00–15 en el orden académico. Nueve materias tienen actividades publicadas: 00–06, 08 y 15. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07 y 09–14 siguen como espacios pendientes.
 
 ## Materias con material en organización
 
@@ -15,13 +15,18 @@ El índice contiene las materias 00–15 en el orden académico. Ocho materias t
 | Posición | Materia | Estado |
 |---:|---|---|
 | 07 | [Fundamentos de Redes](07-fundamentos-de-redes) | Pendiente de subir |
-| 08 | [Sistemas Operativos](08-sistemas-operativos) | Pendiente de subir |
 | 09 | [Inteligencia de Negocios](09-inteligencia-de-negocios) | Pendiente de subir |
 | 10 | [Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Pendiente de subir |
 | 11 | [Arquitectura de Software](11-arquitectura-de-software) | Pendiente de subir |
 | 12 | [Programación Web](12-programacion-web) | Pendiente de subir |
 | 13 | [Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Pendiente de subir |
 | 14 | [Contabilidad para Ciencias de la Computación](14-contabilidad-para-ciencias-de-la-computacion) | Pendiente de subir |
+
+## Contenido incorporado recientemente
+
+| Posición | Materia | Estado |
+|---:|---|---|
+| 08 | [Sistemas Operativos](08-sistemas-operativos) | Programa de estudio, 25 PDF individuales, documentación de tareas, proyectos y competencias publicados |
 
 ## Verificaciones adicionales
 

@@ -1,6 +1,6 @@
 # Guía de presentación del portafolio
 
-Las siete materias comparten navegación e insignias. Las actividades conservan el contenido académico y sus explicaciones particulares; la uniformidad facilita encontrarlos sin reducirlos a textos idénticos.
+Las materias con contenido publicado comparten navegación e insignias. Las actividades conservan el contenido académico y sus explicaciones particulares; la uniformidad facilita encontrarlos sin reducirlos a textos idénticos.
 
 ## Estructura común de una actividad
 
