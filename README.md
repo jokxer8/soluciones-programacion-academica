@@ -53,7 +53,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
 | [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Contenido publicado; alcance documentado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
-| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica. | Contenido publicado |
+| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Contenido publicado; alcance documentado |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
 | [12 - Programación Web](12-programacion-web) | Materia planificada; contenido pendiente. | Pendiente |
 | [13 - Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Materia planificada; contenido pendiente. | Pendiente |
@@ -304,6 +304,7 @@ Actualmente están organizadas las secciones de:
 - Programación Funcional-SML.
 - Bases de Datos.
 - Sistemas Operativos (material, tareas y competencias documentados).
+- Introducción a la Ingeniería de Software (programa, material de apoyo, actividades, proyectos, competencias y recurso de práctica documentados; las evaluaciones se mantienen fuera del portafolio público).
 
 ---
 
