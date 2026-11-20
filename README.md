@@ -51,7 +51,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
-| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Completado |
+| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas; exposición de Shell y proyecto NEXO Linux con kernel personalizado y syscall comprobada. | Completado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
 | [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
