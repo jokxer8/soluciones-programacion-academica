@@ -2,7 +2,7 @@
 
 <h1 align="center"><img src="../assets/readme-banners/10-introduccion-a-la-ingenieria-de-software.svg" alt="Introducción a la Ingeniería de Software (Introduction to Software Engineering)" width="100%"></h1>
 
-![Estado](https://img.shields.io/badge/Estado-Material%20documentado-15803D?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completado-15803D?style=for-the-badge)
 ![Asignatura](https://img.shields.io/badge/ICC--341--T-Ingenier%C3%ADa%20de%20Software-1E3A8A?style=for-the-badge)
 ![Enfoque](https://img.shields.io/badge/enfoque-an%C3%A1lisis%20%2B%20modelado-0F766E?style=for-the-badge)
 
@@ -14,7 +14,7 @@
 
 Esta sección reúne el programa de estudio de **ICC-341-T Introducción a la Ingeniería de Software**, materiales de apoyo autorizados, actividades individuales y documentación de proyectos realizados durante la materia. Su propósito es dejar constancia verificable de los temas trabajados, los productos disponibles y las competencias que esas evidencias permiten ilustrar.
 
-El contenido distingue el programa institucional, las presentaciones disponibles y los trabajos propios. Los nombres de los archivos publicados se normalizaron para facilitar su lectura; el contenido de los PDF no se alteró.
+El contenido distingue el programa institucional, las presentaciones disponibles y los trabajos propios. Los nombres de los archivos publicados se normalizaron para facilitar su lectura; el contenido de los PDF no se alteró. La materia queda completada dentro del alcance documental publicado: los materiales disponibles están organizados y las exclusiones de evaluación y de obras de terceros se explican en sus índices.
 
 ## Navegación
 
