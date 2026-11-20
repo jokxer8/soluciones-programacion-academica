@@ -16,7 +16,6 @@ El índice contiene las materias 00–15 en el orden académico. Diez materias t
 |---:|---|---|
 | 07 | [Fundamentos de Redes](07-fundamentos-de-redes) | Pendiente de subir |
 | 09 | [Inteligencia de Negocios](09-inteligencia-de-negocios) | Pendiente de subir |
-| 10 | [Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Pendiente de subir |
 | 11 | [Arquitectura de Software](11-arquitectura-de-software) | Pendiente de subir |
 | 12 | [Programación Web](12-programacion-web) | Pendiente de subir |
 | 13 | [Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Pendiente de subir |
