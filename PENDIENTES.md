@@ -21,11 +21,12 @@ El índice contiene las materias 00–15 en el orden académico. Diez materias t
 | 13 | [Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Pendiente de subir |
 | 14 | [Contabilidad para Ciencias de la Computación](14-contabilidad-para-ciencias-de-la-computacion) | Pendiente de subir |
 
-## Contenido incorporado recientemente
+## Materias completadas dentro del alcance publicado
 
 | Posición | Materia | Estado |
 |---:|---|---|
-| 08 | [Sistemas Operativos](08-sistemas-operativos) | Programa de estudio, 25 PDF individuales, documentación de tareas, proyectos y competencias publicados |
+| 08 | [Sistemas Operativos](08-sistemas-operativos) | Completado: materiales disponibles, 25 PDF individuales, tareas, proyectos y competencias documentados |
+| 10 | [Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Completado: programa, ocho presentaciones, tres PDF propios, proyectos, competencias y simulador documentados; evaluaciones excluidas |
 
 ## Verificaciones adicionales
 
@@ -42,6 +43,8 @@ Estas comprobaciones mejoran la reproducibilidad y la evidencia técnica; **no b
 - **00 · Introducción a la Algoritmia:** 53 casos correctos y 0 fallidos en la [batería registrada](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43595819295).
 - **02 · Sistemas Computacionales:** el documento `Asignacion 1.pdf` se conserva sin respuestas; 132 comparaciones C/FASM correctas en [Linux](02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
 - **06 · Bases de Datos:** tareas #1–#8 del hotel completadas; 79 pruebas correctas y 0 fallidas en la [validación](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38982024703).
+- **08 · Sistemas Operativos:** materiales, 25 PDF de tareas, proyectos y competencias organizados; las actividades sin PDF se identifican como tales.
+- **10 · Introducción a la Ingeniería de Software:** ocho presentaciones, trabajos propios, proyectos, competencias y simulador publicados dentro del alcance definido; las evaluaciones se excluyen.
 - **15 · Programación Funcional-SML:** seis actividades publicadas.
 
 [Volver al repositorio](README.md)
