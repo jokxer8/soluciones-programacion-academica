@@ -19,11 +19,16 @@ El portafolio explica qué conceptos estudié, qué operaciones se solicitaron y
 ## Navegación
 
 - [Programa de estudio y alcance](programa-estudio/README.md)
+- [Material docente y guías de instalación](material-docente/README.md)
 - [Competencias y logros documentados](competencias/README.md)
 - [Actividades y tareas](actividades/README.md)
 - [Proyectos y contribuciones](proyectos/README.md)
 - [Evidencias PDF](evidencias/README.md)
 - [Fuentes y criterios de publicación](referencias/README.md)
+
+## Material de estudio
+
+Se publican las presentaciones de los capítulos 1, 2 y 4, además de dos guías PDF sobre imágenes de sistemas operativos e instalación de Windows 10 en VirtualBox. Consulta el [índice de material docente](material-docente/README.md).
 
 ## Recorrido de aprendizaje
 
