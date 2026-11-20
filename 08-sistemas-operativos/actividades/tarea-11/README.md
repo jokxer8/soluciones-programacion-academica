@@ -18,7 +18,7 @@ Esta página organiza la documentación localizada; no asigna calificación ni d
 
 ## Conceptos y competencias relacionados
 
-Comparación de sistemas, Linux, almacenamiento, sistemas de archivos y memoria virtual.
+Comparación de sistemas, Linux, almacenamiento, sistemas de archivos y memoria virtual. El trabajo con kernel y llamadas al sistema se documenta aparte en el [proyecto grupal NEXO Linux](../../proyectos/README.md).
 
 ## Nota de nomenclatura
 
