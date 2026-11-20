@@ -12,4 +12,4 @@ Las prácticas relacionadas con gestión de requisitos están documentadas en [P
 
 ## Notas sobre el alcance
 
-La carpeta fuente también contiene capturas de actividades interactivas; no se publican porque incluyen datos de perfil y sesión del equipo. Se encontró un intento de parcial exportado desde la plataforma, pero no se incorpora al portafolio público porque contiene el contenido de una evaluación con sus respuestas y datos personales. Las presentaciones autorizadas se consultan desde [Material docente](../material-docente/README.md).
+La carpeta fuente contiene capturas de actividades interactivas. No se incorporaron en esta publicación; algunas de las revisadas muestran datos de perfil y sesión del equipo. Se encontró un intento de parcial exportado desde la plataforma, pero no se incorpora al portafolio público porque contiene el contenido de una evaluación con sus respuestas y datos personales. Las presentaciones autorizadas se consultan desde [Material docente](../material-docente/README.md).

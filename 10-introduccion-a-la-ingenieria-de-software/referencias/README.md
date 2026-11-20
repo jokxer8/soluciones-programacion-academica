@@ -17,7 +17,7 @@ Las competencias, los temas y los porcentajes académicos se resumen a partir de
 
 El estudiante indicó autorización docente para publicar los materiales de apoyo por unidades. Se incluyen los PDF correspondientes y las evidencias propias descritas en sus fichas.
 
-No se redistribuyen los libros completos de terceros encontrados en la carpeta. El intento de examen no se publica porque contiene contenido y respuestas de evaluación junto con datos personales. Las capturas de pantalla de actividades tampoco se incluyen porque muestran datos de perfil y sesión del equipo.
+No se redistribuyen los libros completos de terceros encontrados en la carpeta. El intento de examen no se publica porque contiene contenido y respuestas de evaluación junto con datos personales. No se incorporaron capturas de pantalla de actividades; algunas de las revisadas muestran datos de perfil y sesión del equipo.
 
 ## Cuidado de las afirmaciones
 
