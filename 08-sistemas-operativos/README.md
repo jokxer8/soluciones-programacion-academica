@@ -2,7 +2,7 @@
 
 <h1 align="center"><img src="../assets/readme-banners/08-sistemas-operativos.svg" alt="Sistemas Operativos (Operating Systems)" width="100%"></h1>
 
-![Estado](https://img.shields.io/badge/Estado-Material%20documentado-15803D?style=for-the-badge)
+![Estado](https://img.shields.io/badge/Estado-Completado-15803D?style=for-the-badge)
 ![Asignatura](https://img.shields.io/badge/ISC--364-Sistemas%20Operativos-1E3A8A?style=for-the-badge)
 ![Enfoque](https://img.shields.io/badge/enfoque-teor%C3%ADa%20%2B%20pr%C3%A1ctica-0F766E?style=for-the-badge)
 
@@ -14,7 +14,7 @@
 
 Esta sección reúne el programa de **ISC-364 Sistemas Operativos I**, las tareas individuales documentadas y una síntesis de los proyectos realizados durante la asignatura. La organización sigue el recorrido de los temas disponible en la carpeta de estudio y distingue entre evidencia publicada, material de consigna y actividades sin PDF encontrado.
 
-El portafolio explica qué conceptos estudié, qué operaciones se solicitaron y qué competencias se pueden respaldar con los documentos disponibles. Los enlaces a las entregas conservan sus contenidos originales; los nombres publicados se normalizaron para que el tema y el tipo de actividad se identifiquen con claridad.
+El portafolio explica qué conceptos estudié, qué operaciones se solicitaron y qué competencias se pueden respaldar con los documentos disponibles. Los enlaces a las entregas conservan sus contenidos originales; los nombres publicados se normalizaron para que el tema y el tipo de actividad se identifiquen con claridad. La materia queda completada dentro del alcance documental publicado: las evidencias disponibles están organizadas y las actividades sin PDF localizado se identifican expresamente.
 
 ## Navegación
 
