@@ -63,7 +63,7 @@ Los nombres publicados corrigen inconsistencias de nomenclatura y se basan en el
 
 ## Proyectos
 
-La carpeta documenta dos trabajos colaborativos con componentes de sistemas operativos: una exposición sobre Shell y scripts en Windows, y **NEXO Linux**, centrado en preparar una máquina virtual y modificar, compilar y comprobar un kernel Linux. [Ver contribuciones y alcance](proyectos/README.md).
+La carpeta documenta dos trabajos colaborativos. La exposición de Shell y scripts en Windows incluye apoyos visuales y ejemplos de mandatos, automatización y diagnóstico. **NEXO Linux** llegó a compilar y arrancar el kernel personalizado `7.3.4-nexo`, registrar la llamada `nexo_saludo` y comprobar su ejecución mediante el identificador 473 y los registros del kernel. [Ver procedimiento, contribuciones y límites de la evidencia](proyectos/README.md).
 
 ## Criterios de documentación
 
