@@ -198,8 +198,8 @@ Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
-| [Sistema de Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Incorporado y documentado; compilación y 79 pruebas SQL verificadas |
-| [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Compilado y verificado localmente |
+| [Sistema de Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) | Proyecto final grupal para gestionar clientes, habitaciones, reservas, servicios, facturación y operaciones hoteleras. Incluye aplicación, scripts, diseño y documentación de instalación. | C#, Windows Forms, .NET Framework 4.8, SQL Server y ADO.NET | Completado |
+| [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises) | Proyecto final con 227 registros CSV, lista doblemente enlazada y gestión de memoria. | C17 | Completado |
 
 La [comparación C/FASM en Linux](02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md) verifica doce pares de programas con **132 comparaciones correctas y 0 fallidas**.
 
