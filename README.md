@@ -43,23 +43,23 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 
 | Área | Descripción | Estado |
 |---|---|---|
-| [00 - Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) | Primeros algoritmos, diagramas, C++, ciclos, búsqueda de texto y actividades introductorias. | Completado; alcance documentado |
+| [00 - Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) | Primeros algoritmos, diagramas, C++, ciclos, búsqueda de texto y actividades introductorias. | Completado |
 | [01 - Fundamentos de Programación](01-fundamentos-programacion) | Lectura de datos, variables, condicionales, ciclos, arreglos, cadenas y métodos. | Completado |
-| [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado; el alcance del documento `Asignacion 1.pdf` está documentado |
+| [02 - Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) | Representación de datos, C, FASM/NASM, memoria, listas, colas, pilas y proyecto de países. | Completado |
 | [03 - Programación Orientada a Objetos](03-programacion-orientada-a-objetos) | Clases, objetos, herencia, polimorfismo, archivos y serialización. | Completado |
-| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas, mandatos, entregas disponibles, desarrollo didáctico complementario para la Práctica 3 y dos proyectos. La entrega original de la Práctica 3 no fue presentada. | Completado dentro del alcance documental publicado |
+| [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas, mandatos, entregas disponibles, desarrollo didáctico complementario para la Práctica 3 y dos proyectos. La entrega original de la Práctica 3 no fue presentada. | Completado |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
-| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Completado dentro del alcance documentado |
+| [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Completado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
-| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado dentro del alcance documentado |
+| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
 | [12 - Programación Web](12-programacion-web) | Materia planificada; contenido pendiente. | Pendiente |
 | [13 - Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Materia planificada; contenido pendiente. | Pendiente |
 | [14 - Contabilidad para Ciencias de la Computación](14-contabilidad-para-ciencias-de-la-computacion) | Materia planificada; contenido pendiente. | Pendiente |
 | [15 - Programación Funcional-SML](15-programacion-funcional-sml) | Programación funcional, cálculo lambda, tipos, árboles, módulos y listas perezosas. | Completado |
-| [Archivos originales](archivos-originales) | Materiales académicos originales conservados como referencia. | Conservado |
+| [Archivos originales](archivos-originales) | Materiales académicos originales conservados como referencia. | Completado |
 
 ---
 
