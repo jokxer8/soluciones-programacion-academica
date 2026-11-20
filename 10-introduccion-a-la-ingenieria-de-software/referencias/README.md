@@ -8,6 +8,7 @@
 - Presentaciones PDF de apoyo de las unidades 1–5 y 7–9.
 - Apuntes locales sobre ciclo de vida y distribución de evaluación.
 - Entrega individual sobre la fragilidad del software.
+- Documento de recuperación del primer parcial, revisado como material de evaluación y no incluido en el portafolio público.
 - Documentación PDF de la primera práctica SIGERH y guía visual KHuman.
 - Recurso HTML propio de práctica para ICC-341.
 
@@ -17,7 +18,7 @@ Las competencias, los temas y los porcentajes académicos se resumen a partir de
 
 El estudiante indicó autorización docente para publicar los materiales de apoyo por unidades. Se incluyen los PDF correspondientes y las evidencias propias descritas en sus fichas.
 
-No se redistribuyen los libros completos de terceros encontrados en la carpeta. El intento de examen no se publica porque contiene contenido y respuestas de evaluación junto con datos personales. No se incorporaron capturas de pantalla de actividades; algunas de las revisadas muestran datos de perfil y sesión del equipo.
+No se redistribuyen los libros completos de terceros encontrados en la carpeta. El documento de recuperación del primer parcial y el intento exportado desde la plataforma se mantienen fuera del portafolio por tratarse de material de evaluación; el intento exportado además contiene datos personales. No se incorporaron capturas de pantalla de actividades; algunas de las revisadas muestran datos de perfil y sesión del equipo.
 
 ## Cuidado de las afirmaciones
 
