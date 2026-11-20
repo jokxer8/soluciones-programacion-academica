@@ -15,7 +15,7 @@
 
 Soy Kelvin César Del Castillo Torres, estudiante de Ingeniería en Ciencias de la Computación en la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**. Aquí reúno soluciones, actividades y proyectos que documentan mi aprendizaje.
 
-El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente. Explico cómo abordé los problemas, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales. La materia 08 ya incorpora el programa de estudio, tareas individuales en PDF, proyectos y competencias documentadas.
+El portafolio reúne materias cursadas con actividades y fuentes académicas documentadas, además de materias planificadas en estado pendiente. Explico cómo abordé los problemas, conservo las entregas disponibles y distingo las revisiones nuevas de los trabajos originales. Las materias 08 y 10 ya reúnen programas de estudio, evidencias en PDF, documentación de actividades y proyectos, y competencias relacionadas con los trabajos publicados.
 
 ---
 
@@ -25,7 +25,7 @@ El portafolio reúne materias cursadas con actividades y fuentes académicas doc
 
 **Ruta de aprendizaje**
 
-[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07 · Fundamentos de Redes](PENDIENTES.md) → [08 · Sistemas Operativos](08-sistemas-operativos) → [09–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
+[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07 · Fundamentos de Redes](PENDIENTES.md) → [08 · Sistemas Operativos](08-sistemas-operativos) → [09 · Inteligencia de Negocios](PENDIENTES.md) → [10 · Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) → [11–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
@@ -53,7 +53,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
 | [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas, proyectos y competencias documentadas. | Contenido publicado; alcance documentado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
-| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Materia planificada; contenido pendiente. | Pendiente |
+| [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica. | Contenido publicado |
 | [11 - Arquitectura de Software](11-arquitectura-de-software) | Materia planificada; contenido pendiente. | Pendiente |
 | [12 - Programación Web](12-programacion-web) | Materia planificada; contenido pendiente. | Pendiente |
 | [13 - Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) | Materia planificada; contenido pendiente. | Pendiente |
@@ -78,7 +78,7 @@ Las carpetas numeradas siguen el orden académico. Las materias sin contenido es
 07-fundamentos-de-redes/ (pendiente)
 08-sistemas-operativos/ (programa, actividades, evidencias y proyectos)
 09-inteligencia-de-negocios/ (pendiente)
-10-introduccion-a-la-ingenieria-de-software/ (pendiente)
+10-introduccion-a-la-ingenieria-de-software/ (programa, material docente, actividades, proyectos y recursos)
 11-arquitectura-de-software/ (pendiente)
 12-programacion-web/ (pendiente)
 13-introduccion-a-la-inteligencia-artificial/ (pendiente)

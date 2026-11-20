@@ -2,7 +2,7 @@
 
 [Inicio](README.md) · [Materias](README.md#áreas-principales) · [Tablero del hotel](https://github.com/users/jokxer8/projects/1)
 
-El índice contiene las materias 00–15 en el orden académico. Nueve materias tienen actividades publicadas: 00–06, 08 y 15. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07 y 09–14 siguen como espacios pendientes.
+El índice contiene las materias 00–15 en el orden académico. Diez materias tienen actividades o evidencias publicadas: 00–06, 08, 10 y 15. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07, 09 y 11–14 siguen como espacios pendientes.
 
 ## Materias con material en organización
 
