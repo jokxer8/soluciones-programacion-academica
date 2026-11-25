@@ -1,5 +1,7 @@
 # Programa de estudio y alcance
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Índice de materias](../../README.md#áreas-principales)
 
 La carpeta de estudio incluye el archivo del programa de **ISC-364 Sistemas Operativos I**. Se conserva en PDF como documento de referencia para relacionar las actividades con el alcance de la asignatura.

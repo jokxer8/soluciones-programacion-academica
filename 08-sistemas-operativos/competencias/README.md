@@ -1,5 +1,7 @@
 # Competencias y logros documentados
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Programa](../programa-estudio/README.md) · [Actividades](../actividades/README.md)
 
 Esta matriz conecta los temas estudiados con evidencias localizadas en la carpeta. Indica competencias que los documentos permiten describir; no sustituye las calificaciones ni afirma resultados que no aparecen en los archivos.

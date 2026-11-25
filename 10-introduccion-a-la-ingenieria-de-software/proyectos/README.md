@@ -1,5 +1,7 @@
 # Proyectos y práctica de requisitos
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [Inicio de la materia](../README.md) · [Competencias](../competencias/README.md) · [Programa](../programa-estudio/README.md)
 
 Los documentos disponibles describen planificación de sistemas de información usando Azure DevOps Basic. Se presentan como evidencias de diseño y organización de requisitos; los PDF no demuestran por sí solos que una instancia de Azure DevOps esté activa o que todas las tareas se hayan completado.

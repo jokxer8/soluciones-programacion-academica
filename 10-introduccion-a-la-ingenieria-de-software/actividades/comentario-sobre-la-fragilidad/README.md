@@ -1,5 +1,7 @@
 # Comentario sobre la fragilidad del software
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../../README.md) · [Índice de materia](../../README.md) · [Volver al nivel anterior](../README.md)
+
 [Actividades](../README.md) · [Competencias relacionadas](../../competencias/README.md)
 
 ## Descripción

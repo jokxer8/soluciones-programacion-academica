@@ -1,5 +1,7 @@
 # Material docente y guías
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Programa de estudio](../programa-estudio/README.md) · [Referencias](../referencias/README.md)
 
 Esta sección reúne material de clase y guías prácticas que estaban en las carpetas de capítulos. Los nombres se normalizaron para identificar tema y tipo de recurso.
