@@ -6,8 +6,8 @@
 
 Recorre las materias en orden y encuentra el código, las explicaciones y las evidencias disponibles.
 
-![Materias: 10 de 16 completadas](https://img.shields.io/badge/Materias-10%20de%2016%20completadas-1E3A5F?style=for-the-badge)
-![Pendientes: 6](https://img.shields.io/badge/Pendientes-6-94520B?style=for-the-badge)
+![Materias: 11 de 16 completadas](https://img.shields.io/badge/Materias-11%20de%2016%20completadas-1E3A5F?style=for-the-badge)
+![Pendientes: 5](https://img.shields.io/badge/Pendientes-5-94520B?style=for-the-badge)
 ![Pruebas: Windows y Linux](https://img.shields.io/badge/Pruebas-Windows%20y%20Linux-3A4B63?style=for-the-badge)
 
 [🎓 Ruta académica](#áreas-principales) · [🧪 Proyectos](#proyectos-destacados) · [📖 Guía](GUIA-DE-LECTURA.md) · [📍 Pendientes](PENDIENTES.md)
@@ -34,7 +34,7 @@ Si estás aprendiendo, elige una materia y abre una actividad. Empieza por **En 
 | 🧪 **Revisar pruebas y código** | [C++ en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987168) y [C/FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987047). |
 | 💼 **Evaluar un proyecto** | [Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) y [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises). |
 
-**Indicador documental:** 10 de 16 materias completadas dentro del alcance publicado; 6 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes. Los **187 documentos con «En palabras simples»** miden cobertura editorial y no representan ejercicios ejecutados ni resultados de aprendizaje medidos.
+**Indicador documental:** 11 de 16 materias completadas dentro del alcance publicado; 5 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes. La sección «En palabras simples» mide cobertura editorial, no ejercicios ejecutados ni resultados de aprendizaje medidos.
 
 ## Explorar el portafolio
 
@@ -69,7 +69,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas, mandatos, entregas disponibles, desarrollo didáctico complementario para la Práctica 3 y dos proyectos. La entrega original de la Práctica 3 no fue presentada. | Completado |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
-| [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Materia planificada; contenido pendiente. | Pendiente |
+| [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Quince fichas, configuración IOS, direccionamiento, rutas estáticas, TCP/UDP y proyecto de red multisede con RIPv2. | Completado |
 | [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas; exposición de Shell y proyecto NEXO Linux con kernel personalizado y syscall comprobada. | Completado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
 | [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado |
@@ -94,7 +94,7 @@ Las carpetas numeradas siguen el orden académico. Las materias sin contenido es
 04-algoritmo-clasico-y-estructura-de-datos/ (materiales organizados; actividades en documentación)
 05-diseno-y-analisis-de-algoritmos/
 06-bases-de-datos/
-07-fundamentos-de-redes/ (pendiente)
+07-fundamentos-de-redes/ (actividades, caso multisede y evidencias resumidas)
 08-sistemas-operativos/ (programa, actividades, evidencias y proyectos)
 09-inteligencia-de-negocios/ (pendiente)
 10-introduccion-a-la-ingenieria-de-software/ (programa, material docente, actividades, proyectos y recursos)
@@ -218,6 +218,8 @@ Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible
 **Completado / Pendiente** describe si la materia está documentada en el índice. El nivel técnico se evalúa por proyecto y con su evidencia: una solución puede estar implementada y pasar pruebas, sin haber pasado todavía por un despliegue real.
 
 ## Proyectos destacados
+
+**Fundamentos de Redes:** [Cadena hotelera multisede](07-fundamentos-de-redes/proyecto-cadena-hotelera/README.md), un caso educativo con cuatro sedes, cinco routers y una ruta de respaldo validada en Packet Tracer según el informe.
 
 | Proyecto | Descripción | Tecnologías | Estado |
 |---|---|---|---|
