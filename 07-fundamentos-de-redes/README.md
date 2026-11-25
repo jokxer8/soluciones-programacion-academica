@@ -26,6 +26,12 @@ Una red permite que equipos y servicios compartan información. Empieza por iden
 | 4 · Diagnosticar | Gateway, conectividad local y rutas de ida y retorno | [Gateway](actividades/06-gateway-predeterminado/README.md) · [Rutas estáticas](actividades/10-enrutamiento-estatico/README.md) |
 | 5 · Explicar y aplicar | Ethernet, TCP/UDP y una red multisede con RIPv2 | [Capa de enlace](actividades/14-capa-enlace/README.md) · [TCP/UDP](actividades/15-tcp-udp/README.md) · [Proyecto](proyecto-cadena-hotelera/README.md) |
 
+## Archivo de la materia
+
+[Exposiciones](exposiciones/README.md) · [Material de estudio](material-de-estudio/README.md) · [Parcial 1](parcial-1/README.md) · [Parcial 2](parcial-2/README.md) · [Prácticas de laboratorio](practicas-de-lab/README.md) · [Presentaciones](presentaciones/README.md) · [Proyecto final](proyecto-cadena-hotelera/documentos/README.md) · [Tareas](tareas/README.md)
+
+[Catálogo de archivos de origen e índice de publicación](archivo/README.md).
+
 ## Documentos y evidencias
 
 | Si buscas… | Abre… |

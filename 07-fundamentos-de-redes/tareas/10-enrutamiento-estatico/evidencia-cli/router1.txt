@@ -1,0 +1,152 @@
+Registro de laboratorio. Se retiraron credenciales y datos de acceso.
+
+Router1#show ip int brief
+Interface              IP-Address      OK? Method Status                Protocol 
+GigabitEthernet0/0     172.16.2.1      YES manual up                    up 
+GigabitEthernet0/1     172.16.3.1      YES manual up                    up 
+GigabitEthernet0/2     unassigned      YES unset  administratively down down 
+Serial0/0/0            10.0.0.2        YES manual up                    up 
+Serial0/0/1            10.0.1.1        YES manual up                    up 
+Vlan1                  unassigned      YES unset  administratively down down
+Router1#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2, E - EGP
+       i - IS-IS, L1 - IS-IS level-1, L2 - IS-IS level-2, ia - IS-IS inter area
+       * - candidate default, U - per-user static route, o - ODR
+       P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     10.0.0.0/8 is variably subnetted, 4 subnets, 2 masks
+C       10.0.0.0/24 is directly connected, Serial0/0/0
+L       10.0.0.2/32 is directly connected, Serial0/0/0
+C       10.0.1.0/24 is directly connected, Serial0/0/1
+L       10.0.1.1/32 is directly connected, Serial0/0/1
+     172.16.0.0/16 is variably subnetted, 6 subnets, 2 masks
+S       172.16.1.0/24 [1/0] via 10.0.0.1
+C       172.16.2.0/24 is directly connected, GigabitEthernet0/0
+L       172.16.2.1/32 is directly connected, GigabitEthernet0/0
+C       172.16.3.0/24 is directly connected, GigabitEthernet0/1
+L       172.16.3.1/32 is directly connected, GigabitEthernet0/1
+S       172.16.4.0/24 [1/0] via 10.0.1.2
+
+Router1#terminal length 0
+                 ^
+% Invalid input detected at '^' marker.
+	
+Router1#show running-config
+Building configuration...
+
+Current configuration : 1275 bytes
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Router1
+!
+!
+!
+[Línea retirada en la edición pública]
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+[Línea retirada en la edición pública]
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0
+ description LAN2 - Switch1
+ ip address 172.16.2.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ description LAN3 - Switch2
+ ip address 172.16.3.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/0/0
+ description WAN - Router0
+ ip address 10.0.0.2 255.255.255.0
+ clock rate 64000
+!
+interface Serial0/0/1
+ description WAN - Router2
+ ip address 10.0.1.1 255.255.255.0
+ clock rate 64000
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 172.16.1.0 255.255.255.0 10.0.0.1 
+ip route 172.16.4.0 255.255.255.0 10.0.1.2 
+!
+ip flow-export version 9
+!
+!
+!
+banner motd ^CAcceso exclusivo para la practica de redes.^C
+!
+!
+!
+!
+line con 0
+[Línea retirada en la edición pública]
+ logging synchronous
+ login
+!
+line aux 0
+!
+line vty 0 4
+[Línea retirada en la edición pública]
+ login
+!
+!
+!
+end
+
+
+Router1#wr
+Building configuration...
+[OK]
+Router1#

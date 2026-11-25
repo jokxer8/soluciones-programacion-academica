@@ -1,0 +1,50 @@
+PRÁCTICA DE ENRUTAMIENTO ESTÁTICO — COMPLETADA
+
+Archivo principal: Practica_Enrutamiento_Estatico.pkt
+Creado y guardado con Cisco Packet Tracer 9.0.1.
+3 routers [dato retirado], 4 switches 2960 y 4 PC; diez conexiones activas.
+
+DIRECCIONAMIENTO (todas las máscaras son 255.255.255.0)
+Router0: G0/0 172.16.1.1; S0/0/0 10.0.0.1.
+Router1: G0/0 172.16.2.1; G0/1 172.16.3.1;
+         S0/0/0 10.0.0.2; S0/0/1 10.0.1.1.
+Router2: G0/0 172.16.4.1; S0/0/0 10.0.1.2.
+PC0: 172.16.1.10, puerta de enlace 172.16.1.1.
+PC1: 172.16.2.10, puerta de enlace 172.16.2.1.
+PC2: 172.16.3.10, puerta de enlace 172.16.3.1.
+PC3: 172.16.4.10, puerta de enlace 172.16.4.1.
+Switch0–3: administración VLAN1 172.16.1.2–172.16.4.2,
+respectivamente; puerta de enlace .1 de cada LAN.
+
+CUATRO CONEXIONES DEL ROUTER CENTRAL
+Se instaló HWIC-2T: dos interfaces GigabitEthernet para las LAN
+y dos interfaces seriales para los routers vecinos. Los extremos
+DCE están en Router1 y tienen clock rate 64000.
+
+RUTAS ESTÁTICAS
+Router0: LAN2, LAN3, LAN4 y 10.0.1.0/24 vía 10.0.0.2.
+Router1: LAN1 vía 10.0.0.1; LAN4 vía 10.0.1.2.
+Router2: LAN1, LAN2, LAN3 y 10.0.0.0/24 vía 10.0.1.1.
+
+CONFIGURACIÓN BÁSICA
+Nombres, no ip domain-lookup, enable secret, contraseñas de consola
+y VTY, login, cifrado de contraseñas y banner.
+Consola/VTY: cisco. Modo privilegiado (enable): class.
+Configuraciones guardadas en NVRAM y archivo .pkt.
+
+PRUEBAS REALES EN LA CONSOLA SIMULADA DE PACKET TRACER
+PC3 -> PC0: 4 enviados, 4 recibidos, 0% pérdidas (prueba final).
+PC3 -> PC1: 4 enviados, 4 recibidos, 0% pérdidas (prueba final).
+PC3 -> PC2: 4 enviados, 4 recibidos, 0% pérdidas (prueba final).
+PC0 -> PC1: 4 enviados, 4 recibidos, 0% pérdidas.
+PC0 -> PC2: 4 enviados, 4 recibidos, 0% pérdidas.
+PC1 -> PC2: 4 enviados, 4 recibidos, 0% pérdidas.
+Las seis parejas de PC se verificaron mediante solicitud y respuesta ICMP.
+Los primeros pings desde PC3 perdieron un paquete durante la resolución
+inicial de ARP; se repitieron y finalizaron sin pérdidas.
+Las transcripciones de consola están en Evidencia_CLI.
+
+ABRIR Y COMPROBAR
+Abrir el .pkt en Packet Tracer 9.0.1. En una PC, Desktop > Command
+Prompt permite repetir ping 172.16.N.10 (N=1,2,3,4).
+En routers: show ip interface brief y show ip route.

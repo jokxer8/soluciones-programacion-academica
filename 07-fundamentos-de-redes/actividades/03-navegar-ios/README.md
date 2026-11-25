@@ -21,3 +21,5 @@ La entrega combina material de Cisco y anotaciones. Se documenta el aprendizaje,
 ## Archivo de respaldo o estudio
 
 [Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 2 y [guía](../../recursos/guia-de-estudio.pdf), lámina 3. Son adaptaciones para practicar modos de consola y comprobaciones sin copiar la plantilla.
+
+[Ver los archivos de esta actividad](../../tareas/03-navegacion-ios.md).

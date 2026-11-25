@@ -28,3 +28,5 @@ flowchart LR
 ## Archivo de respaldo o estudio
 
 [Mapa de anatomía de una red (SVG)](../../recursos/mapa-anatomia-red.svg), una adaptación del mapa entregado por Kelvin. [Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 1.
+
+[Ver los archivos de esta actividad](../../tareas/README.md).

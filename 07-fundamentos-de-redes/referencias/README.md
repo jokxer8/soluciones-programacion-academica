@@ -25,4 +25,4 @@ La carpeta de estudio incluye materiales sobre IOS, protocolos y modelos, capa f
 
 ## Criterios de publicación
 
-Se publican trabajos de clase atribuidos, extractos revisados de evidencias y material de estudio redactado para el portafolio. Las presentaciones de consulta y plantillas de terceros se sustituyen por guías y ejemplos propios con referencias. No se distribuyen el libro, el instalador, claves de evaluaciones, credenciales ni binarios Packet Tracer cuya configuración no se haya revisado. La autoría de las exposiciones y del proyecto se conserva.
+Se publican trabajos de clase atribuidos, extractos revisados de evidencias y material de estudio redactado para el portafolio. Las presentaciones de consulta y plantillas de terceros se sustituyen por guías y ejemplos propios con referencias. No se distribuyen el libro, el instalador, los bancos de terceros, credenciales ni binarios Packet Tracer cuya configuración no se haya revisado. Sí se incluyen las consignas docentes y las entregas revisadas en el [archivo de la materia](../archivo/README.md). La autoría de las exposiciones y del proyecto se conserva.

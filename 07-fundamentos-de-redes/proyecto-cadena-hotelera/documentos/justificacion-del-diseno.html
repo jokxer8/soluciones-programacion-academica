@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Justificación del diseño · Cadena hotelera</title>
+<style>
+:root{--fondo:#10231F;--panel:#18332D;--linea:#2C4F47;--laton:#C8A24A;--crema:#F3EBDD;--tenue:#9DB3AC;--coral:#E2674A;--menta:#7FC8A9}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--fondo);color:var(--crema);font-family:"Segoe UI",system-ui,Arial,sans-serif;overflow:hidden}
+.slide{position:absolute;inset:0;padding:5vh 6vw 9vh;display:flex;flex-direction:column;opacity:0;transform:translateX(40px);pointer-events:none;transition:opacity .5s,transform .5s}
+.slide.on{opacity:1;transform:none;pointer-events:auto}
+.slide.prev{transform:translateX(-40px)}
+.ceja{color:var(--laton);letter-spacing:.18em;text-transform:uppercase;font-size:clamp(11px,1.1vw,15px);font-weight:600}
+h1{font-size:clamp(26px,3.6vw,54px);margin:.15em 0 .3em;line-height:1.08;font-weight:700}
+h1 em{font-style:normal;color:var(--laton)}
+p{font-size:clamp(14px,1.35vw,20px);line-height:1.45;color:var(--tenue);margin:0 0 .6em;max-width:60ch}
+p b,li b{color:var(--crema)}
+.cuerpo{flex:1;display:grid;gap:3vw;min-height:0;align-items:center}
+.c2{grid-template-columns:1fr 1.25fr}.c2b{grid-template-columns:1.3fr 1fr}
+svg{width:100%;height:100%;max-height:68vh;overflow:visible}
+svg text{font-family:inherit}
+.a{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}
+.on .a{opacity:1;transform:none}
+.on .a:nth-child(2){transition-delay:.12s}.on .a:nth-child(3){transition-delay:.24s}.on .a:nth-child(4){transition-delay:.36s}.on .a:nth-child(5){transition-delay:.48s}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin:.5em 0 1em}
+button{font:inherit;font-size:clamp(12px,1.05vw,16px);background:transparent;color:var(--crema);border:1px solid var(--linea);padding:.45em .9em;border-radius:999px;cursor:pointer;transition:.2s}
+button:hover{border-color:var(--laton)}
+button.sel{background:var(--laton);color:var(--fondo);border-color:var(--laton);font-weight:600}
+button:focus-visible{outline:2px solid var(--menta);outline-offset:2px}
+.fichas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:.6em}
+.ficha{background:var(--panel);border:1px solid var(--linea);border-radius:10px;padding:.7em .9em}
+.ficha b{display:block;font-size:clamp(22px,2.6vw,40px);color:var(--laton);line-height:1.05;font-variant-numeric:tabular-nums}
+.ficha span{font-size:clamp(11px,1vw,14px);color:var(--tenue)}
+.ficha.mal b{color:var(--coral)}.ficha.bien b{color:var(--menta)}
+.veredicto{margin-top:.8em;padding:.7em 1em;border-left:4px solid var(--laton);background:var(--panel);font-size:clamp(13px,1.2vw,18px);color:var(--crema)}
+.ruta{font-size:clamp(15px,1.5vw,22px);color:var(--crema);margin:.4em 0;min-height:2.6em}
+.ruta i{font-style:normal;color:var(--laton);font-weight:700}
+.tip{position:fixed;background:#0B1815;border:1px solid var(--laton);color:var(--crema);padding:.5em .7em;border-radius:8px;font-size:13px;pointer-events:none;opacity:0;transition:opacity .15s;max-width:260px;z-index:9;line-height:1.35}
+nav{position:fixed;left:0;right:0;bottom:2.2vh;display:flex;justify-content:center;align-items:center;gap:14px;z-index:5}
+nav .p{width:9px;height:9px;border-radius:50%;background:var(--linea);padding:0;border:0}
+nav .p.sel{background:var(--laton);width:26px;border-radius:5px}
+.barra{position:fixed;left:0;top:0;height:3px;background:var(--laton);transition:width .4s;z-index:6}
+.portada h1{font-size:clamp(34px,5.4vw,84px);max-width:16ch}
+.portada .datos{display:flex;gap:4vw;margin-top:3vh;flex-wrap:wrap}
+.portada .datos div{border-top:2px solid var(--laton);padding-top:.5em;font-size:clamp(13px,1.2vw,18px);color:var(--tenue)}
+.portada .datos b{display:block;color:var(--crema);font-size:1.15em}
+ul.lim{padding-left:1.1em;margin:0;font-size:clamp(13px,1.25vw,19px);line-height:1.5;color:var(--tenue)}
+.pruebas{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;align-self:start}
+.pruebas div{background:var(--panel);border:1px solid var(--linea);border-top:3px solid var(--laton);border-radius:8px;padding:1em;font-size:clamp(12px,1.05vw,16px);color:var(--tenue)}
+.pruebas b{display:block;color:var(--laton);font-size:1.7em}
+.pruebas strong{color:var(--crema);display:block;margin:.2em 0 .4em}
+.enl{cursor:pointer}.enl:hover line.v{stroke:var(--laton)}
+.fijo *{transition:none!important}
+@media(max-width:900px){.c2,.c2b{grid-template-columns:1fr}.pruebas{grid-template-columns:1fr 1fr}svg{max-height:38vh}html,body{overflow:auto}.slide{position:relative;display:none;min-height:100vh}.slide.on{display:flex}}
+</style>
+</head>
+<body>
+<div class="barra" id="barra"></div>
+<div class="tip" id="tip"></div>
+
+<section class="slide portada">
+  <div class="ceja a">Fundamentos de Redes · Proyecto final · Caso 04</div>
+  <h1 class="a">Por qué un <em>anillo</em> mantiene abierta la cadena hotelera</h1>
+  <p class="a">Justificación de la topología: conectividad entre las cuatro sedes y recuperación de Reservas cuando se cae un enlace.</p>
+  <div class="datos a">
+    <div><b>Gabriel Galasso</b>Matrícula [dato retirado]</div>
+    <div><b>Kelvin Del Castillo</b>Matrícula [dato retirado]</div>
+    <div><b>María Ant. Pineda</b>Docente · PUCMM</div>
+  </div>
+  <p class="a" style="margin-top:auto;font-size:13px">Flechas del teclado o los puntos de abajo para avanzar. Todo lo que se ve se calcula en la página con los datos del plan.</p>
+</section>
+
+<section class="slide">
+  <div class="ceja a">1 · El caso</div>
+  <h1 class="a">Cuatro sedes, <em id="totU"></em> terminales y un solo sitio que todos consultan</h1>
+  <div class="cuerpo c2">
+    <div class="a">
+      <p>El servidor con la <b>disponibilidad de habitaciones y el horario de llegada</b> está en Recepción. Las tres sucursales dependen de él.</p>
+      <p>Cada LAN se dimensiona para los usuarios de hoy <b>más 20 %</b>, más gateway, administración del switch y servidor.</p>
+      <div class="btns" id="vistaCap"><button data-v="usuarios" class="sel">Usuarios hoy</button><button data-v="demanda">Demanda</button><button data-v="utiles">Capacidad de la subred</button></div>
+      <p style="font-size:13px">Pase el cursor por una barra para ver el detalle. Fuente: usuarios, enunciado p. 2; lo demás, cálculo del equipo.</p>
+    </div>
+    <svg id="gCap" class="a" viewBox="0 0 640 360"></svg>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="ceja a">2 · La decisión</div>
+  <h1 class="a">Tres formas de unir cinco routers. Solo una <em>cabe y aguanta</em></h1>
+  <div class="cuerpo c2">
+    <div class="a">
+      <div class="btns" id="topos"><button data-t="estrella">Estrella</button><button data-t="anillo" class="sel">Anillo</button><button data-t="malla">Malla completa</button></div>
+      <div class="fichas">
+        <div class="ficha" id="fEnl"><b></b><span>enlaces (mínimo 5)</span></div>
+        <div class="ficha" id="fIf"><b></b><span>interfaces en el router más cargado (el 2911 trae <span id="ge"></span>)</span></div>
+        <div class="ficha" id="fCorte"><b></b><span>de los cortes de un enlace dejan la red completa</span></div>
+      </div>
+      <div class="veredicto" id="veredicto"></div>
+      <p style="font-size:13px;margin-top:.8em">Los tres números se calculan al cambiar de topología: se retira cada enlace y se recorre el grafo.</p>
+    </div>
+    <svg id="gTopo" class="a" viewBox="-40 0 720 460"></svg>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="ceja a">3 · La prueba</div>
+  <h1 class="a">Corte un enlace y mire por dónde <em>se va el paquete</em></h1>
+  <div class="cuerpo c2b">
+    <svg id="gSim" class="a" viewBox="-40 0 720 470"></svg>
+    <div class="a">
+      <p>Destino del paquete que sale de <b>Recepción</b>:</p>
+      <div class="btns" id="destinos"></div>
+      <div class="ruta" id="ruta"></div>
+      <p><b>Haga clic en un enlace</b> para tumbarlo o levantarlo. La ruta es la de menos saltos, que es como decide RIP.</p>
+      <div class="btns"><button id="demo">Tumbar E2 (prueba P05)</button><button id="reset">Restablecer todo</button></div>
+      <div class="veredicto" id="simNota"></div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="ceja a">4 · Interfaces y direcciones</div>
+  <h1 class="a">Cabe en el equipo y cabe en el <em id="blq"></em></h1>
+  <div class="cuerpo c2">
+    <div class="a">
+      <p><b>Interfaces.</b> Cada router de sede usa sus tres GigabitEthernet: una para la LAN y dos para el anillo. El de tránsito usa dos.</p>
+      <svg id="gIf" viewBox="0 0 520 210" style="max-height:30vh"></svg>
+      <p style="font-size:13px">Lo que cuesta: ningún router de sede tiene una interfaz libre.</p>
+    </div>
+    <div class="a">
+      <p><b>Direcciones.</b> Nueve subredes con VLSM, de mayor a menor. Pase el cursor por cada bloque.</p>
+      <svg id="gBlq" viewBox="0 0 640 150" style="max-height:24vh"></svg>
+      <div class="fichas">
+        <div class="ficha"><b id="nSub"></b><span>subredes sin solapamiento</span></div>
+        <div class="ficha"><b id="nUso"></b><span>direcciones asignadas de 256</span></div>
+        <div class="ficha bien"><b id="nLib"></b><span>direcciones libres para crecer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="ceja a">5 · Lo que cuesta y lo que no resuelve</div>
+  <h1 class="a">El diseño cumple. Estas son sus <em>letras pequeñas</em></h1>
+  <div class="cuerpo c2">
+    <div class="a" style="height:100%;display:flex;flex-direction:column">
+      <svg id="gDona" viewBox="0 0 420 300" style="max-height:44vh"></svg>
+      <p style="font-size:13px">Presupuesto de una instalación hipotética: RD$ <b id="tot"></b>. Routers y switches con precio de equipo reacondicionado y fuente; el resto es referencial.</p>
+    </div>
+    <div class="a">
+      <ul class="lim">
+        <li><b>RIP no recupera al instante.</b> La ruta caída entra en espera (holddown, 180 s por defecto en Cisco IOS) antes de aceptar la alterna.</li>
+        <li><b>Atención al huésped queda justa:</b> necesita 14 direcciones y el /28 tiene 14.</li>
+        <li><b>Sin interfaces libres</b> en los routers de sede. Un sexto enlace pide un módulo.</li>
+        <li><b>El anillo tolera un corte, no dos.</b> Pruébelo en el simulador.</li>
+        <li><b>El servidor es único.</b> Ninguna ruta alterna lo reemplaza.</li>
+        <li><b>El [dato retirado] ya no tiene soporte</b> (fin de venta en 2017, último soporte en 2022).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="ceja a">6 · Cómo se demuestra</div>
+  <h1 class="a">Cinco pruebas en Packet Tracer cierran el <em>argumento</em></h1>
+  <div class="cuerpo">
+    <div class="pruebas a">
+      <div><b>P01</b><strong>Conectividad local</strong>Cada PC alcanza su gateway con la dirección del plan.</div>
+      <div><b>P02</b><strong>Rutas estáticas</strong>Reservas abre el sitio por R-TRA sin protocolo de enrutamiento.</div>
+      <div><b>P03</b><strong>RIPv2 y web</strong>Los cinco routers aprenden las LAN y las tres sucursales abren el sitio.</div>
+      <div><b>P04</b><strong>IPv6 local</strong>Dos PC de Reservas se alcanzan dentro de un /64.</div>
+      <div><b>P05</b><strong>Recuperación</strong>Con E2 caído, el recorrido cambia a R-OPE y R-ATH; al restablecer, vuelve.</div>
+    </div>
+  </div>
+  <p class="a">Las evidencias están en la sección 7 del informe técnico.</p>
+</section>
+
+<nav id="nav"></nav>
+
+<script>
+const D = {"sedes": [{"k": "CEN", "nombre": "Recepción", "rol": "Sede central", "usuarios": 20, "crec": 24, "demanda": 27, "utiles": 30, "red": "10.93.87.64/27"}, {"k": "OPE", "nombre": "Operaciones", "rol": "Sucursal 1", "usuarios": 14, "crec": 17, "demanda": 19, "utiles": 30, "red": "10.93.87.96/27"}, {"k": "RES", "nombre": "Reservas", "rol": "Sucursal 2", "usuarios": 32, "crec": 39, "demanda": 42, "utiles": 62, "red": "10.93.87.0/26"}, {"k": "ATH", "nombre": "Atención al huésped", "rol": "Sucursal 3", "usuarios": 10, "crec": 12, "demanda": 14, "utiles": 14, "red": "10.93.87.128/28"}], "enlaces": [{"n": "E1", "a": "CEN", "b": "TRA", "red": "10.93.87.144/30"}, {"n": "E2", "a": "TRA", "b": "RES", "red": "10.93.87.148/30"}, {"n": "E3", "a": "RES", "b": "ATH", "red": "10.93.87.152/30"}, {"n": "E4", "a": "ATH", "b": "OPE", "red": "10.93.87.156/30"}, {"n": "E5", "a": "OPE", "b": "CEN", "red": "10.93.87.160/30"}], "subredes": [{"nombre": "LAN Reservas", "ini": 0, "tam": 64, "red": "10.93.87.0/26", "lan": true}, {"nombre": "LAN Recepción", "ini": 64, "tam": 32, "red": "10.93.87.64/27", "lan": true}, {"nombre": "LAN Operaciones", "ini": 96, "tam": 32, "red": "10.93.87.96/27", "lan": true}, {"nombre": "LAN Atención al huésped", "ini": 128, "tam": 16, "red": "10.93.87.128/28", "lan": true}, {"nombre": "E1 R-CEN – R-TRA", "ini": 144, "tam": 4, "red": "10.93.87.144/30", "lan": false}, {"nombre": "E2 R-TRA – R-RES", "ini": 148, "tam": 4, "red": "10.93.87.148/30", "lan": false}, {"nombre": "E3 R-RES – R-ATH", "ini": 152, "tam": 4, "red": "10.93.87.152/30", "lan": false}, {"nombre": "E4 R-ATH – R-OPE", "ini": 156, "tam": 4, "red": "10.93.87.156/30", "lan": false}, {"nombre": "E5 R-OPE – R-CEN", "ini": 160, "tam": 4, "red": "10.93.87.160/30", "lan": false}], "libre": 92, "bloque": "10.93.87.0/24", "seleccionada": "RES", "corte": ["TRA", "RES"], "ge": 3, "presupuesto": [{"item": "Router [dato retirado] (3 GE)", "total": 29705, "origen": "US$ 97.54, reacondicionado"}, {"item": "Switch Catalyst 2960-24TT-L", "total": 38065, "origen": "US$ 125.00, reacondicionado"}, {"item": "Terminal de usuario (PC de escritorio)", "total": 2432000, "origen": "Referencial"}, {"item": "Servidor web (torre básica)", "total": 85000, "origen": "Referencial"}, {"item": "Cable UTP Cat 6, caja de 305 m", "total": 47500, "origen": "Referencial"}, {"item": "Patch cord UTP Cat 6", "total": 16400, "origen": "Referencial"}], "total": 2648670};
+if (location.search.includes("fijo")) document.documentElement.classList.add("fijo");   // ?fijo: sin transiciones, para capturas
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a = {}, txt) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (txt != null) e.textContent = txt; return e; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const COL = { laton: css("--laton"), crema: css("--crema"), tenue: css("--tenue"), coral: css("--coral"), menta: css("--menta"), linea: css("--linea"), panel: css("--panel"), fondo: css("--fondo") };
+const fmt = n => n.toLocaleString("es-DO");
+
+// ---------- tooltip
+const tip = $("#tip");
+function conTip(nodo, html) {
+  nodo.addEventListener("mousemove", e => { tip.innerHTML = html; tip.style.opacity = 1; tip.style.left = Math.min(e.clientX + 14, innerWidth - 270) + "px"; tip.style.top = e.clientY + 14 + "px"; });
+  nodo.addEventListener("mouseleave", () => tip.style.opacity = 0);
+}
+
+// ---------- navegación
+const slides = $$(".slide"), nav = $("#nav");
+let actual = 0;
+slides.forEach((_, i) => { const b = document.createElement("button"); b.className = "p"; b.setAttribute("aria-label", "Diapositiva " + (i + 1)); b.onclick = () => ir(i); nav.append(b); });
+function ir(i) {
+  actual = Math.max(0, Math.min(slides.length - 1, i));
+  slides.forEach((s, j) => { s.classList.toggle("on", j === actual); s.classList.toggle("prev", j < actual); });
+  $$(".p", nav).forEach((p, j) => p.classList.toggle("sel", j === actual));
+  $("#barra").style.width = (actual + 1) / slides.length * 100 + "%";
+  if (actual === 1) barras(vistaCap);
+}
+addEventListener("keydown", e => { if (["ArrowRight", "PageDown", " "].includes(e.key)) ir(actual + 1); if (["ArrowLeft", "PageUp"].includes(e.key)) ir(actual - 1); });
+
+// ---------- grafo: caminos de menos saltos (criterio de RIP)
+const ROUTERS = ["CEN", "TRA", "RES", "ATH", "OPE"];
+function distancias(enlaces, origen) {
+  const d = { [origen]: 0 }, cola = [origen];
+  for (const x of cola) for (const [a, b] of enlaces) { const y = a === x ? b : b === x ? a : null; if (y && !(y in d)) { d[y] = d[x] + 1; cola.push(y); } }
+  return d;
+}
+function camino(enlaces, a, b) {
+  const d = distancias(enlaces, b); if (!(a in d)) return null;
+  const c = [a];
+  while (c.at(-1) !== b) { const x = c.at(-1); c.push(ROUTERS.find(y => d[y] === d[x] - 1 && enlaces.some(([p, q]) => (p === x && q === y) || (p === y && q === x)))); }
+  return c;
+}
+
+// ---------- 1 · barras de capacidad
+let vistaCap = "usuarios";
+$("#totU").textContent = D.sedes.reduce((s, x) => s + x.usuarios, 0);
+function barras(v) {
+  vistaCap = v; const g = $("#gCap"); g.innerHTML = ""; const max = 62, x0 = 170, w = 400;
+  D.sedes.forEach((s, i) => {
+    const y = 30 + i * 80;
+    g.append(el("text", { x: x0 - 12, y: y + 24, "text-anchor": "end", fill: COL.crema, "font-size": 17, "font-weight": 600 }, s.nombre));
+    g.append(el("text", { x: x0 - 12, y: y + 43, "text-anchor": "end", fill: COL.tenue, "font-size": 12.5 }, s.rol));
+    g.append(el("rect", { x: x0, y, width: w, height: 44, rx: 6, fill: COL.panel }));
+    const capas = [["utiles", COL.linea], ["demanda", COL.coral], ["usuarios", COL.laton]];
+    const hasta = { usuarios: 1, demanda: 2, utiles: 3 }[v];
+    capas.forEach(([k, c], j) => {
+      if (3 - j > hasta) return;
+      const r = el("rect", { x: x0, y, width: 0, height: 44, rx: 6, fill: c });
+      g.append(r); requestAnimationFrame(() => { r.style.transition = "width .8s cubic-bezier(.2,.8,.2,1)"; r.setAttribute("width", s[k] / max * w); });
+    });
+    const n = el("text", { x: x0 + s[v] / max * w + 10, y: y + 29, fill: COL.crema, "font-size": 19, "font-weight": 700 }, s[v]);
+    g.append(n);
+    const zona = el("rect", { x: x0, y, width: w, height: 44, fill: "transparent" }); g.append(zona);
+    conTip(zona, `<b>${s.nombre}</b> · ${s.red}<br>${s.usuarios} usuarios hoy<br>${s.crec} con el 20 %<br>${s.demanda} direcciones de demanda<br>${s.utiles} útiles · holgura ${s.utiles - s.demanda}`);
+  });
+}
+$$("#vistaCap button").forEach(b => b.onclick = () => { $$("#vistaCap button").forEach(x => x.classList.toggle("sel", x === b)); barras(b.dataset.v); });
+
+// ---------- posiciones del pentágono
+const POS = { CEN: [320, 70], TRA: [540, 190], RES: [460, 390], ATH: [180, 390], OPE: [100, 190] };
+const NOMBRE = { CEN: "Recepción", TRA: "Tránsito", RES: "Reservas", ATH: "Atención", OPE: "Operaciones" };
+function nodo(g, r, resaltar) {
+  const [x, y] = POS[r];
+  g.append(el("circle", { cx: x, cy: y, r: 30, fill: resaltar ? COL.laton : COL.panel, stroke: COL.laton, "stroke-width": 2 }));
+  g.append(el("text", { x, y: y + 5, "text-anchor": "middle", fill: resaltar ? COL.fondo : COL.crema, "font-size": 14, "font-weight": 700 }, "R-" + r));
+  const lado = x < 150 ? -1 : x > 500 ? 1 : 0;   // rótulo hacia afuera del anillo
+  g.append(el("text", { x: x + lado * 40, y: lado ? y + 5 : y + (y < 120 ? -40 : 52), "text-anchor": lado < 0 ? "end" : lado > 0 ? "start" : "middle", fill: COL.tenue, "font-size": 13 }, NOMBRE[r]));
+}
+
+// ---------- 2 · comparación de topologías
+const ANILLO = D.enlaces.map(e => [e.a, e.b]);
+const TOPOS = {
+  estrella: ["CEN", "RES", "ATH", "OPE"].map(x => ["TRA", x]),
+  anillo: ANILLO,
+  malla: ROUTERS.flatMap((a, i) => ROUTERS.slice(i + 1).map(b => [a, b])),
+};
+$("#ge").textContent = D.ge;
+function topo(t) {
+  const E = TOPOS[t], g = $("#gTopo"); g.innerHTML = "";
+  E.forEach(([a, b], i) => { const l = el("line", { x1: POS[a][0], y1: POS[a][1], x2: POS[a][0], y2: POS[a][1], stroke: COL.tenue, "stroke-width": 2.5 }); g.append(l);
+    setTimeout(() => { l.style.transition = "all .5s"; l.setAttribute("x2", POS[b][0]); l.setAttribute("y2", POS[b][1]); }, 40 * i); });
+  ROUTERS.forEach(r => nodo(g, r, false));
+  const ifMax = Math.max(...ROUTERS.map(r => E.filter(e => e.includes(r)).length + (r === "TRA" ? 0 : 1)));
+  const sobrevive = E.filter(e => Object.keys(distancias(E.filter(x => x !== e), "CEN")).length === 5).length;
+  const ok = [E.length >= 5, ifMax <= D.ge, sobrevive === E.length];
+  [["#fEnl", E.length], ["#fIf", ifMax], ["#fCorte", sobrevive + " / " + E.length]].forEach(([id, v], i) => { const f = $(id); $("b", f).textContent = v; f.className = "ficha " + (ok[i] ? "bien" : "mal"); });
+  $("#veredicto").innerHTML = ok.every(Boolean) ? "<b>Cumple.</b> Cinco enlaces, cabe en las tres interfaces del 2911 y cualquier corte deja un segundo camino."
+    : "<b>No sirve:</b> " + [!ok[0] && "tiene menos de cinco enlaces", !ok[1] && `pide ${ifMax} interfaces y el router trae ${D.ge}`, !ok[2] && "un solo corte aísla una sede"].filter(Boolean).join("; ") + ".";
+  $("#veredicto").style.borderColor = ok.every(Boolean) ? COL.menta : COL.coral;
+}
+$$("#topos button").forEach(b => b.onclick = () => { $$("#topos button").forEach(x => x.classList.toggle("sel", x === b)); topo(b.dataset.t); });
+
+// ---------- 3 · simulador de corte
+let caidos = new Set(), destino = D.seleccionada, anim;
+const clave = (a, b) => [a, b].sort().join("-");
+["RES", "ATH", "OPE"].forEach(r => { const b = document.createElement("button"); b.textContent = NOMBRE[r] + (r === "ATH" ? " al huésped" : ""); b.dataset.r = r; b.onclick = () => { destino = r; sim(); }; $("#destinos").append(b); });
+function sim() {
+  cancelAnimationFrame(anim);
+  const g = $("#gSim"); g.innerHTML = "";
+  const vivos = ANILLO.filter(([a, b]) => !caidos.has(clave(a, b)));
+  const c = camino(vivos, "CEN", destino);
+  const enRuta = new Set(c ? c.slice(1).map((x, i) => clave(c[i], x)) : []);
+  D.enlaces.forEach(e => {
+    const k = clave(e.a, e.b), abajo = caidos.has(k), [x1, y1] = POS[e.a], [x2, y2] = POS[e.b];
+    const grp = el("g", { class: "enl", tabindex: 0, role: "button", "aria-label": `Enlace ${e.n}, ${abajo ? "caído" : "activo"}` });
+    grp.append(el("line", { class: "v", x1, y1, x2, y2, stroke: abajo ? COL.coral : enRuta.has(k) ? COL.laton : COL.tenue, "stroke-width": enRuta.has(k) ? 5 : 2.5, "stroke-dasharray": abajo ? "4 9" : "" }));
+    grp.append(el("line", { x1, y1, x2, y2, stroke: "transparent", "stroke-width": 26 }));
+    const mx = (x1 + x2) / 2, my = (y1 + y2) / 2;
+    grp.append(el("rect", { x: mx - 19, y: my - 12, width: 38, height: 24, rx: 12, fill: COL.fondo, stroke: abajo ? COL.coral : COL.linea }));
+    grp.append(el("text", { x: mx, y: my + 5, "text-anchor": "middle", fill: abajo ? COL.coral : COL.crema, "font-size": 12.5, "font-weight": 700 }, abajo ? "✕" : e.n));
+    const alternar = () => { caidos.has(k) ? caidos.delete(k) : caidos.add(k); sim(); };
+    grp.onclick = alternar; grp.onkeydown = ev => { if (ev.key === "Enter") alternar(); };
+    conTip(grp, `<b>${e.n}</b> · ${e.red}<br>R-${e.a} – R-${e.b}<br>${abajo ? "Caído. Clic para restablecer." : "Activo. Clic para tumbarlo."}`);
+    g.append(grp);
+  });
+  ROUTERS.forEach(r => nodo(g, r, c && c.includes(r)));
+  $$("#destinos button").forEach(b => b.classList.toggle("sel", b.dataset.r === destino));
+  const nota = $("#simNota");
+  if (!c) {
+    $("#ruta").innerHTML = `<span style="color:${COL.coral}">Sin ruta a ${NOMBRE[destino]}.</span>`;
+    nota.innerHTML = "Con dos enlaces caídos el anillo se parte. El diseño tolera <b>un</b> corte."; nota.style.borderColor = COL.coral; return;
+  }
+  $("#ruta").innerHTML = c.map(x => `<i>R-${x}</i>`).join(" → ") + `<br><span style="color:${COL.tenue};font-size:.8em">${c.length - 1} saltos entre routers · métrica RIP ${c.length - 1}</span>`;
+  nota.innerHTML = caidos.size ? `Con ${caidos.size === 1 ? "el enlace caído" : "los enlaces caídos"}, ${NOMBRE[destino]} sigue alcanzable por el otro lado del anillo.` : "Todos los enlaces arriba: cada sede usa su camino más corto.";
+  nota.style.borderColor = caidos.size ? COL.menta : COL.laton;
+  // paquete animado
+  const pts = c.map(r => POS[r]), bola = el("circle", { r: 9, fill: COL.crema, stroke: COL.laton, "stroke-width": 3 }); g.append(bola);
+  const t0 = performance.now(), dur = 900 * (pts.length - 1);
+  (function paso(t) {
+    const u = ((t - t0) % (dur + 600)) / dur, s = Math.min(u, .9999) * (pts.length - 1), i = Math.floor(s), f = s - i;
+    bola.setAttribute("cx", pts[i][0] + (pts[i + 1][0] - pts[i][0]) * f); bola.setAttribute("cy", pts[i][1] + (pts[i + 1][1] - pts[i][1]) * f);
+    anim = requestAnimationFrame(paso);
+  })(t0);
+}
+$("#demo").onclick = () => { caidos = new Set([clave(...D.corte)]); destino = D.seleccionada; sim(); };
+$("#reset").onclick = () => { caidos.clear(); sim(); };
+
+// ---------- 4 · interfaces y bloque
+$("#blq").textContent = D.bloque;
+(function () {
+  const g = $("#gIf");
+  ROUTERS.forEach((r, i) => {
+    const y = 12 + i * 38, enl = ANILLO.filter(e => e.includes(r)).length, lan = r === "TRA" ? 0 : 1;
+    g.append(el("text", { x: 70, y: y + 19, "text-anchor": "end", fill: COL.crema, "font-size": 15, "font-weight": 600 }, "R-" + r));
+    for (let k = 0; k < D.ge; k++) {
+      const tipo = k < lan ? "LAN" : k < lan + enl ? "Enlace" : "Libre";
+      const c = el("rect", { x: 86 + k * 120, y, width: 112, height: 28, rx: 5, fill: tipo === "LAN" ? COL.laton : tipo === "Enlace" ? COL.menta : "transparent", stroke: tipo === "Libre" ? COL.tenue : "none", "stroke-dasharray": "5 4" });
+      g.append(c); g.append(el("text", { x: 142 + k * 120, y: y + 19, "text-anchor": "middle", fill: tipo === "Libre" ? COL.tenue : COL.fondo, "font-size": 12.5, "font-weight": 600 }, `G0/${k} · ${tipo}`));
+    }
+  });
+  const b = $("#gBlq"), esc = 620 / 256, cols = [COL.laton, COL.menta, COL.coral, COL.crema];
+  D.subredes.forEach((s, i) => {
+    const r = el("rect", { x: 10 + s.ini * esc, y: 40, width: s.tam * esc - 1.5, height: 56, rx: 3, fill: s.lan ? cols[i] : COL.tenue }); b.append(r);
+    if (s.lan && s.tam >= 32) b.append(el("text", { x: 10 + s.ini * esc + s.tam * esc / 2, y: 73, "text-anchor": "middle", fill: COL.fondo, "font-size": 10.5, "font-weight": 700, "pointer-events": "none" }, s.nombre.slice(4).split(" ")[0]));
+    conTip(r, `<b>${s.nombre}</b><br>${s.red}<br>${s.tam} direcciones, ${s.tam - 2} útiles`);
+  });
+  const ini = 256 - D.libre, l = el("rect", { x: 10 + ini * esc, y: 40, width: D.libre * esc, height: 56, rx: 3, fill: "transparent", stroke: COL.tenue, "stroke-dasharray": "6 5" }); b.append(l);
+  b.append(el("text", { x: 10 + ini * esc + D.libre * esc / 2, y: 73, "text-anchor": "middle", fill: COL.tenue, "font-size": 13 }, "Libre"));
+  conTip(l, `<b>Sin asignar</b><br>${D.libre} direcciones, de .${ini} a .255`);
+  b.append(el("text", { x: 10, y: 28, fill: COL.tenue, "font-size": 12 }, ".0")); b.append(el("text", { x: 630, y: 28, "text-anchor": "end", fill: COL.tenue, "font-size": 12 }, ".255"));
+  b.append(el("text", { x: 10, y: 122, fill: COL.tenue, "font-size": 12 }, "En gris, los cinco enlaces /30 del anillo."));
+  $("#nSub").textContent = D.subredes.length; $("#nUso").textContent = 256 - D.libre; $("#nLib").textContent = D.libre;
+})();
+
+// ---------- 5 · dona del presupuesto
+(function () {
+  const g = $("#gDona"), cx = 150, cy = 150, R = 120, r = 70, cols = [COL.laton, COL.menta, COL.coral, COL.crema, COL.tenue, COL.linea];
+  let a0 = -Math.PI / 2;
+  const centro = el("text", { x: cx, y: cy - 2, "text-anchor": "middle", fill: COL.crema, "font-size": 24, "font-weight": 700 }, "RD$");
+  const sub = el("text", { x: cx, y: cy + 20, "text-anchor": "middle", fill: COL.tenue, "font-size": 12 }, "pase el cursor");
+  D.presupuesto.forEach((p, i) => {
+    const a1 = a0 + p.total / D.total * 2 * Math.PI, gr = a1 - a0 > Math.PI ? 1 : 0, P = (a, q) => [cx + q * Math.cos(a), cy + q * Math.sin(a)].join(" ");
+    const path = el("path", { d: `M${P(a0, R)}A${R} ${R} 0 ${gr} 1 ${P(a1, R)}L${P(a1, r)}A${r} ${r} 0 ${gr} 0 ${P(a0, r)}Z`, fill: cols[i], stroke: COL.fondo, "stroke-width": 2 });
+    path.style.transition = "transform .2s"; path.style.transformOrigin = `${cx}px ${cy}px`;
+    path.onmouseenter = () => { path.style.transform = "scale(1.05)"; centro.textContent = (p.total / D.total * 100).toFixed(1).replace(".", ",") + " %"; sub.textContent = "RD$ " + fmt(p.total); };
+    path.onmouseleave = () => { path.style.transform = ""; centro.textContent = "RD$"; sub.textContent = "pase el cursor"; };
+    conTip(path, `<b>${p.item}</b><br>RD$ ${fmt(p.total)}<br>${p.origen}`);
+    g.append(path);
+    g.append(el("rect", { x: 300, y: 40 + i * 36, width: 13, height: 13, rx: 3, fill: cols[i] }));
+    g.append(el("text", { x: 320, y: 51 + i * 36, fill: COL.crema, "font-size": 12 }, p.item.split(" (")[0].split(",")[0]));
+    a0 = a1;
+  });
+  g.append(centro, sub); $("#tot").textContent = fmt(D.total);
+})();
+
+topo("anillo"); sim(); ir(+location.hash.slice(1) || 0);   // #3 abre la diapositiva 4
+// comprobación mínima: el camino habitual pasa por el tránsito y el alterno no
+console.assert(camino(ANILLO, "CEN", "RES").join() === "CEN,TRA,RES", "camino habitual");
+console.assert(camino(ANILLO.filter(e => clave(...e) !== clave(...D.corte)), "CEN", "RES").join() === "CEN,OPE,ATH,RES", "camino alterno");
+</script>
+</body>
+</html>

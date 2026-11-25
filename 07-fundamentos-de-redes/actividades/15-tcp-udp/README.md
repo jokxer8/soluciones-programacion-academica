@@ -21,3 +21,5 @@ Es una explicación propia, no una copia de guiones, cuestionarios o recursos mu
 ## Archivo de respaldo o estudio
 
 [Presentación pública (PDF)](../../recursos/presentacion-tcp-y-udp.pdf). Adaptación de la exposición de Kelvin César Del Castillo Torres y Gabriel Galasso, con diagramas originales, sin matrículas ni banco de preguntas.
+
+[Ver los archivos de esta actividad](../../exposiciones/README.md).

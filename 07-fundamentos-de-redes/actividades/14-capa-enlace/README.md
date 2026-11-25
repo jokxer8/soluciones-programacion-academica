@@ -21,3 +21,5 @@ Se conserva la presentación del equipo en una copia visual. No se incluyen los 
 ## Archivo de respaldo o estudio
 
 [Exposición de clase, 12 diapositivas (PDF)](../../recursos/exposicion-original-capa-de-enlace.pdf) · [Presentación didáctica, 5 láminas (PDF)](../../recursos/presentacion-capa-de-enlace.pdf). Trabajo de Kelvin César Del Castillo Torres y Gabriel Galasso; la adaptación incorpora un ejemplo nuevo de aprendizaje de direcciones MAC.
+
+[Ver los archivos de esta actividad](../../exposiciones/README.md).

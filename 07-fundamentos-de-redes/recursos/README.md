@@ -2,6 +2,8 @@
 
 [Materia](../README.md) · [15 fichas](../actividades/README.md) · [Proyecto final](../proyecto-cadena-hotelera/README.md) · [Referencias](../referencias/README.md)
 
+[Ver el archivo por carpetas y el catálogo de origen](../archivo/README.md).
+
 ## En palabras simples
 
 ![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)

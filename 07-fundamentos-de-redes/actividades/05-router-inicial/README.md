@@ -21,3 +21,5 @@ La ficha explica la lógica del trabajo; no publica contraseñas, hojas ni plant
 ## Archivo de respaldo o estudio
 
 [Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 2 y [guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 3: cómo comprobar el estado de una interfaz sin divulgar una configuración original.
+
+[Ver los archivos de esta actividad](../../tareas/05-configuracion-inicial-router.md).

@@ -21,3 +21,5 @@ No se adjuntan el examen, las respuestas, los datos identificativos ni el simula
 ## Archivo de respaldo o estudio
 
 [Guía de estudio](../../recursos/guia-de-estudio.pdf) y [cuaderno](../../recursos/cuaderno-de-practica.pdf), lámina 6. El repaso usa casos nuevos, no preguntas ni respuestas del parcial.
+
+[Ver los archivos de esta actividad](../../parcial-1/README.md).
