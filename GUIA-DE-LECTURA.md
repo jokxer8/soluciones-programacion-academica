@@ -32,6 +32,10 @@ En los ejemplos, un porcentaje de 10 % se calcula multiplicando por 0.10. Los im
 - En SML, `'a` y `'b` son variables de tipo. `->` describe una función y `*` dentro de un tipo describe un producto o tupla.
 - En modelos de datos, `1:N` significa uno a muchos y `N:M`, muchos a muchos. Son reglas de relación, no cantidades actuales de registros.
 
+## Laboratorios de redes
+
+En [07 · Fundamentos de Redes](07-fundamentos-de-redes/README.md), empieza por la ficha en palabras simples y abre después la entrega o el [simulador](07-fundamentos-de-redes/simuladores/README.md). Los registros de clase muestran qué se probó; que un archivo esté disponible para descargar no significa que se haya vuelto a ejecutar para publicarlo.
+
 ## Ejemplos, pruebas y estados
 
 Un ejemplo permite seguir una solución con datos concretos. Una prueba ejecutada tiene un resultado registrado y debe consultarse con sus condiciones y herramientas. Un conjunto de pruebas correcto respalda los casos incluidos; no implica haber probado cualquier entrada posible.

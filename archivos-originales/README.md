@@ -61,6 +61,7 @@ Los archivos originales se relacionan con las áreas documentadas del repositori
 | `bases-de-datos` | `06-bases-de-datos` | Bases de Datos |
 | [algoritmo-clasico-y-estructura-de-datos](algoritmo-clasico-y-estructura-de-datos/README.md) | [04-algoritmo-clasico-y-estructura-de-datos](../04-algoritmo-clasico-y-estructura-de-datos) | Algoritmos Clásicos y Estructuras de Datos |
 | [fundamentos-sistemas-computacionales](fundamentos-sistemas-computacionales) | [02-fundamentos-sistemas-computacionales](../02-fundamentos-sistemas-computacionales) | Fundamentos de Sistemas Computacionales |
+| [Catálogo de Fundamentos de Redes](../07-fundamentos-de-redes/archivo/README.md) | [07 · Fundamentos de Redes](../07-fundamentos-de-redes/README.md) | Entregas, exposiciones y simuladores en sus carpetas de la materia; sin duplicar el archivo aquí. |
 
 ---
 

@@ -32,6 +32,7 @@ Si estás aprendiendo, elige una materia y abre una actividad. Empieza por **En 
 |---|---|
 | 🎓 **Aprender en secuencia** | [Índice 00–15](#áreas-principales) y [guía de lectura](GUIA-DE-LECTURA.md). |
 | 🧪 **Revisar pruebas y código** | [C++ en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987168) y [C/FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987047). |
+| 🌐 **Practicar redes** | [07 · Fundamentos de Redes](07-fundamentos-de-redes/README.md): fichas, entregas y simulaciones en Packet Tracer. |
 | 💼 **Evaluar un proyecto** | [Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) y [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises). |
 
 **Indicador documental:** 11 de 16 materias completadas dentro del alcance publicado; 5 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes. La sección «En palabras simples» mide cobertura editorial, no ejercicios ejecutados ni resultados de aprendizaje medidos.
@@ -69,7 +70,7 @@ El código y los documentos permiten seguir mi práctica con distintos paradigma
 | [04 - Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) | Nueve fichas, mandatos, entregas disponibles, desarrollo didáctico complementario para la Práctica 3 y dos proyectos. La entrega original de la Práctica 3 no fue presentada. | Completado |
 | [05 - Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) | Recursividad, búsqueda, ordenamiento, programación dinámica, grafos y complejidad. | Completado |
 | [06 - Bases de Datos](06-bases-de-datos) | Modelado, normalización, consultas SQL y proyecto de hotel. | Completado |
-| [07 - Fundamentos de Redes](07-fundamentos-de-redes) | Quince fichas, entregas de clase, siete simuladores y un proyecto multisede con RIPv2. | Completado |
+| [07 - Fundamentos de Redes](07-fundamentos-de-redes) | 15 fichas, [entregas](07-fundamentos-de-redes/tareas/README.md), [7 simuladores](07-fundamentos-de-redes/simuladores/README.md) y proyecto multisede con RIPv2. | Completado |
 | [08 - Sistemas Operativos](08-sistemas-operativos) | Programa, tareas teóricas y prácticas; exposición de Shell y proyecto NEXO Linux con kernel personalizado y syscall comprobada. | Completado |
 | [09 - Inteligencia de Negocios](09-inteligencia-de-negocios) | Materia planificada; contenido pendiente. | Pendiente |
 | [10 - Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Programa, ocho presentaciones de apoyo, tres PDF propios, proyectos, competencias y simulador de práctica; las evidencias de evaluación se excluyen. | Completado |
@@ -213,6 +214,14 @@ Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible
 
 ---
 
+### Fundamentos de Redes
+
+| Actividad | Evidencia |
+|---|---|
+| [Conversiones y subredes](07-fundamentos-de-redes/tareas/README.md#entregas-y-prácticas) | Hojas manuscritas y cuaderno de direccionamiento. |
+| [Enrutamiento estático](07-fundamentos-de-redes/actividades/10-enrutamiento-estatico/README.md) | Registros originales de ping y simulador de la entrega. |
+| [Cadena Hotelera](07-fundamentos-de-redes/proyecto-cadena-hotelera/README.md) | Informe, matriz de validación y simulador multisede. |
+
 ## Cómo interpretar los resultados
 
 **Completado / Pendiente** describe si la materia está documentada en el índice. El nivel técnico se evalúa por proyecto y con su evidencia: una solución puede estar implementada y pasar pruebas, sin haber pasado todavía por un despliegue real.
@@ -254,6 +263,7 @@ El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/
 - Markdown
 - PDF como evidencia documental
 - Sistemas operativos, virtualización y administración básica de servidores
+- Cisco Packet Tracer y Cisco IOS en laboratorio
 - Archivos originales como respaldo académico
 
 ---
@@ -288,6 +298,7 @@ Este repositorio evidencia competencias en:
 - Organización profesional de repositorios en GitHub.
 - Fundamentos de sistemas operativos, Linux y Windows Server.
 - Virtualización, gestión básica de sistemas, seguridad y servicios de red.
+- Diseño y simulación de redes IPv4 e IPv6, VLSM, enrutamiento estático y RIPv2.
 - Documentación de tareas técnicas y proyectos colaborativos.
 
 ---
@@ -328,6 +339,7 @@ Actualmente están organizadas las secciones de:
 - Diseño y Análisis de Algoritmos.
 - Programación Funcional-SML.
 - Bases de Datos.
+- [07 · Fundamentos de Redes](07-fundamentos-de-redes/README.md) (completada: tareas, exposiciones, material de estudio, siete simuladores y Cadena Hotelera).
 - Sistemas Operativos (completado dentro del alcance documental publicado: materiales, tareas, proyectos y competencias disponibles organizados).
 - Introducción a la Ingeniería de Software (completada dentro del alcance documental publicado: programa, material de apoyo, actividades, proyectos, competencias y recurso de práctica organizados; las evaluaciones se mantienen fuera del portafolio público).
 

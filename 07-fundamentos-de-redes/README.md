@@ -3,12 +3,13 @@
 <h1 align="center"><img src="../assets/readme-banners/07-fundamentos-de-redes.svg" alt="Fundamentos de Redes (Networking Fundamentals)" width="100%"></h1>
 
 ![Asignatura](https://img.shields.io/badge/ITT--112--T-Fundamentos%20de%20Redes-1E3A5F?style=for-the-badge)
+![Estado: Completado](https://img.shields.io/badge/Estado-Completado-15803D?style=for-the-badge)
 ![Actividades](https://img.shields.io/badge/Actividades-15%20fichas-0F766E?style=for-the-badge)
 ![Proyecto](https://img.shields.io/badge/Proyecto-Validado%20en%20simulaci%C3%B3n-15803D?style=for-the-badge)
 
 </div>
 
-[Inicio](../README.md) · **Materia 07** · [Actividades](actividades/README.md) · [Proyecto final](proyecto-cadena-hotelera/README.md) · [Documentos y evidencias](recursos/README.md) · [Fuentes](referencias/README.md)
+[Inicio](../README.md) · **07 · Fundamentos de Redes · Completado** · [Actividades](actividades/README.md) · [Proyecto final](proyecto-cadena-hotelera/README.md) · [Documentos y evidencias](recursos/README.md) · [Fuentes](referencias/README.md)
 
 ## En palabras simples
 
@@ -46,4 +47,4 @@ El [archivo de la materia](archivo/README.md) contiene el catálogo de procedenc
 - **Práctica de rutas estáticas:** seis pares de PC con **4 respuestas de 4** en su última prueba registrada en Packet Tracer; hubo pérdidas iniciales y se anotan por separado.
 - **Proyecto de Cadena Hotelera:** **5 de 5 escenarios conformes según el informe técnico**: conectividad local, rutas estáticas, RIPv2 y HTTP, IPv6 en una LAN y recuperación de un enlace. No es una instalación real ni una nueva ejecución de las pruebas.
 
-La sección queda **completada dentro del alcance documental disponible**. No equivale a una certificación CCNA, una nota ni una evaluación en producción. Las fichas distinguen entre evidencias localizadas, archivos sin suficiente contexto y ejemplos didácticos redactados para esta edición. [Qué se incluye y qué se conserva en privado](referencias/README.md).
+**Estado de la materia en el portafolio: Completado.** No equivale a una certificación CCNA, una nota ni una evaluación en producción. Las fichas distinguen entre evidencias localizadas, archivos sin suficiente contexto y ejemplos didácticos redactados para esta edición. [Qué se incluye y qué se conserva en privado](referencias/README.md).

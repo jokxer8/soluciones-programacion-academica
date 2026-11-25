@@ -30,7 +30,7 @@ Esta lista muestra qué falta publicar o verificar. Si una materia o entrega est
 
 | Posición | Materia | Estado |
 |---:|---|---|
-| 07 | [Fundamentos de Redes](07-fundamentos-de-redes) | Completado: 15 fichas, proyecto multisede y evidencias resumidas |
+| 07 | [Fundamentos de Redes](07-fundamentos-de-redes) | Completado: 15 fichas, entregas y presentaciones, 7 simuladores y proyecto multisede |
 | 08 | [Sistemas Operativos](08-sistemas-operativos) | Completado: materiales disponibles, 25 PDF individuales, tareas, proyectos y competencias documentados |
 | 10 | [Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) | Completado: programa, ocho presentaciones, tres PDF propios, proyectos, competencias y simulador documentados; evaluaciones excluidas |
 
@@ -46,7 +46,7 @@ Estas comprobaciones mejoran la reproducibilidad y la evidencia técnica; **no b
 
 ## Trabajo completado
 
-- **07 · Fundamentos de Redes:** quince fichas y un caso multisede con cinco escenarios documentados en la [matriz de validación](07-fundamentos-de-redes/proyecto-cadena-hotelera/validacion.md).
+- **07 · Fundamentos de Redes:** quince fichas, [entregas](07-fundamentos-de-redes/tareas/README.md), [siete simuladores](07-fundamentos-de-redes/simuladores/README.md) y cinco escenarios del caso multisede documentados en la [matriz de validación](07-fundamentos-de-redes/proyecto-cadena-hotelera/validacion.md).
 
 - **00 · Introducción a la Algoritmia:** 53 casos correctos y 0 fallidos en la [batería registrada](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43595819295).
 - **02 · Sistemas Computacionales:** el documento `Asignacion 1.pdf` se conserva sin respuestas; 132 comparaciones C/FASM correctas en [Linux](02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
