@@ -12,4 +12,6 @@ Usa la consigna y la práctica resuelta para seguir el direccionamiento y la com
 - [Práctica resuelta](practica-resuelta.pdf), con credenciales retiradas.
 - [Repaso del parcial](repaso.md) · [Ficha y explicación](../actividades/13-parcial-2/README.md)
 
-El repaso no reproduce el banco de respuestas. No se adjunta el simulador sin verificar su configuración.
+El repaso no reproduce el banco de respuestas.
+
+[Descargar el simulador del Parcial 2](segundo-parcial-rutas.pkt), copia pública derivada de la entrega.

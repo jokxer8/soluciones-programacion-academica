@@ -23,3 +23,5 @@ Estado: archivos localizados, sin alcance técnico ni resultados atribuidos.
 [Guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 7: plantilla de observación para otra práctica. Se aporta como material nuevo; no acredita una ejecución de los archivos inventariados.
 
 [Ver los archivos de esta actividad](../../practicas-de-lab/README.md).
+
+[Descargar las dos prácticas](../../practicas-de-lab/README.md). Los archivos no se volvieron a ejecutar para esta publicación.

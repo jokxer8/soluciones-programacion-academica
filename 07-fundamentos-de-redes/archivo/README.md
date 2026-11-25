@@ -23,4 +23,4 @@ Usa la tabla para abrir la carpeta de tu interés. El catálogo separa las copia
 | Libro e instalador, solo referencia | 2 |
 | **Total inventariado** | **165** |
 
-Los recuentos son de origen, no cantidades de archivos originales subidos. Se acreditan las entregas de Kelvin César Del Castillo Torres y la coautoría donde corresponde. Los simuladores no probados, el material Cisco identificado, el libro comercial y las credenciales no se publican como archivos originales. Para estudiar, el índice enlaza a documentos de clase revisados, evidencia de consola o explicaciones nuevas según el caso.
+Los recuentos son de origen, no cantidades de archivos originales subidos. Se acreditan las entregas de Kelvin César Del Castillo Torres y la coautoría donde corresponde. Las [siete redes de Packet Tracer](../simuladores/README.md) se publican como copias de las entregas. Las plantillas `.pka`, el material Cisco identificado, el libro comercial y las credenciales originales no se publican. Para estudiar, el índice enlaza a documentos de clase revisados, evidencia de consola o explicaciones nuevas según el caso.

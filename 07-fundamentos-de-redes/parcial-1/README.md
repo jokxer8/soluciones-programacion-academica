@@ -12,4 +12,4 @@ La consigna y las respuestas se publican por separado: así puedes distinguir lo
 - [Respuestas de Kelvin](respuestas-de-kelvin.pdf), copia pública de la entrega.
 - [Ficha y explicación](../actividades/12-parcial-1/README.md)
 
-El archivo de Packet Tracer se inventarió, pero no se adjunta sin revisar su configuración interna.
+- [Descargar el simulador del Parcial 1](primer-parcial-oficinas.pkt), copia pública derivada de la entrega.

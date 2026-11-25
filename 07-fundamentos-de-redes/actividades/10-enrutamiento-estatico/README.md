@@ -36,3 +36,5 @@ Una solicitud con respuesta verifica el camino de ida y retorno de ese intercamb
 [Registro original de PC0](../../recursos/ping-pc0.txt) · [PC1](../../recursos/ping-pc1.txt) · [PC3](../../recursos/ping-pc3.txt). Las tres transcripciones conservan los reintentos. Para reproducir el método con otra maqueta, usa la lámina 5 del [cuaderno](../../recursos/cuaderno-de-practica.pdf).
 
 [Ver los archivos de esta actividad](../../tareas/10-enrutamiento-estatico/evidencia-cli/).
+
+[Descargar el simulador de la entrega](../../tareas/10-enrutamiento-estatico/enrutamiento-estatico.pkt).

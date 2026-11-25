@@ -14,4 +14,4 @@ La consigna explica qué se pidió; el informe y las capturas muestran cómo lo 
 - [Justificación del diseño en HTML](justificacion-del-diseno.html)
 - [Capturas y figuras de la entrega](../../recursos/evidencia-original-cadena-hotelera.pdf) · [Informe público resumido](../../recursos/informe-publico-cadena-hotelera.pdf)
 
-Autores: Kelvin César Del Castillo Torres y Gabriel Galasso. El `.pkt` no está incluido: el informe fuente registra credenciales dentro de la configuración del ejercicio.
+Autores: Kelvin César Del Castillo Torres y Gabriel Galasso. [Descargar el simulador de Cadena Hotelera](cadena-hotelera.pkt). Las claves de la entrega se sustituyeron por una clave de demostración.

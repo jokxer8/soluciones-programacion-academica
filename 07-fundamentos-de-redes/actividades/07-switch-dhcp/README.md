@@ -23,3 +23,5 @@ La consigna y el simulador pueden contener credenciales didácticas construidas 
 [Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 3, y [guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 6. El ejemplo de concesiones usa direcciones de documentación.
 
 [Ver los archivos de esta actividad](../../tareas/07-configuracion-switch/consigna.pdf).
+
+[Descargar el simulador de la entrega](../../tareas/07-configuracion-switch/configuracion-basica-switch.pkt).

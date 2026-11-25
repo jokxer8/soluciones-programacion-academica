@@ -44,3 +44,5 @@ Trabajo académico en equipo. Según la planificación del informe, mi contribuc
 **Autores del trabajo:** Kelvin César Del Castillo Torres y Gabriel Galasso.
 
 [Ver la carpeta de documentos del proyecto](documentos/README.md).
+
+[Descargar el simulador de la entrega](documentos/cadena-hotelera.pkt).

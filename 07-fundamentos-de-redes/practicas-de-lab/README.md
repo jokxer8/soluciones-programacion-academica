@@ -8,7 +8,9 @@
 
 Esta carpeta documenta el archivo localizado de la primera práctica y enlaza a los laboratorios con entregas identificadas.
 
-- **Primera práctica Cisco:** se localizó un archivo `.pkt` de 61 045 bytes. No se adjunta sin revisar internamente y no se afirma que se ejecutó en esta publicación.
+- [Primera práctica Cisco](primera-practica-cisco.pkt)
+- [Práctica del 19 de octubre de 2026](practica-19-octubre-2026.pkt)
+- [Configuración básica del switch](../tareas/07-configuracion-switch/configuracion-basica-switch.pkt) · [Enrutamiento estático](../tareas/10-enrutamiento-estatico/enrutamiento-estatico.pkt)
 - [Extracción didáctica y observaciones de los cinco laboratorios escritos](../tareas/README.md#laboratorios)
 - [Cuaderno público de ejercicios](../recursos/cuaderno-de-practica.pdf) · [Ficha de prácticas adicionales](../actividades/11-practicas-adicionales/README.md)
 
