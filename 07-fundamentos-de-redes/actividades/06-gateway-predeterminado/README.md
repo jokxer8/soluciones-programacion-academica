@@ -20,6 +20,6 @@ Los documentos incluyen una tabla de dos LAN. No se da por aprobada cada prueba 
 
 ## Archivo de respaldo o estudio
 
-[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 3: comprueba IP, máscara y gateway en una LAN nueva de ejemplo.
+[Cuaderno de práctica](../../material-de-estudio/cuaderno-de-practica.pdf), lámina 3: comprueba IP, máscara y gateway en una LAN nueva de ejemplo.
 
 [Ver los archivos de esta actividad](../../tareas/06-puerta-de-enlace.md).

@@ -8,11 +8,13 @@
 
 Las consignas dicen qué se pidió, y las entregas y registros documentan lo que se hizo. Las notas de laboratorio identifican qué se tomó de las observaciones existentes.
 
+[Fichas por actividad](../actividades/README.md) · [Parcial 1](../parcial-1/README.md) · [Parcial 2](../parcial-2/README.md) · [Simuladores](../simuladores/README.md)
+
 ## Entregas y prácticas
 
 | Trabajo | Archivos |
 | --- | --- |
-| Anatomía de una red | [Consigna](01-anatomia-visual/consigna.pdf) · [Mapa gráfico](01-anatomia-visual/anatomia-grafica.pdf) · [Mapa visual](01-anatomia-visual/anatomia-visual.pdf) |
+| Anatomía de una red | [Consigna](01-anatomia-visual/consigna.pdf) · [Mapa gráfico](01-anatomia-visual/anatomia-grafica.pdf) · [Mapa visual](01-anatomia-visual/anatomia-visual.pdf) · [Diagrama didáctico](01-anatomia-visual/mapa-anatomia-red.svg) |
 | Configuración básica de switch | [Consigna](07-configuracion-switch/consigna.pdf) · [Mandato](07-configuracion-switch/mandato.txt) · [Simulador](07-configuracion-switch/configuracion-basica-switch.pkt) |
 | Conversiones | [Consigna](08-conversiones/consigna.pdf) · [Entrega manuscrita](08-conversiones/entrega-manuscrita.pdf) |
 | Subredes | [Cuaderno manuscrito](09-subnetting/cuaderno-manuscrito.pdf) · [Explicación de CIDR](../actividades/09-subnetting/README.md) |

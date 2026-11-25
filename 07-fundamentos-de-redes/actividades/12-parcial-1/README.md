@@ -20,7 +20,7 @@ La [carpeta del Parcial 1](../../parcial-1/README.md) reúne la consigna, las re
 
 ## Archivo de respaldo o estudio
 
-[Guía de estudio](../../recursos/guia-de-estudio.pdf) y [cuaderno](../../recursos/cuaderno-de-practica.pdf), lámina 6. El repaso usa casos nuevos, no preguntas ni respuestas del parcial.
+[Guía de estudio](../../material-de-estudio/guia-de-estudio.pdf) y [cuaderno](../../material-de-estudio/cuaderno-de-practica.pdf), lámina 6. El repaso usa casos nuevos, no preguntas ni respuestas del parcial.
 
 [Ver los archivos de esta actividad](../../parcial-1/README.md).
 

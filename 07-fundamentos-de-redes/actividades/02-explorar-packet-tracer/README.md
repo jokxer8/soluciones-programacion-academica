@@ -20,6 +20,6 @@ El PDF de la tarea se identifica como 1.5.7, pero la plantilla idéntica del ban
 
 ## Archivo de respaldo o estudio
 
-[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 1: dibuja dos LAN y comprueba qué cambia al conectarlas con un router. Es un ejercicio nuevo, no la hoja oficial.
+[Cuaderno de práctica](../../material-de-estudio/cuaderno-de-practica.pdf), lámina 1: dibuja dos LAN y comprueba qué cambia al conectarlas con un router. Es un ejercicio nuevo, no la hoja oficial.
 
 [Ver los archivos de esta actividad](../../tareas/02-exploracion-packet-tracer.md).

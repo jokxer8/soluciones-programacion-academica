@@ -26,3 +26,7 @@ La carpeta de estudio incluye materiales sobre IOS, protocolos y modelos, capa f
 ## Criterios de publicación
 
 Se publican trabajos de clase atribuidos, extractos revisados de evidencias y material de estudio redactado para el portafolio. Las presentaciones de consulta y plantillas de terceros se sustituyen por guías y ejemplos propios con referencias. No se distribuyen el libro, el instalador, los bancos de terceros, credenciales ni plantillas de Packet Tracer del proveedor. Las redes `.pkt` de las entregas están en el [índice de simuladores](../simuladores/README.md). Sí se incluyen las consignas docentes y las entregas revisadas en el [archivo de la materia](../archivo/README.md). La autoría de las exposiciones y del proyecto se conserva.
+
+## Material de apoyo
+
+El índice de [material de estudio](../material-de-estudio/README.md) reúne teoría, guías y actividades. Los [laboratorios](../practicas-de-lab/README.md) reúnen las prácticas publicadas. Los programas teórico y práctico en Word antiguo no se redistribuyen; quedan identificados en el [catálogo](../archivo/README.md).

@@ -10,3 +10,5 @@ El archivo de origen incluía el programa teórico y el de laboratorio en Word a
 
 - Teoría: [presentaciones](../presentaciones/README.md) y [referencias](../referencias/README.md).
 - Laboratorio: [tareas y entregas](../tareas/README.md) y [prácticas de laboratorio](../practicas-de-lab/README.md).
+
+[Ver el índice unificado de estudio](../material-de-estudio/README.md).

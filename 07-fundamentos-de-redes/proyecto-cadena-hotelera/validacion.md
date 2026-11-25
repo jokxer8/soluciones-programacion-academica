@@ -33,4 +33,4 @@ Fuente: informe del proyecto, 22 de noviembre de 2026, apartados de diseño y va
 
 ### Cómo leer la evidencia P05
 
-La página 19, figuras 14–16, distingue tres momentos. Antes del corte, la traza sale por Tránsito. Durante la convergencia todavía aparece una respuesta de Tránsito, seguida por saltos de Atención y Reservas; esa captura no representa una traza estable completa del camino alternativo calculado. Después de restablecer E2, la tabla del router central vuelve a mostrar Tránsito como siguiente salto. No se midió el tiempo de convergencia. [Abrir las figuras originales](../recursos/evidencia-original-cadena-hotelera.pdf).
+La página 19, figuras 14–16, distingue tres momentos. Antes del corte, la traza sale por Tránsito. Durante la convergencia todavía aparece una respuesta de Tránsito, seguida por saltos de Atención y Reservas; esa captura no representa una traza estable completa del camino alternativo calculado. Después de restablecer E2, la tabla del router central vuelve a mostrar Tránsito como siguiente salto. No se midió el tiempo de convergencia. [Abrir las figuras originales](documentos/evidencia-original-cadena-hotelera.pdf).

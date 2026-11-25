@@ -38,8 +38,8 @@ Trabajo académico en equipo. Según la planificación del informe, mi contribuc
 
 ## Informe y capturas
 
-- [Informe público del proyecto (PDF)](../recursos/informe-publico-cadena-hotelera.pdf): alcance, diseño, dimensionamiento y resultados.
-- [Evidencia visual de la entrega (PDF)](../recursos/evidencia-original-cadena-hotelera.pdf): páginas 9, 10, 12 y 16–20 del informe de clase, con diagramas, tabla VLSM, salidas de consola y capturas de Packet Tracer. Se excluyen las páginas con datos personales y credenciales.
+- [Informe público del proyecto (PDF)](documentos/informe-publico-cadena-hotelera.pdf): alcance, diseño, dimensionamiento y resultados.
+- [Evidencia visual de la entrega (PDF)](documentos/evidencia-original-cadena-hotelera.pdf): páginas 9, 10, 12 y 16–20 del informe de clase, con diagramas, tabla VLSM, salidas de consola y capturas de Packet Tracer. Se excluyen las páginas con datos personales y credenciales.
 
 **Autores del trabajo:** Kelvin César Del Castillo Torres y Gabriel Galasso.
 

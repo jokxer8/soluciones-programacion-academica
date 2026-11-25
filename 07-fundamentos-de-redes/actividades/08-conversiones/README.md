@@ -20,6 +20,6 @@ Se revisaron visualmente las hojas manuscritas para publicar los cálculos de la
 
 ## Archivo de respaldo o estudio
 
-[Hojas manuscritas de Kelvin (PDF)](../../recursos/entrega-conversiones.pdf). Se conservan las cinco páginas de cálculos; se omite el enunciado. Para practicar con otros números, usa la lámina 4 del [cuaderno](../../recursos/cuaderno-de-practica.pdf).
+[Hojas manuscritas de Kelvin (PDF)](../../tareas/08-conversiones/entrega-manuscrita.pdf). Se conservan las cinco páginas de cálculos; se omite el enunciado. Para practicar con otros números, usa la lámina 4 del [cuaderno](../../material-de-estudio/cuaderno-de-practica.pdf).
 
 [Ver los archivos de esta actividad](../../tareas/08-conversiones/entrega-manuscrita.pdf).

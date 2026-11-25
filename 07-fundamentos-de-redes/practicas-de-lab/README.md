@@ -12,6 +12,6 @@ Esta carpeta documenta el archivo localizado de la primera práctica y enlaza a 
 - [Práctica del 19 de octubre de 2026](practica-19-octubre-2026.pkt)
 - [Configuración básica del switch](../tareas/07-configuracion-switch/configuracion-basica-switch.pkt) · [Enrutamiento estático](../tareas/10-enrutamiento-estatico/enrutamiento-estatico.pkt)
 - [Extracción didáctica y observaciones de los cinco laboratorios escritos](../tareas/README.md#laboratorios)
-- [Cuaderno público de ejercicios](../recursos/cuaderno-de-practica.pdf) · [Ficha de prácticas adicionales](../actividades/11-practicas-adicionales/README.md)
+- [Cuaderno público de ejercicios](../material-de-estudio/cuaderno-de-practica.pdf) · [Ficha de prácticas adicionales](../actividades/11-practicas-adicionales/README.md)
 
 Para tu siguiente práctica, guarda una tabla con equipo, interfaz, dirección, destino probado, resultado y captura. Mantén las credenciales fuera de esa tabla.

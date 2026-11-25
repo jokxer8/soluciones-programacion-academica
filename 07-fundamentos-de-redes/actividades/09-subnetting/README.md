@@ -20,6 +20,6 @@ El cuaderno usa una convención histórica que excluye las subredes de bits pres
 
 ## Archivo de respaldo o estudio
 
-[Cuaderno manuscrito de Kelvin (PDF)](../../recursos/entrega-subredes.pdf), 14 páginas de trabajo original. El cálculo de subredes «utilizables» que resta dos al total se conserva como convención histórica del ejercicio: en CIDR no se descuentan la primera y la última subred. No confundirlo con las direcciones reservadas dentro de una subred. Para un ejemplo actualizado, abre la lámina 5 de la [guía](../../recursos/guia-de-estudio.pdf).
+[Cuaderno manuscrito de Kelvin (PDF)](../../tareas/09-subnetting/cuaderno-manuscrito.pdf), 14 páginas de trabajo original. El cálculo de subredes «utilizables» que resta dos al total se conserva como convención histórica del ejercicio: en CIDR no se descuentan la primera y la última subred. No confundirlo con las direcciones reservadas dentro de una subred. Para un ejemplo actualizado, abre la lámina 5 de la [guía](../../material-de-estudio/guia-de-estudio.pdf).
 
 [Ver los archivos de esta actividad](../../tareas/09-subnetting/cuaderno-manuscrito.pdf).

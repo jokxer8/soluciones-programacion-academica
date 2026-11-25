@@ -20,7 +20,7 @@ El PDF de preparación verifica el modelo de direccionamiento, no documenta ping
 
 ## Archivo de respaldo o estudio
 
-[Guía de estudio](../../recursos/guia-de-estudio.pdf), láminas 5–7, y [cuaderno](../../recursos/cuaderno-de-practica.pdf), lámina 6. Son casos de repaso nuevos, sin contenido de banco de evaluación.
+[Guía de estudio](../../material-de-estudio/guia-de-estudio.pdf), láminas 5–7, y [cuaderno](../../material-de-estudio/cuaderno-de-practica.pdf), lámina 6. Son casos de repaso nuevos, sin contenido de banco de evaluación.
 
 [Ver los archivos de esta actividad](../../parcial-2/README.md).
 

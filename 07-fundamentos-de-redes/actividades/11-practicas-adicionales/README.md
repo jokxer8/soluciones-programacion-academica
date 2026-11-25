@@ -20,7 +20,7 @@ Estado: archivos localizados, sin alcance técnico ni resultados atribuidos.
 
 ## Archivo de respaldo o estudio
 
-[Guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 7: plantilla de observación para otra práctica. Se aporta como material nuevo; no acredita una ejecución de los archivos inventariados.
+[Guía de estudio](../../material-de-estudio/guia-de-estudio.pdf), lámina 7: plantilla de observación para otra práctica. Se aporta como material nuevo; no acredita una ejecución de los archivos inventariados.
 
 [Ver los archivos de esta actividad](../../practicas-de-lab/README.md).
 

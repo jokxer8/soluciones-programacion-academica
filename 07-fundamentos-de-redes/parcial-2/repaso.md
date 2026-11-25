@@ -13,4 +13,4 @@ Empieza por la red local. Solo después del gateway, sigue el tráfico entre rou
 3. Dos LAN pueden tener enlace local y aun así no comunicarse entre ellas. Dibuja siguiente salto de ida y de retorno antes de escribir rutas.
 4. Para comprobar el resultado, anota origen, destino y respuestas. Si falla, contrasta interfaces, prefijos y trayecto; no des por hecho que es el gateway.
 
-[Práctica resuelta](practica-resuelta.pdf) · [Guía de estudio](../recursos/guia-de-estudio.pdf).
+[Práctica resuelta](practica-resuelta.pdf) · [Guía de estudio](../material-de-estudio/guia-de-estudio.pdf).

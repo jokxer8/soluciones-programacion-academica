@@ -20,6 +20,6 @@ Se revisaron referencias a S1, S2, consola y NVRAM. Las hojas y el binario se ma
 
 ## Archivo de respaldo o estudio
 
-[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 2. Incluye cómo distinguir la gestión del switch del gateway del router. No se publica la plantilla original con las claves de práctica.
+[Cuaderno de práctica](../../material-de-estudio/cuaderno-de-practica.pdf), lámina 2. Incluye cómo distinguir la gestión del switch del gateway del router. No se publica la plantilla original con las claves de práctica.
 
 [Ver los archivos de esta actividad](../../tareas/04-configuracion-inicial-switch.md).

@@ -30,22 +30,16 @@ Una red permite que equipos y servicios compartan información. Empieza por iden
 
 Descarga las [siete redes .pkt de las entregas](simuladores/README.md), incluidos ambos parciales, las prácticas y Cadena Hotelera. Las copias públicas conservan el diseño de la red; los datos de acceso de clase se sustituyeron donde estaban presentes.
 
-## Archivo de la materia
+## Dónde está cada cosa
 
-[Exposiciones](exposiciones/README.md) · [Material de estudio](material-de-estudio/README.md) · [Parcial 1](parcial-1/README.md) · [Parcial 2](parcial-2/README.md) · [Prácticas de laboratorio](practicas-de-lab/README.md) · [Presentaciones](presentaciones/README.md) · [Proyecto final](proyecto-cadena-hotelera/documentos/README.md) · [Tareas](tareas/README.md)
-
-[Catálogo de archivos de origen e índice de publicación](archivo/README.md).
-
-## Documentos y evidencias
-
-| Si buscas… | Abre… |
+| Si quieres… | Empieza aquí |
 |---|---|
-| Entregas de clase | [Conversiones manuscritas](recursos/entrega-conversiones.pdf) · [Cuaderno de subredes](recursos/entrega-subredes.pdf) · [Registros de ping](actividades/10-enrutamiento-estatico/README.md#archivo-de-respaldo-o-estudio) |
-| Exposiciones | [Capa de enlace](actividades/14-capa-enlace/README.md#archivo-de-respaldo-o-estudio) · [TCP y UDP](recursos/presentacion-tcp-y-udp.pdf) |
-| Material para estudiar | [Guía de estudio](recursos/guia-de-estudio.pdf) · [Cuaderno de práctica](recursos/cuaderno-de-practica.pdf) · [Mapa visual](recursos/mapa-anatomia-red.svg) |
-| Respaldo del proyecto | [Informe público](recursos/informe-publico-cadena-hotelera.pdf) · [Figuras y pruebas del informe de clase](recursos/evidencia-original-cadena-hotelera.pdf) |
+| Ver lo que se practicó y abrir la entrega | [Fichas en palabras simples](actividades/README.md) · [Tareas y entregas](tareas/README.md) |
+| Revisar una evaluación o descargar una simulación | [Parcial 1](parcial-1/README.md) · [Parcial 2](parcial-2/README.md) · [Prácticas de laboratorio](practicas-de-lab/README.md) · [Índice de simuladores](simuladores/README.md) |
+| Estudiar un tema o seguir una exposición | [Material de estudio](material-de-estudio/README.md) |
+| Inspeccionar un proyecto completo | [Cadena Hotelera: diseño, pruebas e informe](proyecto-cadena-hotelera/README.md) |
 
-El [índice de recursos](recursos/README.md) distingue la evidencia del trabajo de clase de los ejemplos creados para estudiar.
+El [archivo de la materia](archivo/README.md) contiene el catálogo de procedencia de los 165 archivos y explica cuáles se publicaron, adaptaron o citaron.
 
 ## Resultados con evidencia
 
