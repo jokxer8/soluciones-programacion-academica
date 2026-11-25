@@ -1,5 +1,7 @@
 # Proyectos y contribuciones
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Competencias](../competencias/README.md) · [Evidencias](../evidencias/README.md)
 
 Esta sección registra los trabajos colaborativos desarrollados en ISC-364 y distingue los resultados del equipo de la contribución personal documentada. Los resúmenes describen el alcance técnico y los límites de la evidencia disponible; no implican calificaciones ni atribuyen a una sola persona el trabajo grupal.

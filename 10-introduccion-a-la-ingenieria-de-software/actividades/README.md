@@ -1,5 +1,7 @@
 # Actividades
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [Inicio de la materia](../README.md) · [Proyectos](../proyectos/README.md) · [Competencias](../competencias/README.md)
 
 ## Actividad individual disponible

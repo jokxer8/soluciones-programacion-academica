@@ -1,5 +1,7 @@
 # Tarea 16: TCP/IP y servicios de red
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../../README.md) · [Índice de materia](../../README.md) · [Volver al nivel anterior](../README.md)
+
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
 ## Propósito

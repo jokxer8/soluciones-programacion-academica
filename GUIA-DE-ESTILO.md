@@ -15,6 +15,12 @@ La barra de cada actividad enlaza Inicio, Materia, Desarrollo y el código dispo
 
 Se mantienen títulos Markdown, tablas comparables, bloques de código con lenguaje e insignias de Shields: azul para C/C#, morado para SML, gris para SQL y verde para estados documentados. Las portadas del perfil y del repositorio usan la misma paleta. Las materias enlazan a sus vecinas y al índice general.
 
+### Niveles de navegación
+
+La portada del repositorio y cada materia conservan su banner. En los subíndices y fichas de Sistemas Operativos e Ingeniería de Software se usa una cabecera compacta: icono con etiqueta, número de materia, enlace al índice general y enlace a la carpeta superior. Esto da continuidad sin repetir una imagen grande.
+
+En el índice general, el campo de estado de las materias solo admite **Completado** o **Pendiente**. Las pruebas ejecutadas, los créditos y las limitaciones se leen junto a la evidencia. Los indicadores de portada deben llevar alcance verificable y no se usan como calificaciones.
+
 ## Cobertura y redacción
 
 Las carpetas con actividades mantienen una navegación y una presentación común, con tablas e insignias cuando ayudan a recorrer el material. Los índices reflejan los archivos presentes y distinguen con claridad entre enunciados, entregas, soluciones documentadas y resultados ejecutados.

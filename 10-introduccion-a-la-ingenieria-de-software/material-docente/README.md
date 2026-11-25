@@ -1,5 +1,7 @@
 # Material docente
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [Inicio de la materia](../README.md) · [Programa de estudio](../programa-estudio/README.md)
 
 Se organizan aquí las presentaciones PDF de apoyo disponibles para ICC-341-T. Los nombres normalizados identifican el número de unidad; los contenidos de los documentos se conservan.

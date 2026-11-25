@@ -1,5 +1,7 @@
 # Recursos de práctica
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [Inicio de la materia](../README.md) · [Material docente](../material-docente/README.md) · [Programa](../programa-estudio/README.md)
 
 ## Simulador de exámenes ICC-341

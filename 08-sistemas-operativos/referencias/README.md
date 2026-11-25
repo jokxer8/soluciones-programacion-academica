@@ -1,5 +1,7 @@
 # Referencias y criterios de publicación
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Programa](../programa-estudio/README.md) · [Proyectos](../proyectos/README.md)
 
 ## Fuentes usadas durante la asignatura

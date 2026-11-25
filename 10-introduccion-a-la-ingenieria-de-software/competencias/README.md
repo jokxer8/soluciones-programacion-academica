@@ -1,5 +1,7 @@
 # Competencias y evidencias de aprendizaje
 
+🧩 **10 · Ingeniería de Software** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [Inicio de la materia](../README.md) · [Programa de estudio](../programa-estudio/README.md) · [Proyectos](../proyectos/README.md)
 
 El programa institucional declara competencias del curso. La tabla siguiente las relaciona con las evidencias publicadas que permiten documentar actividades y aprendizajes. La presencia de una evidencia ilustra el trabajo realizado; por sí sola no certifica una calificación ni el dominio completo de una competencia.

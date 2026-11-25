@@ -1,5 +1,7 @@
 # Evidencias documentales
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Actividades](../actividades/README.md)
 
 ## Programa de estudio

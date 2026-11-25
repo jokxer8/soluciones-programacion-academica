@@ -1,5 +1,7 @@
 # Actividades y tareas
 
+🖥️ **08 · Sistemas Operativos** · [Inicio del portafolio](../../README.md) · [Índice de materia](../README.md)
+
 [← Sistemas Operativos](../README.md) · [Competencias](../competencias/README.md) · [Evidencias PDF](../evidencias/README.md)
 
 ## Índice

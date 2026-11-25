@@ -19,13 +19,25 @@ El portafolio reúne materias cursadas con actividades y fuentes académicas doc
 
 ---
 
+## Elige tu ruta
+
+| Ruta | Empieza por |
+|---|---|
+| 🎓 **Aprender en secuencia** | [Índice 00–15](#áreas-principales) y [guía de lectura](GUIA-DE-LECTURA.md). |
+| 🧪 **Revisar pruebas y código** | [C++ en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987168) y [C/FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987047). |
+| 💼 **Evaluar un proyecto** | [Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) y [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises). |
+
+**Indicador documental:** 10 de 16 materias completadas dentro del alcance publicado; 6 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes.
+
 ## Explorar el portafolio
 
 [Materias y estados](#áreas-principales) · [Proyectos destacados](#proyectos-destacados) · [Evidencias originales](archivos-originales) · [Pendientes](PENDIENTES.md) · [Perfil del autor](https://github.com/jokxer8) · [Guía de presentación](GUIA-DE-ESTILO.md)
 
 **Ruta de aprendizaje**
 
-[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07 · Fundamentos de Redes](PENDIENTES.md) → [08 · Sistemas Operativos](08-sistemas-operativos) → [09 · Inteligencia de Negocios](PENDIENTES.md) → [10 · Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) → [11–14 · Materias pendientes](PENDIENTES.md) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
+[00 · Introducción a la Algoritmia](00-introduccion-a-la-algoritmia) → [01 · Fundamentos de Programación](01-fundamentos-programacion) → [02 · Fundamentos de Sistemas Computacionales](02-fundamentos-sistemas-computacionales) → [03 · Programación Orientada a Objetos](03-programacion-orientada-a-objetos) → [04 · Algoritmos Clásicos y Estructuras de Datos](04-algoritmo-clasico-y-estructura-de-datos) → [05 · Diseño y Análisis de Algoritmos](05-diseno-y-analisis-de-algoritmos) → [06 · Bases de Datos](06-bases-de-datos) → [07 · Fundamentos de Redes](07-fundamentos-de-redes)
+
+[08 · Sistemas Operativos](08-sistemas-operativos) → [09 · Inteligencia de Negocios](09-inteligencia-de-negocios) → [10 · Introducción a la Ingeniería de Software](10-introduccion-a-la-ingenieria-de-software) → [11 · Arquitectura de Software](11-arquitectura-de-software) → [12 · Programación Web](12-programacion-web) → [13 · Introducción a la Inteligencia Artificial](13-introduccion-a-la-inteligencia-artificial) → [14 · Contabilidad para Ciencias de la Computación](14-contabilidad-para-ciencias-de-la-computacion) → [15 · Programación Funcional-SML](15-programacion-funcional-sml)
 
 Cada actividad conecta **enunciado → desarrollo → código → evidencia**. Las pruebas y sus límites se documentan en la materia correspondiente.
 
