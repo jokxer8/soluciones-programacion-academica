@@ -27,6 +27,10 @@ El informe agrega crecimiento del 20 % y direcciones de infraestructura según c
 | P02 | Conectividad inicial con rutas estáticas | Rutas estáticas en tránsito y recorrido al servidor por el camino previsto | Solo la fase inicial, no toda la red multisede |
 | P03 | RIPv2 y acceso HTTP | El sitio abrió desde las tres sucursales; el informe muestra RIPv2 y rutas aprendidas | Las tablas calculadas se distinguen de capturas; no es una prueba de seguridad web |
 | P04 | IPv6 local | 4/4 respuestas entre dos terminales de Reservas | No se enrutó IPv6 entre sedes |
-| P05 | Recuperación al cortar E2 | Ruta habitual → ruta por Operaciones y Atención → ruta habitual tras restablecer | Un corte único simulado; no se promete un tiempo de recuperación |
+| P05 | Recuperación al cortar E2 | Recorrido habitual antes; traza durante la convergencia y retorno de Tránsito como siguiente salto después | Un corte único simulado; no se promete un tiempo de recuperación |
 
 Fuente: informe del proyecto, 22 de noviembre de 2026, apartados de diseño y validación. Esta revisión no ejecutó el archivo en Packet Tracer. [RFC 2453: RIPv2](https://www.rfc-editor.org/rfc/rfc2453).
+
+### Cómo leer la evidencia P05
+
+La página 19, figuras 14–16, distingue tres momentos. Antes del corte, la traza sale por Tránsito. Durante la convergencia todavía aparece una respuesta de Tránsito, seguida por saltos de Atención y Reservas; esa captura no representa una traza estable completa del camino alternativo calculado. Después de restablecer E2, la tabla del router central vuelve a mostrar Tránsito como siguiente salto. No se midió el tiempo de convergencia. [Abrir las figuras originales](../recursos/evidencia-original-cadena-hotelera.pdf).

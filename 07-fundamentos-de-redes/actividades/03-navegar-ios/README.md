@@ -17,3 +17,7 @@ Identifica el acceso de usuario (>) y el privilegiado (#). Usa la ayuda contextu
 **Material localizado:** Lab 2.1, componente 2.3.7: PDF, DOCX y actividad local.
 
 La entrega combina material de Cisco y anotaciones. Se documenta el aprendizaje, no se reparte la actividad ni se afirma que todas las respuestas quedaron registradas.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 2 y [guía](../../recursos/guia-de-estudio.pdf), lámina 3. Son adaptaciones para practicar modos de consola y comprobaciones sin copiar la plantilla.

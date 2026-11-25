@@ -17,3 +17,7 @@ Se inventariaron por fecha o contexto de carpeta; no se fusionan con otras entre
 **Material localizado:** Dos .pkt sin informe específico asociado en los directorios de laboratorio y tareas.
 
 Estado: archivos localizados, sin alcance técnico ni resultados atribuidos.
+
+## Archivo de respaldo o estudio
+
+[Guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 7: plantilla de observación para otra práctica. Se aporta como material nuevo; no acredita una ejecución de los archivos inventariados.

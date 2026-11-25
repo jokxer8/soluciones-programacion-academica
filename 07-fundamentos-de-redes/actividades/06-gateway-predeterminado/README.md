@@ -17,3 +17,7 @@ En un laboratorio propio compara IP, máscara y gateway con otra PC de la misma 
 **Material localizado:** Lab 3.1, componente 10.3.5: PDF, DOCX y actividad local.
 
 Los documentos incluyen una tabla de dos LAN. No se da por aprobada cada prueba del ejercicio oficial si no hay registro inequívoco.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 3: comprueba IP, máscara y gateway en una LAN nueva de ejemplo.

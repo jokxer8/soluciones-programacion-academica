@@ -17,3 +17,7 @@ Distingue IP fija de administración frente a concesión a clientes. Comprueba q
 **Material localizado:** Consigna, enlace de repaso y archivo .pkt local.
 
 La consigna y el simulador pueden contener credenciales didácticas construidas con una identificación. Se proponen fichas limpias, no el material bruto.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 3, y [guía de estudio](../../recursos/guia-de-estudio.pdf), lámina 6. El ejemplo de concesiones usa direcciones de documentación.

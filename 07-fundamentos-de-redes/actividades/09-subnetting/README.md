@@ -17,3 +17,7 @@ Ejemplo nuevo: divide 192.0.2.0/24 en /26. Son cuatro bloques de 64; el primero 
 **Material localizado:** Cuaderno de Robb Jones, una entrega escaneada de 14 páginas y un solucionario de apoyo de 44 páginas.
 
 El cuaderno usa una convención histórica que excluye las subredes de bits prestados todos 0 o todos 1 en ciertos ejercicios. No se aplica esa resta al conteo moderno de subredes. No se redistribuye el cuaderno ni un solucionario íntegro.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno manuscrito de Kelvin (PDF)](../../recursos/entrega-subredes.pdf), 14 páginas de trabajo original. El cálculo de subredes «utilizables» que resta dos al total se conserva como convención histórica del ejercicio: en CIDR no se descuentan la primera y la última subred. No confundirlo con las direcciones reservadas dentro de una subred. Para un ejemplo actualizado, abre la lámina 5 de la [guía](../../recursos/guia-de-estudio.pdf).

@@ -1,0 +1,86 @@
+Cisco Packet Tracer PC Command Line 1.0
+C:\>ping 172.16.1.10
+
+Pinging 172.16.1.10 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.16.1.10: bytes=32 time=2ms TTL=125
+Reply from 172.16.1.10: bytes=32 time=2ms TTL=125
+Reply from 172.16.1.10: bytes=32 time=14ms TTL=125
+
+Ping statistics for 172.16.1.10:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 14ms, Average = 6ms
+
+C:\>ping 172.16.1.10
+
+Pinging 172.16.1.10 with 32 bytes of data:
+
+Reply from 172.16.1.10: bytes=32 time=2ms TTL=125
+Reply from 172.16.1.10: bytes=32 time=12ms TTL=125
+Reply from 172.16.1.10: bytes=32 time=12ms TTL=125
+Reply from 172.16.1.10: bytes=32 time=23ms TTL=125
+
+Ping statistics for 172.16.1.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 23ms, Average = 12ms
+
+C:\>ping 172.16.2.10
+
+Pinging 172.16.2.10 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.16.2.10: bytes=32 time=1ms TTL=126
+Reply from 172.16.2.10: bytes=32 time=1ms TTL=126
+Reply from 172.16.2.10: bytes=32 time=1ms TTL=126
+
+Ping statistics for 172.16.2.10:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 1ms, Average = 1ms
+
+C:\>ping 172.16.2.10
+
+Pinging 172.16.2.10 with 32 bytes of data:
+
+Reply from 172.16.2.10: bytes=32 time=1ms TTL=126
+Reply from 172.16.2.10: bytes=32 time=12ms TTL=126
+Reply from 172.16.2.10: bytes=32 time=8ms TTL=126
+Reply from 172.16.2.10: bytes=32 time=1ms TTL=126
+
+Ping statistics for 172.16.2.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 12ms, Average = 5ms
+
+C:\>ping 172.16.3.10
+
+Pinging 172.16.3.10 with 32 bytes of data:
+
+Request timed out.
+Reply from 172.16.3.10: bytes=32 time=1ms TTL=126
+Reply from 172.16.3.10: bytes=32 time=5ms TTL=126
+Reply from 172.16.3.10: bytes=32 time=2ms TTL=126
+
+Ping statistics for 172.16.3.10:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 5ms, Average = 2ms
+
+C:\>ping 172.16.3.10
+
+Pinging 172.16.3.10 with 32 bytes of data:
+
+Reply from 172.16.3.10: bytes=32 time=10ms TTL=126
+Reply from 172.16.3.10: bytes=32 time=15ms TTL=126
+Reply from 172.16.3.10: bytes=32 time=1ms TTL=126
+Reply from 172.16.3.10: bytes=32 time=9ms TTL=126
+
+Ping statistics for 172.16.3.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 15ms, Average = 8ms
+
+C:\>

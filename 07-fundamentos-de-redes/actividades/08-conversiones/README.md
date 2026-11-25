@@ -16,4 +16,8 @@ Ejemplo nuevo: 42 representa 00101010 en binario de ocho bits y 2A en hexadecima
 
 **Material localizado:** Consigna y PDF de seis páginas compuesto por imágenes; sin texto extraíble en la revisión.
 
-Se conserva una explicación original. No se transcriben los ejercicios del enunciado ni se califican respuestas que el texto extraído no permite comprobar.
+Se revisaron visualmente las hojas manuscritas para publicar los cálculos de la entrega. No se incluye la consigna ni se presenta la copia como una corrección de todas las respuestas.
+
+## Archivo de respaldo o estudio
+
+[Hojas manuscritas de Kelvin (PDF)](../../recursos/entrega-conversiones.pdf). Se conservan las cinco páginas de cálculos; se omite el enunciado. Para practicar con otros números, usa la lámina 4 del [cuaderno](../../recursos/cuaderno-de-practica.pdf).

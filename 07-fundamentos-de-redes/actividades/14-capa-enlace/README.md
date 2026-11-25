@@ -16,4 +16,8 @@ Contrasta un tramo local con el viaje extremo a extremo. Dibuja un switch con tr
 
 **Material localizado:** Presentación grupal de 12 diapositivas, guion parcial y material de apoyo de la unidad 6.
 
-Síntesis nueva basada en la presentación. El guion del compañero, las diapositivas de apoyo y recursos incrustados no se redistribuyen.
+Se conserva la presentación del equipo en una copia visual. No se incluyen los guiones, notas incrustadas ni las diapositivas docentes de apoyo.
+
+## Archivo de respaldo o estudio
+
+[Exposición de clase, 12 diapositivas (PDF)](../../recursos/exposicion-original-capa-de-enlace.pdf) · [Presentación didáctica, 5 láminas (PDF)](../../recursos/presentacion-capa-de-enlace.pdf). Trabajo de Kelvin César Del Castillo Torres y Gabriel Galasso; la adaptación incorpora un ejemplo nuevo de aprendizaje de direcciones MAC.

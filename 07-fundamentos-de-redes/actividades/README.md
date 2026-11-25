@@ -2,6 +2,8 @@
 
 [Fundamentos de Redes](../README.md) · [Caso multisede](../proyecto-cadena-hotelera/README.md)
 
+Cada ficha termina con un enlace al respaldo disponible o a un material para practicar. Para ver los archivos juntos, abre [Documentos y evidencias](../recursos/README.md).
+
 ## En palabras simples
 
 ![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
@@ -17,7 +19,7 @@ Cada ficha explica qué practicaste, por qué sirve y qué evidencia quedó. Emp
 | 5 | [Configuración inicial del router](05-router-inicial/README.md) | Lab 3.1, componente 10.1.4: PDF, DOCX y actividad local. |
 | 6 | [Diagnóstico de la puerta de enlace](06-gateway-predeterminado/README.md) | Lab 3.1, componente 10.3.5: PDF, DOCX y actividad local. |
 | 7 | [Práctica 1: switch y clientes DHCP](07-switch-dhcp/README.md) | Consigna, enlace de repaso y archivo .pkt local. |
-| 8 | [Conversión entre binario, decimal y hexadecimal](08-conversiones/README.md) | Consigna y PDF de seis páginas compuesto por imágenes; sin texto extraíble en la revisión. |
+| 8 | [Conversión entre binario, decimal y hexadecimal](08-conversiones/README.md) | Consigna y cinco hojas manuscritas de trabajo; las hojas tienen una copia pública. |
 | 9 | [Direccionamiento, subnetting y VLSM](09-subnetting/README.md) | Cuaderno de Robb Jones, una entrega escaneada de 14 páginas y un solucionario de apoyo de 44 páginas. |
 | 10 | [Enrutamiento estático: cuatro LAN](10-enrutamiento-estatico/README.md) | Práctica con archivo .pkt y registros CLI de equipos simulados. |
 | 11 | [Prácticas adicionales de simulación](11-practicas-adicionales/README.md) | Dos .pkt sin informe específico asociado en los directorios de laboratorio y tareas. |

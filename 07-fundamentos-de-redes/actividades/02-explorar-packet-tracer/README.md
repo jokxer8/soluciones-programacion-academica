@@ -17,3 +17,7 @@ Compara oficina central, sucursal y casa remota en un diagrama de práctica. Dif
 **Material localizado:** Lab 1: hoja contestada y actividad de representación de red. El binario de la tarea coincide byte por byte con el de CCNA.
 
 El PDF de la tarea se identifica como 1.5.7, pero la plantilla idéntica del banco CCNA está rotulada 1.5.5; no se presume que ambas etiquetas sean equivalentes.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 1: dibuja dos LAN y comprueba qué cambia al conectarlas con un router. Es un ejercicio nuevo, no la hoja oficial.

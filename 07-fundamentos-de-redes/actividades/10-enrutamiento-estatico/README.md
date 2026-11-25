@@ -30,3 +30,7 @@ Las transcripciones muestran seis pares con 4/4 respuestas en su última prueba.
 | PC3 → PC2 | 4/4 | Repetición tras 3/4 inicial |
 
 Una solicitud con respuesta verifica el camino de ida y retorno de ese intercambio. La tabla no representa doce pruebas direccionales independientes ni pruebas de carga.
+
+## Archivo de respaldo o estudio
+
+[Registro original de PC0](../../recursos/ping-pc0.txt) · [PC1](../../recursos/ping-pc1.txt) · [PC3](../../recursos/ping-pc3.txt). Las tres transcripciones conservan los reintentos. Para reproducir el método con otra maqueta, usa la lámina 5 del [cuaderno](../../recursos/cuaderno-de-practica.pdf).

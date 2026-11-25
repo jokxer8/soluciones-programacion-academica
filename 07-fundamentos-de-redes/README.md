@@ -8,7 +8,7 @@
 
 </div>
 
-[Inicio](../README.md) · **Materia 07** · [Actividades](actividades/README.md) · [Proyecto final](proyecto-cadena-hotelera/README.md) · [Fuentes](referencias/README.md)
+[Inicio](../README.md) · **Materia 07** · [Actividades](actividades/README.md) · [Proyecto final](proyecto-cadena-hotelera/README.md) · [Documentos y evidencias](recursos/README.md) · [Fuentes](referencias/README.md)
 
 ## En palabras simples
 
@@ -25,6 +25,17 @@ Una red permite que equipos y servicios compartan información. Empieza por iden
 | 3 · Direccionar | Binario, hexadecimal, IPv4, subnetting y VLSM | [Conversiones](actividades/08-conversiones/README.md) · [Subredes](actividades/09-subnetting/README.md) |
 | 4 · Diagnosticar | Gateway, conectividad local y rutas de ida y retorno | [Gateway](actividades/06-gateway-predeterminado/README.md) · [Rutas estáticas](actividades/10-enrutamiento-estatico/README.md) |
 | 5 · Explicar y aplicar | Ethernet, TCP/UDP y una red multisede con RIPv2 | [Capa de enlace](actividades/14-capa-enlace/README.md) · [TCP/UDP](actividades/15-tcp-udp/README.md) · [Proyecto](proyecto-cadena-hotelera/README.md) |
+
+## Documentos y evidencias
+
+| Si buscas… | Abre… |
+|---|---|
+| Entregas de clase | [Conversiones manuscritas](recursos/entrega-conversiones.pdf) · [Cuaderno de subredes](recursos/entrega-subredes.pdf) · [Registros de ping](actividades/10-enrutamiento-estatico/README.md#archivo-de-respaldo-o-estudio) |
+| Exposiciones | [Capa de enlace](actividades/14-capa-enlace/README.md#archivo-de-respaldo-o-estudio) · [TCP y UDP](recursos/presentacion-tcp-y-udp.pdf) |
+| Material para estudiar | [Guía de estudio](recursos/guia-de-estudio.pdf) · [Cuaderno de práctica](recursos/cuaderno-de-practica.pdf) · [Mapa visual](recursos/mapa-anatomia-red.svg) |
+| Respaldo del proyecto | [Informe público](recursos/informe-publico-cadena-hotelera.pdf) · [Figuras y pruebas del informe de clase](recursos/evidencia-original-cadena-hotelera.pdf) |
+
+El [índice de recursos](recursos/README.md) distingue la evidencia del trabajo de clase de los ejemplos creados para estudiar.
 
 ## Resultados con evidencia
 

@@ -8,6 +8,8 @@
 
 Las guías explican los temas con otras palabras. Para abrir actividades oficiales o instalar Packet Tracer, usa la fuente original. Un archivo de práctica no demuestra por sí solo que la prueba se ejecutó.
 
+Para descargar los documentos públicos, abre [Documentos y evidencias](../recursos/README.md). Los materiales distinguen trabajo de clase, ediciones públicas y ejercicios nuevos.
+
 ## Ruta de consulta
 
 | Tema | Qué se estudia | Recurso |
@@ -23,4 +25,4 @@ La carpeta de estudio incluye materiales sobre IOS, protocolos y modelos, capa f
 
 ## Criterios de publicación
 
-Los textos y diagramas se redactaron como material independiente. Se citan las fuentes oficiales en lugar de distribuir el libro, el instalador, las plantillas de evaluación, las hojas de Cisco, las presentaciones sin licencia de redistribución comprobada ni los cuestionarios. Se describen las entregas colaborativas sin copiar guiones de terceros ni incluir datos identificativos o credenciales. Los archivos de simulación quedan fuera de esta edición porque no se revisaron internamente ni se preparó una copia libre de datos de acceso.
+Se publican trabajos de clase atribuidos, extractos revisados de evidencias y material de estudio redactado para el portafolio. Las presentaciones de consulta y plantillas de terceros se sustituyen por guías y ejemplos propios con referencias. No se distribuyen el libro, el instalador, claves de evaluaciones, credenciales ni binarios Packet Tracer cuya configuración no se haya revisado. La autoría de las exposiciones y del proyecto se conserva.

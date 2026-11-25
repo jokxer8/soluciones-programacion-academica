@@ -17,3 +17,7 @@ Compara la configuración activa con la de arranque. Identifica puertos y línea
 **Material localizado:** Lab 2.1, componente 2.5.5: PDF, DOCX y actividad local.
 
 Se revisaron referencias a S1, S2, consola y NVRAM. Las hojas y el binario se mantienen fuera de la propuesta pública.
+
+## Archivo de respaldo o estudio
+
+[Cuaderno de práctica](../../recursos/cuaderno-de-practica.pdf), lámina 2. Incluye cómo distinguir la gestión del switch del gateway del router. No se publica la plantilla original con las claves de práctica.

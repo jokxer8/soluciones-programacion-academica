@@ -17,3 +17,7 @@ En un ejemplo nuevo, 10.0.2.0/24 identifica la red, mientras 10.0.2.0 dentro de 
 **Material localizado:** Simulador local, práctica resuelta de preparación, consigna y cuestionario de respuestas.
 
 El PDF de preparación verifica el modelo de direccionamiento, no documenta pings reales. Existe un .pkt independiente en la carpeta, sin vínculo verificado con esa práctica. No se incluyen cuestionarios ni claves.
+
+## Archivo de respaldo o estudio
+
+[Guía de estudio](../../recursos/guia-de-estudio.pdf), láminas 5–7, y [cuaderno](../../recursos/cuaderno-de-practica.pdf), lámina 6. Son casos de repaso nuevos, sin contenido de banco de evaluación.
