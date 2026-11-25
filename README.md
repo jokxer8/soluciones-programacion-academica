@@ -34,7 +34,7 @@ Si estás aprendiendo, elige una materia y abre una actividad. Empieza por **En 
 | 🧪 **Revisar pruebas y código** | [C++ en Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987168) y [C/FASM en Linux](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/43634987047). |
 | 💼 **Evaluar un proyecto** | [Reservas de Hotel](06-bases-de-datos/hotel-reservas-proyecto-final) y [Gestión de países](02-fundamentos-sistemas-computacionales/proyecto-final-paises). |
 
-**Indicador documental:** 10 de 16 materias completadas dentro del alcance publicado; 6 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes.
+**Indicador documental:** 10 de 16 materias completadas dentro del alcance publicado; 6 pendientes. Las ejecuciones enlazadas cubren solo los ejercicios correspondientes. Los **187 documentos con «En palabras simples»** miden cobertura editorial y no representan ejercicios ejecutados ni resultados de aprendizaje medidos.
 
 ## Explorar el portafolio
 
@@ -212,6 +212,10 @@ Cada práctica tiene una ficha con mandato, tema, alcance y evidencia disponible
 | [Sistema de Reservas de Hotel - Proyecto Final](06-bases-de-datos/hotel-reservas-proyecto-final) | C#, Windows Forms, SQL Server, ADO.NET, reservas, facturación y roles |
 
 ---
+
+## Cómo interpretar los resultados
+
+**Completado / Pendiente** describe si la materia está documentada en el índice. El nivel técnico se evalúa por proyecto y con su evidencia: una solución puede estar implementada y pasar pruebas, sin haber pasado todavía por un despliegue real.
 
 ## Proyectos destacados
 

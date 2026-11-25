@@ -18,6 +18,15 @@
 
 Imagina que alguien llama para reservar una habitación. El personal registra al cliente, selecciona una habitación y guarda la reserva. La aplicación es lo que usa el personal en pantalla; la base de datos conserva la información para consultarla después. Es un proyecto grupal: los créditos y las pruebas están en la documentación.
 
+## Nivel y resultados comprobados
+
+| Indicador | Valor | Evidencia y alcance |
+|---|---|---|
+| Ejecución funcional documentada | **79 / 79 pruebas correctas** | [Casos y resultados](docs/PRUEBAS-FUNCIONALES.md) y [ejecución en GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210), 16 de octubre de 2026. |
+| Nivel de la aplicación académica | **Validado en el entorno de pruebas** | Aplicación y base de datos comprobadas con la batería publicada; no equivale a un despliegue hotelero. |
+
+**Siguiente hito:** comprobar concurrencia entre operadores y completar el recorrido visual. El proyecto es grupal; se mantienen los créditos de la entrega.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Integro el modelo relacional con una aplicación de escritorio desarrollada en equipo. Las 79 pruebas funcionales documentadas son casos comprobados, no pantallas ni tablas. En el almacenamiento de contraseñas, 600 000 indica iteraciones de derivación; una sal de 16 bytes equivale a 128 bits y la clave derivada de 32 bytes, a 256 bits. Estos tamaños no indican la longitud de la contraseña.
