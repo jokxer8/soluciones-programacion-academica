@@ -1,15 +1,16 @@
-
 <div align="center">
 
 <h1 align="center"><img src="assets/readme-banners/inicio.svg" alt="Soluciones de Programación Académica (Academic Programming Solutions)" width="100%"></h1>
 
-### Algoritmos · programación · bases de datos · proyectos
+### Programación, sistemas y datos · Ruta 00–15
 
-![Proyecto](https://img.shields.io/badge/proyecto-portafolio%20acad%C3%A9mico-7C3AED?style=for-the-badge)
-![Estado](https://img.shields.io/badge/estado-en%20expansi%C3%B3n-F59E0B?style=for-the-badge)
-![Visibilidad](https://img.shields.io/badge/repositorio-p%C3%BAblico-059669?style=for-the-badge)
+Recorre las materias en orden y encuentra el código, las explicaciones y las evidencias disponibles.
 
-[🧭 Explorar el portafolio](#explorar-el-portafolio)
+![Materias: 10 de 16 completadas](https://img.shields.io/badge/Materias-10%20de%2016%20completadas-1E3A5F?style=for-the-badge)
+![Pendientes: 6](https://img.shields.io/badge/Pendientes-6-94520B?style=for-the-badge)
+![Pruebas: Windows y Linux](https://img.shields.io/badge/Pruebas-Windows%20y%20Linux-3A4B63?style=for-the-badge)
+
+[🎓 Ruta académica](#áreas-principales) · [🧪 Proyectos](#proyectos-destacados) · [📖 Guía](GUIA-DE-LECTURA.md) · [📍 Pendientes](PENDIENTES.md)
 
 </div>
 
