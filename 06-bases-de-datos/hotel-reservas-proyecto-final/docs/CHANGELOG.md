@@ -1,5 +1,11 @@
 # Changelog
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+El historial explica qué cambió de una versión a otra. Busca el cambio que te interesa y abre las pruebas o la documentación asociada si quieres comprobarlo.
+
 ## [Portafolio — tarea #8] - 2026-10-16
 
 - PBKDF2-SHA256 con sal individual, formato versionado y coste configurable.

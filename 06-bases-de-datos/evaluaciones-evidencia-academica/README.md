@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Esta página indica qué evidencias académicas se conservaron y cómo leerlas. Usa cada archivo para identificar el tema practicado, sin tomar una nota, un enunciado o una evidencia aislada como prueba de que otra solución sea correcta.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Reúno las evidencias de evaluación y los enlaces a las soluciones relacionadas. Las evidencias conservadas corresponden a evaluaciones concretas y no deben interpretarse como nota final de la asignatura.

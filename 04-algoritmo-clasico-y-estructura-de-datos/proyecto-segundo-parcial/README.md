@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de materiales](../MATERIALES.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Recursión:** compara cuánto trabajo ocurre en cada nivel del árbol de llamadas. **Árboles:** visita los nodos en distintos órdenes para ver qué cambia. **AVL:** después de insertar, ilustra cómo pequeños giros reorganizan el árbol para que no se incline demasiado.
+
 ## Propósito
 
 El enunciado reúne aplicación del teorema maestro y árbol de recurrencia, recorridos de árboles, construcción de BST e ilustración de inserción y rebalanceo AVL.

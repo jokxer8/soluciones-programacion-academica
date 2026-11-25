@@ -18,6 +18,12 @@ Trabajos de representación de datos, programación C, ensamblador y estructuras
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí verás qué hay debajo de un programa: bits, memoria y estructuras para enlazar datos. Comienza con la representación de números y luego compara una solución en C con su versión en ensamblador.
+
 ## Objetivo de la materia
 
 Presentar los trabajos que conectan la representación de información con la construcción de programas en C y ensamblador. La sección muestra el recorrido desde bits y tipos de datos hasta estructuras dinámicas, interoperabilidad y un proyecto final con archivos.

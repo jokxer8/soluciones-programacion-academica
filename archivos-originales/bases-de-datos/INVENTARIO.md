@@ -1,5 +1,11 @@
 # Inventario de Bases de Datos
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../06-bases-de-datos/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 Este índice relaciona los nombres de los documentos con sus versiones publicadas. Los códigos de referencia del [inventario JSON](inventario.json) permiten distinguir archivos con nombres iguales. SHA-256 es una huella de 64 caracteres hexadecimales que identifica el contenido de un archivo; una modificación cambia esa huella.
 
 | Documento de referencia | Archivo publicado | Tratamiento |

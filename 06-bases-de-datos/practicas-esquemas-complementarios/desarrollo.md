@@ -1,5 +1,13 @@
 # Desarrollo - Prácticas y Esquemas Complementarios
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Bookstore:** usa el diagrama para seguir cómo se relacionan los datos de la librería. **Fast Food:** sigue los datos de un pedido en su esquema. **Hospital:** localiza qué tablas guardan datos de cada parte del sistema. Lee las claves para saber cómo unir la información.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Planteamiento
 
 Relacionar estructuras de ejemplo con consultas, restricciones y conceptos utilizados en las evaluaciones.

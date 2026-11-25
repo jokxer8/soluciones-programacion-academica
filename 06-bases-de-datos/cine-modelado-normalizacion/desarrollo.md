@@ -2,6 +2,14 @@
 
 Analizar la estructura de un sistema de cine y reducir redundancias en un ejemplo de ventas de boletos.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si el nombre de una película se repite en cada fila de una función, corregirlo obliga a editar muchas filas. Separar películas y funciones en tablas conectadas permite registrar ese dato una vez y volver a encontrarlo cuando se necesita.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Modelado del cine
 
 El DER y el modelo relacional del ejercicio 5.1 se acompañan de un diccionario de datos. La transformación identifica entidades y relaciones para establecer claves y referencias.

@@ -4,6 +4,14 @@
 
 > **Alcance:** esta resolución didáctica fue elaborada para explicar el tema a partir del mandato resumido en el inventario del repositorio. No es una entrega original del estudiante ni una transcripción del enunciado de la maestra. El enunciado y la entrega originales no se localizaron.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una función recursiva resuelve un problema llamándose con un caso más pequeño hasta que llega a uno que sabe resolver directamente. Sumar de 1 a 3 puede verse como `3 + suma(2)`. El desarrollo publicado es complementario: no existe una entrega original documentada.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivos
 
 - Definir el tamaño de entrada (n).

@@ -17,6 +17,12 @@ Los documentos almacenados aquí funcionan como respaldo de ejercicios, práctic
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Este archivo es un catálogo de materiales originales. Usa los enlaces del [portafolio académico](../README.md#elige-tu-ruta) para encontrar primero las actividades explicadas y recurre a este catálogo cuando necesites consultar la evidencia de origen.
+
 ## Objetivo de esta carpeta
 
 Mantener una copia organizada de los documentos originales para conservar la trazabilidad entre el material académico inicial y las versiones finales documentadas en las carpetas principales del repositorio.

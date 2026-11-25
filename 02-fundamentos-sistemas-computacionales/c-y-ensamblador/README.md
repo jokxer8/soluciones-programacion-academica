@@ -14,6 +14,27 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Los mismos problemas se escriben en C y en ensamblador. Mira primero qué recibe y qué devuelve cada pareja: el objetivo es que ambos programas hagan el mismo trabajo, aunque uno use instrucciones más detalladas.
+
+### Ejercicios de esta carpeta, uno por uno
+
+- **Saludo al mundo:** Imprime un saludo; observa cómo se envía texto a la consola. ([01-saludo-mundo.c](c/01-saludo-mundo.c) · [01-saludo-mundo.asm](fasm-linux/01-saludo-mundo.asm))
+- **Suma, resta y producto de enteros:** Con dos enteros, compara suma, resta y producto. ([02-operaciones-enteros.c](c/02-operaciones-enteros.c) · [02-operaciones-enteros.asm](fasm-linux/02-operaciones-enteros.asm))
+- **Suma condicional:** Si los dos números son iguales, revisa la regla especial que duplica la suma. ([03-suma-condicional.c](c/03-suma-condicional.c) · [03-suma-condicional.asm](fasm-linux/03-suma-condicional.asm))
+- **Cuenta regresiva entre extremos:** Empieza en el extremo mayor y muestra un valor menos en cada vuelta. ([04-cuenta-regresiva.c](c/04-cuenta-regresiva.c) · [04-cuenta-regresiva.asm](fasm-linux/04-cuenta-regresiva.asm))
+- **Conteo dentro del rango 100–200:** Comprueba qué valores caen entre 100 y 200 y cuenta los que cumplen. ([05-rango-100-200.c](c/05-rango-100-200.c) · [05-rango-100-200.asm](fasm-linux/05-rango-100-200.asm))
+- **Primalidad:** Prueba si el número tiene un divisor distinto de 1 y de sí mismo. ([06-numero-primo.c](c/06-numero-primo.c) · [06-numero-primo.asm](fasm-linux/06-numero-primo.asm))
+- **Primos hasta N:** Repite la prueba de primalidad para generar los primos hasta el límite. ([07-primos-hasta-n.c](c/07-primos-hasta-n.c) · [07-primos-hasta-n.asm](fasm-linux/07-primos-hasta-n.asm))
+- **Cuadrado hueco:** Dibuja el borde con asteriscos y deja el centro vacío. ([08-cuadrado-hueco.c](c/08-cuadrado-hueco.c) · [08-cuadrado-hueco.asm](fasm-linux/08-cuadrado-hueco.asm))
+- **Escalera ascendente:** Aumenta la cantidad de asteriscos al avanzar de fila. ([09-escalera-ascendente.c](c/09-escalera-ascendente.c) · [09-escalera-ascendente.asm](fasm-linux/09-escalera-ascendente.asm))
+- **Escalera descendente:** Reduce la cantidad de asteriscos al avanzar de fila. ([10-escalera-descendente.c](c/10-escalera-descendente.c) · [10-escalera-descendente.asm](fasm-linux/10-escalera-descendente.asm))
+- **Pirámide vertical:** Separa el total de filas de la cantidad de caracteres que lleva cada una. ([11-piramide-vertical.c](c/11-piramide-vertical.c) · [11-piramide-vertical.asm](fasm-linux/11-piramide-vertical.asm))
+- **Escalera invertida:** Revisa cómo se combinan espacios y asteriscos para invertir la orientación. ([12-escalera-invertida.c](c/12-escalera-invertida.c) · [12-escalera-invertida.asm](fasm-linux/12-escalera-invertida.asm))
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Comparo doce problemas resueltos en C y FASM. Los prefijos 01–12 identifican ejercicios equivalentes entre ambos lenguajes; no indican dificultad ni calificación. Las 132 comparaciones registradas corresponden a casos de entrada y modos de ejecución, no a 132 programas distintos.

@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un teléfono tiene datos que describen su estado y acciones que pueden cambiarlo. Lee la clase preguntando qué recuerda el objeto, qué puede hacer y qué reglas impiden cambiar sus datos de cualquier manera.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar conceptos fundamentales de programación orientada a objetos mediante la creación de clases relacionadas entre sí.

@@ -6,6 +6,12 @@
 
 Se organizan aquí las presentaciones PDF de apoyo disponibles para ICC-341-T. Los nombres normalizados identifican el número de unidad; los contenidos de los documentos se conservan.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Las presentaciones explican los temas por unidad. El índice dice qué archivos puedes abrir y cuáles no aparecen en el repositorio, así no confundes una unidad del programa con material efectivamente publicado.
+
 ## Presentaciones disponibles
 
 | Unidad en el nombre del archivo | PDF | Páginas |

@@ -10,6 +10,24 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una función recibe algo y devuelve un resultado. En cálculo lambda practicas reemplazar una variable por el argumento: si la regla dice `x + 1` y das `4`, obtienes `5`. El orden de las sustituciones y los nombres de las variables importan.
+
+### Ejercicios de esta carpeta, uno por uno
+
+- [Ejercicio 1.1](desarrollo.md#ejercicio-11): Identifica el parámetro y luego la parte donde se usa; eso te da el primer nivel del árbol.
+- [Ejercicio 1.2](desarrollo.md#ejercicio-12): Dibuja una aplicación arriba y las dos funciones como sus ramas.
+- [Ejercicio 1.3](desarrollo.md#ejercicio-13): Sigue las funciones que aparecen una dentro de otra antes de separar la aplicación final.
+- [Ejercicio 2.1](desarrollo.md#ejercicio-21): Cambia solo la variable libre que pide el ejercicio; renombra un parámetro para evitar que se confundan los nombres.
+- [Ejercicio 2.2](desarrollo.md#ejercicio-22): No reemplaces una letra dentro de la función que la declara como su parámetro.
+- [Ejercicio 2.3](desarrollo.md#ejercicio-23): Renombra el parámetro antes de introducir una variable libre con el mismo nombre.
+- [Ejercicio 3.1](desarrollo.md#ejercicio-31): Busca una aplicación que se pueda simplificar y anota el resultado de cada paso.
+- [Ejercicio 3.2](desarrollo.md#ejercicio-32): Sigue las aplicaciones en su orden y comprueba si todavía se puede simplificar alguna.
+- [Ejercicio 3.3](desarrollo.md#ejercicio-33): Distingue el resultado que puede seguir reduciéndose del que ya llegó a su forma normal.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Estudio funciones mediante variables, abstracción y aplicación. En λx.x, λ introduce una función y x es su parámetro. La aplicación (λx.x) 5 se reduce a 5 por sustitución; el símbolo λ no representa una constante numérica.

@@ -2,6 +2,12 @@
 
 Las materias con contenido publicado comparten navegación e insignias. Las actividades conservan el contenido académico y sus explicaciones particulares; la uniformidad facilita encontrarlos sin reducirlos a textos idénticos.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
+
+La misma ruta se repite en las actividades: explicación breve primero, desarrollo y evidencia después. Si publicas una nueva ficha, explica el problema con un ejemplo pequeño y aclara qué parte se comprobó.
+
 ## Estructura común de una actividad
 
 - `README.md`: descripción, objetivo, ejemplos y enlaces de navegación.

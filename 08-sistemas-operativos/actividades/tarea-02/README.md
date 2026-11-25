@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Una máquina virtual se comporta como otra computadora dentro de la tuya. Puedes instalar un sistema en ella y probarlo sin reemplazar el de tu equipo. La nube puede ofrecer equipos virtuales a distancia; no es sinónimo de máquina virtual.
+
 ## Propósito
 
 Resumen teórico sobre virtualización y nube, acompañado por una actividad práctica de creación de máquinas virtuales en VirtualBox y VMware.

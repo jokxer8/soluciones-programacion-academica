@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Compartir archivos deja que otros equipos autorizados los consulten. Respaldarlos guarda otra copia para poder recuperarlos. La práctica conecta ambos conceptos, pero tener una carpeta compartida no reemplaza un respaldo.
+
 ## Propósito
 
 Entrega teórica y práctica sobre creación de respaldos y organización de cuentas en grupos locales.

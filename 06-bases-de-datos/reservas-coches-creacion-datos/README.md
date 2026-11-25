@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Antes de consultar reservas de autos, hay que crear las tablas y cargarlas en orden. Si una fila apunta a otra, la primera depende de que exista la segunda. Esa regla permite detectar una reserva vinculada a un dato inexistente.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Creo un esquema con un coche por reserva y cargo datos de práctica. Una clave primaria identifica cada registro y una clave foránea enlaza registros relacionados. Los identificadores numéricos no expresan importes ni cantidades de coches.

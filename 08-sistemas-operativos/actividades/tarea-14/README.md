@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+La RAM guarda temporalmente lo que los programas usan en ese momento. La memoria virtual permite que cada programa trabaje con sus propias direcciones; el sistema decide qué partes necesita mantener en RAM y cuáles puede mover al almacenamiento.
+
 ## Propósito
 
 Explicación de memoria RAM y memoria virtual, junto con una práctica relacionada con su observación o administración.

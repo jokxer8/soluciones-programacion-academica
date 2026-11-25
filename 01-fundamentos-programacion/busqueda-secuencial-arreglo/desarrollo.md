@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si tienes la lista `10, 4, 8` y buscas el `8`, el programa revisa `10`, luego `4` y por último `8`. Muestra la posición `2` porque C# empieza a contar en `0`. Si buscas `7`, revisará toda la lista y te dirá que no aparece.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar conceptos fundamentales de programación mediante el uso de arreglos, ciclos, condicionales, métodos y validación de datos.

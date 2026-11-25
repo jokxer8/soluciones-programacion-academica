@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+En una lista ordenada, mira primero el número del medio. Si el que buscas es menor, descarta la mitad derecha; si es mayor, descarta la izquierda. Repite con la mitad restante. La clave es que los datos ya estén ordenados.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar un algoritmo de búsqueda eficiente sobre una colección ordenada de datos.

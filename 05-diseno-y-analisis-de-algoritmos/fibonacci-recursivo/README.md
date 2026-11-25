@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Cada número se obtiene sumando los dos anteriores. Si pides Fibonacci de 5 mediante llamadas, aparecen cálculos repetidos, como Fibonacci de 3. Guardar un resultado ya obtenido evita volver a resolverlo cuando el ejercicio aplica esa mejora.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Calculo términos de Fibonacci a partir de F(0)=0 y F(1)=1. n indica la posición del término: F(5)=5 y F(6)=8. La fórmula F(n)=F(n−1)+F(n−2) explica la recursión; el costo depende de si se vuelven a calcular términos o se guardan resultados.

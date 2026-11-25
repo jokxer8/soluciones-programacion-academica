@@ -1,5 +1,13 @@
 # Desarrollo - Combinador Y y Fibonacci
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Fibonacci repite una misma regla sobre casos más pequeños. El combinador Y permite expresar la idea de repetición sin escribir la función con su propio nombre. Sigue primero el caso base y luego una sola llamada antes de mirar la expresión completa.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Definición del combinador Y
 
 El combinador Y permite expresar funciones recursivas mediante el concepto de punto fijo.

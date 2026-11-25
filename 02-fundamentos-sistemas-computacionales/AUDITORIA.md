@@ -2,6 +2,12 @@
 
 Revisión de los materiales de Fundamentos de Sistemas Computacionales, 15 de octubre de 2026 (hora de Santo Domingo).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Esta revisión separa lo que existe de lo que se comprobó y de lo que falta. Léela para saber hasta dónde puedes confiar en un resultado sin confundir un archivo publicado con una prueba ejecutada.
+
 ## Trazabilidad y selección
 
 Se clasificaron 121 archivos y se publicaron 88, preservando 43 fuentes C y 15 fuentes ASM. Los hashes de origen y publicación se registran en el [inventario](../archivos-originales/fundamentos-sistemas-computacionales/inventario.json). El código seleccionado se conserva salvo las correcciones FASM de compilación y ejecución Linux registradas en el inventario; las explicaciones, pruebas y rectificaciones se añaden en Markdown y `tests/`.

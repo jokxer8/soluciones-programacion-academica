@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+El disco aporta espacio. El sistema de archivos organiza ese espacio para que puedas guardar y encontrar carpetas y archivos. Si cambias de sistema de archivos, no necesariamente cambias el tamaño del disco.
+
 ## Propósito
 
 Documento conceptual sobre sistemas de archivos y práctica para consultar el uso del espacio de almacenamiento.

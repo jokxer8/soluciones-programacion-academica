@@ -2,6 +2,14 @@
 
 Relacionar los fundamentos teóricos con las decisiones de diseño que se aplican en los casos prácticos.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una base de datos guarda información de manera que después puedas buscarla y actualizarla. Una clave identifica un registro; otra puede apuntar a una tabla distinta. Piensa en un cliente y sus pedidos: no hace falta copiar todos sus datos por cada pedido.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Unidad 1
 
 El resumen explica cómo los datos adquieren significado al organizarse y procesarse. Distingue una base de datos integrada de un conjunto de archivos y describe el papel de los metadatos y del DBMS para controlar acceso y consistencia. La redundancia se vincula con anomalías de inserción, actualización y eliminación.

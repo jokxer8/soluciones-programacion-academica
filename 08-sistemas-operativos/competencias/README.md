@@ -18,6 +18,12 @@ Esta matriz conecta los temas estudiados con evidencias localizadas en la carpet
 | Almacenamiento y memoria | Explicar respaldos en Linux, sistemas de archivos, uso de disco y memoria virtual. | [Tareas 12–14](../actividades/tarea-12/README.md) |
 | Administración de servidores | Describir Windows Server, TCP/IP, DNS, DHCP, dominios, usuarios, grupos y unidades organizativas. | [Tareas 15–17](../actividades/tarea-15/README.md) |
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Usa esta sección para ver qué habilidades respalda cada evidencia. Por ejemplo, preparar una máquina virtual y explicar qué se verificó muestra algo distinto de describir el concepto de virtualización.
+
 ## Logros incluidos en este portafolio
 
 - Organicé entregas teóricas y prácticas en una secuencia navegable vinculada al programa de la asignatura.

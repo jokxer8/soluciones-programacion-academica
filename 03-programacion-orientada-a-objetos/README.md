@@ -17,6 +17,12 @@ En esta materia organicé soluciones en C# mediante clases y objetos. Los cinco 
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Un objeto junta datos y acciones de una misma cosa. Empieza por el teléfono o la agenda; después mira cómo el ejemplo de nómina deja que cada tipo de trabajador calcule su pago de forma distinta.
+
 ## Objetivo de la materia
 
 Evidenciar la capacidad de diseñar soluciones organizadas mediante objetos, separando responsabilidades y aplicando estructuras reutilizables, mantenibles y extensibles.

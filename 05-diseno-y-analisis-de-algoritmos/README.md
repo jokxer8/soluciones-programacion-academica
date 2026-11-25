@@ -17,6 +17,12 @@ En esta materia comparé formas de resolver problemas de búsqueda, ordenamiento
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Un mismo problema puede resolverse con estrategias distintas. Compara buscar en una lista ordenada, dividir un conjunto para ordenarlo o guardar cálculos parciales para no repetir trabajo.
+
 ## Objetivo de la materia
 
 Evidenciar la capacidad de resolver problemas computacionales utilizando algoritmos eficientes, analizando su comportamiento y seleccionando estrategias adecuadas según el tipo de problema.

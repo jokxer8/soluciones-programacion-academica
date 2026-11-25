@@ -17,6 +17,12 @@ En esta materia trabajé programación funcional con Standard ML y fundamentos d
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Estas actividades estudian cómo combinar funciones y transformar datos. Empieza con una sustitución pequeña o con map; luego sigue hacia módulos, árboles y listas que calculan valores al pedirlos.
+
 ## Objetivo de la materia
 
 Presentar ejercicios y actividades desarrolladas durante la formación académica en programación funcional, organizadas de manera clara, documentada y profesional.

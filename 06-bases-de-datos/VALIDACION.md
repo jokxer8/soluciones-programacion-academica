@@ -2,6 +2,12 @@
 
 Revisión del 15 de octubre de 2026 sobre las actividades de Bases de Datos y el proyecto final del hotel.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Este documento reúne las comprobaciones conocidas de los ejercicios y proyectos de bases de datos. Antes de repetir una prueba, revisa qué archivos y entorno usó.
+
 ## Alcance
 
 Se inventariaron 329 archivos del origen. El [registro de auditoría](AUDITORIA.md) clasifica todos los materiales y el [inventario](../archivos-originales/bases-de-datos/INVENTARIO.md) relaciona los entregables con sus fuentes. Las otras cuatro materias publicadas se conservan sin cambios. La sección mantiene el patrón README, desarrollo, código y evidencia.

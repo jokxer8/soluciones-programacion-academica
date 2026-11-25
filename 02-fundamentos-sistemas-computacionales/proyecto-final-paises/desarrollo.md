@@ -1,5 +1,13 @@
 # Desarrollo — Gestión de países — Proyecto final
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+La aplicación carga países desde un archivo y los conecta como vagones que permiten ir hacia delante y hacia atrás. Para saber cómo funciona, empieza por un país: mira cómo se carga, cómo se encuentra y qué enlaces cambian si lo eliminas.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño y gestión de memoria
 
 Un nodo cabecera representa la lista vacía sin almacenar un país. Cada nodo posee una copia de `country` y sus cadenas. Al insertar se realiza copia profunda; convertir a arreglo también crea copias independientes. Borrar o liberar debe destruir las cadenas, el país y el nodo, conservando la coherencia de enlaces anteriores/siguientes.

@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Se elige un número como referencia y se separan los valores según queden por debajo o por encima. Se repite en los grupos pequeños. Para seguirlo a mano, prueba con cinco números y marca dónde termina la referencia tras separar.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Ordeno mediante particiones alrededor de un pivote. n indica la cantidad de elementos. O(n log n) describe el crecimiento promedio del trabajo y O(n²) el peor caso; estas expresiones no son tiempos medidos en segundos.

@@ -1,5 +1,11 @@
 # Pseudocódigo revisado del triángulo
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El pseudocódigo se lee como una receta: recibe los dos lados cortos, calcula el lado largo y luego usa esos valores para el área y el perímetro. Cada paso tiene un resultado que puedes comprobar a mano.
+
 [Actividad](README.md) · [Diagrama corregido](diagrama-corregido.rap) · [Pruebas](PRUEBAS-RAPTOR.md)
 
 Esta versión describe el diagrama corregido. El [pseudocódigo de la entrega](../../archivos-originales/introduccion-programacion/triangulo/algoritmo.txt), basado en Newton, se conserva por separado.

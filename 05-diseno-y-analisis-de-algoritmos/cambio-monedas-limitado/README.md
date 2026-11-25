@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Quieres formar un total sin usar más monedas de las que tienes. Una opción que parece buena al inicio puede dejarte sin forma de terminar. El ejercicio conserva resultados parciales para comparar combinaciones respetando las cantidades disponibles.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco alcanzar un importe usando monedas cuya disponibilidad es limitada. El importe y las denominaciones deben expresarse en la misma unidad. La cantidad de monedas disponibles no equivale al valor de cada moneda; esa diferencia determina qué combinaciones son posibles.

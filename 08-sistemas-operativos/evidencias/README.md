@@ -4,6 +4,12 @@
 
 [← Sistemas Operativos](../README.md) · [Actividades](../actividades/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí están las referencias a los PDF y materiales publicados. Primero identifica si abres un programa, una entrega o una consigna; eso te dice qué puede demostrar el documento y qué no.
+
 ## Programa de estudio
 
 - [ISC-364 Sistemas Operativos I](programa/ISC-364-programa-de-estudio.pdf)

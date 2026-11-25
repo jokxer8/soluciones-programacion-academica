@@ -2,6 +2,14 @@
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cpp)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Piensa en la figura como varias filas de texto. Una repetición decide qué fila toca; dentro de ella, otra imprime los espacios o asteriscos necesarios. Dibuja una figura de tres filas y cuenta cada carácter antes de mirar el código.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Punto de partida
 
 Esta actividad corresponde al foro del grupo 2. Relaciono el análisis del problema, el pseudocódigo, el diagrama y el código de una pirámide centrada. Las rúbricas y respuestas permiten consultar también la revisión entre grupos.

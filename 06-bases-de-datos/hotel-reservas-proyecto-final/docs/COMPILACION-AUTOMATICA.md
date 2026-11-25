@@ -2,6 +2,12 @@
 
 El [workflow Hotel - Compilacion Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml) compila el proyecto del hotel desde una copia limpia del repositorio. Su [configuración](../../../.github/workflows/hotel-build.yml) se conserva junto al código.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Compilar es convertir el código en un programa que se puede ejecutar. Esta guía muestra cómo GitHub Actions realiza esa comprobación y dónde mirar si falla.
+
 ## Entorno y pasos
 
 El trabajo utiliza Windows Server 2022, el entorno de Visual Studio disponible en el ejecutor, MSBuild y NuGet 6.x. Compila el csproj clásico para .NET Framework 4.8 y Windows Forms, con configuración Release y plataforma AnyCPU.

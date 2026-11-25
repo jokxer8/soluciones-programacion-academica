@@ -2,6 +2,12 @@
 
 [Materia](README.md) · [Casos y resultados](tests/results-windows.json) · [Pruebas reproducibles](tests/run-tests.py)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Este informe recoge las comprobaciones de programas de algoritmia: con qué datos se probaron, qué se esperaba y qué se obtuvo. Usa esos casos para ver cómo se comprueba una solución, no como calificación.
+
 ## Resultado local
 
 Los cinco programas `solution.cpp` se compilaron individualmente en Windows x64 con MSVC, C++17 y las opciones `/W4 /WX`: **32 casos correctos y 0 fallidos**. `/W4` activa un nivel alto de advertencias y `/WX` las trata como errores. Se verifican estas versiones compilables, no una ejecución histórica de las entregas.

@@ -1,5 +1,11 @@
 # Arquitectura del Sistema HotelReservas
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Sigue una reserva desde la pantalla hasta la base de datos. Este mapa separa la parte que usa el personal de la parte que guarda y consulta la información.
+
 ## Stack
 - Lenguaje: C# .NET Framework 4.8
 - UI: Windows Forms

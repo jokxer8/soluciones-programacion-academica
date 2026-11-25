@@ -6,6 +6,12 @@
 
 La carpeta de estudio incluye el archivo del programa de **ISC-364 Sistemas Operativos I**. Se conserva en PDF como documento de referencia para relacionar las actividades con el alcance de la asignatura.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El programa es el mapa de la materia. Léelo antes de las tareas para distinguir los objetivos del curso de los temas que aparecen en las entregas disponibles.
+
 ## Documento
 
 - [Programa de estudio de ISC-364](../evidencias/programa/ISC-364-programa-de-estudio.pdf)

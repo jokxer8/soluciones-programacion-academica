@@ -2,6 +2,14 @@
 
 Transformar un modelo de reservas en tablas con restricciones y datos de ejemplo.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Antes de consultar reservas de autos, hay que crear las tablas y cargarlas en orden. Si una fila apunta a otra, la primera depende de que exista la segunda. Esa regla permite detectar una reserva vinculada a un dato inexistente.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño
 
 Agencia y Garaje son catálogos. Cliente incluye una referencia opcional a otro cliente como avalador. Coche pertenece a un garaje; Reserva referencia cliente, agencia y coche. La vista vw_ReservaConPrecioTotal calcula un atributo derivado.

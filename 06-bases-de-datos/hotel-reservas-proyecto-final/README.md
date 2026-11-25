@@ -12,6 +12,12 @@
 
 [![Compilación Windows](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml/badge.svg?branch=main)](https://github.com/jokxer8/soluciones-programacion-academica/actions/workflows/hotel-build.yml)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Imagina que alguien llama para reservar una habitación. El personal registra al cliente, selecciona una habitación y guarda la reserva. La aplicación es lo que usa el personal en pantalla; la base de datos conserva la información para consultarla después. Es un proyecto grupal: los créditos y las pruebas están en la documentación.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Integro el modelo relacional con una aplicación de escritorio desarrollada en equipo. Las 79 pruebas funcionales documentadas son casos comprobados, no pantallas ni tablas. En el almacenamiento de contraseñas, 600 000 indica iteraciones de derivación; una sal de 16 bytes equivale a 128 bits y la clave derivada de 32 bytes, a 256 bits. Estos tamaños no indican la longitud de la contraseña.

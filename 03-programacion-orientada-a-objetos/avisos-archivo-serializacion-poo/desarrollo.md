@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si un aviso vive solo en memoria, desaparece al cerrar el programa. Guardarlo en un archivo permite recuperarlo después. Serializar significa convertir los datos del objeto a un formato que el programa pueda escribir y volver a leer.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar programación orientada a objetos junto con manejo de archivos y serialización de datos.

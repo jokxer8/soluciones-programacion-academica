@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Clasificar es decidir a qué grupo pertenece cada número. Para distinguir pares de impares, mira si sobra algo al dividir entre dos. Usa también el cero y un número negativo al revisar las condiciones: el signo y la paridad son preguntas diferentes.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar estructuras fundamentales de programación como ciclos, condicionales, contadores y acumuladores.

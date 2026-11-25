@@ -14,6 +14,25 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una estructura guarda varios datos relacionados, como las esquinas de un rectángulo. Un puntero guarda dónde encontrar esos datos. Los ejercicios avanzan de agrupar valores a reservar espacio y devolverlo cuando ya no se necesita.
+
+### Ejercicios de esta carpeta, uno por uno
+
+- **Promedio de estudiantes:** Agrupa las notas de cada estudiante y calcula el promedio del registro. ([ejercicio-01.c](ejercicio-01.c))
+- **Suma de tiempos con acarreo:** Suma segundos, minutos y horas; cuando una unidad llega a 60, pasa una a la siguiente. ([ejercicio-02.c](ejercicio-02.c))
+- **Libros de mayor y menor precio:** Compara los precios y conserva los datos del libro más barato y del más caro. ([ejercicio-03.c](ejercicio-03.c))
+- **Área de un rectángulo:** Obtén el ancho y el alto a partir de las esquinas y multiplícalos. ([ejercicio-04.c](ejercicio-04.c))
+- **Pertenencia de un punto:** Compara las coordenadas del punto con los límites del rectángulo. ([ejercicio-05.c](ejercicio-05.c))
+- **Rectángulo con memoria dinámica:** Reserva espacio para el rectángulo, úsalo y libéralo cuando termines. ([ejercicio-06.c](ejercicio-06.c))
+- **Representación de complejos:** Guarda por separado las partes real e imaginaria de un mismo número. ([ejercicio-07.c](ejercicio-07.c))
+- **Suma dinámica de complejos:** Suma reales con reales e imaginarias con imaginarias; guarda el resultado. ([ejercicio-08.c](ejercicio-08.c))
+- **Complejo convertido a cadena:** Convierte los dos componentes del número a una forma que se pueda leer como texto. ([ejercicio-09.c](ejercicio-09.c))
+- **Lista en orden directo e inverso:** Lee los nodos desde un extremo y luego muestra los valores en sentido contrario. ([ejercicio-10.c](ejercicio-10.c))
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Trabajo con estructuras y punteros para representar datos relacionados. Un puntero guarda una dirección de memoria; una dirección escrita en hexadecimal identifica una ubicación durante una ejecución y no debe interpretarse como el resultado numérico del problema.

@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Antes de crear tablas, dibuja las cosas que el sistema necesita recordar y sus relaciones. Aquí importa distinguir qué representa un curso y cómo se conecta con los demás elementos del modelo. Usa el diagrama como mapa antes de leer los nombres técnicos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Modelo cursos y sus ofertas, instructores y certificados. Una relación 1:N permite asociar una instancia del primer tipo con varias del segundo. Esa proporción no indica cuántos registros existen actualmente; expresa una regla del diseño.

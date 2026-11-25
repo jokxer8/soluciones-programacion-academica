@@ -4,6 +4,12 @@
 
 [Inicio de la materia](../README.md) · [Programa](../programa-estudio/README.md) · [Material docente](../material-docente/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Esta página explica qué fuentes se usaron, cuáles se pueden compartir y qué conclusiones admite cada evidencia. Úsala cuando necesites citar un material o distinguir una guía de una entrega.
+
 ## Fuentes locales revisadas
 
 - Programa institucional ICC-341-T Introducción a la Ingeniería de Software.

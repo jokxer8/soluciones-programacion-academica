@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una estructura reúne operaciones relacionadas. Una signatura indica cuáles se pueden usar desde fuera. Piensa en una caja: puedes usar sus botones públicos sin saber cómo están conectados por dentro.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Separo la interfaz de una estructura de su implementación. Una signatura declara los tipos y operaciones disponibles; el tipo abstracto permite utilizarlos sin depender de su representación interna. Los números de los ejemplos son datos de prueba, no identificadores de tipos.

@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Mantener un sistema es revisar su estado antes de que falle. Protegerlo es limitar lo que puede dañarlo o cambiarlo por accidente. Usa la evidencia para distinguir qué herramienta ayuda a prevenir, cuál detecta y cuál permite recuperar.
+
 ## Propósito
 
 Resumen de seguridad del sistema operativo y práctica sobre antivirus, Firewall de Windows, desfragmentación y actualizaciones.

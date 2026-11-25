@@ -2,6 +2,14 @@
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Comisiones:** separa el monto de venta de la regla que indica cuánto corresponde pagar; busca esa regla antes de multiplicar. **Calificaciones:** separa las notas que entran del criterio que decide qué mostrar al final. Las soluciones publicadas se añadieron como material didáctico y no sustituyen la entrega original.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Punto de partida
 
 Incluyo el enunciado de dos problemas del primer parcial. No se encontró una solución entregada para estos ejercicios; por eso presento el planteamiento y su análisis sin atribuirles una ejecución.

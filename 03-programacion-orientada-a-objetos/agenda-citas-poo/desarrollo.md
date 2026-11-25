@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una cita junta datos de una misma cosa, como fecha y motivo. La agenda organiza varias citas; el ejercicio muestra por qué conviene manejar cada una como un objeto y no guardar todos sus datos sueltos.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar principios de programación orientada a objetos para representar una agenda de citas utilizando clases, objetos, constructores y validaciones.

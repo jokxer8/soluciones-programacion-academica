@@ -1,5 +1,13 @@
 # Desarrollo — Estructuras y memoria dinámica
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una estructura guarda varios datos relacionados, como las esquinas de un rectángulo. Un puntero guarda dónde encontrar esos datos. Los ejercicios avanzan de agrupar valores a reservar espacio y devolverlo cuando ya no se necesita.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño
 
 Las estructuras agrupan datos relacionados. Los primeros ejercicios usan almacenamiento automático; los de rectángulos y complejos reservan memoria y la liberan después del cálculo. El último conecta nodos y recorre los valores en ambos sentidos mediante funciones separadas.

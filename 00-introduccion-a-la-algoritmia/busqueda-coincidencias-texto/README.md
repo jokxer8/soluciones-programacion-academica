@@ -11,6 +11,12 @@
 ![Área](https://img.shields.io/badge/Área-Algoritmia-green)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Busca un texto corto dentro de otro. Prueba la palabra `ana` en `banana`: aparece dos veces, aunque las apariciones comparten una letra. Por eso conviene probar también la posición siguiente después de encontrar una coincidencia.
+
 ## Qué trabajé
 
 Leo una cadena y un texto para contar sus coincidencias. Mantengo el criterio del código de la actividad: la búsqueda distingue mayúsculas y minúsculas, permite coincidencias dentro de otras palabras y cuenta las superpuestas.

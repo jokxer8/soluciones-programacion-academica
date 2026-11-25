@@ -6,6 +6,12 @@
 
 Esta sección registra los trabajos colaborativos desarrollados en ISC-364 y distingue los resultados del equipo de la contribución personal documentada. Los resúmenes describen el alcance técnico y los límites de la evidencia disponible; no implican calificaciones ni atribuyen a una sola persona el trabajo grupal.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Shell en Windows:** la exposición muestra cómo una instrucción escrita y un script permiten automatizar tareas; el aporte individual se detalla abajo. **NEXO Linux:** el equipo probó una modificación del núcleo de Linux en una máquina virtual. Piensa en el núcleo como la parte que conecta el software con los recursos del equipo. La ficha distingue lo comprobado en la demostración de sus límites.
+
 ## 1. Shell, intérpretes de mandatos y scripts en Windows
 
 **Tipo:** exposición colaborativa  

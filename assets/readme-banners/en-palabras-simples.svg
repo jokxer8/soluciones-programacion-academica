@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="108" viewBox="0 0 960 108" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">En palabras simples</title>
+  <desc id="descripcion">Guía para estudiantes del portafolio académico Jokxer.</desc>
+  <defs><linearGradient id="fondo"><stop stop-color="#123437"/><stop offset="1" stop-color="#1A554D"/></linearGradient></defs>
+  <rect x="1" y="1" width="958" height="106" rx="15" fill="url(#fondo)" stroke="#5B9C8C" stroke-width="2"/>
+  <path d="M18 20v68" stroke="#F5BE68" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="#9DDCCB" stroke-width="2.6" stroke-linejoin="round">
+    <path d="M39 40c8-2 16 0 21 5v28c-5-5-13-7-21-5zM81 40c-8-2-16 0-21 5v28c5-5 13-7 21-5z"/>
+  </g>
+  <text x="101" y="59" fill="#FAF8EF" font-family="Verdana, Arial, sans-serif" font-size="31" font-weight="700">En palabras simples</text>
+  <text x="103" y="83" fill="#CCEBDE" font-family="Verdana, Arial, sans-serif" font-size="14" letter-spacing="1.5">JOKXER · GUÍA PARA ESTUDIANTES</text>
+  <path d="M829 30h87m-64 16h64m-39 16h39m-19 16h19" stroke="#8CCABD" stroke-opacity=".48" stroke-width="2"/>
+</svg>

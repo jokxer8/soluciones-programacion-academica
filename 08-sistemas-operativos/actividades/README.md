@@ -4,6 +4,12 @@
 
 [← Sistemas Operativos](../README.md) · [Competencias](../competencias/README.md) · [Evidencias PDF](../evidencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Empieza por la tarea que quieres revisar: cada fila abre una ficha con la idea principal y las evidencias que sí se encontraron. Si aparece una consigna sin entrega, úsala para practicar y no como ejemplo de una solución entregada.
+
 ## Índice
 
 | Tarea | Tema principal | Evidencia |

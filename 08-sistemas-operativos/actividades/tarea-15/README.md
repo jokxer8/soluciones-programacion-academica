@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Windows Server está pensado para prestar servicios a otros equipos. Imagina una oficina donde varias personas necesitan recursos comunes: el servidor facilita administrarlos desde un punto central, según el servicio que se configure.
+
 ## Propósito
 
 Investigación sobre la finalidad de Windows Server y práctica de instalación, actualización y cambio del nombre del servidor.

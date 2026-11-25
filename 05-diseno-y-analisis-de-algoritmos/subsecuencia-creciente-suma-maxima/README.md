@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Puedes saltarte números, pero no cambiar el orden original. Imagina que comparas dos grupos crecientes de una lista y eliges el que suma más, aunque tenga menos elementos. Ese es el objetivo: mayor suma, no mayor cantidad.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco una subsecuencia creciente con la mayor suma. Puedo omitir elementos sin cambiar su orden: no tienen que ser consecutivos. La mejor suma tampoco exige la mayor cantidad de términos; dp[i] representa la mejor suma que termina en el elemento de índice i.

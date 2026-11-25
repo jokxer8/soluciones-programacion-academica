@@ -1,5 +1,13 @@
 # Desarrollo — Representación de datos y fundamentos
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El mismo valor puede escribirse de formas distintas: 10 en decimal es 1010 en binario. Antes de leer los bits, pregunta qué formato usa el dato. Un grupo de bits no significa lo mismo si se interpreta como entero con signo o como número con decimales.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Antes de convertir: valor, base y tamaño
 
 Una conversión cambia cómo escribimos un valor. En base 2 se usan 0 y 1; en base 8, los dígitos 0–7; en base 16 se añaden A=10, B=11, C=12, D=13, E=14 y F=15. El prefijo `0x` indica hexadecimal: no es parte de los dígitos del número.

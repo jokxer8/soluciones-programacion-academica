@@ -2,6 +2,14 @@
 
 Reunir las evaluaciones conservadas para acompañar los trabajos y explicar el estado de la asignatura.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Esta página indica qué evidencias académicas se conservaron y cómo leerlas. Usa cada archivo para identificar el tema practicado, sin tomar una nota, un enunciado o una evidencia aislada como prueba de que otra solución sea correcta.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Evidencia conservada
 
 Se incluye el primer parcial escaneado y su captura de calificación, donde consta 13.50 / 15.00. El segundo parcial y sus consultas se encuentran en la actividad de restaurante, enlazada desde esta sección.

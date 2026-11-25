@@ -4,6 +4,12 @@
 
 [← Sistemas Operativos](../README.md) · [Programa](../programa-estudio/README.md) · [Proyectos](../proyectos/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Esta página separa de dónde salió el material, de quién es y por qué se publica. Úsala para reconocer trabajos del equipo y consultar las fuentes sin confundirlas con una entrega individual.
+
 ## Fuentes usadas durante la asignatura
 
 La carpeta de trabajo incluye un programa de estudio, presentaciones de capítulos, una guía de instalación de Windows en VirtualBox, materiales sobre imágenes de sistemas operativos, recursos audiovisuales enlazados en las consignas y el libro *Sistemas Operativos Modernos*, de Andrew S. Tanenbaum.

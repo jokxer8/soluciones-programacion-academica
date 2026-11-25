@@ -17,6 +17,12 @@ En esta materia trabajé el diseño y la implementación de bases de datos, desd
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Primero dibuja qué información guardarás y cómo se conecta. Después crea las tablas y consulta sus datos. El proyecto de hotel muestra cómo esas tablas se usan desde una aplicación.
+
 ## Objetivo de la materia
 
 Presentar de forma ordenada los trabajos realizados en la asignatura, acompañando las soluciones con análisis, diagramas, modelos, scripts y evidencia documental.

@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+TCP/IP es un conjunto de reglas para que los equipos se comuniquen. Distingue la dirección del equipo, la manera de enviar datos y el servicio que responde. Conectarse a una red no garantiza que todos sus servicios estén disponibles.
+
 ## Propósito
 
 Resumen sobre TCP/IP y servicios de red en Windows Server; práctica para configurar dirección IP, DHCP y DNS.

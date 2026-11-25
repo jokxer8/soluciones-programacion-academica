@@ -1,5 +1,11 @@
 # Inventario de Introducción a la Programación
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../00-introduccion-a-la-algoritmia/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 [Materia](../../00-introduccion-a-la-algoritmia/README.md) · [Documentos](README.md) · [Registro JSON](inventario.json)
 
 Revisé 85 archivos y seleccioné 32 documentos. Los demás corresponden a materiales de consulta, aportes integrados, trabajos de otros grupos, informes de evaluación, duplicados o respaldos. Los códigos IP identifican registros; los hashes SHA-256 son huellas de contenido, no notas ni contraseñas. No se incluyen ubicaciones personales.

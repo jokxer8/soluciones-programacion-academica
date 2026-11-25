@@ -4,6 +4,12 @@
 
 Revisión del **16 de octubre de 2026**, en Windows con RAPTOR Avalonia sobre .NET 8. Ejecuté el diagrama de la entrega y una versión corregida. Conservo los archivos históricos para que se pueda entender el error y comparar el trabajo con la revisión actual.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Se probó el diagrama del triángulo con distintos datos. Compara el resultado esperado con lo que mostró RAPTOR para entender qué corregir y por qué conviene probar más de un caso.
+
 ## El error de la entrega
 
 Con catetos **3 y 4**, el diagrama original devuelve **hipotenusa 6, área 6 y perímetro 13**. La [captura de la consola](evidencias/raptor-original-3-4.png) registra esa ejecución y su finalización.

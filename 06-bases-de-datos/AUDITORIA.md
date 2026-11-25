@@ -2,6 +2,12 @@
 
 La revisión abarca los 329 archivos encontrados en la carpeta de la asignatura cuando era participe de la asignatura. Se distingue el trabajo publicado del material de estudio, la configuración privada y los archivos de ejecución.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se explica qué evidencia se revisó en Bases de Datos y qué límites tiene. Úsala para distinguir un modelo en papel, un script publicado y un resultado comprobado.
+
 ## Cobertura
 
 | Clasificación | Archivos |

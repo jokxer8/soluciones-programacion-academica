@@ -10,6 +10,12 @@
 
 [Inicio](../README.md) · **Materia 08** · [Índice de materias](../README.md#áreas-principales) · [Pendientes](../PENDIENTES.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Un sistema operativo coordina los programas, la memoria, los archivos y otros recursos. Abre el índice de tareas para estudiar un tema a la vez; los proyectos muestran cómo se aplicó en equipo.
+
 ## Presentación
 
 Esta sección reúne el programa de **ISC-364 Sistemas Operativos I**, las tareas individuales documentadas y una síntesis de los proyectos realizados durante la asignatura. La organización sigue el recorrido de los temas disponible en la carpeta de estudio y distingue entre evidencia publicada, material de consigna y actividades sin PDF encontrado.

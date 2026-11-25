@@ -1,5 +1,13 @@
 # Desarrollo - Cálculo Lambda
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una función recibe algo y devuelve un resultado. En cálculo lambda practicas reemplazar una variable por el argumento: si la regla dice `x + 1` y das `4`, obtienes `5`. El orden de las sustituciones y los nombres de las variables importan.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Árboles de sintaxis de λ-términos
 
 ### Ejercicio 1.1

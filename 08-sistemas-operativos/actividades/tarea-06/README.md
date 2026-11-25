@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Un script es una lista de instrucciones que el equipo ejecuta en orden. Antes de automatizar, prueba cada acción por separado y pregúntate qué debería pasar si un archivo no existe. No se encontró un PDF final individual para esta actividad.
+
 ## Propósito
 
 La carpeta incluye una práctica editable que solicita cinco scripts básicos en Windows 11 y capturas de comandos. No se encontró un PDF final correspondiente. La carpeta Capítulo 6 también contiene una consigna independiente de seguridad y mantenimiento; no se atribuye como evidencia final.

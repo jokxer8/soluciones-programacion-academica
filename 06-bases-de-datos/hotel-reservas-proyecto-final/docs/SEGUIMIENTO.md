@@ -2,6 +2,12 @@
 
 El [tablero HotelReservas - Mejoras y pruebas](https://github.com/users/jokxer8/projects/1) es la referencia de estados actualizados. Este documento registra el alcance y los resultados verificados de compilación y pruebas funcionales SQL actualizados al 16 de octubre de 2026.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Este documento reúne el estado de las tareas y sus enlaces. Si quieres saber por qué se hizo un cambio, busca la tarea correspondiente y revisa su evidencia.
+
 ## Estados y prioridades
 
 - **Pendiente:** trabajo planificado que todavía no se ha iniciado.

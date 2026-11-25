@@ -14,6 +14,12 @@ Esta carpeta conserva las versiones de trabajo y evidencias de Bases de Datos ut
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../06-bases-de-datos/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 ## Procedencia
 
 Esta sección reúne los documentos de apoyo de Bases de Datos y del proyecto final del hotel. Se incluyen resúmenes, cuestionarios, compendios, casos, modelos, consultas y evaluaciones.

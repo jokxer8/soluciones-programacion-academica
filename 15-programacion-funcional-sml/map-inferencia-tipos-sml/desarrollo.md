@@ -1,5 +1,13 @@
 # Desarrollo - Función Map e Inferencia de Tipos
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+La función `map` aplica la misma regla a cada elemento. Si duplicas `[1, 2, 3]`, obtienes `[2, 4, 6]`. SML puede deducir el tipo de entrada y salida a partir de la función aplicada; no siempre hay que escribirlo.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Definición de la función map
 
 La función `map` en SML aplica una función a cada elemento de una lista.

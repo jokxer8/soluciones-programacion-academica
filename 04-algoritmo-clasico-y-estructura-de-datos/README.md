@@ -13,6 +13,12 @@
 
 Esta sección reúne actividades de **ICC-211-T Algoritmos Clásicos y Estructuras de Datos**. Cada práctica tiene una ficha propia con el mandato conocido, los conceptos, el propósito y la evidencia disponible. La materia queda **completada dentro del alcance documental publicado**: la Práctica 3 no fue entregada originalmente, y su ficha ofrece un desarrollo didáctico complementario claramente identificado como tal.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Aprende a comparar cuánto trabajo hacen los algoritmos y a elegir cómo guardar o recorrer datos. Empieza por las prácticas de crecimiento y sigue con árboles, rutas y tablas hash.
+
 ## Recorrido de la materia
 
 El curso avanza desde el análisis de crecimiento y las recurrencias hasta árboles, grafos y tablas hash. El recorrido conecta lo que se pide en cada actividad con el método que se aplica y el PDF que se conserva.

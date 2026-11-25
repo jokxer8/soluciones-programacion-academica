@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de materiales](../MATERIALES.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Árboles:** reconstruye la forma del árbol a partir del orden en que se visitan sus nodos. **Hash:** reorganiza claves sin perder las búsquedas después de borrar. **Caminos mínimos:** compara rutas entre puntos. **Expansión mínima:** conecta todos los puntos con el menor costo total. El PDF se publica como evidencia, no como verificación independiente de cada resultado.
+
 ## Propósito
 
 El trabajo reúne reconstrucción de BST desde recorridos, rehashing con eliminación, caminos mínimos con Dijkstra y Bellman-Ford, y árboles de expansión mínima con Prim y Kruskal.

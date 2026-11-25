@@ -1,5 +1,13 @@
 # Desarrollo - Serialización de Árboles de Expresión
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Puedes dibujar `2 + 3` como un árbol: la suma arriba y los números debajo. Serializar es guardar el árbol de forma que después puedas reconstruirlo. El orden de lectura importa porque no basta con recordar los números: necesitas la forma y las operaciones.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Tipo de dato recursivo
 
 La actividad parte del siguiente tipo de dato recursivo:

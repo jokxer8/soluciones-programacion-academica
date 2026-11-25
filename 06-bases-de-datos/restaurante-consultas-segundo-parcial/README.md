@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Primero piensa qué pregunta quiere responder el restaurante. Luego decide si necesitas filas sueltas, datos de varias tablas o un resumen por grupo. Una consulta que cuenta elementos responde algo distinto de una que solo los enumera.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Resuelvo seis requerimientos sobre la atención del restaurante. DISTINCT elimina filas repetidas del resultado; EXISTS comprueba si existe alguna coincidencia y una CTE da nombre a una consulta dentro de una instrucción. En cálculos porcentuales, 0.10 representa el 10 %.

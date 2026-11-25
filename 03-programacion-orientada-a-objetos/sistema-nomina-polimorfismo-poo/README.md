@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+No todos los trabajadores cobran de la misma forma. El sistema puede pedir «calcula el pago» a todos sin conocer los detalles de cada tipo: cada uno aplica su propia regla. A eso se le llama polimorfismo.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Modelo distintas formas de calcular un pago mediante herencia y polimorfismo. Los importes del ejemplo son datos de práctica. En cada fórmula hay que distinguir cantidades monetarias, horas y tasas: una tasa de 0.10 equivale al 10 %, mientras que 10 como multiplicador tendría otro significado.

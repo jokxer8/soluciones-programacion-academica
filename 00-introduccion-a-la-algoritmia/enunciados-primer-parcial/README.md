@@ -11,6 +11,12 @@
 ![Área](https://img.shields.io/badge/Área-Algoritmia-green)
 ![Tipo](https://img.shields.io/badge/Tipo-Documentación-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Comisiones:** separa el monto de venta de la regla que indica cuánto corresponde pagar; busca esa regla antes de multiplicar. **Calificaciones:** separa las notas que entran del criterio que decide qué mostrar al final. Las soluciones publicadas se añadieron como material didáctico y no sustituyen la entrega original.
+
 ## Qué trabajé
 
 El enunciado original de los dos problemas se conserva. Como no se encontró una solución entregada, añadí dos elaboraciones nuevas en C++ y las identifico como tales; no se atribuyen a la entrega histórica.

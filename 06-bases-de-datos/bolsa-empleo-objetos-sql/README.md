@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una vista guarda una forma de consultar datos. Un procedimiento guarda pasos que puedes ejecutar. El registro de auditoría ayuda a ver qué cambió. La práctica aplica esas tres ideas a un sistema de ofertas y solicitudes de empleo.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Organizo consultas reutilizables y registro cambios mediante objetos SQL. Una vista define una consulta, un procedimiento ejecuta instrucciones con parámetros y un trigger responde a un evento. Para ejecutar estos objetos se necesita el esquema del que dependen.

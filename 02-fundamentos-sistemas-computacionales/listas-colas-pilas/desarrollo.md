@@ -1,5 +1,13 @@
 # Desarrollo — Listas, colas y pilas
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un nodo guarda un dato y el enlace al siguiente. Una cola funciona como una fila de espera: sale quien llegó primero. Una pila funciona como platos apilados: sale primero lo último que pusiste. Los ejercicios muestran qué cambia al buscar, ordenar o retirar datos.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño
 
 Los ejercicios 1–13 trabajan con listas: búsqueda y agregados O(n), eliminación con reconexión de enlaces, transformación a arreglo/cadena y ordenamiento. Merge sort divide y combina listas y tiene tiempo O(n log n). La búsqueda por valor sigue siendo lineal.

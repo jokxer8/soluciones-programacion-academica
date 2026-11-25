@@ -6,7 +6,13 @@
 
 </div>
 
-[Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 08 ←](../practica-08/README.md) · 
+[Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 08 ←](../practica-08/README.md) ·
+
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Cuando una tabla hash se llena, hay más choques. Reubicar las claves al cambiar el tamaño de la tabla es hacer rehashing. Compara qué cambia antes y después, y cómo responde cada método de manejar colisiones.
 
 ## Propósito
 

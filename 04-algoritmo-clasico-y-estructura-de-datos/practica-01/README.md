@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 02 →](../practica-02/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un algoritmo que hace n pasos crece distinto de uno que hace n × n. Con 10 datos son 10 frente a 100; con 100 datos, 100 frente a 10 000. La práctica usa límites para comparar ese crecimiento, no para medir segundos reales.
+
 ## Propósito
 
 Aplicar límites y reglas de crecimiento para justificar el orden de una función y relacionarlo con el trabajo que realiza un algoritmo.

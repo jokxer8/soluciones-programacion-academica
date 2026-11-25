@@ -4,6 +4,12 @@
 
 [Actividades](../README.md) · [Competencias relacionadas](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Un sistema es frágil cuando un cambio pequeño rompe algo que parecía no tener relación. Imagina que cambias el formato de una fecha y empiezan a fallar los reportes: el comentario ayuda a pensar por qué ocurre y cómo reducir esa dependencia.
+
 ## Descripción
 
 Reflexión individual acerca de cómo el software puede volverse más frágil a medida que recibe correcciones y nuevas funciones. El texto relaciona los cambios pequeños con el riesgo de efectos colaterales y la necesidad de gestionar el mantenimiento de forma cuidadosa.

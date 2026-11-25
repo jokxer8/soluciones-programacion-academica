@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si el nombre de una película se repite en cada fila de una función, corregirlo obliga a editar muchas filas. Separar películas y funciones en tablas conectadas permite registrar ese dato una vez y volver a encontrarlo cuando se necesita.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono el diseño del cine con la normalización de datos. 1FN, 2FN y 3FN significan primera, segunda y tercera forma normal; no son versiones del programa. Se justifican a partir de atributos, claves y dependencias funcionales.

@@ -14,6 +14,12 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El mismo valor puede escribirse de formas distintas: 10 en decimal es 1010 en binario. Antes de leer los bits, pregunta qué formato usa el dato. Un grupo de bits no significa lo mismo si se interpreta como entero con signo o como número con decimales.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono las bases numéricas con la forma en que se guardan enteros y números con decimales. En el desarrollo explico cada conversión, el ancho en bits y la diferencia entre interpretar un patrón como entero o como punto flotante.

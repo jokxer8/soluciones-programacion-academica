@@ -11,6 +11,12 @@
 ![Área](https://img.shields.io/badge/Área-Algoritmia-green)
 ![Tipo](https://img.shields.io/badge/Tipo-Documentación-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un algoritmo es una receta con pasos que otra persona puede repetir. Para practicar, elige algo cotidiano, como calcular el total de dos compras, y separa qué datos entran, qué haces con ellos y qué resultado debe salir.
+
 ## Qué trabajé
 
 Reúno mi reporte de lectura y los conceptos que utilicé al comenzar: lenguajes, representación de soluciones, compilación y pruebas. El documento conserva la redacción de la entrega; esta guía aclara los términos para leerlo con contexto.

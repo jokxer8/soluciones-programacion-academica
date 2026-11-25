@@ -14,6 +14,17 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+C prepara los datos y llama funciones escritas en ensamblador para sumar, ordenar o intercambiar enteros. Lo importante es el acuerdo entre ambos: qué datos recibe cada función, dónde los encuentra y cómo devuelve el resultado.
+
+- [Sumar](sum.asm): reúne los valores en un total.
+- [Ordenar](bubble_sort.asm): compara vecinos y cámbialos de lugar si están al revés.
+- [Intercambiar](swap.asm): cambia de lugar dos valores sin perder ninguno.
+- [Programa principal](main.c): prepara los datos y llama a las funciones.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Integro funciones de ensamblador en un programa C. RCX, RDX, R8 y R9 son nombres de registros del procesador usados para pasar argumentos en Windows x64; no son valores hexadecimales. La convención de llamada determina cómo se comunican ambos lenguajes.

@@ -1,5 +1,13 @@
 # Desarrollo - Listas Perezosas en SML
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una lista perezosa calcula el siguiente valor cuando se lo pides. Así puedes trabajar con una secuencia que, en teoría, no termina: solicitas los primeros cinco valores en vez de intentar construirlos todos.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Definición de lista perezosa
 
 La actividad utiliza el siguiente tipo de dato:

@@ -4,6 +4,12 @@
 
 [Inicio de la materia](../README.md) · [Material docente](../material-docente/README.md) · [Competencias](../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Este documento indica qué se estudia y cómo se organiza la asignatura. Úsalo como mapa para localizar un tema; los ejercicios y proyectos muestran cómo se trabajó con las evidencias disponibles.
+
 ## Datos de la asignatura
 
 | Campo | Información |

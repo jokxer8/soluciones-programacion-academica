@@ -11,6 +11,12 @@
 ![Área](https://img.shields.io/badge/Área-Algoritmia-green)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Empieza con 0 y 1. Cada número nuevo es la suma de los dos anteriores: 0, 1, 1, 2, 3, 5. Para seguir el ciclo a mano, anota los dos números que conserva el programa y qué cambia al avanzar una vuelta.
+
 ## Qué trabajé
 
 Conservo un fragmento de práctica que genera Fibonacci y preparo una versión independiente para compilarlo. El fragmento no incluye las cabeceras y siempre imprime los dos primeros valores, incluso si se solicita menos de dos.

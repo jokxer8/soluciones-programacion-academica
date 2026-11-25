@@ -1,5 +1,11 @@
 # Inventario de documentos académicos
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../02-fundamentos-sistemas-computacionales/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 121 archivos examinados: 88 seleccionados y 33 excluidos. El [registro JSON](inventario.json) contiene hashes de origen y publicación. Las correcciones FASM están explicadas en [PRUEBAS-LINUX.md](../../02-fundamentos-sistemas-computacionales/PRUEBAS-LINUX.md).
 
 | Documento de referencia | Destino | Tratamiento o motivo |

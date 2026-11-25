@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 06 ←](../practica-06/README.md) · [Práctica 08 →](../practica-08/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Imagina que debes conectar varias casas gastando lo menos posible en cable. Busca una red que llegue a todas sin vueltas innecesarias. No es lo mismo que buscar el camino más corto entre solo dos casas.
+
 ## Propósito
 
 Comparar dos estrategias para conectar los vértices con coste total mínimo y justificar la selección de aristas.

@@ -20,6 +20,12 @@ El portafolio reúne materias cursadas con actividades y fuentes académicas doc
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
+
+Si estás aprendiendo, elige una materia y abre una actividad. Empieza por **En palabras simples** para entender qué se busca y sigue al código, al desarrollo o a la evidencia cuando quieras más detalle. En las carpetas que reúnen varios ejercicios, puedes leerlos uno por uno.
+
 ## Elige tu ruta
 
 | Ruta | Empieza por |

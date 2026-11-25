@@ -4,6 +4,12 @@
 
 El índice contiene las materias 00–15 en el orden académico. Diez materias tienen actividades o evidencias publicadas: 00–06, 08, 10 y 15. La materia 04 está completada dentro del alcance documental publicado; la Práctica 3 no fue presentada y tiene un desarrollo didáctico complementario identificado. Las materias 07, 09 y 11–14 siguen como espacios pendientes.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
+
+Esta lista muestra qué falta publicar o verificar. Si una materia o entrega está pendiente, no significa que el aprendizaje no ocurriera: significa que el repositorio todavía no contiene esa evidencia o comprobación.
+
 ## Materias con material en organización
 
 | Posición | Materia | Estado |

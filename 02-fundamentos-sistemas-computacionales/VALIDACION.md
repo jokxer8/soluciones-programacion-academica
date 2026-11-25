@@ -2,6 +2,12 @@
 
 Revisión inicial local en Windows x64 y ampliación con ejecución Linux en GitHub Actions, 15 de octubre de 2026 (Santo Domingo). Los resultados se generan con el código publicado; no se atribuyen a la entrega histórica.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Consulta aquí los ejercicios que se verificaron y las condiciones de cada prueba. Un resultado correcto corresponde a ese ejemplo y a su entorno; no afirma que todos los programas se hayan probado.
+
 ## Herramientas y reproducción
 
 - Visual Studio, MSVC 14.51, compilación C17 con `/W4`.

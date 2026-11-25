@@ -2,6 +2,14 @@
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cpp)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si los lados que forman la esquina recta miden 3 y 4, el lado largo mide 5, el área es 6 y el perímetro es 12. El ejercicio toma los mismos datos para tres cuentas distintas: hallar el lado largo, medir lo de adentro y sumar el borde.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Punto de partida
 
 Trabajo realizado en el grupo 5. A partir de dos catetos calculo la hipotenusa, el área y el perímetro. Conservo el algoritmo, el diagrama de RAPTOR, la investigación y las versiones de la entrega para poder comparar sus enfoques.

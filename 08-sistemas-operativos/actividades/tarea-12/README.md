@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Guardar una copia en Linux solo resuelve la mitad del problema. También necesitas comprobar que puedes recuperar un archivo de esa copia. La práctica distingue preparar el respaldo, conservarlo y probar la recuperación.
+
 ## Propósito
 
 Documento teórico sobre copias de seguridad y recuperación de información en Linux.

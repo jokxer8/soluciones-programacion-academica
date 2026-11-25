@@ -13,6 +13,12 @@ El programa institucional declara competencias del curso. La tabla siguiente las
 | EA1 — Recolección y documentación de necesidades funcionales | [Práctica SIGERH](../proyectos/README.md#sigerh) | Organización de objetivos, módulos y tareas de un sistema de recursos humanos mediante elementos de trabajo en Azure DevOps Basic. |
 | EA2 — Técnicas tempranas de modelado | [Programa y materiales](../programa-estudio/README.md) · [Proyectos documentados](../proyectos/README.md) | Relación entre análisis, requerimientos y planificación; el alcance de la evidencia disponible se explica en cada ficha. |
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+La tabla conecta habilidades con pruebas concretas. Si quieres entender, por ejemplo, de dónde sale la habilidad de organizar requisitos, abre la práctica asociada y revisa cómo se dividió el trabajo.
+
 ## Logros que respaldan los archivos
 
 - Organicé la planificación de dos iniciativas de software en una jerarquía documentada de **2 Epic, 8 Issue y 20 Task**.

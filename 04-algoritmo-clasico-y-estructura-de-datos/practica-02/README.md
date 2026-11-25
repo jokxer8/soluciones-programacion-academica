@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 01 ←](../practica-01/README.md) · [Práctica 03 →](../practica-03/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+O describe un límite por arriba; Ω, uno por abajo; Θ, uno por ambos lados del mismo orden. Si un proceso hace `3n + 2` pasos, su crecimiento es lineal: lo que domina cuando n es grande es el término con n.
+
 ## Propósito
 
 Usar definiciones y cotas para argumentar cómo se comporta una función cuando aumenta el tamaño de entrada.

@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un teléfono tiene datos que describen su estado y acciones que pueden cambiarlo. Lee la clase preguntando qué recuerda el objeto, qué puede hacer y qué reglas impiden cambiar sus datos de cualquier manera.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Agrupo las características de un teléfono y sus componentes mediante objetos. El precio, la capacidad de batería y las medidas de pantalla representan magnitudes diferentes; deben leerse con la unidad que acompañe al dato. mAh expresa capacidad de carga y no una duración fija en horas.

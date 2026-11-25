@@ -4,6 +4,12 @@
 
 [Inicio de la materia](../README.md) · [Material docente](../material-docente/README.md) · [Programa](../programa-estudio/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El simulador es una herramienta para repasar. Responde primero sin mirar material, identifica qué concepto confundiste y vuelve a la unidad correspondiente. Sirve para practicar y no es un examen oficial.
+
 ## Simulador de exámenes ICC-341
 
 El archivo HTML contiene tres bancos de práctica con **50 preguntas cada uno**. Cada intento selecciona **30 preguntas sin repetición**, mezcla las preguntas y el orden de las opciones, permite navegar antes de entregar y muestra la nota junto con una revisión de respuestas.

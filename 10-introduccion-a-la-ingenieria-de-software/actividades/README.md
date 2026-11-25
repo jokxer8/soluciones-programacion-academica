@@ -4,6 +4,12 @@
 
 [Inicio de la materia](../README.md) · [Proyectos](../proyectos/README.md) · [Competencias](../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí encuentras la actividad individual publicada y su enlace. Lee primero la explicación de la fragilidad del software y luego abre la entrega si quieres ver cómo se desarrolló esa idea.
+
 ## Actividad individual disponible
 
 | Actividad | Evidencia | Enfoque |

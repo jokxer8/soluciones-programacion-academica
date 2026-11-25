@@ -6,6 +6,12 @@
 
 Los documentos disponibles describen planificación de sistemas de información usando Azure DevOps Basic. Se presentan como evidencias de diseño y organización de requisitos; los PDF no demuestran por sí solos que una instancia de Azure DevOps esté activa o que todas las tareas se hayan completado.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**SIGERH:** empieza por un objetivo grande de recursos humanos, divídelo en necesidades concretas y termina en tareas pequeñas. **KHuman:** sigue la relación entre módulos y requerimientos para ver qué habría que construir y cómo se organizaría. Ambos documentos explican planificación, no demuestran una aplicación funcionando.
+
 ## SIGERH
 
 **Sistema Integral de Gestión de Recursos Humanos.** La primera práctica organiza el trabajo mediante objetivos amplios, módulos funcionales y tareas concretas, en una jerarquía de **2 Epic, 8 Issue y 20 Task**.

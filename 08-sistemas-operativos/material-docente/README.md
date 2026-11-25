@@ -6,6 +6,12 @@
 
 Esta sección reúne material de clase y guías prácticas que estaban en las carpetas de capítulos. Los nombres se normalizaron para identificar tema y tipo de recurso.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Las presentaciones te dan el contexto de cada tema y las guías muestran procedimientos concretos. Mira la lista por capítulo y vuelve a la ficha de la actividad si quieres entender qué se pidió o qué quedó documentado.
+
 ## Presentaciones de capítulos
 
 | Capítulo | Tema | Recurso |

@@ -10,6 +10,17 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Las consultas cruzan datos del alquiler con los del auto o el cliente. Lee cada pregunta antes del SQL: ¿qué personas o autos necesito, cómo se relacionan y qué condición debe pasar cada fila?
+
+- [Crear tablas](01-creacion.sql) y [cargar datos](02-datos.sql): prepara los espacios y añade los primeros registros.
+- [Consultas básicas](03-consultas-basicas.sql): lee los datos antes de modificarlos.
+- [Modificar la estructura](04-modificaciones.sql) y [actualizar datos](05-actualizacion-datos.sql): separa cambiar una tabla de corregir los datos que guarda.
+- [Consultas ampliadas](06-consultas-ampliadas.sql) y [consultas 8 a 14](07-consultas-8-a-14.sql): compara qué información se cruza, filtra o resume en cada pregunta.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Consulto un modelo que admite varios coches por reserva. Una clave compuesta identifica una fila mediante varias columnas juntas; no consiste en sumar sus valores. Los números de los scripts indican el orden de preparación y consulta explicado en esta actividad.

@@ -1,5 +1,11 @@
 # Diccionario de Datos — HotelDB
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Piensa en este documento como una guía de las tablas: te dice qué guarda cada una y qué significa cada campo. Úsalo junto al modelo para seguir una reserva o un cliente.
+
 ## Tablas preexistentes
 
 ### dbo.Roles

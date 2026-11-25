@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de materiales](../MATERIALES.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí practicas comparar cómo crecen distintas cantidades de trabajo al aumentar el tamaño de la entrada. Empieza con números pequeños y luego pregúntate qué término domina cuando el tamaño se hace grande.
+
 ## Propósito
 
 Material complementario de verdadero/falso y demostraciones sobre notación asintótica. Se mantiene separado de la serie de prácticas porque su nombre de origen no lo identifica como una práctica numerada.

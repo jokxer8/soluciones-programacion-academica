@@ -2,6 +2,14 @@
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un algoritmo es una receta con pasos que otra persona puede repetir. Para practicar, elige algo cotidiano, como calcular el total de dos compras, y separa qué datos entran, qué haces con ellos y qué resultado debe salir.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Punto de partida
 
 Reúno mi reporte de lectura y los conceptos que utilicé al comenzar: lenguajes, representación de soluciones, compilación y pruebas. El documento conserva la redacción de la entrega; esta guía aclara los términos para leerlo con contexto.

@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+En Linux puedes usar una interfaz de ventanas o escribir instrucciones en la terminal. Para entender los ejercicios, sigue qué recibe cada instrucción, a qué archivo o carpeta se refiere y cómo saber si terminó como esperabas.
+
 ## Propósito
 
 Investigación introductoria sobre Linux, su kernel y distribuciones, junto con instalación virtualizada y comandos básicos.

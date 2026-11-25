@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+**Bookstore:** usa el diagrama para seguir cómo se relacionan los datos de la librería. **Fast Food:** sigue los datos de un pedido en su esquema. **Hospital:** localiza qué tablas guardan datos de cada parte del sistema. Lee las claves para saber cómo unir la información.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Reúno esquemas de apoyo para practicar la lectura de tablas y relaciones. Librería, hospital y comida rápida son casos independientes. Sus tablas no deben combinarse en una sola base de datos sin revisar primero los nombres y las dependencias.

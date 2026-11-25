@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una lista perezosa calcula el siguiente valor cuando se lo pides. Así puedes trabajar con una secuencia que, en teoría, no termina: solicitas los primeros cinco valores en vez de intentar construirlos todos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Represento secuencias que calculan nuevos elementos cuando se solicitan. unit es el tipo cuyo valor es (), y una función unit -> valor aplaza un cálculo hasta recibir (). Solicitar n elementos significa observar un prefijo finito, incluso si la secuencia puede continuar indefinidamente.

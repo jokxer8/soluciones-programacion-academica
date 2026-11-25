@@ -2,6 +2,14 @@
 
 Construir y consultar una base de alquiler donde una reserva puede incluir varios coches.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Las consultas cruzan datos del alquiler con los del auto o el cliente. Lee cada pregunta antes del SQL: ¿qué personas o autos necesito, cómo se relacionan y qué condición debe pasar cada fila?
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Modelo
 
 Reserva_Coche separa la cabecera de la reserva de sus vehículos y precios. Cliente utiliza una clave compuesta y un aval con referencia a esa misma clave. Las consultas recorren cliente, agencia, reserva, coche y garaje.

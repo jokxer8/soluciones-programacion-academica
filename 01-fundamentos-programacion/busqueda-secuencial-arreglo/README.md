@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si tienes la lista `10, 4, 8` y buscas el `8`, el programa revisa `10`, luego `4` y por último `8`. Muestra la posición `2` porque C# empieza a contar en `0`. Si buscas `7`, revisará toda la lista y te dirá que no aparece.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco un valor recorriendo el arreglo desde el principio. Los índices de C# empiezan en 0: el índice 2 identifica el tercer elemento. Si se muestra una posición para el usuario, hay que comprobar si el programa suma 1 al índice.

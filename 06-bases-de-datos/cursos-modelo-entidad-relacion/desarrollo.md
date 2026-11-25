@@ -1,5 +1,13 @@
 # Desarrollo - Cursos - Modelo Entidad-Relación
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Antes de crear tablas, dibuja las cosas que el sistema necesita recordar y sus relaciones. Aquí importa distinguir qué representa un curso y cómo se conecta con los demás elementos del modelo. Usa el diagrama como mapa antes de leer los nombres técnicos.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Planteamiento
 
 Representar entidades y cardinalidades de una oferta de formación mediante un diagrama entidad-relación.

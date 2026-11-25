@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Con `2, 4, 9`, puedes recorrer la lista una vez y llevar tres recuerdos: suma, menor y mayor. La suma es 15; al dividir entre 3 sale un promedio de 5. El menor es 2 y el mayor es 9.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Recorro los datos para obtener suma, promedio y extremos. El promedio es la suma dividida entre la cantidad de elementos; no es el punto medio entre el mayor y el menor. En el análisis, n representa la cantidad de valores del arreglo.

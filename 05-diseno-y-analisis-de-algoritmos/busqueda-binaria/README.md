@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+En una lista ordenada, mira primero el número del medio. Si el que buscas es menor, descarta la mitad derecha; si es mayor, descarta la izquierda. Repite con la mitad restante. La clave es que los datos ya estén ordenados.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco sobre datos ordenados y reduzco a la mitad el intervalo en cada paso. n es la cantidad de elementos; log₂(n) describe cuántas divisiones sucesivas entre dos hacen falta. La condición de orden es necesaria para descartar correctamente una mitad.

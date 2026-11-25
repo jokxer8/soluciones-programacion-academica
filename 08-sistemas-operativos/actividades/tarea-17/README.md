@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Active Directory funciona como un directorio de cuentas y equipos. En vez de administrar cada computadora por separado, se pueden organizar usuarios y aplicar reglas a grupos. Un grupo permite asignar una misma regla a varias personas.
+
 ## Propósito
 
 Resumen sobre planificación y funcionamiento de Active Directory; práctica de controlador de dominio con usuarios, grupos y unidades organizativas.

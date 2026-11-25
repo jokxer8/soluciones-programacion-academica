@@ -14,6 +14,12 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+La aplicación carga países desde un archivo y los conecta como vagones que permiten ir hacia delante y hacia atrás. Para saber cómo funciona, empieza por un país: mira cómo se carga, cómo se encuentra y qué enlaces cambian si lo eliminas.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Uso una lista doblemente enlazada para cargar y consultar países desde un archivo CSV. Los 227 registros pertenecen al conjunto de datos de la actividad: no representan estadísticas actuales. Las cifras deben interpretarse con el nombre y la unidad de su columna.

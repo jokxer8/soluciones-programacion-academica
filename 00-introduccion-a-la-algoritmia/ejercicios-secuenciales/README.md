@@ -11,6 +11,12 @@
 ![Área](https://img.shields.io/badge/Área-Algoritmia-green)
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%2B%2B-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una variable es como una casilla: si guardas un valor nuevo, el anterior se pierde. En el 3.9, con A = 5, B queda en 8. En el 3.10, A sube a 6 y B se vuelve a calcular: queda en 1. En el 3.11, con A = 5 y B = 2, C y B quedan en 7 y A en 0. En el 3.12, copiar B en A y luego A en B deja ambos con el B original; no los intercambia. Solo el 3.9 tiene código C++ en esta carpeta.
+
 ## Qué trabajé
 
 Reúno los diagramas 3.9–3.12 y el código disponible del ejercicio 3.9. Los números identifican ejercicios del material de práctica, no versiones del programa ni calificaciones.

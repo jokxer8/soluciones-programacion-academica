@@ -2,6 +2,12 @@
 
 La aplicación reemplaza el SHA256 rápido de la entrega académica por **PBKDF2-HMAC-SHA256**, con sal aleatoria de 16 bytes, resultado de 32 bytes y 600000 iteraciones por defecto. No se añaden dependencias: se utiliza `Rfc2898DeriveBytes` de .NET Framework 4.8.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+El sistema no necesita guardar la contraseña legible para comprobar un acceso. Guarda un valor derivado y lo compara cuando la persona intenta entrar. La guía explica cómo se trasladaron las cuentas a ese formato.
+
 ## Formato y coste
 
 ```text

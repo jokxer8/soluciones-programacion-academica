@@ -4,6 +4,12 @@
 
 El inventario describe los materiales revisados en la carpeta local **17. Algoritmo Clasico y Estructura de Datos**. Las copias no se suben automáticamente junto con esta lista. Los títulos de actividades respetan los nombres de origen disponibles.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../04-algoritmo-clasico-y-estructura-de-datos/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 ## Programa y materiales de clase
 
 - Programa ICC-211-T en DOCX.

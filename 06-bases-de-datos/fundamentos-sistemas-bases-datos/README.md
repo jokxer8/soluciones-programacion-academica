@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una base de datos guarda información de manera que después puedas buscarla y actualizarla. Una clave identifica un registro; otra puede apuntar a una tabla distinta. Piensa en un cliente y sus pedidos: no hace falta copiar todos sus datos por cada pedido.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono los conceptos de datos, información y metadatos con el diseño de una base de datos. DBMS significa sistema gestor de bases de datos; DDL agrupa instrucciones de definición y DML las de manipulación de datos.

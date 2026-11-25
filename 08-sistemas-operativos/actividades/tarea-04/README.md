@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+El Shell recibe instrucciones escritas. Un script reúne varias de ellas para repetir el mismo trabajo sin escribirlas una a una. La ficha separa la exposición grupal del documento práctico disponible.
+
 ## Propósito
 
 La carpeta contiene una exposición grupal sobre Shell, mandatos e intérpretes, y un PDF práctico adicional. La presentación asigna a Kelvin la introducción, el concepto de Shell y el cierre. El archivo práctico se conserva con nombre normalizado; su encabezado se debe leer junto con la consigna original.

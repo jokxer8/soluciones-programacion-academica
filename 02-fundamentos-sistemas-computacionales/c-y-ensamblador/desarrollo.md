@@ -1,5 +1,13 @@
 # Desarrollo — Programación en C y ensamblador FASM
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Los mismos problemas se escriben en C y en ensamblador. Mira primero qué recibe y qué devuelve cada pareja: el objetivo es que ambos programas hagan el mismo trabajo, aunque uno use instrucciones más detalladas.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño
 
 Los pares C/FASM resuelven problemas similares con distintos niveles de abstracción: `stdio` frente a syscalls, ciclos frente a saltos y variables frente a registros. Los patrones imprimen espacios y asteriscos mediante ciclos anidados. La primalidad prueba divisores; los tamaños y rangos deben respetar el enunciado.

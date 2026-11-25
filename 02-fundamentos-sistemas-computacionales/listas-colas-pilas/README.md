@@ -14,6 +14,34 @@
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Un nodo guarda un dato y el enlace al siguiente. Una cola funciona como una fila de espera: sale quien llegó primero. Una pila funciona como platos apilados: sale primero lo último que pusiste. Los ejercicios muestran qué cambia al buscar, ordenar o retirar datos.
+
+### Ejercicios de esta carpeta, uno por uno
+
+- **Búsqueda de un nodo:** Revisa los datos de cada nodo hasta encontrar el valor buscado. ([ejercicio-01.c](ejercicio-01.c))
+- **Conteo de nodos:** Sigue los enlaces y suma 1 cada vez que visites un nodo. ([ejercicio-02.c](ejercicio-02.c))
+- **Máximo:** Conserva el mayor valor que hayas encontrado durante el recorrido. ([ejercicio-03.c](ejercicio-03.c))
+- **Mínimo:** Conserva el menor valor que hayas encontrado durante el recorrido. ([ejercicio-04.c](ejercicio-04.c))
+- **Promedio:** Suma los valores y divide el total entre la cantidad de nodos. ([ejercicio-05.c](ejercicio-05.c))
+- **Eliminar primer nodo:** Mueve el inicio al segundo nodo para retirar el primero. ([ejercicio-06.c](ejercicio-06.c))
+- **Eliminar por valor:** Busca el valor y enlaza con cuidado el nodo anterior con el siguiente. ([ejercicio-07.c](ejercicio-07.c))
+- **Palíndromo:** Compara la secuencia con su versión al revés para ver si se lee igual. ([ejercicio-08.c](ejercicio-08.c))
+- **Conversión a arreglo:** Copia los valores a posiciones consecutivas de un arreglo. ([ejercicio-09.c](ejercicio-09.c))
+- **Conversión a cadena:** Pasa los datos de la lista a un texto que se pueda mostrar o conservar. ([ejercicio-10.c](ejercicio-10.c))
+- **Eliminar duplicados:** Identifica valores repetidos y conserva una sola copia. ([ejercicio-11.c](ejercicio-11.c))
+- **Merge sort:** Divide la lista y vuelve a unir sus partes en orden. ([ejercicio-12.c](ejercicio-12.c))
+- **Unir listas:** Recorre las dos listas para reunir sus valores en una misma estructura. ([ejercicio-13.c](ejercicio-13.c))
+- **Cola con arreglo:** Usa posiciones de un arreglo para mantener el orden de llegada. ([ejercicio-14.c](ejercicio-14.c))
+- **Promedio de cola:** Suma los valores de la cola y divídelos entre cuántos hay. ([ejercicio-15.c](ejercicio-15.c))
+- **Máximo de cola:** Revisa los valores de la cola para encontrar el mayor. ([ejercicio-16.c](ejercicio-16.c))
+- **Cola enlazada:** Une nodos para que se añada al final y se retire del principio. ([ejercicio-17.c](ejercicio-17.c))
+- **Pila con arreglo:** Guarda elementos en un arreglo y retira primero el último que agregaste. ([ejercicio-18.c](ejercicio-18.c))
+- **Pila enlazada:** Guarda el tope en un nodo; al retirarlo, el siguiente pasa a ser el nuevo tope. ([ejercicio-19.c](ejercicio-19.c))
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Organizo datos mediante nodos enlazados. FIFO significa que sale primero el elemento que entró primero, como en una cola; LIFO significa que sale primero el último que entró, como en una pila. Los números de ejercicio sirven para localizar cada programa independiente.

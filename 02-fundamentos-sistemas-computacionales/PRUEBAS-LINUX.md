@@ -6,6 +6,12 @@
 
 [Ver ejecución correcta](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38847529558) · [Registro JSON](tests/results-linux.json) · [Código de las pruebas](tests/compare-linux.py)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Se compararon programas en C y FASM con los mismos datos. Si producen los mismos resultados en los casos registrados, eso respalda que resolvieron igual esos casos, aunque su código sea distinto.
+
 ## Entorno y método
 
 - Commit probado: `a81dcad179ccd8765dee920802ca23f5b5636b0d`.

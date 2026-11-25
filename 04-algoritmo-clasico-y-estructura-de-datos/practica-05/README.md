@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 04 ←](../practica-04/README.md) · [Práctica 06 →](../practica-06/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+En un árbol de búsqueda, cada número te indica si debes mirar a la izquierda o a la derecha. Si el árbol queda inclinado hacia un lado, buscar se parece a recorrer una lista. Equilibrarlo ayuda a conservar caminos cortos.
+
 ## Propósito
 
 Relacionar el orden de claves con los recorridos del árbol y explicar cómo el balanceo mantiene operaciones eficientes.

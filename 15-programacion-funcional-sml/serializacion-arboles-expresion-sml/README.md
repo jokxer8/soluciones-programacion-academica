@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Puedes dibujar `2 + 3` como un árbol: la suma arriba y los números debajo. Serializar es guardar el árbol de forma que después puedas reconstruirlo. El orden de lectura importa porque no basta con recordar los números: necesitas la forma y las operaciones.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Represento expresiones con árboles y las convierto a texto. En prefijo, el operador aparece antes de sus operandos; en postfijo, después. En infijo se sitúa entre ellos y los paréntesis permiten conservar la estructura de la expresión.

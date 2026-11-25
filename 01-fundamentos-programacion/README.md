@@ -17,6 +17,12 @@ En esta materia trabajé la lógica de programación con C#: lectura de datos, d
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Primero aprende a guardar datos. Después usa condiciones para decidir, ciclos para repetir y arreglos para manejar varios valores juntos. Elige la búsqueda secuencial si quieres unir esas ideas en un ejercicio corto.
+
 ## Objetivo de la materia
 
 Evidenciar el dominio de los fundamentos necesarios para construir soluciones de programación claras, ordenadas y funcionales.

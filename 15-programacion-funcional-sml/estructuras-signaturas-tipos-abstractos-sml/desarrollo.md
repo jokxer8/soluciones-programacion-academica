@@ -1,5 +1,13 @@
 # Desarrollo - Estructuras, Signaturas y Tipos Abstractos en SML
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una estructura reúne operaciones relacionadas. Una signatura indica cuáles se pueden usar desde fuera. Piensa en una caja: puedes usar sus botones públicos sin saber cómo están conectados por dentro.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Signatura ESTUDIANTE
 
 La actividad inicia con la definición de una signatura llamada `ESTUDIANTE`.

@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+El sistema operativo coordina los programas y las piezas físicas del equipo. Cuando abres un archivo, por ejemplo, decide cómo localizarlo y entregarlo al programa sin que tengas que manejar el disco directamente.
+
 ## Propósito
 
 Resumen sobre las funciones y estructura de un sistema operativo, con ejemplos. El trabajo conecta conceptos introductorios con el rol del sistema entre hardware, software y usuario.

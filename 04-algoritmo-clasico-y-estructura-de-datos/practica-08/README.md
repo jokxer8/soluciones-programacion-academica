@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 07 ←](../practica-07/README.md) · [Práctica 09 →](../practica-09/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una tabla hash convierte una clave en una posición, como asignar un casillero. Si dos claves llegan al mismo lugar, hay una colisión. La práctica muestra cómo guardar y luego encontrar ambas sin perder una.
+
 ## Propósito
 
 Comprender cómo se insertan y localizan claves, y cómo una estrategia de resolución de colisiones afecta a la tabla.

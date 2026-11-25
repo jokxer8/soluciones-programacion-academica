@@ -10,6 +10,12 @@
 
 [Inicio](../README.md) · **Materia 10** · [Índice de materias](../README.md#áreas-principales) · [Pendientes](../PENDIENTES.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Antes de programar, aclara qué necesita la persona que usará el sistema. Esta materia reúne formas de describir esas necesidades y dividirlas en tareas, más un recurso para practicar lo aprendido.
+
 ## Presentación
 
 Esta sección reúne el programa de estudio de **ICC-341-T Introducción a la Ingeniería de Software**, materiales de apoyo autorizados, actividades individuales y documentación de proyectos realizados durante la materia. Su propósito es dejar constancia verificable de los temas trabajados, los productos disponibles y las competencias que esas evidencias permiten ilustrar.

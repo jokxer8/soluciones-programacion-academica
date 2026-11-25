@@ -8,6 +8,18 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 02 ←](../practica-02/README.md) · [Práctica 04 →](../practica-04/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una función recursiva resuelve un problema llamándose con un caso más pequeño hasta que llega a uno que sabe resolver directamente. Sumar de 1 a 3 puede verse como `3 + suma(2)`. El desarrollo publicado es complementario: no existe una entrega original documentada.
+
+- **Suma recursiva:** quita un número del problema en cada llamada.
+- **Búsqueda binaria:** cada llamada se queda con la mitad donde podría estar el valor.
+- **Fibonacci ingenuo:** cada llamada abre dos caminos y puede repetir trabajo.
+
+[Ver los tres ejemplos desarrollados](desarrollo.md).
+
 ## Propósito
 
 Analizar cómo el tamaño del problema y las llamadas recursivas determinan el tiempo y el espacio que utiliza un algoritmo. La actividad conecta el análisis asintótico de las prácticas anteriores con las técnicas de recurrencias de la Práctica 4.

@@ -2,6 +2,12 @@
 
 Las tareas [#3](https://github.com/jokxer8/soluciones-programacion-academica/issues/3), [#5](https://github.com/jokxer8/soluciones-programacion-academica/issues/5) y [#7](https://github.com/jokxer8/soluciones-programacion-academica/issues/7) se completaron con una batería ampliada de **65 pruebas correctas, 0 fallidas**, ejecutada contra SQL Server LocalDB. La [ejecución final en Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38843402603) corresponde a `998db69`. El [registro de casos](evidencias/functional-results.tsv) incluye los resultados locales.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Este resumen indica qué tareas se dieron por cerradas y con qué evidencia. Úsalo para distinguir un cambio realizado de una mejora que aún se podría hacer.
+
 ## #3 Autenticación, permisos e inactividad
 
 | Módulo | ADMIN | RECEPCION | EMPLEADO | SOPORTE |

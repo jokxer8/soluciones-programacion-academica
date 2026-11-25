@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+La función `map` aplica la misma regla a cada elemento. Si duplicas `[1, 2, 3]`, obtienes `[2, 4, 6]`. SML puede deducir el tipo de entrada y salida a partir de la función aplicada; no siempre hay que escribirlo.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Aplico una función a cada elemento de una lista y sigo la inferencia de tipos. En ('a -> 'b) -> 'a list -> 'b list, 'a y 'b son variables de tipo; list indica una lista y -> separa argumentos y resultado. No son caracteres ni valores que deba escribir el usuario.

@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Si un aviso vive solo en memoria, desaparece al cerrar el programa. Guardarlo en un archivo permite recuperarlo después. Serializar significa convertir los datos del objeto a un formato que el programa pueda escribir y volver a leer.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Organizo avisos como objetos y guardo su información en archivos. TXT es una representación de texto para lectura; JSON conserva una estructura de campos y valores que puede volver a cargarse. Guardar un archivo y recuperar correctamente sus datos son comprobaciones distintas.

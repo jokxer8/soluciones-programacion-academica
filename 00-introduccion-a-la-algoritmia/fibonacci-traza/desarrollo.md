@@ -2,6 +2,14 @@
 
 [Inicio](../../README.md) · [Materia](../README.md) · [Desarrollo](desarrollo.md) · [Código](solution.cpp)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Empieza con 0 y 1. Cada número nuevo es la suma de los dos anteriores: 0, 1, 1, 2, 3, 5. Para seguir el ciclo a mano, anota los dos números que conserva el programa y qué cambia al avanzar una vuelta.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Punto de partida
 
 Conservo un fragmento de práctica que genera Fibonacci y preparo una versión independiente para compilarlo. El fragmento no incluye las cabeceras y siempre imprime los dos primeros valores, incluso si se solicita menos de dos.

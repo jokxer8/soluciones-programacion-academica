@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+No todos los trabajadores cobran de la misma forma. El sistema puede pedir «calcula el pago» a todos sin conocer los detalles de cada tipo: cada uno aplica su propia regla. A eso se le llama polimorfismo.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar conceptos avanzados de programación orientada a objetos mediante el uso de clases abstractas, herencia, sobrescritura de métodos y polimorfismo.

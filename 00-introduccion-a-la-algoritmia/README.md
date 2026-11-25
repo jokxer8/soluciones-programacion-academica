@@ -17,6 +17,12 @@ En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Empieza con una situación pequeña y anota qué datos entran, qué pasos sigues y qué respuesta sale. Los diagramas, las trazas a mano y el C++ muestran tres maneras de representar los mismos pasos.
+
 ## Objetivo de la materia
 
 Relacionar las entradas de un problema con los pasos necesarios para obtener una salida. Las actividades muestran cómo utilizo variables, asignaciones, condiciones, ciclos y cadenas, y cómo comparo un algoritmo con su implementación.

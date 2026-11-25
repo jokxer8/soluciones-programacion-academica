@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El 1 es tierra y el 0 es agua. Primero reúne la tierra que se toca por lados para contar las islas. Después compara qué casillas de agua habría que convertir en tierra para conectarlas todas con el menor cambio posible.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Interpreto 0 como agua y 1 como tierra; las conexiones son horizontales o verticales. F y C son filas y columnas, y K es la cantidad de islas. Una máscara de bits representa un subconjunto: con tres islas, 101 en base 2 selecciona la primera y la tercera, no ciento una islas.

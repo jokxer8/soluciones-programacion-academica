@@ -2,6 +2,14 @@
 
 Implementar objetos de base de datos para reportes y trazabilidad sobre el esquema Bolsa_Empleo.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una vista guarda una forma de consultar datos. Un procedimiento guarda pasos que puedes ejecutar. El registro de auditoría ayuda a ver qué cambió. La práctica aplica esas tres ideas a un sistema de ofertas y solicitudes de empleo.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetos
 
 - vw_OfertasPorSemanaEmpresaCiudad agrupa por empresa, ciudad y semana.

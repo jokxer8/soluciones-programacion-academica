@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+El menú pregunta qué operación quieres hacer. Esa opción decide qué cuenta aplicar a los números. Probar una división entre cero ayuda a entender por qué el programa debe revisar los datos antes de calcular.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Resuelvo cada operación a partir de dos números y una opción. En el ejemplo, 1 selecciona la suma y 10 y 5 son sus operandos; el resultado es 15. El 0 del menú significa salir, mientras que un divisor igual a 0 impide efectuar la división.

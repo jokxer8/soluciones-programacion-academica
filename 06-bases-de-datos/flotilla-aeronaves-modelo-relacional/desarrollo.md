@@ -2,6 +2,14 @@
 
 Diseñar un modelo que conserve la operación actual de una flotilla y sus cambios a lo largo del tiempo.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Para registrar una flotilla, primero identifica qué cosas existen y cómo se relacionan. Algunas relaciones cambian con el tiempo: el modelo debe poder guardar qué vínculo existió y cuándo, en lugar de reemplazar siempre el anterior.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Problema y solución
 
 AERONAVE se relaciona con MODELO, FABRICANTE, TALLER, MANTENIMIENTO y AEROPUERTO. El diseño evita tratar el aeropuerto base y el estado como atributos que se sobrescriben: BASE y REGISTRO_ESTADO_AERONAVE conservan periodos de vigencia.

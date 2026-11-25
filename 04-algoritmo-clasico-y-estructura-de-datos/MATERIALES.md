@@ -4,6 +4,12 @@
 
 Este índice organiza las prácticas y proyectos por número, enlaza sus fichas individuales y distingue las entregas disponibles de la actividad cuyo documento no se ha localizado. Cada ficha explica el mandato, el propósito y el alcance de la evidencia.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
+
+Este mapa te lleva a la ficha de cada práctica, proyecto y conjunto de ejercicios. Empieza por la ficha: allí se indica qué se pidió, qué hay para consultar y si se conserva la entrega.
+
 ## Prácticas
 
 | Práctica | Tema | Ficha | Entrega |

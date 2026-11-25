@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Instalar Windows en una máquina virtual permite ver el proceso sin usar el disco del equipo real. Distingue crear la computadora virtual, elegir dónde se instala el sistema y configurar el nombre y las cuentas después.
+
 ## Propósito
 
 Resumen y práctica relacionada con instalar Windows en una máquina virtual, asignar nombre al equipo y trabajar con particiones y cuentas.

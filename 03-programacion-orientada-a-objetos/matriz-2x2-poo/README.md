@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una matriz de 2 por 2 es una tabla con cuatro números. El ejercicio reúne esos valores en un objeto y le pide calcular operaciones como el determinante. Antes de buscar la inversa, comprueba si existe: si el determinante es cero, no se puede calcular.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Encapsulo una matriz de dos filas y dos columnas en una clase. Si sus filas son (a, b) y (c, d), el determinante es a·d − b·c. La matriz tiene inversa únicamente cuando ese determinante es distinto de 0; 2×2 describe sus dimensiones, no una multiplicación pendiente.

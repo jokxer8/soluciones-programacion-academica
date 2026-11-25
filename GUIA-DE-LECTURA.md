@@ -4,6 +4,12 @@
 
 Reúno aquí la notación que aparece en distintas materias. Cada actividad explica sus datos y condiciones particulares.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
+
+Usa esta guía si no sabes por dónde entrar. El README es la puerta de cada actividad; **En palabras simples** te da la idea y los otros enlaces te llevan al código, a la solución o al material original.
+
 ## Números y representaciones
 
 | Notación | Qué significa | Ejemplo |

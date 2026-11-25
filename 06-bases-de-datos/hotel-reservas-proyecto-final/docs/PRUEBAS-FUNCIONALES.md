@@ -1,5 +1,11 @@
 # Pruebas funcionales con SQL Server
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Las pruebas ponen al sistema en situaciones concretas y comparan lo que hace con lo que debería hacer. Lee un caso y separa los datos iniciales, la acción y el resultado esperado.
+
 ## Resultado actual
 
 **79 pruebas correctas y 0 fallidas**, verificadas localmente con LocalDB 17.0.4025.3 y en [GitHub Actions](https://github.com/jokxer8/soluciones-programacion-academica/actions/runs/38849154210), revisión 4cfeb99. Los [casos y resultados](evidencias/passwords-functional-results.tsv) se conservan junto a la documentación. El [cierre de #3, #5 y #7](CIERRE-TAREAS.md) registra la matriz de roles, las exportaciones y los errores corregidos.

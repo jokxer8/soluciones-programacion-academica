@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-C%23-blue)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una cadena es un texto. El programa lo revisa carácter por carácter para contar o clasificar lo que encuentra. Prueba a recorrer `Hola 2` con el dedo: el espacio y el número también ocupan un lugar.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Analizo una frase mediante recorridos y contadores. La cantidad de caracteres incluye los espacios que se conserven en la entrada; la cantidad de palabras depende de cómo el programa separa el texto. Conviene distinguir ambos resultados antes de compararlos.

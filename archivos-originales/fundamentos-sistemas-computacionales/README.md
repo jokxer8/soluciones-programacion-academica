@@ -6,6 +6,12 @@
 
 </div>
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../02-fundamentos-sistemas-computacionales/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 Respaldo de los trabajos seleccionados para [la sección 02](../../02-fundamentos-sistemas-computacionales). El código se publica una sola vez en las actividades; el inventario relaciona esos archivos con sus rutas académicas originales.
 
 - `documentos/`: enunciados y primer parcial manuscrito.

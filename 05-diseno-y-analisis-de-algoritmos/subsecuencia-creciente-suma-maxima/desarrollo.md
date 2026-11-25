@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Puedes saltarte números, pero no cambiar el orden original. Imagina que comparas dos grupos crecientes de una lista y eliges el que suma más, aunque tenga menos elementos. Ese es el objetivo: mayor suma, no mayor cantidad.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar programación dinámica para calcular la subsecuencia creciente con mayor suma posible.

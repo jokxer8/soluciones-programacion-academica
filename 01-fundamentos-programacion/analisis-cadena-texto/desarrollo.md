@@ -4,6 +4,14 @@
 
 En este desarrollo explico la lógica de la solución y los conceptos que utilizo. Los datos de entrada y la salida de ejemplo están en el [README](README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una cadena es un texto. El programa lo revisa carácter por carácter para contar o clasificar lo que encuentra. Prueba a recorrer `Hola 2` con el dedo: el espacio y el número también ocupan un lugar.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Objetivo
 
 Aplicar conceptos fundamentales de programación utilizando cadenas de texto, ciclos, condicionales y métodos.

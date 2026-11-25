@@ -6,6 +6,12 @@
 
 </div>
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../00-introduccion-a-la-algoritmia/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 [Inicio](../../README.md) · [Materia 00](../../00-introduccion-a-la-algoritmia/README.md) · [Inventario](INVENTARIO.md)
 
 Reúno las entregas que acompañan las siete actividades: reporte de lectura, investigación y cálculo del triángulo, foro de la pirámide, búsqueda de texto, diagramas secuenciales, fragmento de Fibonacci y enunciado del parcial.

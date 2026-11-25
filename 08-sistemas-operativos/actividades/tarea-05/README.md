@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Una partición divide el espacio de un disco; un respaldo guarda una copia para recuperar datos. Un grupo de trabajo organiza equipos en una red local. Se publica la consigna: no se encontró un PDF final individual.
+
 ## Propósito
 
 La consigna de la carpeta Capítulo 5 aborda particiones, respaldos y grupos de trabajo en Windows. En la carpeta Tareas no se localizó un PDF final individual para esta actividad.

@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+Compara cada sistema preguntando cómo instala aplicaciones, administra permisos y recibe actualizaciones. Esas preguntas ayudan a entender las diferencias entre un sistema móvil y uno de escritorio sin quedarse solo con el aspecto de la interfaz.
+
 ## Propósito
 
 Investigación sobre sistemas operativos móviles y macOS, además de una práctica de instalación de macOS en un entorno virtualizado.

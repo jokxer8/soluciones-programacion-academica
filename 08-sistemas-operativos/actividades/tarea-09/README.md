@@ -4,6 +4,12 @@
 
 [← Índice de actividades](../README.md) · [Sistemas Operativos](../../README.md) · [Competencias](../../competencias/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
+
+BitLocker cifra los datos del disco para que no se puedan leer sin la autorización correspondiente. Eso no sustituye un respaldo: el cifrado protege la lectura, mientras que un respaldo ayuda a recuperar archivos perdidos.
+
 ## Propósito
 
 Práctica con herramientas del Centro Nacional de Ciberseguridad y cifrado de disco. El PDF publicado corresponde a la evidencia práctica disponible.

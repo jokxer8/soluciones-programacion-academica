@@ -12,6 +12,12 @@ Los documentos almacenados aquí funcionan como respaldo académico de ejercicio
 
 ---
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../05-diseno-y-analisis-de-algoritmos/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 ## Objetivo de esta carpeta
 
 Mantener una copia organizada de los documentos originales relacionados con algoritmos, estructuras de datos, recursividad, búsqueda, ordenamiento, programación dinámica y análisis de complejidad.

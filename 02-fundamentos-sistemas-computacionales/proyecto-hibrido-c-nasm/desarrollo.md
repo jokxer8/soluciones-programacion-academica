@@ -1,5 +1,13 @@
 # Desarrollo — Proyecto híbrido C y NASM
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+C prepara los datos y llama funciones escritas en ensamblador para sumar, ordenar o intercambiar enteros. Lo importante es el acuerdo entre ambos: qué datos recibe cada función, dónde los encuentra y cómo devuelve el resultado.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Diseño e interoperabilidad
 
 C reúne la entrada y llama a tres rutinas NASM. Windows x64 pasa los primeros argumentos enteros/punteros en RCX, RDX, R8 y R9; `sum` devuelve su entero en EAX. Los procedimientos deben respetar los registros no volátiles de la ABI. Las rutinas son hojas y no llaman a la biblioteca C.

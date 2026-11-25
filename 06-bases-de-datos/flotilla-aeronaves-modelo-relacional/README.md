@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SQL%20/%20C%23-lightgrey)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Para registrar una flotilla, primero identifica qué cosas existen y cómo se relacionan. Algunas relaciones cambian con el tiempo: el modelo debe poder guardar qué vínculo existió y cuándo, en lugar de reemplazar siempre el anterior.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Documento el diseño de la flotilla realizado en equipo. Distingo la identidad de una aeronave de sus cambios de base o estado a lo largo del tiempo. Las claves identifican registros; las fechas permiten interpretar su historial.

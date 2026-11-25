@@ -2,6 +2,14 @@
 
 Resolver seis requerimientos de consulta y programación SQL sobre RESTAURANTE_ATENCION.
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Primero piensa qué pregunta quiere responder el restaurante. Luego decide si necesitas filas sueltas, datos de varias tablas o un resumen por grupo. Una consulta que cuenta elementos responde algo distinto de una que solo los enumera.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## Consultas
 
 1. Meseros que atendieron órdenes con propina superior a 10, sin duplicados.

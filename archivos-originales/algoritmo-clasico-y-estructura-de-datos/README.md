@@ -13,6 +13,12 @@
 
 Esta sección mantiene la trazabilidad del material utilizado para documentar [ICC-211-T Algoritmos Clásicos y Estructuras de Datos](../../04-algoritmo-clasico-y-estructura-de-datos/README.md).
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Aquí se conservan los materiales de origen de esta sección. Si quieres entender primero el tema, abre la [materia y sus fichas](../../04-algoritmo-clasico-y-estructura-de-datos/README.md). Usa el archivo original para comparar la consigna o la entrega con lo explicado, no para confundir una con la otra.
+
 ## Qué contiene el origen
 
 La carpeta local reúne el programa de la materia, presentaciones, guías, ejercicios, proyectos, documentos de apoyo y entregas escaneadas. El [inventario detallado](INVENTARIO.md) identifica los tipos de documentos y su relación con las unidades del curso.

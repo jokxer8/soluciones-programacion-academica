@@ -10,6 +10,12 @@
 
 ![Lenguaje](https://img.shields.io/badge/Lenguaje-SML-purple)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Fibonacci repite una misma regla sobre casos más pequeños. El combinador Y permite expresar la idea de repetición sin escribir la función con su propio nombre. Sigue primero el caso base y luego una sola llamada antes de mirar la expresión completa.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono recursión y puntos fijos con Fibonacci. Un punto fijo satisface f(x)=x, pero un combinador de punto fijo permite expresar una función recursiva. La formulación del cálculo lambda debe distinguirse de lo que admite el sistema de tipos y la evaluación estricta de SML.

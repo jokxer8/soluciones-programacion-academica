@@ -1,5 +1,13 @@
 # Desarrollo - Sistema de Reservas de Hotel
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Imagina que alguien llama para reservar una habitación. El personal registra al cliente, selecciona una habitación y guarda la reserva. La aplicación es lo que usa el personal en pantalla; la base de datos conserva la información para consultarla después. Es un proyecto grupal: los créditos y las pruebas están en la documentación.
+
+[Volver a la explicación y los ejemplos de la actividad](README.md#en-palabras-simples).
+
 ## 1. Problema y alcance
 
 El proyecto conecta una aplicación de escritorio con SQL Server para gestionar reservas y operaciones hoteleras. Integra clientes, habitaciones, reservas, servicios adicionales, promociones, facturas, pagos, empleados y mantenimiento. Es un trabajo grupal de Kelvin Del Castillo Torres, Gabriel Galasso y Camila Vasquez.

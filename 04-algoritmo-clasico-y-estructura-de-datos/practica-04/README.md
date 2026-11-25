@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 03 ←](../practica-03/README.md) · [Práctica 05 →](../practica-05/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Una recurrencia describe el trabajo del problema grande a partir del trabajo de casos pequeños. Puedes dibujar las llamadas como un árbol: cada nivel muestra problemas pendientes y cuánto trabajo se hace antes de pasar al siguiente.
+
 ## Propósito
 
 Resolver recurrencias por más de un método y contrastar el resultado con el caso aplicable del teorema maestro.

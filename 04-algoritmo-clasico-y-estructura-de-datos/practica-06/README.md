@@ -8,6 +8,12 @@
 
 [Materia 04](../README.md) · [Índice de prácticas](../MATERIALES.md) · [Práctica 05 ←](../practica-05/README.md) · [Práctica 07 →](../practica-07/README.md)
 
+## En palabras simples
+
+![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
+
+Dibuja lugares y las conexiones entre ellos. El camino con menos tramos no siempre es el de menor costo. La práctica distingue cómo comparar rutas cuando la pregunta es distancia o cuando lo que importa es fiabilidad.
+
 ## Propósito
 
 Elegir y aplicar un algoritmo de caminos según el problema y las características del grafo.
