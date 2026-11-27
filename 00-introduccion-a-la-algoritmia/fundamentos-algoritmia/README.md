@@ -17,6 +17,11 @@
 
 Un algoritmo es una receta con pasos que otra persona puede repetir. Para practicar, elige algo cotidiano, como calcular el total de dos compras, y separa qué datos entran, qué haces con ellos y qué resultado debe salir.
 
+- **¿Por qué?** Una receta escrita revela qué datos faltan antes de escribir código.
+- **¿Para qué?** Para distinguir el problema, el algoritmo y el programa que lo implementa.
+- **¿Cómo?** Para dos compras, anota los dos precios, indica que los sumas y escribe el total esperado antes de probar.
+- **¿Cuándo usarlo?** Cuando exploras una solución o necesitas explicarla a otra persona. Esta ficha es de lectura, no de ejecución.
+
 ## Qué trabajé
 
 Reúno mi reporte de lectura y los conceptos que utilicé al comenzar: lenguajes, representación de soluciones, compilación y pruebas. El documento conserva la redacción de la entrega; esta guía aclara los términos para leerlo con contexto.

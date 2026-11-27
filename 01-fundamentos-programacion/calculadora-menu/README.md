@@ -16,6 +16,11 @@
 
 El menú pregunta qué operación quieres hacer. Esa opción decide qué cuenta aplicar a los números. Probar una división entre cero ayuda a entender por qué el programa debe revisar los datos antes de calcular.
 
+- **¿Por qué?** Dividir entre cero no es una operación válida.
+- **¿Para qué?** Para elegir la cuenta que corresponde a cada opción y rechazar entradas inválidas.
+- **¿Cómo?** Selecciona división y prueba primero `8 ÷ 2`, luego `8 ÷ 0`; compara el tratamiento de ambos casos.
+- **¿Cuándo usarlo?** Cuando un menú debe dirigir a varias operaciones con reglas propias.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Resuelvo cada operación a partir de dos números y una opción. En el ejemplo, 1 selecciona la suma y 10 y 5 son sus operandos; el resultado es 15. El 0 del menú significa salir, mientras que un divisor igual a 0 impide efectuar la división.

@@ -25,6 +25,15 @@ C prepara los datos y llama funciones escritas en ensamblador para sumar, ordena
 - [Intercambiar](swap.asm): cambia de lugar dos valores sin perder ninguno.
 - [Programa principal](main.c): prepara los datos y llama a las funciones.
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| Suma | El total depende de leer la cantidad exacta de elementos. | Acumular los valores del arreglo y devolver su suma a C. | Sigue un ejemplo de tres valores y compara el resultado al volver de NASM. | Cuando necesitas reducir una secuencia a un total. |
+| Ordenación | Comparar elementos vecinos revela cuándo están al revés. | Reordenar directamente los valores del arreglo. | Haz una pasada en `[3,1,2]` e intercambia cada par vecino fuera de orden. | Para aprender cómo se desplazan elementos con bubble sort en ejemplos pequeños. |
+| Intercambio | Sobrescribir una variable puede borrar un dato necesario. | Cambiar dos valores de sitio al recibir sus direcciones. | Conserva el primer valor, copia el segundo en su lugar y recupera el primero en el otro. | Al reordenar elementos o cambiar los valores de dos variables. |
+| Programa principal | Sin un contrato de llamada, NASM puede leer los argumentos equivocados. | Preparar, validar y enviar datos a cada rutina desde C. | Sigue la cantidad y la dirección del arreglo antes de la llamada, y revisa qué sale al retornar. | Al integrar C y NASM bajo la convención Windows x64. |
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Integro funciones de ensamblador en un programa C. RCX, RDX, R8 y R9 son nombres de registros del procesador usados para pasar argumentos en Windows x64; no son valores hexadecimales. La convención de llamada determina cómo se comunican ambos lenguajes.

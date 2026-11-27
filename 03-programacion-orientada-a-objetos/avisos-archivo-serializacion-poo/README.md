@@ -16,6 +16,11 @@
 
 Si un aviso vive solo en memoria, desaparece al cerrar el programa. Guardarlo en un archivo permite recuperarlo después. Serializar significa convertir los datos del objeto a un formato que el programa pueda escribir y volver a leer.
 
+- **¿Por qué?** Los avisos que solo están en memoria desaparecen al cerrar el programa.
+- **¿Para qué?** Para producir un reporte TXT legible y un archivo JSON del que el programa pueda recuperar los avisos.
+- **¿Cómo?** Registra un aviso, exporta ambos archivos y carga el JSON para comprobar que conserva campos como el título.
+- **¿Cuándo usarlo?** Usa TXT para lectura humana y JSON cuando una aplicación tenga que volver a cargar los datos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Organizo avisos como objetos y guardo su información en archivos. TXT es una representación de texto para lectura; JSON conserva una estructura de campos y valores que puede volver a cargarse. Guardar un archivo y recuperar correctamente sus datos son comprobaciones distintas.

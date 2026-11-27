@@ -20,6 +20,11 @@
 
 La aplicación carga países desde un archivo y los conecta como vagones que permiten ir hacia delante y hacia atrás. Para saber cómo funciona, empieza por un país: mira cómo se carga, cómo se encuentra y qué enlaces cambian si lo eliminas.
 
+- **¿Por qué?** Los datos de un archivo no se pueden consultar o modificar cómodamente solo como líneas de texto.
+- **¿Para qué?** Para cargar registros de países y poder navegar, buscar o retirar un registro de la lista.
+- **¿Cómo?** Carga un país, localízalo por el menú y dibuja cómo se vuelven a conectar sus vecinos si lo eliminas.
+- **¿Cuándo usarlo?** Cuando necesitas recorrer una colección mutable hacia delante y hacia atrás.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Uso una lista doblemente enlazada para cargar y consultar países desde un archivo CSV. Los 227 registros pertenecen al conjunto de datos de la actividad: no representan estadísticas actuales. Las cifras deben interpretarse con el nombre y la unidad de su columna.

@@ -16,6 +16,11 @@
 
 Un teléfono tiene datos que describen su estado y acciones que pueden cambiarlo. Lee la clase preguntando qué recuerda el objeto, qué puede hacer y qué reglas impiden cambiar sus datos de cualquier manera.
 
+- **¿Por qué?** Batería, pantalla y teléfono guardan datos y unidades diferentes.
+- **¿Para qué?** Para modelar un teléfono con componentes que tienen sus propias propiedades.
+- **¿Cómo?** Crea una batería y una pantalla; luego úsalas al construir el teléfono y revisa qué valor pertenece a cada objeto.
+- **¿Cuándo usarlo?** Cuando un objeto se entiende mejor como un conjunto de piezas con responsabilidades propias.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Agrupo las características de un teléfono y sus componentes mediante objetos. El precio, la capacidad de batería y las medidas de pantalla representan magnitudes diferentes; deben leerse con la unidad que acompañe al dato. mAh expresa capacidad de carga y no una duración fija en horas.

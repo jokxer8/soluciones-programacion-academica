@@ -16,6 +16,11 @@
 
 No todos los trabajadores cobran de la misma forma. El sistema puede pedir «calcula el pago» a todos sin conocer los detalles de cada tipo: cada uno aplica su propia regla. A eso se le llama polimorfismo.
 
+- **¿Por qué?** Cada tipo de empleado aplica una regla de pago diferente.
+- **¿Para qué?** Para procesar empleados distintos con una llamada común a calcular el salario.
+- **¿Cómo?** Coloca en una misma lista un empleado fijo y otro por hora; pide el cálculo a ambos y suma las salidas.
+- **¿Cuándo usarlo?** Cuando varias clases deben ofrecer la misma acción pero aplicarla con comportamientos distintos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Modelo distintas formas de calcular un pago mediante herencia y polimorfismo. Los importes del ejemplo son datos de práctica. En cada fórmula hay que distinguir cantidades monetarias, horas y tasas: una tasa de 0.10 equivale al 10 %, mientras que 10 como multiplicador tendría otro significado.

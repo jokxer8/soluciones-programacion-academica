@@ -20,6 +20,11 @@
 
 El mismo valor puede escribirse de formas distintas: 10 en decimal es 1010 en binario. Antes de leer los bits, pregunta qué formato usa el dato. Un grupo de bits no significa lo mismo si se interpreta como entero con signo o como número con decimales.
 
+- **¿Por qué?** El patrón de bits no dice por sí solo qué valor representa.
+- **¿Para qué?** Para leer y escribir números en bases distintas sin confundir la forma con el valor.
+- **¿Cómo?** En `1010` binario, suma `8 + 2` para obtener `10` decimal; si el dato declara otro tipo, usa sus reglas.
+- **¿Cuándo usarlo?** Cuando examinas bits, números escritos en otra base o datos con una representación definida.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono las bases numéricas con la forma en que se guardan enteros y números con decimales. En el desarrollo explico cada conversión, el ancho en bits y la diferencia entre interpretar un patrón como entero o como punto flotante.

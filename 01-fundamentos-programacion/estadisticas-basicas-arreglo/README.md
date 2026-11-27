@@ -16,6 +16,11 @@
 
 Con `2, 4, 9`, puedes recorrer la lista una vez y llevar tres recuerdos: suma, menor y mayor. La suma es 15; al dividir entre 3 sale un promedio de 5. El menor es 2 y el mayor es 9.
 
+- **¿Por qué?** En un recorrido puedes calcular varios resultados sin volver a leer todos los datos.
+- **¿Para qué?** Para conocer el menor, el mayor y el promedio de una lista de números.
+- **¿Cómo?** Con `[2, 4, 9]` registra suma `15`, menor `2` y mayor `9`; luego divide `15 / 3`.
+- **¿Cuándo usarlo?** Cuando tienes una colección no vacía y necesitas un resumen rápido.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Recorro los datos para obtener suma, promedio y extremos. El promedio es la suma dividida entre la cantidad de elementos; no es el punto medio entre el mayor y el menor. En el análisis, n representa la cantidad de valores del arreglo.

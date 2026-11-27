@@ -17,6 +17,11 @@
 
 Si los lados que forman la esquina recta miden 3 y 4, el lado largo mide 5, el área es 6 y el perímetro es 12. El ejercicio toma los mismos datos para tres cuentas distintas: hallar el lado largo, medir lo de adentro y sumar el borde.
 
+- **¿Por qué?** El mismo par de lados permite responder preguntas geométricas distintas.
+- **¿Para qué?** Para obtener el lado largo, el espacio interior o la longitud del borde.
+- **¿Cómo?** Con catetos 3 y 4, Pitágoras da 5; multiplica los catetos y divide entre 2 para el área; suma los tres lados para el perímetro.
+- **¿Cuándo usarlo?** Cuando conoces los dos catetos y el ángulo entre ellos es recto.
+
 ## Qué trabajé
 
 Trabajo realizado en el grupo 5. A partir de dos catetos calculo la hipotenusa, el área y el perímetro. Conservo el algoritmo, el diagrama de RAPTOR, la investigación y las versiones de la entrega para poder comparar sus enfoques.

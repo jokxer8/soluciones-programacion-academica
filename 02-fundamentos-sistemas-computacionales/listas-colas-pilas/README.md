@@ -42,6 +42,30 @@ Un nodo guarda un dato y el enlace al siguiente. Una cola funciona como una fila
 - **Pila con arreglo:** Guarda elementos en un arreglo y retira primero el último que agregaste. ([ejercicio-18.c](ejercicio-18.c))
 - **Pila enlazada:** Guarda el tope en un nodo; al retirarlo, el siguiente pasa a ser el nuevo tope. ([ejercicio-19.c](ejercicio-19.c))
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| Búsqueda de un nodo | Un enlace lleva al siguiente nodo, no directamente al que buscas. | Localizar un valor en una lista. | Compara el dato de cada nodo y avanza hasta encontrarlo o llegar al final. | Al consultar una lista sin índice directo. |
+| Conteo de nodos | En una lista enlazada el tamaño no se deduce del puntero inicial. | Calcular cuántos elementos hay. | Empieza en cero y suma uno por cada nodo visitado. | Cuando no mantienes un contador de tamaño aparte. |
+| Máximo | Sin orden previo el valor mayor puede estar en cualquier nodo. | Encontrar el extremo superior. | Toma el primer dato como referencia y reemplázalo si encuentras uno mayor. | Al resumir una lista no vacía, incluso si todos los valores son negativos. |
+| Mínimo | El elemento más pequeño no tiene por qué estar al inicio. | Encontrar el extremo inferior. | Toma el primer dato y actualiza la referencia si ves uno menor. | Al buscar el menor valor de una lista no vacía. |
+| Promedio | La suma sola no considera el tamaño de la lista. | Obtener una media de los valores. | Acumula suma y cantidad; divide solo si la cantidad es positiva. | Al agregar valores numéricos de una lista no vacía. |
+| Eliminar primer nodo | El primer elemento tiene un enlace especial: la referencia de inicio. | Retirar el nodo sin perder acceso al resto. | Si hay primer nodo, conserva su sucesor, mueve el inicio y libera el retirado. | Cuando quieres retirar la cabeza de una lista. |
+| Eliminar por valor | Borrar un nodo intermedio puede romper la cadena si no conectas los vecinos. | Retirar el valor solicitado sin perder los demás. | Busca el nodo y conecta su anterior con su sucesor; si es el primero, actualiza el inicio. | Cuando debes borrar por contenido, no por posición conocida. |
+| Palíndromo | El orden de los valores importa tanto como sus valores. | Saber si se leen igual desde ambos extremos. | Contrasta una secuencia como `1,2,1` con su versión invertida. | Al comprobar simetría en una secuencia. |
+| Conversión a arreglo | Un arreglo da acceso por índice y una lista se sigue por enlaces. | Pasar los datos a posiciones consecutivas. | Recorre la lista y copia cada valor a la siguiente posición. | Cuando necesitas entregar los datos a una función que espera un arreglo. |
+| Conversión a cadena | Los nodos enlazados no son una representación lista para lectura. | Mostrar o guardar los datos como texto. | Recorre los nodos y aplica un formato con un separador claro. | Cuando el resultado lo va a leer una persona o un sistema de texto. |
+| Eliminar duplicados | Un dato repetido no siempre representa un elemento distinto. | Conservar una aparición por valor según la regla del ejercicio. | Compara los valores y retira las repeticiones sin perder enlaces. | Cuando el objetivo es una lista de valores únicos. |
+| Merge sort | Ordenar una lista completa resulta más simple si divides el trabajo. | Ordenar enlazando partes ya ordenadas. | Parte la lista, ordena las partes y mezcla tomando primero el menor frente. | Cuando necesitas ordenar una lista enlazada por comparación. |
+| Unir listas | Dos cadenas de nodos no se convierten solas en una. | Reunir los datos de dos secuencias. | Recorre ambas y reproduce el orden de unión definido en el ejercicio. | Cuando necesitas presentar como conjunto datos de dos listas. |
+| Cola con arreglo | El turno de llegada debe preservarse aunque se retiren elementos. | Practicar la regla primero en entrar, primero en salir. | Inserta `A` y luego `B`: al retirar, debe salir `A`; sigue los índices. | Cuando puedes reservar un arreglo para la cola. |
+| Promedio de cola | La posición en la cola no cambia la media de sus valores. | Resumir todos los datos pendientes con un número. | Suma los valores de la cola y divide entre su cantidad, si no está vacía. | Al calcular la media de los elementos que esperan turno. |
+| Máximo de cola | El valor mayor no necesariamente tiene el primer turno. | Encontrar el mayor dato de la fila. | Recorre sus valores y actualiza el máximo cuando veas uno superior. | Cuando debes consultar un extremo sin confundirlo con el orden de salida. |
+| Cola enlazada | Referenciar ambos extremos facilita agregar y retirar. | Representar la regla de llegada mediante nodos. | Enlaza el elemento nuevo al final y cambia el frente al retirar. | Cuando el tamaño cambia y prefieres nodos a posiciones de un arreglo. |
+| Pila con arreglo | El elemento recién añadido debe ser el primero en salir. | Practicar operaciones sobre un tope indexado. | Añade `A`, luego `B`; al retirar, sale `B` y el tope retrocede. | Al modelar un historial de deshacer con capacidad reservada. |
+| Pila enlazada | Cada elemento necesita apuntar al que queda debajo. | Representar una pila con nodos. | Añade un nodo que apunte al tope anterior; al retirarlo, su sucesor es el nuevo tope. | Cuando la cantidad de elementos de la pila varía durante la ejecución. |
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Organizo datos mediante nodos enlazados. FIFO significa que sale primero el elemento que entró primero, como en una cola; LIFO significa que sale primero el último que entró, como en una pila. Los números de ejercicio sirven para localizar cada programa independiente.

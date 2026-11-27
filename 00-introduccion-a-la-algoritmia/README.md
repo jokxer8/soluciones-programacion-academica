@@ -23,6 +23,11 @@ En esta materia di mis primeros pasos al analizar problemas, escribir algoritmos
 
 Empieza con una situación pequeña y anota qué datos entran, qué pasos sigues y qué respuesta sale. Los diagramas, las trazas a mano y el C++ muestran tres maneras de representar los mismos pasos.
 
+- **¿Por qué?** Poner los pasos en papel evita empezar a programar sin saber qué resultado se espera.
+- **¿Para qué?** Para convertir una situación en entradas, decisiones y una salida comprobable.
+- **¿Cómo?** Haz primero una traza con datos pequeños y luego compara la salida del programa.
+- **¿Cuándo usarlo?** Antes de implementar un problema nuevo en el que aún estás decidiendo qué pasos seguir.
+
 ## Objetivo de la materia
 
 Relacionar las entradas de un problema con los pasos necesarios para obtener una salida. Las actividades muestran cómo utilizo variables, asignaciones, condiciones, ciclos y cadenas, y cómo comparo un algoritmo con su implementación.

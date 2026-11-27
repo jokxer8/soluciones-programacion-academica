@@ -16,6 +16,11 @@
 
 Una cadena es un texto. El programa lo revisa carácter por carácter para contar o clasificar lo que encuentra. Prueba a recorrer `Hola 2` con el dedo: el espacio y el número también ocupan un lugar.
 
+- **¿Por qué?** Para el programa, un espacio o un dígito también ocupa una posición del texto.
+- **¿Para qué?** Para recorrer y clasificar caracteres según las reglas del ejercicio.
+- **¿Cómo?** Recorre `Hola 2` carácter por carácter; identifica las letras, el espacio y `2` sin saltarte ninguno.
+- **¿Cuándo usarlo?** Cuando necesitas contar o distinguir tipos de caracteres, no palabras completas.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Analizo una frase mediante recorridos y contadores. La cantidad de caracteres incluye los espacios que se conserven en la entrada; la cantidad de palabras depende de cómo el programa separa el texto. Conviene distinguir ambos resultados antes de compararlos.

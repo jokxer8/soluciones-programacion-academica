@@ -33,6 +33,21 @@ Una estructura guarda varios datos relacionados, como las esquinas de un rectán
 - **Complejo convertido a cadena:** Convierte los dos componentes del número a una forma que se pueda leer como texto. ([ejercicio-09.c](ejercicio-09.c))
 - **Lista en orden directo e inverso:** Lee los nodos desde un extremo y luego muestra los valores en sentido contrario. ([ejercicio-10.c](ejercicio-10.c))
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| Promedio de estudiantes | Las notas deben mantenerse asociadas al estudiante correcto. | Resumir el rendimiento de cada registro. | Agrupa las notas, suma las de un estudiante y divide entre su cantidad. | Cuando cada persona tiene varios valores del mismo tipo. |
+| Suma de tiempos con acarreo | Los segundos y minutos se agrupan de 60 en 60. | Mostrar un tiempo con unidades normalizadas. | Suma los segundos; si alcanzan 60, pasa el acarreo a minutos y conserva el resto. | Al sumar duraciones expresadas en horas, minutos y segundos. |
+| Libros de mayor y menor precio | El precio aislado no identifica qué libro lo tiene. | Recuperar los registros más caro y más barato. | Recorre los libros y conserva el registro completo junto a cada extremo. | Cuando debes seleccionar extremos y mostrar otros campos del ganador. |
+| Área de un rectángulo | Las esquinas indican posiciones, no directamente tamaño. | Convertir coordenadas en superficie. | Calcula la distancia horizontal y la vertical y multiplícalas. | Cuando el rectángulo está definido por sus esquinas y sus lados siguen los ejes. |
+| Pertenencia de un punto | Un punto puede coincidir en un eje y quedar fuera en el otro. | Comprobar ubicación respecto del rectángulo. | Contrasta por separado `x` e `y` con los límites correspondientes. | Al verificar regiones rectangulares, atendiendo a la regla de bordes del ejercicio. |
+| Rectángulo con memoria dinámica | Un espacio reservado explícitamente también debe liberarse. | Practicar el ciclo de vida de una estructura. | Reserva el rectángulo, comprueba que se obtuvo memoria, úsala y libérala al terminar. | Cuando el almacenamiento se decide durante la ejecución y controlas su duración. |
+| Representación de complejos | Un número complejo tiene dos componentes. | Guardar e identificar sus partes real e imaginaria. | Representa `2 + 3i` mediante los campos real `2` e imaginario `3`. | Al modelar un número complejo como un solo registro. |
+| Suma dinámica de complejos | No se deben mezclar términos reales e imaginarios. | Construir el resultado de sumar dos complejos. | Suma real con real e imaginaria con imaginaria; guarda ambos resultados juntos. | Cuando calculas con registros complejos y necesitas conservar el resultado. |
+| Complejo convertido a cadena | El registro interno no es un texto listo para mostrar. | Presentar el complejo de forma legible. | Formatea las dos partes y coloca el signo correspondiente entre ellas. | Al mostrar un complejo en pantalla o escribirlo como texto. |
+| Lista en orden directo e inverso | El mismo conjunto puede recorrerse en dos sentidos. | Comprobar que se conserva el orden relativo de los elementos. | Con `1,2,3`, compara la salida directa con la inversa `3,2,1`. | Cuando necesitas presentar o revisar una secuencia en ambas direcciones. |
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Trabajo con estructuras y punteros para representar datos relacionados. Un puntero guarda una dirección de memoria; una dirección escrita en hexadecimal identifica una ubicación durante una ejecución y no debe interpretarse como el resultado numérico del problema.

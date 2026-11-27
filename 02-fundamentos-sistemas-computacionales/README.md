@@ -24,6 +24,11 @@ Trabajos de representación de datos, programación C, ensamblador y estructuras
 
 Aquí verás qué hay debajo de un programa: bits, memoria y estructuras para enlazar datos. Comienza con la representación de números y luego compara una solución en C con su versión en ensamblador.
 
+- **¿Por qué?** El formato de los datos y su ubicación en memoria afectan cómo puede usarlos un programa.
+- **¿Para qué?** Para conectar bits y registros con estructuras como listas, colas y pilas.
+- **¿Cómo?** Toma una entrada pequeña, sigue cómo se representa y compara su recorrido entre C y ensamblador cuando haya dos versiones.
+- **¿Cuándo usarlo?** Cuando necesitas razonar sobre memoria, enlaces o la comunicación entre lenguajes de bajo nivel.
+
 ## Objetivo de la materia
 
 Presentar los trabajos que conectan la representación de información con la construcción de programas en C y ensamblador. La sección muestra el recorrido desde bits y tipos de datos hasta estructuras dinámicas, interoperabilidad y un proyecto final con archivos.

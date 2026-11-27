@@ -6,7 +6,14 @@ Las materias con contenido publicado comparten navegación e insignias. Las acti
 
 ![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
 
-La misma ruta se repite en las actividades: explicación breve primero, desarrollo y evidencia después. Si publicas una nueva ficha, explica el problema con un ejemplo pequeño y aclara qué parte se comprobó.
+La misma ruta se repite en las actividades: explicación breve primero, desarrollo y evidencia después. En cada ficha didáctica responde:
+
+- **¿Por qué?** Explica qué problema o necesidad justifica el tema.
+- **¿Para qué?** Di qué resultado concreto permite obtener.
+- **¿Cómo?** Describe el procedimiento en palabras sencillas. Añade un ejemplo breve o una ilustración cuando ayude a practicar.
+- **¿Cuándo usarlo?** Da una situación en la que sirve y, si aplica, una condición que deba cumplirse.
+
+Si una guía tiene varios capítulos, pon las cuatro respuestas en cada tema tratado dentro de su capítulo. Si una ficha agrupa ejercicios, responde por separado para cada uno. Enlaza el desarrollo y la evidencia sin duplicarlos. Si solo existe un enunciado, describe cómo abordarlo y conserva su estado; un ejemplo propuesto no se presenta como una prueba ejecutada ni como una entrega. Los índices e inventarios enlazan a la ficha que enseña el tema.
 
 ## Estructura común de una actividad
 

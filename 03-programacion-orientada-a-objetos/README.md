@@ -23,6 +23,11 @@ En esta materia organicé soluciones en C# mediante clases y objetos. Los cinco 
 
 Un objeto junta datos y acciones de una misma cosa. Empieza por el teléfono o la agenda; después mira cómo el ejemplo de nómina deja que cada tipo de trabajador calcule su pago de forma distinta.
 
+- **¿Por qué?** Si los datos y sus reglas están dispersos, resulta fácil crear estados inválidos o duplicar lógica.
+- **¿Para qué?** Para reunir información y comportamiento en clases con responsabilidades claras.
+- **¿Cómo?** Modela una cita como objeto y deja el listado en una agenda; compara ese reparto con el de teléfono, avisos o nómina.
+- **¿Cuándo usarlo?** Cuando varias partes del programa comparten entidades con datos, reglas y acciones propias.
+
 ## Objetivo de la materia
 
 Evidenciar la capacidad de diseñar soluciones organizadas mediante objetos, separando responsabilidades y aplicando estructuras reutilizables, mantenibles y extensibles.

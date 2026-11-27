@@ -17,6 +17,15 @@
 
 Una variable es como una casilla: si guardas un valor nuevo, el anterior se pierde. En el 3.9, con A = 5, B queda en 8. En el 3.10, A sube a 6 y B se vuelve a calcular: queda en 1. En el 3.11, con A = 5 y B = 2, C y B quedan en 7 y A en 0. En el 3.12, copiar B en A y luego A en B deja ambos con el B original; no los intercambia. Solo el 3.9 tiene código C++ en esta carpeta.
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| 3.9 · Copiar y sumar | La copia permite modificar `B` sin cambiar `A`. | Conservar la entrada y calcular un nuevo valor. | Con `A=5`, pon `B=A` y después `B=B+3`: queda `8`. | Cuando necesitas aplicar un ajuste a una copia. |
+| 3.10 · Sobrescribir | La segunda asignación a `B` sustituye a la primera. | Detectar qué cálculos siguen influyendo en la salida. | Con `A=5`, primero `B=11`; después `A=6` y `B=A−5=1`. | Al revisar un valor calculado más de una vez. |
+| 3.11 · Combinar variables | La resta de dos valores iguales da cero. | Seguir una dependencia entre varias casillas. | Con `A=5` y `B=2`, escribe `C=7` y `B=7`; luego `A=B−C=0`. | Al depurar cálculos donde una variable usa dos resultados previos. |
+| 3.12 · Copia frente a intercambio | La primera asignación borra el `A` inicial. | Detectar por qué las dos variables terminan iguales. | Con `A=5` y `B=2`, ejecuta `A=B` y luego `B=A`: ambas quedan en `2`. | Antes de implementar un intercambio: conserva el valor que vas a sobrescribir. |
+
 ## Qué trabajé
 
 Reúno los diagramas 3.9–3.12 y el código disponible del ejercicio 3.9. Los números identifican ejercicios del material de práctica, no versiones del programa ni calificaciones.

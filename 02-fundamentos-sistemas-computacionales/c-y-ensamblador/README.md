@@ -35,6 +35,23 @@ Los mismos problemas se escriben en C y en ensamblador. Mira primero qué recibe
 - **Pirámide vertical:** Separa el total de filas de la cantidad de caracteres que lleva cada una. ([11-piramide-vertical.c](c/11-piramide-vertical.c) · [11-piramide-vertical.asm](fasm-linux/11-piramide-vertical.asm))
 - **Escalera invertida:** Revisa cómo se combinan espacios y asteriscos para invertir la orientación. ([12-escalera-invertida.c](c/12-escalera-invertida.c) · [12-escalera-invertida.asm](fasm-linux/12-escalera-invertida.asm))
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| Saludo al mundo | Una salida mínima permite comprobar el recorrido hasta la consola. | Ver que ambas versiones imprimen el saludo. | Ejecuta cada versión y compara el texto. | Al comenzar un programa de consola. |
+| Suma, resta y producto de enteros | Cada operación usa los mismos operandos, pero la resta depende del orden. | Comparar tres resultados aritméticos entre lenguajes. | Usa dos enteros pequeños y calcula a mano suma, diferencia y producto. | Al verificar operaciones elementales con casos conocidos. |
+| Suma condicional | Una condición activa una regla distinta para valores iguales. | Practicar una bifurcación con los mismos datos de entrada. | Prueba dos valores distintos y luego dos iguales; solo la rama de iguales duplica la suma. | Cuando un cálculo tiene un caso especial delimitado. |
+| Cuenta regresiva entre extremos | La dirección del ciclo determina el orden de salida. | Imprimir un intervalo en orden descendente. | Identifica el mayor, réstale uno por vuelta y detente al llegar al menor. | Cuando debes recorrer números desde el límite superior. |
+| Conteo dentro del rango 100–200 | El total debe incluir únicamente valores que cumplen la condición. | Contar elementos dentro de un intervalo. | Compara cada número con ambos límites e incrementa solo si pertenece. | Al filtrar mediciones o números por rango. |
+| Primalidad | Un divisor propio basta para demostrar que un número no es primo. | Clasificar un entero como primo o no primo. | Contrasta `7` con `9`: encontrar `3` como divisor de `9` cambia la respuesta. | Cuando necesitas comprobar un candidato individual mayor que 1. |
+| Primos hasta N | Una lista de primos requiere comprobar varios candidatos. | Generar los primos hasta un límite. | Recorre desde `2` hasta `N` y conserva los candidatos que pasen la prueba. | Cuando quieres enumerar primos en un rango pequeño. |
+| Cuadrado hueco | Solo las celdas del borde llevan asterisco. | Distinguir interior y borde en una cuadrícula. | Para cada fila y columna, comprueba si estás en una primera o última posición. | Al generar marcos o dibujar perímetros con texto. |
+| Escalera ascendente | El número de fila dicta cuánto crece el dibujo. | Representar una progresión de anchura. | Aumenta la cantidad de asteriscos en cada fila. | Cuando cada línea debe ser más ancha que la anterior. |
+| Escalera descendente | La regla de crecimiento se invierte. | Dibujar un patrón que se estrecha. | Empieza con la fila más ancha y reduce el número de asteriscos al avanzar. | Cuando cada línea debe ser más corta que la anterior. |
+| Pirámide vertical | Cantidad de filas y caracteres por fila son cálculos distintos. | Formar una figura fila a fila. | Dibuja una figura pequeña y registra cuántos caracteres toca imprimir por fila. | Al practicar ciclos anidados para figuras. |
+| Escalera invertida | Cambiar solo los asteriscos no basta para cambiar la alineación. | Controlar sangría y anchura por separado. | Antes de cada fila, calcula los espacios y luego los asteriscos. | Cuando el diseño debe alinearse hacia el lado contrario. |
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Comparo doce problemas resueltos en C y FASM. Los prefijos 01–12 identifican ejercicios equivalentes entre ambos lenguajes; no indican dificultad ni calificación. Las 132 comparaciones registradas corresponden a casos de entrada y modos de ejecución, no a 132 programas distintos.

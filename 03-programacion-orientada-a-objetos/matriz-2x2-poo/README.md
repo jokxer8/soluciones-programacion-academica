@@ -16,6 +16,11 @@
 
 Una matriz de 2 por 2 es una tabla con cuatro números. El ejercicio reúne esos valores en un objeto y le pide calcular operaciones como el determinante. Antes de buscar la inversa, comprueba si existe: si el determinante es cero, no se puede calcular.
 
+- **¿Por qué?** No todas las matrices tienen inversa.
+- **¿Para qué?** Para guardar sus cuatro valores y agrupar las operaciones que dependen de ellos.
+- **¿Cómo?** En la matriz del ejemplo calcula `4×6−7×2 = 10`; como no es cero, puedes calcular la inversa.
+- **¿Cuándo usarlo?** Cuando manejas matrices 2×2 y necesitas comprobar si sus operaciones están definidas.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Encapsulo una matriz de dos filas y dos columnas en una clase. Si sus filas son (a, b) y (c, d), el determinante es a·d − b·c. La matriz tiene inversa únicamente cuando ese determinante es distinto de 0; 2×2 describe sus dimensiones, no una multiplicación pendiente.

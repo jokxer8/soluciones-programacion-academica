@@ -17,6 +17,11 @@
 
 Empieza con 0 y 1. Cada número nuevo es la suma de los dos anteriores: 0, 1, 1, 2, 3, 5. Para seguir el ciclo a mano, anota los dos números que conserva el programa y qué cambia al avanzar una vuelta.
 
+- **¿Por qué?** Si cambias un valor antes de guardar su suma, la vuelta siguiente puede usar datos equivocados.
+- **¿Para qué?** Para entender cómo un ciclo genera términos con solo dos valores anteriores.
+- **¿Cómo?** Empieza con 0 y 1, calcula la suma y desplaza el par: (1,1), (1,2), (2,3).
+- **¿Cuándo usarlo?** Cuando el siguiente dato de una secuencia depende de resultados anteriores y quieres seguirlos paso a paso.
+
 ## Qué trabajé
 
 Conservo un fragmento de práctica que genera Fibonacci y preparo una versión independiente para compilarlo. El fragmento no incluye las cabeceras y siempre imprime los dos primeros valores, incluso si se solicita menos de dos.

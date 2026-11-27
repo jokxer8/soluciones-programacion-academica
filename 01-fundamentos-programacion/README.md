@@ -23,6 +23,11 @@ En esta materia trabajé la lógica de programación con C#: lectura de datos, d
 
 Primero aprende a guardar datos. Después usa condiciones para decidir, ciclos para repetir y arreglos para manejar varios valores juntos. Elige la búsqueda secuencial si quieres unir esas ideas en un ejercicio corto.
 
+- **¿Por qué?** Un programa necesita recordar datos, tomar decisiones y repetir pasos.
+- **¿Para qué?** Para resolver tareas básicas en C# y contrastar la salida con un resultado esperado.
+- **¿Cómo?** Elige una actividad, prueba pocos datos y registra qué hace el programa en cada vuelta o decisión.
+- **¿Cuándo usarlo?** Al construir o revisar un programa pequeño de consola antes de combinarlo con otras partes.
+
 ## Objetivo de la materia
 
 Evidenciar el dominio de los fundamentos necesarios para construir soluciones de programación claras, ordenadas y funcionales.

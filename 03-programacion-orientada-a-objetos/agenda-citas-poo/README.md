@@ -16,6 +16,11 @@
 
 Una cita junta datos de una misma cosa, como fecha y motivo. La agenda organiza varias citas; el ejercicio muestra por qué conviene manejar cada una como un objeto y no guardar todos sus datos sueltos.
 
+- **¿Por qué?** Una hora inválida no debería entrar a la lista de citas.
+- **¿Para qué?** Para guardar los datos juntos y dejar que la agenda administre varias citas.
+- **¿Cómo?** Crea una cita el lunes a las 09:30 e intenta otra a las 09:60; la segunda debe rechazarse.
+- **¿Cuándo usarlo?** Cuando necesitas registrar elementos similares con reglas antes de agregarlos a una colección.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Represento cada cita con sus datos y reúno las citas en una agenda. La hora y los minutos son campos distintos: 09:30 significa nueve horas y treinta minutos. Las validaciones evitan construir citas con horarios fuera del rango permitido.

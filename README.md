@@ -24,7 +24,7 @@ El portafolio reúne materias cursadas con actividades y fuentes académicas doc
 
 ![En palabras simples · Guía para estudiantes](assets/readme-banners/en-palabras-simples.svg)
 
-Si estás aprendiendo, elige una materia y abre una actividad. Empieza por **En palabras simples** para entender qué se busca y sigue al código, al desarrollo o a la evidencia cuando quieras más detalle. En las carpetas que reúnen varios ejercicios, puedes leerlos uno por uno.
+Elige una materia y abre una actividad. En **En palabras simples** encontrarás cuatro respuestas por tema o ejercicio: **¿Por qué?**, **¿Para qué?**, **¿Cómo?** y **¿Cuándo usarlo?** Después puedes seguir al código, al desarrollo o a la evidencia. Si una carpeta reúne varios ejercicios, léelos uno por uno.
 
 ¿Es tu primera vez en GitHub? La ruta [GitHub desde cero](https://github.com/jokxer8/guias-en-palabras-simples/tree/main/github) de **En palabras simples** te enseña a crear tu propio repositorio, escribir su README y dar seguimiento a una tarea. Para practicar, usa tu propio repositorio.
 

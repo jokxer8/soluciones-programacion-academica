@@ -16,6 +16,11 @@
 
 Clasificar es decidir a qué grupo pertenece cada número. Para distinguir pares de impares, mira si sobra algo al dividir entre dos. Usa también el cero y un número negativo al revisar las condiciones: el signo y la paridad son preguntas diferentes.
 
+- **¿Por qué?** Que un número sea negativo no determina si es par o impar.
+- **¿Para qué?** Para separar dos criterios: signo y paridad.
+- **¿Cómo?** Comprueba el signo comparando con cero y la paridad con el resto de dividir entre dos; `−4` es negativo y par.
+- **¿Cuándo usarlo?** Cuando debes clasificar enteros por más de una propiedad o revisar casos como cero.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Clasifico cada entrada según su signo y su paridad. Un mismo número puede pertenecer a ambas clasificaciones: −4 es negativo y par. El cero se cuenta por separado por su signo y también cumple la condición de paridad porque su residuo al dividir entre 2 es 0.

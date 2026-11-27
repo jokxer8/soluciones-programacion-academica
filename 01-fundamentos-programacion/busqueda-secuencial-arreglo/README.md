@@ -16,6 +16,11 @@
 
 Si tienes la lista `10, 4, 8` y buscas el `8`, el programa revisa `10`, luego `4` y por último `8`. Muestra la posición `2` porque C# empieza a contar en `0`. Si buscas `7`, revisará toda la lista y te dirá que no aparece.
 
+- **¿Por qué?** Sin ordenar la lista no puedes saber de antemano dónde está un valor.
+- **¿Para qué?** Para encontrar su índice o reconocer que no aparece.
+- **¿Cómo?** En `[10, 4, 8]` busca `8` desde el inicio: se encuentra en el índice `2` al contar desde `0`.
+- **¿Cuándo usarlo?** Cuando la lista es pequeña o está desordenada y no conviene ordenarla solo para buscar.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco un valor recorriendo el arreglo desde el principio. Los índices de C# empiezan en 0: el índice 2 identifica el tercer elemento. Si se muestra una posición para el usuario, hay que comprobar si el programa suma 1 al índice.

@@ -17,6 +17,11 @@
 
 Busca un texto corto dentro de otro. Prueba la palabra `ana` en `banana`: aparece dos veces, aunque las apariciones comparten una letra. Por eso conviene probar también la posición siguiente después de encontrar una coincidencia.
 
+- **¿Por qué?** Una coincidencia puede compartir letras con la siguiente.
+- **¿Para qué?** Para contar cuántas veces aparece un fragmento, incluso dentro de otra palabra.
+- **¿Cómo?** Busca `ana` en `banana`; después de encontrarla en el índice 1, reanuda en el 2 para detectar también la del índice 3.
+- **¿Cuándo usarlo?** Cuando importan las apariciones literales y superpuestas; no para contar palabras completas sin adaptar las reglas.
+
 ## Qué trabajé
 
 Leo una cadena y un texto para contar sus coincidencias. Mantengo el criterio del código de la actividad: la búsqueda distingue mayúsculas y minúsculas, permite coincidencias dentro de otras palabras y cuenta las superpuestas.

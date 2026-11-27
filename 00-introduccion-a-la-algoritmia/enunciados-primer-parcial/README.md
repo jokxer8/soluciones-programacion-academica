@@ -17,6 +17,13 @@
 
 **Comisiones:** separa el monto de venta de la regla que indica cuánto corresponde pagar; busca esa regla antes de multiplicar. **Calificaciones:** separa las notas que entran del criterio que decide qué mostrar al final. Las soluciones publicadas se añadieron como material didáctico y no sustituyen la entrega original.
 
+### Las cuatro preguntas por tema
+
+| Tema | ¿Por qué? | ¿Para qué? | ¿Cómo? | ¿Cuándo usarlo? |
+|---|---|---|---|---|
+| Comisiones | Ciudad y volumen cambian la tasa. | Calcular una comisión para una venta de ejemplo. | Busca la tasa del tramo y multiplícala por la venta completa: `500×0.05=25` en el caso documentado. | Cuando el enunciado asigna una tasa por intervalo, no una tarifa progresiva. |
+| Calificaciones | Los límites compartidos pueden caer en dos categorías. | Convertir un valor entre 0 y 100 a una letra y un mensaje. | Acuerda quién incluye 70, 80 y 90 y prueba cada frontera antes de aplicar el criterio. | Cuando conviertes números en categorías con reglas precisas. |
+
 ## Qué trabajé
 
 El enunciado original de los dos problemas se conserva. Como no se encontró una solución entregada, añadí dos elaboraciones nuevas en C++ y las identifico como tales; no se atribuyen a la entrega histórica.

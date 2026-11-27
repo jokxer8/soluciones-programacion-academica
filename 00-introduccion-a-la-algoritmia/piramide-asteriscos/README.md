@@ -17,6 +17,11 @@
 
 Piensa en la figura como varias filas de texto. Una repetición decide qué fila toca; dentro de ella, otra imprime los espacios o asteriscos necesarios. Dibuja una figura de tres filas y cuenta cada carácter antes de mirar el código.
 
+- **¿Por qué?** Cada fila cambia tanto de sangría como de anchura.
+- **¿Para qué?** Para practicar ciclos anidados y contrastar una figura con su diseño.
+- **¿Cómo?** En el piso `p` de `n`, imprime `n−p` espacios y `2p−1` asteriscos; con 3 pisos las anchuras son 1, 3 y 5.
+- **¿Cuándo usarlo?** Cuando generas figuras de texto donde la posición de la fila decide qué imprimir.
+
 ## Qué trabajé
 
 Esta actividad corresponde al foro del grupo 2. Relaciono el análisis del problema, el pseudocódigo, el diagrama y el código de una pirámide centrada. Las rúbricas y respuestas permiten consultar también la revisión entre grupos.
