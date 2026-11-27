@@ -10,6 +10,20 @@
 
 Compartir archivos deja que otros equipos autorizados los consulten. Respaldarlos guarda otra copia para poder recuperarlos. La práctica conecta ambos conceptos, pero tener una carpeta compartida no reemplaza un respaldo.
 
+### Respaldos
+
+- **¿Por qué?** Una carpeta compartida puede perder archivos igual que la carpeta original.
+- **¿Para qué?** Para conservar una copia que permita recuperar un archivo.
+- **¿Cómo?** Crea una copia de un archivo de muestra y comprueba si puedes abrir la copia sin usar el original.
+- **¿Cuándo usarlo?** Antes de operar sobre archivos importantes y de forma periódica si cambian.
+
+### Grupos locales
+
+- **¿Por qué?** Dar permisos cuenta por cuenta dificulta mantenerlos coherentes.
+- **¿Para qué?** Para administrar en conjunto a usuarios de un mismo equipo.
+- **¿Cómo?** Identifica quién necesita un recurso y agrupa cuentas de prueba con la misma necesidad.
+- **¿Cuándo usarlo?** Cuando varias cuentas del mismo equipo deban tener un acceso similar.
+
 ## Propósito
 
 Entrega teórica y práctica sobre creación de respaldos y organización de cuentas en grupos locales.

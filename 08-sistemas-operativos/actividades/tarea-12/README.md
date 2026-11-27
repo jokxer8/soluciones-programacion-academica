@@ -10,6 +10,11 @@
 
 Guardar una copia en Linux solo resuelve la mitad del problema. También necesitas comprobar que puedes recuperar un archivo de esa copia. La práctica distingue preparar el respaldo, conservarlo y probar la recuperación.
 
+- **¿Por qué?** Una copia inaccesible no permite recuperar un archivo perdido.
+- **¿Para qué?** Para distinguir la existencia de un respaldo de la posibilidad de restaurarlo.
+- **¿Cómo?** Propón guardar un archivo de prueba y restaurarlo en otra carpeta para comparar ambos sin sobrescribir datos.
+- **¿Cuándo usarlo?** Antes de actualizar un sistema o al preparar un procedimiento de recuperación.
+
 ## Propósito
 
 Documento teórico sobre copias de seguridad y recuperación de información en Linux.

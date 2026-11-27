@@ -12,6 +12,20 @@ Esta sección reúne material de clase y guías prácticas que estaban en las ca
 
 Las presentaciones te dan el contexto de cada tema y las guías muestran procedimientos concretos. Mira la lista por capítulo y vuelve a la ficha de la actividad si quieres entender qué se pidió o qué quedó documentado.
 
+### Guía · Imágenes de sistemas operativos
+
+- **¿Por qué?** Para instalar un invitado necesitas identificar primero su medio de instalación.
+- **¿Para qué?** Para distinguir la imagen de instalación del disco virtual donde quedará el sistema.
+- **¿Cómo?** En la documentación, identifica qué imagen necesita el invitado previsto y sepárala conceptualmente del archivo que actuará como disco.
+- **¿Cuándo usarlo?** Antes de crear una máquina virtual o de elegir su medio de arranque.
+
+### Guía · Windows 10 en VirtualBox
+
+- **¿Por qué?** Una instalación de práctica no debe arriesgar los archivos del equipo principal.
+- **¿Para qué?** Para reconocer cómo se prepara un invitado Windows dentro de VirtualBox.
+- **¿Cómo?** Sigue en la guía la secuencia de máquina virtual, imagen y disco virtual. Verifica al final qué sistema inicia dentro de la ventana del invitado.
+- **¿Cuándo usarlo?** En un laboratorio que requiera esa versión. Para trabajo real, elige una versión con soporte vigente.
+
 ## Presentaciones de capítulos
 
 | Capítulo | Tema | Recurso |

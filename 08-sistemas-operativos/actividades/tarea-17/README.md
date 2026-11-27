@@ -10,6 +10,11 @@
 
 Active Directory funciona como un directorio de cuentas y equipos. En vez de administrar cada computadora por separado, se pueden organizar usuarios y aplicar reglas a grupos. Un grupo permite asignar una misma regla a varias personas.
 
+- **¿Por qué?** Gestionar cada cuenta por separado se vuelve difícil conforme crece una organización.
+- **¿Para qué?** Para organizar usuarios y equipos con un directorio y administrar permisos mediante grupos.
+- **¿Cómo?** Usa un dominio de prueba: crea una cuenta ficticia, agrúpala con otras de función parecida y ubícala en la unidad organizativa prevista.
+- **¿Cuándo usarlo?** Cuando varios equipos y personas necesiten administración centralizada.
+
 ## Propósito
 
 Resumen sobre planificación y funcionamiento de Active Directory; práctica de controlador de dominio con usuarios, grupos y unidades organizativas.

@@ -10,6 +10,11 @@
 
 El sistema operativo coordina los programas y las piezas físicas del equipo. Cuando abres un archivo, por ejemplo, decide cómo localizarlo y entregarlo al programa sin que tengas que manejar el disco directamente.
 
+- **¿Por qué?** Los programas necesitan compartir el equipo sin estorbarse.
+- **¿Para qué?** Para reconocer qué papel cumple el sistema entre una aplicación y el hardware.
+- **¿Cómo?** Sigue el camino de una acción: abres un archivo, el sistema lo busca y entrega los datos al programa.
+- **¿Cuándo usarlo?** Cuando quieras explicar quién administra los archivos, la memoria o los programas de un equipo.
+
 ## Propósito
 
 Resumen sobre las funciones y estructura de un sistema operativo, con ejemplos. El trabajo conecta conceptos introductorios con el rol del sistema entre hardware, software y usuario.

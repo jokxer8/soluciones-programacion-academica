@@ -10,6 +10,11 @@
 
 Instalar Windows en una máquina virtual permite ver el proceso sin usar el disco del equipo real. Distingue crear la computadora virtual, elegir dónde se instala el sistema y configurar el nombre y las cuentas después.
 
+- **¿Por qué?** Una instalación en un disco equivocado puede borrar datos.
+- **¿Para qué?** Para distinguir instalación, almacenamiento y configuración inicial.
+- **¿Cómo?** En la máquina virtual de práctica, identifica el disco virtual antes de elegir la partición. Tras instalar, comprueba el nombre del equipo y la cuenta usada.
+- **¿Cuándo usarlo?** Cuando necesites un Windows limpio para practicar sin cambiar el sistema principal.
+
 ## Propósito
 
 Resumen y práctica relacionada con instalar Windows en una máquina virtual, asignar nombre al equipo y trabajar con particiones y cuentas.

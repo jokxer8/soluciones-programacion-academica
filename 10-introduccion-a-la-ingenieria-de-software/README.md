@@ -16,6 +16,11 @@
 
 Antes de programar, aclara qué necesita la persona que usará el sistema. Esta materia reúne formas de describir esas necesidades y dividirlas en tareas, más un recurso para practicar lo aprendido.
 
+- **¿Por qué?** Una solución puede estar bien programada y aun así no resolver lo que se necesita.
+- **¿Para qué?** Para convertir una necesidad en algo que el equipo pueda diseñar, construir y comprobar.
+- **¿Cómo?** Empieza por un caso sencillo: para registrar una solicitud, identifica a quien la presenta, la información necesaria y qué confirma el registro.
+- **¿Cuándo usarlo?** Al iniciar un proyecto o evaluar si un cambio resuelve el problema correcto.
+
 ## Presentación
 
 Esta sección reúne el programa de estudio de **ICC-341-T Introducción a la Ingeniería de Software**, materiales de apoyo autorizados, actividades individuales y documentación de proyectos realizados durante la materia. Su propósito es dejar constancia verificable de los temas trabajados, los productos disponibles y las competencias que esas evidencias permiten ilustrar.

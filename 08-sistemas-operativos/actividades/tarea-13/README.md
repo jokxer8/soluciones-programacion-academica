@@ -10,6 +10,11 @@
 
 El disco aporta espacio. El sistema de archivos organiza ese espacio para que puedas guardar y encontrar carpetas y archivos. Si cambias de sistema de archivos, no necesariamente cambias el tamaño del disco.
 
+- **¿Por qué?** El espacio total del disco y el espacio disponible para archivos no siempre coinciden.
+- **¿Para qué?** Para identificar cómo se organizan los datos y dónde se está agotando el espacio.
+- **¿Cómo?** Compara la capacidad del dispositivo con el uso del sistema de archivos donde guardas una carpeta.
+- **¿Cuándo usarlo?** Cuando un equipo avise que falta espacio o planees cómo distribuir datos.
+
 ## Propósito
 
 Documento conceptual sobre sistemas de archivos y práctica para consultar el uso del espacio de almacenamiento.

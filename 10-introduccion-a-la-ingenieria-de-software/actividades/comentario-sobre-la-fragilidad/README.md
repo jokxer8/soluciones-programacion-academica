@@ -10,6 +10,11 @@
 
 Un sistema es frágil cuando un cambio pequeño rompe algo que parecía no tener relación. Imagina que cambias el formato de una fecha y empiezan a fallar los reportes: el comentario ayuda a pensar por qué ocurre y cómo reducir esa dependencia.
 
+- **¿Por qué?** Los cambios acumulados pueden volver difícil anticipar qué se romperá.
+- **¿Para qué?** Para reconocer dependencias y preparar pruebas de las funciones que podrían verse afectadas.
+- **¿Cómo?** Si cambia el formato de una fecha, revisa quién la produce y quién la lee; incluye una prueba del reporte antes y después.
+- **¿Cuándo usarlo?** Antes de corregir un error o añadir una función en un sistema que ya está en uso.
+
 ## Descripción
 
 Reflexión individual acerca de cómo el software puede volverse más frágil a medida que recibe correcciones y nuevas funciones. El texto relaciona los cambios pequeños con el riesgo de efectos colaterales y la necesidad de gestionar el mantenimiento de forma cuidadosa.

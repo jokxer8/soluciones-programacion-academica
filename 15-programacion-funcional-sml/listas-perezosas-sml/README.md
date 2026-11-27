@@ -16,6 +16,34 @@
 
 Una lista perezosa calcula el siguiente valor cuando se lo pides. Así puedes trabajar con una secuencia que, en teoría, no termina: solicitas los primeros cinco valores en vez de intentar construirlos todos.
 
+### Construcción perezosa
+
+- **¿Por qué?** No se puede construir toda una secuencia infinita antes de usarla.
+- **¿Para qué?** Para pedir un número finito de elementos de una secuencia que puede continuar.
+- **¿Cómo?** Guarda el valor actual y una función para calcular el resto; pide un prefijo con `takeSeq`.
+- **¿Cuándo usarlo?** Cuando solo necesites un tramo de valores potencialmente numerosos.
+
+### Múltiplos
+
+- **¿Por qué?** No hace falta preparar una tabla completa para obtener los siguientes múltiplos.
+- **¿Para qué?** Para generar avances de tamaño fijo bajo demanda.
+- **¿Cómo?** Configura el paso en 5 y pide seis valores: empieza en 5 y termina en 30.
+- **¿Cuándo usarlo?** Cuando quieras recorrer valores con incrementos iguales.
+
+### Factoriales
+
+- **¿Por qué?** El siguiente factorial reutiliza el producto anterior.
+- **¿Para qué?** Para construir los resultados progresivamente.
+- **¿Cómo?** Solicita seis valores y sigue el cambio de `24` a `120` al multiplicar por `5`.
+- **¿Cuándo usarlo?** Cuando cada resultado dependa del producto acumulado.
+
+### Fibonacci
+
+- **¿Por qué?** Dos valores consecutivos bastan para calcular el siguiente.
+- **¿Para qué?** Para generar la secuencia sin recalcular sus prefijos desde cero.
+- **¿Cómo?** Parte de `1, 1`, suma ambos y conserva los dos últimos en cada paso.
+- **¿Cuándo usarlo?** Cuando quieras estudiar secuencias que dependen de los dos resultados anteriores.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Represento secuencias que calculan nuevos elementos cuando se solicitan. unit es el tipo cuyo valor es (), y una función unit -> valor aplaza un cálculo hasta recibir (). Solicitar n elementos significa observar un prefijo finito, incluso si la secuencia puede continuar indefinidamente.

@@ -10,6 +10,20 @@
 
 BitLocker cifra los datos del disco para que no se puedan leer sin la autorización correspondiente. Eso no sustituye un respaldo: el cifrado protege la lectura, mientras que un respaldo ayuda a recuperar archivos perdidos.
 
+### Herramientas de ciberseguridad
+
+- **¿Por qué?** Una herramienta puede comprobar una cosa y dejar otras sin revisar.
+- **¿Para qué?** Para interpretar qué cubre una consulta o medida de protección.
+- **¿Cómo?** Lee en el informe la finalidad de cada herramienta y qué evidencia produjo en el entorno autorizado.
+- **¿Cuándo usarlo?** Cuando necesites verificar una medida de seguridad concreta.
+
+### BitLocker
+
+- **¿Por qué?** Un disco extraviado no debería permitir leer sus datos sin autorización.
+- **¿Para qué?** Para proteger el contenido almacenado mediante cifrado.
+- **¿Cómo?** En un entorno de práctica, identifica el volumen que se cifra y dónde se conserva la clave de recuperación, por separado.
+- **¿Cuándo usarlo?** Cuando quieras proteger datos en un disco y puedas custodiar la clave de recuperación.
+
 ## Propósito
 
 Práctica con herramientas del Centro Nacional de Ciberseguridad y cifrado de disco. El PDF publicado corresponde a la evidencia práctica disponible.

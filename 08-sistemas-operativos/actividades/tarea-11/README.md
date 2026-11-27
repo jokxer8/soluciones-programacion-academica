@@ -10,6 +10,20 @@
 
 En Linux puedes usar una interfaz de ventanas o escribir instrucciones en la terminal. Para entender los ejercicios, sigue qué recibe cada instrucción, a qué archivo o carpeta se refiere y cómo saber si terminó como esperabas.
 
+### Linux y distribuciones
+
+- **¿Por qué?** El núcleo y las aplicaciones que lo acompañan cumplen papeles diferentes.
+- **¿Para qué?** Para distinguir el kernel de una distribución preparada para instalar.
+- **¿Cómo?** Anota qué distribución estás usando y separa sus herramientas de la función del kernel.
+- **¿Cuándo usarlo?** Al elegir un entorno Linux o leer instrucciones hechas para una distribución concreta.
+
+### Terminal
+
+- **¿Por qué?** Una instrucción puede afectar a una ubicación distinta de la esperada.
+- **¿Para qué?** Para consultar y organizar archivos con precisión.
+- **¿Cómo?** En la máquina de prueba, comprueba primero en qué carpeta estás y después lista su contenido.
+- **¿Cuándo usarlo?** Cuando necesites una tarea repetible o no dispongas de interfaz gráfica.
+
 ## Propósito
 
 Investigación introductoria sobre Linux, su kernel y distribuciones, junto con instalación virtualizada y comandos básicos.

@@ -10,6 +10,20 @@
 
 El Shell recibe instrucciones escritas. Un script reúne varias de ellas para repetir el mismo trabajo sin escribirlas una a una. La ficha separa la exposición grupal del documento práctico disponible.
 
+### Shell
+
+- **¿Por qué?** A veces una instrucción escrita dice con precisión qué quieres que haga el sistema.
+- **¿Para qué?** Para consultar archivos o trabajar con el sistema desde un intérprete.
+- **¿Cómo?** Abre el intérprete de práctica, consulta qué archivos hay y fíjate en qué devuelve.
+- **¿Cuándo usarlo?** Cuando necesites una acción concreta o quieras ver y explicar su resultado.
+
+### Scripts
+
+- **¿Por qué?** Es fácil saltarse un paso al repetir una secuencia a mano.
+- **¿Para qué?** Para ejecutar varias instrucciones juntas y en el mismo orden.
+- **¿Cómo?** Prueba cada paso primero; por ejemplo, consulta una carpeta de prueba y guarda el listado en un archivo aparte.
+- **¿Cuándo usarlo?** Cuando ya entiendas una rutina y necesites repetirla.
+
 ## Propósito
 
 La carpeta contiene una exposición grupal sobre Shell, mandatos e intérpretes, y un PDF práctico adicional. La presentación asigna a Kelvin la introducción, el concepto de Shell y el cierre. El archivo práctico se conserva con nombre normalizado; su encabezado se debe leer junto con la consigna original.

@@ -16,6 +16,11 @@
 
 Un sistema operativo coordina los programas, la memoria, los archivos y otros recursos. Abre el índice de tareas para estudiar un tema a la vez; los proyectos muestran cómo se aplicó en equipo.
 
+- **¿Por qué?** Si una aplicación falla o va lenta, conviene distinguir un problema del programa de uno de los recursos que usa.
+- **¿Para qué?** Para entender qué hace el sistema con los archivos, la memoria, los programas y las conexiones.
+- **¿Cómo?** Empieza por la primera tarea; luego relaciona cada concepto con una práctica. Por ejemplo, observa cómo cambia el uso de memoria al abrir una aplicación.
+- **¿Cuándo usarlo?** Al instalar un sistema, administrar un equipo o investigar por qué una tarea no se completó.
+
 ## Presentación
 
 Esta sección reúne el programa de **ISC-364 Sistemas Operativos I**, las tareas individuales documentadas y una síntesis de los proyectos realizados durante la asignatura. La organización sigue el recorrido de los temas disponible en la carpeta de estudio y distingue entre evidencia publicada, material de consigna y actividades sin PDF encontrado.

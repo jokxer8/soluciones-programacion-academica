@@ -10,6 +10,13 @@
 
 Compara cada sistema preguntando cómo instala aplicaciones, administra permisos y recibe actualizaciones. Esas preguntas ayudan a entender las diferencias entre un sistema móvil y uno de escritorio sin quedarse solo con el aspecto de la interfaz.
 
+### Sistemas móviles y macOS
+
+- **¿Por qué?** Comparar solo los iconos no explica cómo se administra un sistema.
+- **¿Para qué?** Para distinguir instalación de aplicaciones, permisos y actualizaciones.
+- **¿Cómo?** Contrasta una misma acción, como autorizar el acceso a un archivo, en cada sistema estudiado.
+- **¿Cuándo usarlo?** Al elegir un entorno o evaluar si una aplicación se adapta a varias plataformas.
+
 ## Propósito
 
 Investigación sobre sistemas operativos móviles y macOS, además de una práctica de instalación de macOS en un entorno virtualizado.

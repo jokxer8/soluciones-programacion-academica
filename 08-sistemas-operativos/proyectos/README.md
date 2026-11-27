@@ -12,6 +12,20 @@ Esta sección registra los trabajos colaborativos desarrollados en ISC-364 y dis
 
 **Shell en Windows:** la exposición muestra cómo una instrucción escrita y un script permiten automatizar tareas; el aporte individual se detalla abajo. **NEXO Linux:** el equipo probó una modificación del núcleo de Linux en una máquina virtual. Piensa en el núcleo como la parte que conecta el software con los recursos del equipo. La ficha distingue lo comprobado en la demostración de sus límites.
 
+### Proyecto 1 · Shell en Windows
+
+- **¿Por qué?** Los pasos manuales de una rutina se pueden olvidar o repetir de forma distinta.
+- **¿Para qué?** Para explicar cómo pasar de una instrucción aislada a un procedimiento repetible.
+- **¿Cómo?** Compara en la exposición un mandato que consulta información con un script que guarda el resultado.
+- **¿Cuándo usarlo?** Cuando necesites repetir una tarea de revisión o administración.
+
+### Proyecto 2 · NEXO Linux
+
+- **¿Por qué?** Modificar el núcleo sin aislar el entorno puede interrumpir el equipo de trabajo.
+- **¿Para qué?** Para entender cómo un programa pide una operación al núcleo mediante una llamada al sistema.
+- **¿Cómo?** En la demostración, el equipo usó una máquina virtual y contrastó la versión arrancada con el mensaje esperado en el registro.
+- **¿Cuándo usarlo?** En un laboratorio de sistemas; no es un procedimiento recomendado para un equipo de producción.
+
 ## 1. Shell, intérpretes de mandatos y scripts en Windows
 
 **Tipo:** exposición colaborativa  

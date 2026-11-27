@@ -10,6 +10,34 @@
 
 Este documento indica qué se estudia y cómo se organiza la asignatura. Úsalo como mapa para localizar un tema; los ejercicios y proyectos muestran cómo se trabajó con las evidencias disponibles.
 
+### Unidad I · Fundamentos y formas de organizar el trabajo
+
+- **¿Por qué?** Construir software implica más actividades que programar.
+- **¿Para qué?** Para reconocer etapas y pensar cómo coordinar el trabajo.
+- **¿Cómo?** Toma una funcionalidad e indica qué habría que analizar, construir, probar y mantener; compara después cómo ordenarías el trabajo.
+- **¿Cuándo usarlo?** Al planificar un proyecto o explicar por qué conviene dividir su desarrollo.
+
+### Unidad II · Requerimientos
+
+- **¿Por qué?** Las personas pueden usar la misma palabra para pedir cosas distintas.
+- **¿Para qué?** Para convertir lo que se necesita en algo claro que pueda revisarse.
+- **¿Cómo?** Reescribe una petición como una conducta comprobable y deja una pregunta para la persona que la solicitó.
+- **¿Cuándo usarlo?** Antes de diseñar una solución o al renegociar un cambio de alcance.
+
+### Unidad III · Diseño basado en contexto
+
+- **¿Por qué?** Un diseño puede fallar si no considera dónde y cómo se usa.
+- **¿Para qué?** Para organizar la interfaz según el trabajo real de la persona.
+- **¿Cómo?** Imagina cómo alguien registra una solicitud y anota el entorno, el orden de sus acciones y dónde presenta dificultades.
+- **¿Cuándo usarlo?** Cuando diseñes una pantalla o revises un recorrido que resulta incómodo.
+
+### Unidad IV · Casos de uso
+
+- **¿Por qué?** Un nombre de función no explica qué hace el usuario ni cómo responde el sistema.
+- **¿Para qué?** Para narrar qué ocurre desde que alguien inicia una acción hasta su resultado.
+- **¿Cómo?** Dibuja quién solicita el servicio y escribe el camino normal y un caso alternativo, por ejemplo si falta un dato.
+- **¿Cuándo usarlo?** Cuando necesites explicar o revisar la interacción antes de construirla.
+
 ## Datos de la asignatura
 
 | Campo | Información |

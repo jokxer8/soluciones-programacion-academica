@@ -23,6 +23,11 @@ En esta materia trabajé programación funcional con Standard ML y fundamentos d
 
 Estas actividades estudian cómo combinar funciones y transformar datos. Empieza con una sustitución pequeña o con map; luego sigue hacia módulos, árboles y listas que calculan valores al pedirlos.
 
+- **¿Por qué?** Una misma transformación puede expresarse sin controlar cada paso ni cambiar los datos originales.
+- **¿Para qué?** Para leer y construir funciones, transformar listas y organizar soluciones en módulos.
+- **¿Cómo?** Abre primero cálculo lambda y `map`; prueba una entrada pequeña y sigue después con listas perezosas, módulos o árboles.
+- **¿Cuándo usarlo?** Cuando quieras explicar qué recibe una función, qué devuelve y cómo combinarla con otras.
+
 ## Objetivo de la materia
 
 Presentar ejercicios y actividades desarrolladas durante la formación académica en programación funcional, organizadas de manera clara, documentada y profesional.

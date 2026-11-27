@@ -10,6 +10,27 @@
 
 TCP/IP es un conjunto de reglas para que los equipos se comuniquen. Distingue la dirección del equipo, la manera de enviar datos y el servicio que responde. Conectarse a una red no garantiza que todos sus servicios estén disponibles.
 
+### Dirección IP
+
+- **¿Por qué?** Si no sabes dónde está un equipo, no puedes separar el problema de dirección del de servicio.
+- **¿Para qué?** Para identificar un equipo dentro de una red de práctica.
+- **¿Cómo?** Anota la IP y la red del cliente e identifica cuál debería ser la del servidor.
+- **¿Cuándo usarlo?** Cuando primero debas comprobar conectividad básica.
+
+### DHCP
+
+- **¿Por qué?** Configurar manualmente cada equipo puede causar errores de dirección.
+- **¿Para qué?** Para repartir configuraciones de red de forma centralizada.
+- **¿Cómo?** En el laboratorio, comprueba si un cliente recibe la dirección del rango configurado.
+- **¿Cuándo usarlo?** Cuando quieras incorporar clientes sin asignar manualmente cada IP.
+
+### DNS
+
+- **¿Por qué?** Recordar nombres suele ser más fácil que memorizar direcciones.
+- **¿Para qué?** Para traducir nombres de equipos o servicios a direcciones.
+- **¿Cómo?** Compara en el laboratorio si el servicio responde por IP y por nombre: si solo funciona por IP, investiga la resolución.
+- **¿Cuándo usarlo?** Cuando un servicio debe ser accesible por nombre.
+
 ## Propósito
 
 Resumen sobre TCP/IP y servicios de red en Windows Server; práctica para configurar dirección IP, DHCP y DNS.

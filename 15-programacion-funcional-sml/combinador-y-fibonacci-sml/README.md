@@ -16,6 +16,20 @@
 
 Fibonacci repite una misma regla sobre casos más pequeños. El combinador Y permite expresar la idea de repetición sin escribir la función con su propio nombre. Sigue primero el caso base y luego una sola llamada antes de mirar la expresión completa.
 
+### Combinador de punto fijo
+
+- **¿Por qué?** Una regla puede necesitar repetirse sin referirse a sí misma por su nombre.
+- **¿Para qué?** Para distinguir la regla de Fibonacci del mecanismo que hace posible repetirla.
+- **¿Cómo?** Sigue la reducción teórica pasando a la regla una función que representa la siguiente llamada. Distingue esa notación del SML que ejecuta el ejercicio.
+- **¿Cuándo usarlo?** Al estudiar cómo se explica la recursividad en cálculo lambda.
+
+### Fibonacci
+
+- **¿Por qué?** Una llamada solo termina si se sabe qué devolver para casos pequeños.
+- **¿Para qué?** Para poner a prueba la regla recursiva con un ejemplo conocido.
+- **¿Cómo?** Sigue el caso `4`: descompón en `3` y `2`, y detente en los casos base `1` y `2`.
+- **¿Cuándo usarlo?** Cuando practiques casos base y llamadas más pequeñas; no como método eficiente para calcular valores grandes.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono recursión y puntos fijos con Fibonacci. Un punto fijo satisface f(x)=x, pero un combinador de punto fijo permite expresar una función recursiva. La formulación del cálculo lambda debe distinguirse de lo que admite el sistema de tipos y la evaluación estricta de SML.

@@ -10,6 +10,20 @@
 
 Una máquina virtual se comporta como otra computadora dentro de la tuya. Puedes instalar un sistema en ella y probarlo sin reemplazar el de tu equipo. La nube puede ofrecer equipos virtuales a distancia; no es sinónimo de máquina virtual.
 
+### Máquinas virtuales
+
+- **¿Por qué?** Instalar un sistema en el equipo principal puede alterar tu entorno de trabajo.
+- **¿Para qué?** Para practicar con un sistema invitado sin reemplazar el anfitrión.
+- **¿Cómo?** Separa los recursos del invitado y comprueba qué sistema arranca dentro de VirtualBox o VMware.
+- **¿Cuándo usarlo?** Cuando necesites un laboratorio aislado en tu propio equipo.
+
+### Nube
+
+- **¿Por qué?** A veces necesitas recursos que no están en tu computadora.
+- **¿Para qué?** Para distinguir un servicio ofrecido a distancia de un equipo virtual local.
+- **¿Cómo?** Compara una máquina virtual de tu equipo con una remota; identifica dónde corre cada una y desde dónde la usas.
+- **¿Cuándo usarlo?** Cuando evalúes dónde alojar una práctica o cómo acceder a ella.
+
 ## Propósito
 
 Resumen teórico sobre virtualización y nube, acompañado por una actividad práctica de creación de máquinas virtuales en VirtualBox y VMware.

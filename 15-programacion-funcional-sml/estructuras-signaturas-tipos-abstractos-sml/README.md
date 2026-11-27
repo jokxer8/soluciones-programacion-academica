@@ -16,6 +16,20 @@
 
 Una estructura reúne operaciones relacionadas. Una signatura indica cuáles se pueden usar desde fuera. Piensa en una caja: puedes usar sus botones públicos sin saber cómo están conectados por dentro.
 
+### Signatura de estudiante
+
+- **¿Por qué?** Cambiar la representación interna no debería obligar a reescribir quien la usa.
+- **¿Para qué?** Para mantener las mismas operaciones con una lista de asociación o un record.
+- **¿Cómo?** Compara las funciones `put` y `get` de ambas versiones y verifica el caso de un campo repetido en los ejemplos.
+- **¿Cuándo usarlo?** Cuando varias implementaciones deban compartir la misma interfaz.
+
+### Secuencia abstracta
+
+- **¿Por qué?** Quien consume una secuencia no necesita saber cómo se guardan o unen sus partes.
+- **¿Para qué?** Para combinar secuencias sin depender de su representación.
+- **¿Cómo?** Une dos secuencias pequeñas y mira el orden cuando las conviertes a lista.
+- **¿Cuándo usarlo?** Cuando quieras definir operaciones estables y dejar oculta la estructura interna.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Separo la interfaz de una estructura de su implementación. Una signatura declara los tipos y operaciones disponibles; el tipo abstracto permite utilizarlos sin depender de su representación interna. Los números de los ejemplos son datos de prueba, no identificadores de tipos.

@@ -12,6 +12,20 @@ Los documentos disponibles describen planificación de sistemas de información 
 
 **SIGERH:** empieza por un objetivo grande de recursos humanos, divídelo en necesidades concretas y termina en tareas pequeñas. **KHuman:** sigue la relación entre módulos y requerimientos para ver qué habría que construir y cómo se organizaría. Ambos documentos explican planificación, no demuestran una aplicación funcionando.
 
+### SIGERH · De objetivos a tareas
+
+- **¿Por qué?** Una necesidad grande no dice por sí sola qué tiene que hacer cada persona.
+- **¿Para qué?** Para descomponer el trabajo en objetivos, necesidades y tareas que puedan seguirse por separado.
+- **¿Cómo?** En el PDF, sigue una épica, abre un issue asociado y lee las tareas que lo desarrollan.
+- **¿Cuándo usarlo?** En la planificación inicial, cuando el alcance aún es demasiado amplio para estimarlo o repartirlo.
+
+### KHuman · Relación entre módulos y requerimientos
+
+- **¿Por qué?** Una lista de tareas aislada puede ocultar en qué parte del sistema se resuelve cada necesidad.
+- **¿Para qué?** Para mantener la relación entre el módulo, lo que debe hacer y los datos que necesita.
+- **¿Cómo?** En la guía visual, escoge un requerimiento y sigue qué módulo lo atiende y qué campos se contemplan.
+- **¿Cuándo usarlo?** Al revisar qué falta diseñar o al explicar el plan de un módulo a otra persona.
+
 ## SIGERH
 
 **Sistema Integral de Gestión de Recursos Humanos.** La primera práctica organiza el trabajo mediante objetivos amplios, módulos funcionales y tareas concretas, en una jerarquía de **2 Epic, 8 Issue y 20 Task**.

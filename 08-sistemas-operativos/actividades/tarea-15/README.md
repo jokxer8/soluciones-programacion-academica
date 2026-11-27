@@ -10,6 +10,11 @@
 
 Windows Server está pensado para prestar servicios a otros equipos. Imagina una oficina donde varias personas necesitan recursos comunes: el servidor facilita administrarlos desde un punto central, según el servicio que se configure.
 
+- **¿Por qué?** Prestar recursos de forma central evita configurar por separado cada equipo cliente.
+- **¿Para qué?** Para reconocer el papel de un servidor y preparar uno en un entorno de prueba.
+- **¿Cómo?** En la máquina virtual, distingue instalar Windows Server de habilitar servicios; verifica después su nombre y estado.
+- **¿Cuándo usarlo?** Cuando varios equipos necesiten un servicio común o quieras ensayarlo en laboratorio.
+
 ## Propósito
 
 Investigación sobre la finalidad de Windows Server y práctica de instalación, actualización y cambio del nombre del servidor.

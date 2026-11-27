@@ -10,6 +10,11 @@
 
 La RAM guarda temporalmente lo que los programas usan en ese momento. La memoria virtual permite que cada programa trabaje con sus propias direcciones; el sistema decide qué partes necesita mantener en RAM y cuáles puede mover al almacenamiento.
 
+- **¿Por qué?** La cantidad de RAM instalada no cuenta toda la historia de la memoria que usa un programa.
+- **¿Para qué?** Para distinguir almacenamiento temporal físico de las direcciones que maneja cada proceso.
+- **¿Cómo?** Abre una aplicación de prueba y observa el uso de RAM; interprétalo sin confundirlo con el tamaño total de su espacio virtual.
+- **¿Cuándo usarlo?** Cuando investigues lentitud con varios programas abiertos o estudies cómo se aísla su memoria.
+
 ## Propósito
 
 Explicación de memoria RAM y memoria virtual, junto con una práctica relacionada con su observación o administración.

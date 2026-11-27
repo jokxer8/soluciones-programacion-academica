@@ -16,6 +16,27 @@
 
 Puedes dibujar `2 + 3` como un árbol: la suma arriba y los números debajo. Serializar es guardar el árbol de forma que después puedas reconstruirlo. El orden de lectura importa porque no basta con recordar los números: necesitas la forma y las operaciones.
 
+### Formato en prefijo
+
+- **¿Por qué?** A veces conviene identificar primero la operación principal.
+- **¿Para qué?** Para leer la expresión en prefijo.
+- **¿Cómo?** Para `2 + 3`, visita primero `+`, después `2` y luego `3`.
+- **¿Cuándo usarlo?** Cuando el consumidor espera el operador antes de los operandos.
+
+### Formato en infijo
+
+- **¿Por qué?** Queremos leer la expresión como una operación escrita en papel.
+- **¿Para qué?** Para escribir el operador entre sus operandos.
+- **¿Cómo?** Para `2 + 3`, visita `2`, luego `+` y después `3`; usa paréntesis cuando haga falta conservar agrupación.
+- **¿Cuándo usarlo?** Cuando quieras mostrar una expresión aritmética a una persona.
+
+### Formato en postfijo
+
+- **¿Por qué?** Algunos formatos necesitan los valores antes de indicar qué operación hacer.
+- **¿Para qué?** Para leer la expresión en postfijo.
+- **¿Cómo?** Para `2 + 3`, visita `2` y `3` antes de `+`.
+- **¿Cuándo usarlo?** Cuando el formato o evaluador espera primero los operandos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Represento expresiones con árboles y las convierto a texto. En prefijo, el operador aparece antes de sus operandos; en postfijo, después. En infijo se sitúa entre ellos y los paréntesis permiten conservar la estructura de la expresión.

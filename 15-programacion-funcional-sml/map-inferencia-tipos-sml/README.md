@@ -16,6 +16,20 @@
 
 La función `map` aplica la misma regla a cada elemento. Si duplicas `[1, 2, 3]`, obtienes `[2, 4, 6]`. SML puede deducir el tipo de entrada y salida a partir de la función aplicada; no siempre hay que escribirlo.
 
+### Función `map`
+
+- **¿Por qué?** Repetir a mano la misma transformación oculta la regla que comparten los datos.
+- **¿Para qué?** Para devolver una lista con un resultado por elemento, en el mismo orden.
+- **¿Cómo?** Aplica la regla duplicar a `[1, 2, 3]` para leer `[2, 4, 6]`.
+- **¿Cuándo usarlo?** Cuando cada elemento se transforma de forma independiente.
+
+### Inferencia de tipos
+
+- **¿Por qué?** Una función general no tiene que limitarse a cadenas o números.
+- **¿Para qué?** Para reconocer qué tipos relaciona `map` en la función, la entrada y la salida.
+- **¿Cómo?** Llama `'a` al tipo que recibe la regla y `'b` al que devuelve; `map` lleva una lista de `'a` a una lista de `'b`.
+- **¿Cuándo usarlo?** Cuando leas una función reutilizable o quieras entender por qué una aplicación no encaja.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Aplico una función a cada elemento de una lista y sigo la inferencia de tipos. En ('a -> 'b) -> 'a list -> 'b list, 'a y 'b son variables de tipo; list indica una lista y -> separa argumentos y resultado. No son caracteres ni valores que deba escribir el usuario.
