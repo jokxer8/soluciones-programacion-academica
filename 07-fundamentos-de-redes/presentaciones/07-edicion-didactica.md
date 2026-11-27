@@ -6,7 +6,19 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Ethernet lleva MAC de origen y destino en la trama. Un switch aprende el puerto de origen y consulta su tabla para reenviar. En cada enlace de salida, un router prepara una trama nueva.
+### Tramas Ethernet
+
+- **¿Por qué?** Cada salto local tiene origen y destino propios.
+- **¿Para qué?** Para decidir qué MAC se usa en el primer tramo.
+- **¿Cómo?** Marca el gateway como destino MAC cuando el destino IP esté en otra LAN.
+- **¿Cuándo usarlo?** Al seguir tráfico que pasa por un router.
+
+### Aprendizaje y salto siguiente
+
+- **¿Por qué?** El switch ubica vecinos por su MAC; el router prepara una trama para el enlace siguiente.
+- **¿Para qué?** Para distinguir entrega local de enrutamiento.
+- **¿Cómo?** Sigue la trama hasta el router y dibuja otra para el tramo de salida.
+- **¿Cuándo usarlo?** Cuando un paquete cruza varias redes.
 
 ## Ejercicio
 

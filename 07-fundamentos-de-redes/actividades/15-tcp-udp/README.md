@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-TCP entrega un flujo ordenado y retransmite datos cuando hace falta. UDP envía mensajes sin prometer entrega u orden; la aplicación decide qué hacer ante las pérdidas.
+### TCP
+
+- **¿Por qué?** Algunos datos necesitan llegar en el orden correcto como un flujo continuo.
+- **¿Para qué?** Para transportar contenido como un archivo íntegro.
+- **¿Cómo?** Relaciona conexión, números de secuencia, confirmaciones, retransmisión y control de flujo.
+- **¿Cuándo usarlo?** Cuando la aplicación necesita entrega ordenada, como en muchas transferencias de archivos.
+
+### UDP
+
+- **¿Por qué?** Esperar retransmisiones puede resultar inútil cuando el dato pierde valor al llegar tarde.
+- **¿Para qué?** Para enviar mensajes sin que el transporte garantice orden o entrega.
+- **¿Cómo?** Identifica el puerto de destino y decide qué pérdidas tolera la aplicación o cómo las maneja.
+- **¿Cuándo usarlo?** En aplicaciones que gestionan la pérdida o priorizan la oportunidad del dato, según su diseño.
 
 ## Qué se trabajó
 

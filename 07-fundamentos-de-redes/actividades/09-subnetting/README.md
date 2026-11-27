@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Dividir una red es como repartir un bloque de direcciones en grupos más pequeños. Con VLSM puedes reservar grupos grandes donde hay más equipos y pequeños donde hay menos.
+### Subredes del mismo tamaño
+
+- **¿Por qué?** Un bloque grande puede contener varias redes locales independientes.
+- **¿Para qué?** Para planear rangos separados y saber qué valores quedan fuera del rango de hosts.
+- **¿Cómo?** Divide `192.0.2.0/24` en cuatro bloques `/26`; el primero va de `.0` a `.63`, con hosts `.1` a `.62`.
+- **¿Cuándo usarlo?** Cuando los segmentos necesitan tamaños iguales.
+
+### VLSM
+
+- **¿Por qué?** Las LAN no siempre necesitan la misma cantidad de direcciones.
+- **¿Para qué?** Para repartir bloques de varios tamaños sin desperdiciar tanto espacio.
+- **¿Cómo?** Asigna primero los bloques grandes y confirma que el inicio y el final de cada uno no se solapen.
+- **¿Cuándo usarlo?** Al diseñar una red de práctica con departamentos de tamaños distintos.
 
 ## Qué se trabajó
 

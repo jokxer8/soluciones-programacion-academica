@@ -6,7 +6,19 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Distingue LAN, WAN, Internet, intranet y extranet. Una LAN conecta los equipos de un área local; una WAN conecta redes a distancia. Una intranet es de uso interno; una extranet concede acceso limitado a socios o terceros.
+### LAN, WAN e Internet
+
+- **¿Por qué?** No todas las conexiones cubren el mismo alcance.
+- **¿Para qué?** Para distinguir una red local, una unión entre redes y la red pública global.
+- **¿Cómo?** Marca las cajas de una tienda dentro de una LAN y las sedes enlazadas mediante la WAN.
+- **¿Cuándo usarlo?** Al dibujar una tienda, campus o empresa con varias sedes.
+
+### Intranet y extranet
+
+- **¿Por qué?** No todos los servicios deben estar abiertos a cualquiera.
+- **¿Para qué?** Para separar acceso interno de acceso limitado a terceros.
+- **¿Cómo?** Clasifica el inventario de empleados como interno y un área para proveedores autorizados como extranet.
+- **¿Cuándo usarlo?** Al decidir quién debería acceder a cada servicio.
 
 ## Ejercicio
 

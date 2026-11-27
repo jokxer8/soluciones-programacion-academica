@@ -10,7 +10,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../assets/readme-banners/en-palabras-simples.svg)
 
-Si solo hay un camino entre Recepción y Reservas, un corte puede dejarlas aisladas. En el simulador, el equipo unió las sedes en un anillo y comprobó que era posible llegar por el otro lado cuando se cortaba el enlace habitual.
+### Anillo y camino alternativo
+
+- **¿Por qué?** Un solo camino puede dejar una sede aislada si se corta su enlace.
+- **¿Para qué?** Para que el diseño tenga una alternativa ante un corte simple.
+- **¿Cómo?** Sigue en el diagrama el recorrido habitual y la alternativa esperada por Operaciones y Atención; contrástala con el alcance del informe.
+- **¿Cuándo usarlo?** Al diseñar un enlace de respaldo entre sedes y documentar sus límites.
+
+### VLSM y rutas
+
+- **¿Por qué?** Las sedes requieren redes de distintos tamaños y sus routers necesitan conocer destinos remotos.
+- **¿Para qué?** Para repartir direcciones y comparar rutas fijas con rutas que se anuncian entre routers.
+- **¿Cómo?** Revisa el dimensionamiento y separa la etapa estática, RIPv2 y el escenario particular de IPv6.
+- **¿Cuándo usarlo?** Al estudiar una maqueta multisede; las pruebas existentes no certifican una instalación real.
 
 ## Necesidad
 

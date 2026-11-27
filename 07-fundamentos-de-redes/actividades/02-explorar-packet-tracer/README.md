@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-En un mapa de red lo primero es seguir las conexiones: ¿qué equipo inicia la comunicación, cuál la transporta y cuál responde?
+### Lectura de una topología
+
+- **¿Por qué?** Los enlaces visibles no indican por sí solos quién inicia y quién recibe.
+- **¿Para qué?** Para seguir la comunicación entre oficina, sucursal y casa remota.
+- **¿Cómo?** Marca extremos, equipos intermediarios y medios; señala dónde termina cada LAN.
+- **¿Cuándo usarlo?** Al abrir una maqueta de Packet Tracer o comparar dos diseños.
 
 ## Qué se trabajó
 

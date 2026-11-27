@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Un archivo de simulación permite guardar una red para retomarla. Tener el archivo no demuestra qué pruebas se hicieron o qué nota obtuvo.
+### Lectura de archivos de simulación
+
+- **¿Por qué?** Un `.pkt` preserva la maqueta, no todo lo que se hizo con ella.
+- **¿Para qué?** Para estudiar el escenario sin atribuirle resultados no registrados.
+- **¿Cómo?** Relaciona el archivo con su fecha o carpeta y separa lo visible de lo que requeriría pruebas documentadas.
+- **¿Cuándo usarlo?** Al retomar una simulación sin informe asociado.
 
 ## Qué se trabajó
 

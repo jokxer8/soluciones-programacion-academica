@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-El switch puede tener una dirección fija para administrarlo mientras las computadoras reciben su configuración automáticamente.
+### IP fija y DHCP
+
+- **¿Por qué?** La gestión del switch necesita una dirección predecible; las PCs pueden recibir la suya automáticamente.
+- **¿Para qué?** Para administrar el switch y conectar clientes sin configurar cada PC manualmente.
+- **¿Cómo?** Separa la IP de gestión y revisa que la dirección concedida al cliente corresponda a su segmento.
+- **¿Cuándo usarlo?** Cuando una LAN de práctica combina infraestructura y equipos que entran y salen.
 
 ## Qué se trabajó
 

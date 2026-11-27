@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-La consola deja hablar con el equipo aunque todavía no tenga IP. El indicador cambia según lo que puedes consultar o configurar.
+### Consola y modos de IOS
+
+- **¿Por qué?** Un equipo recién instalado puede no tener IP.
+- **¿Para qué?** Para consultar el estado y distinguir el modo de trabajo.
+- **¿Cómo?** En simulación, mira si el indicador termina en `>` o `#` y usa la ayuda contextual para ver opciones del modo.
+- **¿Cuándo usarlo?** Durante la revisión inicial de un equipo de laboratorio.
 
 ## Qué se trabajó
 

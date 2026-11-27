@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Que una IP termine en cero no basta para saber si es red o host: manda la máscara.
+### Prefijos y tipos de dirección
+
+- **¿Por qué?** Que una IPv4 termine en cero no decide si identifica a una red.
+- **¿Para qué?** Para separar la dirección de red de las que pueden usar los hosts.
+- **¿Cómo?** Compara `10.0.2.0/24` con esa misma dirección dentro de `10.0.0.0/16`: la máscara cambia la interpretación.
+- **¿Cuándo usarlo?** Siempre que clasifiques una dirección o asignes un rango.
+
+### Rutas y validación
+
+- **¿Por qué?** Un rango correcto en papel no demuestra comunicación.
+- **¿Para qué?** Para separar el diseño de una verificación en simulación.
+- **¿Cómo?** Traza la ruta de ida y retorno y distingue el cálculo de cualquier prueba efectivamente registrada.
+- **¿Cuándo usarlo?** Al revisar una práctica con varias LAN.
 
 ## Qué se trabajó
 

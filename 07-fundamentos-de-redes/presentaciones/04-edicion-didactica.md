@@ -6,7 +6,19 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Un octeto tiene ocho bits: cada posición vale 128, 64, 32, 16, 8, 4, 2 o 1. El hexadecimal agrupa cuatro bits por dígito.
+### Binario y decimal
+
+- **¿Por qué?** Cada posición de un octeto pesa distinto.
+- **¿Para qué?** Para leer direcciones y máscaras como valores numéricos.
+- **¿Cómo?** Para `10110110`, suma solo los pesos de los bits en 1.
+- **¿Cuándo usarlo?** Al interpretar un octeto IPv4.
+
+### Hexadecimal
+
+- **¿Por qué?** Agrupar bits reduce la longitud del texto.
+- **¿Para qué?** Para leer valores expresados con dígitos `0–9` y `A–F`.
+- **¿Cómo?** Divide el octeto en dos grupos de cuatro: `1011` y `0110` dan `B6`.
+- **¿Cuándo usarlo?** Al leer direcciones MAC o convertir valores de una captura.
 
 ## Ejercicio
 

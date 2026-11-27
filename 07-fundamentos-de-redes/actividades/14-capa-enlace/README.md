@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-La capa de enlace mueve datos entre vecinos de la red. Ethernet usa direcciones MAC para identificar los extremos del enlace.
+### Tramas y direcciones MAC
+
+- **¿Por qué?** La entrega local tiene sus propios destinatarios, distintos del destino IP final.
+- **¿Para qué?** Para seguir un tramo Ethernet y entender qué hace un switch.
+- **¿Cómo?** Dibuja tres hosts, marca MAC de origen y destino y muestra qué puerto aprende el switch.
+- **¿Cuándo usarlo?** Al explicar qué pasa entre vecinos de red.
+
+### Topología y dúplex
+
+- **¿Por qué?** La forma de cablear no describe por sí sola cómo circula el tráfico.
+- **¿Para qué?** Para diferenciar la disposición de equipos de la posibilidad de enviar y recibir a la vez.
+- **¿Cómo?** Dibuja el mapa físico y, por separado, representa el tránsito simultáneo en dúplex completo.
+- **¿Cuándo usarlo?** Cuando compares enlaces o expliques el funcionamiento de una LAN.
 
 ## Qué se trabajó
 

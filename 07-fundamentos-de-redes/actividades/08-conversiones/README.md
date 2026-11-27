@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Son distintas formas de escribir el mismo número. En redes esto aparece en octetos IPv4, máscaras y direcciones MAC.
+### Binario y decimal
+
+- **¿Por qué?** Los ocho lugares de un octeto representan valores diferentes.
+- **¿Para qué?** Para comprobar qué número corresponde a los bits de una dirección o máscara.
+- **¿Cómo?** Suma las posiciones encendidas: `00101010` vale 32 + 8 + 2 = 42.
+- **¿Cuándo usarlo?** Al leer un octeto IPv4 o razonar sobre una máscara.
+
+### Hexadecimal
+
+- **¿Por qué?** Un dígito hexadecimal resume cuatro bits.
+- **¿Para qué?** Para leer valores largos como los de una dirección MAC.
+- **¿Cómo?** Separa `00101010` en `0010` y `1010`: los dígitos son `2` y `A`.
+- **¿Cuándo usarlo?** Al pasar entre bits y una representación corta de red.
 
 ## Qué se trabajó
 

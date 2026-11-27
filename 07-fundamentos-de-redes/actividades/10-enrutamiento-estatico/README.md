@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Una ruta estática indica manualmente a qué vecino enviar el tráfico para llegar a una red que no está conectada directamente.
+### Rutas de ida y retorno
+
+- **¿Por qué?** Un router no alcanza una LAN remota solo porque su propio enlace esté activo.
+- **¿Para qué?** Para indicar por qué vecino enviar tráfico y cómo recibirá respuesta.
+- **¿Cómo?** Dibuja las cuatro LAN y anota, para cada red remota, el siguiente salto de ida y el del retorno.
+- **¿Cuándo usarlo?** En una maqueta pequeña de caminos fijos que puedes revisar a mano.
 
 ## Qué se trabajó
 

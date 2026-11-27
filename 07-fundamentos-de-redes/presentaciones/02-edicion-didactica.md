@@ -6,7 +6,19 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-La dirección de gestión del switch identifica su interfaz lógica; no convierte al switch de capa 2 en puerta de enlace. Un PC necesita dirección y máscara coherentes con su LAN; para salir de ella debe tener un gateway accesible.
+### Gestión del switch
+
+- **¿Por qué?** Administrar el switch no lo convierte en router.
+- **¿Para qué?** Para identificar su propia dirección de gestión.
+- **¿Cómo?** Señala la interfaz lógica de gestión en el esquema y no la confundas con el gateway.
+- **¿Cuándo usarlo?** Al revisar el acceso administrativo de un switch de capa 2.
+
+### Dirección y salida del PC
+
+- **¿Por qué?** Comunicarse con un vecino no exige lo mismo que llegar a otra red.
+- **¿Para qué?** Para saber qué parámetros necesita el host.
+- **¿Cómo?** Comprueba que IP y máscara coincidan con el segmento y localiza el gateway para salir.
+- **¿Cuándo usarlo?** Cuando el equipo alcanza la LAN pero no un destino remoto.
 
 ## Ejercicio
 

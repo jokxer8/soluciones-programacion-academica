@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Un router es la salida hacia otras redes. Antes de conectarlo, conviene identificarlo, revisar sus interfaces y guardar su configuración.
+### Consola e interfaces del router
+
+- **¿Por qué?** El acceso de administración no equivale a tener un enlace listo para transportar tráfico.
+- **¿Para qué?** Para identificar el router y revisar el estado de sus conexiones.
+- **¿Cómo?** En el simulador, identifica el equipo, localiza las interfaces y distingue su estado del de la configuración guardada.
+- **¿Cuándo usarlo?** Antes de conectar otras redes en un diseño de práctica.
 
 ## Qué se trabajó
 

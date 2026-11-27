@@ -15,7 +15,19 @@
 
 ![En palabras simples · Guía para estudiantes](../assets/readme-banners/en-palabras-simples.svg)
 
-Una red permite que equipos y servicios compartan información. Empieza por identificar quién envía, por dónde viajan los datos y quién recibe. Después revisa cómo un router encuentra otro camino cuando falla un enlace.
+### Equipos y enlaces
+
+- **¿Por qué?** Una red une equipos y servicios que necesitan compartir datos.
+- **¿Para qué?** Para entender el recorrido antes de ajustar un equipo.
+- **¿Cómo?** Identifica quién envía, por dónde viajan los datos y quién recibe.
+- **¿Cuándo usarlo?** Al leer por primera vez un diagrama o una maqueta.
+
+### Direcciones y rutas
+
+- **¿Por qué?** No todos los destinos están en la misma red local.
+- **¿Para qué?** Para separar el acceso a un vecino del acceso a otra sede.
+- **¿Cómo?** Sigue el tráfico desde el host hasta su puerta de enlace y el siguiente router.
+- **¿Cuándo usarlo?** Al conectar oficinas o revisar qué ocurre si falla un enlace.
 
 ## Ruta de aprendizaje
 

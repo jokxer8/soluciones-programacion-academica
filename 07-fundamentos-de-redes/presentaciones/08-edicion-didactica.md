@@ -6,7 +6,19 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Un switch aprende a partir del origen. Un unicast de destino desconocido puede difundirse dentro de la VLAN. La difusión no equivale a reenviar todo por todos los puertos una vez aprendida la dirección.
+### Aprendizaje MAC
+
+- **¿Por qué?** Al ver tráfico, el switch descubre de qué puerto viene cada origen.
+- **¿Para qué?** Para enviar después al puerto que corresponde a un destino conocido.
+- **¿Cómo?** Compara la tabla MAC antes y después de que A y B transmitan en la maqueta.
+- **¿Cuándo usarlo?** Al revisar el comportamiento de una LAN Ethernet.
+
+### Destino desconocido
+
+- **¿Por qué?** Al principio la tabla puede no contener la MAC de destino.
+- **¿Para qué?** Para entender por qué la primera trama puede salir por varios puertos de la VLAN.
+- **¿Cómo?** Dibuja el envío inicial por puertos de esa VLAN y contrástalo con el envío a un puerto aprendido.
+- **¿Cuándo usarlo?** Cuando observes diferencias entre el primer intercambio y los siguientes.
 
 ## Ejercicio
 

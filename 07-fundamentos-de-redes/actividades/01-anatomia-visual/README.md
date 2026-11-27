@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Una laptop es un extremo de la red; un switch o punto de acceso ayuda a conectarla. El dato viaja por cable o por ondas.
+### Equipos, medios y alcance
+
+- **¿Por qué?** Un equipo final y uno intermediario cumplen papeles diferentes.
+- **¿Para qué?** Para leer un plano y reconocer qué está unido localmente.
+- **¿Cómo?** Dibuja laptop → switch o punto de acceso → router → otra red; marca cable o Wi-Fi.
+- **¿Cuándo usarlo?** Al inventariar una LAN o distinguirla de una WAN.
 
 ## Qué se trabajó
 

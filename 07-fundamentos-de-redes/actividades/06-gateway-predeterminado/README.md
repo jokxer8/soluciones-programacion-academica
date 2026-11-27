@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Si una PC puede hablar con su vecino pero no salir de su red, verifica primero la dirección de su puerta de enlace.
+### Puerta de enlace
+
+- **¿Por qué?** La comunicación con un vecino puede funcionar aunque falle la salida de la LAN.
+- **¿Para qué?** Para acotar si el problema está en la red local, el gateway o la ruta remota.
+- **¿Cómo?** En tu maqueta, comprueba en orden un vecino local, el gateway y el destino remoto; cambia una sola variable.
+- **¿Cuándo usarlo?** Cuando una PC alcanza recursos locales pero no otra red.
 
 ## Qué se trabajó
 

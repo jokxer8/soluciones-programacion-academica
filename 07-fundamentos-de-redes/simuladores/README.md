@@ -6,7 +6,12 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Descarga el archivo `.pkt` desde GitHub y ábrelo localmente en Cisco Packet Tracer. La versión registrada en las entregas es **9.0.1**.
+### Abrir una maqueta publicada
+
+- **¿Por qué?** Una red simulada permite estudiar un diseño sin acceder a equipos reales.
+- **¿Para qué?** Para reconocer equipos, enlaces y rutas en un escenario de clase.
+- **¿Cómo?** Descarga el `.pkt` desde la tabla y ábrelo localmente en Cisco Packet Tracer; se documentó la versión 9.0.1.
+- **¿Cuándo usarlo?** Cuando quieras examinar una topología sin tratarla como evidencia de una ejecución nueva.
 
 | Entrega | Archivo |
 |---|---|

@@ -6,7 +6,19 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Cada oficina tiene su red local. Para conversar con otra oficina, sus equipos envían los datos al router.
+### Red local y salida entre oficinas
+
+- **¿Por qué?** Las PCs de otra oficina no son necesariamente vecinas en la misma LAN.
+- **¿Para qué?** Para decidir cuándo basta un enlace local y cuándo interviene el router.
+- **¿Cómo?** Marca qué equipos pertenecen a cada oficina y señala el gateway en el paso hacia otra LAN.
+- **¿Cuándo usarlo?** Al preparar un ejercicio que conecta áreas de trabajo independientes.
+
+### Configuración y octetos
+
+- **¿Por qué?** Dirección fija y DHCP son alternativas, pero ambas deben coincidir con el segmento.
+- **¿Para qué?** Para entender los parámetros que usa cada equipo al comunicarse.
+- **¿Cómo?** Anota si la dirección es fija o automática y lee IP, máscara y gateway; usa la conversión de un octeto si necesitas revisar bits.
+- **¿Cuándo usarlo?** Cuando diferencias infraestructura de clientes en una actividad de repaso.
 
 ## Qué se trabajó
 

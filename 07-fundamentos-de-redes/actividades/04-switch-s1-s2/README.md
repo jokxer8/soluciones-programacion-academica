@@ -6,7 +6,12 @@
 
 ![En palabras simples · Guía para estudiantes](../../../assets/readme-banners/en-palabras-simples.svg)
 
-Cambiar el nombre ayuda a no configurar el equipo equivocado. Guardar importa porque la configuración en uso no se conserva por sí sola tras reiniciar.
+### Identidad y configuración persistente
+
+- **¿Por qué?** Dos switches parecidos se pueden confundir y los cambios activos pueden perderse.
+- **¿Para qué?** Para identificar S1 y S2 y distinguir lo que funciona ahora de lo que queda al reiniciar.
+- **¿Cómo?** Comprueba el nombre y compara la configuración activa con la guardada en tu maqueta.
+- **¿Cuándo usarlo?** Después de cambiar ajustes en un switch de laboratorio, antes de dar la práctica por terminada.
 
 ## Qué se trabajó
 

@@ -6,7 +6,7 @@
 
 ![En palabras simples](../../assets/readme-banners/en-palabras-simples.svg)
 
-Abre primero la ficha de la actividad y luego intenta comprobar lo mismo con una maqueta propia.
+Consulta la [ficha de la actividad y sus cuatro respuestas](../actividades/02-explorar-packet-tracer/README.md#en-palabras-simples). Aquí encontrarás la observación de la entrega y una actividad de repaso.
 
 ## Observación de la entrega
 
