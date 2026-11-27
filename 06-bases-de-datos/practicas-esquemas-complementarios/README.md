@@ -16,6 +16,27 @@
 
 **Bookstore:** usa el diagrama para seguir cómo se relacionan los datos de la librería. **Fast Food:** sigue los datos de un pedido en su esquema. **Hospital:** localiza qué tablas guardan datos de cada parte del sistema. Lee las claves para saber cómo unir la información.
 
+### Bookstore
+
+- **¿Por qué?** Un pedido puede incluir varios libros.
+- **¿Para qué?** Para practicar consultas de cabecera y detalle en un caso de librería.
+- **¿Cómo?** Sigue en el diagrama las claves que conectan cliente, pedido, detalle y libro.
+- **¿Cuándo usarlo?** Cuando necesites entender cómo se reconstruye un pedido a partir de varias tablas.
+
+### Fast Food
+
+- **¿Por qué?** Los datos de un pedido no tienen por qué estar en una sola tabla.
+- **¿Para qué?** Para practicar cómo ubicar cada dato antes de escribir una consulta.
+- **¿Cómo?** Abre el esquema de práctica y sigue las referencias del pedido hacia sus datos relacionados.
+- **¿Cuándo usarlo?** Al estudiar consultas sobre pedidos usando ese esquema independiente.
+
+### Hospital
+
+- **¿Por qué?** No conviene unir tablas solo porque sus columnas tienen nombres parecidos.
+- **¿Para qué?** Para practicar lectura de relaciones antes de cruzar datos.
+- **¿Cómo?** Identifica tablas y claves declaradas en el esquema de hospital y comprueba cómo se relacionan.
+- **¿Cuándo usarlo?** Cuando recibes un esquema ajeno y necesitas entenderlo sin mezclarlo con otros casos.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Reúno esquemas de apoyo para practicar la lectura de tablas y relaciones. Librería, hospital y comida rápida son casos independientes. Sus tablas no deben combinarse en una sola base de datos sin revisar primero los nombres y las dependencias.

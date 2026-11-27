@@ -23,6 +23,11 @@ En esta materia comparé formas de resolver problemas de búsqueda, ordenamiento
 
 Un mismo problema puede resolverse con estrategias distintas. Compara buscar en una lista ordenada, dividir un conjunto para ordenarlo o guardar cálculos parciales para no repetir trabajo.
 
+- **¿Por qué?** Una solución que funciona con cinco datos puede perder eficiencia al crecer.
+- **¿Para qué?** Para elegir entre dividir, recorrer o reutilizar resultados parciales.
+- **¿Cómo?** Prueba una entrada pequeña de cada ejercicio y compara qué decisiones reducen el trabajo.
+- **¿Cuándo usarlo?** Cuando diseñes una solución que debe responder a datos de distintos tamaños.
+
 ## Objetivo de la materia
 
 Evidenciar la capacidad de resolver problemas computacionales utilizando algoritmos eficientes, analizando su comportamiento y seleccionando estrategias adecuadas según el tipo de problema.

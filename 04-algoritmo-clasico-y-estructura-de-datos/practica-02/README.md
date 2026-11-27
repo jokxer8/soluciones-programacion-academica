@@ -14,6 +14,13 @@
 
 O describe un límite por arriba; Ω, uno por abajo; Θ, uno por ambos lados del mismo orden. Si un proceso hace `3n + 2` pasos, su crecimiento es lineal: lo que domina cuando n es grande es el término con n.
 
+### Cotas O, Ω y Θ
+
+- **¿Por qué?** Decir que un proceso «crece rápido» no especifica sus límites.
+- **¿Para qué?** Para distinguir una cota superior, una inferior y una ajustada.
+- **¿Cómo?** Compara `3n + 2` con múltiplos de `n` a partir de `n = 1`: queda entre `3n` y `5n`.
+- **¿Cuándo usarlo?** Al demostrar crecimiento de funciones sin depender de una computadora concreta.
+
 ## Propósito
 
 Usar definiciones y cotas para argumentar cómo se comporta una función cuando aumenta el tamaño de entrada.

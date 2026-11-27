@@ -14,6 +14,34 @@
 
 Dibuja lugares y las conexiones entre ellos. El camino con menos tramos no siempre es el de menor costo. La práctica distingue cómo comparar rutas cuando la pregunta es distancia o cuando lo que importa es fiabilidad.
 
+### Dijkstra
+
+- **¿Por qué?** Tener menos tramos no garantiza menor costo.
+- **¿Para qué?** Para hallar distancias mínimas desde un origen.
+- **¿Cómo?** Empieza con el origen en cero y elige primero el nodo pendiente con menor distancia conocida; revisa sus vecinos.
+- **¿Cuándo usarlo?** Cuando los pesos no son negativos.
+
+### Bellman-Ford
+
+- **¿Por qué?** Un tramo de peso negativo puede mejorar una ruta que parecía definitiva.
+- **¿Para qué?** Para hallar distancias desde un origen y detectar ciclos negativos alcanzables.
+- **¿Cómo?** Revisa repetidamente si cada arista mejora una distancia; una mejora adicional tras las rondas previstas señala un ciclo negativo alcanzable.
+- **¿Cuándo usarlo?** Cuando el grafo admite pesos negativos.
+
+### Floyd-Warshall
+
+- **¿Por qué?** Una sola consulta desde un origen no responde qué pasa con todos los demás.
+- **¿Para qué?** Para comparar rutas entre todos los pares de nodos.
+- **¿Cómo?** Prueba cada nodo como punto intermedio y reemplaza una distancia si el desvío la mejora.
+- **¿Cuándo usarlo?** Cuando necesitas una tabla de distancias entre todos los pares.
+
+### Máxima fiabilidad
+
+- **¿Por qué?** La distancia de una ruta no determina qué tan confiable es.
+- **¿Para qué?** Para comparar caminos según la probabilidad de éxito.
+- **¿Cómo?** Si el modelo supone tramos independientes, multiplica sus probabilidades y compara los productos.
+- **¿Cuándo usarlo?** Cuando la pregunta pide fiabilidad, no el costo o la cantidad de tramos.
+
 ## Propósito
 
 Elegir y aplicar un algoritmo de caminos según el problema y las características del grafo.

@@ -18,6 +18,20 @@
 
 Imagina que alguien llama para reservar una habitación. El personal registra al cliente, selecciona una habitación y guarda la reserva. La aplicación es lo que usa el personal en pantalla; la base de datos conserva la información para consultarla después. Es un proyecto grupal: los créditos y las pruebas están en la documentación.
 
+### Crear y consultar reservas
+
+- **¿Por qué?** Anotar cada reserva por separado dificulta ver disponibilidad y cambios.
+- **¿Para qué?** Para administrar clientes, habitaciones y reservas desde una aplicación.
+- **¿Cómo?** Sigue el caso de un cliente: se registra, se elige habitación y fechas y se guarda la reserva para consultarla después.
+- **¿Cuándo usarlo?** Para aprender cómo una interfaz de escritorio trabaja con SQL Server en un entorno de pruebas.
+
+### Leer la evidencia funcional
+
+- **¿Por qué?** Que una pantalla abra no implica que se cumplan las reglas de negocio.
+- **¿Para qué?** Para distinguir una verificación documentada de un despliegue real.
+- **¿Cómo?** Abre los casos de prueba y compara sus entradas, resultados esperados y resultados observados.
+- **¿Cuándo usarlo?** Cuando debas explicar qué respalda la revisión publicada y qué queda pendiente.
+
 ## Nivel y resultados comprobados
 
 | Indicador | Valor | Evidencia y alcance |

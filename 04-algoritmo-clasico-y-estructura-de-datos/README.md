@@ -19,6 +19,11 @@ Esta sección reúne actividades de **ICC-211-T Algoritmos Clásicos y Estructur
 
 Aprende a comparar cuánto trabajo hacen los algoritmos y a elegir cómo guardar o recorrer datos. Empieza por las prácticas de crecimiento y sigue con árboles, rutas y tablas hash.
 
+- **¿Por qué?** Dos soluciones correctas pueden necesitar cantidades de trabajo muy distintas.
+- **¿Para qué?** Para elegir cómo buscar, organizar o conectar datos.
+- **¿Cómo?** Compara primero cómo crece el trabajo; después usa las prácticas para probar la estructura adecuada.
+- **¿Cuándo usarlo?** Al elegir un algoritmo o una estructura para datos que pueden crecer.
+
 ## Recorrido de la materia
 
 El curso avanza desde el análisis de crecimiento y las recurrencias hasta árboles, grafos y tablas hash. El recorrido conecta lo que se pide en cada actividad con el método que se aplica y el PDF que se conserva.

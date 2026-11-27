@@ -14,6 +14,20 @@
 
 Cuando una tabla hash se llena, hay más choques. Reubicar las claves al cambiar el tamaño de la tabla es hacer rehashing. Compara qué cambia antes y después, y cómo responde cada método de manejar colisiones.
 
+### Factor de carga
+
+- **¿Por qué?** Una tabla con poco espacio libre puede necesitar más intentos por clave.
+- **¿Para qué?** Para medir qué tan llena está y comparar colisiones.
+- **¿Cómo?** Divide claves almacenadas entre casilleros: 8 claves en 10 casilleros dan una carga de 0,8.
+- **¿Cuándo usarlo?** Al comparar estrategias de colisión con la misma cantidad de datos.
+
+### Rehashing
+
+- **¿Por qué?** Mover claves sin recalcular su ubicación puede hacerlas difíciles de encontrar.
+- **¿Para qué?** Para recuperar margen de trabajo sin perder claves vigentes.
+- **¿Cómo?** Crea la tabla nueva y reinserta las claves con el tamaño y la regla de colisiones nuevos.
+- **¿Cuándo usarlo?** Cuando la carga supera el umbral de la implementación, no cada vez que hay un choque.
+
 ## Propósito
 
 Explicar cuándo conviene redimensionar una tabla y cómo la carga y el método de sondeo influyen en las colisiones.

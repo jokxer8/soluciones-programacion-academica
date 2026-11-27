@@ -16,6 +16,20 @@
 
 Para registrar una flotilla, primero identifica qué cosas existen y cómo se relacionan. Algunas relaciones cambian con el tiempo: el modelo debe poder guardar qué vínculo existió y cuándo, en lugar de reemplazar siempre el anterior.
 
+### Diseño de la flotilla
+
+- **¿Por qué?** Un avión, su modelo y su fabricante no son el mismo dato.
+- **¿Para qué?** Para relacionar aeronaves, mantenimiento y lugares sin duplicar registros.
+- **¿Cómo?** Empieza por identificar la aeronave y sigue sus claves hacia el modelo, taller o aeropuerto que corresponda.
+- **¿Cuándo usarlo?** Al diseñar el catálogo operativo de una flotilla.
+
+### Historial de bases y estados
+
+- **¿Por qué?** Sobrescribir la base actual borra dónde estaba antes el avión.
+- **¿Para qué?** Para consultar la asignación o el estado de una fecha pasada.
+- **¿Cómo?** Registra otro periodo al cambiar de base y busca el periodo que incluye la fecha de interés.
+- **¿Cuándo usarlo?** Cuando una relación cambia con el tiempo y debes conservar su trazabilidad.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Documento el diseño de la flotilla realizado en equipo. Distingo la identidad de una aeronave de sus cambios de base o estado a lo largo del tiempo. Las claves identifican registros; las fechas permiten interpretar su historial.

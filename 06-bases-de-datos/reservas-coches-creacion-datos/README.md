@@ -16,6 +16,20 @@
 
 Antes de consultar reservas de autos, hay que crear las tablas y cargarlas en orden. Si una fila apunta a otra, la primera depende de que exista la segunda. Esa regla permite detectar una reserva vinculada a un dato inexistente.
 
+### Creación y carga
+
+- **¿Por qué?** No se puede enlazar una reserva a un coche que aún no existe.
+- **¿Para qué?** Para reproducir un conjunto coherente de datos de ejemplo.
+- **¿Cómo?** Crea tablas y restricciones, carga catálogos y registros referenciados, y luego añade las reservas en una base de práctica.
+- **¿Cuándo usarlo?** Al preparar una base nueva antes de consultar o validar datos.
+
+### Precio derivado
+
+- **¿Por qué?** Guardar el mismo cálculo en varias filas puede producir valores distintos tras un cambio.
+- **¿Para qué?** Para consultar el total con las reglas que aplica la vista del ejercicio.
+- **¿Cómo?** Abre `vw_ReservaConPrecioTotal` y sigue qué columnas usa para calcular el importe.
+- **¿Cuándo usarlo?** Cuando un valor puede obtenerse de datos que ya existen y quieres consultarlo de modo uniforme.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Creo un esquema con un coche por reserva y cargo datos de práctica. Una clave primaria identifica cada registro y una clave foránea enlaza registros relacionados. Los identificadores numéricos no expresan importes ni cantidades de coches.

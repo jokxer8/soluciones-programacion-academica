@@ -21,6 +21,27 @@ Las consultas cruzan datos del alquiler con los del auto o el cliente. Lee cada 
 - [Modificar la estructura](04-modificaciones.sql) y [actualizar datos](05-actualizacion-datos.sql): separa cambiar una tabla de corregir los datos que guarda.
 - [Consultas ampliadas](06-consultas-ampliadas.sql) y [consultas 8 a 14](07-consultas-8-a-14.sql): compara qué información se cruza, filtra o resume en cada pregunta.
 
+### Preparar tablas y datos
+
+- **¿Por qué?** Una reserva puede incluir varios coches.
+- **¿Para qué?** Para representar cada vehículo reservado sin repetir toda la cabecera.
+- **¿Cómo?** Relaciona la reserva con sus coches mediante `Reserva_Coche`, y carga las filas referenciadas antes de las que dependen de ellas.
+- **¿Cuándo usarlo?** Cuando una relación admite varios registros en ambos extremos.
+
+### Consultas básicas y ampliadas
+
+- **¿Por qué?** Los datos de una pregunta pueden estar repartidos entre varias tablas.
+- **¿Para qué?** Para listar, cruzar o contar clientes, reservas y vehículos.
+- **¿Cómo?** Une las tablas por sus claves; para contar coches por reserva, agrupa por la reserva y filtra el total con `HAVING`.
+- **¿Cuándo usarlo?** Cuando una lista simple no alcanza para responder la pregunta.
+
+### Cambios de estructura y datos
+
+- **¿Por qué?** Añadir una columna y corregir lo que contiene son cambios distintos.
+- **¿Para qué?** Para ampliar el esquema sin confundir la definición con sus valores.
+- **¿Cómo?** Prueba primero el cambio de columna, después actualiza sus datos y comprueba con una consulta en una base de práctica.
+- **¿Cuándo usarlo?** Cuando un requisito nuevo pide capturar información que no estaba en el modelo.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Consulto un modelo que admite varios coches por reserva. Una clave compuesta identifica una fila mediante varias columnas juntas; no consiste en sumar sus valores. Los números de los scripts indican el orden de preparación y consulta explicado en esta actividad.

@@ -14,6 +14,27 @@
 
 En un árbol de búsqueda, cada número te indica si debes mirar a la izquierda o a la derecha. Si el árbol queda inclinado hacia un lado, buscar se parece a recorrer una lista. Equilibrarlo ayuda a conservar caminos cortos.
 
+### Árbol binario de búsqueda y recorridos
+
+- **¿Por qué?** El almacén de claves tiene una regla de orden que evita revisar todo.
+- **¿Para qué?** Para buscar claves y leer los nodos en un orden determinado.
+- **¿Cómo?** Compara la clave en cada nodo; para listar en orden creciente, visita izquierda, nodo y derecha.
+- **¿Cuándo usarlo?** Cuando necesitas consultas por clave y recorridos ordenados.
+
+### Balanceo AVL
+
+- **¿Por qué?** Insertar valores ordenados puede inclinar un árbol y alargar búsquedas.
+- **¿Para qué?** Para mantener acotada la diferencia de alturas entre subárboles.
+- **¿Cómo?** Tras insertar, identifica el primer desequilibrio y aplica la rotación simple o doble que conserve el orden.
+- **¿Cuándo usarlo?** Cuando necesitas mantener búsquedas rápidas con altura estrictamente controlada.
+
+### Árbol rojo-negro
+
+- **¿Por qué?** También se puede limitar la altura sin exigir el mismo balance que AVL.
+- **¿Para qué?** Para mantener búsquedas e inserciones eficientes mediante reglas de color.
+- **¿Cómo?** Después de un cambio, comprueba las reglas de color y corrige con recoloreos o rotaciones según el caso.
+- **¿Cuándo usarlo?** Al estudiar estructuras ordenadas que necesitan soportar actualizaciones.
+
 ## Propósito
 
 Relacionar el orden de claves con los recorridos del árbol y explicar cómo el balanceo mantiene operaciones eficientes.

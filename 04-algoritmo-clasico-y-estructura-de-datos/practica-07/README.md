@@ -14,6 +14,20 @@
 
 Imagina que debes conectar varias casas gastando lo menos posible en cable. Busca una red que llegue a todas sin vueltas innecesarias. No es lo mismo que buscar el camino más corto entre solo dos casas.
 
+### Prim
+
+- **¿Por qué?** Para conectar todas las casas no hace falta construir un enlace entre cada par.
+- **¿Para qué?** Para formar una red de costo mínimo sin ciclos.
+- **¿Cómo?** Desde cualquier nodo, agrega el enlace más barato que conecte tu red con un nodo aún fuera.
+- **¿Cuándo usarlo?** Con un grafo ponderado, no dirigido y conectado.
+
+### Kruskal
+
+- **¿Por qué?** Elegir enlaces baratos sin cuidado puede cerrar vueltas innecesarias.
+- **¿Para qué?** Para conectar los vértices de menor a mayor costo sin formar ciclos.
+- **¿Cómo?** Ordena las aristas y añade cada una solo si reúne dos grupos que aún están separados.
+- **¿Cuándo usarlo?** Cuando puedes ordenar todos los enlaces y quieres comparar qué aporta cada uno.
+
 ## Propósito
 
 Comparar dos estrategias para conectar los vértices con coste total mínimo y justificar la selección de aristas.

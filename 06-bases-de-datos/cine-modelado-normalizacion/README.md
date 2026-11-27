@@ -16,6 +16,27 @@
 
 Si el nombre de una película se repite en cada fila de una función, corregirlo obliga a editar muchas filas. Separar películas y funciones en tablas conectadas permite registrar ese dato una vez y volver a encontrarlo cuando se necesita.
 
+### Diseño del cine (5.1)
+
+- **¿Por qué?** Repetir el título de una película por función obliga a actualizarlo en varios sitios.
+- **¿Para qué?** Para distinguir entidades y convertir sus relaciones en tablas con claves.
+- **¿Cómo?** Empieza con Película y Función, conecta ambas y contrasta el diagrama con el diccionario de datos.
+- **¿Cuándo usarlo?** Al diseñar el esquema antes de crear tablas.
+
+### Normalización de ventas (5.3)
+
+- **¿Por qué?** Una fila mezclada de venta, formato y asiento puede repetir catálogos completos.
+- **¿Para qué?** Para reducir duplicación y separar los datos según de qué clave dependan.
+- **¿Cómo?** Lee una fila de ejemplo, separa atributos y sigue las etapas de primera, segunda y tercera forma normal del material.
+- **¿Cuándo usarlo?** Cuando debes revisar un esquema que repite datos o mezcla conceptos en una columna.
+
+### Transformación del hospital
+
+- **¿Por qué?** Un diagrama conceptual no especifica por sí solo las tablas finales.
+- **¿Para qué?** Para practicar el paso del modelo conceptual al relacional.
+- **¿Cómo?** Lee la hoja de transformación por separado e identifica qué claves sostienen sus relaciones.
+- **¿Cuándo usarlo?** Cuando necesitas convertir un diagrama en tablas y referencias.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono el diseño del cine con la normalización de datos. 1FN, 2FN y 3FN significan primera, segunda y tercera forma normal; no son versiones del programa. Se justifican a partir de atributos, claves y dependencias funcionales.

@@ -16,6 +16,20 @@
 
 Antes de crear tablas, dibuja las cosas que el sistema necesita recordar y sus relaciones. Aquí importa distinguir qué representa un curso y cómo se conecta con los demás elementos del modelo. Usa el diagrama como mapa antes de leer los nombres técnicos.
 
+### Catálogo y oferta
+
+- **¿Por qué?** El mismo curso puede ofrecerse en fechas diferentes.
+- **¿Para qué?** Para separar la descripción permanente de cada edición.
+- **¿Cómo?** En el diagrama sigue la relación entre `CURSO` y `OFERTA_CURSO`, donde aparecen el año y las fechas.
+- **¿Cuándo usarlo?** Cuando una entidad general tiene varias ediciones o convocatorias.
+
+### Participación y evaluación
+
+- **¿Por qué?** Inscribirse, participar y obtener una calificación son hechos distintos.
+- **¿Para qué?** Para saber qué relación conserva cada dato sin confundir empleados, actividades y certificados.
+- **¿Cómo?** Sigue las claves y cardinalidades del diagrama desde la oferta hasta evaluación y certificado, sin asumir que ya existen tablas físicas.
+- **¿Cuándo usarlo?** Al levantar requisitos de un sistema de formación antes de implementarlo.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Modelo cursos y sus ofertas, instructores y certificados. Una relación 1:N permite asociar una instancia del primer tipo con varias del segundo. Esa proporción no indica cuántos registros existen actualmente; expresa una regla del diseño.

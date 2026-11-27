@@ -16,6 +16,11 @@
 
 Puedes saltarte números, pero no cambiar el orden original. Imagina que comparas dos grupos crecientes de una lista y eliges el que suma más, aunque tenga menos elementos. Ese es el objetivo: mayor suma, no mayor cantidad.
 
+- **¿Por qué?** La subsecuencia más larga no necesariamente suma más.
+- **¿Para qué?** Para encontrar la mayor suma manteniendo el orden original y valores estrictamente crecientes.
+- **¿Cómo?** En `[10, 1, 2, 3]`, `[1, 2, 3]` suma 6 y `[10]` suma 10; compara sumas, no longitudes.
+- **¿Cuándo usarlo?** Cuando puedes saltar elementos pero debes conservar su orden y maximizar su valor acumulado.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco una subsecuencia creciente con la mayor suma. Puedo omitir elementos sin cambiar su orden: no tienen que ser consecutivos. La mejor suma tampoco exige la mayor cantidad de términos; dp[i] representa la mejor suma que termina en el elemento de índice i.

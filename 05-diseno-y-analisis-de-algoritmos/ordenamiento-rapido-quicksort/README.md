@@ -16,6 +16,11 @@
 
 Se elige un número como referencia y se separan los valores según queden por debajo o por encima. Se repite en los grupos pequeños. Para seguirlo a mano, prueba con cinco números y marca dónde termina la referencia tras separar.
 
+- **¿Por qué?** Ordenar toda la lista de una sola vez es menos manejable que dividir el trabajo.
+- **¿Para qué?** Para dejar los valores en orden mediante particiones.
+- **¿Cómo?** Elige una referencia, separa los valores según su comparación con ella y aplica el procedimiento a los grupos que falten.
+- **¿Cuándo usarlo?** Cuando quieres ordenar un arreglo; si el pivote produce grupos muy desequilibrados una y otra vez, el trabajo puede crecer mucho.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Ordeno mediante particiones alrededor de un pivote. n indica la cantidad de elementos. O(n log n) describe el crecimiento promedio del trabajo y O(n²) el peor caso; estas expresiones no son tiempos medidos en segundos.

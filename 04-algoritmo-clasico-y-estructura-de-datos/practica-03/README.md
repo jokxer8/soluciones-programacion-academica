@@ -20,6 +20,27 @@ Una función recursiva resuelve un problema llamándose con un caso más pequeñ
 
 [Ver los tres ejemplos desarrollados](desarrollo.md).
 
+### Suma recursiva
+
+- **¿Por qué?** La suma hasta `n` contiene una suma más pequeña.
+- **¿Para qué?** Para reconocer una recurrencia con una sola llamada por paso.
+- **¿Cómo?** Escribe `suma(3) = 3 + suma(2)` y termina en un caso base como `suma(0) = 0`.
+- **¿Cuándo usarlo?** Al aprender a identificar el caso base y la reducción de uno en uno.
+
+### Búsqueda binaria recursiva
+
+- **¿Por qué?** En datos ordenados, una comparación permite ignorar media lista.
+- **¿Para qué?** Para reconocer una recurrencia que reduce el tamaño por un factor.
+- **¿Cómo?** Compara con el centro y vuelve a llamar solo en la mitad posible; termina al encontrar el valor o vaciar el intervalo.
+- **¿Cuándo usarlo?** Al buscar sobre un arreglo ordenado.
+
+### Fibonacci ingenuo
+
+- **¿Por qué?** Las dos ramas de llamadas pueden volver a calcular el mismo valor.
+- **¿Para qué?** Para detectar trabajo repetido y distinguirlo de una sola llamada recursiva.
+- **¿Cómo?** Dibuja `F(5)` y marca cada aparición de `F(3)`.
+- **¿Cuándo usarlo?** Para estudiar el costo de la recursión directa, antes de considerar una forma más eficiente.
+
 ## Propósito
 
 Analizar cómo el tamaño del problema y las llamadas recursivas determinan el tiempo y el espacio que utiliza un algoritmo. La actividad conecta el análisis asintótico de las prácticas anteriores con las técnicas de recurrencias de la Práctica 4.

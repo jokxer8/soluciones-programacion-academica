@@ -14,6 +14,27 @@
 
 Una tabla hash convierte una clave en una posición, como asignar un casillero. Si dos claves llegan al mismo lugar, hay una colisión. La práctica muestra cómo guardar y luego encontrar ambas sin perder una.
 
+### Función hash
+
+- **¿Por qué?** Asignar una posición por clave evita buscarla casillero por casillero.
+- **¿Para qué?** Para ubicar el lugar inicial de una clave.
+- **¿Cómo?** Con diez casilleros, `17 mod 10` señala el 7; el 27 también señala el 7, así que hay una colisión.
+- **¿Cuándo usarlo?** Cuando necesites localizar claves por coincidencia exacta.
+
+### Manejo de colisiones
+
+- **¿Por qué?** Dos claves distintas pueden compartir posición inicial.
+- **¿Para qué?** Para guardar y volver a encontrar las dos claves sin reemplazar una por error.
+- **¿Cómo?** Guarda ambas en el mismo casillero mediante una lista o busca otra posición con sondeo lineal, cuadrático o con un segundo hash.
+- **¿Cuándo usarlo?** Cuando ya elegiste una función hash y debes resolver coincidencias de posición.
+
+### Hashing extensible
+
+- **¿Por qué?** El conjunto puede crecer más allá del espacio previsto al inicio.
+- **¿Para qué?** Para aumentar capacidad mediante un directorio y división de grupos.
+- **¿Cómo?** Usa bits del hash para encontrar el grupo; si se llena, divídelo y amplía el directorio si hace falta.
+- **¿Cuándo usarlo?** Cuando el conjunto crece y quieres evitar reconstruirlo por completo al llenar un grupo.
+
 ## Propósito
 
 Comprender cómo se insertan y localizan claves, y cómo una estrategia de resolución de colisiones afecta a la tabla.

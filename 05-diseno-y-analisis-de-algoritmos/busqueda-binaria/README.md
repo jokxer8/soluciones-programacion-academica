@@ -16,6 +16,11 @@
 
 En una lista ordenada, mira primero el número del medio. Si el que buscas es menor, descarta la mitad derecha; si es mayor, descarta la izquierda. Repite con la mitad restante. La clave es que los datos ya estén ordenados.
 
+- **¿Por qué?** La comparación con el centro permite saltar valores sin perder la respuesta.
+- **¿Para qué?** Para saber si un número está en el arreglo y localizarlo.
+- **¿Cómo?** Al buscar 9 en `[2, 4, 6, 9, 12]`, compara primero con 6; como 9 es mayor, descarta la mitad izquierda y el centro.
+- **¿Cuándo usarlo?** Al buscar en arreglos ordenados. Si están desordenados, no puedes descartar una mitad con seguridad.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Busco sobre datos ordenados y reduzco a la mitad el intervalo en cada paso. n es la cantidad de elementos; log₂(n) describe cuántas divisiones sucesivas entre dos hacen falta. La condición de orden es necesaria para descartar correctamente una mitad.

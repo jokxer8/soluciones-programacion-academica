@@ -14,6 +14,20 @@
 
 Un algoritmo que hace n pasos crece distinto de uno que hace n × n. Con 10 datos son 10 frente a 100; con 100 datos, 100 frente a 10 000. La práctica usa límites para comparar ese crecimiento, no para medir segundos reales.
 
+### Límites y crecimiento
+
+- **¿Por qué?** El costo para una entrada pequeña puede ocultar diferencias grandes.
+- **¿Para qué?** Para comparar el ritmo de crecimiento de dos expresiones.
+- **¿Cómo?** Divide una expresión entre la otra y estudia qué pasa al crecer `n`, si el límite existe.
+- **¿Cuándo usarlo?** Al comparar modelos de trabajo, no al medir segundos.
+
+### Costo de un fragmento de código
+
+- **¿Por qué?** Una misma instrucción puede repetirse muchas veces según los ciclos.
+- **¿Para qué?** Para traducir la estructura del código a un número de operaciones.
+- **¿Cómo?** Cuenta cuántas veces se ejecuta la instrucción principal; dos ciclos completos anidados de `n` vueltas dan `n × n`.
+- **¿Cuándo usarlo?** Al revisar si un fragmento seguirá siendo viable con más datos.
+
 ## Propósito
 
 Aplicar límites y reglas de crecimiento para justificar el orden de una función y relacionarlo con el trabajo que realiza un algoritmo.

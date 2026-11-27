@@ -16,6 +16,27 @@
 
 Primero piensa qué pregunta quiere responder el restaurante. Luego decide si necesitas filas sueltas, datos de varias tablas o un resumen por grupo. Una consulta que cuenta elementos responde algo distinto de una que solo los enumera.
 
+### Cruzar filas y comprobar coincidencias
+
+- **¿Por qué?** Una orden puede tener varias filas de detalle y repetir a un cliente o mesero en el resultado.
+- **¿Para qué?** Para identificar quién cumple una condición sin contar duplicados por accidente.
+- **¿Cómo?** Sigue las claves con `JOIN`, usa `EXISTS` para comprobar una coincidencia y quita duplicados solo si la pregunta lo requiere.
+- **¿Cuándo usarlo?** Cuando la pregunta pide quién participó o qué órdenes contienen un producto.
+
+### Importes, frecuencia y ventas agrupadas
+
+- **¿Por qué?** Enumerar filas no responde cuánto se vendió ni quién compró con frecuencia.
+- **¿Para qué?** Para calcular importes, contar compras o resumir ventas por producto.
+- **¿Cómo?** Define primero qué cuenta cada fila y usa la agregación sobre ese conjunto antes de comparar los totales.
+- **¿Cuándo usarlo?** Cuando buscas un resumen, no el detalle de cada registro.
+
+### Función de propinas
+
+- **¿Por qué?** Factura y ticket pueden necesitar promedios distintos.
+- **¿Para qué?** Para reutilizar el cálculo por tipo de documento.
+- **¿Cómo?** Usa el ejemplo de la ficha para solicitar por separado `Factura` y `Ticket` y compara ambos valores.
+- **¿Cuándo usarlo?** Cuando quieras consultar el promedio para un tipo conocido en el esquema de práctica.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Resuelvo seis requerimientos sobre la atención del restaurante. DISTINCT elimina filas repetidas del resultado; EXISTS comprueba si existe alguna coincidencia y una CTE da nombre a una consulta dentro de una instrucción. En cálculos porcentuales, 0.10 representa el 10 %.

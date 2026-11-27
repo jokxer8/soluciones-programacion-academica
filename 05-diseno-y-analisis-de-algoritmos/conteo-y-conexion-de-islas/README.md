@@ -16,6 +16,20 @@
 
 El 1 es tierra y el 0 es agua. Primero reúne la tierra que se toca por lados para contar las islas. Después compara qué casillas de agua habría que convertir en tierra para conectarlas todas con el menor cambio posible.
 
+### Contar islas
+
+- **¿Por qué?** Varias celdas de tierra pueden pertenecer al mismo grupo.
+- **¿Para qué?** Para identificar cuántos grupos separados hay.
+- **¿Cómo?** Al hallar un 1 sin visitar, recorre toda la tierra conectada por sus lados y cuenta una isla.
+- **¿Cuándo usarlo?** Cuando necesites contar regiones sin considerar contactos en diagonal.
+
+### Conectar islas
+
+- **¿Por qué?** Contarlas no dice cuánto trabajo costaría unirlas.
+- **¿Para qué?** Para comparar qué cambios en el mapa unirían los grupos.
+- **¿Cómo?** Marca los grupos y compara las casillas de agua que tendrías que convertir en tierra.
+- **¿Cuándo usarlo?** Cuando necesitas unir grupos y medir el costo de cambiar el terreno.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Interpreto 0 como agua y 1 como tierra; las conexiones son horizontales o verticales. F y C son filas y columnas, y K es la cantidad de islas. Una máscara de bits representa un subconjunto: con tres islas, 101 en base 2 selecciona la primera y la tercera, no ciento una islas.

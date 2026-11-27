@@ -23,6 +23,11 @@ En esta materia trabajé el diseño y la implementación de bases de datos, desd
 
 Primero dibuja qué información guardarás y cómo se conecta. Después crea las tablas y consulta sus datos. El proyecto de hotel muestra cómo esas tablas se usan desde una aplicación.
 
+- **¿Por qué?** Las decisiones sobre qué guardar afectan las consultas y la calidad de la información.
+- **¿Para qué?** Para modelar, relacionar y consultar datos sin duplicarlos innecesariamente.
+- **¿Cómo?** Empieza con un diagrama; después identifica claves, crea tablas y formula preguntas que puedas responder con SQL.
+- **¿Cuándo usarlo?** Al organizar información que necesitas recuperar, cruzar o actualizar.
+
 ## Objetivo de la materia
 
 Presentar de forma ordenada los trabajos realizados en la asignatura, acompañando las soluciones con análisis, diagramas, modelos, scripts y evidencia documental.

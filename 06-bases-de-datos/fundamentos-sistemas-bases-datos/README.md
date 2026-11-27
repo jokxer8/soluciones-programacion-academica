@@ -16,6 +16,20 @@
 
 Una base de datos guarda información de manera que después puedas buscarla y actualizarla. Una clave identifica un registro; otra puede apuntar a una tabla distinta. Piensa en un cliente y sus pedidos: no hace falta copiar todos sus datos por cada pedido.
 
+### Datos, esquema y gestor
+
+- **¿Por qué?** Varios programas pueden necesitar la misma información con reglas comunes.
+- **¿Para qué?** Para distinguir los registros reales, su estructura y el programa que los gestiona.
+- **¿Cómo?** Compara el esquema de Cliente con sus filas: definir una columna cambia el esquema; editar un valor cambia sus datos.
+- **¿Cuándo usarlo?** Al diseñar, consultar o modificar una base de datos.
+
+### Tres niveles e independencia
+
+- **¿Por qué?** Un cambio en el almacenamiento no debería obligar a reescribir la aplicación.
+- **¿Para qué?** Para separar lo que ve el usuario, la estructura lógica y la forma física de guardar datos.
+- **¿Cómo?** Imagina que cambias cómo se organiza un archivo de la base sin cambiar las columnas que consulta una aplicación.
+- **¿Cuándo usarlo?** Cuando quieras mejorar el acceso o cambiar almacenamiento conservando la interfaz lógica.
+
 ## Qué trabajé y cómo leer los ejemplos
 
 Relaciono los conceptos de datos, información y metadatos con el diseño de una base de datos. DBMS significa sistema gestor de bases de datos; DDL agrupa instrucciones de definición y DML las de manipulación de datos.

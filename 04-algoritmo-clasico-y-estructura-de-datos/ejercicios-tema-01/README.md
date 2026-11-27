@@ -14,6 +14,20 @@
 
 Aquí practicas comparar cómo crecen distintas cantidades de trabajo al aumentar el tamaño de la entrada. Empieza con números pequeños y luego pregúntate qué término domina cuando el tamaño se hace grande.
 
+### Verdadero o falso
+
+- **¿Por qué?** Unos pocos valores no garantizan que una afirmación sea cierta en general.
+- **¿Para qué?** Para distinguir una regla válida de una intuición.
+- **¿Cómo?** Prueba casos pequeños para detectar un contraejemplo; si no aparece, usa la definición para justificar la afirmación.
+- **¿Cuándo usarlo?** Cuando se proponga una relación de crecimiento entre dos funciones.
+
+### Demostraciones
+
+- **¿Por qué?** Las cotas necesitan una justificación que sirva a partir de un tamaño, no solo en un punto.
+- **¿Para qué?** Para decidir qué término domina al crecer la entrada.
+- **¿Cómo?** En `3n + 2`, compara con un múltiplo de `n` después de fijar un mínimo para `n`.
+- **¿Cuándo usarlo?** Cuando debas defender por qué una función es lineal, cuadrática u otra clase.
+
 ## Propósito
 
 Material complementario de verdadero/falso y demostraciones sobre notación asintótica. Se mantiene separado de la serie de prácticas porque su nombre de origen no lo identifica como una práctica numerada.

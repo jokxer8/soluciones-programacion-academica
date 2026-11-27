@@ -14,6 +14,27 @@
 
 **Recursión:** compara cuánto trabajo ocurre en cada nivel del árbol de llamadas. **Árboles:** visita los nodos en distintos órdenes para ver qué cambia. **AVL:** después de insertar, ilustra cómo pequeños giros reorganizan el árbol para que no se incline demasiado.
 
+### Recursión
+
+- **¿Por qué?** Cada llamada reduce o divide el problema de manera distinta.
+- **¿Para qué?** Para estimar el trabajo que se acumula por nivel.
+- **¿Cómo?** Dibuja el árbol de llamadas y cuenta el trabajo de cada nivel.
+- **¿Cuándo usarlo?** Cuando compares rutinas recursivas.
+
+### Recorridos de árboles
+
+- **¿Por qué?** El orden de visita cambia lo que puedes extraer de los nodos.
+- **¿Para qué?** Para reproducir una secuencia de nodos a partir del mismo árbol.
+- **¿Cómo?** Marca cuándo visitas la raíz, la izquierda y la derecha, y anota la secuencia resultante.
+- **¿Cuándo usarlo?** Al leer o representar una jerarquía.
+
+### Inserción AVL
+
+- **¿Por qué?** Un árbol de búsqueda puede crecer mucho más por un lado.
+- **¿Para qué?** Para mantener recorridos de búsqueda cortos tras insertar.
+- **¿Cómo?** Actualiza alturas y comprueba dónde es necesaria una rotación que conserve el orden de claves.
+- **¿Cuándo usarlo?** Cuando las claves se incorporan con frecuencia y necesitas mantener el balance.
+
 ## Propósito
 
 El enunciado reúne aplicación del teorema maestro y árbol de recurrencia, recorridos de árboles, construcción de BST e ilustración de inserción y rebalanceo AVL.
