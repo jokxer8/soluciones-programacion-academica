@@ -10,7 +10,7 @@ Recorre las materias en orden y encuentra el código, las explicaciones y las ev
 ![Pendientes: 5](https://img.shields.io/badge/Pendientes-5-94520B?style=for-the-badge)
 ![Pruebas: Windows y Linux](https://img.shields.io/badge/Pruebas-Windows%20y%20Linux-3A4B63?style=for-the-badge)
 
-[🎓 Ruta académica](#áreas-principales) · [🧪 Proyectos](#proyectos-destacados) · [📖 Guía](GUIA-DE-LECTURA.md) · [📍 Pendientes](PENDIENTES.md)
+[🎓 Ruta académica](#áreas-principales) · [🧪 Proyectos](#proyectos-destacados) · [📖 Guía](GUIA-DE-LECTURA.md) · [🗺️ Plan Maestro](PLAN-MAESTRO.md) · [📍 Pendientes](PENDIENTES.md)
 
 </div>
 
